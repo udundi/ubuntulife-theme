@@ -1,0 +1,119 @@
+:root {
+  --header-offset: 404px;
+}
+
+#HeaderContainer {
+  z-index: 100;
+  position: sticky;
+  top: 0;
+  max-height: 100vh;
+  overflow-y: auto;
+}
+
+#HeaderContainer #site-header {
+  background-color: var(--ud-white-50);
+  position: relative;
+  padding-top: 12px;
+}
+
+#HeaderContainer #site-header::before,
+#HeaderContainer #site-header::after  {
+  position: absolute;
+  content: '';
+  height: 4px;
+  width: 100%;
+}
+
+#HeaderContainer #site-header::before {
+  top: 0px;
+  background-color: var(--ud-orange-main);
+}
+
+#HeaderContainer #site-header::after {
+  top: 8px;
+  background-color: var(--ud-blue-main);
+}
+
+
+#HeaderContainer #site-header .top-bar-wrapper {
+  position: sticky;
+  top: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 12px 20px;
+  height: 72px;
+}
+
+
+#HeaderContainer #site-header .menu-btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 24px;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  margin-right: auto;
+}
+
+#HeaderContainer #site-header .menu-btn .menu-btn-burger {
+  width: 28px;
+  height: 2px;
+  background: black;
+  transition: all 0.4s ease-in-out;
+}
+
+#HeaderContainer #site-header .menu-btn .menu-btn-burger::before,
+#HeaderContainer #site-header .menu-btn .menu-btn-burger::after {
+  content: '';
+  position: absolute;
+  background: black;
+  transition: all 0.4s ease-in-out;
+  height: 2px;
+}
+
+#HeaderContainer #site-header .menu-btn .menu-btn-burger::before {
+  transform: translateY(-8px);
+  width: 20px;
+}
+
+#HeaderContainer #site-header .menu-btn .menu-btn-burger::after {
+  transform: translateY(8px);
+  width: 34px;
+}
+
+/* Burger animation */
+#HeaderContainer #site-header .menu-btn.open .menu-btn-burger {
+  width: 0px;
+  background: transparent;
+}
+
+#HeaderContainer #site-header .menu-btn.open .menu-btn-burger::before {
+  transform: rotate(45deg) translate(-10px, 10px);
+}
+#HeaderContainer #site-header .menu-btn.open .menu-btn-burger::after {
+  transform: rotate(-45deg) translate(-10px, -10px);
+}
+
+
+
+#HeaderContainer #site-header a.home img {
+  height: 48px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#HeaderContainer #site-header a.search svg {
+  height: 22px;
+  width: 22px;
+  margin-right: 8px;
+}
+
+#HeaderContainer #site-header a.cart svg {
+  height: 22px;
+  width: 22px;
+}
