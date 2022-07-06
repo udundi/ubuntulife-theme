@@ -91,9 +91,11 @@
 }
 
 #HeaderContainer #site-header .menu-btn.open .menu-btn-burger::before {
+  width: 24px;
   transform: rotate(45deg) translate(-10px, 10px);
 }
 #HeaderContainer #site-header .menu-btn.open .menu-btn-burger::after {
+  width: 24px;
   transform: rotate(-45deg) translate(-10px, -10px);
 }
 

@@ -21,3 +21,24 @@
 
   </div>
 </nav>
+
+<script defer>
+  {
+    const menu_btn = document.getElementById("toggle-menu-button");
+
+    let menu_open = false;
+    menu_btn.addEventListener("click", () => {
+      document
+        .querySelector("#site-header .slide-out-wrapper")
+        .classList
+        .toggle("open");
+      if (!menu_open) {
+        menu_btn.classList.add('open');
+        menu_open = true;
+      } else {
+        menu_btn.classList.remove('open');
+        menu_open = false;
+      }
+    });
+  }
+</script>
