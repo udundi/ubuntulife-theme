@@ -1,0 +1,99 @@
+<div class="ud-cart-menu" data-cart-view>
+
+  <div class="container-fluid">
+    <div id="ud-cart-header" class="row ud-cart-header">
+      <div class="col p-4">
+        <div class="left-group">
+          <a class="ud-close-cart">
+            <svg width="24" height="24" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M10.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L12.793 8l-2.647-2.646a.5.5 0 0 1 0-.708z"/>
+              <path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5H13a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8z"/>
+            </svg>
+          </a>
+
+          <h4>Cart</h4>
+        </div>
+
+        <div class="right-group">
+          <svg width="20" height="20" viewBox="0 0 16 16" class="bi bi-bag" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M14 5H2v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V5zM1 4v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4H1z"/>
+            <path d="M8 1.5A2.5 2.5 0 0 0 5.5 4h-1a3.5 3.5 0 1 1 7 0h-1A2.5 2.5 0 0 0 8 1.5z"/>
+          </svg>
+
+          <span>{ cart.item_count }</span>
+        </div>
+      </div>
+    </div>
+
+    <form action="/cart" method="post" rv-show="cart.item_count | greater 0">
+      <div class="row">
+        <div class="ud-cart-items">
+
+          <div class="col-12 ud-cart-item py-3" rv-each-item="cart.items">
+            <div class="row">
+              <div class="col-4 ud-cart-image pr-0">
+                <a rv-href="item.handle | setParam" rv-title="item.product.title">
+                  <img class="img-fluid" rv-src="item.image | productImageSize '300x'" rv-alt="item.alt" />
+                </a>
+              </div>
+              <div class="col-7 ud-cart-details">
+                <div class="row">
+                  <div class="col-12">
+                    <a class="ud-item-title" rv-href="item.handle | setParam" rv-alt="item.product_title">
+                      { item.product_title }
+                      <span class="ud-item-variants small">{ item.variant_title }</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <div class="col-12 pr-0">
+                    <a class="ud-item-price pb-1" rv-href="item.handle | setParam" rv-alt="item.price"><b>{ item.discounted_price | money }</b></a>
+                    {% comment %}<a class="ud-item-remove py-1" rv-data-cart-remove="index | plus 1" title="Remove"><small>Remove</small></a>{% endcomment %}
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-10 col-md-8 input-group input-group-sm input-group-qty">
+                    <div class="input-group-prepend">
+                      <button class="btn btn-light minus ud-ripple-surface ud-ripple-surface--primary" type="button" rv-data-cart-update="index | plus 1" rv-data-cart-quantity="item.quantity | minus 1">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-dash" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" d="M3.5 8a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.5-.5z"/>
+                        </svg>
+                      </button>
+                    </div>
+                    <input type="number" class="form-control text-center qty" rv-value="item.quantity">
+                    <div class="input-group-append">
+                      <button class="btn btn-light plus ud-ripple-surface ud-ripple-surface--primary" type="button" rv-data-cart-update="index | plus 1" rv-data-cart-quantity="item.quantity | plus 1">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-plus" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" d="M8 3.5a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5H4a.5.5 0 0 1 0-1h3.5V4a.5.5 0 0 1 .5-.5z"/>
+                          <path fill-rule="evenodd" d="M7.5 8a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0V8z"/>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </form>
+
+    <div class="row ud-cart-empty align-items-center" rv-show="cart.item_count | lt 1">
+      <div class="col-12 text-center">
+        <h4 class="cart-empty">Oops, Your Shopping Cart Is Empty!</h4>
+      </div>
+    </div>
+
+    <div id="ud-cart-checkout" class="row ud-cart-checkout">
+      <div class="col">
+        <p><span>Order Subtotal</span> <span id="total">{ cart.total_price | money }</span></p>
+        <!-- <button type="submit" name="checkout" id="checkout" class="btn btn-block btn-primary">Checkout</button> -->
+        <a class="btn btn-primary w-100" href="/checkout">Checkout</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="ud-cart-backdrop"></div>

@@ -1,0 +1,89 @@
+<div id="collection-filters-container" class="px-3">
+  <form id="collection-filters" name="collection-filters">
+    <div class="selection d-flex justify-content-around justify-content-sm-between">
+      <div class="select-filters d-flex gap-2">
+        {% for filter in collection.filters %}
+          <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+              {{ filter.label }}<span class="caret"></span>
+            </button>
+            <div class="dropdown-menu px-2">
+              {% case filter.type %}
+                {% when 'list' %}
+                  <ul class="list-unstyled mb-0">
+                    {% for filter_value in filter.values %}
+                    <li>
+                      <input
+                        id="filter-{{ filter_value.param_name }}-{{ filter_value.value }}"
+                        type="checkbox"
+                        name="{{ filter_value.param_name }}"
+                        value="{{ filter_value.value }}"
+                        form="collection-filters"
+                        onchange="this.form.submit()"
+                        {% if filter_value.checked %}checked{% endif %}
+                        {% if filter_value.active %}checked{% endif %}
+                        {% unless filter_value.count > 0 or filter_value.active %}disabled{% endunless %}
+                      >
+                      <label for="filter-{{ filter_value.param_name }}-{{ filter_value.value }}">
+                        {{ filter_value.label }}
+                      </label>
+                    </li>
+                    {% endfor %}
+                  </ul>
+                {% when 'price_range' %}
+                  <div>
+                    <label for="filter-{{ filter.min_value.param_name }}-{{ filter.min_value.value }}">From:</label>
+                    <input
+                      id="filter-{{ filter.min_value.param_name }}-{{ filter.min_value.value }}"
+                      name="{{ filter.min_value.param_name }}"
+                      type="number"
+                      placeholder="0"
+                      value="{{ filter.min_value.value | money_without_currency | replace: ',', '' }}"
+                      min="0"
+                      max="{{ filter.max_value.value | money_without_currency | replace: ',', '' }}"
+                      onblur="this.form.submit()"
+                      onclick="this.focus()"
+                    >
+                  </div>
+                  <div>
+                    <label for="filter-{{ filter.max_value.param_name }}-{{ filter.max_value.param_name }}">To:</label>
+                    <input
+                      id="filter-{{ filter.max_value.param_name }}-{{ filter.max_value.param_name }}"
+                      name="{{ filter.max_value.param_name }}"
+                      type="number"
+                      placeholder="{{ filter.range_max | money_without_currency | replace: ',', '' }}"
+                      value="{{ filter.max_value.value | money_without_currency | replace: ',', '' }}"
+                      min="{{ filter.min_value.value | money_without_currency | replace: ',', '' }}"
+                      max="{{ filter.range_max | money_without_currency | replace: ',', '' }}"
+                      onblur="this.form.submit()"
+                      onclick="this.focus()"
+                    >
+                  </div>
+              {% endcase %}
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+      <div class="select-sort">
+        <select
+          id="sort-select"
+          class="form-select"
+          name="sort_by"
+          form="collection-filters"
+          onchange="this.form.submit()"
+        >
+          {% assign sort_by = collection.sort_by | default: collection.default_sort_by %}
+          {% for sort_option in collection.sort_options %}
+         	<option
+            id="sort-{{ sort_option.value }}"
+            value="{{ sort_option.value }}"
+            {% if sort_option.value == sort_by %}selected{% endif %}
+          >
+            {{ sort_option.value }}
+          </option>
+      	  {% endfor %}
+        </select>
+      </div>
+    </div>
+  </form>
+</div>

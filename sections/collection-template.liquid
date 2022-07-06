@@ -1,0 +1,7 @@
+{% render 'collection-filters' %}
+
+<div class="collection-grid">
+  {%- for product in collection.products -%}
+    {{ product.feature_image }}
+  {%- endfor -%}
+</div>

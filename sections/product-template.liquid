@@ -1,0 +1,194 @@
+{% unless product == empty %}
+  <script>
+    window.ud_product = {{ product | json }}
+    window.ud_product.options = {{ product.options_with_values | json }}
+    window.ud_product.metafields = {{ product.metafields.global | json }};
+  </script>
+{% endunless %}
+
+<div id="udProductView" class="container-fluid p-5" v-cloak>
+  <div class="row">
+    <div class="col-12 col-lg-6">
+      <div ref="productImages" id="productImages" class="sticky-top">
+        <div ref="carousel" id="product-carousel" class="swiper">
+          <div class="swiper-wrapper">
+            <div v-for="media in product.media" class="swiper-slide ud-square-image">
+              <video v-if="media.media_type.includes('video')" :src="media.src" controls :poster="media.preview_image"></video>
+              <img v-else :src="imageSize(media.src, '1200x1200')" :alt="media.alt">
+            </div>
+          </div>
+          
+          <div class="swiper-pagination"></div>
+
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-lg-6">
+      <h1 class="text-start mb-2">{ product.title }</h1>
+
+      <h2 class="text-start d-inline mb-2">{ formatMoney(selectedVariant.price) }</h2>
+      <h2 class="text-start d-inline ms-2 mb-2" v-if="selectedVariant.compare_at_price > selectedVariant.price"><del>{ formatMoney(selectedVariant.compare_at_price) }</del></h2>
+
+      <div v-html="product.description"></div>
+
+      <div class="col-12">
+        <div id="product-selectors" class="d-flex flex-column">
+          <div v-for="option in product.options" class="row mb-3">
+            <template v-if="option.values.length > 1">
+              <div class="section-selector">
+                <div class="selector-header">
+                  <p class="selector-label">
+                    { option.name }<template v-if="option.name == 'Color'">: { options[option.name] }</template>
+                  </p>
+                </div>
+      
+                <div class="d-flex flex-wrap">
+                  <div class="form-check" :class="{ 'radio-bubble': option.name !== 'Color', 'radio-color': option.name == 'Color'}" v-for="(value, index) in option.values">
+                    <input class="form-check-input" type="radio" :name="option.name" :id="value" :checked="options[option.name] == value" :value="value" v-model="options[option.name]" hidden>
+                    <label class="form-check-label" :for="value">{ value }</label>
+                  </div>
+                </div>
+              </div> 
+            </template>
+          </div>
+        </div>
+      </div>
+
+      <form ref="addToCartForm" action="/cart/add" method="post" class="row mb-3" data-cart-submit>
+        <input type="hidden" name="id" :value="selectedVariant.id" />
+
+        <div class="col">
+          <button id="AddToCart" :disabled="!selectedVariant.available" ref="addToCart" class="btn btn-primary mw-100 ud-toggle-cart">
+            <template v-if="!selectedVariant.available">Sold Out</template>
+            <template v-else>Add to Cart</template>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  {%- comment -%}
+    Live region for announcing updated price and availability to screen readers
+  {%- endcomment -%}
+  <p class="d-none" data-product-status
+    aria-live="polite"
+    role="status"
+  ></p>
+
+  {%- comment -%}
+    Live region for announcing that the product form has been submitted and the
+    product is in the process being added to the cart
+  {%- endcomment -%}
+  <p class="d-none" data-loader-status
+    aria-live="assertive"
+    role="alert"
+    aria-hidden="true"
+  >{{ 'products.product.loader_label' | t }}</p>
+</div>
+
+<script>
+  if (document.querySelector('#udProductView')) {
+    const productController = Vue.createApp({
+      delimiters: ['{', '}'],
+      data() {
+        return {
+          options: {},
+          quantity: 1,
+        }
+      },
+      computed: {
+        product: function() {
+          let product = window.ud_product;
+          return product;
+        },
+        selectedVariant: function() {
+          let variants = this.product.variants;
+          let options = [];
+
+          for (const [key, value] of Object.entries(this.options)) {
+            options.push(value);
+          }
+
+          let variant = variants.find((variant) => {
+            let variantOptions = variant.title.split(' / ');
+            
+            if(variantOptions.length == options.length && variantOptions.every(x => options.includes(x))) {
+              return variant;
+            }
+          });
+
+          return variant;
+        },
+      },
+      watch: {
+        selectedVariant: function() {
+          if(this.carousel && this.selectedVariant.featured_media !== undefined) {
+            this.carousel.slideTo(this.product.media.map(x => x.id).indexOf(this.selectedVariant.featured_media.id));
+          }
+
+          if (window.history.pushState) {
+            let searchParams = new URLSearchParams(window.location.search);
+            searchParams.set('variant', this.selectedVariant.id);
+            
+            let newPath = window.location.pathname + '?' + searchParams.toString() + window.location.hash;
+            window.history.pushState(null, '', newPath);
+          }
+        }
+      },
+      methods: {
+        updateQuantity(amount) {
+          let quantity = this.quantity + amount;
+
+          this.quantity = quantity <= 0 ? 1 : quantity;
+        },
+
+        formatMoney(value) {
+          return Shopify.formatMoney(value);
+        },
+
+        imageSize(src, size) {
+          return src.replace(/\.jpg|\.png|\.gif|\.jpeg/g, function(match) {
+            return '_'+size+match;
+          });
+        },
+      },
+      created() {
+        let searchParams = new URLSearchParams(window.location.search);
+        let selectedVariant = this.product.variants.find(x => x.id == searchParams.get('variant'));
+
+        if(selectedVariant !== undefined) {
+          this.product.options.forEach((option, index) => {
+            this.options[option.name] = selectedVariant.options[index];
+          });
+        } else {
+          this.product.options.forEach((option, index) => {
+            this.options[option.name] = option.values[0];
+          });
+        }
+      },
+      mounted() {
+        this.carousel = new Swiper(this.$refs.carousel, {
+          grabCursor: true,
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+          pagination: {
+            el: '.swiper-pagination',
+          },
+          spaceBetween: 10,
+          observer: true,
+          observeSlideChildren: true,
+          observeParents: true,
+        });
+
+        if(this.carousel && this.selectedVariant.featured_media !== undefined) {
+          this.carousel.slideTo(this.product.media.map(x => x.id).indexOf(this.selectedVariant.featured_media.id), 0);
+        }
+      }
+    }).mount("#udProductView");
+  }
+</script>

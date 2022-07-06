@@ -1,0 +1,77 @@
+<form action="/cart/add" data-productid="{{ product.id }}" method="post" class="col-12 form-product py-3 px-0" data-cart-submit>
+
+  <div class="select" hidden>
+    <select name="id" data-productid="{{ product.id }}">
+      <option value="{[product.selectedVariant.id]}">{[ product.selectedVariant.title ]}</option>
+    </select>
+  </div>
+
+  <div class="form-row form-options">
+
+    <div ng-hide="option.name == 'Quantity' || option.name == 'Title'" class="col-12 form-group" data-aos="fade-up" data-aos-delay="{[ (100 * ($index + 1)) + 500 ]}" data-aos-offset="-40" data-aos-duration="400" ng-style="{'z-index': ($index == 0) ? 3 : ($index == 1) ? 2 : 1}" ng-repeat="option in product.options">
+      <label class="label">{[ option.name ]}</label>
+      <div ng-if="option.name == 'Color'">
+        <ul class="swatches" style="justify-content: end;">
+          <li ng-repeat="value in option.values track by $index">
+            <input
+              id="{[ option.name | lowercase ]}-{[ value | lowercase ]}"
+              type="radio"
+              name="option-{[ $parent.$index ]}"
+              ng-model="product.selectedOptions['option'+($parent.$index+1)]"
+              ng-value="value">
+            <label for="{[ option.name | lowercase ]}-{[ value | lowercase ]}"></label>
+            <div class="color" style="background-color: {[ product.metafields[value] ]};"></div>
+          </li>
+        </ul>
+      </div>
+
+      <div ng-if="option.name != 'Color'" class="form-group">
+        <select
+         class="form-control w-50"
+         id="{[ option.name | lowercase ]}-{[ value | lowercase ]}"
+         name="option-{[ $parent.$index ]}"
+         ng-model="product.selectedOptions['option'+($parent.$index+1)]"
+         ng-value="value"
+         >
+          <option ng-repeat="value in option.values track by $index">{[ value ]}</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <div id="addQuantityGroup">
+    <label class="text-white" hidden>Quantity</label>
+    <div ud-quantity class="input-group input-group-lg quantity w-50 w-sm-25">
+      <div class="input-group-prepend">
+        <button class="btn" type="button" ng-click="minus()">
+          <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-dash" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M3.5 8a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.5-.5z"/>
+          </svg>
+        </button>
+      </div>
+      <input type="number" name="quantity" class="form-control text-center" ng-model="udCounter.qty" ng-blur="blurred()" ng-change="changed()">
+      <div class="input-group-append">
+        <button class="btn" type="button" ng-click="plus()">
+          <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-plus" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M8 3.5a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5H4a.5.5 0 0 1 0-1h3.5V4a.5.5 0 0 1 .5-.5z"/>
+            <path fill-rule="evenodd" d="M7.5 8a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0V8z"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      var test = {{ product.first_available_variant | json }};
+      console.log('TEST')
+      console.log(test)
+    </script>
+
+    <button type="submit"
+      class="btn btn-primary btn-lg mt-5"
+      ng-disabled="(product.selectedVariant.inventory_policy === 'deny') &&
+                   !(product.selectedVariant.available)"
+      ud-add-item>Add to Bag — {[ product.selectedVariant.price / 100.0 | currency ]}</button>
+  </div>
+
+
+</form>
