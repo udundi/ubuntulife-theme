@@ -1,13 +1,14 @@
 :root {
-  --header-offset: 404px;
+  --header-offset: 84px;
 }
 
 #HeaderContainer {
-  z-index: 100;
+  z-index: 110;
   position: sticky;
   top: 0;
   max-height: 100vh;
   overflow-y: auto;
+  overflow-x: hidden;
 }
 
 #HeaderContainer #site-header {
@@ -118,4 +119,30 @@
 #HeaderContainer #site-header a.cart svg {
   height: 22px;
   width: 22px;
+}
+
+#HeaderContainer #site-header .slide-out-wrapper {
+  position: relative;
+  z-index: 108;
+  flex-direction: column;
+  display: none;
+  opacity: 0;
+  min-height: calc(100vh - var(--header-offset));
+}
+
+#HeaderContainer #site-header .slide-out-wrapper.open {
+  display: flex;
+  opacity: 1;
+  animation: slide-in 800ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@keyframes slide-in {
+  from {
+    opacity: 0;
+    left: -180px;
+  }
+  to {
+    opacity: 1;
+    left: 0px;
+  }
 }
