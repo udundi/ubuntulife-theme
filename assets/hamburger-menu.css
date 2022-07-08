@@ -1,0 +1,52 @@
+#HeaderContainer #site-header .menu-btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 24px;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  margin-right: auto;
+}
+
+#HeaderContainer #site-header .menu-btn .menu-btn-burger {
+  width: 28px;
+  height: 2px;
+  background: black;
+  transition: all 0.4s ease-in-out;
+}
+
+#HeaderContainer #site-header .menu-btn .menu-btn-burger::before,
+#HeaderContainer #site-header .menu-btn .menu-btn-burger::after {
+  content: '';
+  position: absolute;
+  background: black;
+  transition: all 0.4s ease-in-out;
+  height: 2px;
+}
+
+#HeaderContainer #site-header .menu-btn .menu-btn-burger::before {
+  transform: translateY(-8px);
+  width: 20px;
+}
+
+#HeaderContainer #site-header .menu-btn .menu-btn-burger::after {
+  transform: translateY(8px);
+  width: 34px;
+}
+
+/* Burger animation */
+#HeaderContainer #site-header .menu-btn.open .menu-btn-burger {
+  width: 0px;
+  background: transparent;
+}
+
+#HeaderContainer #site-header .menu-btn.open .menu-btn-burger::before {
+  width: 24px;
+  transform: rotate(45deg) translate(-10px, 10px);
+}
+#HeaderContainer #site-header .menu-btn.open .menu-btn-burger::after {
+  width: 24px;
+  transform: rotate(-45deg) translate(-10px, -10px);
+}

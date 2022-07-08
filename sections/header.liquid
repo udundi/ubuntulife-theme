@@ -1,23 +1,26 @@
-<nav id="site-header">
-  <div class="top-bar-wrapper">
+{{ 'hamburger-menu.css' | asset_url | stylesheet_tag }}
+
+<nav id="site-header" class="[&>*]:bg-white relative before:absolute">
+  <div class="z-50 sticky top-0 bg-white w-full border-y-4 border-t-candy-400 border-b-downy-300 pt-1"></div>
+  <div class="z-50 sticky top-3 bg-white flex items-center justify-end py-3 px-5 h-20">
     <div class="menu-btn" id="toggle-menu-button">
       <div class="menu-btn-burger"></div>
     </div>
-    <a href="/" aria-label="go home" class="home">
-      <img src="{{ 'UL_Logo-Black-BeadedTab_1_5.png?' | file_img_url: '256x' }}" alt="Ubuntu Life Logo">
+    <a href="/" aria-label="go home">
+      <img class="h-12 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" src="{{ 'UL_Logo-Black-BeadedTab_1_5.png?' | file_img_url: '256x' }}" alt="Ubuntu Life Logo">
     </a>
-    <a href="/search" class="search">
-      <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <a href="/search">
+      <svg class="h-5 w-5 mr-2" width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path fill-rule="evenodd" clip-rule="evenodd" d="M14.6129 13.5523L20.2769 19.2163L19.2164 20.2768L13.5524 14.6128C10.1579 17.4403 5.13976 17.0978 2.16097 13.8352C-0.81782 10.5727 -0.703563 5.54423 2.42034 2.42033C5.54424 -0.703563 10.5727 -0.817819 13.8353 2.16096C17.0979 5.13975 17.4404 10.1578 14.6129 13.5523ZM8.27637 1.52673C4.54845 1.52673 1.52637 4.54881 1.52637 8.27673C1.5305 12.0029 4.55016 15.0226 8.27637 15.0267C12.0043 15.0267 15.0264 12.0046 15.0264 8.27673C15.0264 4.54881 12.0043 1.52673 8.27637 1.52673Z" fill="black"/>
       </svg>
     </a>
-    <a href="/cart" class="cart">
-      <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <a href="/cart">
+      <svg class="h-5 w-5" width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path fill-rule="evenodd" clip-rule="evenodd" d="M14.7321 5.5V4.8125C14.7321 2.15463 12.5335 0 9.82143 0C7.10931 0 4.91071 2.15463 4.91071 4.8125V5.5H0V19.25C0 20.7688 1.25634 22 2.80612 22H16.8367C18.3865 22 19.6428 20.7688 19.6428 19.25V5.5H14.7321ZM9.82213 1.375C11.7593 1.375 13.3297 2.91402 13.3297 4.8125V5.5H6.31445V4.8125C6.31445 2.91402 7.88488 1.375 9.82213 1.375ZM18.241 6.875H1.40429V19.25C1.40429 20.0094 2.03246 20.625 2.80735 20.625H16.8379C17.6128 20.625 18.241 20.0094 18.241 19.25V6.875Z" fill="black"/>
       </svg>
     </a>
   </div>
-  <div class="slide-out-wrapper">
+  <div id="mobile-navigation-pane" class="relative z-40 flex-col hidden animate-slide-in-h min-h-screen">
     <h1>test</h1>
   </div>
 </nav>
@@ -25,18 +28,19 @@
 <script defer>
   {
     const menu_btn = document.getElementById("toggle-menu-button");
+    const nav_pane = document.getElementById("mobile-navigation-pane");
 
     let menu_open = false;
     menu_btn.addEventListener("click", () => {
-      document
-        .querySelector("#site-header .slide-out-wrapper")
-        .classList
-        .toggle("open");
       if (!menu_open) {
         menu_btn.classList.add('open');
+        nav_pane.classList.remove('hidden');
+        nav_pane.classList.add('flex');
         menu_open = true;
       } else {
         menu_btn.classList.remove('open');
+        nav_pane.classList.add('hidden');
+        nav_pane.classList.remove('flex');
         menu_open = false;
       }
     });
