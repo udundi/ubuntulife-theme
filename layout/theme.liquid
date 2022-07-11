@@ -47,6 +47,7 @@
   <!-- CSS -->
   {{ 'swiper.min.css' | asset_url | stylesheet_tag }}
   {{ 'tailwind-output.css' | asset_url | stylesheet_tag }}
+  {{ 'fonts.css' | asset_url | stylesheet_tag }}
 
   <!-- Javascript -->
   <script src="{{ 'vue.min.js' | asset_url }}" async></script>
@@ -59,7 +60,7 @@
   {{ content_for_header }}
 </head>
 
-<body class="template-{{ request.page_type | handle }} overflow-x-hidden bg-white">
+<body class="template-{{ request.page_type | handle }} overflow-x-hidden bg-white font-avenir">
 
   {%- comment -%}{% include 'ud-cart' %}{%- endcomment -%}
 

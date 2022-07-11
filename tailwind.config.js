@@ -7,6 +7,9 @@ module.exports = {
     "./templates/**/*.liquid",
   ],
   theme: {
+    fontFamily: {
+      'avenir': ['"Avenir"']
+    },
     extend: {
       animation: {
         "slide-in-h": "slide-in-h 0.8s cubic-bezier(0.22, 1, 0.36, 1)",
