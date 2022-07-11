@@ -1,3 +1,5 @@
+/* Avenir */
+
 @font-face {
   font-family: "Avenir";
   src: url('{{ "Avenir-300.otf" | asset_url }}') format("opentype");
@@ -27,5 +29,25 @@
   src: url('{{ "Avenir-600.ttf" | asset_url }}') format("truetype");
   font-style: normal;
   font-weight: 600;
+  font-display: swap;
+}
+
+/* Ubuntu Life */
+
+@font-face {
+  font-family: "Ubuntu Life";
+  src: url('{{ "UbuntuLife.ttf" | asset_url }}') format("truetype"),
+      url('{{ "UbuntuLife.otf" | asset_url }}') format("opentype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Ubuntu Life";
+  src: url('{{ "UbuntuLife-Bold.ttf" | asset_url }}') format("truetype"),
+      url('{{ "UbuntuLife-Bold.otf" | asset_url }}') format("opentype");
+  font-style: normal;
+  font-weight: 700;
   font-display: swap;
 }

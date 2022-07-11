@@ -8,7 +8,8 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      'avenir': ['"Avenir"']
+      'avenir': ['"Avenir"'],
+      'ubuntulife': ['"Ubuntu Life"']
     },
     extend: {
       animation: {
