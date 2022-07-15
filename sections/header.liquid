@@ -20,7 +20,7 @@
       </svg>
     </a>
   </div>
-  <div id="mobile-navigation-pane" class="relative z-40 flex-col hidden animate-slide-in-h min-h-[calc(100vh-92px)] p-4 pb-12">
+  <div id="mobile-navigation-pane" class="mobile-navigation-pane relative z-40 flex-col hidden animate-slide-in-h min-h-[calc(100vh-92px)] p-4 pb-12">
     {% for link in linklists.main-navigation.links %}
       <div class="flex justify-between items-center py-2 border-b border-neutral-400" onclick="toggleMainPane(); toggleChildPane('{{ link.title | downcase }}');">
         <p class="uppercase">{{ link.title }}</p>
@@ -44,9 +44,9 @@
   <!-- Sub-panes -->
   {% for link in linklists.main-navigation.links %}
     {% if link.links != blank %}
-      <div id="mobile-navigation-pane-{{ link.title | downcase }}" class="relative z-40 flex-col hidden animate-slide-in-h min-h-[calc(100vh-92px)] p-4 pb-12">
+      <div id="mobile-navigation-pane-{{ link.title | downcase }}" class="mobile-navigation-pane relative z-40 flex-col hidden animate-slide-in-h min-h-[calc(100vh-92px)] p-4 pb-12">
         <div class="flex justify-between items-center" onclick="toggleMainPane(); toggleChildPane('{{ link.title | downcase }}');">
-          <svg class="mr-3 rotate-180" width="5" height="10" viewBox="0 0 5 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg class="mr-3 mb-2 rotate-180" width="5" height="10" viewBox="0 0 5 10" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0.1113 9.47056C0.0399466 9.39683 0 9.29785 0 9.19479C0 9.09173 0.0399466 8.99276 0.1113 8.91903L4.09772 4.79166L0.1113 0.665123C0.0399466 0.591403 0 0.492425 0 0.389363C0 0.286301 0.0399466 0.187327 0.1113 0.1136C0.145983 0.077648 0.18745 0.049074 0.233254 0.029563C0.279058 0.010052 0.328271 0 0.377988 0C0.427705 0 0.476918 0.010052 0.522722 0.029563C0.568527 0.049074 0.609994 0.077648 0.644676 0.1136L4.88387 4.50352C4.95833 4.58061 5 4.68401 5 4.79166C5 4.89932 4.95833 5.00272 4.88387 5.07981L0.644676 9.46973C0.609994 9.50568 0.568527 9.53426 0.522722 9.55377C0.476918 9.57328 0.427705 9.58333 0.377988 9.58333C0.328271 9.58333 0.279058 9.57328 0.233254 9.55377C0.18745 9.53426 0.145983 9.50568 0.1113 9.46973V9.47056Z" fill="black"/>
           </svg>
           <p class="py-2 border-b border-neutral-400 w-full uppercase">{{ link.title }}</p>
@@ -77,26 +77,64 @@
     menuBtn.addEventListener("click", () => {
       if (!menuOpen) {
         menuBtn.classList.add('open');
+        toggleMainPane(true);
         menuOpen = true;
       } else {
         menuBtn.classList.remove('open');
+        toggleAllNavPanes(false);
         menuOpen = false;
       }
-      toggleMainPane();
     });
 
-    function toggleMainPane() {
-      const mainNavPane = document.getElementById("mobile-navigation-pane");
+    function toggleMainPane(toOpen) {
+      const navPane = document.getElementById("mobile-navigation-pane");
 
-      mainNavPane.classList.toggle("flex");
-      mainNavPane.classList.toggle("hidden");
+      if (toOpen !== undefined) {
+        if (toOpen) {
+          navPane.classList.add("flex");
+          navPane.classList.remove("hidden");
+        } else {
+          navPane.classList.remove("flex");
+          navPane.classList.add("hidden");
+        }
+      } else {
+        navPane.classList.toggle("flex");
+        navPane.classList.toggle("hidden");
+      }
     }
 
-    function toggleChildPane(paneId) {
+    function toggleChildPane(paneId, toOpen) {
       const navPane = document.getElementById(`mobile-navigation-pane-${paneId}`);
 
-      navPane.classList.toggle("flex");
-      navPane.classList.toggle("hidden");
+      if (toOpen !== undefined) {
+        if (toOpen) {
+          navPane.classList.add("flex");
+          navPane.classList.remove("hidden");
+        } else {
+          navPane.classList.remove("flex");
+          navPane.classList.add("hidden");
+        }
+      } else {
+        navPane.classList.toggle("flex");
+        navPane.classList.toggle("hidden");
+      }
+    }
+
+    function toggleAllNavPanes(toOpen) {
+      document.querySelectorAll(".mobile-navigation-pane").forEach((el) => {
+        if (toOpen !== undefined) {
+          if (toOpen) {
+            el.classList.add("flex");
+            el.classList.remove("hidden");
+          } else {
+            el.classList.remove("flex");
+            el.classList.add("hidden");
+          }
+        } else {
+          el.classList.toggle("flex");
+          el.classList.toggle("hidden");
+        }
+      })
     }
   }
 </script>
