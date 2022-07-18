@@ -4,7 +4,7 @@
 To install, run `npm ci`
 
 To have TailwindCSS hot reload the CSS file run the following:
-`npx tailwindcss -i ./tailwind-input.css -o ./assets/tailwind-output.css --minify --watch`
+`npx tailwindcss -i ./tailwind-input.css -o ./theme/assets/tailwind-output.css --minify --watch`
 
 
 ### Fixed Header

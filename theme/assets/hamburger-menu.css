@@ -50,3 +50,9 @@
   width: 24px;
   transform: rotate(-45deg) translate(-10px, -10px);
 }
+
+@media (min-width: 1024px) {
+  #HeaderContainer #site-header .menu-btn {
+    display: none;
+  }
+}
