@@ -36,7 +36,7 @@
       {% for block in section.blocks %}
         {% if block.type == "mobile_featured" %}
           <a class="flex flex-col items-center mr-3" href="{{ block.settings.collection.url }}">
-            <img class="min-w-[14rem] min-h-[15rem] object-cover" src="{{ block.settings.collection.image | image_url: width: 256 }}" alt="{{ block.settings.collection.title }} cover photo">
+            <img class="min-w-[14rem] w-56 min-h-[15rem] h-60 object-cover" src="{{ block.settings.collection.image | image_url: width: 256 }}" alt="{{ block.settings.collection.title }} cover photo">
             <p class="mt-2">{{ block.settings.title }}</p>
           </a>
         {% endif %}
