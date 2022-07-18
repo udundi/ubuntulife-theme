@@ -97,6 +97,14 @@
       }
     });
 
+    window.addEventListener("resize", () => {
+      if (window.innerWidth >= 1024 && menuOpen == true) {
+        menuBtn.classList.remove('open');
+        toggleAllNavPanes(false);
+        menuOpen = false;
+      }
+    });
+
     function toggleMainPane(toOpen) {
       const navPane = document.getElementById("mobile-navigation-pane");
 
