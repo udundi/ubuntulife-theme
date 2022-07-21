@@ -1,0 +1,58 @@
+<section id="index-hero-section" class="flex flex-col items-center">
+  <div class="flex flex-col items-center w-11/12 max-w-xs mt-5">
+    <p class="font-ubuntulife font-bold text-xl">LOREM IPSUM</p>
+    <h1 class="font-black text-4xl text-neutral-800 text-center">LOREM IPSUM DOLOR SIT AMET</h1>
+    <p class="font-medium text-neutral-800 text-center mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+    <a href="#" class="mt-8 w-11/12 py-4 border border-black font-black text-xl text-neutral-800 text-center">SHOP NOW</a>
+  </div>
+  <div class="swiper mt-10 w-screen overflow-hidden">
+    <div class="swiper-wrapper">
+      {% for block in section.blocks %}
+        <div class="swiper-slide relative w-48 h-80 flex flex-col justify-end">
+          <p class="z-10 font-black text-xl text-white mx-4 w-3/4">{{ block.settings.text }}</p>
+          <a class="z-10 w-fit ml-4 mt-3 font-black bg-white hover:bg-downy-400 py-2 px-4 mb-6" href="{{ block.settings.url }}">SHOP NOW</a>
+          <img class="absolute top-0 left-0 w-full h-full object-cover" src="{{ block.settings.image | image_url: width: 768 }}" alt="Featured product image">
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<script>
+  window.onload = () => {
+    const swiper = new Swiper(".swiper", {
+      spaceBetween: 16,
+      slidesPerView: 'auto'
+    });
+  };
+</script>
+
+{% schema %}
+{
+  "name": "Index Hero",
+  "settings": [],
+  "blocks": [
+    {
+      "name": "Carousel Pane",
+      "type": "pane",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Background image"
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Header text"
+        },
+        {
+          "type": "url",
+          "id": "url",
+          "label": "Button link"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

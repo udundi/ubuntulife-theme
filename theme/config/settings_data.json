@@ -177,10 +177,55 @@
         ],
         "settings": {
         }
+      },
+      "index-hero": {
+        "type": "index-hero",
+        "blocks": {
+          "77e6cdc4-c181-4097-a58a-12e82694e093": {
+            "type": "pane",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/UBUNTU_11.19_1.png",
+              "text": "40% Off All  Love Bracelets",
+              "url": "#"
+            }
+          },
+          "982cc7a3-862f-412f-bfed-99b48a0db671": {
+            "type": "pane",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/UBUNTU_11.19_1.png",
+              "text": "40% Off All  Love Bracelets",
+              "url": "#"
+            }
+          },
+          "fc37d08e-985f-46c3-a7f1-2b114a16e733": {
+            "type": "pane",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/UBUNTU_11.19_1.png",
+              "text": "40% Off All  Love Bracelets",
+              "url": "#"
+            }
+          },
+          "2eb55731-324a-4062-8968-026040cd16d7": {
+            "type": "pane",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/UBUNTU_11.19_1.png",
+              "text": "40% Off All  Love Bracelets",
+              "url": "#"
+            }
+          }
+        },
+        "block_order": [
+          "77e6cdc4-c181-4097-a58a-12e82694e093",
+          "982cc7a3-862f-412f-bfed-99b48a0db671",
+          "fc37d08e-985f-46c3-a7f1-2b114a16e733",
+          "2eb55731-324a-4062-8968-026040cd16d7"
+        ],
+        "settings": {
+        }
       }
     },
     "content_for_index": [
-
+      "index-hero"
     ]
   },
   "presets": {

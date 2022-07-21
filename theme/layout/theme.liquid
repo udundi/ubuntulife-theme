@@ -52,7 +52,8 @@
   <!-- Javascript -->
   <script src="{{ 'vue.min.js' | asset_url }}" async></script>
 	<script src="{{ 'ud-theme.js' | asset_url }}" async></script>
-	<script src="{{ 'swiper.min.js' | asset_url }}" async></script>
+
+	<script src="{{ 'swiper.min.js' | asset_url }}" defer></script>
 
 	<script src="{{ 'option_selection.js' | shopify_asset_url }}"></script>
 	<script src="{{ 'rivets-cart.min.js' | asset_url }}"></script>
@@ -70,7 +71,6 @@
     </div>
     <main id="MainContent">
       {{ content_for_layout }}
-      <h1 class="font-ubuntulife font-bold">body-test-tag</h1>
     </main>
     {% section 'footer' %}
   </div>
