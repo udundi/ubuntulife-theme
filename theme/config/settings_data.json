@@ -138,6 +138,30 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/footer-image-1.png"
             }
+          },
+          "2a11427d-4632-4fc7-9053-b4d660f67069": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/image26.jpg"
+            }
+          },
+          "59f6a89c-19f4-4cb5-ae63-f3348e101db8": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/6_926f7c2d-0611-49bc-85a2-e189307a212f.jpg"
+            }
+          },
+          "c5862de0-e09e-466f-9478-93900396729b": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/unnamed_1_f60fdbbd-e800-41a9-8057-109082d7fadf.png"
+            }
+          },
+          "be9007bd-c6e0-4688-8bc4-c53af4d492b0": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/red-5row-bracelet-7.jpg"
+            }
           }
         },
         "block_order": [
@@ -145,7 +169,11 @@
           "10e7f56b-2dd1-4766-9aae-11970e166e20",
           "e2423782-8499-4abe-982c-6aa70c14f9f0",
           "b90efa8a-167d-4bbe-a562-bcfb3f144bd9",
-          "3c70a8d4-fa4d-4eee-94bb-76aea295bb4b"
+          "3c70a8d4-fa4d-4eee-94bb-76aea295bb4b",
+          "2a11427d-4632-4fc7-9053-b4d660f67069",
+          "59f6a89c-19f4-4cb5-ae63-f3348e101db8",
+          "c5862de0-e09e-466f-9478-93900396729b",
+          "be9007bd-c6e0-4688-8bc4-c53af4d492b0"
         ],
         "settings": {
         }
