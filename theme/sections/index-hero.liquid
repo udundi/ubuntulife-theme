@@ -10,7 +10,7 @@
       {% for block in section.blocks %}
         <div class="swiper-slide relative w-48 h-80 flex flex-col justify-end">
           <p class="z-10 font-black text-xl text-white mx-4 w-3/4">{{ block.settings.text }}</p>
-          <a class="z-10 w-fit ml-4 mt-3 font-black bg-white hover:bg-downy-400 py-2 px-4 mb-6" href="{{ block.settings.url }}">SHOP NOW</a>
+          <a class="z-10 w-fit ml-4 mt-3 font-black bg-white hover:bg-downy-300 py-2 px-4 mb-6" href="{{ block.settings.url }}">SHOP NOW</a>
           <img class="absolute top-0 left-0 w-full h-full object-cover" src="{{ block.settings.image | image_url: width: 768 }}" alt="Featured product image">
         </div>
       {% endfor %}
