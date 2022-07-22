@@ -1,0 +1,46 @@
+<section id="index-featured-products" class="mt-20 mb-10 flex flex-col items-center">
+  <h3 class="font-black text-3xl text-neutral-800">RECOMMENDED</h3>
+  <h3 class="hidden">BEST SELLERS</h3>
+  <p class="font-medium text-neutral-800 text-center max-w-xs">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+  <div class="swiper mt-12 w-screen overflow-hidden">
+    <div class="swiper-wrapper">
+      {% for block in section.blocks %}
+        <a href="{{ block.settings.product.url }}" class="swiper-slide w-80 flex flex-col items-center">
+          <img class="w-full aspect-square object-cover border border-downy-300" src="{{ block.settings.product | image_url: width: 1024 }}" alt="Cover photo">
+          <p class="mt-6 font-medium text-lg">{{ block.settings.product.title }}</p>
+          <p class="mt-1">{{ block.settings.product.price | money }}</p>
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const heroSwiper = new Swiper("#index-featured-products .swiper", {
+      spaceBetween: 16,
+      slidesPerView: 'auto',
+      centeredSlides: true
+    });
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Index Featured Products",
+  "settings": [],
+  "blocks": [
+    {
+      "name": "Product",
+      "type": "product",
+      "settings": [
+        {
+          "type": "product",
+          "id": "product",
+          "label": "Featured product"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

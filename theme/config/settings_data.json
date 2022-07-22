@@ -295,12 +295,43 @@
         ],
         "settings": {
         }
+      },
+      "index-featured-products": {
+        "type": "index-featured-products",
+        "blocks": {
+          "b83a089a-451b-44a6-bab2-346370eb627d": {
+            "type": "product",
+            "settings": {
+              "product": "love-bracelet"
+            }
+          },
+          "73dcb3b1-c829-4834-858d-4bcb583eca47": {
+            "type": "product",
+            "settings": {
+              "product": "chain-link-bracelet"
+            }
+          },
+          "5d7438d2-49d3-4d46-be42-981e1e7fb772": {
+            "type": "product",
+            "settings": {
+              "product": "afridrilles-spring-blue-palms"
+            }
+          }
+        },
+        "block_order": [
+          "b83a089a-451b-44a6-bab2-346370eb627d",
+          "73dcb3b1-c829-4834-858d-4bcb583eca47",
+          "5d7438d2-49d3-4d46-be42-981e1e7fb772"
+        ],
+        "settings": {
+        }
       }
     },
     "content_for_index": [
       "index-hero",
       "index-shop-category",
-      "index-featured-carousel"
+      "index-featured-carousel",
+      "index-featured-products"
     ]
   },
   "presets": {
