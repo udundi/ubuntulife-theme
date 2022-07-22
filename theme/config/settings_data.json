@@ -266,11 +266,41 @@
         ],
         "settings": {
         }
+      },
+      "index-featured-carousel": {
+        "type": "index-featured-carousel",
+        "blocks": {
+          "7282ae2f-eb3d-4009-9af0-3cb82245cdde": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/HATS.png",
+              "text": "THE LATEST ARRIVALS",
+              "btn_copy": "SHOP NOW",
+              "url": "#"
+            }
+          },
+          "769d74e7-4dec-4029-9729-d7264e5b35dc": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/ttarftraftraftar.jpg",
+              "text": "THE LATEST ARRIVALS",
+              "btn_copy": "SHOP NOW",
+              "url": "#"
+            }
+          }
+        },
+        "block_order": [
+          "7282ae2f-eb3d-4009-9af0-3cb82245cdde",
+          "769d74e7-4dec-4029-9729-d7264e5b35dc"
+        ],
+        "settings": {
+        }
       }
     },
     "content_for_index": [
       "index-hero",
-      "index-shop-category"
+      "index-shop-category",
+      "index-featured-carousel"
     ]
   },
   "presets": {

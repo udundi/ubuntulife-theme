@@ -1,0 +1,66 @@
+<section id="index-featured-carousel" class="mt-14">
+  <div class="swiper w-screen overflow-hidden">
+    <div class="swiper-wrapper">
+      {% for block in section.blocks %}
+        <div class="swiper-slide w-full h-[36rem] object-cover relative">
+          <img class="w-full h-full aspect-square object-cover" src="{{ block.settings.image | image_url: width: 1024 }}" alt="Cover photo">
+          <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center">
+            <p class="font-black text-center text-3xl w-44">{{ block.settings.text }}</p>
+            <a class="mt-8 py-3 px-6 font-black bg-white hover:bg-downy-300" href="{{ block.settings.url }}">{{ block.settings.btn_copy }}</a>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+    <div class="swiper-pagination [&>*]:w-5 [&>*]:h-5 [&>*]:bg-downy-300 [&>*]:opacity-25 [&>*.swiper-pagination-bullet-active]:opacity-100">
+    </div>
+  </div>
+</section>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const heroSwiper = new Swiper("#index-featured-carousel .swiper", {
+      spaceBetween: 16,
+      slidesPerView: 'auto',
+      pagination: {
+        el: "#index-featured-carousel .swiper-pagination",
+        type: "bullets",
+        clickable: true
+      }
+    });
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Index Featured Carousel",
+  "settings": [],
+  "blocks": [
+    {
+      "name": "Slide",
+      "type": "slide",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Background image"
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Heading copy"
+        },
+        {
+          "type": "text",
+          "id": "btn_copy",
+          "label": "Button copy"
+        },
+        {
+          "type": "url",
+          "id": "url",
+          "label": "URL"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
