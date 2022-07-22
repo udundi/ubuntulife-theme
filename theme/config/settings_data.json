@@ -184,7 +184,7 @@
           "77e6cdc4-c181-4097-a58a-12e82694e093": {
             "type": "pane",
             "settings": {
-              "image": "shopify:\/\/shop_images\/UBUNTU_11.19_1.png",
+              "image": "shopify:\/\/shop_images\/UBUNTU_11.19.204431.jpg",
               "text": "40% Off All  Love Bracelets",
               "url": "#"
             }
@@ -192,7 +192,7 @@
           "982cc7a3-862f-412f-bfed-99b48a0db671": {
             "type": "pane",
             "settings": {
-              "image": "shopify:\/\/shop_images\/UBUNTU_11.19_1.png",
+              "image": "shopify:\/\/shop_images\/UBUNTU_11.19.204431.jpg",
               "text": "40% Off All  Love Bracelets",
               "url": "#"
             }
@@ -200,7 +200,7 @@
           "fc37d08e-985f-46c3-a7f1-2b114a16e733": {
             "type": "pane",
             "settings": {
-              "image": "shopify:\/\/shop_images\/UBUNTU_11.19_1.png",
+              "image": "shopify:\/\/shop_images\/UBUNTU_11.19.204431.jpg",
               "text": "40% Off All  Love Bracelets",
               "url": "#"
             }
@@ -208,7 +208,7 @@
           "2eb55731-324a-4062-8968-026040cd16d7": {
             "type": "pane",
             "settings": {
-              "image": "shopify:\/\/shop_images\/UBUNTU_11.19_1.png",
+              "image": "shopify:\/\/shop_images\/UBUNTU_11.19.204431.jpg",
               "text": "40% Off All  Love Bracelets",
               "url": "#"
             }
@@ -222,10 +222,55 @@
         ],
         "settings": {
         }
+      },
+      "index-shop-category": {
+        "type": "index-shop-category",
+        "blocks": {
+          "3689b6ba-b8d8-455d-97cb-d766511e3278": {
+            "type": "pane",
+            "settings": {
+              "collection": "bags"
+            }
+          },
+          "86084354-70a7-4581-ad76-c8ca0569d5d3": {
+            "type": "pane",
+            "settings": {
+              "collection": "bracelets"
+            }
+          },
+          "1853e462-2921-4e2d-9209-93f5434fedc1": {
+            "type": "pane",
+            "settings": {
+              "collection": "jewelry"
+            }
+          },
+          "04cebf7b-bf7d-4d29-833b-a4b678ffc889": {
+            "type": "pane",
+            "settings": {
+              "collection": "shoes"
+            }
+          },
+          "d656858d-9152-46af-bbb3-2aa255c28c0e": {
+            "type": "pane",
+            "settings": {
+              "collection": "dog-collars"
+            }
+          }
+        },
+        "block_order": [
+          "3689b6ba-b8d8-455d-97cb-d766511e3278",
+          "86084354-70a7-4581-ad76-c8ca0569d5d3",
+          "1853e462-2921-4e2d-9209-93f5434fedc1",
+          "04cebf7b-bf7d-4d29-833b-a4b678ffc889",
+          "d656858d-9152-46af-bbb3-2aa255c28c0e"
+        ],
+        "settings": {
+        }
       }
     },
     "content_for_index": [
-      "index-hero"
+      "index-hero",
+      "index-shop-category"
     ]
   },
   "presets": {

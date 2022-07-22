@@ -19,12 +19,12 @@
 </section>
 
 <script>
-  window.onload = () => {
-    const swiper = new Swiper("#index-hero-section .swiper", {
+  document.addEventListener("DOMContentLoaded", () => {
+    const heroSwiper = new Swiper("#index-hero-section .swiper", {
       spaceBetween: 16,
       slidesPerView: 'auto'
     });
-  };
+  });
 </script>
 
 {% schema %}
