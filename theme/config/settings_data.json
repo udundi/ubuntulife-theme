@@ -400,6 +400,13 @@
         ],
         "settings": {
         }
+      },
+      "index-articles": {
+        "type": "index-articles",
+        "settings": {
+          "blog": "news",
+          "post_limit": 4
+        }
       }
     },
     "content_for_index": [
@@ -408,7 +415,8 @@
       "index-featured-carousel",
       "index-featured-products",
       "index-featured-grid",
-      "index-cause"
+      "index-cause",
+      "index-articles"
     ]
   },
   "presets": {
