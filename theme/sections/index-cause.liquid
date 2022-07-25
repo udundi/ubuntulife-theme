@@ -1,0 +1,49 @@
+<section id="index-cause" class="mt-14 flex flex-col items-center">
+  <div class="swiper w-screen overflow-hidden">
+    <div class="swiper-wrapper">
+      {% for block in section.blocks %}
+        <div class="swiper-slide w-full h-[30rem]">
+          <img class="w-full h-full aspect-square object-cover" src="{{ block.settings.image | image_url: width: 1024 }}" alt="Cover photo">
+        </div>
+      {% endfor %}
+    </div>
+    <div class="swiper-pagination [&>*]:w-5 [&>*]:h-5 [&>*]:bg-downy-300 [&>*]:opacity-25 [&>*.swiper-pagination-bullet-active]:opacity-100">
+    </div>
+  </div>
+  <h4 class="mt-5 text-xl font-black text-neutral-800">CREATING FOR A CAUSE</h4>
+  <a href="#" class="underline text-downy-300 mt-1">LEARN ABOUT US</a>
+</section>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const heroSwiper = new Swiper("#index-cause .swiper", {
+      spaceBetween: 16,
+      slidesPerView: 'auto',
+      pagination: {
+        el: "#index-cause .swiper-pagination",
+        type: "bullets",
+        clickable: true
+      }
+    });
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Index Cause",
+  "settings": [],
+  "blocks": [
+    {
+      "name": "Slide",
+      "type": "slide",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Slide image"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
