@@ -1,0 +1,42 @@
+<section id="index-featured-grid" class="mt-16 mb-10 px-4 flex flex-col items-center">
+  {% for block in section.blocks %}
+    <div class="mt-2 group relative w-full cursor-default">
+      <img class="w-full h-[36rem] object-cover group-hover:border border-downy-300" src="{{ block.settings.image | image_url: width: 1024 }}" alt="Cover photo">
+      <div class="absolute top-11 left-3 flex flex-col">
+        <p class="font-black text-3xl w-48">{{ block.settings.header }}</p>
+        <a href="{{ block.settings.url }}" class="w-fit mt-8 py-3 px-6 font-black bg-white hover:bg-downy-300">SHOP NOW</a>
+      </div>  
+    </div>
+  {% endfor %}
+</section>
+
+{% schema %}
+{
+  "name": "Index Featured Grid",
+  "settings": [],
+  "blocks": [
+    {
+      "name": "Product",
+      "type": "product",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Background image"
+        },
+        {
+          "type": "text",
+          "id": "header",
+          "label": "Header"
+        },
+        {
+          "type": "url",
+          "id": "url",
+          "label": "URL",
+          "info": "Url the btn links to"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

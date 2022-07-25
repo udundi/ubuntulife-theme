@@ -325,13 +325,59 @@
         ],
         "settings": {
         }
+      },
+      "index-featured-grid": {
+        "type": "index-featured-grid",
+        "blocks": {
+          "a829e748-29c8-432e-9767-954091ebf2b1": {
+            "type": "product",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/ttarftraftraftar.jpg",
+              "header": "The Latest Arrivals",
+              "url": "#"
+            }
+          },
+          "86b54096-36dd-4472-b287-f0c929a504b1": {
+            "type": "product",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/UBUNTU_11.19.204431.jpg",
+              "header": "The Latest Arrivals",
+              "url": "#"
+            }
+          },
+          "86bd3aa2-9b15-4aa9-8389-6df881204671": {
+            "type": "product",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/UBUNTU_1.6.222275.jpg",
+              "header": "The Latest Arrivals",
+              "url": "#"
+            }
+          },
+          "71699677-f06b-455d-af64-6126169175a1": {
+            "type": "product",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/go-to_tote_in_dusty_rose_1_1.png",
+              "header": "The Latest Arrivals",
+              "url": "#"
+            }
+          }
+        },
+        "block_order": [
+          "a829e748-29c8-432e-9767-954091ebf2b1",
+          "86b54096-36dd-4472-b287-f0c929a504b1",
+          "86bd3aa2-9b15-4aa9-8389-6df881204671",
+          "71699677-f06b-455d-af64-6126169175a1"
+        ],
+        "settings": {
+        }
       }
     },
     "content_for_index": [
       "index-hero",
       "index-shop-category",
       "index-featured-carousel",
-      "index-featured-products"
+      "index-featured-products",
+      "index-featured-grid"
     ]
   },
   "presets": {
