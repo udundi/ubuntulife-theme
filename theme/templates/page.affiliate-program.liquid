@@ -1,0 +1,23 @@
+<div class="hero-container h-[300px] width-full bg-black">
+    <image class="">
+</div>
+<div class="flex flex-col items-center wrapper bg-blue-50">
+    <p class="mt-16 text-3xl font-black">BENEFITS</p>
+    <p class="mt-5 px-[18px] text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <div class="swiper-wrapper h-[500px]">
+
+                {% for block in section.blocks %}
+                {% assign carousel_collection = collections[block.settings.handle] %}
+                <div class="swiper-slide">
+
+                    <h3 class="collection-title font-optima mb-1">{{ carousel_collection.title }}</h3>
+                    <p class="description mb-0">{{ block.settings.description }}</p>
+
+                </div>
+                {% endfor %}
+        <div class="w-[300px] h-[300px] bg-teal-500 px-10">
+            
+        </div>
+    </div>
+
+</div>
