@@ -1,4 +1,5 @@
 # unbuntulife-theme
+To serve the theme change your directory into the theme/ folder.
 
 ### NPM & Tailwind
 To install, run `npm ci`
