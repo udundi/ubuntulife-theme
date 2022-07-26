@@ -8,8 +8,8 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      'avenir': ['"Avenir"'],
-      'ubuntulife': ['"Ubuntu Life"']
+      avenir: ['"Avenir"'],
+      ubuntulife: ['"Ubuntu Life"'],
     },
     extend: {
       animation: {
@@ -52,10 +52,20 @@ module.exports = {
           800: "#1d4f52",
           900: "#1c4245",
         },
+        whiteLinen: {
+          50: "#fdfaf7",
+          100: "#f8f1e8",
+          200: "#ead6be",
+          300: "#ddb894",
+          400: "#ce9569",
+          500: "#c47c4b",
+          600: "#b66740",
+          700: "#985236",
+          800: "#7a4332",
+          900: "#63382b",
+        },
       },
     },
   },
-  plugins: [
-    require('@tailwindcss/line-clamp')
-  ],
+  plugins: [require("@tailwindcss/line-clamp")],
 };
