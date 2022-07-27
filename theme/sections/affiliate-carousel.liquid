@@ -2,17 +2,14 @@
   <div class="swiper w-screen overflow-hidden">
     <div class="swiper-wrapper">
       {% for block in section.blocks %}
-        <div class="swiper-slide w-full h-[36rem] relative">
-          <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center bg-gray-50 hover:bg-downy-300">
-            <p class="font-black text-center text-3xl w-44">
-              {{ block.settings.text }}
+        <div class="swiper-slide w-[280px] h-[280px] sm:w-[280px] sm:h-[280px] relative bg-gray-50 hover:bg-downy-300">
+          <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center">
+            <p class="font-black text-center text-xl w-44">
+              {{ block.settings.title_copy }}
             </p>
-            <a
-              class="mt-8 py-3 px-6 font-black bg-white hover:bg-downy-300"
-              href="{{ block.settings.url }}"
-            >
-              {{- block.settings.btn_copy -}}
-            </a>
+            <p class="font-black text-center text-lg w-44">
+              {{ block.settings.card_copy }}
+            </p>
           </div>
         </div>
       {% endfor %}
@@ -26,8 +23,11 @@
 <script>
   document.addEventListener("DOMContentLoaded", () => {
     const heroSwiper = new Swiper("#affiliate-carousel .swiper", {
-      spaceBetween: 16,
+      slidesOffsetBefore: 22,
+      spaceBetween: 25,
       slidesPerView: 'auto',
+      loop: true,
+      loopedSlides: 4,
       pagination: {
         el: "# affiliate-carousel .swiper-pagination",
         type: "bullets",
@@ -48,12 +48,12 @@
       "settings": [
         {
           "type": "text",
-          "id": "title-copy",
+          "id": "title_copy",
           "label": "Title copy"
         },
         {
           "type": "text",
-          "id": "card-copy",
+          "id": "card_copy",
           "label": "Card copy"
         }
       ]
