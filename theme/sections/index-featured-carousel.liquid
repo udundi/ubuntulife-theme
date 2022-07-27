@@ -18,15 +18,41 @@
 
 <script>
   document.addEventListener("DOMContentLoaded", () => {
-    const heroSwiper = new Swiper("#index-featured-carousel .swiper", {
-      spaceBetween: 16,
-      slidesPerView: 'auto',
-      pagination: {
-        el: "#index-featured-carousel .swiper-pagination",
-        type: "bullets",
-        clickable: true
+    let init = false;
+    let swiper = Swiper;
+    function swiperMode() {
+      let mobile = window.matchMedia('(min-width: 0px) and (max-width: 767px)');
+      let desktop = window.matchMedia('(min-width: 768px)');
+
+      // Enable (for mobile)
+      if (mobile.matches) {
+        if (!init) {
+          init = true;
+          swiper = new Swiper("#index-featured-carousel .swiper", {
+            spaceBetween: 16,
+            slidesPerView: 'auto',
+            pagination: {
+              el: "#index-featured-carousel .swiper-pagination",
+              type: "bullets",
+              clickable: true
+            }
+          });
+        }
+      } else if (desktop.matches) {
+        if (swiper.destroy) {
+          swiper.destroy();
+        }
+        init = false;
       }
-    });
+    }
+
+    // Run swiperMode on window resize
+    window.addEventListener('resize', function() {
+      swiperMode();
+    })
+
+    // Run on first load
+    swiperMode();
   });
 </script>
 
