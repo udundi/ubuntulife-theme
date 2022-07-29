@@ -1,17 +1,36 @@
 <div class="page-content">
-  <div class="flex items-center sm:object-cover hero-container h-[390px] w-full">
+  <div class="flex relative items-bottom hero-container mb-[200px] sm:mb-[100px] sm:pt-[10px]">
     <image
-      class="visible sm:hidden w-full"
+      class="absolute flex sm:hidden w-full object-cover"
       src="{{ '2021-FlatLay-113_1-mobile.png' | file_img_url: '390x595' }}"
-    />
+    >
+    <div class="w-full flex flex-col sm:hidden">
+      <h1 class="text-[35px] tracking-wide font-black z-10 w-[500pxhg] flex sm:hidden text-center self-center mt-[70px] mb-5">JOIN OUR AFFILIATE<br/> PROGRAM</h1>
+      <p class="text-[15px] text-center text-extra bold self-center w-[350px] mt-[10px] z-10 flex sm:hidden">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <a class="z-10 flex sm:hidden self-center" href="/">
+        <div class="flex w-[250px] h-[50px] text-[14px] tracking-wide bg-downy-300 z-10 text-white mt-[50px] items-center justify-center">JOIN NOW</div>
+      </a>
+      
+    </div>
+  </image>
     <image
-    class="invisible sm:visible w-full"
+    class="absolute hidden sm:flex w-full h-full object-cover " 
     src="{{ '2021-FlatLay-113_1.png' | file_img_url: '1401x364' }}"
-  />
+  >
+  <div class="w-full hidden sm:flex sm:flex-col pt-[35px]">
+    <h1 class="text-[25px] font-black z-10 w-[450px] hidden sm:flex self-center mb-3">JOIN OUR AFFILIATE PROGRAM</h1>
+    <p class="text-[15px] text-center text-black self-center w-[350px] z-10 hidden sm:flex">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <a class="z-10 hidden sm:flex self-center" href="/">
+      <div class="w-[250px] h-[50px] text-[20px] tracking-wide bg-downy-300 z-10 text-white mt-3 items-center justify-center hidden sm:flex">JOIN NOW</div>
+    </a>
   </div>
-  <div class="flex flex-col sm:flex-row sm:space-x-[500px] justify-center items-center wrapper h-[260px] sm:h-[150px] mt-[100px] sm:mt-[30px] sm:mb-[30px] top-8">
-    <p class="text-4xl font-black">BENEFITS</p>
-    <p class="px-[5px] text-center sm:text-left w-[300px] sm:w-[500px]">
+</image>
+
+  </div>
+  
+  <div class="flex flex-col sm:flex-row sm:space-x-[30%] justify-center items-center wrapper h-[260px] sm:h-[100px] sm:mt-[30px] sm:mb-[30px]">
+    <p class="text-4xl font-black sm:ml-[50px]">BENEFITS</p>
+    <p class="px-[5px] text-center text-sm sm:mt-4 sm:text-left w-[300px] sm:w-[400px]">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua.
     </p>
@@ -19,86 +38,94 @@
 
   {% section 'affiliate-carousel' %}
 
-  <div class="flex flex-col sm:flex-row sm:justify-start sm:h-[600px] w-full">
-  <div class="flex bg-cover image-2 top-0 h-[215px] sm:h-[692px]">
+  <div class="flex flex-col sm:flex-row sm:justify-start sm:h-[700px] w-full">
+  <div class="flex object-none image-2 top-0 mb-10 self-left">
     <image
-      class="visible sm:invisible"
+      class="flex sm:hidden object-none"
       src="{{ 'Rectangle_93-mobile.png' | file_img_url: '390x215' }}"
     />
     <image
-    class="invisible sm:visible"
+    class="hidden sm:block object-none"
     src="{{ 'Rectangle_93.png' | file_img_url: '607x692' }}"
   />
   </div>
 
-</div>
-  <div class="flex flex-col justify-center items-left wrapper h-[250px] w-full sm:w-[400px] mt-[20px] px-7">
+<div class="sm:flex sm: flex-col translate-x-10">
+  <div class="flex flex-col justify-start items-left wrapper h-[250px] w-full sm:w-[400px] mt-[20px] sm:mt-0 sm:ml-5 sm:px-[0px] px-7">
     <p class="text-4xl font-black mb-5">SIGN UP TODAY!</p>
-    <p class="px-[5px] w-[300px]">
+    <p class="px-[5px] w-[300px] sm:w-[350px]">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua.
     </p>
   </div>
-  <div class="flex flex-col sm:w-[400px] justify-start items-left wrapper h-[800px] mt-[10px] px-7">
-    <form class="w-full max-w-sm sm:w-[500px]">
-      <p class="w-[20rem] pt-5">FIRST NAME</p>
-      <div class="flex items-center border-b border-gray-500 py-2 w-[223px] h-[80px]">
+  <div class="flex flex-col w-full sm:w-[600px] justify-start items-center wrapper h-[800px] mt-[10px] px-7">
+    <form class="w-full pr-4 sm:p-0">
+      <div class="sm:flex sm:flex-row">
+        <div class="sm:flex sm:flex-col">
+          <p class="w-[20rem] pt-[25px] text-xs text-bold">FIRST NAME</p>
+          <div class="flex items-center border-b border-gray-500 py-2 w-[223px] h-[40px] sm:h-[50px]">
+            <input
+            class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 sm:translate-y-1 leading-tight focus:outline-none text-sm"
+            type="text"
+            placeholder="Enter your first name"
+            aria-label="Full name"
+            >
+          </div>
+        </div>
+        <div class="sm:flex sm:flex-col">
+          <p class="w-[20rem] pt-[25px] text-xs text-bold">LAST NAME</p>
+          <div class="flex items-center border-b border-gray-500 py-2 w-[223px] h-[40px] sm:h-[50px]">
+            <input
+            class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 sm:translate-y-1 leading-tight focus:outline-none text-sm"
+            type="text"
+            placeholder="Enter your last name"
+            aria-label="Full name"
+            >
+          </div>
+        </div>
+      </div>
+      <p class="w-[20rem] pt-[25px] text-xs text-bold">E-MAIL ADDRESS</p>
+      <div class="flex items-center border-b border-gray-500 py-2 h-[40px] sm:h-[50px]">
         <input
-          class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 leading-tight focus:outline-none"
-          type="text"
-          placeholder="Jane Doe"
-          aria-label="Full name"
+        class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 sm:translate-y-1 leading-tight focus:outline-none text-sm"
+        type="text"
+        placeholder="Enter your email address"
+        aria-label="Full name"
         >
       </div>
-      <p class="w-[20rem] pt-5">LAST NAME</p>
-      <div class="flex items-center border-b border-gray-500 py-2 w-[223px] h-[80px]">
+      <p class="w-[20rem] pt-[25px] text-xs text-bold">PASSWORD</p>
+      <div class="flex items-center border-b border-gray-500 py-2 h-[40px] sm:h-[50px]">
         <input
-          class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 leading-tight focus:outline-none"
-          type="text"
-          placeholder="Jane Doe"
-          aria-label="Full name"
+        class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 sm:translate-y-1 leading-tight focus:outline-none text-sm"
+        type="text"
+        placeholder="Enter a password"
+        aria-label="Full name"
         >
       </div>
-      <p class="w-[20rem] pt-5">E-MAIL ADDRESS</p>
-      <div class="flex items-center border-b border-gray-500 py-2 h-[80px]">
+      <p class="w-[20rem] pt-[25px] text-xs text-bold">CONFIRM PASSWORD</p>
+      <div class="flex items-center border-b border-gray-500 py-2 h-[40px] sm:h-[50px]">
         <input
-          class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 leading-tight focus:outline-none"
-          type="text"
-          placeholder="Jane Doe"
-          aria-label="Full name"
-        >
-      </div>
-      <p class="w-[20rem] pt-5">PASSWORD</p>
-      <div class="flex items-center border-b border-gray-500 py-2 h-[80px]">
-        <input
-          class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 leading-tight focus:outline-none"
-          type="text"
-          placeholder="Jane Doe"
-          aria-label="Full name"
-        >
-      </div>
-      <p class="w-[20rem] pt-5">CONFIRM PASSWORD</p>
-      <div class="flex items-center border-b border-gray-500 py-2 h-[80px]">
-        <input
-          class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 leading-tight focus:outline-none"
-          type="text"
-          placeholder="Jane Doe"
-          aria-label="Full name"
+        class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 sm:translate-y-1 leading-tight focus:outline-none text-sm"
+        type="text"
+        placeholder="Confirm your password"
+        aria-label="Full name"
         >
       </div>
       <button
-        class="w-[331px] h-[57px] mt-8 flex-shrink-0 bg-teal-500 hover:bg-teal-700 border-teal-500 hover:border-teal-700 text-xl border-4 text-white py-1 px-2 visible sm:invisible"
-        type="button"
+      class="w-[320px] h-[57px] mt-[50px] tracking-wide self-center items-center justify-center flex-shrink-0 bg-downy-300 hover:bg-downy-700 border-downy-500 text-xl text-white py-1 px-2 flex sm:hidden"
+      type="button" 
       >
-        JOIN NOW
-      </button>
-      <button
-      class="w-[331px] h-[57px] mt-8 flex-shrink-0 bg-teal-500 hover:bg-teal-700 border-teal-500 hover:border-teal-700 text-xl border-4 text-white py-1 px-2 invisible sm:visible"
-      type="button"
-    >
-      JOIN
+      JOIN NOW
     </button>
-    </form>
-  </div>
+    <button
+    class="w-[300px] h-[57px] mt-[64px] tracking-wide self-left items-center justify-center flex-shrink-0 bg-downy-300 hover:bg-downy-700 text-xl text-white py-1 px-2 hidden sm:flex"
+    type="button"
+    >
+    JOIN
+  </button>
+</form>
+</div>
+</div>
+</div>
 </div>
 </div>
