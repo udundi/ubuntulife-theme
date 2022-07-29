@@ -6,11 +6,11 @@
           id="{{ block.id }}"
           class="swiper-slide w-[280px] h-[280px] sm:w-[280px] sm:h-[280px] relative bg-gray-50 sm:hover:bg-downy-300 transition-all duration-1000"
         >
-          <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center">
-            <p class="font-black text-center text-xl w-44">
-              {{ block.settings.title_copy }}
+          <div class=" flex flex-col justify-start items-left">
+            <p class="font-black text-left text-xl w-[200px] sm:w-[100px] self-left mt-8 ml-5">
+              {{ block.settings.title_copy | upcase }}
             </p>
-            <p class="font-black text-center text-lg w-44">
+            <p class="font-black text-left ml-5 w-[130px] h-full text-md mt-5">
               {{ block.settings.card_copy }}
             </p>
           </div>
