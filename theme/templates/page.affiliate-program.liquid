@@ -24,95 +24,67 @@
 
   {% section 'affiliate-carousel' %}
 
-  <div class="flex flex-col sm:flex-row sm:justify-start sm:h-[700px] w-full">
-  <div class="flex image-2 top-0 mb-9 self-left">
+  <div class="flex flex-col lg:flex-row lg:items-end 2xl:justify-center mt-16 mb-24">
     <image
-      class="flex sm:hidden object-none"
-      src="{{ 'Rectangle_93-mobile.png' | file_img_url: '390x215' }}"
+      class="w-full lg:w-auto h-56 lg:h-[38rem] object-cover"
+      src="{{ 'Rectangle_93.png' | file_img_url: '1024x' }}"
     />
-    <image
-    class="hidden sm:flex w-[607px] h-[692px] object-none"
-    src="{{ 'Rectangle_93.png' | file_img_url: '607x692' }}"
-  />
-  </div>
-
-<div class="sm:flex sm:flex-col">
-  <div class="flex flex-col justify-start items-left wrapper h-[150px] w-full mb-5 sm:w-[400px] mt-[10px] sm:mt-0 sm:ml-7 sm:px-[0px] px-7">
-    <p class="text-4xl font-black mb-5">SIGN UP TODAY!</p>
-    <p class="w-[300px] sm:w-[350px]">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua.
-    </p>
-  </div>
-        <div class="flex flex-col w-full sm:w-[600px] justify-start items-center wrapper h-[600px] px-7">
-          <form class="w-full pr-4 sm:p-0">
-                <div class="sm:flex sm:flex-row">
-                  <div class="sm:flex sm:flex-col">
-                    <p class="w-[20rem] pt-[25px] text-xs text-black">FIRST NAME</p>
-                    <div class="flex items-center border-b border-gray-500 py-2 w-[223px] h-[40px] sm:h-[50px]">
-                      <input
-                      class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 sm:translate-y-1 leading-tight focus:outline-none text-sm"
-                      type="text"
-                      placeholder="Enter your first name"
-                      aria-label="Full name"
-                      >
-                    </div>
-                  </div>
-                  <div class="sm:flex sm:flex-col">
-                    <p class="w-[20rem] pt-[25px] text-xs text-black">LAST NAME</p>
-                    <div class="flex items-center border-b border-gray-500 py-2 w-[223px] h-[40px] sm:h-[50px]">
-                      <input
-                      class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 sm:translate-y-1 leading-tight focus:outline-none text-sm"
-                      type="text"
-                      placeholder="Enter your last name"
-                      aria-label="Full name"
-                      >
-                    </div>
-                  </div>
-                </div>
-                <p class="w-[20rem] pt-[25px] text-xs text-black">E-MAIL ADDRESS</p>
-                <div class="flex items-center border-b border-gray-500 py-2 h-[40px] sm:h-[50px]">
-                  <input
-                  class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 sm:translate-y-1 leading-tight focus:outline-none text-sm"
-                  type="text"
-                  placeholder="Enter your email address"
-                  aria-label="Full name"
-                  >
-                </div>
-                <p class="w-[20rem] pt-[25px] text-xs text-black">PASSWORD</p>
-                <div class="flex items-center border-b border-gray-500 py-2 h-[40px] sm:h-[50px]">
-                  <input
-                  class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 sm:translate-y-1 leading-tight focus:outline-none text-sm"
-                  type="text"
-                  placeholder="Enter a password"
-                  aria-label="Full name"
-                  >
-                </div>
-                <p class="w-[20rem] pt-[25px] text-xs text-black">CONFIRM PASSWORD</p>
-                <div class="flex items-center border-b border-gray-500 py-2 h-[40px] sm:h-[50px]">
-                  <input
-                  class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 sm:translate-y-1 leading-tight focus:outline-none text-sm"
-                  type="text"
-                  placeholder="Confirm your password"
-                  aria-label="Full name"
-                  >
-                </div>
-                <button
-                class="w-[320px] h-[57px] mt-[50px] tracking-wide self-center items-center justify-center flex-shrink-0 bg-downy-300 hover:bg-downy-500 text-xl text-white py-1 px-2 flex sm:hidden"
-                type="button" 
-                >
-                JOIN NOW
-              </button>
-              <button
-              class="w-[300px] h-[57px] mt-[90px] tracking-wide self-left items-center justify-center flex-shrink-0 bg-downy-300 hover:bg-downy-500 text-xl text-white py-1 px-2 hidden sm:flex"
-              type="button"
-              >
-              JOIN
-            </button>
-          </form>
+    <div class="flex flex-col w-full max-w-sm md:max-w-md lg:max-w-xl mx-auto lg:mx-0 lg:ml-20 px-6 mt-8">
+      <p class="lg:hidden text-4xl font-black text-neutral-800">SIGN UP TODAY!</p>
+      <p class="hidden lg:block text-4xl font-black text-neutral-800">SIGN UP TO GET STARTED</p>
+      <p class="mt-4 lg:mt-8">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+      <form class="w-full flex flex-col mt-6 lg:mt-8">
+        <div class="flex flex-col lg:flex-row">
+          <div class="w-2/3 lg:w-1/2 lg:mr-4">
+            <p class="text-xs">FIRST NAME</p>
+            <input
+              class="border-b border-gray-500 w-full text-gray-700 pr-3 py-3 leading-tight focus:outline-none text-sm"
+              type="text"
+              placeholder="Enter your first name"
+              aria-label="First name"
+            >
+          </div>
+          <div class="w-2/3 lg:w-1/2">
+            <p class="mt-6 lg:mt-0 text-xs">LAST NAME</p>
+            <input
+              class="border-b border-gray-500 w-full text-gray-700 pr-3 py-3 leading-tight focus:outline-none text-sm"
+              type="text"
+              placeholder="Enter your last name"
+              aria-label="Last name"
+            >
+          </div>
         </div>
-      </div>
+        <p class="mt-6 text-xs">E-MAIL ADDRESS</p>
+        <input
+          class="border-b border-gray-500 w-full text-gray-700 pr-3 py-3 leading-tight focus:outline-none text-sm"
+          type="text"
+          placeholder="Enter your email address"
+          aria-label="email address"
+        >
+        <p class="mt-6 text-xs">PASSWORD</p>
+        <input
+          class="border-b border-gray-500 w-full text-gray-700 pr-3 py-3 leading-tight focus:outline-none text-sm"
+          type="password"
+          placeholder="Enter a password"
+          aria-label="password"
+        >
+        <p class="mt-6 text-xs">CONFIRM PASSWORD</p>
+        <input
+          class="border-b border-gray-500 w-full text-gray-700 pr-3 py-3 leading-tight focus:outline-none text-sm"
+          type="password"
+          placeholder="Confirm your password"
+          aria-label="confirm password"
+        >
+        <button
+          class="w-full lg:w-1/2 mt-10 lg:mt-16 tracking-wide bg-downy-300 hover:bg-downy-400 text-xl font-black text-white py-3"
+          type="button" 
+        >
+          JOIN<span class="lg:hidden">&nbsp;NOW</span>
+        </button>
+      </form>
     </div>
   </div>
-  <div class="h-[130px] w-full hidden sm:flex"></div>
 </div>
