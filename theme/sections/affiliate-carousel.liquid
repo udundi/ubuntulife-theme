@@ -1,25 +1,22 @@
-<section id="affiliate-carousel" class="h-[375px]">
+<section id="affiliate-carousel">
   <div class="swiper w-screen overflow-hidden">
     <div class="swiper-wrapper mr-5">
       {% for block in section.blocks %}
         <div
           id="{{ block.id }}"
-          class="swiper-slide w-[280px] h-[280px] sm:w-[280px] sm:h-[280px] relative bg-gray-50 sm:hover:bg-downy-300 transition-all duration-1000"
+          class="swiper-slide w-80 h-72 py-14 px-6 bg-gray-50 sm:hover:bg-downy-300 transition-all duration-1000"
         >
           <div class=" flex flex-col justify-start items-left">
-            <p class="font-black text-left text-xl w-[200px] sm:w-[100px] self-left mt-8 ml-5">
+            <p class="font-black text-neutral-800 text-xl md:text-2xl">
               {{ block.settings.title_copy | upcase }}
             </p>
-            <p class="font-black text-left ml-5 w-[130px] h-full text-md mt-5">
+            <p class="font-medium mt-8">
               {{ block.settings.card_copy }}
             </p>
           </div>
         </div>
       {% endfor %}
     </div>
-    <div
-      class="swiper-pagination [&>*]:w-5 [&>*]:h-5 [&>*]:bg-downy-300 [&>*]:opacity-25 [&>*.swiper-pagination-bullet-active]:opacity-100"
-    ></div>
   </div>
 </section>
 
@@ -71,44 +68,29 @@
           document.getElementById(affSwiper.slides[currentSlide].id).classList.remove("bg-gray-50");
           document.getElementById(affSwiper.slides[currentSlide].id).classList.add("bg-downy-300");
         },
-          },
+      },
       breakpoints: {
         390: {
-          updateOnWindowResize: true,
           slidesPerGroup: 1,
           slidesOffsetBefore: 5,
           centeredSlides: true,
           centeredSlideBounds: true,
           spaceBetween: 30,
-          },
-          640: {
-            updateOnWindowResize: true,
-            slideToClickedSlide: true,
-            spaceBetween: 20,
-            slideToClickedSlide: true,
-          },
-          768: {
-            updateOnWindowResize: true,
-            slidesOffsetBefore: 50,
-            centeredSlides: false,
-            spaceBetween: 40,
-            slideToClickedSlide: true,
-          },
-          1024: {
-            updateOnWindowResize: true,
-            slidesOffsetBefore: 0,
-            centeredSlides: false,
-            centerInsufficientSlides: true,
-            spaceBetween: 50,
-          },
-          1300: {
-            updateOnWindowResize: true,
-            slidesOffsetBefore: 0,
-            centeredSlides: false,
-            centerInsufficientSlides: true,
-          },
         },
-
+        640: {
+          spaceBetween: 20,
+        },
+        768: {
+          slidesOffsetBefore: 50,
+          centeredSlides: false,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesOffsetBefore: 0,
+          centerInsufficientSlides: true,
+          spaceBetween: 50,
+        },
+      }
     });
   });
 </script>
