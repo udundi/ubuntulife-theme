@@ -8,8 +8,8 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      'avenir': ['"Avenir"'],
-      'ubuntulife': ['"Ubuntu Life"']
+      avenir: ['"Avenir"'],
+      ubuntulife: ['"Ubuntu Life"'],
     },
     extend: {
       animation: {
@@ -55,7 +55,5 @@ module.exports = {
       },
     },
   },
-  plugins: [
-    require('@tailwindcss/line-clamp')
-  ],
+  plugins: [require("@tailwindcss/line-clamp")],
 };
