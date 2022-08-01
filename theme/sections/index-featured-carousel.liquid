@@ -2,11 +2,11 @@
   <div class="swiper w-screen overflow-hidden">
     <div class="swiper-wrapper">
       {% for block in section.blocks %}
-        <div class="swiper-slide w-full h-[36rem] relative">
+        <div class="swiper-slide w-full md:w-1/2 h-[36rem] md:h-auto ml-2 first:ml-0 first:mr-2 relative">
           <img class="w-full h-full aspect-square object-cover" src="{{ block.settings.image | image_url: width: 1024 }}" alt="Cover photo">
-          <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center">
-            <p class="font-black text-center text-3xl w-44">{{ block.settings.text }}</p>
-            <a class="mt-8 py-3 px-6 font-black bg-white hover:bg-downy-300" href="{{ block.settings.url }}">{{ block.settings.btn_copy }}</a>
+          <div class="absolute top-1/2 md:top-12 left-1/2 md:left-11 -translate-x-1/2 md:translate-x-0 -translate-y-1/2 md:translate-y-0 flex flex-col items-center md:items-start">
+            <p class="font-black text-center md:text-left md:text-neutral-800 text-3xl 2xl:text-4xl leading-10 w-44 2xl:w-52">{{ block.settings.text }}</p>
+            <a class="mt-8 py-3 px-6 font-black 2xl:text-lg bg-white hover:bg-downy-300" href="{{ block.settings.url }}">{{ block.settings.btn_copy }}</a>
           </div>
         </div>
       {% endfor %}
@@ -18,15 +18,41 @@
 
 <script>
   document.addEventListener("DOMContentLoaded", () => {
-    const heroSwiper = new Swiper("#index-featured-carousel .swiper", {
-      spaceBetween: 16,
-      slidesPerView: 'auto',
-      pagination: {
-        el: "#index-featured-carousel .swiper-pagination",
-        type: "bullets",
-        clickable: true
+    let init = false;
+    let swiper = Swiper;
+    function swiperMode() {
+      let mobile = window.matchMedia('(min-width: 0px) and (max-width: 767px)');
+      let desktop = window.matchMedia('(min-width: 768px)');
+
+      // Enable (for mobile)
+      if (mobile.matches) {
+        if (!init) {
+          init = true;
+          swiper = new Swiper("#index-featured-carousel .swiper", {
+            spaceBetween: 16,
+            slidesPerView: 'auto',
+            pagination: {
+              el: "#index-featured-carousel .swiper-pagination",
+              type: "bullets",
+              clickable: true
+            }
+          });
+        }
+      } else if (desktop.matches) {
+        if (swiper.destroy) {
+          swiper.destroy();
+        }
+        init = false;
       }
-    });
+    }
+
+    // Run swiperMode on window resize
+    window.addEventListener('resize', function() {
+      swiperMode();
+    })
+
+    // Run on first load
+    swiperMode();
   });
 </script>
 

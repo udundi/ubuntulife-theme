@@ -1,17 +1,35 @@
-<section id="index-hero-section" class="flex flex-col items-center">
-  <div class="flex flex-col items-center w-11/12 max-w-xs mt-5">
+<section id="index-hero-section" class="flex flex-col md:flex-row md:min-h-[calc(100vh-92px)] md:h-[calc(100vh-92px)] items-center">
+  <div class="flex flex-col items-center lg:items-start w-11/12 max-w-xs mt-5 md:mt-0 md:flex-grow md:mx-10 lg:mx-20">
     <p class="font-ubuntulife font-bold text-xl">LOREM IPSUM</p>
-    <h1 class="font-black text-4xl text-neutral-800 text-center">LOREM IPSUM DOLOR SIT AMET</h1>
-    <p class="font-medium text-neutral-800 text-center mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
-    <a href="#" class="mt-8 w-11/12 py-4 border border-black font-black text-xl text-neutral-800 text-center">SHOP NOW</a>
+    <h1 class="font-black text-4xl text-neutral-800 text-center lg:text-left">LOREM IPSUM DOLOR SIT AMET</h1>
+    <p class="font-medium text-neutral-800 text-center lg:text-left mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+    <a href="#" class="mt-8 w-11/12 lg:w-3/5 py-4 border border-black font-black text-xl text-neutral-800 text-center">SHOP NOW</a>
+    <div class="hidden mt-6 lg:flex">
+      <svg onclick="heroSwiper.slidePrev(300)" class="cursor-pointer w-12 h-12 p-4 rounded-full border border-downy-300 hover:bg-downy-300 -rotate-90 mr-4" width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M13.9588 7.73918L7.49934 1.42968L1.03984 7.73918C0.799808 7.9741 0.416528 7.9741 0.176501 7.73918C0.0636142 7.62834 0 7.47665 0 7.31828C0 7.15992 0.0636142 7.00822 0.176501 6.89739L7.04828 0.183835C7.29924 -0.0612782 7.69944 -0.0612782 7.95039 0.183835L14.8222 6.8961C14.9359 7.00702 15 7.15928 15 7.31828C15 7.47729 14.9359 7.62955 14.8222 7.74047C14.5821 7.9754 14.1989 7.9754 13.9588 7.74047V7.73918Z" fill="black"/>
+      </svg>
+      <svg onclick="heroSwiper.slideNext(300)" class="cursor-pointer w-12 h-12 p-4 rounded-full border border-downy-300 hover:bg-downy-300 rotate-90" width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M13.9588 7.73918L7.49934 1.42968L1.03984 7.73918C0.799808 7.9741 0.416528 7.9741 0.176501 7.73918C0.0636142 7.62834 0 7.47665 0 7.31828C0 7.15992 0.0636142 7.00822 0.176501 6.89739L7.04828 0.183835C7.29924 -0.0612782 7.69944 -0.0612782 7.95039 0.183835L14.8222 6.8961C14.9359 7.00702 15 7.15928 15 7.31828C15 7.47729 14.9359 7.62955 14.8222 7.74047C14.5821 7.9754 14.1989 7.9754 13.9588 7.74047V7.73918Z" fill="black"/>
+      </svg>
+    </div>
+    <div class="hidden mt-7 md:flex text-xs lg:text-sm">
+      <svg class="mr-3" width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 1.4876V0H15.75V2.97521H22.29L22.4527 3.4862L23.9527 7.94901L24 8.06579V14.1322H21.633C21.2985 15.4108 20.139 16.3636 18.75 16.3636C17.361 16.3636 16.2015 15.4108 15.867 14.1322H9.633C9.2985 15.4108 8.139 16.3636 6.75 16.3636C5.361 16.3636 4.2015 15.4108 3.867 14.1322H1.5V8.92562H3V12.6446H3.867C4.2015 11.366 5.361 10.4132 6.75 10.4132C8.139 10.4132 9.2985 11.366 9.633 12.6446H14.25V1.4876H0ZM0.75 4.46281V2.97521H7.5V4.46281H0.75ZM15.75 4.46281H21.2108L22.5 8.27479V12.6446H21.633C21.2985 11.366 20.139 10.4132 18.75 10.4132C17.361 10.4132 16.2015 11.366 15.867 12.6446H15.75V4.46281ZM1.5 7.43802V5.95041H6V7.43802H1.5ZM6.75 11.9008C7.58775 11.9008 8.25 12.5576 8.25 13.3884C8.25 14.2193 7.58775 14.876 6.75 14.876C5.91225 14.876 5.25 14.2193 5.25 13.3884C5.25 12.5576 5.91225 11.9008 6.75 11.9008ZM20.25 13.3884C20.25 12.5576 19.5877 11.9008 18.75 11.9008C17.9123 11.9008 17.25 12.5576 17.25 13.3884C17.25 14.2193 17.9123 14.876 18.75 14.876C19.5877 14.876 20.25 14.2193 20.25 13.3884Z" fill="black"/>
+      </svg>
+      <p class="mr-4 whitespace-nowrap"><span class="underline">Free shipping</span> over $50</p>
+      <svg class="mr-3" width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.5009 12.0006C13.777 12.0006 14.0009 11.7767 14.0009 11.5006V6.70063C14.0009 5.31992 12.8816 4.20063 11.5009 4.20063H1.70789L5.05489 0.854632C5.2504 0.659122 5.2504 0.342141 5.05489 0.146632C4.85938 -0.0488773 4.5424 -0.0488773 4.34689 0.146632L0.146894 4.34663C0.0528517 4.44043 0 4.5678 0 4.70063C0 4.83346 0.0528517 4.96083 0.146894 5.05463L4.14689 9.05463C4.3424 9.25014 4.65938 9.25014 4.85489 9.05463C5.0504 8.85912 5.0504 8.54214 4.85489 8.34663L1.70789 5.20063H11.5009C12.3293 5.20063 13.0009 5.8722 13.0009 6.70063V11.5006C13.0009 11.7767 13.2248 12.0006 13.5009 12.0006Z" fill="black"/>
+      </svg>
+      <p class="whitespace-nowrap">Returns are <span class="underline">free</span></p>
+    </div>
   </div>
-  <div class="swiper mt-10 w-screen overflow-hidden">
+  <div class="swiper mt-10 md:mt-0 w-screen overflow-hidden md:flex-grow md:h-full md:py-10 2xl:py-16">
     <div class="swiper-wrapper">
       {% for block in section.blocks %}
-        <div class="swiper-slide relative w-48 h-80 flex flex-col justify-end">
-          <p class="z-10 font-black text-xl text-white mx-4 w-3/4">{{ block.settings.text }}</p>
-          <a class="z-10 w-fit ml-4 mt-3 font-black bg-white hover:bg-downy-300 py-2 px-4 mb-6" href="{{ block.settings.url }}">SHOP NOW</a>
-          <img class="absolute top-0 left-0 w-full h-full object-cover" src="{{ block.settings.image | image_url: width: 768 }}" alt="Featured product image">
+        <div class="swiper-slide relative w-48 sm:w-60 md:w-80 2xl:w-auto h-80 sm:h-96 md:h-full flex flex-col justify-end">
+          <p class="z-10 font-black text-xl lg:text-3xl 2xl:text-4xl text-white mx-4 w-3/4">{{ block.settings.text }}</p>
+          <a class="z-10 w-fit ml-4 mt-3 font-black lg:text-lg 2xl:text-xl bg-white hover:bg-downy-300 py-2 px-4 mb-6" href="{{ block.settings.url }}">SHOP NOW</a>
+          <img class="absolute top-0 left-0 w-full 2xl:max-w-xl h-full object-cover" src="{{ block.settings.image | image_url: width: 768 }}" alt="Featured product image">
         </div>
       {% endfor %}
     </div>
@@ -19,12 +37,22 @@
 </section>
 
 <script>
+  let heroSwiper;
   document.addEventListener("DOMContentLoaded", () => {
-    const heroSwiper = new Swiper("#index-hero-section .swiper", {
+    heroSwiper = new Swiper("#index-hero-section .swiper", {
       spaceBetween: 16,
       slidesPerView: 'auto',
-      centeredSlides: true
+      centeredSlides: true,
+      breakpoints: {
+        768: {
+          centeredSlides: false
+        }
+      }
     });
+
+    if (window.screen.width >= 640 && window.screen.width < 768 ) {
+      heroSwiper.slideTo(1);
+    }
   });
 </script>
 
