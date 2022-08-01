@@ -1,0 +1,121 @@
+<section id="affiliate-carousel">
+  <div class="swiper w-screen overflow-hidden">
+    <div class="swiper-wrapper mr-5">
+      {% for block in section.blocks %}
+        <div
+          id="{{ block.id }}"
+          class="swiper-slide w-80 h-72 py-14 px-6 bg-gray-50 sm:hover:bg-downy-300 transition-all duration-1000"
+        >
+          <div class=" flex flex-col justify-start items-left">
+            <p class="font-black text-neutral-800 text-xl md:text-2xl">
+              {{ block.settings.title_copy | upcase }}
+            </p>
+            <p class="font-medium mt-8">
+              {{ block.settings.card_copy }}
+            </p>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const affSwiper = new Swiper("#affiliate-carousel .swiper", {
+      updateOnWindowResize: true,
+      slidesOffsetBefore: 15,
+      slidesOffsetAfter: 15,
+      centeredSlides: false,
+      spaceBetween: 25,
+      slidesPerView: 'auto',
+      slideToClickedSlide: true,
+      speed: 700,
+      on: {
+        afterInit: function (affSwiper) {
+            document.getElementById(affSwiper.slides[0].id).classList.remove("bg-gray-50");
+            document.getElementById(affSwiper.slides[0].id).classList.add("bg-downy-300");
+        },
+
+        sliderFirstMove: function () {
+          const clickedSlide = affSwiper.clickedIndex
+          document.getElementById(affSwiper.slides[0].id).classList.remove("bg-downy-300");
+          document.getElementById(affSwiper.slides[0].id).classList.add("bg-gray-50");
+
+        },
+        sliderMove: function () {
+          const clickedSlide = affSwiper.clickedIndex
+          document.getElementById(affSwiper.slides[0].id).classList.remove("bg-downy-300");
+          document.getElementById(affSwiper.slides[0].id).classList.add("bg-gray-50");
+          document.getElementById(affSwiper.slides[1].id).classList.remove("bg-downy-300");
+          document.getElementById(affSwiper.slides[1].id).classList.add("bg-gray-50");
+          document.getElementById(affSwiper.slides[2].id).classList.remove("bg-downy-300");
+          document.getElementById(affSwiper.slides[2].id).classList.add("bg-gray-50");
+          document.getElementById(affSwiper.slides[3].id).classList.remove("bg-downy-300");
+          document.getElementById(affSwiper.slides[3].id).classList.add("bg-gray-50");
+        },
+        realIndexChange: function () {
+          const currentSlide = affSwiper.activeIndex;
+          const previousSlide = affSwiper.previousIndex;
+
+          console.log('prev', previousSlide, 'curr', currentSlide);
+          // document.getElementById(affSwiper.slides[1].id).classList.remove("bg-downy-300");
+          // document.getElementById(affSwiper.slides[1].id).classList.add("bg-gray-50");
+          // document.getElementById(affSwiper.slides[2].id).classList.remove("bg-downy-300");
+          // document.getElementById(affSwiper.slides[2].id).classList.add("bg-gray-50");
+          document.getElementById(affSwiper.slides[previousSlide].id).classList.remove("bg-downy-300");
+          document.getElementById(affSwiper.slides[previousSlide].id).classList.add("bg-gray-50");
+          document.getElementById(affSwiper.slides[currentSlide].id).classList.remove("bg-gray-50");
+          document.getElementById(affSwiper.slides[currentSlide].id).classList.add("bg-downy-300");
+        },
+      },
+      breakpoints: {
+        390: {
+          slidesPerGroup: 1,
+          slidesOffsetBefore: 5,
+          centeredSlides: true,
+          centeredSlideBounds: true,
+          spaceBetween: 30,
+        },
+        640: {
+          spaceBetween: 20,
+        },
+        768: {
+          slidesOffsetBefore: 50,
+          centeredSlides: false,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesOffsetBefore: 0,
+          centerInsufficientSlides: true,
+          spaceBetween: 50,
+        },
+      }
+    });
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Affiliate Carousel",
+  "settings": [],
+  "blocks": [
+    {
+      "name": "Slide",
+      "type": "slide",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title_copy",
+          "label": "Title copy"
+        },
+        {
+          "type": "text",
+          "id": "card_copy",
+          "label": "Card copy"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
