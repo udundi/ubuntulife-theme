@@ -1,0 +1,83 @@
+<div class="relative w-screen h-[32rem] md:h-[36rem]">
+  <img class="md:hidden w-full h-full object-cover" src="{{ section.settings.header_img_mobile | image_url: width: 1024 }}" alt="Tribe woman">
+  <img class="hidden md:block w-full h-full object-cover" src="{{ section.settings.header_img_desktop | image_url: width: 2048 }}" alt="Tribe woman">
+  <!-- Mobile text -->
+  <div class="md:hidden absolute top-20 left-1/2 -translate-x-1/2 flex flex-col items-center w-80 text-white">
+    <h1 class="font-ubuntulife font-bold text-2xl">{{ section.settings.heading_1_mobile }}</h1>
+    <h2 class="font-black text-4xl">{{ section.settings.heading_2_mobile }}</h2>
+    <p class="mt-5 text-center">{{ section.settings.heading_text_mobile }}</p>
+  </div>
+  <!-- Desktop text -->
+  <div class="hidden absolute top-1/2 left-1/2 lg:left-2/3 -translate-y-1/2 -translate-x-1/2 md:-translate-x-1/3 md:flex flex-col items-center text-white">
+    <h1 class="font-ubuntulife font-bold text-2xl">{{ section.settings.heading_1_desktop }}</h1>
+    <h2 class="font-black text-5xl">{{ section.settings.heading_2_desktop }}</h2>
+    <p class="mt-5 text-center font-medium text-lg xl:w-max xl:max-w-2xl">{{ section.settings.heading_text_desktop }}</p>
+  </div>
+</div>
+<div class="flex flex-col lg:flex-row lg:justify-center px-3 my-3 lg:px-16 sm:my-16 max-w-screen-sm lg:max-w-none mx-auto">
+  <img class="w-full lg:object-cover lg:w-1/2 lg:max-w-lg lg:aspect-square" src="{{ 'cofounders.jpg' | file_img_url: '768x' }}" alt="Image of the founders">
+  <div class="mt-8 lg:mt-0 lg:ml-24 flex flex-col lg:max-w-2xl">
+    <h3 class="font-black text-neutral-800 text-3xl lg:text-4xl">HISTORY</h3>
+    <p class="mt-4">{{ section.settings.history_text }}</p>
+  </div>
+</div>
+<div class="bg-downy-300 px-3 py-24 flex flex-col text-white items-center">
+  <p class="font-ubuntulife font-bold text-4xl lg:text-5xl">UBUNTU</p>
+  <p class="mt-2 lg:text-2xl lg:font-light">[OO-<span class="lg:italic">BUHN</span>-TOO] NOUN</p>
+  <p class="mt-2 text-center max-w-xs lg:max-w-xl lg:text-2xl lg:font-medium">
+    The Belief that we are defined by our compassion and humanity towards others; I am Because We are
+  </p>
+</div>
+
+{% schema %}
+{
+  "name": "About content",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "header_img_mobile",
+      "label": "Header mobile image"
+    },
+    {
+      "type": "image_picker",
+      "id": "header_img_desktop",
+      "label": "Header desktop image"
+    },
+    {
+      "type": "text",
+      "id": "heading_1_mobile",
+      "label": "Heading top for mobile"
+    },
+    {
+      "type": "text",
+      "id": "heading_2_mobile",
+      "label": "Main heading for mobile"
+    },
+    {
+      "type": "text",
+      "id": "heading_text_mobile",
+      "label": "Heading paragraph for mobile"
+    },
+    {
+      "type": "text",
+      "id": "heading_1_desktop",
+      "label": "Heading top for desktop"
+    },
+    {
+      "type": "text",
+      "id": "heading_2_desktop",
+      "label": "Main heading for desktop"
+    },
+    {
+      "type": "text",
+      "id": "heading_text_desktop",
+      "label": "Heading paragraph for desktop"
+    },
+    {
+      "type": "textarea",
+      "id": "history_text",
+      "label": "Text body for history section"
+    }
+  ]
+}
+{% endschema %}
