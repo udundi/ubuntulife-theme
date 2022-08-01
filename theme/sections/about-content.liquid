@@ -28,6 +28,80 @@
     The Belief that we are defined by our compassion and humanity towards others; I am Because We are
   </p>
 </div>
+<div>
+  <p>WHAT WE DO</p>
+  <p> 
+    At Ubuntu Life, we provide mothers of children with special needs and others in our community with sustainable employment creating beautiful products for sale in Kenya and internationally.
+  </p>
+  <div class="swiper w-screen overflow-hidden">
+    <div class="swiper-wrapper">
+      {% for block in section.blocks %}
+        <div class="swiper-slide">
+          <img class="" src="{{ block.settings.image | image_url: width: 1024 }}" alt="Cover photo">
+          <p class="">{{ block.settings.heading }}</p>
+          <p>{{ block.settings.text }}</p>
+          <a class="" href="{{ block.settings.url }}">{{ block.settings.btn_copy }}</a>
+        </div>
+      {% endfor %}
+    </div>
+    <div class="swiper-pagination">
+  </div>
+</div>
+<div>
+  <img src="" alt="">
+  <p>HOW WE DO IT</p>
+  <p>
+    Every purchase empowers. We pride ourselves on being able to create our quality handmade products for our customers, all while providing our Maker Mums and Maker Men with sustainable employment, health insurance, and a living wage well above the standard income for the Maai Mahiu area. 
+    This is because we source materials locally, and make our handcrafted products in our own factory in Maai Mahiu, allowing us to control and optimize every element of the production process. We’re able to pass our cost-savings and profits on to our empowered Makers, investing in their wellbeing, and that of the local community.
+  </p>
+</div>
+<div>
+  <img src="" alt="">
+  <p>WHY WE DO IT</p>
+  <p>
+    Ubuntu is a Swahili word meaning, I am because we are. This is the driving philosophy behind everything we do at Ubuntu Life. We are all connected, and strive to remind our customers of that connection with every handcrafted product that our Makers in Maai Mahiu create. And of course there are our special needs kiddos, the heart of Ubuntu Life, who receive educational and medical care from our Ubuntu Life Foundation. They are why we do what we do each day.
+  </p>
+  <div class="swiper w-screen overflow-hidden">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <!-- SVG -->
+        <p>90+<span>jobs</span></p>
+        <p>Both full-time and part-time jobs created through several of our social enterprises.</p>
+      </div>
+      <div class="swiper-slide">
+        <!-- SVG -->
+        <p>200+<span>mums</span></p>
+        <p>We provide part-time employment to 200 Maasai Maker Mums from the Ngong Hills.</p>
+      </div>
+      <div class="swiper-slide">
+        <!-- SVG -->
+        <p>70+<span>kids</span></p>
+        <p>Ubuntu Life Foundation provides life-changing individualized education and therapy to 70+ Kids.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div>
+  <p>WHO WE ARE</p>
+  <p>Ubuntu Life is a global lifestyle brand out of Africa, based in Kenya.</p>
+  <div>
+    <div>
+      <img src="" alt="">
+      <p>36 DEGREES</p>
+      <p>Located at 1° South, 36° East, the bustling transit hub of Maai Mahiu is the gateway to Kenya’s famed Great Rift Valley, and the town we are honored to call our home. In fact, we’ve sewn a 36° stitch into every Ubuntu Life product to honor our commitment to this special place and its beautiful people.</p>
+    </div>
+    <div>
+      <img src="" alt="">
+      <p>OUR FOUNDATION</p>
+      <p>With every product made, we’re transforming lives. We do this both by providing empowered employment to the local Maai Mahiu community, as well as through our Ubuntu Life Foundation, which provides educational and medical care to children with special needs in the region.</p>
+    </div>
+    <div>
+      <img src="" alt="">
+      <p>LOCAL</p>
+      <p>Our handmade bracelets, bags and espadrilles are made by our powerful Makers in Kenya, and connect people around the world - from their hands to yours.</p>
+    </div>
+  </div>
+</div>
 
 {% schema %}
 {
