@@ -1,10 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./theme/layout/**/*.liquid",
-    "./theme/sections/**/*.liquid",
-    "./theme/snippets/**/*.liquid",
-    "./theme/templates/**/*.liquid",
+    "./layout/**/*.liquid",
+    "./sections/**/*.liquid",
+    "./snippets/**/*.liquid",
+    "./templates/**/*.liquid",
   ],
   theme: {
     fontFamily: {
