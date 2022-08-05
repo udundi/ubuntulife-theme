@@ -472,6 +472,37 @@
       },
       "about-content": {
         "type": "about-content",
+        "blocks": {
+          "4a4af560-4d67-4089-b8fe-e464d46cd0bc": {
+            "type": "mission",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Maker_studio_5.jpg",
+              "header": "OUR FIRST PRODUCTS",
+              "body": "Our first products were simple and easy to master: shopping bags, coffee sleeves, bandanas, and coasters that our original nine Maker Mums crafted in a 15x15 foot rented room filled with manual Singer sewing machines. Soon, we purchased 11 acres of land on the outskirts of Maai Mahiu, Kenya, and rehabilitated it with native trees, plants, and landscaping. It was here where we built our Maker Studio."
+            }
+          },
+          "07e52fbd-2915-46ad-8613-3df423e7c586": {
+            "type": "mission",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/EO-maasai-digi-118_2_2.jpg",
+              "header": "SUPPORTING LOCAL CULTURE & LIFESTYLE",
+              "body": "Shortly thereafter, we began working with a group of Maasai craftswomen in the Ngong Hills. These women, our Maasai Maker Mums, create beautiful beadwork in their spare time under an acacia tree, chatting with their neighbors. We provide them with access to income in a way that is supportive of their culture and lifestyle."
+            }
+          },
+          "a0da51b0-d09d-4819-ab0c-99134f0b5df8": {
+            "type": "mission",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Q1A3586_6.jpg",
+              "header": "LASTING IMPACT",
+              "body": "Our Makers soon began producing more sophisticated products that allow us to earn more revenue and pay higher wages. Today these products include our signature beaded bracelets, handcrafted bags and our best-selling shoe, the Afridrille."
+            }
+          }
+        },
+        "block_order": [
+          "4a4af560-4d67-4089-b8fe-e464d46cd0bc",
+          "07e52fbd-2915-46ad-8613-3df423e7c586",
+          "a0da51b0-d09d-4819-ab0c-99134f0b5df8"
+        ],
         "settings": {
           "header_img_mobile": "shopify:\/\/shop_images\/about-hero-mobile.jpg",
           "header_img_desktop": "shopify:\/\/shop_images\/about-hero.png",
