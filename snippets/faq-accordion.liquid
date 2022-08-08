@@ -1,0 +1,96 @@
+<div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="faq-section accordion text-left">
+  
+          {%- for block in section.blocks -%}
+            <div class="card">
+              <div id="faq-header-{{ forloop.index }}" class="card-header">
+                <h3 class="mb-0">
+                  <span class="question-container">
+                  <button class="btn-transparent" role="presentation" type="button" data-toggle="collapse" data-target="#faq-collapse-{{ forloop.index }}" aria-expanded="false" aria-controls="#faq-collapse-{{ forloop.index }}">
+                    <span>{{ block.settings.question }}</span>
+                  </button>
+                  <button class="btn-transparent" role="presentation" type="button" data-toggle="collapse" data-target="#faq-collapse-{{ forloop.index }}" aria-expanded="false" aria-controls="#faq-collapse-{{ forloop.index }}">
+                    {% render 'icon-plus-minus' %}
+                  </button>
+                </h3>
+              </span>
+              </div>
+              <div id="faq-collapse-{{ forloop.index }}" class="collapse" aria-labelledby="faq-header-{{ forloop.index }}">
+                <div class="card-body">
+                  {{ block.settings.answer }}
+                </div>
+              </div>
+            </div>
+          {%- endfor -%}
+  
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="mx-auto my-20 w-[600px] drop-shadow rounded-md">
+        <h1 class="text-2xl font-italic font-light text-center text-white mb-10">KindaCode.com - FAQ</h1>
+
+        <!-- The First FAQ -->
+        <details class="bg-gray-300 open:bg-amber-200 duration-300">
+            <summary class="bg-inherit px-5 py-3 text-lg cursor-pointer">The first requently asked question</summary>
+            <div class="bg-white px-5 py-3 border border-gray-300 text-sm font-light">
+                <p>Praesent posuere nisi vel diam congue varius. Praesent lacus nulla, congue nec rhoncus nec,
+                    suscipit et enim. Donec ultrices nec arcu et pharetra.</p>
+            </div>
+        </details>
+
+        <!-- The Second FAQ -->
+        <details class="bg-gray-300 open:bg-amber-200 duration-300">
+            <summary class="bg-inherit px-5 py-3 text-lg cursor-pointer">Just another question</summary>
+            <div class="bg-white px-5 py-3 border border-gray-300 text-sm font-light">
+                <p>Just some dummy content. Just some dummy content. Just some dummy content. Just some dummy content
+                    Just some dummy content. Just some dummy content</p>
+            </div>
+        </details>
+
+        <!-- The Third FAQ -->
+        <details class="bg-gray-300 open:bg-amber-200 duration-300">
+            <summary class="bg-inherit px-5 py-3 text-lg cursor-pointer">How is the weather today?</summary>
+            <div class="bg-white px-5 py-3 border border-gray-300 text-sm font-light">
+                <ul>
+                    <li>List Item 1</li>
+                    <li>List Item 2</li>
+                </ul>
+            </div>
+        </details>
+
+    </div>
+
+    {% schema %}
+  {
+    "name": "FAQ - Warranty",
+    "settings": [
+    ],
+    "blocks": [
+      {
+        "type": "question",
+        "name": "question",
+        "settings": [
+          {
+            "type": "text",
+            "id": "question",
+            "label": "Question"
+          },
+          {
+            "type": "richtext",
+            "id": "answer",
+            "label": "Answer"
+          }
+        ]
+     }],
+    "presets": [
+      {
+        "name": "FAQ - Warranty",
+        "category": "Page"
+      }
+    ]
+  }
+{% endschema %}
