@@ -1,0 +1,310 @@
+<script src="https://unpkg.com/vue@3"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js">
+</script>
+
+{% unless block == empty %}
+  <script>
+    window.ud_block = {{ block | json }};
+    console.log('window', window.ud_block);
+  </script>
+{% endunless %}
+
+<section id="faq-section">
+  <div class="swiper w-screen overflow-hidden px-10" ref="carousel">
+    <div class="swiper-wrapper mr-5">
+      {% for block in section.blocks %}
+        <div
+          id="{{ block.type }}"
+          class="swiper-slide w-72 h-56 py-14 px-6 bg-gray-50 hover:border hover:border-solid hover:bg-white sm:hover:border-downy-300 hover:border-downy-300 transition-all duration-300"
+        >
+          {% case block.type %}
+            {% when 'orders' %}
+              <image
+                class="w-10 h-10"
+                src="https://cdn.shopify.com/s/files/1/1257/5497/files/order-icon.svg?v=1659639509"
+              >
+              </image>
+            {% when 'fitting-care' %}
+              <image
+                class="w-10 h-10"
+                src="https://cdn.shopify.com/s/files/1/1257/5497/files/measurement-icon.svg?v=1659639509"
+              >
+              </image>
+            {% when 'shipping-returns' %}
+              <image
+                class="w-10 h-10"
+                src="https://cdn.shopify.com/s/files/1/1257/5497/files/shipping-icon.svg?v=1659639509"
+              >
+              </image>
+            {% when 'international-orders' %}
+              <image
+                class="w-10 h-10"
+                src="https://cdn.shopify.com/s/files/1/1257/5497/files/international-icon.svg?v=1659639509"
+              >
+              </image>
+            {% when 'about-products' %}
+              <image
+                class="w-10 h-10"
+                src="https://cdn.shopify.com/s/files/1/1257/5497/files/about-icon.svg?v=1660040970"
+              >
+              </image>
+          {% endcase %}
+          <div class=" flex flex-col justify-start items-left">
+            <p class="font-black text-neutral-800 text-xl md:text-2xl">
+              {{ block.type | replace: '-', ' ' | replace: 'fitting-care', 'Fitting & Care' | replace: 'shipping-returns', 'Shipping & Returns' | upcase }}
+            </p>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div id="faq-swiper-accordion">
+    <div class="h-screen bg-white grid place-items-center">
+      <div class="w-6/12 mx-auto rounded border">
+        <div class="bg-white p-10 shadow-sm">
+          <div v-if="this.selection === 'orders'">
+            {% for block in section.blocks %}
+              <div class="transition bg-white border border-solid border-black focus:bg-neutral-50">
+                <div class="accordion-header cursor-pointer transition flex space-x-5 px-5 items-center h-16">
+                  <i class="fas fa-plus"></i>
+                  <p class="text-lg">{{ block.settings.ordersQuestion }}</p>
+                </div>
+
+                <div class="accordion-content px-5 pt-0 overflow-hidden max-h-0">
+                  <p class="leading-6 font-light pl-9 text-justify">
+                    {{ block.settings.ordersAnswer }}
+                  </p>
+                </div>
+              </div>
+            {% endfor %}
+          </div>
+
+
+        <div v-if="this.selection === 'fitting-care'">
+          {% for block in section.blocks %}
+          <div class="transition bg-white border border-solid border-black focus:bg-neutral-50">
+            <div class="accordion-header cursor-pointer transition flex space-x-5 px-5 items-center h-16">
+              <i class="fas fa-plus"></i>
+              <p class="text-lg">{{ block.settings.fittingQuestion }}</p>
+            </div>
+
+            <div class="accordion-content px-5 pt-0 overflow-hidden max-h-0">
+              <p class="leading-6 font-light pl-9 text-justify">
+                {{ block.settings.fittingAnswer }}
+              </p>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .accordion-content {
+  transition: max-height 0.3s ease-out, padding 0.3s ease;
+  }
+</style>
+
+<script>
+    const faqSection = Vue.createApp({
+      delimiters: ['{', '}'],
+      data() {
+        return {
+          selection: "orders",
+          block: window.ud_block
+        }
+      },
+      methods: {
+        newSwiper() {
+          const faqSwiper = new Swiper(".swiper", {
+          updateOnWindowResize: true,
+          slidesOffsetBefore: 15,
+          slidesOffsetAfter: 15,
+          centeredSlides: true,
+          spaceBetween: 25,
+          slidesPerView: 'auto',
+          slideToClickedSlide: true,
+          speed: 700,
+          on: {
+            afterInit: function (faqSwiper) {
+                document.getElementById(faqSwiper.slides[0].id).classList.remove("bg-gray-50");
+                document.getElementById(faqSwiper.slides[0].id).classList.add("bg-white", "border", "border-solid", "border-downy-300");
+            },
+
+            click: function () {
+              const currentSlide = faqSwiper.clickedIndex;
+              const previousSlide = faqSwiper.previousIndex;
+              this.selection = "";
+              this.selection = faqSwiper.slides[currentSlide].id;
+
+              console.log('prev', previousSlide, 'curr','test', this.selection);
+              document.getElementById(faqSwiper.slides[0].id).classList.remove("bg-white", "border", "border-solid", "border-downy-300");
+              document.getElementById(faqSwiper.slides[0].id).classList.add("bg-gray-50");
+              document.getElementById(faqSwiper.slides[1].id).classList.remove("bg-white", "border", "border-solid", "border-downy-300");
+              document.getElementById(faqSwiper.slides[1].id).classList.add("bg-gray-50");
+              document.getElementById(faqSwiper.slides[2].id).classList.remove("bg-white", "border", "border-solid", "border-downy-300");
+              document.getElementById(faqSwiper.slides[2].id).classList.add("bg-gray-50");
+              document.getElementById(faqSwiper.slides[3].id).classList.remove("bg-white", "border", "border-solid", "border-downy-300");
+              document.getElementById(faqSwiper.slides[3].id).classList.add("bg-gray-50");
+              document.getElementById(faqSwiper.slides[4].id).classList.remove("bg-white", "border", "border-solid", "border-downy-300");
+              document.getElementById(faqSwiper.slides[4].id).classList.add("bg-gray-50");
+              document.getElementById(faqSwiper.slides[currentSlide].id).classList.remove("bg-gray-50");
+              document.getElementById(faqSwiper.slides[currentSlide].id).classList.add("bg-white", "border", "border-solid", "border-downy-300");
+            },
+          },
+          breakpoints: {
+            390: {
+              slidesPerGroup: 1,
+              slidesOffsetBefore: 5,
+              centeredSlides: true,
+              centeredSlideBounds: true,
+              spaceBetween: 30,
+            },
+            640: {
+                centeredSlides: false,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesOffsetBefore: 50,
+              centeredSlides: false,
+              spaceBetween: 40,
+            },
+            1024: {
+              slidesOffsetBefore: 0,
+              centeredSlides: false,
+              centerInsufficientSlides: true,
+              spaceBetween: 50,
+            },
+          }
+        });
+        },
+
+        accordion() {
+          const accordionHeader = document.querySelectorAll(".accordion-header");
+          accordionHeader.forEach((header) => {
+          header.addEventListener("click", function () {
+          const accordionContent = header.parentElement.querySelector(".accordion-content");
+          let accordionMaxHeight = accordionContent.style.maxHeight;
+
+        // Condition handling
+          if (accordionMaxHeight == "0px" || accordionMaxHeight.length == 0) {
+          accordionContent.style.maxHeight = `${accordionContent.scrollHeight + 32}px`;
+          header.querySelector(".fas").classList.remove("fa-plus");
+          header.querySelector(".fas").classList.add("fa-minus");
+          header.parentElement.classList.add("bg-neutral-50");
+          } else {
+          accordionContent.style.maxHeight = `0px`;
+          header.querySelector(".fas").classList.add("fa-plus");
+          header.querySelector(".fas").classList.remove("fa-minus");
+          header.parentElement.classList.remove("bg-neutral-50");
+            }
+          });
+        });
+        },
+      },
+      mounted() {
+      this.newSwiper();
+      this.accordion();
+      console.log(this.block)
+
+  }
+  }).mount("#faq-section");
+</script>
+
+{% schema %}
+{
+  "blocks": [
+    {
+      "type": "orders",
+      "name": "Orders",
+      "settings": [
+        {
+          "type": "text",
+          "id": "ordersQuestion",
+          "label": "Question"
+        },
+        {
+          "type": "richtext",
+          "id": "ordersAnswer",
+          "label": "Answer"
+        }
+      ]
+    },
+    {
+      "type": "fitting-care",
+      "name": "Fitting & Care",
+      "settings": [
+        {
+          "type": "text",
+          "id": "fittingQuestion",
+          "label": "Question"
+        },
+        {
+          "type": "richtext",
+          "id": "fittingAnswer",
+          "label": "Answer"
+        }
+      ]
+    },
+    {
+      "type": "shipping-returns",
+      "name": "Shipping & Returns",
+      "settings": [
+        {
+          "type": "text",
+          "id": "question",
+          "label": "Question"
+        },
+        {
+          "type": "richtext",
+          "id": "answer",
+          "label": "Answer"
+        }
+      ]
+    },
+    {
+      "type": "international-orders",
+      "name": "International Orders",
+      "settings": [
+        {
+          "type": "text",
+          "id": "question",
+          "label": "Question"
+        },
+        {
+          "type": "richtext",
+          "id": "answer",
+          "label": "Answer"
+        }
+      ]
+    },
+    {
+      "type": "about-products",
+      "name": "About Products",
+      "settings": [
+        {
+          "type": "text",
+          "id": "question",
+          "label": "Question"
+        },
+        {
+          "type": "richtext",
+          "id": "answer",
+          "label": "Answer"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "FAQ Carousel",
+      "category": "Page"
+    }
+  ]
+}
+{% endschema %}
