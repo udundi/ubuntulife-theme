@@ -1,0 +1,93 @@
+<section id="faq-fitting">
+    <div class="h-screen bg-white grid place-items-center">
+      <div class="flex flex-row">
+        {% for block in section.blocks %}
+        {% if block.settings.title %}
+        <p class="text-lg">{{ block.settings.title }}</p>
+        {% endif %}
+        {% if block.settings.description %}
+        <p class="text-lg">{{ block.settings.description }}</p>
+        {% endif %}
+        {% endfor %}
+      </div>
+      <div class="w-6/12 mx-auto rounded border">
+        <div class="bg-white p-10 shadow-sm">
+          {% for block in section.blocks %}
+          {% if block.settings.question %}
+              <div class="transition bg-white border border-solid border-black focus:bg-neutral-50">
+                <div class="accordion-header cursor-pointer transition flex space-x-5 px-5 items-center h-16">
+                  <i class="fas fa-plus"></i>
+                  <p class="text-lg">{{ block.settings.question }}</p>
+                </div>
+
+                <div class="accordion-content px-5 pt-0 overflow-hidden max-h-0">
+                  <p class="leading-6 font-light pl-9 text-justify">
+                    {{ block.settings.answer }}
+                  </p>
+                </div>
+              </div>
+              {% endif %}
+            {% endfor %}
+        </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+    <style>
+      .accordion-content {
+      transition: max-height 0.3s ease-out, padding 0.3s ease;
+      }
+    </style>
+
+{% schema %}
+{
+  "name": "About Products",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "info",
+      "name": "Info",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "description"
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "name": "FAQ",
+      "settings": [
+        {
+          "type": "text",
+          "id": "question",
+          "label": "Question"
+        },
+        {
+          "type": "richtext",
+          "id": "answer",
+          "label": "Answer"
+        }
+      ]
+    }
+    
+  ],
+  "presets": [
+    {
+      "name": "FAQ Carousel",
+      "category": "Page"
+    }
+  ]
+}
+{% endschema %}

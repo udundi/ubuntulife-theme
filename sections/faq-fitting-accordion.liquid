@@ -1,0 +1,166 @@
+<section id="faq-orders" class="bg-white flex flex-col sm:flex-row">
+  <div class="h-full sm:w-[1000px] bg-white flex flex-col mt-20">
+    <div class="flex flex-col w-96 sm:w-[92%] px-5 mb-7">
+      {% for block in section.blocks %}
+      {% if block.settings.title %}
+      <p class="text-2xl text-gray-700 font-bold mb-9">{{ block.settings.title | upcase}}</p>
+      {% endif %}
+      {% if block.settings.description %}
+      <p class="text-lg">{{ block.settings.description }}</p>
+      {% endif %}
+      {% endfor %}
+      <a href="https://www.google.com">
+      <p class="flex mt-6 self-center px-auto text-md text-downy-500">View More Frequently Asked Questions</p>
+      </a>
+    </div>
+    <div class="flex sm:w-[95%] sm:min-w-[300px] max-w-[95%] justify-self-start mb-20">
+      <div class="bg-white px-5 sm:w-[95%] w-screen">
+        {% for block in section.blocks %}
+        {% if block.settings.question %}
+            <div class="transition bg-white border border-solid border-black focus:bg-neutral-50 mb-5">
+              <div class="accordion-header cursor-pointer transition flex px-5 items-center mt-5 h-16">
+                <p class="text-md w-80 min-w-full inline-flex sm:text-lg text-justify mb-5 font-bold">{{ block.settings.question }}</p>
+
+                <div
+                id="{{forloop.index}}"
+                class="plus-icon relative flex h-full w-full justify-end items-end mr-0"
+                >
+                <svg
+                id="circle"
+                class="absolute top-2 w-7 h-7 rounded-full bg-downy-500"
+                viewBox="0 0 24 24"
+              >
+              </svg>
+              <svg
+              id="{{forloop.index}}-vertical-line"
+                class="vertical-line absolute transition mr-[1px] top-[16%] animate plus-minus duration-500 ease-in-out pointer-events-auto focus:stroke-transparent rotate-90 stroke-black stroke"
+                height="24"
+                viewBox="0 0 24 24"
+                width="24"
+                stroke-linecap="round"
+              >
+                <path class="" d="M19,12 H5"></path>
+              </svg>
+              <svg
+                id="horizontal-line"
+                class="absolute top-[16%] mr-[1px] plus-minus stroke-black stroke"
+                height="24"
+                viewBox="0 0 24 24"
+                width="24"
+                stroke-linecap="round"
+              >
+                <path class="" d="M19,12 H5"></path>
+              </svg>
+              </div>
+
+              </div>
+
+              <div class="accordion-content px-5 pt-0 overflow-hidden max-h-0">
+                <p class="leading-6 font-light pl-9 text-justify self-center">
+                  {{ block.settings.answer }}
+                  <div class="h-10"></div>
+                </p>
+              </div>
+            </div>
+            {% endif %}
+          {% endfor %}
+      </div>
+
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<script>
+
+  //   document.getElementById(i).addEventListener('click', function() {
+  //   // document.getElementById('vertical-line').classList.remove('rotate-90');
+  // document.getElementsByClassName('vertical-line').classList.toggle('rotate-90');
+//  });
+let iconArray = document.querySelectorAll('.plus-icon');
+console.log(iconArray.length);
+
+
+for (let i = 2; i < iconArray.length + 2; i++) {
+
+// document.getElementById(i).addEventListener('click', function() {
+// document.getElementById('vertical-line').classList.remove('rotate-90');
+// document.getElementById( i + '-vertical-line').classList.toggle('rotate-90');
+//  });
+ 
+ const accordionHeader = document.querySelectorAll(".accordion-header");
+ accordionHeader.forEach((header) => {
+   header.addEventListener("click", function () {
+    document.getElementById(i).addEventListener("click", function () {
+      document.getElementById( i + '-vertical-line').classList.toggle('rotate-90');
+     const accordionContent = header.parentElement.querySelector(".accordion-content");
+     let accordionMaxHeight = accordionContent.style.maxHeight;
+     // Condition handling
+     if (accordionMaxHeight == "0px" || accordionMaxHeight.length == 0) {
+       document.getElementById( i + '-vertical-line').classList.remove('rotate-90');
+       accordionContent.style.maxHeight = `${accordionContent.scrollHeight + 32}px`;
+       header.parentElement.classList.add("bg-neutral-50");
+      } else {
+        document.getElementById( i + '-vertical-line').classList.add('rotate-90');
+        accordionContent.style.maxHeight = `0px`;
+        header.parentElement.classList.remove("bg-neutral-50");
+      }
+    });
+  });
+});
+}
+
+</script>
+
+</section>
+
+{% schema %}
+{
+"name": "Fitting & Care",
+"settings": [],
+"blocks": [
+  {
+    "type": "info",
+    "name": "Info",
+    "limit": 1,
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title"
+      },
+      {
+        "type": "richtext",
+        "id": "description",
+        "label": "description"
+      }
+    ]
+  },
+  {
+    "type": "faq",
+    "name": "FAQ",
+    "settings": [
+      {
+        "type": "text",
+        "id": "question",
+        "label": "Question"
+      },
+      {
+        "type": "richtext",
+        "id": "answer",
+        "label": "Answer"
+      }
+    ]
+  }
+  
+],
+"presets": [
+  {
+    "name": "FAQ Carousel",
+    "category": "Page"
+  }
+]
+}
+{% endschema %}
