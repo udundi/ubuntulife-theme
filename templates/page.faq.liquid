@@ -12,12 +12,11 @@
     </div>
 
     <div class="pointer-events-none mt-12 md:mt-0 flex flex-col items-center absolute z-10 px-2">
-      <h1 class="disabled text-3xl md:text-4xl xl:text-5xl tracking-wide font-black text-center md:text-neutral-800">
+      <h1 class="disabled text-3xl sm:text-[40px] tracking-wide font-bold text-center md:text-neutral-800">
         FREQUENTLY ASKED QUESTIONS
       </h1>
-      <p class="disabled xl:text-xl text-center font-medium max-w-xs md:max-w-md xl:max-w-lg mt-5">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.
+      <p class="disabled text-sm sm:text-base text-center font-medium px-2 max-w-[290px] sm:max-w-[425px] mt-5">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
       </p>
     </div>
   </div>
@@ -28,139 +27,109 @@
       <div
           id="orders"
           onclick="updateChoice(this.id)"
-          class="swiper-slide w-60 h-40 py-14 px-6 bg-white border border-solid border-downy-300 hover:border hover:border-solid hover:bg-white sm:hover:border-downy-300 hover:border-downy-300 transition-all duration-300">
+          class="swiper-slide w-60 h-40 py-5 px-6 bg-white border border-solid border-downy-300 hover:border hover:border-solid hover:bg-white sm:hover:border-downy-300 hover:border-downy-300 transition-all duration-300">
+          <div class="my-5 flex flex-col justify-start items-center">
               <image
-                class="w-10 h-10"
+                class="w-9 h-9 mb-5"
                 src="https://cdn.shopify.com/s/files/1/1257/5497/files/order-icon.svg?v=1659639509"
               >
               </image>
-          <div class=" flex flex-col justify-start items-left">
-            <p class="font-black text-neutral-800 text-xl md:text-2xl">
+            <p class="font-medium text-neutral-800 text-lg">
               ORDERS
             </p>
           </div>
         </div>
 
-      <div
+        <div
         id="fitting-care"
         onclick="updateChoice(this.id)"
-        class="swiper-slide w-60 h-40 py-14 px-6 bg-gray-50 hover:border hover:border-solid hover:bg-white sm:hover:border-downy-300 hover:border-downy-300 transition-all duration-300">
+        class="swiper-slide w-60 h-40 py-5 px-6 bg-gray-50 hover:border hover:border-solid hover:bg-white sm:hover:border-downy-300 hover:border-downy-300 transition-all duration-300">
+        <div class="my-5 flex flex-col justify-start items-center">
             <image
-              class="w-10 h-10"
-              src="https://cdn.shopify.com/s/files/1/1257/5497/files/order-icon.svg?v=1659639509"
+              class="w-9 h-9 mb-5"
+              src="https://cdn.shopify.com/s/files/1/1257/5497/files/measurement-icon.svg?v=1659639509"
             >
             </image>
-        <div class=" flex flex-col justify-start items-left">
-          <p class="font-black text-neutral-800 text-xl md:text-2xl">
+          <p class="font-medium text-neutral-800 text-lg">
             FITTING & CARE
           </p>
         </div>
       </div>
 
-    <div
-      id="shipping-returns"
+      <div
+          id="shipping-returns"
+          onclick="updateChoice(this.id)"
+          class="swiper-slide w-60 h-40 py-5 px-6 bg-gray-50 hover:border hover:border-solid hover:bg-white sm:hover:border-downy-300 hover:border-downy-300 transition-all duration-300">
+          <div class="my-5 flex flex-col justify-start items-center">
+              <image
+                class="w-9 h-9 mb-5"
+                src="https://cdn.shopify.com/s/files/1/1257/5497/files/shipping-icon.svg?v=1659639509"
+              >
+              </image>
+            <p class="font-medium text-neutral-800 text-lg">
+              SHIPPING & RETURNS
+            </p>
+          </div>
+        </div>
+
+        <div
+        id="international"
+        onclick="updateChoice(this.id)"
+        class="swiper-slide w-60 h-40 py-5 px-6 bg-gray-50 hover:border hover:border-solid hover:bg-white sm:hover:border-downy-300 hover:border-downy-300 transition-all duration-300">
+        <div class="my-5 flex flex-col justify-start items-center">
+            <image
+              class="w-9 h-9 mb-5"
+              src="https://cdn.shopify.com/s/files/1/1257/5497/files/international-icon.svg?v=1659639509"
+            >
+            </image>
+          <p class="font-medium text-neutral-800 text-lg">
+            INTERNATIONAL
+          </p>
+        </div>
+      </div>
+
+      <div
+      id="about-products"
       onclick="updateChoice(this.id)"
-      class="swiper-slide w-60 h-40 py-14 px-6 bg-gray-50 hover:border hover:border-solid hover:bg-white sm:hover:border-downy-300 hover:border-downy-300 transition-all duration-300">
+      class="swiper-slide w-60 h-40 py-5 px-6 bg-gray-50 hover:border hover:border-solid hover:bg-white sm:hover:border-downy-300 hover:border-downy-300 transition-all duration-300">
+      <div class="my-5 flex flex-col justify-start items-center">
           <image
-            class="w-10 h-10"
-            src="https://cdn.shopify.com/s/files/1/1257/5497/files/order-icon.svg?v=1659639509"
+            class="w-9 h-9 mb-5"
+            src="https://cdn.shopify.com/s/files/1/1257/5497/files/about-icon.svg?v=1660040970"
           >
           </image>
-      <div class=" flex flex-col justify-start items-left">
-        <p class="font-black text-neutral-800 text-xl md:text-2xl">
-          SHIPPING & RETURNS
+        <p class="font-medium text-neutral-800 text-lg">
+          ABOUT PRODUCTS
         </p>
       </div>
     </div>
 
-  <div
-    id="international"
-    onclick="updateChoice(this.id)"
-    class="swiper-slide w-60 h-40 py-14 px-6 bg-gray-50 hover:border hover:border-solid hover:bg-white sm:hover:border-downy-300 hover:border-downy-300 transition-all duration-300">
-        <image
-          class="w-10 h-10"
-          src="https://cdn.shopify.com/s/files/1/1257/5497/files/order-icon.svg?v=1659639509"
-        >
-        </image>
-    <div class=" flex flex-col justify-start items-left">
-      <p class="font-black text-neutral-800 text-xl md:text-2xl">
-        INTERNATIONAL ORDERS
-      </p>
     </div>
   </div>
-
-  <div
-  id="about-products"
-  onclick="updateChoice(this.id)"
-  class="swiper-slide w-60 h-40 py-14 px-6 bg-gray-50 hover:border hover:border-solid hover:bg-white sm:hover:border-downy-300 hover:border-downy-300 transition-all duration-300">
-      <image
-        class="w-10 h-10"
-        src="https://cdn.shopify.com/s/files/1/1257/5497/files/order-icon.svg?v=1659639509"
-      >
-      </image>
-  <div class=" flex flex-col justify-start items-left">
-    <p class="font-black text-neutral-800 text-xl md:text-2xl">
-      ABOUT PRODUCTS
-    </p>
-  </div>
-</div>
-
-    </div>
-  </div>
-  </div>
-  <div id="fitting-care-acc" class="acc-wrapper hidden">
-    {% section 'faq-fitting-accordion' %}
-  </div>
-  
-  <div id="shipping-returns-acc" class="acc-wrapper hidden">
-    {% section 'faq-shipping-accordion' %}
-  </div>
-  
-  <div id="international-acc" class="acc-wrapper hidden">
-    {% section 'faq-international-accordion' %}
-  </div>
-  
-  <div id="about-products-acc" class="acc-wrapper hidden">
-    {% section 'faq-about-accordion' %}
-  </div>
-
-  <div class="flex flex-col-reverse justify-start sm:flex-row-reverse sm:justify-end sm:ml-20 h-full">
-  <div class="flex flex-col self-right sm:w-screen sm:px-10 sm:mt-36 h-full m-0 mr-0 divide-y divide-solid divide-black px-7">
-    <p class="text-lg font-bold w-80 h-10 flex self-left mb-5">CALL US</p>
-    <div class="flex flex-col">
-      <p class="text-lg w-80 h-20 flex self-left py-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      <p class="text-lg text-downy-500 w-80 h-20 flex self-left py-5">XXX-XXX-XXXX</p>
-      <p class="text-lg font-bold w-80 h-10 flex self-left mt-8 mb-5">E-MAIL</p>
-    </div>
-    
-    <div class="flex flex-col">
-      <p class="text-lg w-80 h-20 flex self-left py-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      <p class="text-lg text-downy-500 w-80 h-20 flex self-left pt-5 pb-2">help@ubuntu.com</p>
-      <p class="text-lg font-bold w-80 h-10 flex self-left mt-8 mb-5">FIND US</p>
-    </div>
-    
-    <div class="flex flex-col">
-      <p class="text-lg w-80 h-20 flex self-left py-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      <a href="https://www.google.com">
-        <p class="text-lg text-downy-500 w-80 h-20 flex self-left pt-5 pb-2">Find the Closest Boutique</p>
-      </a>
-    </div>
   </div>
 
   <div id="orders-acc" class="acc-wrapper hidden">
     {% section 'faq-orders-accordion' %}
   </div>
   
-
-
-
-    
+  <div id="fitting-care-acc" class="wrapper hidden">
+    {% section 'faq-fitting-accordion' %}
   </div>
   
+  <div id="shipping-returns-acc" class="wrapper hidden">
+    {% section 'faq-shipping-accordion' %}
+  </div>
   
+  <div id="international-acc" class="wrapper hidden">
+    {% section 'faq-international-accordion' %}
+  </div>
   
-  
-  <div class="h-[500px] w-full bg-white"></div>
+  <div id="about-products-acc" class="wrapper hidden">
+    {% section 'faq-about-accordion' %}
+  </div>
+
+
+
 </div>
 </div>
 
