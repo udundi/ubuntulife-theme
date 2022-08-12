@@ -183,11 +183,10 @@ const faqSwiper = new Swiper(".swiper", {
             speed: 700,
             on: {
               tap: function () {
-                const currentSlide = faqSwiper.clickedIndex;
-                const previousSlide = faqSwiper.previousIndex;
+                const clickedSlide = faqSwiper.clickedIndex;
                 const swiperCollection = document.getElementsByClassName("swiper-slide");
 
-                faqSwiper.slideTo(currentSlide);
+                
 
 
                   for (let i = 0; i < swiperCollection.length; i++) {
@@ -195,10 +194,17 @@ const faqSwiper = new Swiper(".swiper", {
                     swiperCollection[i].classList.add("bg-gray-50");
                   }
 
-                document.getElementById(faqSwiper.slides[currentSlide].id).classList.remove("bg-gray-50");
-                document.getElementById(faqSwiper.slides[currentSlide].id).classList.add("bg-white", "border", "border-solid", "border-downy-300");
+                document.getElementById(faqSwiper.slides[clickedSlide].id).classList.remove("bg-gray-50");
+                document.getElementById(faqSwiper.slides[clickedSlide].id).classList.add("bg-white", "border", "border-solid", "border-downy-300");
               },
               slideChange: function () {
+                const previousSlide = faqSwiper.previousIndex;
+                console.log('sdfsdf', faqSwiper.activeIndex);
+                document.getElementById(faqSwiper.slides[previousSlide].id).classList.remove("bg-white", "border", "border-solid", "border-downy-300");
+                document.getElementById(faqSwiper.slides[previousSlide].id).classList.add("bg-gray-50");
+                document.getElementById(faqSwiper.slides[faqSwiper.activeIndex].id).classList.remove("bg-gray-50");
+                document.getElementById(faqSwiper.slides[faqSwiper.activeIndex].id).classList.add("bg-white", "border", "border-solid", "border-downy-300");
+                console.log('sdfsdf', faqSwiper.previousIndex);
                 updateChoice(selection);
               },
           
