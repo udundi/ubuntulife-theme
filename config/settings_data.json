@@ -469,6 +469,251 @@
         ],
         "settings": {
         }
+      },
+      "faq-orders-accordion": {
+        "type": "faq-orders-accordion",
+        "blocks": {
+          "dcd630cf-b0be-46be-8f9e-b4d873557fa5": {
+            "type": "info",
+            "settings": {
+              "title": "Orders",
+              "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut fringilla dolor. Duis tempus tellus ut velit vehicula aliquet.<\/p>"
+            }
+          },
+          "abe197c1-f137-49ed-ba66-4b60fce47ab7": {
+            "type": "faq",
+            "settings": {
+              "question": "What is your return policy?",
+              "answer": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut fringilla dolor. Duis tempus tellus ut velit vehicula aliquet.<\/p>"
+            }
+          },
+          "f28dd94c-db83-4f0f-afc0-8876d7862a78": {
+            "type": "faq",
+            "settings": {
+              "question": "What is your return policy?",
+              "answer": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut fringilla dolor. Duis tempus tellus ut velit vehicula aliquet.<\/p>"
+            }
+          },
+          "21604aae-2b83-4e5b-a0ae-0c62c042604c": {
+            "type": "faq",
+            "settings": {
+              "question": "What is your return policy?",
+              "answer": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut fringilla dolor. Duis tempus tellus ut velit vehicula aliquet.<\/p>"
+            }
+          },
+          "9dff8f61-08ab-437f-9de5-06d8725517ac": {
+            "type": "faq",
+            "settings": {
+              "question": "What is your return policy?",
+              "answer": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut fringilla dolor. Duis tempus tellus ut velit vehicula aliquet.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "dcd630cf-b0be-46be-8f9e-b4d873557fa5",
+          "abe197c1-f137-49ed-ba66-4b60fce47ab7",
+          "f28dd94c-db83-4f0f-afc0-8876d7862a78",
+          "21604aae-2b83-4e5b-a0ae-0c62c042604c",
+          "9dff8f61-08ab-437f-9de5-06d8725517ac"
+        ],
+        "settings": {
+        }
+      },
+      "faq-fitting-accordion": {
+        "type": "faq-fitting-accordion",
+        "blocks": {
+          "a4618975-915a-478b-8426-8a5721b082a2": {
+            "type": "info",
+            "settings": {
+              "title": "Fitting & Care",
+              "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut fringilla dolor. Duis tempus tellus ut velit vehicula aliquet.<\/p>"
+            }
+          },
+          "d39b5c21-f956-4943-ac22-aadf46e331e7": {
+            "type": "faq",
+            "settings": {
+              "question": "What is your return policy? Fitting",
+              "answer": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut fringilla dolor. Duis tempus tellus ut velit vehicula aliquet.<\/p>"
+            }
+          },
+          "3db41c4e-8394-47b3-b8b0-3e72c231f26b": {
+            "type": "faq",
+            "settings": {
+              "question": "What is your return policy? Fitting",
+              "answer": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut fringilla dolor. Duis tempus tellus ut velit vehicula aliquet.<\/p>"
+            }
+          },
+          "c63d5831-ae9f-4217-9dc8-dd8b0e4a1e00": {
+            "type": "faq",
+            "settings": {
+              "question": "What is your return policy? Fitting",
+              "answer": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut fringilla dolor. Duis tempus tellus ut velit vehicula aliquet.<\/p>"
+            }
+          },
+          "66b867ba-cd0e-4489-94fd-3d12ff9df1a9": {
+            "type": "faq",
+            "settings": {
+              "question": "What is your return policy? Fitting",
+              "answer": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut fringilla dolor. Duis tempus tellus ut velit vehicula aliquet.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "a4618975-915a-478b-8426-8a5721b082a2",
+          "d39b5c21-f956-4943-ac22-aadf46e331e7",
+          "3db41c4e-8394-47b3-b8b0-3e72c231f26b",
+          "c63d5831-ae9f-4217-9dc8-dd8b0e4a1e00",
+          "66b867ba-cd0e-4489-94fd-3d12ff9df1a9"
+        ],
+        "settings": {
+        }
+      },
+      "faq-shipping-accordion": {
+        "type": "faq-shipping-accordion",
+        "blocks": {
+          "6a559bbf-cd18-4563-96dd-e9b10cb98f4c": {
+            "type": "info",
+            "settings": {
+              "title": "Shipping & Returns",
+              "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut fringilla dolor. Duis tempus tellus ut velit vehicula aliquet.<\/p>"
+            }
+          },
+          "df68db0d-ee20-4c80-a8d7-71818b3fe771": {
+            "type": "faq",
+            "settings": {
+              "question": "What is your return policy? Shipping",
+              "answer": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut fringilla dolor. Duis tempus tellus ut velit vehicula aliquet.<\/p>"
+            }
+          },
+          "ef731b7a-f781-4708-ba0a-db2fa89a825c": {
+            "type": "faq",
+            "settings": {
+              "question": "What is your return policy? Shipping",
+              "answer": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut fringilla dolor. Duis tempus tellus ut velit vehicula aliquet.<\/p>"
+            }
+          },
+          "9a28bb0b-201f-4309-aa77-9f6660cbc9fd": {
+            "type": "faq",
+            "settings": {
+              "question": "What is your return policy? Shipping",
+              "answer": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut fringilla dolor. Duis tempus tellus ut velit vehicula aliquet.<\/p>"
+            }
+          },
+          "57234f6d-c7df-432a-b47b-3e5e0be29e50": {
+            "type": "faq",
+            "settings": {
+              "question": "What is your return policy? Shipping",
+              "answer": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut fringilla dolor. Duis tempus tellus ut velit vehicula aliquet.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "6a559bbf-cd18-4563-96dd-e9b10cb98f4c",
+          "df68db0d-ee20-4c80-a8d7-71818b3fe771",
+          "ef731b7a-f781-4708-ba0a-db2fa89a825c",
+          "9a28bb0b-201f-4309-aa77-9f6660cbc9fd",
+          "57234f6d-c7df-432a-b47b-3e5e0be29e50"
+        ],
+        "settings": {
+        }
+      },
+      "faq-international-accordion": {
+        "type": "faq-international-accordion",
+        "blocks": {
+          "72b2a1b4-8ad7-4dde-83fd-7115be93a41a": {
+            "type": "info",
+            "settings": {
+              "title": "International",
+              "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut fringilla dolor. Duis tempus tellus ut velit vehicula aliquet.<\/p>"
+            }
+          },
+          "d69873cb-dd0a-4484-b625-19352f8ea09a": {
+            "type": "faq",
+            "settings": {
+              "question": "What is your return policy? International",
+              "answer": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut fringilla dolor. Duis tempus tellus ut velit vehicula aliquet.<\/p>"
+            }
+          },
+          "a112bcd4-99ae-4f1f-aee2-4c799f1e20bb": {
+            "type": "faq",
+            "settings": {
+              "question": "What is your return policy? International",
+              "answer": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut fringilla dolor. Duis tempus tellus ut velit vehicula aliquet.<\/p>"
+            }
+          },
+          "9da8cd24-c2ed-4c4f-8bee-6cce5db66a81": {
+            "type": "faq",
+            "settings": {
+              "question": "What is your return policy? International",
+              "answer": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut fringilla dolor. Duis tempus tellus ut velit vehicula aliquet.<\/p>"
+            }
+          },
+          "665fe513-f770-477b-99aa-1e3d2022b356": {
+            "type": "faq",
+            "settings": {
+              "question": "What is your return policy? International",
+              "answer": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut fringilla dolor. Duis tempus tellus ut velit vehicula aliquet.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "72b2a1b4-8ad7-4dde-83fd-7115be93a41a",
+          "d69873cb-dd0a-4484-b625-19352f8ea09a",
+          "a112bcd4-99ae-4f1f-aee2-4c799f1e20bb",
+          "9da8cd24-c2ed-4c4f-8bee-6cce5db66a81",
+          "665fe513-f770-477b-99aa-1e3d2022b356"
+        ],
+        "settings": {
+        }
+      },
+      "faq-about-accordion": {
+        "type": "faq-about-accordion",
+        "blocks": {
+          "b0be74b8-3e87-4d0a-9194-55edd591b212": {
+            "type": "info",
+            "settings": {
+              "title": "About Products",
+              "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut fringilla dolor. Duis tempus tellus ut velit vehicula aliquet.<\/p>"
+            }
+          },
+          "f1779cef-21f1-4b96-8954-ffb10b624d57": {
+            "type": "faq",
+            "settings": {
+              "question": "What is your return policy? About",
+              "answer": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut fringilla dolor. Duis tempus tellus ut velit vehicula aliquet.<\/p>"
+            }
+          },
+          "d5baf298-e6f9-4860-b848-7376f0644248": {
+            "type": "faq",
+            "settings": {
+              "question": "What is your return policy? About",
+              "answer": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut fringilla dolor. Duis tempus tellus ut velit vehicula aliquet.<\/p>"
+            }
+          },
+          "4b429813-812f-4ad3-8f45-c1679a89f9a9": {
+            "type": "faq",
+            "settings": {
+              "question": "What is your return policy? About",
+              "answer": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut fringilla dolor. Duis tempus tellus ut velit vehicula aliquet.<\/p>"
+            }
+          },
+          "dedb6fbe-fbd5-4ab5-a007-19b9efc8531b": {
+            "type": "faq",
+            "settings": {
+              "question": "What is your return policy? About",
+              "answer": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut fringilla dolor. Duis tempus tellus ut velit vehicula aliquet.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "b0be74b8-3e87-4d0a-9194-55edd591b212",
+          "f1779cef-21f1-4b96-8954-ffb10b624d57",
+          "d5baf298-e6f9-4860-b848-7376f0644248",
+          "4b429813-812f-4ad3-8f45-c1679a89f9a9",
+          "dedb6fbe-fbd5-4ab5-a007-19b9efc8531b"
+        ],
+        "settings": {
+        }
       }
     },
     "content_for_index": [
