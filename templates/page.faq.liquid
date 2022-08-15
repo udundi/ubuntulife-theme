@@ -127,9 +127,9 @@
   <div id="about-products-acc" class="acc-wrapper hidden">
     {% section 'faq-about-accordion' %}
   </div>
-
-
-
+  
+  
+  
 </div>
 </div>
 
@@ -153,7 +153,6 @@ let previousSelection = "";
     previousSelection = "";
     const collection = document.getElementsByClassName("acc-wrapper");
       for (let i = 0; i < collection.length; i++) {
-        collection[i].style.backgroundColor = "red";
         collection[i].classList.remove('hidden');
         collection[i].classList.add('hidden');
       }
@@ -164,6 +163,7 @@ let previousSelection = "";
     selection = "";
     console.log('~~~~~', id)
     selection = id;
+    console.log('boi', selection)
     hideAccordions();
     document.getElementById(selection + "-acc").classList.remove('hidden');
   
@@ -185,10 +185,6 @@ const faqSwiper = new Swiper(".swiper", {
               tap: function () {
                 const clickedSlide = faqSwiper.clickedIndex;
                 const swiperCollection = document.getElementsByClassName("swiper-slide");
-
-                
-
-
                   for (let i = 0; i < swiperCollection.length; i++) {
                     swiperCollection[i].classList.remove("bg-white", "border", "border-solid", "border-downy-300");
                     swiperCollection[i].classList.add("bg-gray-50");
@@ -199,14 +195,18 @@ const faqSwiper = new Swiper(".swiper", {
               },
               slideChange: function () {
                 const previousSlide = faqSwiper.previousIndex;
-                console.log('sdfsdf', faqSwiper.activeIndex);
+                const activeSlide = faqSwiper.realIndex;
+                currentId = document.getElementById(faqSwiper.slides[activeSlide].id).id;
+                console.log('active', faqSwiper.realIndex);
+                console.log('currentElement', faqSwiper.slides[activeSlide].id);
                 document.getElementById(faqSwiper.slides[previousSlide].id).classList.remove("bg-white", "border", "border-solid", "border-downy-300");
                 document.getElementById(faqSwiper.slides[previousSlide].id).classList.add("bg-gray-50");
-                document.getElementById(faqSwiper.slides[faqSwiper.activeIndex].id).classList.remove("bg-gray-50");
-                document.getElementById(faqSwiper.slides[faqSwiper.activeIndex].id).classList.add("bg-white", "border", "border-solid", "border-downy-300");
-                console.log('sdfsdf', faqSwiper.previousIndex);
-                updateChoice(selection);
+                document.getElementById(faqSwiper.slides[activeSlide].id).classList.remove("bg-gray-50");
+                document.getElementById(faqSwiper.slides[activeSlide].id).classList.add("bg-white", "border", "border-solid", "border-downy-300");
+                console.log('prev', faqSwiper.previousIndex);
+                updateChoice(currentId)
               },
+              
           
             },
             breakpoints: {
