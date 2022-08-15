@@ -426,7 +426,7 @@
         "type": "index-articles",
         "settings": {
           "blog": "news",
-          "post_limit": 4
+          "post_limit": 13
         }
       },
       "affiliate-carousel": {
