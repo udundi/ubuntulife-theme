@@ -1,12 +1,12 @@
 <section id="faq-orders" class="bg-white flex flex-col sm:flex-row mb-32 pl-10 sm:5">
     <div class="h-full sm:w-[1000px] bg-white flex flex-col mt-20 sm:ml-5">
-      <div class="flex flex-col w-96 sm:w-[92%] px-5 mb-5 sm:mb-7">
+      <div class="flex flex-col w-96 sm:w-[92%] pl-5 mb-5 sm:mb-7 pr-10">
         {% for block in section.blocks %}
         {% if block.settings.title %}
         <p class="text-2xl text-gray-700 font-bold mb-5 sm:mb-9">{{ block.settings.title | upcase}}</p>
         {% endif %}
         {% if block.settings.description %}
-        <p class="text-lg max-w-[1050px]">{{ block.settings.description }}</p>
+        <p class="text-lg">{{ block.settings.description }}</p>
         {% endif %}
         {% endfor %}
         <a href="https://www.google.com">
@@ -113,14 +113,14 @@ for (let i = 2; i < iconArray.length + 2; i++) {
   // document.getElementById('vertical-line').classList.remove('rotate-90');
   // document.getElementById( i + '-vertical-line').classList.toggle('rotate-90');
   //  });
-   
-   const accordionHeader = document.querySelectorAll(".accordion-header");
-   accordionHeader.forEach((header) => {
-     header.addEventListener("click", function () {
-      document.getElementById(i).addEventListener("click", function () {
-        document.getElementById( i + '-vertical-line').classList.toggle('rotate-90');
-       const accordionContent = header.parentElement.querySelector(".accordion-content");
-       let accordionMaxHeight = accordionContent.style.maxHeight;
+  
+  const accordionHeader = document.querySelectorAll(".accordion-header");
+  accordionHeader.forEach((header) => {
+    document.getElementById(i).addEventListener("click", function () {
+      document.getElementById( i + '-vertical-line').classList.toggle('rotate-90');
+      const accordionContent = header.parentElement.querySelector(".accordion-content");
+      let accordionMaxHeight = accordionContent.style.maxHeight;
+      header.addEventListener("click", function () {
        // Condition handling
        if (accordionMaxHeight == "0px" || accordionMaxHeight.length == 0) {
          document.getElementById( i + '-vertical-line').classList.remove('rotate-90');

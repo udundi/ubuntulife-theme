@@ -1,12 +1,12 @@
-<section id="faq-orders" class="bg-white flex flex-col sm:flex-row mb-32 pl-10 sm:5">
+<section id="faq-shipping" class="bg-white flex flex-col sm:flex-row mb-32 pl-10 sm:5">
   <div class="h-full sm:w-[1000px] bg-white flex flex-col mt-20 sm:ml-5">
-    <div class="flex flex-col w-96 sm:w-[92%] px-5 mb-5 sm:mb-7">
+    <div class="flex flex-col w-96 sm:w-[92%] pl-5 mb-5 sm:mb-7 pr-10">
       {% for block in section.blocks %}
       {% if block.settings.title %}
       <p class="text-2xl text-gray-700 font-bold mb-5 sm:mb-9">{{ block.settings.title | upcase}}</p>
       {% endif %}
       {% if block.settings.description %}
-      <p class="text-lg">{{ block.settings.description }}</p>
+      <p class="text-lg max-w-[1050px]">{{ block.settings.description }}</p>
       {% endif %}
       {% endfor %}
       <a href="https://www.google.com">
@@ -18,8 +18,10 @@
         {% for block in section.blocks %}
         {% if block.settings.question %}
             <div class="transition bg-white border border-solid border-black focus:bg-neutral-50 mb-5">
-              <div class="accordion-header cursor-pointer transition flex items-center mt-5 h-16 px-10">
-                <p class="text-md w-80 min-w-full inline-flex sm:text-lg text-justify mb-5 font-bold">{{ block.settings.question }}</p>
+              <div class="accordion-header cursor-pointer transition flex items-center mt-5 h-16 px-5">
+                <div class="flex min-w-full w-full pr-10">
+                  <p class="text-md min-w-full max-w-96 sm:max-w-full flex sm:text-lg text-justify mb-5 font-bold">{{ block.settings.question }}</p>
+                </div>
 
                 <div
                 id="{{forloop.index}}"
@@ -101,11 +103,11 @@
   //   // document.getElementById('vertical-line').classList.remove('rotate-90');
   // document.getElementsByClassName('vertical-line').classList.toggle('rotate-90');
 //  });
-let iconArray3 = document.querySelectorAll('.plus-icon');
-console.log(iconArray3.length);
+let iconArray = document.querySelectorAll('.plus-icon');
+console.log(iconArray.length);
 
 
-for (let i = 2; i < iconArray3.length + 2; i++) {
+for (let i = 2; i < iconArray.length + 2; i++) {
 
 // document.getElementById(i).addEventListener('click', function() {
 // document.getElementById('vertical-line').classList.remove('rotate-90');
