@@ -59,15 +59,16 @@
     <div class="mt-7 lg:mt-0">
       <p class="font-medium text-lg">JOIN OUR MAILING LIST</p>
       <p class="hidden lg:block max-w-xs mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-      {% form 'customer' %}
+      {% form 'customer', id: 'newsletter-footer' %}
         <div class="border-b border-black flex justify-between pb-2 mt-4 lg:mt-5">
           {{ form.errors | default_errors }}
           {% if form.posted_successfully? %}
             <p class="">{{ 'general.newsletter_form.confirmation' | t }}</p>
           {% else %}
-            <input name="contact[tags]" type="hidden" value="newsletter">
+            <input name="contact[tags]" type="hidden" value="prospect,newsletter">
+            <input type="hidden" name="contact[context]" value="footer">
             <input class="placeholder-neutral-800 text-sm" type="email" value="{% if customer %}{{ customer.email }}{% endif %}" placeholder="Enter your e-mail" name="contact[email]" id="Email" aria-label="{{ 'general.newsletter_form.newsletter_email' | t }}" autocorrect="off" autocapitalize="off">
-            <button aria-label="Subscribe to email newsletter" id="subscribe" name="subscribe" type="submit">
+            <button aria-label="Subscribe to email newsletter" id="subscribe" name="commit" type="submit">
               <svg width="25" height="19" viewBox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M23.2254 0H0.860199C0.384399 0 0 0.385937 0 0.863637V18.1363C0 18.614 0.384399 19 0.860199 19H23.2254C23.7012 19 24.0856 18.614 24.0856 18.1363V0.863637C24.0856 0.385937 23.7012 0 23.2254 0ZM22.15 2.99104V17.0575H1.93528V2.99104L1.19336 2.41078L1.19414 2.40977L1.93236 2.98713L11.115 10.1553C11.6582 10.579 12.4185 10.579 12.9617 10.1553L22.1497 2.98983L22.8917 2.40957L21.8369 1.04882L21.8382 1.04785L22.8946 2.41078L22.15 2.99104ZM20.6824 1.94658L20.6874 1.94267L21.8352 1.04665L21.8369 1.04882L20.6876 1.94658H20.6824ZM20.6824 1.94658L12.0424 8.68983L3.40239 1.94658H20.6824ZM3.40239 1.94658H3.40032L2.2498 1.04785L1.19414 2.40977L1.19043 2.40687L2.24687 1.04395L3.39739 1.94267L3.40239 1.94658Z" fill="black"/>
               </svg>
