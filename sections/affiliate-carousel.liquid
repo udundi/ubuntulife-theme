@@ -59,10 +59,6 @@
           const previousSlide = affSwiper.previousIndex;
 
           console.log('prev', previousSlide, 'curr', currentSlide);
-          // document.getElementById(affSwiper.slides[1].id).classList.remove("bg-downy-300");
-          // document.getElementById(affSwiper.slides[1].id).classList.add("bg-gray-50");
-          // document.getElementById(affSwiper.slides[2].id).classList.remove("bg-downy-300");
-          // document.getElementById(affSwiper.slides[2].id).classList.add("bg-gray-50");
           document.getElementById(affSwiper.slides[previousSlide].id).classList.remove("bg-downy-300");
           document.getElementById(affSwiper.slides[previousSlide].id).classList.add("bg-gray-50");
           document.getElementById(affSwiper.slides[currentSlide].id).classList.remove("bg-gray-50");

@@ -12,12 +12,24 @@
       <div ref="productImages" id="productImages" class="sticky-top">
         <div ref="carousel" id="product-carousel" class="swiper">
           <div class="swiper-wrapper">
-            <div v-for="media in product.media" class="swiper-slide ud-square-image">
-              <video v-if="media.media_type.includes('video')" :src="media.src" controls :poster="media.preview_image"></video>
-              <img v-else :src="imageSize(media.src, '1200x1200')" :alt="media.alt">
+            <div
+              v-for="media in product.media"
+              class="swiper-slide ud-square-image"
+            >
+              <video
+                v-if="media.media_type.includes('video')"
+                :src="media.src"
+                controls
+                :poster="media.preview_image"
+              ></video>
+              <img
+                v-else
+                :src="imageSize(media.src, '1200x1200')"
+                :alt="media.alt"
+              >
             </div>
           </div>
-          
+
           <div class="swiper-pagination"></div>
 
           <div class="swiper-button-prev"></div>
@@ -29,8 +41,15 @@
     <div class="col-12 col-lg-6">
       <h1 class="text-start mb-2">{ product.title }</h1>
 
-      <h2 class="text-start d-inline mb-2">{ formatMoney(selectedVariant.price) }</h2>
-      <h2 class="text-start d-inline ms-2 mb-2" v-if="selectedVariant.compare_at_price > selectedVariant.price"><del>{ formatMoney(selectedVariant.compare_at_price) }</del></h2>
+      <h2 class="text-start d-inline mb-2">
+        { formatMoney(selectedVariant.price) }
+      </h2>
+      <h2
+        class="text-start d-inline ms-2 mb-2"
+        v-if="selectedVariant.compare_at_price > selectedVariant.price"
+      >
+        <del>{ formatMoney(selectedVariant.compare_at_price) }</del>
+      </h2>
 
       <div v-html="product.description"></div>
 
@@ -41,27 +60,55 @@
               <div class="section-selector">
                 <div class="selector-header">
                   <p class="selector-label">
-                    { option.name }<template v-if="option.name == 'Color'">: { options[option.name] }</template>
+                    { option.name }<template v-if="option.name == 'Color'"
+                      >: { options[option.name] }</template
+                    >
                   </p>
                 </div>
-      
+
                 <div class="d-flex flex-wrap">
-                  <div class="form-check" :class="{ 'radio-bubble': option.name !== 'Color', 'radio-color': option.name == 'Color'}" v-for="(value, index) in option.values">
-                    <input class="form-check-input" type="radio" :name="option.name" :id="value" :checked="options[option.name] == value" :value="value" v-model="options[option.name]" hidden>
-                    <label class="form-check-label" :for="value">{ value }</label>
+                  <div
+                    class="form-check"
+                    :class="{ 'radio-bubble': option.name !== 'Color', 'radio-color': option.name == 'Color'}"
+                    v-for="(value, index) in option.values"
+                  >
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      :name="option.name"
+                      :id="value"
+                      :checked="options[option.name] == value"
+                      :value="value"
+                      v-model="options[option.name]"
+                      hidden
+                    >
+                    <label class="form-check-label" :for="value"
+                      >{ value }</label
+                    >
                   </div>
                 </div>
-              </div> 
+              </div>
             </template>
           </div>
         </div>
       </div>
 
-      <form ref="addToCartForm" action="/cart/add" method="post" class="row mb-3" data-cart-submit>
-        <input type="hidden" name="id" :value="selectedVariant.id" />
+      <form
+        ref="addToCartForm"
+        action="/cart/add"
+        method="post"
+        class="row mb-3"
+        data-cart-submit
+      >
+        <input type="hidden" name="id" :value="selectedVariant.id">
 
         <div class="col">
-          <button id="AddToCart" :disabled="!selectedVariant.available" ref="addToCart" class="btn btn-primary mw-100 ud-toggle-cart">
+          <button
+            id="AddToCart"
+            :disabled="!selectedVariant.available"
+            ref="addToCart"
+            class="btn btn-primary mw-100 ud-toggle-cart"
+          >
             <template v-if="!selectedVariant.available">Sold Out</template>
             <template v-else>Add to Cart</template>
           </button>
@@ -73,7 +120,9 @@
   {%- comment -%}
     Live region for announcing updated price and availability to screen readers
   {%- endcomment -%}
-  <p class="d-none" data-product-status
+  <p
+    class="d-none"
+    data-product-status
     aria-live="polite"
     role="status"
   ></p>
@@ -82,11 +131,15 @@
     Live region for announcing that the product form has been submitted and the
     product is in the process being added to the cart
   {%- endcomment -%}
-  <p class="d-none" data-loader-status
+  <p
+    class="d-none"
+    data-loader-status
     aria-live="assertive"
     role="alert"
     aria-hidden="true"
-  >{{ 'products.product.loader_label' | t }}</p>
+  >
+    {{ 'products.product.loader_label' | t }}
+  </p>
 </div>
 
 <script>
@@ -114,7 +167,7 @@
 
           let variant = variants.find((variant) => {
             let variantOptions = variant.title.split(' / ');
-            
+
             if(variantOptions.length == options.length && variantOptions.every(x => options.includes(x))) {
               return variant;
             }
@@ -132,7 +185,7 @@
           if (window.history.pushState) {
             let searchParams = new URLSearchParams(window.location.search);
             searchParams.set('variant', this.selectedVariant.id);
-            
+
             let newPath = window.location.pathname + '?' + searchParams.toString() + window.location.hash;
             window.history.pushState(null, '', newPath);
           }
