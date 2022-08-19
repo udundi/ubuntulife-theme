@@ -1,0 +1,255 @@
+<div class="relative w-screen h-[32rem] md:h-[36rem]">
+  <img class="md:hidden w-full h-full object-cover" src="{{ section.settings.header_img_mobile | image_url: width: 1024 }}" alt="Tribe woman">
+  <img class="hidden md:block w-full h-full object-cover" src="{{ section.settings.header_img_desktop | image_url: width: 2048 }}" alt="Tribe woman">
+  <!-- Mobile text -->
+  <div class="md:hidden absolute top-20 left-1/2 -translate-x-1/2 flex flex-col items-center w-80 text-white">
+    <h1 class="font-ubuntulife font-bold text-2xl">{{ section.settings.heading_1_mobile }}</h1>
+    <h2 class="font-black text-4xl">{{ section.settings.heading_2_mobile }}</h2>
+    <p class="mt-5 text-center">{{ section.settings.heading_text_mobile }}</p>
+  </div>
+  <!-- Desktop text -->
+  <div class="hidden absolute top-1/2 left-1/2 lg:left-2/3 -translate-y-1/2 -translate-x-1/2 md:-translate-x-1/3 md:flex flex-col items-center text-white">
+    <h1 class="font-ubuntulife font-bold text-2xl">{{ section.settings.heading_1_desktop }}</h1>
+    <h2 class="font-black text-5xl">{{ section.settings.heading_2_desktop }}</h2>
+    <p class="mt-5 text-center font-medium text-lg xl:w-max xl:max-w-2xl">{{ section.settings.heading_text_desktop }}</p>
+  </div>
+</div>
+<div class="flex flex-col lg:flex-row lg:justify-center px-3 my-3 lg:px-16 sm:my-16 max-w-screen-sm lg:max-w-none mx-auto">
+  <img class="w-full lg:object-cover lg:w-1/2 lg:max-w-lg lg:aspect-square" src="{{ 'cofounders.jpg' | file_img_url: '768x' }}" alt="Image of the founders">
+  <div class="mt-8 lg:mt-0 lg:ml-24 flex flex-col lg:max-w-2xl">
+    <h3 class="font-black text-neutral-800 text-3xl lg:text-4xl">HISTORY</h3>
+    <p class="mt-4">{{ section.settings.history_text }}</p>
+  </div>
+</div>
+<div class="bg-downy-300 px-3 py-24 flex flex-col text-white items-center">
+  <p class="font-ubuntulife font-bold text-4xl lg:text-5xl">UBUNTU</p>
+  <p class="mt-2 lg:text-2xl lg:font-light">[OO-<span class="lg:italic">BUHN</span>-TOO] NOUN</p>
+  <p class="mt-2 text-center max-w-xs lg:max-w-xl lg:text-2xl lg:font-medium">
+    The Belief that we are defined by our compassion and humanity towards others; I am Because We are
+  </p>
+</div>
+<div class="relative py-14 md:py-16 flex flex-col items-center px-3 bg-neutral-50 md:bg-white">
+  <p class="font-black text-3xl md:text-4xl text-neutral-800">WHAT WE DO</p>
+  <p class="mt-3 text-center max-w-sm md:max-w-lg"> 
+    At Ubuntu Life, we provide mothers of children with special needs and others in our community with sustainable employment creating beautiful products for sale in Kenya and internationally.
+  </p>
+  <div class="mission-swiper mt-10 md:mt-14 w-screen overflow-hidden md:flex">
+    <div class="swiper-wrapper md:w-full md:flex md:flex-col md:px-4 lg:px-20 max-w-screen-xl xl:mx-auto">
+      {% for block in section.blocks %}
+        <div class="bg-white md:bg-neutral-50 swiper-slide w-80 md:w-full pb-8 md:pb-0 md:mb-8 flex flex-col md:flex-row">
+          <img class="w-full md:min-w-[33%] md:w-1/3 object-cover" src="{{ block.settings.image | image_url: width: 1024 }}" alt="Cover photo">
+          <div class="mt-7 md:my-8 xl:ml-20 md:flex flex-col justify-center">
+            <p class="px-5 font-ubuntulife font-bold text-2xl">{{ block.settings.header }}</p>
+            <p class="mt-2 px-5">{{ block.settings.body }}</p>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+    <div class="swiper-pagination md:hidden [&>*]:w-5 [&>*]:h-5 [&>*]:bg-downy-300 [&>*]:opacity-25 [&>*.swiper-pagination-bullet-active]:opacity-100"></div>
+  </div>
+</div>
+<div class="flex flex-col lg:flex-row-reverse lg:items-center max-w-screen-sm lg:max-w-screen-xl mx-auto">
+  <img class="ml-4 h-80 object-cover lg:min-w-[30rem] lg:h-[32rem]" src="{{ 'makermums_creating.jpg' | file_img_url: '1024x' }}" alt="Maker mums creating handmade products">
+  <div class="flex flex-col lg:mx-16">
+    <p class="mt-6 mx-4 font-black text-3xl lg:text-4xl text-neutral-800">HOW WE DO IT</p>
+    <p class="mt-6 mx-4">
+      Every purchase empowers. We pride ourselves on being able to create our quality handmade products for our customers, all while providing our Maker Mums and Maker Men with sustainable employment, health insurance, and a living wage well above the standard income for the Maai Mahiu area. 
+      This is because we source materials locally, and make our handcrafted products in our own factory in Maai Mahiu, allowing us to control and optimize every element of the production process. We’re able to pass our cost-savings and profits on to our empowered Makers, investing in their wellbeing, and that of the local community.
+    </p>
+  </div>
+</div>
+<div class="flex flex-col lg:flex-row lg:items-center max-w-screen-sm lg:max-w-screen-xl mx-auto mt-16">
+  <img class="mr-4 h-80 object-cover lg:min-w-[30rem] lg:h-[32rem] 2xl:h-[36rem]" src="{{ 'impact-kids.jpg' | file_img_url: '1024x' }}" alt="Impact kids">
+  <div class="flex flex-col lg:mx-16 lg:w-2/5 2xl:w-1/2">
+    <p class="mt-6 mx-4 font-black text-3xl lg:text-4xl text-neutral-800">WHY WE DO IT</p>
+    <p class="mt-6 mx-4">
+      Ubuntu is a Swahili word meaning, I am because we are. This is the driving philosophy behind everything we do at Ubuntu Life. We are all connected, and strive to remind our customers of that connection with every handcrafted product that our Makers in Maai Mahiu create. And of course there are our special needs kiddos, the heart of Ubuntu Life, who receive educational and medical care from our Ubuntu Life Foundation. They are why we do what we do each day.
+    </p>
+    <div class="whywedoit-swiper mt-10 w-screen lg:w-full overflow-hidden lg:overflow-scroll">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide relative pt-4 w-60 lg:w-48 lg:mr-4">
+          <div class="absolute top-0 left-5 p-2 bg-candy-400 rounded-full">
+            <svg class="h-5 w-5 lg:h-4 lg:w-4" width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4.95816 0C4.6547 1e-06 4.36367 0.121122 4.14909 0.336718C3.93452 0.552318 3.81397 0.844728 3.81397 1.14963V1.53284H1.14419C0.840731 1.53284 0.549703 1.65396 0.335126 1.86956C0.120548 2.08516 0 2.37757 0 2.68247V8.81383C0 9.11873 0.120548 9.41114 0.335126 9.62674C0.549703 9.84234 0.840731 9.96344 1.14419 9.96344H11.0605C11.364 9.96344 11.655 9.84234 11.8696 9.62674C12.0842 9.41114 12.2047 9.11873 12.2047 8.81383V2.68247C12.2047 2.37757 12.0842 2.08516 11.8696 1.86956C11.655 1.65396 11.364 1.53284 11.0605 1.53284H8.39073V1.14963C8.39073 0.844728 8.27018 0.552318 8.0556 0.336718C7.84103 0.121122 7.55 1e-06 7.24654 0H4.95816ZM4.95816 0.766418H7.24654C7.34769 0.766418 7.4447 0.806798 7.51623 0.878658C7.58775 0.950528 7.62794 1.048 7.62794 1.14963V1.53284H4.57676V1.14963C4.57676 1.048 4.61694 0.950528 4.68847 0.878658C4.76 0.806798 4.85701 0.766418 4.95816 0.766418ZM6.39679 6.06545L11.4419 4.71425V8.81383C11.4419 8.91547 11.4018 9.01294 11.3302 9.0848C11.2587 9.15667 11.1617 9.19704 11.0605 9.19704H1.14419C1.04304 9.19704 0.946031 9.15667 0.874501 9.0848C0.802981 9.01294 0.762791 8.91547 0.762791 8.81383V4.71349L5.80791 6.06545C6.00084 6.11707 6.20386 6.11707 6.39679 6.06545ZM1.14419 2.29926H11.0605C11.1617 2.29926 11.2587 2.33964 11.3302 2.4115C11.4018 2.48337 11.4419 2.58084 11.4419 2.68247V3.92101L6.20075 5.32509C6.13628 5.34239 6.06842 5.34239 6.00395 5.32509L0.762791 3.92101V2.68247C0.762791 2.58084 0.802981 2.48337 0.874501 2.4115C0.946031 2.33964 1.04304 2.29926 1.14419 2.29926Z" fill="white"/>
+            </svg>
+          </div>
+          <div class="bg-neutral-50 px-6 lg:px-3 pt-10 pb-12">
+            <p class="font-black text-candy-400 text-3xl lg:text-2xl">90+<span class="font-medium text-base ml-2">jobs</span></p>
+            <p class="mt-2 font-medium">Both full-time and part-time jobs created through several of our social enterprises.</p>
+          </div>
+        </div>
+        <div class="swiper-slide relative pt-4 w-60 lg:w-48 lg:mr-4">
+          <div class="absolute top-0 left-5 p-2 bg-candy-400 rounded-full">
+            <svg class="h-5 w-5 lg:h-4 lg:w-4" width="20" height="15" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M14.6207 12.5598L14.623 10.5903C14.6247 9.01775 13.2648 7.69204 11.4311 7.32072C11.5741 7.21944 11.7097 7.10536 11.8361 6.97896C12.019 6.79631 12.1761 6.59483 12.306 6.3789C12.7053 6.26345 13.1248 6.20455 13.555 6.20407L15.0567 6.20238C15.0586 6.20238 15.0602 6.20238 15.062 6.20238C16.023 6.20238 16.9261 6.49271 17.6054 7.02008C18.261 7.52909 18.6227 8.19563 18.6234 8.89701L18.6266 11.7142C17.3912 12.2576 16.046 12.5414 14.6207 12.5598ZM13.95 13.4014C13.3858 13.6273 11.6467 14.2438 9.47592 14.2438C9.47608 14.2438 9.47574 14.2438 9.47592 14.2438C7.99551 14.2438 6.5984 13.9591 5.32101 13.3973L5.32416 10.58C5.32494 9.87938 5.68588 9.21327 6.34046 8.70446C7.01985 8.17634 7.92372 7.88542 8.88559 7.88542L9.64138 7.88636C9.64129 7.88636 9.64149 7.88636 9.64138 7.88636H9.64489L10.3926 7.88716C11.3555 7.88823 12.2599 8.18063 12.9394 8.71049C13.5938 9.22105 13.954 9.88838 13.9532 10.5898L13.95 13.4014ZM0.669974 11.7142L0.673121 8.89701C0.673898 8.19563 1.03543 7.52909 1.69113 7.02008C2.37048 6.49268 3.2735 6.20238 4.23447 6.20238C4.23624 6.20238 4.23803 6.20238 4.2398 6.20238L5.74147 6.20407C6.16898 6.20454 6.58598 6.26273 6.98314 6.37675C7.11228 6.59199 7.26862 6.79293 7.45043 6.97523C7.57636 7.10152 7.71131 7.21552 7.85372 7.31682C6.01942 7.68427 4.65622 9.00743 4.65445 10.5792L4.65224 12.5594C3.23578 12.5382 1.89852 12.2547 0.669974 11.7142ZM2.56353 3.09855C2.56426 2.449 2.81777 1.83862 3.27737 1.37984C3.73631 0.921698 4.34583 0.669518 4.99405 0.669518C4.99496 0.669518 4.99595 0.669518 4.99686 0.669518C6.17657 0.670838 7.17679 1.51662 7.38509 2.66125C6.84347 3.23748 6.54575 3.98614 6.54487 4.78073C6.54479 4.84387 6.54682 4.90669 6.55048 4.96921C6.11432 5.33419 5.56957 5.53299 4.99424 5.53299C4.99333 5.53299 4.99235 5.53299 4.99144 5.53299C4.34218 5.53227 3.7321 5.27864 3.27351 4.81884C2.81494 4.35903 2.5628 3.74808 2.56353 3.09855ZM9.64769 2.35255C10.2969 2.35327 10.907 2.6069 11.3656 3.06672C11.8241 3.52653 12.0763 4.13747 12.0757 4.78702C12.0741 6.12637 10.9837 7.21602 9.64503 7.21602H9.64199C8.99283 7.21523 8.38283 6.96162 7.92433 6.50186C7.75971 6.33682 7.62187 6.1522 7.5126 5.9534C7.50699 5.94137 7.50065 5.92971 7.49364 5.91841C7.31074 5.57217 7.21389 5.18432 7.21434 4.78157C7.21584 3.44221 8.30618 2.35255 9.64489 2.35255H9.64769ZM14.2997 0.669518C14.3007 0.669518 14.3016 0.669518 14.3026 0.669518C14.9507 0.669518 15.5603 0.921728 16.0192 1.37984C16.4787 1.83862 16.7323 2.449 16.733 3.09855C16.7338 3.74808 16.4816 4.35903 16.0231 4.81884C15.5644 5.27864 14.9543 5.53227 14.3051 5.53299C14.3042 5.53299 14.3032 5.53299 14.3023 5.53299C13.7244 5.53299 13.1773 5.33239 12.7402 4.96429C12.7436 4.90569 12.7455 4.84683 12.7456 4.78768C12.7464 3.99321 12.4505 3.24412 11.9104 2.66676C12.1166 1.51932 13.1181 0.670838 14.2997 0.669518ZM19.293 8.89651C19.2926 8.43205 19.1747 7.9818 18.943 7.55847C18.7234 7.15721 18.4114 6.79809 18.0159 6.49104C17.4726 6.06925 16.8117 5.77698 16.0943 5.63378C16.2365 5.53258 16.3713 5.41872 16.4971 5.29259C17.082 4.70609 17.4036 3.92681 17.4027 3.0983C17.4017 2.2698 17.0784 1.49123 16.4922 0.906038C15.906 0.320838 15.1272 -0.00120263 14.2989 3.37498e-06C12.9192 0.00155837 11.7317 0.909148 11.3391 2.18598C10.8409 1.85937 10.2584 1.68363 9.64864 1.68295H9.64508C9.03639 1.68295 8.45451 1.85753 7.95627 2.18265C7.5627 0.907558 6.37617 0.00155837 4.99755 3.37498e-06C4.16984 -0.000398625 3.39049 0.320852 2.80427 0.906038C2.21804 1.49123 1.89468 2.2698 1.89374 3.0983C1.89282 3.92681 2.21443 4.70609 2.79937 5.29259C2.92514 5.41872 3.05991 5.5326 3.20215 5.6338C2.48479 5.77699 1.82383 6.06926 1.28053 6.49104C0.885009 6.79809 0.573107 7.15721 0.353479 7.55847C0.121688 7.9818 0.00389822 8.43205 0.00338922 8.89651L2.14411e-07 11.9301C-0.000146786 12.0604 0.0753042 12.1791 0.193402 12.2341C1.56369 12.873 3.06175 13.2073 4.65148 13.2299L4.65105 13.613C4.6509 13.7434 4.72635 13.862 4.84445 13.917C6.26317 14.5785 7.82119 14.914 9.47523 14.914C9.47496 14.914 9.4755 14.914 9.47523 14.914C10.9326 14.914 12.1971 14.6478 13.0005 14.4242C13.8754 14.1809 14.4034 13.9379 14.4255 13.9278C14.5436 13.8729 14.6193 13.7545 14.6194 13.6242L14.62 13.2303C16.2189 13.211 17.7256 12.8764 19.1031 12.2341C19.2212 12.1791 19.2966 12.0604 19.2965 11.9301L19.293 8.89651Z" fill="white"/>
+            </svg>
+          </div>
+          <div class="bg-neutral-50 px-6 lg:px-3 pt-10 pb-12">
+            <p class="font-black text-candy-400 text-3xl lg:text-2xl">200+<span class="font-medium text-base ml-2">mums</span></p>
+            <p class="mt-2 font-medium">We provide part-time employment to 200 Maasai Maker Mums from the Ngong Hills.</p>
+          </div>
+        </div>
+        <div class="swiper-slide relative pt-4 w-60 lg:w-48">
+          <div class="absolute top-0 left-5 p-2 bg-candy-400 rounded-full">
+            <svg class="h-5 w-5 lg:h-4 lg:w-4" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11.6598 7.54243H7.80309L5.54296 4.81738H2.16724C1.80769 4.81774 1.46298 4.96141 1.20874 5.21686C0.954504 5.4723 0.811516 5.81865 0.811157 6.17991V8.90496C0.811397 9.14579 0.906721 9.37669 1.07621 9.54699C1.2457 9.71729 1.47551 9.81306 1.71521 9.8133V12.9925C1.71545 13.2334 1.81077 13.4643 1.98026 13.6346C2.14975 13.8049 2.37956 13.9006 2.61926 13.9009H4.42736C4.66706 13.9006 4.89687 13.8049 5.06636 13.6346C5.23585 13.4643 5.33118 13.2334 5.33142 12.9925V9.8133H4.42736V12.9925H2.61926V8.90496H1.71521V6.17991C1.71521 6.05945 1.76283 5.94393 1.8476 5.85876C1.93238 5.77358 2.04735 5.72573 2.16724 5.72573H5.11987L7.38 8.45078H11.6598C11.7797 8.45078 11.8946 8.49863 11.9794 8.58381C12.0642 8.66898 12.1118 8.7845 12.1118 8.90496V10.2675H11.2078V12.9925H9.85168V10.2675H8.94762V12.9925C8.94786 13.2334 9.04319 13.4643 9.21268 13.6346C9.38217 13.8049 9.61198 13.9006 9.85168 13.9009H11.2078C11.4474 13.9006 11.6773 13.8049 11.8468 13.6346C12.0162 13.4643 12.1116 13.2334 12.1118 12.9925V11.1758C12.3515 11.1756 12.5813 11.0798 12.7508 10.9095C12.9203 10.7392 13.0156 10.5083 13.0159 10.2675V8.90496C13.0155 8.5437 12.8725 8.19735 12.6183 7.9419C12.364 7.68646 12.0193 7.54279 11.6598 7.54243Z" fill="white"/>
+              <path d="M10.5296 7.08892C10.2167 7.08892 9.91081 6.99569 9.65063 6.82102C9.39046 6.64635 9.18768 6.39809 9.06793 6.10762C8.94819 5.81716 8.91686 5.49754 8.9779 5.18919C9.03895 4.88083 9.18963 4.59759 9.41089 4.37528C9.63215 4.15297 9.91405 4.00157 10.2209 3.94024C10.5278 3.8789 10.8459 3.91038 11.135 4.03069C11.4241 4.15101 11.6712 4.35475 11.8451 4.61616C12.0189 4.87757 12.1117 5.18491 12.1117 5.4993C12.1112 5.92075 11.9444 6.32479 11.6478 6.6228C11.3512 6.9208 10.949 7.08844 10.5296 7.08892ZM10.5296 4.81804C10.3955 4.81804 10.2644 4.858 10.1529 4.93286C10.0414 5.00771 9.95449 5.11411 9.90317 5.2386C9.85185 5.36308 9.83842 5.50006 9.86458 5.63221C9.89075 5.76436 9.95532 5.88575 10.0501 5.98103C10.145 6.07631 10.2658 6.14119 10.3973 6.16748C10.5288 6.19376 10.6652 6.18027 10.7891 6.12871C10.913 6.07715 11.0189 5.98983 11.0934 5.87779C11.1679 5.76576 11.2076 5.63405 11.2076 5.4993C11.2074 5.3187 11.1359 5.14555 11.0088 5.01785C10.8817 4.89014 10.7093 4.81828 10.5296 4.81804ZM3.52319 4.36387C3.16558 4.36387 2.816 4.25732 2.51866 4.0577C2.22132 3.85808 1.98957 3.57435 1.85272 3.24239C1.71587 2.91043 1.68006 2.54515 1.74983 2.19275C1.8196 1.84034 1.9918 1.51664 2.24467 1.26257C2.49754 1.0085 2.81971 0.835475 3.17045 0.765377C3.52119 0.695279 3.88474 0.731256 4.21512 0.868758C4.54551 1.00626 4.8279 1.23911 5.02658 1.53786C5.22525 1.83662 5.3313 2.18786 5.3313 2.54717C5.33082 3.02884 5.14017 3.49064 4.80119 3.83124C4.4622 4.17183 4.00258 4.36339 3.52319 4.36387ZM3.52319 1.63882C3.34439 1.63882 3.1696 1.69209 3.02093 1.7919C2.87226 1.89171 2.75638 2.03358 2.68796 2.19956C2.61953 2.36554 2.60163 2.54818 2.63651 2.72438C2.67139 2.90058 2.7575 3.06243 2.88393 3.18947C3.01037 3.3165 3.17145 3.40302 3.34682 3.43806C3.52219 3.47311 3.70396 3.45513 3.86916 3.38637C4.03435 3.31762 4.17555 3.2012 4.27488 3.05182C4.37422 2.90244 4.42724 2.72682 4.42724 2.54717C4.427 2.30633 4.33168 2.07543 4.16219 1.90513C3.9927 1.73484 3.76289 1.63906 3.52319 1.63882Z" fill="white"/>
+            </svg>
+          </div>
+          <div class="bg-neutral-50 px-6 lg:px-3 pt-10 pb-12">
+            <p class="font-black text-candy-400 text-3xl lg:text-2xl">70+<span class="font-medium text-base ml-2">kids</span></p>
+            <p class="mt-2 font-medium">Ubuntu Life Foundation provides life-changing individualized education and therapy to 70+ Kids.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="my-14 md:my-20 flex flex-col items-center max-w-screen-sm lg:max-w-none mx-auto">
+  <p class="font-bold text-3xl lg:text-4xl text-neutral-800">WHO WE ARE</p>
+  <p class="mt-3 mx-4 text-center max-w-xs lg:max-w-none">Ubuntu Life is a global lifestyle brand out of Africa, based in Kenya.</p>
+  <div class="flex flex-col lg:flex-row mt-14 lg:w-screen">
+    <div class="flex flex-col lg:w-1/3 lg:mr-2">
+      <img src="{{ 'wwa_1.png' | file_img_url: '768x' }}" alt="Jeans">
+      <p class="mx-6 lg:mx-10 mt-8 font-black text-2xl text-neutral-800">36 DEGREES</p>
+      <p class="mx-6 lg:mx-10 mt-2">Located at 1° South, 36° East, the bustling transit hub of Maai Mahiu is the gateway to Kenya’s famed Great Rift Valley, and the town we are honored to call our home. In fact, we’ve sewn a 36° stitch into every Ubuntu Life product to honor our commitment to this special place and its beautiful people.</p>
+    </div>
+    <div class="flex flex-col mt-10 lg:mt-0 lg:w-1/3 lg:mx-2">
+      <img src="{{ 'wwa_2.png' | file_img_url: '768x' }}" alt="Maker mums">
+      <p class="mx-6 lg:mx-10 mt-8 font-black text-2xl text-neutral-800">OUR FOUNDATION</p>
+      <p class="mx-6 lg:mx-10 mt-2">With every product made, we’re transforming lives. We do this both by providing empowered employment to the local Maai Mahiu community, as well as through our Ubuntu Life Foundation, which provides educational and medical care to children with special needs in the region.</p>
+      <div class="px-6 lg:px-10 w-full flex mt-10">
+        <a href="#" class="w-full py-6 bg-downy-300 text-white font-bold text-xl text-center">VISIT OUR FOUNDATION</a>
+      </div>
+    </div>
+    <div class="flex flex-col mt-10 lg:mt-0 lg:w-1/3 lg:ml-2">
+      <img src="{{ 'wwa_3.png' | file_img_url: '768x' }}" alt="Bags">
+      <p class="mx-6 lg:mx-10 mt-8 font-black text-2xl text-neutral-800">LOCAL</p>
+      <p class="mx-6 lg:mx-10 mt-2">Our handmade bracelets, bags and espadrilles are made by our powerful Makers in Kenya, and connect people around the world - from their hands to yours.</p>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    let init = false;
+    let swiper = Swiper;
+    let swiper2 = Swiper;
+    function swiperMode() {
+      let mobile = window.matchMedia('(min-width: 0px) and (max-width: 767px)');
+      let desktop = window.matchMedia('(min-width: 768px)');
+
+      // Enable (for mobile)
+      if (mobile.matches) {
+        if (!init) {
+          init = true;
+          swiper = new Swiper(".mission-swiper", {
+            spaceBetween: 16,
+            slidesPerView: 'auto',
+            centeredSlides: true,
+            pagination: {
+              el: ".mission-swiper .swiper-pagination",
+              type: "bullets",
+              clickable: true
+            }
+          });
+          swiper2 = new Swiper(".whywedoit-swiper", {
+            spaceBetween: 16,
+            slidesPerView: 'auto',
+            centeredSlides: true
+          });
+        }
+      } else if (desktop.matches) {
+        if (swiper.destroy) {
+          swiper.destroy();
+          swiper2.destroy();
+        }
+        init = false;
+      }
+    }
+
+    // Run swiperMode on window resize
+    window.addEventListener('resize', function() {
+      swiperMode();
+    })
+
+    // Run on first load
+    swiperMode();
+  });
+</script>
+
+{% schema %}
+{
+  "name": "About content",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "header_img_mobile",
+      "label": "Header mobile image"
+    },
+    {
+      "type": "image_picker",
+      "id": "header_img_desktop",
+      "label": "Header desktop image"
+    },
+    {
+      "type": "text",
+      "id": "heading_1_mobile",
+      "label": "Heading top for mobile"
+    },
+    {
+      "type": "text",
+      "id": "heading_2_mobile",
+      "label": "Main heading for mobile"
+    },
+    {
+      "type": "text",
+      "id": "heading_text_mobile",
+      "label": "Heading paragraph for mobile"
+    },
+    {
+      "type": "text",
+      "id": "heading_1_desktop",
+      "label": "Heading top for desktop"
+    },
+    {
+      "type": "text",
+      "id": "heading_2_desktop",
+      "label": "Main heading for desktop"
+    },
+    {
+      "type": "text",
+      "id": "heading_text_desktop",
+      "label": "Heading paragraph for desktop"
+    },
+    {
+      "type": "textarea",
+      "id": "history_text",
+      "label": "Text body for history section"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Mission",
+      "type": "mission",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Top image"
+        },
+        {
+          "type": "text",
+          "id": "header",
+          "label": "Header copy"
+        },
+        {
+         "type": "textarea",
+          "id": "body",
+          "label": "Body copy"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
