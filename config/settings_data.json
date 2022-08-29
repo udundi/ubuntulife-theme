@@ -520,6 +520,105 @@
         "settings": {
           "header_img": "shopify:\/\/shop_images\/contact-hero.png"
         }
+      },
+      "faq-accordion": {
+        "type": "faq-accordion",
+        "blocks": {
+          "e47cccff-d127-47ce-9876-d0b3ca32c316": {
+            "type": "info",
+            "settings": {
+              "faqid": "orders",
+              "title": "Orders",
+              "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut fringilla dolor. Duis tempus tellus ut velit vehicula aliquet."
+            }
+          },
+          "f7c873bb-60ba-42e3-bc57-0bc7d0b66456": {
+            "type": "faq",
+            "settings": {
+              "faqid": "orders",
+              "question": "What is your return policy?",
+              "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut fringilla dolor. Duis tempus tellus ut velit vehicula aliquet."
+            }
+          },
+          "cfe3d4ec-5aec-4fba-ae11-a73c20495ff4": {
+            "type": "faq",
+            "settings": {
+              "faqid": "orders",
+              "question": "What is your return policy?",
+              "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut fringilla dolor. Duis tempus tellus ut velit vehicula aliquet."
+            }
+          },
+          "0f4382d4-e169-41dd-96a2-82f9d782fa38": {
+            "type": "faq",
+            "settings": {
+              "faqid": "orders",
+              "question": "What is your return policy?",
+              "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut fringilla dolor. Duis tempus tellus ut velit vehicula aliquet."
+            }
+          },
+          "31e1f322-99e5-4f2f-b6a9-2553e527cd19": {
+            "type": "faq",
+            "settings": {
+              "faqid": "orders",
+              "question": "What is your return policy?",
+              "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut fringilla dolor. Duis tempus tellus ut velit vehicula aliquet."
+            }
+          },
+          "cda3070a-71bb-40cb-a485-c3dfd5d0ef78": {
+            "type": "info",
+            "settings": {
+              "faqid": "fitting-care",
+              "title": "Fitting & Care",
+              "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut fringilla dolor. Duis tempus tellus ut velit vehicula aliquet."
+            }
+          },
+          "dd734e8e-e9ca-43cf-a317-1a65c846dadb": {
+            "type": "faq",
+            "settings": {
+              "faqid": "fitting-care",
+              "question": "What is your return policy? fitting",
+              "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut fringilla dolor. Duis tempus tellus ut velit vehicula aliquet."
+            }
+          },
+          "43fea299-25a5-49c3-ac22-1b9b45bea10b": {
+            "type": "info",
+            "settings": {
+              "faqid": "shipping-returns",
+              "title": "Shipping & Returns",
+              "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut fringilla dolor. Duis tempus tellus ut velit vehicula aliquet."
+            }
+          },
+          "3dfec28e-adbe-48c3-9237-7fe967635a9a": {
+            "type": "info",
+            "settings": {
+              "faqid": "international",
+              "title": "International",
+              "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut fringilla dolor. Duis tempus tellus ut velit vehicula aliquet."
+            }
+          },
+          "57a106aa-8f76-4784-a391-b01a49c7a856": {
+            "type": "info",
+            "settings": {
+              "faqid": "about-products",
+              "title": "About Products",
+              "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut fringilla dolor. Duis tempus tellus ut velit vehicula aliquet."
+            }
+          }
+        },
+        "block_order": [
+          "e47cccff-d127-47ce-9876-d0b3ca32c316",
+          "f7c873bb-60ba-42e3-bc57-0bc7d0b66456",
+          "cfe3d4ec-5aec-4fba-ae11-a73c20495ff4",
+          "0f4382d4-e169-41dd-96a2-82f9d782fa38",
+          "31e1f322-99e5-4f2f-b6a9-2553e527cd19",
+          "cda3070a-71bb-40cb-a485-c3dfd5d0ef78",
+          "dd734e8e-e9ca-43cf-a317-1a65c846dadb",
+          "43fea299-25a5-49c3-ac22-1b9b45bea10b",
+          "3dfec28e-adbe-48c3-9237-7fe967635a9a",
+          "57a106aa-8f76-4784-a391-b01a49c7a856"
+        ],
+        "settings": {
+        }
       }
     },
     "content_for_index": [
