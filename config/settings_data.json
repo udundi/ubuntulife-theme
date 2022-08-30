@@ -517,6 +517,42 @@
       },
       "contact-content": {
         "type": "contact-content",
+        "blocks": {
+          "db4d2b0b-cb05-4230-aedb-396c9a981278": {
+            "type": "faq",
+            "settings": {
+              "question": "When will I recieve my order?",
+              "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            }
+          },
+          "babec6f5-ab36-472b-8c69-a1bc6de68994": {
+            "type": "faq",
+            "settings": {
+              "question": "When will I recieve my order?",
+              "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            }
+          },
+          "eec3aeb0-f72d-4a0c-bea0-a3d6eeda1a6e": {
+            "type": "faq",
+            "settings": {
+              "question": "When will I recieve my order?",
+              "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            }
+          },
+          "4f6bc1c2-fd96-43cb-9d90-ee874599b16b": {
+            "type": "faq",
+            "settings": {
+              "question": "When will I recieve my order?",
+              "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            }
+          }
+        },
+        "block_order": [
+          "db4d2b0b-cb05-4230-aedb-396c9a981278",
+          "babec6f5-ab36-472b-8c69-a1bc6de68994",
+          "eec3aeb0-f72d-4a0c-bea0-a3d6eeda1a6e",
+          "4f6bc1c2-fd96-43cb-9d90-ee874599b16b"
+        ],
         "settings": {
           "header_img": "shopify:\/\/shop_images\/contact-hero.png"
         }
