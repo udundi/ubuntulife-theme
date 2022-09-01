@@ -1,7 +1,42 @@
-{% render 'collection-filters' %}
+<div class="flex flex-col items-center mt-6 md:px-10 lg:px-16 max-w-screen-2xl mx-auto">
+  <span class="flex md:ml-5 md:mr-auto text-xs md:text-sm">
+    <a href="/" class="text-neutral-400">HOME</a> 
+    <p class="text-neutral-400">&nbsp;/&nbsp;</p>
+    <p class="uppercase">{{ collection.title }}</p>
+  </span>
+  <h1 class="mt-3 font-black text-neutral-800 text-3xl md:text-4xl uppercase">{{ collection.title }}</h1>
+  <p class="mt-4 text-center mx-8 max-w-sm md:max-w-lg">
+    {% if collection.description == "" %}
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+    {% else %}
+      {{ collection.description }}
+    {% endif %}
+  </p>
+
+  <!-- COME BACK TO THE TOP COLLECTION RENDERING LATER -->
+
+  <!-- FILTER / SORT BY SECTION -->
+
+  <div class="my-8 px-3 grid grid-cols-2 sm:grid-cols-3 gap-3 lg:gap-4 gap-y-5 lg:gap-y-12">
+    {% for product in collection.products%}
+      <a href="{{ product.url }}" class="flex flex-col items-center">
+        <div class="group aspect-square relative">
+          <img class="w-full h-full object-cover relative z-0" src="{{ product.featured_image | image_url: width: 512 }}" alt="{{ product.title }}">
+          <img class="opacity-0 group-hover:opacity-100 transition-opacity duration-200 absolute z-10 top-0 left-0 w-full h-full" src="{{ product.images | last | image_url: width: 512 }}" alt="{{ product.title }} lifestyle image">
+        </div>
+        <p class="text-xs md:text-sm lg:text-base mt-1.5 lg:mt-8 font-medium text-center">{{ product.title }}</p>
+        <p class="text-xs md:text-sm lg:text-base pt-3 mt-auto">{{ product.price | money_with_currency }}</p>
+      </a>
+    {% endfor %}
+  </div>
+</div>
+
+
+<!-- {% render 'collection-filters' %}
 
 <div class="collection-grid">
   {%- for product in collection.products -%}
-    {{ product.feature_image }}
+    <p>{{ product.title }} / {{ product.price | money_with_currency }}</p>
+    <img src="{{ product.featured_image | image_url: width: 128 }}" alt="{{ product.title }}">
   {%- endfor -%}
-</div>
+</div> -->
