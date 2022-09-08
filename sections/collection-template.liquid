@@ -80,11 +80,11 @@
   {% endcapture %}
 
   <!-- FILTER / SORT BY -->
-  <div id="filter-sort-modal" class="group mt-10 open:mt-0 sm:open:mt-10 w-full px-3 sm:px-0 open:fixed sm:open:static open:min-h-screen sm:open:min-h-0 top-0 open:z-50 sm:open:z-0 open:bg-white sm:open:bg-none open:bg-opacity-70 open:backdrop-blur-lg sm:open:backdrop-blur-none">
+  <div id="filter-sort-modal" class="flex flex-col group mt-10 open:mt-0 sm:open:mt-10 w-full px-3 sm:px-0 relative open:fixed sm:open:relative open:min-h-screen sm:open:min-h-0 top-0 open:z-50 sm:open:z-20 open:bg-white sm:open:bg-none open:bg-opacity-70 open:backdrop-blur-lg sm:open:backdrop-blur-none">
     <svg onclick="closeModal()" class="hidden group-open:block sm:group-open:hidden ml-auto mt-4" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M10.1952 8.89253L17.564 1.52364C17.7097 1.35359 17.7858 1.13486 17.7771 0.911145C17.7685 0.687433 17.6757 0.475221 17.5174 0.316914C17.3591 0.158608 17.1469 0.0658678 16.9232 0.0572268C16.6995 0.0485858 16.4808 0.12468 16.3107 0.270304L8.94182 7.63919L1.57293 0.261415C1.40555 0.0940338 1.17853 0 0.941817 0C0.705104 0 0.478086 0.0940338 0.310705 0.261415C0.143324 0.428796 0.0492905 0.655813 0.0492905 0.892526C0.0492905 1.12924 0.143324 1.35626 0.310705 1.52364L7.68848 8.89253L0.310705 16.2614C0.217655 16.3411 0.142081 16.4392 0.0887272 16.5494C0.0353732 16.6597 0.00539083 16.7798 0.000662392 16.9023C-0.00406605 17.0247 0.016561 17.1467 0.0612495 17.2608C0.105938 17.3749 0.173723 17.4785 0.26035 17.5651C0.346976 17.6517 0.450574 17.7195 0.56464 17.7642C0.678707 17.8089 0.80078 17.8295 0.923197 17.8248C1.04561 17.8201 1.16573 17.7901 1.27601 17.7367C1.38629 17.6834 1.48435 17.6078 1.56404 17.5147L8.94182 10.1459L16.3107 17.5147C16.4808 17.6604 16.6995 17.7365 16.9232 17.7278C17.1469 17.7192 17.3591 17.6264 17.5174 17.4681C17.6757 17.3098 17.7685 17.0976 17.7771 16.8739C17.7858 16.6502 17.7097 16.4315 17.564 16.2614L10.1952 8.89253Z" fill="black"/>
     </svg>
-    <div class="group-open:mt-4 sm:group-open:mt-0 flex justify-evenly border-y border-black">
+    <div class="group-open:mt-4 sm:group-open:mt-0 flex justify-evenly lg:justify-between border-y lg:border-b-0 border-black">
       <div class="flex py-4 items-center" onclick="toggleFilter()">
         <p class="text-lg">FILTER <span :class="{ 'hidden': !activeFilters.length }">({ activeFilters.length })</span></p> <!-- Add in the count later -->
         <div class="flex flex-col items-center ml-2 pt-1 pb-2 w-4" aria-label="filter button">
@@ -93,15 +93,20 @@
           <div class="filter-icon-line mt-1 w-2 open:w-4 h-px bg-black transition-all duration-300"></div>
         </div>
       </div>
-      <span class="my-2 w-px bg-black"></span>
+      <span class="my-2 w-px bg-black lg:hidden"></span>
       <div class="flex items-center py-4" onclick="toggleSort()">
-        <p class="text-lg">SORT BY</p>
+        <p class="text-lg flex items-center"><span class="hidden lg:block mr-3 text-neutral-400 text-base">{{ collection.products | size }} Items</span>SORT BY</p>
         <svg id="sort-arrow" class="ml-2 w-2.5 h-1.5 transition-all duration-300" width="16" height="9" viewBox="0 0 16 9" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
           <path d="M14.8894 0.188938L7.99929 6.90537L1.10916 0.188938C0.986054 0.0686954 0.820797 0.00137848 0.648713 0.00137848C0.476628 0.00137848 0.311372 0.0686954 0.188268 0.188938C0.128661 0.247341 0.0813067 0.317049 0.0489791 0.393983C0.0166514 0.470916 0 0.553527 0 0.636976C0 0.720426 0.0166514 0.803036 0.0489791 0.879969C0.0813067 0.956902 0.128661 1.02661 0.188268 1.08501L7.51817 8.23157C7.64689 8.35704 7.81954 8.42726 7.99929 8.42726C8.17905 8.42726 8.3517 8.35704 8.48042 8.23157L15.8103 1.08639C15.8703 1.02795 15.9181 0.958067 15.9506 0.880878C15.9832 0.80369 16 0.720758 16 0.636976C16 0.553195 15.9832 0.470262 15.9506 0.393074C15.9181 0.315885 15.8703 0.246006 15.8103 0.187559C15.6872 0.0673163 15.522 0 15.3499 0C15.1778 0 15.0125 0.0673163 14.8894 0.187559V0.188938Z" fill="currentColor"/>
         </svg>
       </div>
     </div>
-    <form ref="collectionFilters" id="collection-filters" name="collection-filters">
+    <form
+      ref="collectionFilters" 
+      id="collection-filters" 
+      name="collection-filters"
+      class="lg:absolute lg:w-1/3 lg:mt-20 lg:pb-8 lg:bg-white group-open:lg:border-t border-neutral-400"
+    >
       <div id="filter-pane" class="hidden flex-col px-6">
         <div class="filters">
           <p class="text-sm font-medium mt-8" :class="{ 'hidden': !activeFilters.length }">CLEAR FILTERS</p>
@@ -283,10 +288,6 @@
           this.handleSubmit();
         },
         handleSubmit() {
-          const selector = window.matchMedia('(min-width: 576px)').matches ? 'fieldset.mobile-fields input' : 'fieldset.desktop-fields input';
-          this.$refs.collectionFilters.querySelectorAll(selector).forEach(input => {
-            input.disabled = true;
-          });
           this.$refs.collectionFilters.submit();
         },
         handleMinPriceChange({ target : { value }}) {
@@ -317,6 +318,7 @@
       el.removeAttribute("open");
     });
     document.getElementById("sort-arrow").classList.remove("rotate-180");
+    document.getElementById("collection-filters").classList.remove("lg:right-0");
     modalOpen = false;
   }
 
@@ -326,6 +328,7 @@
         document.getElementById("sort-pane").classList.remove("group-open:flex");
         document.getElementById("filter-pane").classList.add("group-open:flex");
         document.getElementById("sort-arrow").classList.remove("rotate-180");
+        document.getElementById("collection-filters").classList.remove("lg:right-0");
         document.querySelectorAll(".filter-icon-line").forEach((el) => {
           el.setAttribute("open", "");
         });
@@ -355,6 +358,7 @@
         document.getElementById("sort-pane").classList.add("group-open:flex");
         document.getElementById("filter-pane").classList.remove("group-open:flex");
         document.getElementById("sort-arrow").classList.add("rotate-180");
+        document.getElementById("collection-filters").classList.add("lg:right-0");
         document.querySelectorAll(".filter-icon-line").forEach((el) => {
           el.removeAttribute("open");
         });
@@ -363,12 +367,14 @@
         document.getElementById("filter-sort-modal").removeAttribute("open");
         document.getElementById("sort-pane").classList.remove("group-open:flex");
         document.getElementById("sort-arrow").classList.remove("rotate-180");
+        document.getElementById("collection-filters").classList.remove("lg:right-0");
         modalOpen = false;
       }
     } else {
       document.getElementById("filter-sort-modal").setAttribute("open", "");
       document.getElementById("sort-pane").classList.add("group-open:flex");
       document.getElementById("sort-arrow").classList.add("rotate-180");
+      document.getElementById("collection-filters").classList.add("lg:right-0");
       modalOpen = true;
       openPane = "sort";
     }
