@@ -1,0 +1,75 @@
+<div class="relative w-screen h-screen max-h-[32rem] 2xl:max-h-[40rem]">
+  {%- comment -%}swiper arrows{%- endcomment -%}
+    <svg class="swiper-button-prev unset-swiper-styling left-6 xl:left-24 bottom-10 xl:bottom-28 cursor-pointer w-12 h-12 p-4 rounded-full bg-white -rotate-90" width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M13.9588 7.73918L7.49934 1.42968L1.03984 7.73918C0.799808 7.9741 0.416528 7.9741 0.176501 7.73918C0.0636142 7.62834 0 7.47665 0 7.31828C0 7.15992 0.0636142 7.00822 0.176501 6.89739L7.04828 0.183835C7.29924 -0.0612782 7.69944 -0.0612782 7.95039 0.183835L14.8222 6.8961C14.9359 7.00702 15 7.15928 15 7.31828C15 7.47729 14.9359 7.62955 14.8222 7.74047C14.5821 7.9754 14.1989 7.9754 13.9588 7.74047V7.73918Z" fill="black"/>
+    </svg>
+    <svg class="swiper-button-next unset-swiper-styling left-24 xl:left-44 bottom-10 xl:bottom-28 cursor-pointer w-12 h-12 p-4 rounded-full bg-white rotate-90" width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M13.9588 7.73918L7.49934 1.42968L1.03984 7.73918C0.799808 7.9741 0.416528 7.9741 0.176501 7.73918C0.0636142 7.62834 0 7.47665 0 7.31828C0 7.15992 0.0636142 7.00822 0.176501 6.89739L7.04828 0.183835C7.29924 -0.0612782 7.69944 -0.0612782 7.95039 0.183835L14.8222 6.8961C14.9359 7.00702 15 7.15928 15 7.31828C15 7.47729 14.9359 7.62955 14.8222 7.74047C14.5821 7.9754 14.1989 7.9754 13.9588 7.74047V7.73918Z" fill="black"/>
+    </svg>
+  {%- comment -%}Preview squares{%- endcomment -%}
+  <div class="hidden lg:absolute z-10 bottom-0 right-0 lg:flex">
+    {% paginate blog.articles by 3 %}
+      {% for article in blog.articles %}
+        <p onclick="heroSwiper.slideTo('{{ forloop.index0 }}', 300)" class="article-preview bg-white bg-opacity-70 cursor-pointer mr-2 last:mr-0 py-2 px-5 w-64 {% if forloop.first == true %}text-black{% else %}text-neutral-600{% endif %}">
+          {{ article.title }}
+        </p>
+      {% endfor %}
+    {% endpaginate %}
+  </div>
+  <div class="relative swiper w-full h-full overflow-x-hidden">
+    {%- comment -%}Actual slides{%- endcomment -%}
+    <div class="swiper-wrapper">
+      {% paginate blog.articles by 3 %}
+        {% for article in blog.articles %}
+          <div class="swiper-slide">
+            <img class="absolute top-0 left-0 w-full h-full object-cover" src="{{ article.image | image_url: width: 2048 }}" alt="Article featured image">
+            <div class="relative w-full h-full flex flex-col pt-12 xl:pt-28 px-6 xl:px-24 text-white bg-black bg-opacity-25">
+              <span class="font-medium uppercase">{{ article.published_at | date: '%B %Y' }}</span>
+              <h1 class="mt-1 text-2xl lg:text-4xl lg:w-1/2 font-black uppercase">{{ article.title }}</h1>
+              <p class="mt-2 font-medium">{{ article.excerpt }}</p>
+            </div>
+          </div>
+        {% endfor %}
+      {% endpaginate %}
+    </div>
+  </div>
+</div>
+
+<div class="flex flex-col md:flex-row">
+  <h2>CATEGORIES</h2>
+  <div>
+    <!-- tags to filter by -->
+    <!-- How to get tag list? Or use customizer? -->
+  </div>
+</div>
+
+<style>
+  .unset-swiper-styling {
+    top: unset;
+  }
+</style>
+
+<script>
+  let heroSwiper;
+  document.addEventListener("DOMContentLoaded", () => {
+    heroSwiper = new Swiper(".swiper", {
+      slidesPerView: 'auto',
+      navigation: {
+        prevEl: '.swiper-button-prev',
+        nextEl: '.swiper-button-next',
+      },
+    });
+    
+    heroSwiper.on('slideChange', () => {
+      let articlePreviews = document.querySelectorAll(".article-preview");
+
+      articlePreviews.forEach((el) => {
+        el.classList.remove("text-black");
+        el.classList.add("text-neutral-600");
+      });
+
+      articlePreviews.item(heroSwiper.activeIndex).classList.remove("text-neutral-600");
+      articlePreviews.item(heroSwiper.activeIndex).classList.add("text-black");
+    });
+  });
+</script>
