@@ -8,19 +8,19 @@
     </svg>
   {%- comment -%}Preview squares{%- endcomment -%}
   <div class="hidden lg:absolute z-10 bottom-0 right-0 lg:flex">
-    {% paginate blog.articles by 3 %}
-      {% for article in blog.articles %}
+    {% for article in blog.articles %}
+      {% if forloop.index0 < 3 %}
         <p onclick="heroSwiper.slideTo('{{ forloop.index0 }}', 300)" class="article-preview bg-white bg-opacity-70 cursor-pointer mr-2 last:mr-0 py-2 px-5 w-64 {% if forloop.first == true %}text-black{% else %}text-neutral-600{% endif %}">
           {{ article.title }}
         </p>
-      {% endfor %}
-    {% endpaginate %}
+      {% endif %}
+    {% endfor %}
   </div>
   <div class="relative swiper w-full h-full overflow-x-hidden">
     {%- comment -%}Actual slides{%- endcomment -%}
     <div class="swiper-wrapper">
-      {% paginate blog.articles by 3 %}
-        {% for article in blog.articles %}
+      {% for article in blog.articles %}
+        {% if forloop.index0 < 3 %}
           <div class="swiper-slide">
             <picture>
               <source media="(min-width: 2560px)" srcset="{{ article.image | image_url: width: 3840 }}">
@@ -35,13 +35,13 @@
               <p class="mt-2 font-medium">{{ article.excerpt }}</p>
             </div>
           </div>
-        {% endfor %}
-      {% endpaginate %}
+        {% endif %}
+      {% endfor %}
     </div>
   </div>
 </div>
 
-<div class="flex flex-col lg:flex-row lg:items-center lg:w-11/12 lg:ml-auto mt-8 md:mt-16 pl-5">
+<div class="flex flex-col lg:flex-row lg:items-center lg:max-w-4xl lg:mx-auto lg:pl-10 xl:max-w-screen-xl xl:pl-6 2xl:max-w-[106rem] mt-8 md:mt-16 pl-5">
   <h2 class="lg:mr-16 text-neutral-700 font-black text-xl lg:text-2xl">CATEGORIES</h2>
   <div class="flex mt-4 lg:mt-0 overflow-x-auto">
     <!-- tags to filter by -->
@@ -55,8 +55,8 @@
   </div>
 </div>
 
-<div class="mt-6 sm:mt-10 px-5 grid grid-cols-1 gap-6 overflow-x-hidden w-fit mx-auto justify-items-center lg:grid-cols-2 lg:gap-10 xl:gap-y-16 xl:grid-cols-3 2xl:grid-cols-4">
-  {% paginate blog.articles by 12 %}
+{% paginate blog.articles by 12 %}
+  <div class="mt-6 sm:mt-10 px-5 grid grid-cols-1 gap-6 overflow-x-hidden w-fit mx-auto justify-items-center lg:grid-cols-2 lg:gap-10 xl:gap-y-16 xl:grid-cols-3 2xl:grid-cols-4">
     {% for article in blog.articles %}
       <a class="flex sm:flex-col max-w-sm" href="{{ article.url }}">
         <picture class="w-5/12 h-36 sm:h-96 sm:w-96">
@@ -75,12 +75,43 @@
         </div>
       </a>
     {% endfor %}
-  {% endpaginate %}
-</div>
+  </div>
+
+  {% if paginate.pages > 1 %}
+    <div id="pagination-wrapper">
+      {{ paginate | default_pagination }}
+    </div>
+  {% endif %}
+{% endpaginate %}
 
 <style>
   .unset-swiper-styling {
     top: unset;
+  }
+
+  #pagination-wrapper {
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+
+  #pagination-wrapper > * {
+    margin-left: 6px;
+    margin-right: 6px; 
+  }
+
+  #pagination-wrapper .current {
+    color: rgb(96, 205, 203);
+  }
+
+  @media (min-width: 640px) {
+    #pagination-wrapper {
+      margin-top: 32px;
+      margin-bottom: 32px;
+      font-size: 20px;
+    }
   }
 </style>
 
