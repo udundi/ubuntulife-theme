@@ -22,7 +22,13 @@
       {% paginate blog.articles by 3 %}
         {% for article in blog.articles %}
           <div class="swiper-slide">
-            <img class="absolute top-0 left-0 w-full h-full object-cover" src="{{ article.image | image_url: width: 2048 }}" alt="Article featured image">
+            <picture>
+              <source media="(min-width: 2560px)" srcset="{{ article.image | image_url: width: 3840 }}">
+              <source media="(min-width: 1280px)" srcset="{{ article.image | image_url: width: 2560 }}">
+              <source media="(min-width: 640px)" srcset="{{ article.image | image_url: width: 1280 }}">
+              <source media="(max-width: 639px)" srcset="{{ article.image | image_url: width: 640 }}">
+              <img class="absolute top-0 left-0 w-full h-full object-cover" src="{{ article.image | image_url: width: 2560 }}" alt="{{ article.image.alt }}">
+            </picture>
             <div class="relative w-full h-full flex flex-col pt-12 xl:pt-28 px-6 xl:px-24 text-white bg-black bg-opacity-25">
               <span class="font-medium uppercase">{{ article.published_at | date: '%B %Y' }}</span>
               <h1 class="mt-1 text-2xl lg:text-4xl lg:w-1/2 font-black uppercase">{{ article.title }}</h1>
@@ -35,12 +41,41 @@
   </div>
 </div>
 
-<div class="flex flex-col md:flex-row">
-  <h2>CATEGORIES</h2>
-  <div>
+<div class="flex flex-col lg:flex-row lg:items-center lg:w-11/12 lg:ml-auto mt-8 md:mt-16 pl-5">
+  <h2 class="lg:mr-16 text-neutral-700 font-black text-xl lg:text-2xl">CATEGORIES</h2>
+  <div class="flex mt-4 lg:mt-0 overflow-x-auto">
     <!-- tags to filter by -->
     <!-- How to get tag list? Or use customizer? -->
+
+    <!-- 'Dummy' tags -->
+    <span class="border border-black rounded-md pt-3 pb-2 px-5 mr-2 uppercase whitespace-nowrap">ALL ARTICLES</span>
+    <span class="bg-downy-300 rounded-md pt-3 pb-2 px-5 mr-2 uppercase whitespace-nowrap">COMMUNITY</span>
+    <span class="border border-black rounded-md pt-3 pb-2 px-5 mr-2 uppercase whitespace-nowrap">DESIGN</span>
+    <span class="border border-black rounded-md pt-3 pb-2 px-5 mr-2 uppercase whitespace-nowrap">FASHION</span>
   </div>
+</div>
+
+<div class="mt-6 sm:mt-10 px-5 grid grid-cols-1 gap-6 overflow-x-hidden w-fit mx-auto justify-items-center lg:grid-cols-2 lg:gap-10 xl:gap-y-16 xl:grid-cols-3 2xl:grid-cols-4">
+  {% paginate blog.articles by 12 %}
+    {% for article in blog.articles %}
+      <a class="flex sm:flex-col max-w-sm" href="{{ article.url }}">
+        <picture class="w-5/12 h-36 sm:h-96 sm:w-96">
+          <source media="(min-width: 640px)" srcset="{{ article.image | image_url: height: 512 }}">
+          <source media="(max-width: 639px)" srcset="{{ article.image | image_url: height: 256 }}">
+          <img class="w-full min-w-full h-full object-cover" src="{{ article.image | image_url: height: 512 }}" alt="{{ article.image.alt }}">
+        </picture>
+        <div class="w-7/12 pl-6 pt-1 sm:w-full sm:mt-6 sm:pl-0 sm:pt-0">
+          <p class="text-sm sm:text-xl text-neutral-600 font-black uppercase">{{ article.title }}</p>
+          <div class="mt-2 flex items-center text-neutral-400 sm:mt-5">
+            <svg class="h-3 w-3 sm:h-4 sm:w-4" width="14" height="13" viewBox="0 0 14 13" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M1.12139 0.961192C1.0789 0.961192 1.03816 0.97807 1.00811 1.00811C0.97807 1.03816 0.961192 1.0789 0.961192 1.12139V9.13133C0.961192 9.21976 1.03296 9.29153 1.12139 9.29153H2.72338C2.85084 9.29153 2.97308 9.34216 3.06321 9.43229C3.15334 9.52242 3.20397 9.64466 3.20397 9.77212V11.8163L5.58773 9.4325C5.67777 9.34235 5.79993 9.29164 5.92735 9.29153H12.3353C12.3778 9.29153 12.4185 9.27465 12.4486 9.24461C12.4786 9.21456 12.4955 9.17381 12.4955 9.13133V1.12139C12.4955 1.0789 12.4786 1.03816 12.4486 1.00811C12.4185 0.97807 12.3778 0.961192 12.3353 0.961192H1.12139ZM0 1.12139C0 0.502383 0.502383 0 1.12139 0H12.3353C12.9543 0 13.4567 0.502383 13.4567 1.12139V9.13133C13.4567 9.42874 13.3385 9.71397 13.1282 9.92427C12.9179 10.1346 12.6327 10.2527 12.3353 10.2527H6.126L3.83644 12.5423C3.70587 12.6728 3.53954 12.7617 3.35847 12.7976C3.17741 12.8336 2.98974 12.8152 2.81918 12.7445C2.64862 12.6739 2.50283 12.5543 2.40023 12.4008C2.29764 12.2473 2.24285 12.0669 2.24278 11.8823V10.2527H1.12139C0.82398 10.2527 0.53875 10.1346 0.328448 9.92427C0.118146 9.71397 0 9.42874 0 9.13133V1.12139Z" fill="currentColor" />
+            </svg>
+            <p class="ml-2 text-sm sm:text-base">{{ article.comments_count }}</p>
+          </div>
+        </div>
+      </a>
+    {% endfor %}
+  {% endpaginate %}
 </div>
 
 <style>
