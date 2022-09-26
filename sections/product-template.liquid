@@ -1,247 +1,113 @@
-{% unless product == empty %}
-  <script>
-    window.ud_product = {{ product | json }}
-    window.ud_product.options = {{ product.options_with_values | json }}
-    window.ud_product.metafields = {{ product.metafields.global | json }};
-  </script>
-{% endunless %}
+<style>
+  div.best-fit-size-chart {
+    width: auto;
+  }
 
-<div id="udProductView" class="container-fluid p-5" v-cloak>
-  <div class="row">
-    <div class="col-12 col-lg-6">
-      <div ref="productImages" id="productImages" class="sticky-top">
-        <div ref="carousel" id="product-carousel" class="swiper">
-          <div class="swiper-wrapper">
-            <div
-              v-for="media in product.media"
-              class="swiper-slide ud-square-image"
-            >
-              <video
-                v-if="media.media_type.includes('video')"
-                :src="media.src"
-                controls
-                :poster="media.preview_image"
-              ></video>
-              <img
-                v-else
-                :src="imageSize(media.src, '1200x1200')"
-                :alt="media.alt"
-              >
-            </div>
-          </div>
+  div.best-fit-size-chart button.scr-open-size-chart {
+    padding: unset;
+    margin: unset;
+    font-size: 14px;
+    font-weight: 500;
+    color: black;
+  }
 
-          <div class="swiper-pagination"></div>
+  div.best-fit-size-chart button.scr-open-size-chart.ruler3::before {
+    display: none;
+  }
+</style>
 
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-        </div>
-      </div>
+<div id="product-info" class="flex flex-col">
+  <div class="flex">
+    <div class="hidden md:flex flex-col">
+      {% for image in product.images %}
+        <img onclick="console.log('test')" src="{{ image | image_url: height: 256 }}" alt="product carousel preview">
+      {% endfor %}
     </div>
-
-    <div class="col-12 col-lg-6">
-      <h1 class="text-start mb-2">{ product.title }</h1>
-
-      <h2 class="text-start d-inline mb-2">
-        { formatMoney(selectedVariant.price) }
-      </h2>
-      <h2
-        class="text-start d-inline ms-2 mb-2"
-        v-if="selectedVariant.compare_at_price > selectedVariant.price"
-      >
-        <del>{ formatMoney(selectedVariant.compare_at_price) }</del>
-      </h2>
-
-      <div v-html="product.description"></div>
-
-      <div class="col-12">
-        <div id="product-selectors" class="d-flex flex-column">
-          <div v-for="option in product.options" class="row mb-3">
-            <template v-if="option.values.length > 1">
-              <div class="section-selector">
-                <div class="selector-header">
-                  <p class="selector-label">
-                    { option.name }<template v-if="option.name == 'Color'"
-                      >: { options[option.name] }</template
-                    >
-                  </p>
-                </div>
-
-                <div class="d-flex flex-wrap">
-                  <div
-                    class="form-check"
-                    :class="{ 'radio-bubble': option.name !== 'Color', 'radio-color': option.name == 'Color'}"
-                    v-for="(value, index) in option.values"
-                  >
-                    <input
-                      class="form-check-input"
-                      type="radio"
-                      :name="option.name"
-                      :id="value"
-                      :checked="options[option.name] == value"
-                      :value="value"
-                      v-model="options[option.name]"
-                      hidden
-                    >
-                    <label class="form-check-label" :for="value"
-                      >{ value }</label
-                    >
-                  </div>
-                </div>
-              </div>
-            </template>
+    <div class="product-carousel w-screen overflow-hidden">
+      <div class="swiper-wrapper">
+        {% for image in product.images %}
+          <div class="swiper-slide">
+            <picture>
+              <source media="(min-width: 2560px)" srcset="{{ image | image_url: width: 3840 }}">
+              <source media="(min-width: 1280px)" srcset="{{ image | image_url: width: 2560 }}">
+              <source media="(min-width: 640px)" srcset="{{ image | image_url: width: 1280 }}">
+              <source media="(max-width: 639px)" srcset="{{ image | image_url: width: 640 }}">
+              <img class="" src="{{ image | image_url: width: 2560 }}" alt="{{ product.title }}">
+            </picture>
           </div>
-        </div>
+        {% endfor %}
       </div>
-
-      <form
-        ref="addToCartForm"
-        action="/cart/add"
-        method="post"
-        class="row mb-3"
-        data-cart-submit
-      >
-        <input type="hidden" name="id" :value="selectedVariant.id">
-
-        <div class="col">
-          <button
-            id="AddToCart"
-            :disabled="!selectedVariant.available"
-            ref="addToCart"
-            class="btn btn-primary mw-100 ud-toggle-cart"
-          >
-            <template v-if="!selectedVariant.available">Sold Out</template>
-            <template v-else>Add to Cart</template>
-          </button>
-        </div>
-      </form>
     </div>
   </div>
+  <div class="px-5 pt-5 flex flex-col">
 
-  {%- comment -%}
-    Live region for announcing updated price and availability to screen readers
-  {%- endcomment -%}
-  <p
-    class="d-none"
-    data-product-status
-    aria-live="polite"
-    role="status"
-  ></p>
+    <!-- Breadcrumbs -->
+    {% for c in product.collections %}
+    {% case c.handle %}
+      {% when 'shoes' %}
+        {% assign collection_handle = 'shoes' %}
+    {% endcase %}
+    {% endfor %}
 
-  {%- comment -%}
-    Live region for announcing that the product form has been submitted and the
-    product is in the process being added to the cart
-  {%- endcomment -%}
-  <p
-    class="d-none"
-    data-loader-status
-    aria-live="assertive"
-    role="alert"
-    aria-hidden="true"
-  >
-    {{ 'products.product.loader_label' | t }}
-  </p>
+    <nav class="uppercase text-neutral-400 text-xs">
+      <a href="/">HOME</a>
+      <span class="mx-1">/</span>
+      {% if collection_handle %}
+        <a class="" href="/collections/{{ collection_handle }}">
+          {{ collection_handle }}
+        </a>
+        <span class="mx-1">/</span>
+      {% endif %}
+      <span class="text-black">{{ product.title }}</span>
+    </nav>
+    <h1 class="mt-2 uppercase text-neutral-700 font-black text-2xl">{{ product.title | remove: 'Afridrilles' }}</h1>
+    <h2 class="mt-1 uppercase font-medium">{{ product.title }}</h2>
+    <span class="flex my-2">
+      {% if product.compare_at_price >= product.price %}
+        <span class="line-through decoration-downy-300 text-neutral-700">{{ product.compare_at_price | money }}</span>
+        <span class="ml-2">{{ product.price | money }}</span>
+      {% else %}
+        <span class="ml-2">{{ product.price | money }}</span>
+      {% endif %}
+    </span>
+
+    {% if product.options_by_name['size'] %}
+      <div class="mt-6 flex flex-col">
+        <span class="flex justify-between">
+          <p class="font-medium">SIZE</p>
+          <div class="best-fit-size-chart"></div>
+        </span>
+        <div class="relative mt-1">
+          <select class="w-full appearance-none py-3 px-4 bg-transparent border border-black" name="" id="">
+            {% for option in product.options_by_name['size'].values %}
+              <option value="{{ option }}">{{ option }}</option>
+            {% endfor %}
+          </select>
+          <svg class="w-8 h-8 p-2 absolute right-2 top-1/2 -translate-y-1/2  bg-downy-300 rounded-full pointer-events-none" width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14.8894 0.188938L7.99929 6.90537L1.10916 0.188938C0.986054 0.0686954 0.820797 0.00137848 0.648713 0.00137848C0.476628 0.00137848 0.311372 0.0686954 0.188268 0.188938C0.128661 0.247341 0.0813067 0.317049 0.0489791 0.393983C0.0166514 0.470916 0 0.553527 0 0.636976C0 0.720426 0.0166514 0.803036 0.0489791 0.879969C0.0813067 0.956902 0.128661 1.02661 0.188268 1.08501L7.51817 8.23157C7.64689 8.35704 7.81954 8.42726 7.99929 8.42726C8.17905 8.42726 8.3517 8.35704 8.48042 8.23157L15.8103 1.08639C15.8703 1.02795 15.9181 0.958067 15.9506 0.880878C15.9832 0.80369 16 0.720758 16 0.636976C16 0.553195 15.9832 0.470262 15.9506 0.393074C15.9181 0.315885 15.8703 0.246006 15.8103 0.187559C15.6872 0.0673163 15.522 0 15.3499 0C15.1778 0 15.0125 0.0673163 14.8894 0.187559V0.188938Z" fill="white"/>
+          </svg>
+        </div>
+      </div>
+    {% endif %}
+    <div>
+      <!-- QTY -->
+      <!-- ATC -->
+    </div>
+    <div>
+      <!-- Description -->
+      <!-- Details & Care -->
+      <!-- How it was made -->
+    </div>
+  </div>
 </div>
 
+<!-- Product info / picture sections -->
+
 <script>
-  if (document.querySelector('#udProductView')) {
-    const productController = Vue.createApp({
-      delimiters: ['{', '}'],
-      data() {
-        return {
-          options: {},
-          quantity: 1,
-        }
-      },
-      computed: {
-        product: function() {
-          let product = window.ud_product;
-          return product;
-        },
-        selectedVariant: function() {
-          let variants = this.product.variants;
-          let options = [];
-
-          for (const [key, value] of Object.entries(this.options)) {
-            options.push(value);
-          }
-
-          let variant = variants.find((variant) => {
-            let variantOptions = variant.title.split(' / ');
-
-            if(variantOptions.length == options.length && variantOptions.every(x => options.includes(x))) {
-              return variant;
-            }
-          });
-
-          return variant;
-        },
-      },
-      watch: {
-        selectedVariant: function() {
-          if(this.carousel && this.selectedVariant.featured_media !== undefined) {
-            this.carousel.slideTo(this.product.media.map(x => x.id).indexOf(this.selectedVariant.featured_media.id));
-          }
-
-          if (window.history.pushState) {
-            let searchParams = new URLSearchParams(window.location.search);
-            searchParams.set('variant', this.selectedVariant.id);
-
-            let newPath = window.location.pathname + '?' + searchParams.toString() + window.location.hash;
-            window.history.pushState(null, '', newPath);
-          }
-        }
-      },
-      methods: {
-        updateQuantity(amount) {
-          let quantity = this.quantity + amount;
-
-          this.quantity = quantity <= 0 ? 1 : quantity;
-        },
-
-        formatMoney(value) {
-          return Shopify.formatMoney(value);
-        },
-
-        imageSize(src, size) {
-          return src.replace(/\.jpg|\.png|\.gif|\.jpeg/g, function(match) {
-            return '_'+size+match;
-          });
-        },
-      },
-      created() {
-        let searchParams = new URLSearchParams(window.location.search);
-        let selectedVariant = this.product.variants.find(x => x.id == searchParams.get('variant'));
-
-        if(selectedVariant !== undefined) {
-          this.product.options.forEach((option, index) => {
-            this.options[option.name] = selectedVariant.options[index];
-          });
-        } else {
-          this.product.options.forEach((option, index) => {
-            this.options[option.name] = option.values[0];
-          });
-        }
-      },
-      mounted() {
-        this.carousel = new Swiper(this.$refs.carousel, {
-          grabCursor: true,
-          navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-          },
-          pagination: {
-            el: '.swiper-pagination',
-          },
-          spaceBetween: 10,
-          observer: true,
-          observeSlideChildren: true,
-          observeParents: true,
-        });
-
-        if(this.carousel && this.selectedVariant.featured_media !== undefined) {
-          this.carousel.slideTo(this.product.media.map(x => x.id).indexOf(this.selectedVariant.featured_media.id), 0);
-        }
-      }
-    }).mount("#udProductView");
-  }
+  let previewSwiper;
+  document.addEventListener("DOMContentLoaded", () => {
+    previewSwiper = new Swiper(".product-carousel", {
+      slidesPerView: 'auto'
+    });
+  });
 </script>
