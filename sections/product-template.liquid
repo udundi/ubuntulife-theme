@@ -1,3 +1,4 @@
+<!-- Styling for size chart -->
 <style>
   div.best-fit-size-chart {
     width: auto;
@@ -41,14 +42,13 @@
   </div>
   <div class="px-5 pt-5 flex flex-col">
 
-    <!-- Breadcrumbs -->
+    <!-- Breadcrumbs start -->
     {% for c in product.collections %}
-    {% case c.handle %}
-      {% when 'shoes' %}
-        {% assign collection_handle = 'shoes' %}
-    {% endcase %}
+      {% case c.handle %}
+        {% when 'shoes' %}
+          {% assign collection_handle = 'shoes' %}
+      {% endcase %}
     {% endfor %}
-
     <nav class="uppercase text-neutral-400 text-xs">
       <a href="/">HOME</a>
       <span class="mx-1">/</span>
@@ -60,6 +60,9 @@
       {% endif %}
       <span class="text-black">{{ product.title }}</span>
     </nav>
+    <!-- Breadcrumbs end -->
+
+
     <h1 class="mt-2 uppercase text-neutral-700 font-black text-2xl">{{ product.title | remove: 'Afridrilles' }}</h1>
     <h2 class="mt-1 uppercase font-medium">{{ product.title }}</h2>
     <span class="flex my-2">
@@ -101,7 +104,48 @@
   </div>
 </div>
 
-<!-- Product info / picture sections -->
+<!-- Product info sections -->
+<div class="w-screen max-w-md mx-auto lg:max-w-screen-xl">
+  {% unless section.settings.info_header_1 == "" %}
+    <div class="flex flex-col-reverse lg:flex-row lg:items-center mt-16 lg:w-5/6 lg:mx-auto">
+      <div class="flex flex-col items-center lg:items-start px-10 xl:px-24 text-center mt-10 lg:mt-0 lg:text-left lg:w-3/4">
+        <span class="text-neutral-700 text-xl xl:text-2xl font-black">{{ section.settings.info_header_1 }}</span>
+        <p class="mt-2 xl:mt-4">{{ section.settings.info_text_1 }}</p>
+      </div>
+      <picture>
+        <source media="(min-width: 640px)" srcset="{{ section.settings.info_media_1 | image_url: width: 1280 }}">
+        <source media="(max-width: 639px)" srcset="{{ section.settings.info_media_1 | image_url: width: 640 }}">
+        <img class="w-full" src="{{ section.settings.info_media_1 | image_url: width: 1280 }}" alt="{{ section.settings.info_header_1 }}">
+      </picture>
+    </div>
+  {% endunless %}
+  {% unless section.settings.info_header_2 == "" %}
+    <div class="flex flex-col-reverse lg:flex-row lg:items-center mt-16 lg:w-5/6 lg:mx-auto">
+      <div class="flex flex-col items-center lg:items-start px-10 xl:px-24 text-center mt-10 lg:mt-0 lg:text-left lg:w-3/4">
+        <span class="text-neutral-700 text-xl xl:text-2xl font-black">{{ section.settings.info_header_2 }}</span>
+        <p class="mt-2 xl:mt-4">{{ section.settings.info_text_2 }}</p>
+      </div>
+      <picture>
+        <source media="(min-width: 640px)" srcset="{{ section.settings.info_media_2 | image_url: width: 1280 }}">
+        <source media="(max-width: 639px)" srcset="{{ section.settings.info_media_2 | image_url: width: 640 }}">
+        <img class="w-full" src="{{ section.settings.info_media_2 | image_url: width: 1280 }}" alt="{{ section.settings.info_header_2 }}">
+      </picture>
+    </div>
+  {% endunless %}
+  {% unless section.settings.info_header_3 == "" %}
+    <div class="flex flex-col-reverse lg:flex-row lg:items-center mt-16 lg:w-5/6 lg:mx-auto">
+      <div class="flex flex-col items-center lg:items-start px-10 xl:px-24 text-center mt-10 lg:mt-0 lg:text-left lg:w-3/4">
+        <span class="text-neutral-700 text-xl xl:text-2xl font-black">{{ section.settings.info_header_3 }}</span>
+        <p class="mt-2 xl:mt-4">{{ section.settings.info_text_3 }}</p>
+      </div>
+      <picture>
+        <source media="(min-width: 640px)" srcset="{{ section.settings.info_media_3 | image_url: width: 1280 }}">
+        <source media="(max-width: 639px)" srcset="{{ section.settings.info_media_3 | image_url: width: 640 }}">
+        <img class="w-full" src="{{ section.settings.info_media_3 | image_url: width: 1280 }}" alt="{{ section.settings.info_header_3 }}">
+      </picture>
+    </div>
+  {% endunless %}
+</div>
 
 <script>
   let previewSwiper;
@@ -111,3 +155,56 @@
     });
   });
 </script>
+
+{% schema %}
+{
+  "name": "Product Template",
+  "settings": [
+    {
+      "type": "text",
+      "id": "info_header_1",
+      "label": "Info Header 1"
+    },
+    {
+      "type": "richtext",
+      "id": "info_text_1",
+      "label": "Info Text 1"
+    },
+    {
+      "type": "image_picker",
+      "id": "info_media_1",
+      "label": "Info Media 1"
+    },
+    {
+      "type": "text",
+      "id": "info_header_2",
+      "label": "Info Header 2"
+    },
+    {
+      "type": "richtext",
+      "id": "info_text_2",
+      "label": "Info Text 2"
+    },
+    {
+      "type": "image_picker",
+      "id": "info_media_2",
+      "label": "Info Media 2"
+    },
+    {
+      "type": "text",
+      "id": "info_header_3",
+      "label": "Info Header 3"
+    },
+    {
+      "type": "richtext",
+      "id": "info_text_3",
+      "label": "Info Text 3"
+    },
+    {
+      "type": "image_picker",
+      "id": "info_media_3",
+      "label": "Info Media 3"
+    }
+  ]
+}
+{% endschema %}
