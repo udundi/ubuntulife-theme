@@ -1,8 +1,18 @@
 {
-  "name": "Product",
   "sections": {
     "main": {
-      "type": "product-template"
+      "type": "product-template",
+      "settings": {
+        "info_header_1": "{{ product.metafields.info.header_1.value }}",
+        "info_text_1": "<p>{{ product.metafields.info.text_1 | metafield_tag }}<\/p>",
+        "info_media_1": "{{ product.metafields.info.media_1.value }}",
+        "info_header_2": "{{ product.metafields.info.header_2.value }}",
+        "info_text_2": "<p>{{ product.metafields.info.text_2 | metafield_tag }}<\/p>",
+        "info_media_2": "{{ product.metafields.info.media_2.value }}",
+        "info_header_3": "{{ product.metafields.info.header_3.value }}",
+        "info_text_3": "<p>{{ product.metafields.info.text_3 | metafield_tag }}<\/p>",
+        "info_media_3": "{{ product.metafields.info.media_3.value }}"
+      }
     }
   },
   "order": [
