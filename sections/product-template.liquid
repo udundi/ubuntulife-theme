@@ -109,7 +109,7 @@
   {% unless section.settings.info_header_1 == "" %}
     <div class="flex flex-col-reverse lg:flex-row lg:items-center mt-16 lg:w-5/6 lg:mx-auto">
       <div class="flex flex-col items-center lg:items-start px-10 xl:px-24 text-center mt-10 lg:mt-0 lg:text-left lg:w-3/4">
-        <span class="text-neutral-700 text-xl xl:text-2xl font-black">{{ section.settings.info_header_1 }}</span>
+        <span class="text-neutral-700 text-xl xl:text-2xl font-black uppercase">{{ section.settings.info_header_1 }}</span>
         <p class="mt-2 xl:mt-4">{{ section.settings.info_text_1 }}</p>
       </div>
       <picture>
@@ -122,7 +122,7 @@
   {% unless section.settings.info_header_2 == "" %}
     <div class="flex flex-col-reverse lg:flex-row lg:items-center mt-16 lg:w-5/6 lg:mx-auto">
       <div class="flex flex-col items-center lg:items-start px-10 xl:px-24 text-center mt-10 lg:mt-0 lg:text-left lg:w-3/4">
-        <span class="text-neutral-700 text-xl xl:text-2xl font-black">{{ section.settings.info_header_2 }}</span>
+        <span class="text-neutral-700 text-xl xl:text-2xl font-black uppercase">{{ section.settings.info_header_2 }}</span>
         <p class="mt-2 xl:mt-4">{{ section.settings.info_text_2 }}</p>
       </div>
       <picture>
@@ -135,7 +135,7 @@
   {% unless section.settings.info_header_3 == "" %}
     <div class="flex flex-col-reverse lg:flex-row lg:items-center mt-16 lg:w-5/6 lg:mx-auto">
       <div class="flex flex-col items-center lg:items-start px-10 xl:px-24 text-center mt-10 lg:mt-0 lg:text-left lg:w-3/4">
-        <span class="text-neutral-700 text-xl xl:text-2xl font-black">{{ section.settings.info_header_3 }}</span>
+        <span class="text-neutral-700 text-xl xl:text-2xl font-black uppercase">{{ section.settings.info_header_3 }}</span>
         <p class="mt-2 xl:mt-4">{{ section.settings.info_text_3 }}</p>
       </div>
       <picture>
@@ -145,6 +145,11 @@
       </picture>
     </div>
   {% endunless %}
+</div>
+
+<!-- You may also like (flows to recommended section in product.template) -->
+<div class="flex px-10">
+  <span class="w-screen text-center mt-16 pt-16 border-t md:border-t-0 border-neutral-600 text-neutral-500 text-2xl md:text-3xl font-black">YOU MAY ALSO LIKE</span>
 </div>
 
 <script>

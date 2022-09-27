@@ -13,9 +13,75 @@
         "info_text_3": "<p>{{ product.metafields.info.text_3 | metafield_tag }}<\/p>",
         "info_media_3": "{{ product.metafields.info.media_3.value }}"
       }
+    },
+    "products-carousel": {
+      "type": "featured-products",
+      "blocks": {
+        "46436a55-2952-4405-a183-3a934ce8a67d": {
+          "type": "product",
+          "settings": {
+            "product": "love-bracelet"
+          }
+        },
+        "c17521d0-11b7-44a3-af3c-b166f470d960": {
+          "type": "product",
+          "settings": {
+            "product": "chain-link-bracelet"
+          }
+        },
+        "8b9ff9b6-80f7-4cd7-9a7e-06292b796df0": {
+          "type": "product",
+          "settings": {
+            "product": "green-espadrilles"
+          }
+        },
+        "bb4f26b1-199e-4f59-9c1e-b4e4b4704b37": {
+          "type": "product",
+          "settings": {
+            "product": "amani-dog-collar"
+          }
+        },
+        "aef9fc4a-658c-40e0-9f05-af1a30085490": {
+          "type": "product",
+          "settings": {
+            "product": "west-african-bag"
+          }
+        },
+        "5ab2e152-f5c4-4cdb-ae4f-f3484ac27566": {
+          "type": "product",
+          "settings": {
+            "product": "day-to-night-bundle"
+          }
+        },
+        "273a82e2-b0ce-45fe-b337-69fb69037387": {
+          "type": "product",
+          "settings": {
+            "product": "holiday-bracelet-bundle-six"
+          }
+        },
+        "5fedb38f-9a17-4f72-aac8-b8ad639a614b": {
+          "type": "product",
+          "settings": {
+            "product": "in-this-together-bundle"
+          }
+        }
+      },
+      "block_order": [
+        "46436a55-2952-4405-a183-3a934ce8a67d",
+        "c17521d0-11b7-44a3-af3c-b166f470d960",
+        "8b9ff9b6-80f7-4cd7-9a7e-06292b796df0",
+        "bb4f26b1-199e-4f59-9c1e-b4e4b4704b37",
+        "aef9fc4a-658c-40e0-9f05-af1a30085490",
+        "5ab2e152-f5c4-4cdb-ae4f-f3484ac27566",
+        "273a82e2-b0ce-45fe-b337-69fb69037387",
+        "5fedb38f-9a17-4f72-aac8-b8ad639a614b"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "products-carousel"
   ]
 }
