@@ -70,16 +70,13 @@
     {% else %}
       <h1 class="mt-2 uppercase text-neutral-700 font-black text-2xl">{{ product.title }}</h1>
     {% endif %}
-    <span class="flex my-2">
-      {% if product.compare_at_price >= product.price %}
-        <span class="line-through decoration-downy-300 text-neutral-700">{{ product.compare_at_price | money }}</span>
-        <span class="ml-2">{{ product.price | money }}</span>
-      {% else %}
-        <span class="ml-2">{{ product.price | money }}</span>
-      {% endif %}
+    <span v-if="compareAtPrice > price" class="flex my-2">
+        <span class="line-through decoration-downy-300 text-neutral-700">{ formatMoney(compareAtPrice) }</span>
+        <span class="ml-2">{ formatMoney(price) }</span>
     </span>
-
-    
+    <span v-else class="flex my-2">
+        <span>{ formatMoney(price) }</span>
+    </span>
 
     <div v-for="option in product.options" class="flex flex-col">
       <div v-if="option.name.toLowerCase().includes('color')" class="mt-6 flex">
@@ -112,7 +109,6 @@
         </div>
       </div>
     </div>
-    <span>{ selectedVariant.title }</span>
     <div class="flex">
       <div>
         <svg @click="updateQuantity(-1)" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M19 12.998H5v-2h14z"/></svg>
@@ -223,7 +219,7 @@
         },
 
         price() {
-          this.selectedVariant.price;
+          return this.selectedVariant.price;
         },
 
         compareAtPrice() {
@@ -248,11 +244,6 @@
           return variant;
         }
       },
-      created() {
-        this.product.options.forEach((option, index) => {
-          this.options[option.name] = option.values[0];
-        });
-      },
       mounted() {
         this.$nextTick(() => {
           this.updateProductImages();
@@ -261,6 +252,14 @@
       watch: {
         selectedVariant: function () {
           this.updateProductImages();
+
+          if (window.history.pushState) {
+            let searchParams = new URLSearchParams(window.location.search);
+            searchParams.set('variant', this.selectedVariant.id);
+
+            let newPath = window.location.pathname + '?' + searchParams.toString() + window.location.hash;
+            window.history.pushState(null, '', newPath);
+          }
         },
       },
       methods: {
@@ -270,6 +269,9 @@
         },
         addToCart() {
           CartJS.addItem(this.selectedVariant.id, this.quantity);
+        },
+        formatMoney(value) {
+          return Shopify.formatMoney(value);
         },
         updateProductImages() {
           let option = this.product.options.find(
@@ -302,7 +304,23 @@
             return "_" + size + match;
           });
         },
-      }
+      },
+      created() {
+        let searchParams = new URLSearchParams(window.location.search);
+        let selectedVariant = this.product.variants.find(
+          (x) => x.id == searchParams.get("variant")
+        );
+
+        if (selectedVariant !== undefined) {
+          this.product.options.forEach((option, index) => {
+            this.options[option.name] = selectedVariant.options[index];
+          });
+        } else {
+          this.product.options.forEach((option, index) => {
+            this.options[option.name] = option.values[0];
+          });
+        }
+      },
     }).mount('#product-info')
   });
 </script>
