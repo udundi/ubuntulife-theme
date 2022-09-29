@@ -1,3 +1,5 @@
+<script src="{{ 'vue.min.js' | asset_url }}"></script>
+
 <!-- Styling for size chart -->
 <style>
   div.best-fit-size-chart {
@@ -20,23 +22,22 @@
 <div id="product-info" class="flex flex-col">
   <div class="flex">
     <div class="hidden md:flex flex-col">
-      {% for image in product.images %}
-        <img onclick="console.log('test')" src="{{ image | image_url: height: 256 }}" alt="product carousel preview">
-      {% endfor %}
+      <a v-for="(media, index) in productImages" :href="'#product-image-' + index"
+        class="">
+        <img :src="imageSize(media.src, '256x')" :alt="media.alt" loading="lazy" />
+      </a>
     </div>
     <div class="product-carousel w-screen overflow-hidden">
       <div class="swiper-wrapper">
-        {% for image in product.images %}
-          <div class="swiper-slide">
-            <picture>
-              <source media="(min-width: 2560px)" srcset="{{ image | image_url: width: 3840 }}">
-              <source media="(min-width: 1280px)" srcset="{{ image | image_url: width: 2560 }}">
-              <source media="(min-width: 640px)" srcset="{{ image | image_url: width: 1280 }}">
-              <source media="(max-width: 639px)" srcset="{{ image | image_url: width: 640 }}">
-              <img class="" src="{{ image | image_url: width: 2560 }}" alt="{{ product.title }}">
-            </picture>
-          </div>
-        {% endfor %}
+        <div class="swiper-slide" v-for="(media, index) in productImages" :id="'product-image-' + index">
+          <picture>
+            <source media="(min-width: 2560px)" :srcset="imageSize(media.src, '3840x')">
+            <source media="(min-width: 1280px)" :srcset="imageSize(media.src, '2560x')">
+            <source media="(min-width: 640px)" :srcset="imageSize(media.src, '1280x')">
+            <source media="(max-width: 639px)" :srcset="imageSize(media.src, '640x')">
+            <img class="" :src="imageSize(media.src, '2560x')" :alt="media.atl">
+          </picture>
+        </div>
       </div>
     </div>
   </div>
@@ -63,8 +64,12 @@
     <!-- Breadcrumbs end -->
 
 
-    <h1 class="mt-2 uppercase text-neutral-700 font-black text-2xl">{{ product.title | remove: 'Afridrilles' }}</h1>
-    <h2 class="mt-1 uppercase font-medium">{{ product.title }}</h2>
+    {% if product.options_by_name['color'] %}
+      <h1 class="mt-2 uppercase text-neutral-700 font-black text-2xl">{ selectedVariant.title.split(" / ")[0] }</h1>
+      <h2 class="mt-1 uppercase font-medium">{{ product.title }}</h2>
+    {% else %}
+      <h1 class="mt-2 uppercase text-neutral-700 font-black text-2xl">{{ product.title }}</h1>
+    {% endif %}
     <span class="flex my-2">
       {% if product.compare_at_price >= product.price %}
         <span class="line-through decoration-downy-300 text-neutral-700">{{ product.compare_at_price | money }}</span>
@@ -74,27 +79,50 @@
       {% endif %}
     </span>
 
-    {% if product.options_by_name['size'] %}
-      <div class="mt-6 flex flex-col">
+    
+
+    <div v-for="option in product.options" class="flex flex-col">
+      <div v-if="option.name.toLowerCase().includes('color')" class="mt-6 flex">
+        <label v-for="(value, index) in option.values">
+          <input type="radio" v-model="options[option.name]" :value="value" hidden>
+          <img :src="imageSize(colorImages[value.toLowerCase()].src, '128x')" :alt="value">
+        </label>
+      </div>
+      <div v-if="option.name.toLowerCase().includes('size')" class="mt-6 flex flex-col">
         <span class="flex justify-between">
           <p class="font-medium">SIZE</p>
           <div class="best-fit-size-chart"></div>
         </span>
         <div class="relative mt-1">
-          <select class="w-full appearance-none py-3 px-4 bg-transparent border border-black" name="" id="">
-            {% for option in product.options_by_name['size'].values %}
-              <option value="{{ option }}">{{ option }}</option>
-            {% endfor %}
+          <select
+            v-model="options[option.name]" 
+            class="w-full appearance-none py-3 px-4 bg-transparent border border-black" 
+            name="" 
+            id=""
+          >
+            <option 
+              v-for="(value, index) in option.values" 
+              :checked="options[option.name] == value" 
+              :value="value" 
+              >{ value }</option>
           </select>
           <svg class="w-8 h-8 p-2 absolute right-2 top-1/2 -translate-y-1/2  bg-downy-300 rounded-full pointer-events-none" width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M14.8894 0.188938L7.99929 6.90537L1.10916 0.188938C0.986054 0.0686954 0.820797 0.00137848 0.648713 0.00137848C0.476628 0.00137848 0.311372 0.0686954 0.188268 0.188938C0.128661 0.247341 0.0813067 0.317049 0.0489791 0.393983C0.0166514 0.470916 0 0.553527 0 0.636976C0 0.720426 0.0166514 0.803036 0.0489791 0.879969C0.0813067 0.956902 0.128661 1.02661 0.188268 1.08501L7.51817 8.23157C7.64689 8.35704 7.81954 8.42726 7.99929 8.42726C8.17905 8.42726 8.3517 8.35704 8.48042 8.23157L15.8103 1.08639C15.8703 1.02795 15.9181 0.958067 15.9506 0.880878C15.9832 0.80369 16 0.720758 16 0.636976C16 0.553195 15.9832 0.470262 15.9506 0.393074C15.9181 0.315885 15.8703 0.246006 15.8103 0.187559C15.6872 0.0673163 15.522 0 15.3499 0C15.1778 0 15.0125 0.0673163 14.8894 0.187559V0.188938Z" fill="white"/>
           </svg>
         </div>
       </div>
-    {% endif %}
-    <div>
-      <!-- QTY -->
-      <!-- ATC -->
+    </div>
+    <span>{ selectedVariant.title }</span>
+    <div class="flex">
+      <div>
+        <svg @click="updateQuantity(-1)" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M19 12.998H5v-2h14z"/></svg>
+        <input type="number" name="quantity" v-model="quantity" >
+        <svg @click="updateQuantity(1)" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M19 12.998h-6v6h-2v-6H5v-2h6v-6h2v6h6z"/></svg>
+      </div>
+      <button id="AddToCart" @click="addToCart()" :disabled="!selectedVariant.available" class="disabled:bg-red-400">
+        <template v-if="selectedVariant.available">ADD TO CART</template>
+        <template v-else>SOLD OUT</template>
+      </button>
     </div>
     <div>
       <!-- Description -->
@@ -153,11 +181,129 @@
 </div>
 
 <script>
+  let ud_product = {{ product | json }}
+  ud_product.options = {{ product.options_with_values | json }}
+
   let previewSwiper;
   document.addEventListener("DOMContentLoaded", () => {
     previewSwiper = new Swiper(".product-carousel", {
       slidesPerView: 'auto'
     });
+
+    Vue.createApp({
+      delimiters: ['{', '}'],
+      data() {
+        return {
+          product: ud_product,
+          options: {},
+          productImages: [],
+          quantity: 1
+        }
+      },
+      computed: {
+        colorImages() {
+          let option = this.product.options.find(
+            (x) => x.name == "Color"
+          );
+
+          if (option) {
+            let colorImages = {};
+
+            for (const color of option.values) {
+              for (const image of this.product.media) {
+                if (image.alt !== null && image.alt.toLowerCase() == color.toLowerCase()) {
+                  colorImages[color.toLowerCase()] = image;
+                }
+              }
+            }
+            return colorImages;
+          } else {
+            return {}
+          }
+        },
+
+        price() {
+          this.selectedVariant.price;
+        },
+
+        compareAtPrice() {
+          return this.selectedVariant.compare_at_price;
+        },
+
+        selectedVariant() {
+          let variants = this.product.variants;
+          let options = [];
+    
+          for (const [key, value] of Object.entries(this.options)) {
+            options.push(value);
+          }
+    
+          let variant = variants.find((variant) => {
+            let variantOptions = variant.title.split(' / ');
+            if(variantOptions.length == options.length && variantOptions.every(x => options.includes(x))) {
+              return variant;
+            }
+          });
+    
+          return variant;
+        }
+      },
+      created() {
+        this.product.options.forEach((option, index) => {
+          this.options[option.name] = option.values[0];
+        });
+      },
+      mounted() {
+        this.$nextTick(() => {
+          this.updateProductImages();
+        });
+      },
+      watch: {
+        selectedVariant: function () {
+          this.updateProductImages();
+        },
+      },
+      methods: {
+        updateQuantity(amount) {
+          let quantity = this.quantity + amount;
+          this.quantity = quantity <= 0 ? 1 : quantity;
+        },
+        addToCart() {
+          CartJS.addItem(this.selectedVariant.id, this.quantity);
+        },
+        updateProductImages() {
+          let option = this.product.options.find(
+            (x) => x.name == "Color"
+          );
+          let value, filteredImages;
+
+          if (option) {
+            value = this.selectedVariant["option" + option.position];
+            filteredImages = this.product.media.filter((x) => {
+              if (x.alt == null) return false;
+
+              if (x.alt.toLowerCase().includes(value.toLowerCase()) &&
+                x.alt.toLowerCase() !== value.toLowerCase()) return true;
+            });
+          }
+
+          if (filteredImages && filteredImages.length > 0) {
+            this.productImages = filteredImages;
+
+            if (previewSwiper) {
+              previewSwiper.slideTo(0, 0);
+            }
+          } else {
+            this.productImages = this.product.media;
+          }
+        },
+        imageSize(src, size) {
+          return src.replace(/\.jpg|\.png|\.gif|\.jpeg/g, function (match) {
+            return "_" + size + match;
+          });
+        },
+      }
+    }).mount('#product-info')
   });
 </script>
 
