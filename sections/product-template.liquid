@@ -48,11 +48,9 @@
       <div class="swiper-wrapper">
         <div class="swiper-slide" v-for="(media, index) in productImages">
           <picture>
-            <source media="(min-width: 2560px)" :srcset="imageSize(media.src, '3840x')">
-            <source media="(min-width: 1280px)" :srcset="imageSize(media.src, '2560x')">
             <source media="(min-width: 640px)" :srcset="imageSize(media.src, '1280x')">
             <source media="(max-width: 639px)" :srcset="imageSize(media.src, '640x')">
-            <img class="" :src="imageSize(media.src, '2560x')" :alt="media.alt">
+            <img class="w-full aspect-[9/10] object-cover" :src="imageSize(media.src, '1280x')" :alt="media.alt">
           </picture>
         </div>
       </div>
@@ -386,7 +384,8 @@
       },
       mounted() {
         this.carousel = new Swiper(this.$refs.carousel, {
-          slidesPerView: 'auto'
+          slidesPerView: 'auto',
+          spaceBetween: 12,
         });
 
         this.$nextTick(() => {
