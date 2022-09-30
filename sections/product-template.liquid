@@ -19,24 +19,31 @@
   }
 </style>
 
-<div id="product-info" class="flex flex-col lg:flex-row">
-  <div class="flex w-screen lg:w-7/12">
-    <div class="hidden lg:flex flex-col">
+<div id="product-info" class="relative flex flex-col lg:pt-5 lg:flex-row max-w-screen-2xl mx-auto">
+  <div class="flex w-screen lg:w-7/12 relative">
+    <div class="hidden lg:flex flex-col mr-6 gap-3 sticky top-[5.75rem] h-[calc(100vh-92px)] overflow-y-scroll scrollbar-hidden scroll-smooth">
       <a v-for="(media, index) in productImages" :href="'#product-image-' + index"
-        class="">
-        <img :src="imageSize(media.src, '256x')" :alt="media.alt" loading="lazy" />
+        class="scroll-mt-[5.75rem]">
+        <img 
+          :src="imageSize(media.src, '256x')" 
+          :alt="media.alt" 
+          class="w-40 h-48 object-cover"
+          loading="lazy" />
       </a>
     </div>
 
-    <div class="hidden lg:flex flex-col w-full">
-      <picture v-for="(media, index) in productImages" :id="'product-image-' + index">
+    <div class="hidden lg:flex flex-col sticky top-[5.75rem] w-full h-[calc(100vh-92px)] gap-5 overflow-scroll scrollbar-hidden scroll-smooth">
+      <picture 
+        v-for="(media, index) in productImages" 
+        :id="'product-image-' + index" 
+        class="">
         <source media="(min-width: 2560px)" :srcset="imageSize(media.src, '3840x')">
         <source media="(min-width: 1280px)" :srcset="imageSize(media.src, '2560x')">
         <source media="(min-width: 640px)" :srcset="imageSize(media.src, '1280x')">
         <img class="w-full" :src="imageSize(media.src, '2560x')" :alt="media.alt">
       </picture>
     </div>
-
+    
     <div ref="carousel" class="product-carousel w-full overflow-hidden lg:hidden">
       <div class="swiper-wrapper">
         <div class="swiper-slide" v-for="(media, index) in productImages">
@@ -51,7 +58,7 @@
       </div>
     </div>
   </div>
-  <div class="px-5 pt-5 flex flex-col max-w-xl mx-auto lg:max-w-none lg:w-5/12">
+  <div class="px-5 pt-5 flex flex-col max-w-xl mx-auto sticky top-[5.75rem] lg:max-w-none lg:w-5/12 lg:pt-0 2xl:pl-7 2xl:pr-0">
     <!-- Breadcrumbs start -->
     {% for c in product.collections %}
       {% case c.handle %}
