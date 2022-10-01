@@ -52,19 +52,20 @@
   {{ 'fonts.css' | asset_url | stylesheet_tag }}
 
   <!-- Javascript -->
-	<script src="{{ 'ud-theme.js' | asset_url }}" async></script>
-
-	<script src="{{ 'swiper.min.js' | asset_url }}" defer></script>
-
-	<script src="{{ 'option_selection.js' | shopify_asset_url }}"></script>
+  <script src="{{ 'option_selection.js' | shopify_asset_url }}"></script>
 	<script src="{{ 'rivets-cart.min.js' | asset_url }}"></script>
+  <script src="{{ 'jquery.min.js' | asset_url }}"></script>
+  <script src="{{ 'vue.min.js' | asset_url }}"></script>
+	<script src="{{ 'ud-theme.js' | asset_url }}"></script>
+	<script src="{{ 'swiper.min.js' | asset_url }}"></script>
+
 
   {{ content_for_header }}
 </head>
 
 <body class="template-{{ request.page_type | handle }} overflow-x-hidden bg-white font-avenir">
 
-  {%- comment -%}{% include 'ud-cart' %}{%- endcomment -%}
+  {% include 'ud-cart' %}
 
   <div id="PageContainer">
     <div id="HeaderContainer" class="z-50 sticky top-0 max-h-screen">
