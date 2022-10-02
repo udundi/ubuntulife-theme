@@ -1,72 +1,82 @@
-<style>
-  [v-cloak] {
-    display: none;
-  }
-</style>
+{{ 'ud-cart.scss.css' | asset_url | stylesheet_tag }}
 
 <div id="udCart" v-cloak>
   <div class="fixed top-0 left-0 w-screen h-screen z-40 bg-black bg-opacity-30" @click="closeCart" v-if="isCartOpen"></div>
 
-  <div v-show="isCartOpen" class="fixed top-[5.75rem] right-0 border border-black bg-white z-40 w-screen max-w-xs h-[calc(100vh-92px)] max-h-[40rem] lg:max-w-lg lg:max-h-[52rem]">
-    <div v-if="cart && cart.item_count > 0" class="flex flex-col h-full">
-      <span class="mt-7 lg:mt-10 mx-5 pb-4 flex flex-col border-b border-black lg:flex-row lg:items-center">
-        <p class="font-bold lg:text-xl">SHOPPING BAG</p>
-        <p class="mt-2.5 font-sm lg:mt-0 lg:ml-7">Free Shipping over $50 & Free Returns</p>
-      </span>
-      <div class="flex flex-col mx-5 lg:mx-7 grow overflow-y-scroll scrollbar-hidden">
-        <div 
-          v-for="(item, index) in cart.items" 
-          :key="item.id" 
-          class="flex items-center py-4 lg:py-6 border-b border-neutral-400">
-          <a class="w-24 h-24 mr-3 lg:h-36 lg:w-36" :href="item.url">
-            <img :src="imageSize(item.featured_image.url, '256x256_crop_center')" :alt="item.featured_image.alt"
-              width="120" height="120" loading="lazy" class="w-full h-full" />
-          </a>
-          <div class="flex flex-col flex-grow">
-            <div class="flex w-full items-center">
-              <p class="text-xs font-medium uppercase lg:text-base">{ item.product_title }</p>
-              <svg class="ml-auto w-3 h-3" @click="removeItem(index)" aria-label="Remove from cart" width="18" height="18" viewBox="0 0 18 18" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path d="M10.1952 8.89253L17.564 1.52364C17.7097 1.35359 17.7858 1.13486 17.7771 0.911145C17.7685 0.687433 17.6757 0.475221 17.5174 0.316914C17.3591 0.158608 17.1469 0.0658678 16.9232 0.0572268C16.6995 0.0485858 16.4808 0.12468 16.3107 0.270304L8.94182 7.63919L1.57293 0.261415C1.40555 0.0940338 1.17853 0 0.941817 0C0.705104 0 0.478086 0.0940338 0.310705 0.261415C0.143324 0.428796 0.0492905 0.655813 0.0492905 0.892526C0.0492905 1.12924 0.143324 1.35626 0.310705 1.52364L7.68848 8.89253L0.310705 16.2614C0.217655 16.3411 0.142081 16.4392 0.0887272 16.5494C0.0353732 16.6597 0.00539083 16.7798 0.000662394 16.9023C-0.00406605 17.0247 0.016561 17.1467 0.0612495 17.2608C0.105938 17.3749 0.173723 17.4785 0.26035 17.5651C0.346976 17.6517 0.450574 17.7195 0.56464 17.7642C0.678707 17.8089 0.80078 17.8295 0.923197 17.8248C1.04561 17.8201 1.16573 17.7901 1.27601 17.7367C1.38629 17.6834 1.48435 17.6078 1.56404 17.5147L8.94182 10.1459L16.3107 17.5147C16.4808 17.6604 16.6995 17.7365 16.9232 17.7278C17.1469 17.7192 17.3591 17.6264 17.5174 17.4681C17.6757 17.3098 17.7685 17.0976 17.7771 16.8739C17.7858 16.6502 17.7097 16.4315 17.564 16.2614L10.1952 8.89253Z" fill="currentColor"/>
-              </svg>
-            </div>
-            <p class="mt-1 text-[10px] lg:text-sm text-neutral-700">{ item.variant_title }</p>
-            <div class="mt-4 flex lg:mt-8">
-              <span class="flex">
-                <svg class="h-5 w-5 bg-downy-300 rounded-full p-1 flex lg:p-1.5 lg:h-6 lg:w-6" @click="updateQuantity(index, -1)" width="10" height="2" viewBox="0 0 10 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M8.75 1.3125H1.25C1.16712 1.3125 1.08763 1.27958 1.02903 1.22097C0.970424 1.16237 0.9375 1.08288 0.9375 1C0.9375 0.91712 0.970424 0.837634 1.02903 0.779029C1.08763 0.720424 1.16712 0.6875 1.25 0.6875H8.75C8.83288 0.6875 8.91237 0.720424 8.97097 0.779029C9.02958 0.837634 9.0625 0.91712 9.0625 1C9.0625 1.08288 9.02958 1.16237 8.97097 1.22097C8.91237 1.27958 8.83288 1.3125 8.75 1.3125Z" fill="black"/>
+  <transition name="slide">
+    <div v-show="isCartOpen" class="fixed top-[5.75rem] right-0 border border-black bg-white z-40 w-screen max-w-xs h-[calc(100vh-92px)] max-h-[40rem] lg:max-w-lg lg:max-h-[52rem]">
+      <div v-if="cart && cart.item_count > 0" class="flex flex-col h-full">
+        <span class="mt-7 lg:mt-10 mx-5 pb-4 flex flex-col border-b border-black lg:flex-row lg:items-center">
+          <p class="font-bold lg:text-xl">SHOPPING BAG</p>
+          <p class="mt-2.5 font-sm lg:mt-0 lg:ml-7">Free Shipping over $50 & Free Returns</p>
+        </span>
+        <div class="flex flex-col mx-5 lg:mx-7 grow overflow-y-scroll scrollbar-hidden">
+          <div 
+            v-for="(item, index) in cart.items" 
+            :key="item.id" 
+            class="flex items-center py-4 lg:py-6 border-b border-neutral-400">
+            <a class="w-24 h-24 mr-3 lg:h-36 lg:w-36" :href="item.url">
+              <img :src="imageSize(item.featured_image.url, '256x256_crop_center')" :alt="item.featured_image.alt"
+                width="120" height="120" loading="lazy" class="w-full h-full" />
+            </a>
+            <div class="flex flex-col flex-grow">
+              <div class="flex w-full items-center">
+                <p class="text-xs font-medium uppercase lg:text-base">{ item.product_title }</p>
+                <svg class="ml-auto w-3 h-3" @click="removeItem(index)" aria-label="Remove from cart" width="18" height="18" viewBox="0 0 18 18" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10.1952 8.89253L17.564 1.52364C17.7097 1.35359 17.7858 1.13486 17.7771 0.911145C17.7685 0.687433 17.6757 0.475221 17.5174 0.316914C17.3591 0.158608 17.1469 0.0658678 16.9232 0.0572268C16.6995 0.0485858 16.4808 0.12468 16.3107 0.270304L8.94182 7.63919L1.57293 0.261415C1.40555 0.0940338 1.17853 0 0.941817 0C0.705104 0 0.478086 0.0940338 0.310705 0.261415C0.143324 0.428796 0.0492905 0.655813 0.0492905 0.892526C0.0492905 1.12924 0.143324 1.35626 0.310705 1.52364L7.68848 8.89253L0.310705 16.2614C0.217655 16.3411 0.142081 16.4392 0.0887272 16.5494C0.0353732 16.6597 0.00539083 16.7798 0.000662394 16.9023C-0.00406605 17.0247 0.016561 17.1467 0.0612495 17.2608C0.105938 17.3749 0.173723 17.4785 0.26035 17.5651C0.346976 17.6517 0.450574 17.7195 0.56464 17.7642C0.678707 17.8089 0.80078 17.8295 0.923197 17.8248C1.04561 17.8201 1.16573 17.7901 1.27601 17.7367C1.38629 17.6834 1.48435 17.6078 1.56404 17.5147L8.94182 10.1459L16.3107 17.5147C16.4808 17.6604 16.6995 17.7365 16.9232 17.7278C17.1469 17.7192 17.3591 17.6264 17.5174 17.4681C17.6757 17.3098 17.7685 17.0976 17.7771 16.8739C17.7858 16.6502 17.7097 16.4315 17.564 16.2614L10.1952 8.89253Z" fill="currentColor"/>
                 </svg>
-                <input 
-                  class="w-9 lg:w-14 font-medium text-center"
-                  aria-label="quantity"  
-                  type="number" 
-                  :value="item.quantity" 
-                  min="0"   
-                  max="100">
-                <svg class="h-5 w-5 bg-downy-300 rounded-full p-1 flex lg:p-1.5 lg:h-6 lg:w-6" @click="updateQuantity(index, 1)" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M0.625 5H9.375M5 0.625V9.375V0.625Z" stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </span>
-              <p class="ml-auto font-medium lg:text-lg">{ formatMoney(item.original_price) }</p>
+              </div>
+              <p class="mt-1 text-[10px] lg:text-sm text-neutral-700">{ item.variant_title }</p>
+              <div class="mt-4 flex lg:mt-8">
+                <span class="flex">
+                  <svg class="h-5 w-5 bg-downy-300 rounded-full p-1 flex lg:p-1.5 lg:h-6 lg:w-6" @click="updateQuantity(index, -1)" width="10" height="2" viewBox="0 0 10 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.75 1.3125H1.25C1.16712 1.3125 1.08763 1.27958 1.02903 1.22097C0.970424 1.16237 0.9375 1.08288 0.9375 1C0.9375 0.91712 0.970424 0.837634 1.02903 0.779029C1.08763 0.720424 1.16712 0.6875 1.25 0.6875H8.75C8.83288 0.6875 8.91237 0.720424 8.97097 0.779029C9.02958 0.837634 9.0625 0.91712 9.0625 1C9.0625 1.08288 9.02958 1.16237 8.97097 1.22097C8.91237 1.27958 8.83288 1.3125 8.75 1.3125Z" fill="black"/>
+                  </svg>
+                  <input 
+                    class="w-9 lg:w-14 font-medium text-center"
+                    aria-label="quantity"  
+                    type="number" 
+                    :value="item.quantity" 
+                    min="0"   
+                    max="100">
+                  <svg class="h-5 w-5 bg-downy-300 rounded-full p-1 flex lg:p-1.5 lg:h-6 lg:w-6" @click="updateQuantity(index, 1)" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.625 5H9.375M5 0.625V9.375V0.625Z" stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+                <p class="ml-auto font-medium lg:text-lg">{ formatMoney(item.original_price) }</p>
+              </div>
             </div>
           </div>
         </div>
+        <div class="flex justify-between bg-orange-50 px-5 py-6 font-medium lg:px-9 lg:py-8 lg:text-lg">
+          <span>SUBTOTAL</span>
+          <span>{ formatMoney(cart.original_total_price) }</span>
+        </div>
+        <a 
+          href="/checkout" 
+          id="checkout" 
+          class="w-full text-center py-6 bg-downy-300 text-white text-lg font-black lg:py-8 lg:text-xl">
+          CHECK OUT
+        </a>
       </div>
-      <div class="flex justify-between bg-orange-50 px-5 py-6 font-medium lg:px-9 lg:py-8 lg:text-lg">
-        <span>SUBTOTAL</span>
-        <span>{ formatMoney(cart.original_total_price) }</span>
-      </div>
-      <a 
-        href="/checkout" 
-        id="checkout" 
-        class="w-full text-center py-6 bg-downy-300 text-white text-lg font-black lg:py-8 lg:text-xl">
-        CHECK OUT
-      </a>
-    </div>
 
-    <div v-else>
-      <h1>cart empty</h1>
+      <div v-else class="flex flex-col items-center">
+        <svg class="mt-14 h-16 w-16 lg:mt-20 lg:h-28 lg:w-28" width="103" height="103" viewBox="0 0 103 103" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_412_4)">
+          <path d="M51.5002 102.176C79.4878 102.176 102.176 79.4876 102.176 51.5C102.176 23.5124 79.4878 0.823975 51.5002 0.823975C23.5126 0.823975 0.824219 23.5124 0.824219 51.5C0.824219 79.4876 23.5126 102.176 51.5002 102.176Z" stroke="black" stroke-width="1.648"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M61.6928 40.7196V39.3797C61.6928 34.1994 57.4108 30 52.1286 30C46.8463 30 42.5643 34.1994 42.5643 39.3797V40.7196H33V67.5187C33 70.4789 35.4469 72.8786 38.4653 72.8786H65.7918C68.8102 72.8786 71.2571 70.4789 71.2571 67.5187V40.7196H61.6928ZM52.1283 32.6799C55.9013 32.6799 58.9599 35.6795 58.9599 39.3797V40.7196H45.2966V39.3797C45.2966 35.6795 48.3553 32.6799 52.1283 32.6799ZM68.525 43.3996H35.7331V67.5187C35.7331 68.9988 36.9566 70.1987 38.4658 70.1987H65.7923C67.3015 70.1987 68.525 68.9988 68.525 67.5187V43.3996Z" fill="black"/>
+          </g>
+          <defs>
+          <clipPath id="clip0_412_4">
+          <rect width="103" height="103" fill="white"/>
+          </clipPath>
+          </defs>
+        </svg>
+        <span class="mt-6 font-medium lg:text-lg lg:mt-9">YOUR SHOPPING BAG IS EMPTY</span>
+        <a href="#" class="mt-6 w-3/4 py-4 bg-downy-300 text-white text-center text-lg font-black lg:mt-9 lg:text-xl">CONTINUE SHOPPING</a>
+      </div>
     </div>
-  </div>
+  </transition>
 </div>
 
 {{ 'option_selection.js' | shopify_asset_url | script_tag }}
@@ -106,6 +116,9 @@
       openCart() {
         this.isCartOpen = true;
       },
+      toggleCart() {
+        this.isCartOpen = !this.isCartOpen;
+      },
       imageSize(src, size) {
         return src.replace(/\.jpg|\.png|\.gif|\.jpeg/g, function (match) {
           return "_" + size + match;
@@ -115,10 +128,10 @@
         this.cart = JSON.parse(JSON.stringify(cart));
 
         if (this.cart.item_count == 0) {
-          // document.getElementById("cart-qty-indicator").style.display = "none";
+          document.getElementById("cart-qty-indicator").style.display = "none";
         } else {
-          // document.getElementById("cart-qty-indicator").style.display = "block";
-          // document.getElementById("cart-qty-indicator").innerHTML = this.cart.item_count;
+          document.getElementById("cart-qty-indicator").style.display = "block";
+          document.getElementById("cart-qty-indicator").innerHTML = this.cart.item_count;
         }
       },
       updateQuantity(index, quantity) {
