@@ -1,0 +1,149 @@
+<section class="flex flex-col">
+  <div class="bg-neutral-50 w-screen md:py-4 lg:py-6">
+    <div class="flex w-full md:items-center md:justify-center">
+      <div class="flex flex-col items-center md:items-start max-w-xs mx-auto md:mx-0 py-12 px-2 xl:max-w-sm">
+        <h1 class="font-black text-3xl xl:text-4xl text-neutral-600">{{ section.settings.header }}</h1>
+        <p class="text-center md:text-left mt-4">{{ section.settings.sub_header }}</p>
+        <a href="#stockist-store-locator" class="mt-6 w-3/4 py-3 bg-downy-300 text-white font-black text-xl text-center">FIND LOCATION</a>
+      </div>
+      <img 
+        src="{{ section.settings.header_image | image_url: width: 1024 }}" 
+        alt="{{ section.settings.header_image.alt }}" 
+        class="hidden md:block h-96 w-1/2 max-w-2xl ml-12 xl:ml-16 object-cover">
+    </div>
+  </div>
+  
+  <div id="stockist-store-locator">
+    {%- comment -%} stockist {%- endcomment -%}
+  </div>
+
+  <div class="w-screen max-w-screen-2xl 2xl:mx-auto overflow-x-hidden flex flex-col items-center py-10 lg:py-16 lg:px-16">
+    <span class="lg:w-full flex items-center">
+      <p class="font-bold text-2xl lg:text-3xl text-neutral-600">RECENT COLLABORATIONS</p>
+      <span class="hidden lg:flex lg:ml-auto">
+        <svg id="collabs-arrow-back" class="h-14 w-14 cursor-pointer" width="59" height="59" viewBox="0 0 59 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0.5 29.5C0.5 13.4837 13.4837 0.5 29.5 0.5C45.5163 0.5 58.5 13.4837 58.5 29.5C58.5 45.5163 45.5163 58.5 29.5 58.5C13.4837 58.5 0.5 45.5163 0.5 29.5Z" stroke="currentColor"/>
+          <path d="M32.7751 21.3188L24.783 29.5008L32.7751 37.6829C33.0727 37.9869 33.0727 38.4724 32.7751 38.7764C32.6347 38.9194 32.4425 39 32.2419 39C32.0414 39 31.8492 38.9194 31.7088 38.7764L23.205 30.0722C22.8945 29.7543 22.8945 29.2474 23.205 28.9295L31.7072 20.2252C31.8477 20.0812 32.0405 20 32.2419 20C32.4434 20 32.6362 20.0812 32.7767 20.2252C33.0743 20.5293 33.0743 21.0148 32.7767 21.3188H32.7751Z" fill="currentColor"/>
+        </svg>
+        <svg id="collabs-arrow-forward" class="ml-6 h-14 w-14 rotate-180 cursor-pointer" width="59" height="59" viewBox="0 0 59 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0.5 29.5C0.5 13.4837 13.4837 0.5 29.5 0.5C45.5163 0.5 58.5 13.4837 58.5 29.5C58.5 45.5163 45.5163 58.5 29.5 58.5C13.4837 58.5 0.5 45.5163 0.5 29.5Z" stroke="currentColor"/>
+          <path d="M32.7751 21.3188L24.783 29.5008L32.7751 37.6829C33.0727 37.9869 33.0727 38.4724 32.7751 38.7764C32.6347 38.9194 32.4425 39 32.2419 39C32.0414 39 31.8492 38.9194 31.7088 38.7764L23.205 30.0722C22.8945 29.7543 22.8945 29.2474 23.205 28.9295L31.7072 20.2252C31.8477 20.0812 32.0405 20 32.2419 20C32.4434 20 32.6362 20.0812 32.7767 20.2252C33.0743 20.5293 33.0743 21.0148 32.7767 21.3188H32.7751Z" fill="currentColor"/>
+        </svg>
+      </span>
+    </span>
+    <div id="collab-swiper" class="w-full mt-8">
+      <div class="swiper-wrapper">
+        {% for block in section.blocks %}
+          <div class="swiper-slide flex flex-col items-center">
+            <div class="slide-padding flex flex-col items-center">
+              <img 
+                src="{{ block.settings.image | image_url: width: 768 }}" 
+                alt="{{ block.settings.image.alt }}" 
+                class="w-full aspect-square object-cover lg:h-96" >
+              <p class="mt-5 text-2xl font-black text-neutral-700">{{ block.settings.title }}</p>
+              <p class="mt-4 text-center">{{ block.settings.text }}</p>
+              <a href="#" class="hidden lg:block text-downy-300 underline mt-3">VIEW MORE</a>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+    <a href="#" class="w-5/6 mt-9 text-white bg-downy-300 font-black text-xl text-center py-3 lg:hidden">VIEW MORE COLLABS</a>
+  </div>
+</section>
+
+<style>
+  #collab-swiper .swiper-slide {
+    width: 85vw;
+    max-width: 640px;
+  }
+
+  #collab-swiper .swiper-slide .slide-padding {
+    width: calc(100% - 32px);
+    transform: translateY(16px);
+    transition: all;
+    transition-duration: 200ms;
+  }
+
+  #collab-swiper .swiper-slide-active .slide-padding {
+    width: 100%;
+    transform: translateY(0px);
+  }
+
+  @media (min-width: 1024px) {
+    #collab-swiper .swiper-slide {
+      width: 100%;
+    }
+
+    #collab-swiper .swiper-slide .slide-padding {
+      width: 100%;
+      transform: unset;
+    }
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const heroSwiper = new Swiper("#collab-swiper", {
+      slidesPerView: 'auto',
+      centeredSlides: true,
+      navigation: {
+        prevEl: '#collabs-arrow-back',
+        nextEl: '#collabs-arrow-forward'
+      },
+      breakpoints: {
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 18,
+          centeredSlides: false
+        }
+      }
+    });
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Locations Content",
+  "settings": [
+    {
+      "type": "text",
+      "id": "header",
+      "label": "Hero Header"
+    },
+    {
+      "type": "textarea",
+      "id": "sub_header",
+      "label": "Hero Paragraph"
+    },
+    {
+      "type": "image_picker",
+      "id": "header_image",
+      "label": "Hero Image"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Collab Slide",
+      "type": "slide",
+      "settings": [ 
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Text"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
