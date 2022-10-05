@@ -22,24 +22,25 @@
             <div class="flex flex-col flex-grow">
               <div class="flex w-full items-center">
                 <p class="text-xs font-medium uppercase lg:text-base">{ item.product_title }</p>
-                <svg class="ml-auto w-3 h-3" @click="removeItem(index)" aria-label="Remove from cart" width="18" height="18" viewBox="0 0 18 18" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <svg class="ml-auto w-3 h-3 cursor-pointer" @click="removeItem(index)" aria-label="Remove from cart" width="18" height="18" viewBox="0 0 18 18" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <path d="M10.1952 8.89253L17.564 1.52364C17.7097 1.35359 17.7858 1.13486 17.7771 0.911145C17.7685 0.687433 17.6757 0.475221 17.5174 0.316914C17.3591 0.158608 17.1469 0.0658678 16.9232 0.0572268C16.6995 0.0485858 16.4808 0.12468 16.3107 0.270304L8.94182 7.63919L1.57293 0.261415C1.40555 0.0940338 1.17853 0 0.941817 0C0.705104 0 0.478086 0.0940338 0.310705 0.261415C0.143324 0.428796 0.0492905 0.655813 0.0492905 0.892526C0.0492905 1.12924 0.143324 1.35626 0.310705 1.52364L7.68848 8.89253L0.310705 16.2614C0.217655 16.3411 0.142081 16.4392 0.0887272 16.5494C0.0353732 16.6597 0.00539083 16.7798 0.000662394 16.9023C-0.00406605 17.0247 0.016561 17.1467 0.0612495 17.2608C0.105938 17.3749 0.173723 17.4785 0.26035 17.5651C0.346976 17.6517 0.450574 17.7195 0.56464 17.7642C0.678707 17.8089 0.80078 17.8295 0.923197 17.8248C1.04561 17.8201 1.16573 17.7901 1.27601 17.7367C1.38629 17.6834 1.48435 17.6078 1.56404 17.5147L8.94182 10.1459L16.3107 17.5147C16.4808 17.6604 16.6995 17.7365 16.9232 17.7278C17.1469 17.7192 17.3591 17.6264 17.5174 17.4681C17.6757 17.3098 17.7685 17.0976 17.7771 16.8739C17.7858 16.6502 17.7097 16.4315 17.564 16.2614L10.1952 8.89253Z" fill="currentColor"/>
                 </svg>
               </div>
               <p class="mt-1 text-[10px] lg:text-sm text-neutral-700">{ item.variant_title }</p>
               <div class="mt-4 flex lg:mt-8">
                 <span class="flex">
-                  <svg class="h-5 w-5 bg-downy-300 rounded-full p-1 flex lg:p-1.5 lg:h-6 lg:w-6" @click="updateQuantity(index, -1)" width="10" height="2" viewBox="0 0 10 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="h-5 w-5 bg-downy-300 rounded-full p-1 flex lg:p-1.5 lg:h-6 lg:w-6 cursor-pointer" @click="updateQuantity(index, -1)" width="10" height="2" viewBox="0 0 10 2" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M8.75 1.3125H1.25C1.16712 1.3125 1.08763 1.27958 1.02903 1.22097C0.970424 1.16237 0.9375 1.08288 0.9375 1C0.9375 0.91712 0.970424 0.837634 1.02903 0.779029C1.08763 0.720424 1.16712 0.6875 1.25 0.6875H8.75C8.83288 0.6875 8.91237 0.720424 8.97097 0.779029C9.02958 0.837634 9.0625 0.91712 9.0625 1C9.0625 1.08288 9.02958 1.16237 8.97097 1.22097C8.91237 1.27958 8.83288 1.3125 8.75 1.3125Z" fill="black"/>
                   </svg>
                   <input 
-                    class="w-9 lg:w-14 font-medium text-center"
+                    class="w-9 lg:w-14 font-medium text-center appearance-none"
+                    style="-moz-appearance: textfield;"
                     aria-label="quantity"  
                     type="number" 
                     :value="item.quantity" 
                     min="0"   
                     max="100">
-                  <svg class="h-5 w-5 bg-downy-300 rounded-full p-1 flex lg:p-1.5 lg:h-6 lg:w-6" @click="updateQuantity(index, 1)" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="h-5 w-5 bg-downy-300 rounded-full p-1 flex lg:p-1.5 lg:h-6 lg:w-6 cursor-pointer" @click="updateQuantity(index, 1)" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0.625 5H9.375M5 0.625V9.375V0.625Z" stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
                   </svg>
                 </span>
