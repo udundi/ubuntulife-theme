@@ -1,110 +1,41 @@
-{% paginate search.results by 10 %}
-
-<div class="page-width">
-  {% if search.performed == false %}
-    <div class="text-center">
-      <h1 class="h2">{{ 'general.search.title' | t }}</h1>
-  {% else %}
-    <div class="text-center">
-      <h1 class="h2">
-        <span class="visually-hidden">{{ 'general.search.heading' | t: count: search.results_count }}:</span>
-        {{ 'general.search.results_with_count' | t: terms: search.terms, count: search.results_count }}
-      </h1>
-  {% endif %}
-      <div class="grid">
-        <div class="grid__item medium-up--six-tenths medium-up--push-two-tenths">
-          {% if search.performed and search.results_count == 0 %}
-            <div class="rte search--no-results-found">
-              <p>{{ 'general.search.no_results' | t }}</p>
-            </div>
-          {% endif %}
-          <form action="{{ routes.search_url }}" method="get" role="search" class="search-form search-page-form">
-            <div class="input-group input-group--nowrap">
-              <div class="input-group__field input-group__field--connected search-form__input-wrapper">
-                <input
-                  type="search"
-                  name="q"
-                  value="{{ search.terms | escape }}"
-                  placeholder="{{ 'general.search.placeholder' | t }}"
-                  role="combobox"
-                  aria-autocomplete="list"
-                  aria-owns="predictive-search-results"
-                  aria-expanded="false"
-                  aria-label="{{ 'general.search.placeholder' | t }}"
-                  aria-haspopup="listbox"
-                  class="search-form__input"
-                  data-search-page-predictive-search-input
-                />
-
-                <input type="hidden" name="options[prefix]" value="last" aria-hidden="true" />
-
-                <button type="reset" class="search-form__clear-action" aria-label="{{ 'general.search.clear_search_term' | t }}" data-search-page-predictive-search-clear>
-                  {% include 'icon-close' %}
-                </button>
-
-                <div class="predictive-search-wrapper" data-predictive-search-mount="default"></div>
-              </div>
-
-              <button type="submit" class="search-form__connected-submit" aria-label="{{ 'general.search.submit' | t }}" data-search-page-predictive-search-submit>
-                {% include 'icon-search' %}
-              </button>
-            </div>
-          </form>
-        </div>
-      </div>
+<div class="md:px-12 max-w-screen-2xl mx-auto">
+  <div class="py-8 flex flex-col items-center md:py-12">
+    <h1 class="text-3xl font-black text-neutral-600 md:text-4xl">Search</h1>
+    <form 
+      action="/search" 
+      method="get" 
+      role="search" 
+      class="w-60 md:w-72 px-2 relative flex mt-6 border-b border-black md:px-3 md:mt-8">
+      <input type="hidden" name="type" value="product">
+      <input 
+        type="search" 
+        name="q" 
+        value="{{ search.terms | escape }}" 
+        placeholder="{{ 'general.search.placeholder' | t }}" 
+        class="flex-grow p-1 placeholder:text-sm placeholder:text-neutral-400 md:placeholder:text-base md:text-lg" 
+        aria-label="{{ 'general.search.placeholder' | t }}">
+      <button type="submit" class="pl-3" aria-label="search">
+        <svg class="h-5 w-5" width="21" height="21" viewBox="0 0 21 21" aria-hidden="true" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M14.6129 13.5523L20.2769 19.2163L19.2164 20.2768L13.5524 14.6128C10.1579 17.4403 5.13976 17.0978 2.16097 13.8352C-0.81782 10.5727 -0.703563 5.54423 2.42034 2.42033C5.54424 -0.703563 10.5727 -0.817819 13.8353 2.16096C17.0979 5.13975 17.4404 10.1578 14.6129 13.5523ZM8.27637 1.52673C4.54845 1.52673 1.52637 4.54881 1.52637 8.27673C1.5305 12.0029 4.55016 15.0226 8.27637 15.0267C12.0043 15.0267 15.0264 12.0046 15.0264 8.27673C15.0264 4.54881 12.0043 1.52673 8.27637 1.52673Z" fill="black"/>
+        </svg>
+      </button>
+    </form>
   </div>
-</div>
 
+  {% if search.performed %}
+    <hr>
 
-{% if search.performed %}
-  {% if search.results_count > 0 %}
-    <hr aria-hidden="true" />
-  {% endif %}
-
-  <h2 class="visually-hidden">{{ 'general.search.heading' | t: count: search.results_count }}</h2>
-
-  <ul class="page-width list-view-items">
-    {% for item in search.results %}
-      <li class="list-view-item">
-        {% if item.object_type == 'product' %}
-          {% include 'product-card-list', product: item %}
-        {% else %}
-          <div class="product-card product-card--list">
-            <a href="{{ item.url }}" class="full-width-link">
-              <span class="visually-hidden">{{ item.title }}</span>
-            </a>
-            <div class="list-view-item__link">
-              <div class="list-view-item__image-column">
-                <div class="list-view-item__image-wrapper product-card__image-wrapper">
-                  {% unless item.image == null %}
-                    <img class="list-view-item__image" src="{{ item.image.src | img_url: '600x600' }}" alt="{{ item.image.alt | escape }}">
-                  {% endunless %}
-                </div>
-              </div>
-
-              <div class="list-view-item__title-column">
-                <div class="list-view-item__title" aria-hidden="true">
-                  <span class="product-card__title">{{ item.title }}</span>
-                </div>
-                <div>
-                  {% if item.published_at %}{{ item.published_at | date: format: "date" }} &#8212; {% endif %}
-                  {{ item.content | strip_html | truncate: 200 }}
-                </div>
-              </div>
-            </div>
+    <div class="my-8 px-3 md:px-0 grid grid-cols-2 sm:grid-cols-3 gap-3 lg:gap-4 gap-y-5 lg:gap-y-12">
+      {% for product in search.results %}
+        <a href="{{ product.url }}" class="flex flex-col items-center">
+          <div class="group aspect-square relative">
+            <img class="w-full h-full object-cover relative z-0" src="{{ product.featured_image | image_url: width: 512 }}" alt="{{ product.title }}">
+            <img class="opacity-0 group-hover:opacity-100 transition-opacity duration-200 absolute z-10 top-0 left-0 w-full h-full" src="{{ product.images | last | image_url: width: 512 }}" alt="{{ product.title }} lifestyle image">
           </div>
-        {% endif %}
-      </li>
-    {% endfor %}
-  </ul>
-
-  {%- if paginate.pages > 1 -%}
-    {% include 'pagination', paginate: paginate %}
-  {%- endif -%}
-{% endif %}
-
-{% if search.results_count < 2  %}
-  <div class="search--less-than-2-results"></div>
-{% endif %}
-
-{% endpaginate %}
+          <p class="text-xs md:text-sm lg:text-base mt-1.5 lg:mt-8 font-medium text-center">{{ product.title }}</p>
+          <p class="text-xs md:text-sm lg:text-base pt-3 mt-auto">{{ product.price | money_with_currency }}</p>
+        </a>
+      {% endfor %}
+    </div>
+  {% endif %}
+</div>
