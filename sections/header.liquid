@@ -7,7 +7,7 @@
       <div class="menu-btn-burger"></div>
     </div>
     {% for link in linklists.main-navigation.links %}
-      <div class="group hidden lg:flex items-center h-full {% if forloop.first == true %}pl-0{% endif %} px-2 mr-4 last-of-type:mr-auto">
+      <div class="group hidden lg:flex items-center h-full {% if forloop.first == true %}pl-0{% endif %} px-4 lastlast-of-type:pr-2 last-of-type:mr-auto">
         <p class="text-neutral-800 group-hover:underline underline-offset-8 uppercase font-medium cursor-default">{{ link.title }}
         </p>
         {% if link.links != blank %}
