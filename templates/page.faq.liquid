@@ -105,13 +105,17 @@
   let previousSelection = "";
   let selection = "";
 
+  // unhide first accordion
+  document.getElementById("orders-acc").classList.remove('hidden')
+
   function hideAccordions() {
     previousSelection = "";
     const collection = document.getElementsByClassName("acc-wrapper");
-      for (let i = 0; i < collection.length; i++) {
-        collection[i].classList.remove('hidden');
-        collection[i].classList.add('hidden');
-      }
+    console.log(collection)
+    for (let i = 0; i < collection.length; i++) {
+      collection[i].classList.remove('hidden');
+      collection[i].classList.add('hidden');
+    }
   }
 
   function updateChoice(id) {
