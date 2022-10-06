@@ -1,6 +1,6 @@
 <section id="index-shop-category-section" class="flex flex-col items-center mt-14">
-  <h2 class="text-3xl lg:text-4xl text-neutral-800 font-black">SHOP BY CATEGORY</h2>
-  <p class="text-center mt-3 max-w-sm lg:max-w-lg mx-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  <h2 class="text-3xl lg:text-4xl text-neutral-800 font-black">{{ section.settings.header }}</h2>
+  <p class="text-center mt-3 max-w-sm lg:max-w-lg mx-4">{{ section.settings.text }}</p>
   <div class="swiper mt-14 w-screen overflow-hidden">
     <div class="swiper-wrapper">
       {% for block in section.blocks %}
@@ -32,7 +32,18 @@
 {% schema %}
 {
   "name": "Index Shop Category",
-  "settings": [],
+  "settings": [
+    {
+      "type": "text",
+      "id": "header",
+      "label": "Header Copy"
+    },
+    {
+      "type": "text",
+      "id": "text",
+      "label": "Text"
+    }
+  ],
   "blocks": [
     {
       "name": "Collection",
