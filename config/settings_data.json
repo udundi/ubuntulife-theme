@@ -221,6 +221,11 @@
           "2eb55731-324a-4062-8968-026040cd16d7"
         ],
         "settings": {
+          "pre_header": "LOREM IPSUM",
+          "header": "LOREM IPSUM DOLOR SIT AMET",
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
+          "cta": "SHOP NOW",
+          "cta_link": "\/collections\/all"
         }
       },
       "index-shop-category": {
@@ -265,6 +270,8 @@
           "d656858d-9152-46af-bbb3-2aa255c28c0e"
         ],
         "settings": {
+          "header": "SHOP BY CATEGORY",
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         }
       },
       "index-featured-carousel": {
