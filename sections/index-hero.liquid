@@ -1,9 +1,9 @@
 <section id="index-hero-section" class="flex flex-col md:flex-row md:min-h-[calc(100vh-92px)] md:h-[calc(100vh-92px)] items-center">
   <div class="flex flex-col items-center lg:items-start w-11/12 max-w-xs mt-5 md:mt-0 md:flex-grow md:mx-10 lg:mx-20">
-    <p class="font-ubuntulife font-bold text-xl">LOREM IPSUM</p>
-    <h1 class="font-black text-4xl text-neutral-800 text-center lg:text-left">LOREM IPSUM DOLOR SIT AMET</h1>
-    <p class="font-medium text-neutral-800 text-center lg:text-left mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
-    <a href="/collections/all" class="mt-8 w-11/12 lg:w-3/5 py-4 border border-black font-black text-xl text-neutral-800 text-center">SHOP NOW</a>
+    <p class="font-ubuntulife font-bold text-xl">{{ section.settings.pre_header }}</p>
+    <h1 class="font-black text-4xl text-neutral-800 text-center lg:text-left">{{ section.settings.header }}</h1>
+    <p class="font-medium text-neutral-800 text-center lg:text-left mt-2">{{ section.settings.text }}</p>
+    <a href="{{ section.settings.cta_link }}" class="mt-8 w-11/12 lg:w-3/5 py-4 border border-black font-black text-xl text-neutral-800 text-center">{{ section.settings.cta }}</a>
     <div class="hidden mt-6 lg:flex">
       <svg onclick="heroSwiper.slidePrev(300)" class="cursor-pointer w-12 h-12 p-4 rounded-full border border-downy-300 hover:bg-downy-300 -rotate-90 mr-4" width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M13.9588 7.73918L7.49934 1.42968L1.03984 7.73918C0.799808 7.9741 0.416528 7.9741 0.176501 7.73918C0.0636142 7.62834 0 7.47665 0 7.31828C0 7.15992 0.0636142 7.00822 0.176501 6.89739L7.04828 0.183835C7.29924 -0.0612782 7.69944 -0.0612782 7.95039 0.183835L14.8222 6.8961C14.9359 7.00702 15 7.15928 15 7.31828C15 7.47729 14.9359 7.62955 14.8222 7.74047C14.5821 7.9754 14.1989 7.9754 13.9588 7.74047V7.73918Z" fill="black"/>
@@ -26,7 +26,7 @@
   <div class="swiper mt-10 md:mt-0 w-screen overflow-hidden md:flex-grow md:h-full md:py-10 2xl:py-16">
     <div class="swiper-wrapper">
       {% for block in section.blocks %}
-        <div class="swiper-slide relative w-48 sm:w-60 md:w-80 2xl:w-auto h-80 sm:h-96 md:h-full flex flex-col justify-end">
+        <div class="swiper-slide relative w-48 sm:w-60 md:w-80 2xl:w-96 h-80 sm:h-96 md:h-full flex flex-col justify-end">
           <p class="z-10 font-black text-xl lg:text-3xl 2xl:text-4xl text-white mx-4 w-3/4">{{ block.settings.text }}</p>
           <a class="z-10 w-fit ml-4 mt-3 font-black lg:text-lg 2xl:text-xl bg-white hover:bg-downy-300 py-2 px-4 mb-6" href="{{ block.settings.url }}">SHOP NOW</a>
           <img class="absolute top-0 left-0 w-full 2xl:max-w-xl h-full object-cover" src="{{ block.settings.image | image_url: width: 768 }}" alt="Featured product image">
@@ -59,7 +59,33 @@
 {% schema %}
 {
   "name": "Index Hero",
-  "settings": [],
+  "settings": [
+    {
+      "type": "text",
+      "id": "pre_header",
+      "label": "Pre Header Copy"
+    },
+    {
+      "type": "text",
+      "id": "header",
+      "label": "Header Copy"
+    },
+    {
+      "type": "text",
+      "id": "text",
+      "label": "Smaller Sub Copy"
+    },
+    {
+      "type": "text",
+      "id": "cta",
+      "label": "CTA Copy"
+    },
+    {
+      "type": "url",
+      "id": "cta_link",
+      "label": "CTA Link"
+    }
+  ],
   "blocks": [
     {
       "name": "Carousel Pane",
