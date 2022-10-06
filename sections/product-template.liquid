@@ -240,7 +240,7 @@
 
 <!-- You may also like (flows to recommended section in product.template) -->
 <div class="flex px-10">
-  <span class="w-screen text-center mt-16 pt-16 border-t md:border-t-0 border-neutral-600 text-neutral-500 text-2xl md:text-3xl font-black">YOU MAY ALSO LIKE</span>
+  <span class="w-screen text-center mt-16 pt-16 border-t md:border-t-0 border-neutral-600 text-neutral-500 text-2xl md:text-3xl font-black">{{ section.settings.carousel_header }}</span>
 </div>
 
 <script>
@@ -405,6 +405,11 @@
 {
   "name": "Product Template",
   "settings": [
+    {
+      "type": "text",
+      "id": "carousel_header",
+      "label": "Carousel Header Copy"
+    },
     {
       "type": "richtext",
       "id": "info_details_care",
