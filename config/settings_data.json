@@ -352,6 +352,8 @@
           "da65eb0e-9059-425b-bcb2-2f68dd6db8e7"
         ],
         "settings": {
+          "header": "RECOMMENDED",
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod"
         }
       },
       "index-featured-grid": {
@@ -427,6 +429,9 @@
           "4e84f2bf-d6ea-41f1-99cc-eac1c9d5c9eb"
         ],
         "settings": {
+          "header": "CREATING FOR A CAUSE",
+          "link_text": "LEARN ABOUT US",
+          "link": "shopify:\/\/pages\/about"
         }
       },
       "index-articles": {

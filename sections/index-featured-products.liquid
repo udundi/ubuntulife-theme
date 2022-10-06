@@ -1,7 +1,6 @@
 <section id="index-featured-products" class="mt-20 mb-10 flex flex-col items-center">
-  <h3 class="font-black text-3xl text-neutral-800">RECOMMENDED</h3>
-  <h3 class="hidden">BEST SELLERS</h3>
-  <p class="font-medium text-neutral-800 text-center max-w-xs">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+  <h3 class="font-black text-3xl text-neutral-800">{{ section.settings.header }}</h3>
+  <p class="font-medium text-neutral-800 text-center max-w-xs">{{ section.settings.text }}</p>
   <div class="swiper mt-12 w-screen">
     <svg class="swiper-button-prev hidden sm:block w-6 h-6 -rotate-90" width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M13.9588 7.73918L7.49934 1.42968L1.03984 7.73918C0.799808 7.9741 0.416528 7.9741 0.176501 7.73918C0.0636142 7.62834 0 7.47665 0 7.31828C0 7.15992 0.0636142 7.00822 0.176501 6.89739L7.04828 0.183835C7.29924 -0.0612782 7.69944 -0.0612782 7.95039 0.183835L14.8222 6.8961C14.9359 7.00702 15 7.15928 15 7.31828C15 7.47729 14.9359 7.62955 14.8222 7.74047C14.5821 7.9754 14.1989 7.9754 13.9588 7.74047V7.73918Z" fill="black"/>
@@ -43,7 +42,18 @@
 {% schema %}
 {
   "name": "Index Featured Products",
-  "settings": [],
+  "settings": [
+    {
+      "type": "text",
+      "id": "header",
+      "label": "Header Copy"
+    },
+    {
+      "type": "text",
+      "id": "text",
+      "label": "Text"
+    }
+  ],
   "blocks": [
     {
       "name": "Product",
