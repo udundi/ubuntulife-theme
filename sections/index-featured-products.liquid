@@ -8,7 +8,7 @@
     <div class="swiper-wrapper flex-grow">
       {% for block in section.blocks %}
         <a href="{{ block.settings.product.url }}" class="swiper-slide sm:first:ml-4 sm:last:mr-4 w-80 lg:w-96 flex flex-col items-center">
-          <img class="w-full aspect-square object-cover border border-downy-300" src="{{ block.settings.product | image_url: width: 1024 }}" alt="Cover photo">
+          <img class="w-full aspect-square object-cover border border-downy-300" src="{{ block.settings.product | image_url: width: 384 }}" alt="{{ block.settings.product.title }}">
           <p class="mt-6 font-medium text-lg">{{ block.settings.product.title }}</p>
           <p class="mt-1">{{ block.settings.product.price | money }}</p>
         </a>

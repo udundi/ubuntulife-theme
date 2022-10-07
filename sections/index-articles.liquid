@@ -2,18 +2,23 @@
 
 <section id="index-articles" class="mt-14 lg:my-20 2xl:my-36 flex flex-col lg:grid lg:grid-cols-3 items-center px-6 max-w-xl mx-auto lg:max-w-none lg:w-11/12 xl:w-5/6 2xl:max-w-screen-2xl">
   <p class="w-full lg:hidden text-2xl text-neutral-800 font-black">RECENT ARTICLES</p>
-  <div class="lg:col-span-1 lg:h-full mt-6 lg:mt-0 border-b lg:border-b-0 border-black flex flex-col relative overflow-hidden">
-    {% for article in blog.articles limit: 1 %}
-      <img class="w-full max-h-[32rem] lg:max-h-[unset] lg:h-full object-cover" src="{{ article.image | image_url: width: 512 }}" alt="Article cover photo">
+  {% for article in blog.articles limit: 1 %}
+    <a href="{{ article.url }}" class="lg:col-span-1 lg:h-full mt-6 lg:mt-0 border-b lg:border-b-0 border-black flex flex-col relative overflow-hidden">
+      <img 
+        class="w-full max-h-[32rem] lg:max-h-[unset] lg:h-full object-cover" 
+        src="{{ article.image | image_url: width: 512 }}" 
+        alt="Article cover photo"
+        width="512"
+        height="512">
       <div class="flex flex-col lg:justify-end lg:h-full lg:px-4 lg:absolute">
         <p class="font-black text-2xl text-neutral-800 lg:text-white uppercase mt-3">{{ article.title }}</p>
         <p class="mt-3 text-sm lg:text-white">{{ article.published_at }}</p>
         <p class="mt-2 line-clamp-4 lg:text-white">{{ article.excerpt }}</p>
-        <a href="{{ article.url }}" class="my-4 text-downy-300 lg:text-white lg:underline">READ MORE</a>
+        <p class="my-4 text-downy-300 lg:text-white lg:underline">READ MORE</p>
       </div>
       <p class="hidden lg:block absolute w-full rotate-45 right-12 translate-x-1/2 top-8 font-black text-white text-center py-2 bg-white bg-opacity-40">NEW READ</p>
-    {% endfor %}
-  </div>
+    </a>
+  {% endfor %}
   <div class="lg:col-span-2 lg:pl-12">
     <div class="hidden lg:flex">
       <p class="font-black text-4xl text-neutral-800">RECENT ARTICLES</p>
@@ -32,15 +37,20 @@
         {% if is_third == 0 %}
           <div class="article-slide {% if forloop.index0 != 1 %}hidden{% endif %}">
         {% endif %}
-        <div class="flex py-6 lg:py-0 lg:pt-4 2xl:pt-6 border-b lg:border-b-0 border-black">
-          <img class="flex-grow w-32 max-w-[8rem] mr-4 object-cover" src="{{ article.image | image_url: width: 512 }}" alt="Article cover photo">
+        <a href="{{ article.url }}" class="flex py-6 lg:py-0 lg:pt-4 2xl:pt-6 border-b lg:border-b-0 border-black">
+          <img 
+            class="flex-grow w-32 max-w-[8rem] mr-4 object-cover" 
+            src="{{ article.image | image_url: width: 128 }}" 
+            alt="Article cover photo"
+            width="128"
+            height="128">
           <div class="flex flex-col">
             <p class="font-black text-xl 2xl:text-2xl text-neutral-800">{{ article.title }}</p>
             <p class="text-xs lg:text-sm mt-2 2xl:mt-3">{{ article.published_at }}</p>
             <p class="mt-2 2xl:mt-3 max-h-16 line-clamp-2 2xl:text-lg">{{ article.excerpt }}</p>
-            <a class="mt-3 2xl:mt-5 text-downy-300 lg:text-neutral-600 lg:underline" href="{{ article.url }}">READ MORE</a>
+            <p class="mt-3 2xl:mt-5 text-downy-300 lg:text-neutral-600 lg:underline">READ MORE</p>
           </div>
-        </div>
+        </a>
         {% if is_third == 2 %}
           </div>
         {% endif %}

@@ -29,7 +29,16 @@
         <div class="swiper-slide relative w-48 sm:w-60 md:w-80 2xl:w-96 h-80 sm:h-96 md:h-full flex flex-col justify-end">
           <p class="z-10 font-black text-xl lg:text-3xl 2xl:text-4xl text-white mx-4 w-3/4">{{ block.settings.text }}</p>
           <a class="z-10 w-fit ml-4 mt-3 font-black lg:text-lg 2xl:text-xl bg-white hover:bg-downy-300 py-2 px-4 mb-6" href="{{ block.settings.url }}">SHOP NOW</a>
-          <img class="absolute top-0 left-0 w-full 2xl:max-w-xl h-full object-cover" src="{{ block.settings.image | image_url: width: 768 }}" alt="Featured product image">
+          <picture>
+            <source media="(min-width: 1536px)" srcset="{{ block.settings.image | image_url: width: 384 }}">
+            <source media="(min-width: 768px)" srcset="{{ block.settings.image | image_url: width: 320 }}">
+            <source media="(min-width: 640px)" srcset="{{ block.settings.image | image_url: width: 240 }}">
+            <source media="(max-width: 639px)" srcset="{{ block.settings.image | image_url: width: 200 }}">
+            <img 
+              class="absolute top-0 left-0 w-full 2xl:max-w-xl h-full object-cover" 
+              src="{{ block.settings.image | image_url: width: 384 }}" 
+              alt="{{ block.settings.image.alt }}">
+          </picture>
         </div>
       {% endfor %}
     </div>

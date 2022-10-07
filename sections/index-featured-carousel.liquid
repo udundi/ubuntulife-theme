@@ -3,7 +3,15 @@
     <div class="swiper-wrapper">
       {% for block in section.blocks %}
         <div class="swiper-slide w-full md:w-1/2 h-[36rem] md:h-auto ml-2 first:ml-0 first:mr-2 relative">
-          <img class="w-full h-full aspect-square object-cover" src="{{ block.settings.image | image_url: width: 1024 }}" alt="Cover photo">
+          <picture>
+            <source media="(min-width: 1280px)" srcset="{{ block.settings.image | image_url: width: 2560 }}">
+            <source media="(min-width: 640px)" srcset="{{ block.settings.image | image_url: width: 1280 }}">
+            <source media="(max-width: 639px)" srcset="{{ block.settings.image | image_url: width: 640 }}">
+            <img 
+              class="w-full h-full aspect-square object-cover" 
+              src="{{ block.settings.image | image_url: width: 1280 }}" 
+              alt="{{ block.settings.image.alt }}">
+          </picture>
           <div class="absolute top-1/2 md:top-12 left-1/2 md:left-11 -translate-x-1/2 md:translate-x-0 -translate-y-1/2 md:translate-y-0 flex flex-col items-center md:items-start">
             <p class="font-black text-center md:text-left md:text-neutral-800 text-3xl 2xl:text-4xl leading-10 w-44 2xl:w-52">{{ block.settings.text }}</p>
             <a class="mt-8 py-3 px-6 font-black 2xl:text-lg bg-white hover:bg-downy-300" href="{{ block.settings.url }}">{{ block.settings.btn_copy }}</a>
