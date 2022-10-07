@@ -524,6 +524,7 @@
           "heading_1_desktop": "Making A Difference",
           "heading_2_desktop": "OUR MISSION",
           "heading_text_desktop": "A global lifestyle brand out of Africa, based in Kenya. We’re empowering lives through each product made! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "history_img": "shopify:\/\/shop_images\/cofounders.jpg",
           "history_text": "It all started when our Co-Founder & CEO, Zane Wilemon, purchased a one-way ticket to Kenya in search of the meaning of life. It was there that he met our other Co-Founder, Jeremiah Kuria. The two forged a powerful friendship as they shared life and talked about faith, development and purpose. These conversations led to standing lunches every Thursday where they began to brainstorm on ways to serve the local community, especially those living on the margins of society.\n<br><br>\nDriven by their shared vision to help the local community, they created a center for children with special needs, providing them with medical care and life-changing therapy.\n<br><br>\nCaring for these children had been a full-time job for their mothers before the center came into their lives. Soon, nine of these Mums started a new conversation with Jeremiah and Zane: “Now that our kids are being cared for 5 days a week, can you help us do something productive with our time?”\n<br><br>\nWhat started out as nine women learning to sew on manual sewing machines has now transformed into a thriving social enterprise employing over 150 full-time Makers that are changing their lives and the world."
         }
       },
@@ -727,7 +728,8 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/Rectangle_113.png",
               "title": "Ubuntu x Whole Foods",
-              "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+              "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+              "link": "#"
             }
           },
           "cbb07a10-314b-42f9-a6d2-b84727788d0a": {
@@ -735,7 +737,8 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/Rectangle_113.png",
               "title": "Ubuntu x Whole Foods",
-              "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+              "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+              "link": "#"
             }
           },
           "77893ddd-6505-4da3-80b0-f6f77bc6946e": {
@@ -743,7 +746,8 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/Rectangle_113.png",
               "title": "Ubuntu x Whole Foods",
-              "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+              "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+              "link": "#"
             }
           },
           "508fab79-c3a4-4191-aaee-dba7e21c99c8": {
@@ -751,7 +755,8 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/Rectangle_113.png",
               "title": "Ubuntu x Whole Foods",
-              "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+              "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+              "link": "#"
             }
           },
           "2e1fd1e0-2de3-4be2-800f-2ecb155663fa": {
@@ -759,7 +764,8 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/Rectangle_113.png",
               "title": "Ubuntu x Whole Foods",
-              "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+              "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+              "link": "#"
             }
           }
         },
@@ -773,7 +779,66 @@
         "settings": {
           "header": "WHERE TO BUY",
           "sub_header": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          "header_image": "shopify:\/\/shop_images\/Rectangle_61.png"
+          "header_image": "shopify:\/\/shop_images\/Rectangle_61.png",
+          "view_more_link": "#"
+        }
+      },
+      "affiliate-header": {
+        "type": "affiliate-header",
+        "settings": {
+          "header": "",
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod       tempor incididunt ut labore et dolore magna aliqua.",
+          "mobile_image": "shopify:\/\/shop_images\/2021-FlatLay-113_1-mobile.png",
+          "desktop_image": "shopify:\/\/shop_images\/2021-FlatLay-113_1.png"
+        }
+      },
+      "faq-header": {
+        "type": "faq-header",
+        "settings": {
+          "header": "FREQUENTLY ASKED QUESTIONS",
+          "sub_header": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        }
+      },
+      "faq-contact": {
+        "type": "faq-contact",
+        "blocks": {
+          "82cdb4db-4872-4ed0-ac7c-9d3a5c12d51b": {
+            "type": "info",
+            "settings": {
+              "header": "CALL US",
+              "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+              "link": "",
+              "link_text": "XXX-XXX-XXXX",
+              "underlined": false
+            }
+          },
+          "3a264e4b-045f-4631-afba-2860a488cf9a": {
+            "type": "info",
+            "settings": {
+              "header": "E-MAIL",
+              "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+              "link": "mailto:help@ubuntu.com",
+              "link_text": "help@ubuntu.com",
+              "underlined": true
+            }
+          },
+          "99878fa2-cdf7-4ded-895f-0b3c6b0357ab": {
+            "type": "info",
+            "settings": {
+              "header": "FIND US",
+              "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+              "link": "shopify:\/\/pages\/where-to-buy",
+              "link_text": "Find the Closet Boutique",
+              "underlined": false
+            }
+          }
+        },
+        "block_order": [
+          "82cdb4db-4872-4ed0-ac7c-9d3a5c12d51b",
+          "3a264e4b-045f-4631-afba-2860a488cf9a",
+          "99878fa2-cdf7-4ded-895f-0b3c6b0357ab"
+        ],
+        "settings": {
         }
       }
     },

@@ -1,0 +1,45 @@
+{% for block in section.blocks %}
+  <p class="font-bold mt-10 pb-3 border-b border-black">{{ block.settings.header }}</p>
+  <p class="mt-2">{{ block.settings.text }}</p>
+  <a href="{{ block.settings.link }}" class="text-downy-500 mt-3 {% if block.settings.underlined %}underline{% endif %}">{{ block.settings.link_text }}</a>
+{% endfor %}
+
+{% schema %}
+{
+  "name": "FAQ Contact",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "info",
+      "name": "Info",
+      "settings": [
+        {
+          "type": "text",
+          "id": "header",
+          "label": "Info Header"
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Info text"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link URL"
+        },
+        {
+          "type": "text",
+          "id": "link_text",
+          "label": "Link Text"
+        },
+        {
+          "type": "checkbox",
+          "id": "underlined",
+          "label": "Underline Link?"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

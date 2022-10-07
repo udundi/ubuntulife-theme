@@ -8,11 +8,7 @@
   </span>
   <h1 class="mt-3 font-black text-neutral-800 text-3xl md:text-4xl uppercase">{{ collection.title }}</h1>
   <p class="mt-4 text-center mx-8 max-w-sm md:max-w-lg">
-    {% if collection.description == "" %}
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-    {% else %}
-      {{ collection.description }}
-    {% endif %}
+    {{ collection.description }}
   </p>
 
   <div class="w-screen lg:w-full px-8 relative">

@@ -51,13 +51,13 @@
                 class="w-full aspect-square object-cover lg:h-96" >
               <p class="mt-5 text-2xl font-black text-neutral-700">{{ block.settings.title }}</p>
               <p class="mt-4 text-center">{{ block.settings.text }}</p>
-              <a href="#" class="hidden lg:block text-downy-300 underline mt-3">VIEW MORE</a>
+              <a href="{{ block.settings.link }}" class="hidden lg:block text-downy-300 underline mt-3">VIEW MORE</a>
             </div>
           </div>
         {% endfor %}
       </div>
     </div>
-    <a href="#" class="w-5/6 mt-9 text-white bg-downy-300 font-black text-xl text-center py-3 lg:hidden">VIEW MORE COLLABS</a>
+    <a href="{{ section.settings.view_more_link }}" class="w-5/6 mt-9 text-white bg-downy-300 font-black text-xl text-center py-3 lg:hidden">VIEW MORE COLLABS</a>
   </div>
 </section>
 
@@ -129,6 +129,12 @@
       "type": "image_picker",
       "id": "header_image",
       "label": "Hero Image"
+    },
+    {
+      "type": "url",
+      "id": "view_more_link",
+      "label": "View More Link",
+      "info": "Link to where the mobile 'VIEW MORE COLLABS' links to"
     }
   ],
   "blocks": [
@@ -150,6 +156,11 @@
           "type": "textarea",
           "id": "text",
           "label": "Text"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "View More Link"
         }
       ]
     }

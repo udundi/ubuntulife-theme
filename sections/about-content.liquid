@@ -15,7 +15,7 @@
   </div>
 </div>
 <div class="flex flex-col lg:flex-row lg:justify-center px-3 my-3 lg:px-16 sm:my-16 max-w-screen-sm lg:max-w-none mx-auto">
-  <img class="w-full lg:object-cover lg:w-1/2 lg:max-w-lg lg:aspect-square" src="{{ 'cofounders.jpg' | file_img_url: '768x' }}" alt="Image of the founders">
+  <img class="w-full lg:object-cover lg:w-1/2 lg:max-w-lg lg:aspect-square" src="{{ section.settings.history_img | image_url: width: 768 }}" alt="Image of the founders">
   <div class="mt-8 lg:mt-0 lg:ml-24 flex flex-col lg:max-w-2xl">
     <h3 class="font-black text-neutral-800 text-3xl lg:text-4xl">HISTORY</h3>
     <p class="mt-4">{{ section.settings.history_text }}</p>
@@ -221,6 +221,11 @@
       "type": "text",
       "id": "heading_text_desktop",
       "label": "Heading paragraph for desktop"
+    },
+    {
+      "type": "image_picker",
+      "id": "history_img",
+      "label": "Image for history section"
     },
     {
       "type": "textarea",

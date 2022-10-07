@@ -1,0 +1,57 @@
+<div class="flex justify-center md:items-center relative h-[32rem] md:min-h-fit">
+  <image
+    class="md:hidden absolute w-full h-full object-cover object-bottom"
+    src="{{ section.settings.mobile_image | image_url: width: 400 }}"
+  />
+  <image
+    class="z-0 absolute hidden md:block w-full h-full object-cover object-bottom"
+    src="{{ section.settings.desktop_image | image_url: height: 400 }}"
+  />
+  <div class="mt-12 md:mt-0 flex flex-col items-center relative z-10 px-2">
+    <h1 class="text-3xl md:text-4xl xl:text-5xl tracking-wide font-black text-center md:text-neutral-800">
+     {% if section.settings.header != "" %}
+        {{ section.settings.header }}
+     {% else %}
+        JOIN OUR AFFILIATE<br class="md:hidden">
+        PROGRAM
+     {% endif %}
+    </h1>
+    <p class="xl:text-xl text-center font-medium max-w-xs md:max-w-md xl:max-w-lg mt-5">
+      {{ section.settings.text }}
+    </p>
+    <a
+      class="mt-7 py-3 md:py-4 px-20 md:px-24 text-xl font-black text-white bg-downy-300 text-center"
+      href="/"
+      >JOIN NOW</a
+    >
+  </div>
+</div>  
+
+{% schema %}
+{
+  "name": "Affiliate Header",
+  "settings": [
+    {
+      "type": "text",
+      "id": "header",
+      "label": "Header Copy",
+      "info": "If left empty, it'll default to 'JOIN OUR AFFILIATE PROGRAM'"
+    },
+    {
+      "type": "text",
+      "id": "text",
+      "label": "Subheader Copy"
+    },
+    {
+      "type": "image_picker",
+      "id": "mobile_image",
+      "label": "Mobile image"
+    },
+    {
+      "type": "image_picker",
+      "id": "desktop_image",
+      "label": "Desktop image"
+    }
+  ]
+}
+{% endschema %}
