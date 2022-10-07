@@ -5,12 +5,12 @@
   </div>
   <div class="flex overflow-x-auto">
     {% for block in section.blocks %}
-      <img class="object-cover min-w-[14rem] w-56 min-h-[15rem] h-60 lg:min-w-[16rem] lg:w-64 lg:min-h-[18rem] lg:h-72" alt="Ubuntu life photos" src="{{ block.settings.image | image_url: width: 400 }}">
+      <img class="object-cover min-w-[14rem] w-56 min-h-[15rem] h-60 lg:min-w-[16rem] lg:w-64 lg:min-h-[18rem] lg:h-72" alt="Ubuntu life photos" src="{{ block.settings.image | image_url: width: 256 }}">
     {% endfor %}
   </div>
   <div class="px-12 max-w-lg lg:max-w-none mx-auto lg:flex lg:mt-14 xl:mt-16 lg:mb-9 lg:justify-evenly">
     <div class="flex lg:flex-col justify-center lg:items-center py-11 lg:py-0 lg:mt-7">
-      <img class="w-32 lg:object-contain" src="{{ 'UL_Logo-Black-BeadedTab_1_5.png?' | file_img_url: '256x' }}" alt="Ubuntu Life Logo">
+      <img class="w-32 lg:object-contain" src="{{ 'UL_Logo-Black-BeadedTab_1_5.png?' | file_img_url: '128x' }}" alt="Ubuntu Life Logo">
       <div class="hidden lg:flex mt-8 justify-center [&>*]:mx-3 [&>*]:h-5 [&>*]:w-5">
         <svg width="12" height="19" viewBox="0 0 12 19" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M11.0392 0.506013C11.0392 0.229873 10.8146 0.00601312 10.5375 0.00601312H8.02856C5.39852 -0.124528 3.1565 1.88611 3.01071 4.50601V7.20601H0.501785C0.224657 7.20601 0 7.42987 0 7.70601V10.3061C0 10.5822 0.224657 10.8061 0.501785 10.8061H3.01071V17.5061C3.01071 17.7822 3.23537 18.0061 3.5125 18.0061H6.5232C6.80033 18.0061 7.02499 17.7822 7.02499 17.5061V10.8061H9.65434C9.8839 10.8093 10.0864 10.657 10.1461 10.4361L10.8686 7.83601C10.9091 7.68629 10.8776 7.52633 10.7832 7.40298C10.6889 7.27964 10.5425 7.20688 10.3869 7.20601H7.02499V4.50601C7.07671 3.99311 7.51124 3.60343 8.02856 3.60601H10.5375C10.8146 3.60601 11.0392 3.38216 11.0392 3.10601V0.506013Z" fill="black"/>
