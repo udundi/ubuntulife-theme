@@ -1,6 +1,14 @@
 <div class="relative w-screen h-[32rem] md:h-[36rem]">
-  <img class="md:hidden w-full h-full object-cover" src="{{ section.settings.header_img_mobile | image_url: width: 1024 }}" alt="Tribe woman">
-  <img class="hidden md:block w-full h-full object-cover" src="{{ section.settings.header_img_desktop | image_url: width: 2048 }}" alt="Tribe woman">
+  <img class="md:hidden w-full h-full object-cover" src="{{ section.settings.header_img_mobile | image_url: width: 768 }}" alt="{{ section.settings.header_img_mobile.alt }}">
+  <picture>
+    <source media="(min-width: 2560px)" srcset="{{ section.settings.header_img_desktop | image_url: width: 3840 }}">
+    <source media="(min-width: 1280px)" srcset="{{ section.settings.header_img_desktop | image_url: width: 2560 }}">
+    <source media="(min-width: 768px)" srcset="{{ section.settings.header_img_desktop | image_url: width: 1280 }}">
+    <img
+      class="hidden md:block w-full h-full object-cover" 
+      src="{{ section.settings.header_img_desktop | image_url: width: 2560 }}" 
+      alt="{{ section.settings.header_img_desktop.alt }}">
+  </picture>
   <!-- Mobile text -->
   <div class="md:hidden absolute top-20 left-1/2 -translate-x-1/2 flex flex-col items-center w-80 text-white">
     <h1 class="font-ubuntulife font-bold text-2xl">{{ section.settings.heading_1_mobile }}</h1>
@@ -37,7 +45,7 @@
     <div class="swiper-wrapper md:w-full md:flex md:flex-col md:px-4 lg:px-20 max-w-screen-xl xl:mx-auto">
       {% for block in section.blocks %}
         <div class="bg-white md:bg-neutral-50 swiper-slide w-80 md:w-full pb-8 md:pb-0 md:mb-8 flex flex-col md:flex-row">
-          <img class="w-full md:min-w-[33%] md:w-1/3 object-cover" src="{{ block.settings.image | image_url: width: 1024 }}" alt="Cover photo">
+          <img class="w-full md:min-w-[33%] md:w-1/3 object-cover" src="{{ block.settings.image | image_url: width: 440 }}" alt="{{ block.settings.image.alt }}" width="440" height="220">
           <div class="mt-7 md:my-8 xl:ml-20 md:flex flex-col justify-center">
             <p class="px-5 font-ubuntulife font-bold text-2xl">{{ block.settings.header }}</p>
             <p class="mt-2 px-5">{{ block.settings.body }}</p>
@@ -49,7 +57,7 @@
   </div>
 </div>
 <div class="flex flex-col lg:flex-row-reverse lg:items-center max-w-screen-sm lg:max-w-screen-xl mx-auto">
-  <img class="ml-4 h-80 object-cover lg:min-w-[30rem] lg:h-[32rem]" src="{{ 'makermums_creating.jpg' | file_img_url: '1024x' }}" alt="Maker mums creating handmade products">
+  <img class="ml-4 h-80 object-cover lg:min-w-[30rem] lg:h-[32rem]" src="{{ 'makermums_creating.jpg' | file_img_url: '640x' }}" alt="Maker mums creating handmade products" width="640" height="640">
   <div class="flex flex-col lg:mx-16">
     <p class="mt-6 mx-4 font-black text-3xl lg:text-4xl text-neutral-800">HOW WE DO IT</p>
     <p class="mt-6 mx-4">
@@ -59,7 +67,7 @@
   </div>
 </div>
 <div class="flex flex-col lg:flex-row lg:items-center max-w-screen-sm lg:max-w-screen-xl mx-auto mt-16">
-  <img class="mr-4 h-80 object-cover lg:min-w-[30rem] lg:h-[32rem] 2xl:h-[36rem]" src="{{ 'impact-kids.jpg' | file_img_url: '1024x' }}" alt="Impact kids">
+  <img class="mr-4 h-80 object-cover lg:min-w-[30rem] lg:h-[32rem] 2xl:h-[36rem]" src="{{ 'impact-kids.jpg' | file_img_url: '640x' }}" alt="Impact kids" width="640" height="640">
   <div class="flex flex-col lg:mx-16 lg:w-2/5 2xl:w-1/2">
     <p class="mt-6 mx-4 font-black text-3xl lg:text-4xl text-neutral-800">WHY WE DO IT</p>
     <p class="mt-6 mx-4">
@@ -110,12 +118,32 @@
   <p class="mt-3 mx-4 text-center max-w-xs lg:max-w-none">Ubuntu Life is a global lifestyle brand out of Africa, based in Kenya.</p>
   <div class="flex flex-col lg:flex-row mt-14 lg:w-screen">
     <div class="flex flex-col lg:w-1/3 lg:mr-2">
-      <img src="{{ 'wwa_1.png' | file_img_url: '768x' }}" alt="Jeans">
+      <picture>
+        <source media="(min-width: 2560px)" srcset="{{ 'wwa_1.png' | file_img_url: '1440x' }}">
+        <source media="(min-width: 1024px)" srcset="{{ 'wwa_1.png' | file_img_url: '1024x' }}">
+        <source media="(max-width: 1023px)" srcset="{{ 'wwa_1.png' | file_img_url: '640x' }}">
+        <img
+          class="w-full"
+          src="{{ 'wwa_1.png' | file_img_url: '1024x' }}" 
+          alt="Jeans"
+          width="1024"
+          height="1024">
+      </picture>
       <p class="mx-6 lg:mx-10 mt-8 font-black text-2xl text-neutral-800">36 DEGREES</p>
       <p class="mx-6 lg:mx-10 mt-2">Located at 1° South, 36° East, the bustling transit hub of Maai Mahiu is the gateway to Kenya’s famed Great Rift Valley, and the town we are honored to call our home. In fact, we’ve sewn a 36° stitch into every Ubuntu Life product to honor our commitment to this special place and its beautiful people.</p>
     </div>
     <div class="flex flex-col mt-10 lg:mt-0 lg:w-1/3 lg:mx-2">
-      <img src="{{ 'wwa_2.png' | file_img_url: '768x' }}" alt="Maker mums">
+      <picture>
+        <source media="(min-width: 2560px)" srcset="{{ 'wwa_2.png' | file_img_url: '1440x' }}">
+        <source media="(min-width: 1024px)" srcset="{{ 'wwa_2.png' | file_img_url: '1024x' }}">
+        <source media="(max-width: 1023px)" srcset="{{ 'wwa_2.png' | file_img_url: '640x' }}">
+        <img
+          class="w-full"
+          src="{{ 'wwa_2.png' | file_img_url: '1024x' }}" 
+          alt="Maker mums"
+          width="1024"
+          height="1024">
+      </picture>
       <p class="mx-6 lg:mx-10 mt-8 font-black text-2xl text-neutral-800">OUR FOUNDATION</p>
       <p class="mx-6 lg:mx-10 mt-2">With every product made, we’re transforming lives. We do this both by providing empowered employment to the local Maai Mahiu community, as well as through our Ubuntu Life Foundation, which provides educational and medical care to children with special needs in the region.</p>
       <div class="px-6 lg:px-10 w-full flex mt-10">
@@ -123,7 +151,17 @@
       </div>
     </div>
     <div class="flex flex-col mt-10 lg:mt-0 lg:w-1/3 lg:ml-2">
-      <img src="{{ 'wwa_3.png' | file_img_url: '768x' }}" alt="Bags">
+      <picture>
+        <source media="(min-width: 2560px)" srcset="{{ 'wwa_3.png' | file_img_url: '1440x' }}">
+        <source media="(min-width: 1024px)" srcset="{{ 'wwa_3.png' | file_img_url: '1024x' }}">
+        <source media="(max-width: 1023px)" srcset="{{ 'wwa_3.png' | file_img_url: '640x' }}">
+        <img
+          class="w-full"
+          src="{{ 'wwa_3.png' | file_img_url: '1024x' }}" 
+          alt="Bags"
+          width="1024"
+          height="1024">
+      </picture>
       <p class="mx-6 lg:mx-10 mt-8 font-black text-2xl text-neutral-800">LOCAL</p>
       <p class="mx-6 lg:mx-10 mt-2">Our handmade bracelets, bags and espadrilles are made by our powerful Makers in Kenya, and connect people around the world - from their hands to yours.</p>
     </div>
