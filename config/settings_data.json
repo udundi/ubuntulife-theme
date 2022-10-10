@@ -390,9 +390,9 @@
           "71699677-f06b-455d-af64-6126169175a1": {
             "type": "product",
             "settings": {
-              "image": "shopify:\/\/shop_images\/go-to_tote_in_dusty_rose_1_1.png",
-              "header": "The Latest Arrivals",
-              "url": "#"
+              "image": "shopify:\/\/shop_images\/Website_Index_5.png",
+              "header": "The Bestsellers",
+              "url": "https:\/\/www.ubuntu.life\/collections\/best-sellers"
             }
           }
         },
