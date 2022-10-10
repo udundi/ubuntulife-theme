@@ -258,6 +258,7 @@
           },
           "d656858d-9152-46af-bbb3-2aa255c28c0e": {
             "type": "pane",
+            "disabled": true,
             "settings": {
               "collection": "dog-collars"
             }
@@ -281,8 +282,8 @@
           "7282ae2f-eb3d-4009-9af0-3cb82245cdde": {
             "type": "slide",
             "settings": {
-              "image": "shopify:\/\/shop_images\/HATS.png",
-              "text": "THE LATEST ARRIVALS",
+              "image": "shopify:\/\/shop_images\/Website_Index_1.png",
+              "text": "",
               "btn_copy": "SHOP NOW",
               "url": "#"
             }
