@@ -184,8 +184,8 @@
           "77e6cdc4-c181-4097-a58a-12e82694e093": {
             "type": "pane",
             "settings": {
-              "image": "shopify:\/\/shop_images\/UBUNTU_11.19.204431.jpg",
-              "text": "40% Off All  Love Bracelets",
+              "image": "shopify:\/\/shop_images\/Website_Check.jpg",
+              "text": "",
               "url": "#"
             }
           },
@@ -193,7 +193,7 @@
             "type": "pane",
             "settings": {
               "image": "shopify:\/\/shop_images\/UBUNTU_1.6.222275.jpg",
-              "text": "Baule Bag",
+              "text": "New Arrivals",
               "url": "#"
             }
           },
@@ -207,6 +207,7 @@
           },
           "2eb55731-324a-4062-8968-026040cd16d7": {
             "type": "pane",
+            "disabled": true,
             "settings": {
               "image": "shopify:\/\/shop_images\/UBUNTU_11.19.204431.jpg",
               "text": "40% Off All  Love Bracelets",
