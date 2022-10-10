@@ -61,6 +61,8 @@
 
 
   {{ content_for_header }}
+
+	{{ shop.metafields.loox["global_html_head"] }}
 </head>
 
 <body class="template-{{ request.page_type | handle }} overflow-x-hidden bg-white font-avenir">
@@ -76,5 +78,7 @@
     </main>
     {% section 'footer' %}
   </div>
+
+	{{ shop.metafields.loox["global_html_body"] }}
 </body>
 </html>
