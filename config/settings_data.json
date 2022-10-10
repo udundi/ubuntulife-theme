@@ -382,8 +382,8 @@
           "86bd3aa2-9b15-4aa9-8389-6df881204671": {
             "type": "product",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Website_Index_5.png",
-              "header": "The Bestsellers",
+              "image": "shopify:\/\/shop_images\/fall_in_love._1.gif",
+              "header": "",
               "url": "#"
             }
           },
@@ -433,7 +433,7 @@
           "4e84f2bf-d6ea-41f1-99cc-eac1c9d5c9eb"
         ],
         "settings": {
-          "header": "CREATING FOR A CAUSE",
+          "header": "EMPOWERED EMPLOYMENT",
           "link_text": "LEARN ABOUT US",
           "link": "shopify:\/\/pages\/about"
         }
