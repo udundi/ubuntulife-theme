@@ -374,9 +374,9 @@
           "86b54096-36dd-4472-b287-f0c929a504b1": {
             "type": "product",
             "settings": {
-              "image": "shopify:\/\/shop_images\/UBUNTU_11.19.204431.jpg",
-              "header": "The Latest Arrivals",
-              "url": "#"
+              "image": "shopify:\/\/shop_images\/Website_Index_4.png",
+              "header": "What's HOT now!",
+              "url": "https:\/\/www.ubuntu.life\/collections\/new-arrivals"
             }
           },
           "86bd3aa2-9b15-4aa9-8389-6df881204671": {
