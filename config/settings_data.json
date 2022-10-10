@@ -278,6 +278,7 @@
       },
       "index-featured-carousel": {
         "type": "index-featured-carousel",
+        "disabled": true,
         "blocks": {
           "7282ae2f-eb3d-4009-9af0-3cb82245cdde": {
             "type": "slide",
@@ -307,6 +308,7 @@
       },
       "index-featured-products": {
         "type": "index-featured-products",
+        "disabled": true,
         "blocks": {
           "b83a089a-451b-44a6-bab2-346370eb627d": {
             "type": "product",
@@ -364,9 +366,9 @@
           "a829e748-29c8-432e-9767-954091ebf2b1": {
             "type": "product",
             "settings": {
-              "image": "shopify:\/\/shop_images\/ttarftraftraftar.jpg",
-              "header": "The Latest Arrivals",
-              "url": "#"
+              "image": "shopify:\/\/shop_images\/Website_Index_1.png",
+              "header": "",
+              "url": "https:\/\/www.ubuntu.life\/collections\/bags\/products\/checkered-weekender-black-eggshell"
             }
           },
           "86b54096-36dd-4472-b287-f0c929a504b1": {
