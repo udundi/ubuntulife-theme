@@ -1,0 +1,280 @@
+{
+  "sections": {
+    "hero": {
+      "type": "index-hero",
+      "settings": {
+        "pre_header": "LOREM IPSUM",
+        "header": "LOREM IPSUM DOLOR SIT AMET",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
+        "cta": "SHOP NOW",
+        "cta_link": "\/collections\/all"
+      },
+      "blocks": {
+        "77e6cdc4-c181-4097-a58a-12e82694e093": {
+          "type": "pane",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Website_Check.jpg",
+            "text": "",
+            "url": "#"
+          }
+        },
+        "982cc7a3-862f-412f-bfed-99b48a0db671": {
+          "type": "pane",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/UBUNTU_1.6.222275.jpg",
+            "text": "New Arrivals",
+            "url": "https:\/\/www.ubuntu.life\/collections\/new-arrivals"
+          }
+        },
+        "fc37d08e-985f-46c3-a7f1-2b114a16e733": {
+          "type": "pane",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/UBUNTU_11.19.204431.jpg",
+            "text": "40% Off All  Love Bracelets",
+            "url": "#"
+          }
+        },
+        "2eb55731-324a-4062-8968-026040cd16d7": {
+          "type": "pane",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/UBUNTU_11.19.204431.jpg",
+            "text": "40% Off All  Love Bracelets",
+            "url": "#"
+          }
+        }
+      },
+      "block_order": [
+        "77e6cdc4-c181-4097-a58a-12e82694e093",
+        "982cc7a3-862f-412f-bfed-99b48a0db671",
+        "fc37d08e-985f-46c3-a7f1-2b114a16e733",
+        "2eb55731-324a-4062-8968-026040cd16d7"
+      ]
+    },
+    "shop-category": {
+      "type": "index-shop-category",
+      "blocks": {
+        "3689b6ba-b8d8-455d-97cb-d766511e3278": {
+          "type": "pane",
+          "settings": {
+            "collection": "bags"
+          }
+        },
+        "86084354-70a7-4581-ad76-c8ca0569d5d3": {
+          "type": "pane",
+          "settings": {
+            "collection": "bracelets"
+          }
+        },
+        "1853e462-2921-4e2d-9209-93f5434fedc1": {
+          "type": "pane",
+          "settings": {
+            "collection": "jewelry"
+          }
+        },
+        "04cebf7b-bf7d-4d29-833b-a4b678ffc889": {
+          "type": "pane",
+          "settings": {
+            "collection": "shoes"
+          }
+        },
+        "d656858d-9152-46af-bbb3-2aa255c28c0e": {
+          "type": "pane",
+          "disabled": true,
+          "settings": {
+            "collection": "dog-collars"
+          }
+        }
+      },
+      "block_order": [
+        "3689b6ba-b8d8-455d-97cb-d766511e3278",
+        "86084354-70a7-4581-ad76-c8ca0569d5d3",
+        "1853e462-2921-4e2d-9209-93f5434fedc1",
+        "04cebf7b-bf7d-4d29-833b-a4b678ffc889",
+        "d656858d-9152-46af-bbb3-2aa255c28c0e"
+      ],
+      "settings": {
+        "header": "SHOP BY CATEGORY",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      }
+    },
+    "featured-carousel": {
+      "type": "index-featured-carousel",
+      "disabled": true,
+      "blocks": {
+        "7282ae2f-eb3d-4009-9af0-3cb82245cdde": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Website_Index_1.png",
+            "text": "",
+            "btn_copy": "SHOP NOW",
+            "url": "#"
+          }
+        },
+        "769d74e7-4dec-4029-9729-d7264e5b35dc": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Website_Index_4.png",
+            "text": "What's HOT now!",
+            "btn_copy": "SHOP NOW",
+            "url": "https:\/\/www.ubuntu.life\/collections\/bags\/products\/west-african-bag"
+          }
+        }
+      },
+      "block_order": [
+        "7282ae2f-eb3d-4009-9af0-3cb82245cdde",
+        "769d74e7-4dec-4029-9729-d7264e5b35dc"
+      ],
+      "settings": {
+      }
+    },
+    "featured-products": {
+      "type": "index-featured-products",
+      "disabled": true,
+      "blocks": {
+        "b83a089a-451b-44a6-bab2-346370eb627d": {
+          "type": "product",
+          "settings": {
+            "product": "love-bracelet"
+          }
+        },
+        "73dcb3b1-c829-4834-858d-4bcb583eca47": {
+          "type": "product",
+          "settings": {
+            "product": "chain-link-bracelet"
+          }
+        },
+        "5d7438d2-49d3-4d46-be42-981e1e7fb772": {
+          "type": "product",
+          "settings": {
+            "product": "afridrilles-spring-blue-palms"
+          }
+        },
+        "694bc265-da04-4708-8f3d-e2c37439cefd": {
+          "type": "product",
+          "settings": {
+            "product": "amani-dog-collar"
+          }
+        },
+        "534fb7c9-c894-46a0-8323-e67a65bfb148": {
+          "type": "product",
+          "settings": {
+            "product": "in-this-together-bundle"
+          }
+        },
+        "da65eb0e-9059-425b-bcb2-2f68dd6db8e7": {
+          "type": "product",
+          "settings": {
+            "product": "on-the-go-bundle-black"
+          }
+        }
+      },
+      "block_order": [
+        "b83a089a-451b-44a6-bab2-346370eb627d",
+        "73dcb3b1-c829-4834-858d-4bcb583eca47",
+        "5d7438d2-49d3-4d46-be42-981e1e7fb772",
+        "694bc265-da04-4708-8f3d-e2c37439cefd",
+        "534fb7c9-c894-46a0-8323-e67a65bfb148",
+        "da65eb0e-9059-425b-bcb2-2f68dd6db8e7"
+      ],
+      "settings": {
+        "header": "RECOMMENDED",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod"
+      }
+    },
+    "featured-grid": {
+      "type": "index-featured-grid",
+      "blocks": {
+        "a829e748-29c8-432e-9767-954091ebf2b1": {
+          "type": "product",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Website_Index_1.png",
+            "header": "",
+            "url": "https:\/\/www.ubuntu.life\/collections\/bags\/products\/checkered-weekender-black-eggshell"
+          }
+        },
+        "86b54096-36dd-4472-b287-f0c929a504b1": {
+          "type": "product",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Website_Index_4.png",
+            "header": "What's HOT now!",
+            "url": "https:\/\/www.ubuntu.life\/collections\/new-arrivals"
+          }
+        },
+        "86bd3aa2-9b15-4aa9-8389-6df881204671": {
+          "type": "product",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/fall_in_love._1.gif",
+            "header": "",
+            "url": "#"
+          }
+        },
+        "71699677-f06b-455d-af64-6126169175a1": {
+          "type": "product",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Website_Index_5.png",
+            "header": "The Bestsellers",
+            "url": "https:\/\/www.ubuntu.life\/collections\/best-sellers"
+          }
+        }
+      },
+      "block_order": [
+        "a829e748-29c8-432e-9767-954091ebf2b1",
+        "86b54096-36dd-4472-b287-f0c929a504b1",
+        "86bd3aa2-9b15-4aa9-8389-6df881204671",
+        "71699677-f06b-455d-af64-6126169175a1"
+      ],
+      "settings": {
+      }
+    },
+    "cause": {
+      "type": "index-cause",
+      "blocks": {
+        "568df141-a68c-4d19-ba5a-b68f6b96ad59": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Mask_group_1.png"
+          }
+        },
+        "7e449952-bee5-4252-bd9a-d4c063096f58": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle.png"
+          }
+        },
+        "4e84f2bf-d6ea-41f1-99cc-eac1c9d5c9eb": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Mask_group.png"
+          }
+        }
+      },
+      "block_order": [
+        "568df141-a68c-4d19-ba5a-b68f6b96ad59",
+        "7e449952-bee5-4252-bd9a-d4c063096f58",
+        "4e84f2bf-d6ea-41f1-99cc-eac1c9d5c9eb"
+      ],
+      "settings": {
+        "header": "EMPOWERED EMPLOYMENT",
+        "link_text": "LEARN ABOUT US",
+        "link": "shopify:\/\/pages\/about"
+      }
+    },
+    "articles": {
+      "type": "index-articles",
+      "settings": {
+        "blog": "news",
+        "post_limit": 13
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "shop-category",
+    "featured-carousel",
+    "featured-products",
+    "featured-grid",
+    "cause",
+    "articles"
+  ]
+}
