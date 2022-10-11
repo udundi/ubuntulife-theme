@@ -126,59 +126,6 @@
       "settings": {
       }
     },
-    "featured-products": {
-      "type": "index-featured-products",
-      "blocks": {
-        "b83a089a-451b-44a6-bab2-346370eb627d": {
-          "type": "product",
-          "settings": {
-            "product": "love-bracelet"
-          }
-        },
-        "73dcb3b1-c829-4834-858d-4bcb583eca47": {
-          "type": "product",
-          "settings": {
-            "product": "chain-link-bracelet"
-          }
-        },
-        "5d7438d2-49d3-4d46-be42-981e1e7fb772": {
-          "type": "product",
-          "settings": {
-            "product": "afridrilles-spring-blue-palms"
-          }
-        },
-        "694bc265-da04-4708-8f3d-e2c37439cefd": {
-          "type": "product",
-          "settings": {
-            "product": "amani-dog-collar"
-          }
-        },
-        "534fb7c9-c894-46a0-8323-e67a65bfb148": {
-          "type": "product",
-          "settings": {
-            "product": "in-this-together-bundle"
-          }
-        },
-        "da65eb0e-9059-425b-bcb2-2f68dd6db8e7": {
-          "type": "product",
-          "settings": {
-            "product": "on-the-go-bundle-black"
-          }
-        }
-      },
-      "block_order": [
-        "b83a089a-451b-44a6-bab2-346370eb627d",
-        "73dcb3b1-c829-4834-858d-4bcb583eca47",
-        "5d7438d2-49d3-4d46-be42-981e1e7fb772",
-        "694bc265-da04-4708-8f3d-e2c37439cefd",
-        "534fb7c9-c894-46a0-8323-e67a65bfb148",
-        "da65eb0e-9059-425b-bcb2-2f68dd6db8e7"
-      ],
-      "settings": {
-        "header": "RECOMMENDED",
-        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod"
-      }
-    },
     "featured-grid": {
       "type": "index-featured-grid",
       "blocks": {
@@ -269,7 +216,6 @@
     "hero",
     "shop-category",
     "featured-carousel",
-    "featured-products",
     "featured-grid",
     "our-cause",
     "articles"
