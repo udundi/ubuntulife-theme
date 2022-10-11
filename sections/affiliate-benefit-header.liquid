@@ -1,0 +1,19 @@
+<div class="sm:w-11/12 max-w-screen-xl sm:mx-auto flex flex-col sm:flex-row sm:justify-between items-center my-12 xl:my-16 px-6">
+  <p class="text-4xl font-black sm:text-neutral-800">BENEFITS</p>
+  <p class="mt-4 text-center sm:text-left max-w-xs md:max-w-md">
+    {{ section.settings.text }}
+  </p>
+</div>
+
+{% schema %}
+{
+  "name": "Affiliate Header",
+  "settings": [
+    {
+      "type": "text",
+      "id": "text",
+      "label": "Sub Header Text"
+    }
+  ]
+}
+{% endschema %}

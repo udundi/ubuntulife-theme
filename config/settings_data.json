@@ -844,6 +844,12 @@
         ],
         "settings": {
         }
+      },
+      "affiliate-benefit-header": {
+        "type": "affiliate-benefit-header",
+        "settings": {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod     tempor incididunt ut labore et dolore magna aliqua."
+        }
       }
     },
     "content_for_index": [

@@ -1,0 +1,69 @@
+{
+  "sections": {
+    "header": {
+      "type": "affiliate-header",
+      "settings": {
+        "header": "",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod       tempor incididunt ut labore et dolore magna aliqua.",
+        "mobile_image": "shopify:\/\/shop_images\/2021-FlatLay-113_1-mobile.png",
+        "desktop_image": "shopify:\/\/shop_images\/2021-FlatLay-113_1.png"
+      }
+    },
+    "benefit-header": {
+      "type": "affiliate-benefit-header",
+      "settings": {
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod     tempor incididunt ut labore et dolore magna aliqua."
+      }
+    },
+    "carousel": {
+      "type": "affiliate-carousel",
+      "blocks": {
+        "859dc9ef-ee00-4675-b18f-fda956ab5e99": {
+          "type": "slide",
+          "settings": {
+            "title_copy": "Cookie Days",
+            "card_copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          }
+        },
+        "39b0508a-4b38-4e5e-895a-4b8ae03da636": {
+          "type": "slide",
+          "settings": {
+            "title_copy": "Commission Type",
+            "card_copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          }
+        },
+        "7bd52b89-2a50-4e70-805d-570bd459198d": {
+          "type": "slide",
+          "settings": {
+            "title_copy": "Commission Amount",
+            "card_copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          }
+        },
+        "8e9d2394-0297-4ffb-bcaf-978d84958157": {
+          "type": "slide",
+          "settings": {
+            "title_copy": "Additional Information",
+            "card_copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          }
+        }
+      },
+      "block_order": [
+        "859dc9ef-ee00-4675-b18f-fda956ab5e99",
+        "39b0508a-4b38-4e5e-895a-4b8ae03da636",
+        "7bd52b89-2a50-4e70-805d-570bd459198d",
+        "8e9d2394-0297-4ffb-bcaf-978d84958157"
+      ],
+      "settings": {
+      }
+    },
+    "form": {
+      "type": "affiliate-form"
+    }
+  },
+  "order": [
+    "header", 
+    "benefit-header",
+    "carousel",
+    "form"
+  ]
+}
