@@ -1,0 +1,70 @@
+{
+  "sections": {
+    "locations-content": {
+      "type": "sections-locations-content",
+      "blocks": {
+        "ff7ac803-207e-40f6-a83f-875354333638": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_113.png",
+            "title": "Ubuntu x Whole Foods",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "link": "#"
+          }
+        },
+        "cbb07a10-314b-42f9-a6d2-b84727788d0a": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_113.png",
+            "title": "Ubuntu x Whole Foods",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "link": "#"
+          }
+        },
+        "77893ddd-6505-4da3-80b0-f6f77bc6946e": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_113.png",
+            "title": "Ubuntu x Whole Foods",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "link": "#"
+          }
+        },
+        "508fab79-c3a4-4191-aaee-dba7e21c99c8": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_113.png",
+            "title": "Ubuntu x Whole Foods",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "link": "#"
+          }
+        },
+        "2e1fd1e0-2de3-4be2-800f-2ecb155663fa": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_113.png",
+            "title": "Ubuntu x Whole Foods",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "link": "#"
+          }
+        }
+      },
+      "block_order": [
+        "ff7ac803-207e-40f6-a83f-875354333638",
+        "cbb07a10-314b-42f9-a6d2-b84727788d0a",
+        "77893ddd-6505-4da3-80b0-f6f77bc6946e",
+        "508fab79-c3a4-4191-aaee-dba7e21c99c8",
+        "2e1fd1e0-2de3-4be2-800f-2ecb155663fa"
+      ],
+      "settings": {
+        "header": "WHERE TO BUY",
+        "sub_header": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "header_image": "shopify:\/\/shop_images\/Rectangle_61.png",
+        "view_more_link": "#"
+      }
+    }
+  },
+  "order": [
+    "locations-content"
+  ]
+}
