@@ -185,7 +185,6 @@
             "type": "pane",
             "settings": {
               "image": "shopify:\/\/shop_images\/Website_Check.jpg",
-              "text": "",
               "url": "#"
             }
           },
@@ -193,7 +192,6 @@
             "type": "pane",
             "settings": {
               "image": "shopify:\/\/shop_images\/UBUNTU_1.6.222275.jpg",
-              "text": "New Arrivals",
               "url": "https:\/\/www.ubuntu.life\/collections\/new-arrivals"
             }
           },
@@ -201,7 +199,6 @@
             "type": "pane",
             "settings": {
               "image": "shopify:\/\/shop_images\/UBUNTU_11.19.204431.jpg",
-              "text": "40% Off All  Love Bracelets",
               "url": "#"
             }
           },
@@ -210,7 +207,6 @@
             "disabled": true,
             "settings": {
               "image": "shopify:\/\/shop_images\/UBUNTU_11.19.204431.jpg",
-              "text": "40% Off All  Love Bracelets",
               "url": "#"
             }
           }

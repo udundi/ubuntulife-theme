@@ -2,19 +2,11 @@
   "sections": {
     "hero": {
       "type": "index-hero",
-      "settings": {
-        "pre_header": "LOREM IPSUM",
-        "header": "LOREM IPSUM DOLOR SIT AMET",
-        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
-        "cta": "SHOP NOW",
-        "cta_link": "\/collections\/all"
-      },
       "blocks": {
         "77e6cdc4-c181-4097-a58a-12e82694e093": {
           "type": "pane",
           "settings": {
             "image": "shopify:\/\/shop_images\/Website_Check.jpg",
-            "text": "",
             "url": "#"
           }
         },
@@ -22,7 +14,6 @@
           "type": "pane",
           "settings": {
             "image": "shopify:\/\/shop_images\/UBUNTU_1.6.222275.jpg",
-            "text": "New Arrivals",
             "url": "https:\/\/www.ubuntu.life\/collections\/new-arrivals"
           }
         },
@@ -30,7 +21,6 @@
           "type": "pane",
           "settings": {
             "image": "shopify:\/\/shop_images\/UBUNTU_11.19.204431.jpg",
-            "text": "40% Off All  Love Bracelets",
             "url": "#"
           }
         },
@@ -39,7 +29,6 @@
           "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/UBUNTU_11.19.204431.jpg",
-            "text": "40% Off All  Love Bracelets",
             "url": "#"
           }
         }
@@ -49,7 +38,14 @@
         "982cc7a3-862f-412f-bfed-99b48a0db671",
         "fc37d08e-985f-46c3-a7f1-2b114a16e733",
         "2eb55731-324a-4062-8968-026040cd16d7"
-      ]
+      ],
+      "settings": {
+        "pre_header": "LOREM IPSUM",
+        "header": "LOREM IPSUM DOLOR SIT AMET",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
+        "cta": "SHOP NOW",
+        "cta_link": "\/collections\/all"
+      }
     },
     "shop-category": {
       "type": "index-shop-category",
@@ -57,7 +53,8 @@
         "3689b6ba-b8d8-455d-97cb-d766511e3278": {
           "type": "pane",
           "settings": {
-            "collection": "bags"
+            "collection": "bags",
+            "image": "shopify:\/\/shop_images\/Website_Index_5.png"
           }
         },
         "86084354-70a7-4581-ad76-c8ca0569d5d3": {
@@ -69,7 +66,8 @@
         "1853e462-2921-4e2d-9209-93f5434fedc1": {
           "type": "pane",
           "settings": {
-            "collection": "jewelry"
+            "collection": "jewelry",
+            "image": "shopify:\/\/shop_images\/red-5row-bracelet-9.jpg"
           }
         },
         "04cebf7b-bf7d-4d29-833b-a4b678ffc889": {
@@ -130,7 +128,6 @@
     },
     "featured-products": {
       "type": "index-featured-products",
-      "disabled": true,
       "blocks": {
         "b83a089a-451b-44a6-bab2-346370eb627d": {
           "type": "product",
