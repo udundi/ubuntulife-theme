@@ -104,6 +104,8 @@
           "f106ff80-8025-4df2-9b69-d653f4824521"
         ],
         "settings": {
+          "show_banner": true,
+          "banner_text": "FREE SHIPPING OVER $50 + FREE RETURNS"
         }
       },
       "footer": {
@@ -358,12 +360,6 @@
       },
       "index-featured-grid": {
         "type": "index-featured-grid",
-        "blocks": {
-  
-        },
-        "block_order": [
-
-        ],
         "settings": {
         }
       },
