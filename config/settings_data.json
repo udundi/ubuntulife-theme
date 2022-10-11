@@ -359,44 +359,10 @@
       "index-featured-grid": {
         "type": "index-featured-grid",
         "blocks": {
-          "a829e748-29c8-432e-9767-954091ebf2b1": {
-            "type": "product",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Website_Index_1.png",
-              "header": "",
-              "url": "https:\/\/www.ubuntu.life\/collections\/bags\/products\/checkered-weekender-black-eggshell"
-            }
-          },
-          "86b54096-36dd-4472-b287-f0c929a504b1": {
-            "type": "product",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Website_Index_4.png",
-              "header": "What's HOT now!",
-              "url": "https:\/\/www.ubuntu.life\/collections\/new-arrivals"
-            }
-          },
-          "86bd3aa2-9b15-4aa9-8389-6df881204671": {
-            "type": "product",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/fall_in_love._1.gif",
-              "header": "",
-              "url": "#"
-            }
-          },
-          "71699677-f06b-455d-af64-6126169175a1": {
-            "type": "product",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Website_Index_5.png",
-              "header": "The Bestsellers",
-              "url": "https:\/\/www.ubuntu.life\/collections\/best-sellers"
-            }
-          }
+  
         },
         "block_order": [
-          "a829e748-29c8-432e-9767-954091ebf2b1",
-          "86b54096-36dd-4472-b287-f0c929a504b1",
-          "86bd3aa2-9b15-4aa9-8389-6df881204671",
-          "71699677-f06b-455d-af64-6126169175a1"
+
         ],
         "settings": {
         }

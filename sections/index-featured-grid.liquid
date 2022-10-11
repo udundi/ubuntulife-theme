@@ -1,18 +1,34 @@
-<section id="index-featured-grid" class="mt-16 mb-10 px-4 flex flex-col md:grid md:grid-cols-2 md:gap-5 max-w-[100rem] md:mx-auto items-center">
+<section id="index-featured-grid" class="mt-16 mb-10 px-4 flex flex-col md:grid md:grid-cols-2 md:gap-5 max-w-[100rem] md:mx-auto items-center md:items-start">
   {% for block in section.blocks %}
-    <div class="mt-2 md:mt-0 group relative w-full cursor-default">
+    <div class="md:mt-0 w-full cursor-default">
       <picture>
         <source media="(min-width: 640px)" srcset="{{ block.settings.image | image_url: width: 768 }}">
         <source media="(max-width: 639px)" srcset="{{ block.settings.image | image_url: width: 640 }}">
         <img 
-          class="w-full h-[36rem] md:h-[44rem] object-cover group-hover:border border-downy-300" 
+          class="w-full h-[36rem] md:h-[44rem] object-cover p-0.5 hover:p-0 hover:border-2 border-downy-300" 
           src="{{ block.settings.image | image_url: width: 768 }}" 
           alt="{{ block.settings.image.alt }}">
       </picture>
-      <div class="absolute top-11 left-3 md:left-11 flex flex-col">
-        <p class="font-black text-3xl w-48 md:text-neutral-800">{{ block.settings.header }}</p>
-        <a href="{{ block.settings.url }}" class="w-fit mt-8 py-3 px-6 font-black bg-white hover:bg-downy-300">SHOP NOW</a>
-      </div>  
+      {% if block.settings.show_text %}
+        {%- capture desktop_text_alignment -%}
+          {%- case block.settings.horizontal_alignment -%}
+            {%- when "left" -%}
+              md:items-start
+            {%- when "center" -%}
+              md:items-center
+            {%- when "right" -%}
+              md:items-end
+          {%- endcase -%}
+        {%- endcapture -%}
+        <div class="px-0.5 w-full flex flex-col items-center {{ desktop_text_alignment }}">
+          {% if block.settings.header != "" %}
+            <p class="font-black mt-4 text-3xl md:text-neutral-800">{{ block.settings.header }}</p>
+          {% endif %}
+          {% if block.settings.url != "" %}
+            <a href="{{ block.settings.url }}" class="w-fit mt-4 py-3 px-6 font-black bg-downy-300 md:bg-white md:hover:bg-downy-300">SHOP NOW</a>
+          {% endif %}
+        </div>
+      {% endif %}
     </div>
   {% endfor %}
 </section>
@@ -23,13 +39,19 @@
   "settings": [],
   "blocks": [
     {
-      "name": "Product",
+      "name": "Pane",
       "type": "product",
       "settings": [
         {
           "type": "image_picker",
           "id": "image",
           "label": "Background image"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_text",
+          "label": "Show the text & CTA",
+          "default": true
         },
         {
           "type": "text",
@@ -41,6 +63,25 @@
           "id": "url",
           "label": "URL",
           "info": "Url the btn links to"
+        },
+        {
+          "type": "select",
+          "id": "horizontal_alignment",
+          "label": "Desktop text alignment",
+          "options": [
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "right",
+              "label": "Right"
+            }
+          ]
         }
       ]
     }

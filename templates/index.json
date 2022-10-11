@@ -134,7 +134,8 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Website_Index_1.png",
             "header": "",
-            "url": "https:\/\/www.ubuntu.life\/collections\/bags\/products\/checkered-weekender-black-eggshell"
+            "url": "https:\/\/www.ubuntu.life\/collections\/bags\/products\/checkered-weekender-black-eggshell",
+            "horizontal_alignment": "center"
           }
         },
         "86b54096-36dd-4472-b287-f0c929a504b1": {
@@ -142,7 +143,8 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Website_Index_4.png",
             "header": "What's HOT now!",
-            "url": "https:\/\/www.ubuntu.life\/collections\/new-arrivals"
+            "url": "https:\/\/www.ubuntu.life\/collections\/new-arrivals",
+            "horizontal_alignment": "center"
           }
         },
         "86bd3aa2-9b15-4aa9-8389-6df881204671": {
@@ -150,7 +152,8 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/fall_in_love._1.gif",
             "header": "",
-            "url": "#"
+            "url": "#",
+            "horizontal_alignment": "center"
           }
         },
         "71699677-f06b-455d-af64-6126169175a1": {
@@ -158,7 +161,8 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Website_Index_5.png",
             "header": "The Bestsellers",
-            "url": "https:\/\/www.ubuntu.life\/collections\/best-sellers"
+            "url": "https:\/\/www.ubuntu.life\/collections\/best-sellers",
+            "horizontal_alignment": "center"
           }
         }
       },
