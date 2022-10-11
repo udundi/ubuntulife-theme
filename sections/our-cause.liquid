@@ -1,5 +1,14 @@
 <section id="cause-section" class="mt-14 flex flex-col items-center">
-  <div class="swiper w-screen md:max-w-xl overflow-hidden lg:max-w-none">
+  {% if section.settings.header != "" %}
+    <h4 class="mt-5 text-xl lg:text-3xl font-black text-neutral-800">{{ section.settings.header }}</h4>
+  {% endif %}
+  {% if section.settings.text != "" %}
+    <p class="text-center mt-3 max-w-sm lg:max-w-lg mx-4">{{ section.settings.text }}</p>
+  {% endif %}
+  {% if section.settings.link_text != "" %}
+    <a href="{{ section.settings.link }}" class="underline text-downy-300 mt-1 lg:text-lg">{{ section.settings.link_text }}</a>
+  {% endif %}
+  <div class="swiper w-screen md:max-w-xl mt-5 lg:mt-9 px-4 overflow-hidden lg:max-w-[100rem]">
     <div class="swiper-wrapper">
       {% for block in section.blocks %}
         <div class="swiper-slide w-full lg:w-1/3 h-[30rem] lg:h-auto lg:pr-2 lg:pl-2 lg:first:pl-0 lg:last:pr-0">
@@ -17,8 +26,6 @@
     <div class="swiper-pagination [&>*]:w-5 [&>*]:h-5 [&>*]:bg-downy-300 [&>*]:opacity-25 [&>*.swiper-pagination-bullet-active]:opacity-100">
     </div>
   </div>
-  <h4 class="mt-5 lg:mt-9 text-xl lg:text-3xl font-black text-neutral-800">{{ section.settings.header }}</h4>
-  <a href="{{ section.settings.link }}" class="underline text-downy-300 mt-1 lg:text-lg">{{ section.settings.link_text }}</a>
 </section>
 
 <script>
@@ -73,6 +80,11 @@
     },
     {
       "type": "text",
+      "id": "text",
+      "label": "Blurb Copy"
+    },
+    {
+      "type": "text",
       "id": "link_text",
       "label": "Link Text"
     },
@@ -82,6 +94,7 @@
       "label": "Link URL"
     }
   ],
+  "max_blocks": 3,
   "blocks": [
     {
       "name": "Slide",
