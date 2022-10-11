@@ -405,8 +405,8 @@
         "settings": {
         }
       },
-      "index-cause": {
-        "type": "index-cause",
+      "our-cause": {
+        "type": "our-cause",
         "blocks": {
           "568df141-a68c-4d19-ba5a-b68f6b96ad59": {
             "type": "slide",
@@ -852,7 +852,7 @@
       "index-featured-carousel",
       "index-featured-products",
       "index-featured-grid",
-      "index-cause",
+      "our-cause",
       "index-articles"
     ]
   },

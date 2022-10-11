@@ -227,8 +227,8 @@
       "settings": {
       }
     },
-    "cause": {
-      "type": "index-cause",
+    "our-cause": {
+      "type": "our-cause",
       "blocks": {
         "568df141-a68c-4d19-ba5a-b68f6b96ad59": {
           "type": "slide",
@@ -274,7 +274,7 @@
     "featured-carousel",
     "featured-products",
     "featured-grid",
-    "cause",
+    "our-cause",
     "articles"
   ]
 }

@@ -1,4 +1,4 @@
-<section id="index-cause" class="mt-14 flex flex-col items-center">
+<section id="cause-section" class="mt-14 flex flex-col items-center">
   <div class="swiper w-screen md:max-w-xl overflow-hidden lg:max-w-none">
     <div class="swiper-wrapper">
       {% for block in section.blocks %}
@@ -34,11 +34,11 @@
       if (mobile.matches) {
         if (!init) {
           init = true;
-          causeSwiper = new Swiper("#index-cause .swiper", {
+          causeSwiper = new Swiper("#cause-section .swiper", {
             spaceBetween: 16,
             slidesPerView: 'auto',
             pagination: {
-              el: "#index-cause .swiper-pagination",
+              el: "#cause-section .swiper-pagination",
               type: "bullets",
               clickable: true
             }
@@ -64,7 +64,7 @@
 
 {% schema %}
 {
-  "name": "Index Cause",
+  "name": "Cause",
   "settings": [
     {
       "type": "text",
