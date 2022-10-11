@@ -1,5 +1,21 @@
 {{ 'hamburger-menu.css' | asset_url | stylesheet_tag }}
 
+<style>
+  body {
+    {% if section.settings.show_banner %}
+      --header-offset: 126px
+    {% else %}
+      --header-offset: 92px
+    {% endif %}
+  }
+</style>
+
+{% if section.settings.show_banner %}
+  <div class="w-screen bg-candy-50 pt-2.5 pb-2 flex justify-center text-xs text-neutral-600 font-medium tracking-wide">
+    {{ section.settings.banner_text }}
+  </div>
+{% endif %}
+
 <nav id="site-header" class="[&>*]:bg-white relative before:absolute">
   <div class="z-30 sticky top-0 bg-white w-full border-y-4 border-t-candy-400 border-b-downy-300 pt-1"></div>
   <div class="z-30 sticky top-3 bg-white flex items-center justify-end lg:justify-start py-3 px-5 h-20 lg:px-16 xl:px-24 2xl:px-32">
@@ -258,7 +274,19 @@
 {% schema %}
   {
     "name": "Header",
-    "settings": [],
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "show_banner",
+        "label": "Show banner",
+        "default": true
+      },
+      {
+        "type": "text",
+        "id": "banner_text",
+        "label": "Banner text"
+      }
+    ],
     "blocks": [
       {
         "name": "Mobile Featured",
