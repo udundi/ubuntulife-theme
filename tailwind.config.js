@@ -15,6 +15,8 @@ module.exports = {
       animation: {
         "slide-in-h": "slide-in-h 0.8s cubic-bezier(0.22, 1, 0.36, 1)",
         "slide-in-v": "slide-in-v 0.5s cubic-bezier(0.22, 1, 0.36, 1)",
+        "slide-in-tb-10": "slide-in-tb-10 0.5s cubic-bezier(0.22, 1, 0.36, 1)",
+        "slide-in-bt-10": "slide-in-bt-10 0.5s cubic-bezier(0.22, 1, 0.36, 1)",
         "fade-in": "fade-in 0.5s cubic-bezier(0.22, 1, 0.36, 1)",
       },
       keyframes: {
@@ -32,6 +34,26 @@ module.exports = {
           "0%": {
             opacity: 0,
             top: "-15%",
+          },
+          "100%": {
+            opacity: 1,
+            top: "0",
+          },
+        },
+        "slide-in-tb-10": {
+          "0%": {
+            opacity: 0,
+            top: "-40px",
+          },
+          "100%": {
+            opacity: 1,
+            top: "0",
+          },
+        },
+        "slide-in-bt-10": {
+          "0%": {
+            opacity: 0,
+            top: "40px",
           },
           "100%": {
             opacity: 1,
