@@ -42,21 +42,17 @@ module.exports = {
         },
         "slide-in-tb-10": {
           "0%": {
-            opacity: 0,
             top: "-40px",
           },
           "100%": {
-            opacity: 1,
             top: "0",
           },
         },
         "slide-in-bt-10": {
           "0%": {
-            opacity: 0,
             top: "40px",
           },
           "100%": {
-            opacity: 1,
             top: "0",
           },
         },
