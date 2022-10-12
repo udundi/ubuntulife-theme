@@ -14,7 +14,7 @@
         <p class="font-black text-2xl text-neutral-800 lg:text-white uppercase mt-3">{{ article.title }}</p>
         <p class="mt-3 text-sm lg:text-white">{{ article.published_at }}</p>
         <p class="mt-2 line-clamp-4 lg:text-white">{{ article.excerpt }}</p>
-        <p class="my-4 text-downy-300 lg:text-white lg:underline">READ MORE</p>
+        <p class="my-4 text-downy-300 lg:text-white border-white lg:border-b lg:w-max">READ MORE</p>
       </div>
       <p class="hidden lg:block absolute w-full rotate-45 right-12 translate-x-1/2 top-8 font-black text-white text-center py-2 bg-white bg-opacity-40">NEW READ</p>
     </a>
@@ -48,7 +48,7 @@
             <p class="font-black text-xl 2xl:text-2xl text-neutral-800">{{ article.title }}</p>
             <p class="text-xs lg:text-sm mt-2 2xl:mt-3">{{ article.published_at }}</p>
             <p class="mt-2 2xl:mt-3 max-h-16 line-clamp-2 2xl:text-lg">{{ article.excerpt }}</p>
-            <p class="mt-3 2xl:mt-5 text-downy-300 lg:text-neutral-600 lg:underline">READ MORE</p>
+            <p class="mt-3 2xl:mt-5 text-downy-300 lg:text-neutral-600 border-neutral-600 lg:border-b lg:w-max">READ MORE</p>
           </div>
         </a>
         {% if is_third == 2 %}

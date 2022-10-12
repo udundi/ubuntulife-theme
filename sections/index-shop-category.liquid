@@ -14,7 +14,7 @@
             <img class="w-full aspect-square object-cover border border-downy-300" src="{{ block.settings.collection.image | image_url: width: 384 }}" alt="Category cover photo">
           {% endif %}
           <p class="mt-2 font-black text-2xl text-neutral-800">{{ block.settings.collection.title }}</p>
-          <a class="mt-2 text-downy-300 underline" href="{{ block.settings.collection.url }}">SHOP NOW</a>
+          <a class="mt-2 text-downy-300 border-b border-downy-300" href="{{ block.settings.collection.url }}">SHOP NOW</a>
         </div>
       {% endfor %}
     </div>
