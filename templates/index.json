@@ -43,6 +43,7 @@
         "pre_header": "LOREM IPSUM",
         "header": "LOREM IPSUM DOLOR SIT AMET",
         "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
+        "show_cta": true,
         "cta": "SHOP NOW",
         "cta_link": "\/collections\/all"
       }
@@ -133,6 +134,7 @@
           "type": "product",
           "settings": {
             "image": "shopify:\/\/shop_images\/Website_Index_1.png",
+            "show_text": true,
             "header": "",
             "url": "https:\/\/www.ubuntu.life\/collections\/bags\/products\/checkered-weekender-black-eggshell",
             "horizontal_alignment": "center"
@@ -142,6 +144,7 @@
           "type": "product",
           "settings": {
             "image": "shopify:\/\/shop_images\/Website_Index_4.png",
+            "show_text": true,
             "header": "What's HOT now!",
             "url": "https:\/\/www.ubuntu.life\/collections\/new-arrivals",
             "horizontal_alignment": "center"
@@ -151,6 +154,7 @@
           "type": "product",
           "settings": {
             "image": "shopify:\/\/shop_images\/fall_in_love._1.gif",
+            "show_text": true,
             "header": "",
             "url": "#",
             "horizontal_alignment": "center"
@@ -160,6 +164,7 @@
           "type": "product",
           "settings": {
             "image": "shopify:\/\/shop_images\/Website_Index_5.png",
+            "show_text": true,
             "header": "The Bestsellers",
             "url": "https:\/\/www.ubuntu.life\/collections\/best-sellers",
             "horizontal_alignment": "center"
@@ -173,6 +178,20 @@
         "71699677-f06b-455d-af64-6126169175a1"
       ],
       "settings": {
+      }
+    },
+    "76b9cc53-58a5-4212-a16e-85a6d52f5c5c": {
+      "type": "full-photo",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/1.1.png",
+        "url": "shopify:\/\/pages\/about",
+        "text": "Lorem Ipsum Sit Dolar Amet",
+        "text_color": "#fff",
+        "text_vertical": "bottom-4 md:bottom-8 xl:bottom-10",
+        "text_horizontal": "left-4 md:left-8 xl:left-10",
+        "text_alignment": "text-left",
+        "text_size": "sm:text-3xl lg:text-4xl 2xl:text-5xl",
+        "font_weight": "font-bold"
       }
     },
     "our-cause": {
@@ -222,6 +241,7 @@
     "shop-category",
     "featured-carousel",
     "featured-grid",
+    "76b9cc53-58a5-4212-a16e-85a6d52f5c5c",
     "our-cause",
     "articles"
   ]

@@ -1,0 +1,169 @@
+{% if section.settings.url == "" %}
+  <div class="relative w-screen">
+{% else %}
+  <a href="{{ section.settings.url }}" class="relative w-screen">
+{% endif %}
+
+<picture>
+  <source media="(min-width: 2560px)" srcset="{{ section.settings.image | image_url: width: 3840 }}">
+  <source media="(min-width: 1280px)" srcset="{{ section.settings.image | image_url: width: 2560 }}">
+  <source media="(min-width: 640px)" srcset="{{ section.settings.image | image_url: width: 1280 }}">
+  <source media="(max-width: 639px)" srcset="{{ section.settings.image | image_url: width: 640 }}">
+  <img 
+    class="w-full"
+    src="{{ section.settings.image | image_url: width: 2560 }}" 
+    alt="{{ section.settings.image.alt }}">
+</picture>
+{% if section.settings.text != "" %}
+  <p 
+    style="color: {{ section.settings.text_color }};" 
+    class="absolute w-48 sm:w-56 md:w-80 lg:w-auto lg:max-w-2xl xl:max-w-3xl text-lg {{ section.settings.font_weight }} {{ section.settings.text_size }} {{ section.settings.text_vertical }} {{ section.settings.text_horizontal }} {{ section.settings.text_alignment }}">
+    {{ section.settings.text }}
+  </p>
+{% endif %}
+
+{% if section.settings.url == "" %}
+  </div>
+{% else %}
+  </a>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Full Photo",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "url",
+      "id": "url",
+      "label": "Url"
+    },
+    {
+      "type": "text",
+      "id": "text",
+      "label": "Text"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text Color",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "select",
+      "id": "text_vertical",
+      "label": "Vertical text alignment",
+      "options": [
+        {
+          "value": "top-4 md:top-8 xl:top-10",
+          "label": "Top"
+        },
+        {
+          "value": "top-1/2 -translate-y-1/2",
+          "label": "Middle"
+        },
+        {
+          "value": "bottom-4 md:bottom-8 xl:bottom-10",
+          "label": "Bottom"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "text_horizontal",
+      "label": "Horizontal text alignment",
+      "options": [
+        {
+          "value": "left-4 md:left-8 xl:left-10",
+          "label": "Left"
+        },
+        {
+          "value": "left-1/2 -translate-x-1/2",
+          "label": "Middle"
+        },
+        {
+          "value": "right-4 md:right-8 xl:right-10",
+          "label": "Right"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "text_alignment",
+      "label": "Text alignment",
+      "options": [
+        {
+          "value": "text-left",
+          "label": "Left"
+        },
+        {
+          "value": "text-center",
+          "label": "Center"
+        },
+        {
+          "value": "text-right",
+          "label": "Right"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "text_size",
+      "label": "Text size",
+      "options": [
+        {
+          "value": "sm:text-2xl lg:text-3xl 2xl:text-4xl",
+          "label": "Small"
+        },
+        {
+          "value": "sm:text-3xl lg:text-4xl 2xl:text-5xl",
+          "label": "Medium"
+        },
+        {
+          "value": "sm:text-3xl lg:text-5xl 2xl:text-6xl",
+          "label": "Large"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "font_weight",
+      "label": "Font weight",
+      "options": [
+        {
+          "value": "font-thin",
+          "label": "Thin"
+        },
+        {
+          "value": "font-normal",
+          "label": "Normal"
+        },
+        {
+          "value": "font-medium",
+          "label": "Medium"
+        },
+        {
+          "value": "font-bold",
+          "label": "Bold"
+        },
+        {
+          "value": "font-black",
+          "label": "Black"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Full Photo",
+      "settings": {
+        "text": "Lorem Ipsum"
+      }
+    }
+  ]
+}
+{% endschema %}
