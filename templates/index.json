@@ -2,13 +2,6 @@
   "sections": {
     "hero": {
       "type": "index-hero",
-      "settings": {
-        "pre_header": "LOREM IPSUM",
-        "header": "LOREM IPSUM DOLOR SIT AMET",
-        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
-        "cta": "SHOP NOW",
-        "cta_link": "\/collections\/all"
-      },
       "blocks": {
         "77e6cdc4-c181-4097-a58a-12e82694e093": {
           "type": "pane",
@@ -49,7 +42,14 @@
         "982cc7a3-862f-412f-bfed-99b48a0db671",
         "fc37d08e-985f-46c3-a7f1-2b114a16e733",
         "2eb55731-324a-4062-8968-026040cd16d7"
-      ]
+      ],
+      "settings": {
+        "pre_header": "LOREM IPSUM",
+        "header": "LOREM IPSUM DOLOR SIT AMET",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
+        "cta": "SHOP NOW",
+        "cta_link": "\/collections\/all"
+      }
     },
     "shop-category": {
       "type": "index-shop-category",
@@ -196,7 +196,7 @@
         "86b54096-36dd-4472-b287-f0c929a504b1": {
           "type": "product",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Website_Index_4.png",
+            "image": "shopify:\/\/shop_images\/cropped_2.png",
             "header": "What's HOT now!",
             "url": "https:\/\/www.ubuntu.life\/collections\/new-arrivals"
           }
@@ -212,7 +212,7 @@
         "71699677-f06b-455d-af64-6126169175a1": {
           "type": "product",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Website_Index_5.png",
+            "image": "shopify:\/\/shop_images\/cropped_1_5f72eae5-ee4c-4929-8586-31cf8d9099bb.png",
             "header": "The Bestsellers",
             "url": "https:\/\/www.ubuntu.life\/collections\/best-sellers"
           }
