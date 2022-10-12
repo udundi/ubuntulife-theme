@@ -12,16 +12,11 @@
     {% if section.settings.show_cta %}
       <a href="{{ section.settings.cta_link }}" class="mt-8 w-11/12 lg:w-3/5 py-4 border border-black font-black text-xl text-neutral-800 text-center">{{ section.settings.cta }}</a>
     {% endif %}
-    <div class="hidden mt-6 lg:flex">
-      <svg onclick="heroSwiper.slidePrev(300)" class="cursor-pointer w-12 h-12 p-4 rounded-full border border-downy-300 hover:bg-downy-300 -rotate-90 mr-4" width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M13.9588 7.73918L7.49934 1.42968L1.03984 7.73918C0.799808 7.9741 0.416528 7.9741 0.176501 7.73918C0.0636142 7.62834 0 7.47665 0 7.31828C0 7.15992 0.0636142 7.00822 0.176501 6.89739L7.04828 0.183835C7.29924 -0.0612782 7.69944 -0.0612782 7.95039 0.183835L14.8222 6.8961C14.9359 7.00702 15 7.15928 15 7.31828C15 7.47729 14.9359 7.62955 14.8222 7.74047C14.5821 7.9754 14.1989 7.9754 13.9588 7.74047V7.73918Z" fill="black"/>
-      </svg>
-      <svg onclick="heroSwiper.slideNext(300)" class="cursor-pointer w-12 h-12 p-4 rounded-full border border-downy-300 hover:bg-downy-300 rotate-90" width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M13.9588 7.73918L7.49934 1.42968L1.03984 7.73918C0.799808 7.9741 0.416528 7.9741 0.176501 7.73918C0.0636142 7.62834 0 7.47665 0 7.31828C0 7.15992 0.0636142 7.00822 0.176501 6.89739L7.04828 0.183835C7.29924 -0.0612782 7.69944 -0.0612782 7.95039 0.183835L14.8222 6.8961C14.9359 7.00702 15 7.15928 15 7.31828C15 7.47729 14.9359 7.62955 14.8222 7.74047C14.5821 7.9754 14.1989 7.9754 13.9588 7.74047V7.73918Z" fill="black"/>
-      </svg>
-    </div>
   </div>
   <div class="swiper mt-10 md:mt-0 w-screen overflow-hidden md:flex-grow md:h-full md:py-10 2xl:py-16">
+    <svg onclick="heroSwiper.slidePrev(300)" class="swiper-button-prev hidden lg:block cursor-pointer w-6 h-6 -rotate-90" width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M13.9588 7.73918L7.49934 1.42968L1.03984 7.73918C0.799808 7.9741 0.416528 7.9741 0.176501 7.73918C0.0636142 7.62834 0 7.47665 0 7.31828C0 7.15992 0.0636142 7.00822 0.176501 6.89739L7.04828 0.183835C7.29924 -0.0612782 7.69944 -0.0612782 7.95039 0.183835L14.8222 6.8961C14.9359 7.00702 15 7.15928 15 7.31828C15 7.47729 14.9359 7.62955 14.8222 7.74047C14.5821 7.9754 14.1989 7.9754 13.9588 7.74047V7.73918Z" fill="black"/>
+    </svg>
     <div class="swiper-wrapper">
       {% for block in section.blocks %}
         <a href="{{ block.settings.url }}" class="swiper-slide relative w-48 sm:w-60 md:w-80 2xl:w-96 h-80 sm:h-96 md:h-full flex flex-col justify-end lg:hover:border-2 border-downy-300">
@@ -38,6 +33,9 @@
         </a>
       {% endfor %}
     </div>
+    <svg onclick="heroSwiper.slideNext(300)" class="swiper-button-next hidden lg:block cursor-pointer w-6 h-6 rotate-90" width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M13.9588 7.73918L7.49934 1.42968L1.03984 7.73918C0.799808 7.9741 0.416528 7.9741 0.176501 7.73918C0.0636142 7.62834 0 7.47665 0 7.31828C0 7.15992 0.0636142 7.00822 0.176501 6.89739L7.04828 0.183835C7.29924 -0.0612782 7.69944 -0.0612782 7.95039 0.183835L14.8222 6.8961C14.9359 7.00702 15 7.15928 15 7.31828C15 7.47729 14.9359 7.62955 14.8222 7.74047C14.5821 7.9754 14.1989 7.9754 13.9588 7.74047V7.73918Z" fill="black"/>
+    </svg>
   </div>
 </section>
 
@@ -50,7 +48,22 @@
       centeredSlides: true,
       breakpoints: {
         768: {
-          centeredSlides: false
+          centeredSlides: false,
+          navigation: {
+            prevEl: ".swiper-button-prev",
+            nextEl: ".swiper-button-next",
+          }
+        }
+      },
+      on: {
+        lock: function () {
+          console.log("LOCKED!")
+          document.querySelector("#index-hero-section .swiper .swiper-button-prev").style.display = "none";
+          document.querySelector("#index-hero-section .swiper .swiper-button-next").style.display = "none";
+        },
+        unlock: function () {
+          document.querySelector("#index-hero-section .swiper .swiper-button-prev").style.display = "block";
+          document.querySelector("#index-hero-section .swiper .swiper-button-next").style.display = "block";
         }
       }
     });
