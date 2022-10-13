@@ -7,15 +7,15 @@
     </svg>
     <div class="swiper-wrapper flex-grow">
       {% for block in section.blocks %}
-        <div class="swiper-slide w-72 lg:w-96 sm:first:ml-4 sm:last:mr-4 flex flex-col items-center">
+        <a href="{{ block.settings.collection.url }}" class="swiper-slide w-72 lg:w-96 sm:first:ml-4 sm:last:mr-4 flex flex-col items-center">
           {% if block.settings.image %}
             <img class="w-full aspect-square object-cover border border-downy-300" src="{{ block.settings.image | image_url: width: 384 }}" alt="Category cover photo">
           {% else %}
             <img class="w-full aspect-square object-cover border border-downy-300" src="{{ block.settings.collection.image | image_url: width: 384 }}" alt="Category cover photo">
           {% endif %}
           <p class="mt-2 font-black text-2xl text-neutral-800">{{ block.settings.collection.title }}</p>
-          <a class="mt-2 text-downy-300 border-b border-downy-300" href="{{ block.settings.collection.url }}">SHOP NOW</a>
-        </div>
+          <p class="mt-2 text-downy-300 border-b border-downy-300">SHOP NOW</p>
+        </a>
       {% endfor %}
     </div>
     <svg class="swiper-button-next hidden sm:block w-6 h-6 rotate-90" width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
