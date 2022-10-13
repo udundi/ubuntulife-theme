@@ -13,7 +13,11 @@
           {% else %}
             <img class="w-full aspect-square object-cover border border-downy-300" src="{{ block.settings.collection.image | image_url: width: 384 }}" alt="Category cover photo">
           {% endif %}
-          <p class="mt-2 font-black text-2xl text-neutral-800">{{ block.settings.collection.title }}</p>
+          {% if block.settings.text != "" %}
+            <p class="mt-2 font-black text-2xl text-neutral-800">{{ block.settings.text }}</p>
+          {% else %}
+            <p class="mt-2 font-black text-2xl text-neutral-800">{{ block.settings.collection.title }}</p>
+          {% endif %}
           <p class="mt-2 text-downy-300 border-b border-downy-300">SHOP NOW</p>
         </a>
       {% endfor %}
@@ -73,6 +77,11 @@
           "id": "image",
           "label": "Pane Image",
           "info": "Overrides the category image"
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Override Category Title"
         }
       ]
     }
