@@ -1,5 +1,5 @@
 <div class="flex flex-col md:grid grid-cols-2 xl:grid-cols-3 items-center">
-  <img class="xl:col-span-2 w-full h-36 md:h-full xl:h-[calc(100vh-92px)] object-cover" src="{{ section.settings.header_img | image_url: width: 1536 }}" alt="Hero photo">
+  <img class="xl:col-span-2 w-full h-36 md:h-full xl:h-[calc(100vh-var(--header-offset))] object-cover" src="{{ section.settings.header_img | image_url: width: 1536 }}" alt="Hero photo">
   <div class="flex flex-col px-6 md:px-10 max-w-sm md:max-w-none xl:max-w-xl mx-auto">
     <h1 class="mt-8 font-black text-neutral-800 text-3xl xl:text-4xl">{{ section.settings.header }}</h1>
     <p class="mt-3 xl:text-lg">{{ section.settings.text }}</p>

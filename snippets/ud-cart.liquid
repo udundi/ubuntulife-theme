@@ -4,7 +4,7 @@
   <div class="fixed top-0 left-0 w-screen h-screen z-40 bg-black bg-opacity-30" @click="closeCart" v-if="isCartOpen"></div>
 
   <transition name="slide">
-    <div v-show="isCartOpen" class="fixed top-[var(--header-offset)] right-0 border border-black bg-white z-40 w-screen max-w-xs h-[calc(100vh-92px)] max-h-[40rem] lg:max-w-lg lg:max-h-[52rem]">
+    <div v-show="isCartOpen" class="fixed top-[var(--header-offset)] right-0 border border-black bg-white z-40 w-screen max-w-xs h-[calc(100vh-var(--header-offset))] max-h-[40rem] lg:max-w-lg lg:max-h-[52rem]">
       <div v-if="cart && cart.item_count > 0" class="flex flex-col h-full">
         <span class="mt-7 lg:mt-10 mx-5 pb-4 flex flex-col border-b border-black lg:flex-row lg:items-center">
           <p class="font-bold lg:text-xl">SHOPPING BAG</p>
