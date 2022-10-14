@@ -358,11 +358,6 @@
           "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod"
         }
       },
-      "index-featured-grid": {
-        "type": "index-featured-grid",
-        "settings": {
-        }
-      },
       "our-cause": {
         "type": "our-cause",
         "blocks": {
@@ -815,7 +810,6 @@
       "index-shop-category",
       "index-featured-carousel",
       "index-featured-products",
-      "index-featured-grid",
       "our-cause",
       "index-articles"
     ]

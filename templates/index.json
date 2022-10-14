@@ -131,33 +131,38 @@
           "type": "pane",
           "settings": {
             "collection": "bags",
-            "image": "shopify:\/\/shop_images\/Website_Index_5.png"
+            "image": "shopify:\/\/shop_images\/Website_Index_5.png",
+            "text": ""
           }
         },
         "86084354-70a7-4581-ad76-c8ca0569d5d3": {
           "type": "pane",
           "settings": {
-            "collection": "bracelets"
+            "collection": "bracelets",
+            "text": ""
           }
         },
         "1853e462-2921-4e2d-9209-93f5434fedc1": {
           "type": "pane",
           "settings": {
             "collection": "jewelry",
-            "image": "shopify:\/\/shop_images\/red-5row-bracelet-9.jpg"
+            "image": "shopify:\/\/shop_images\/red-5row-bracelet-9.jpg",
+            "text": ""
           }
         },
         "04cebf7b-bf7d-4d29-833b-a4b678ffc889": {
           "type": "pane",
           "settings": {
-            "collection": "shoes"
+            "collection": "shoes",
+            "text": ""
           }
         },
         "d656858d-9152-46af-bbb3-2aa255c28c0e": {
           "type": "pane",
           "disabled": true,
           "settings": {
-            "collection": "dog-collars"
+            "collection": "dog-collars",
+            "text": ""
           }
         }
       },
@@ -203,55 +208,53 @@
       "settings": {
       }
     },
-    "featured-grid": {
-      "type": "index-featured-grid",
+    "8c73d3ed-bb99-408a-b6fc-820ee7c571cd": {
+      "type": "featured-grid",
       "blocks": {
-        "a829e748-29c8-432e-9767-954091ebf2b1": {
-          "type": "product",
+        "60bb772e-f39d-49b6-98c8-fa66172cece4": {
+          "type": "pane",
           "settings": {
             "image": "shopify:\/\/shop_images\/Website_Index_1.png",
             "show_text": true,
-            "header": "",
-            "url": "https:\/\/www.ubuntu.life\/collections\/bags\/products\/checkered-weekender-black-eggshell",
-            "horizontal_alignment": "center"
+            "text": "",
+            "text_color": "#FFFFFF",
+            "ubuntu_font": false,
+            "font_size": "lg:text-lg 2xl:text-xl",
+            "font_weight": "font-medium",
+            "cta_text": "",
+            "cta_url": "https:\/\/www.ubuntu.life\/collections\/bags\/products\/checkered-weekender-black-eggshell",
+            "cta_color": "#262626",
+            "cta_bg_color": "#FFFFFF",
+            "cta_hover_bg_color": "#60CDCB",
+            "text_vertical": "top-6 md:top-8 xl:top-12",
+            "text_horizontal": "left-6 md:left-10 xl:left-14",
+            "flex_alignment": "items-start"
           }
         },
-        "86b54096-36dd-4472-b287-f0c929a504b1": {
-          "type": "product",
+        "60bb772e-f39d-49b6-98c8-fa66172cece5": {
+          "type": "pane",
           "settings": {
             "image": "shopify:\/\/shop_images\/Website_Index_4.png",
             "show_text": true,
-            "header": "What's HOT now!",
-            "url": "https:\/\/www.ubuntu.life\/collections\/new-arrivals",
-            "horizontal_alignment": "center"
-          }
-        },
-        "86bd3aa2-9b15-4aa9-8389-6df881204671": {
-          "type": "product",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/fall_in_love._1.gif",
-            "show_text": true,
-            "header": "",
-            "url": "#",
-            "horizontal_alignment": "center"
-          }
-        },
-        "71699677-f06b-455d-af64-6126169175a1": {
-          "type": "product",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Website_Index_5.png",
-            "show_text": true,
-            "header": "The Bestsellers",
-            "url": "https:\/\/www.ubuntu.life\/collections\/best-sellers",
-            "horizontal_alignment": "center"
+            "text": "What's HOT now!",
+            "text_color": "#FFFFFF",
+            "ubuntu_font": false,
+            "font_size": "lg:text-lg 2xl:text-xl",
+            "font_weight": "font-medium",
+            "cta_text": "",
+            "cta_url": "https:\/\/www.ubuntu.life\/collections\/new-arrivals",
+            "cta_color": "#262626",
+            "cta_bg_color": "#FFFFFF",
+            "cta_hover_bg_color": "#60CDCB",
+            "text_vertical": "top-6 md:top-8 xl:top-12",
+            "text_horizontal": "left-6 md:left-10 xl:left-14",
+            "flex_alignment": "items-start"
           }
         }
       },
       "block_order": [
-        "a829e748-29c8-432e-9767-954091ebf2b1",
-        "86b54096-36dd-4472-b287-f0c929a504b1",
-        "86bd3aa2-9b15-4aa9-8389-6df881204671",
-        "71699677-f06b-455d-af64-6126169175a1"
+        "60bb772e-f39d-49b6-98c8-fa66172cece4",
+        "60bb772e-f39d-49b6-98c8-fa66172cece5"
       ],
       "settings": {
       }
@@ -317,7 +320,7 @@
     "hero",
     "shop-category",
     "featured-carousel",
-    "featured-grid",
+    "8c73d3ed-bb99-408a-b6fc-820ee7c571cd",
     "76b9cc53-58a5-4212-a16e-85a6d52f5c5c",
     "our-cause",
     "articles"
