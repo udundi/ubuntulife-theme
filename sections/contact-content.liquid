@@ -74,9 +74,9 @@
   <div class="md:max-w-lg">
     {% for block in section.blocks %}
       {% if block.type == "faq" %}
-        <div class="transition border border-black hover:bg-neutral-50 mt-3 p-5">
+        <div class="transition border border-black hover:bg-neutral-50 mt-3 p-4">
           <div class="accordion-header cursor-pointer transition flex">
-            <p class="min-w-full pr-10 text-md sm:text-lg font-bold">{{ block.settings.question }}</p>
+            <p class="min-w-full pr-10 text-md font-bold">{{ block.settings.question }}</p>
             <div id="{{forloop.index}}" class="plus-icon relative">
               <div id="circle" class="absolute top-1/2 -translate-y-1/2 right-0 w-7 h-7 rounded-full bg-downy-400" viewBox="0 0 24 24"></div>
               <svg
