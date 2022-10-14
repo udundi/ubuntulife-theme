@@ -53,13 +53,13 @@
   <h2 class="md:hidden mt-6 text-neutral-700 text-2xl font-bold">OUR HEADQUARTERS</h2>
   <div class="mt-6 md:mt-0 pl-6 border-l border-downy-300 flex flex-col">
     <p class="text-xl font-bold text-neutral-700">USA HEADQUARTERS</p>
-    <p class="mt-2">307 W Live Oak St</p>
-    <p>Austin, TX 78704, USA</p>
+    <p class="mt-2">{{ section.settings.usa_addr_one }}</p>
+    <p>{{ section.settings.usa_addr_two }}</p>
   </div>
   <div class="mt-6 md:mt-0 pl-6 border-l border-downy-300 flex flex-col">
     <p class="text-xl font-bold text-neutral-700">KENYA HEADQUARTERS</p>
-    <p class="mt-2">Old Naivasha Road</p>
-    <p>Maai Mahiu, Kenya</p>
+    <p class="mt-2">{{ section.settings.kenya_addr_one }}</p>
+    <p>{{ section.settings.kenya_addr_two }}</p>
   </div>
 </div>
 
@@ -157,6 +157,26 @@
       "type": "text",
       "id": "text",
       "label": "Hero Text"
+    },
+    {
+      "type": "text",
+      "id": "usa_addr_one",
+      "label": "USA Address P1"
+    },
+    {
+      "type": "text",
+      "id": "usa_addr_two",
+      "label": "USA Address P2"
+    },
+    {
+      "type": "text",
+      "id": "kenya_addr_one",
+      "label": "Kenya Address P1"
+    },
+    {
+      "type": "text",
+      "id": "kenya_addr_two",
+      "label": "Kenya Address P2"
     },
     {
       "type": "text",

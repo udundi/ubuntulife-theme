@@ -668,13 +668,6 @@
       "collection-template": {
         "type": "collection-template",
         "settings": {
-          "collection_list": [
-            "bracelets",
-            "necklaces",
-            "bundles",
-            "bags",
-            "shoes"
-          ]
         }
       },
       "sections-locations-content": {
