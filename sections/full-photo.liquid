@@ -1,32 +1,34 @@
-{% if section.settings.url == "" %}
-  <div class="relative w-screen">
-{% else %}
-  <a href="{{ section.settings.url }}" class="relative w-screen">
-{% endif %}
+<div class="w-screen flex justify-center">
+  {% if section.settings.url == "" %}
+    <div class="relative w-full md:px-4 max-w-screen-2xl">
+  {% else %}
+    <a href="{{ section.settings.url }}" class="relative w-full md:px-4 max-w-screen-2xl">
+  {% endif %}
 
-<picture>
-  <source media="(min-width: 2560px)" srcset="{{ section.settings.image | image_url: width: 3840 }}">
-  <source media="(min-width: 1280px)" srcset="{{ section.settings.image | image_url: width: 2560 }}">
-  <source media="(min-width: 640px)" srcset="{{ section.settings.image | image_url: width: 1280 }}">
-  <source media="(max-width: 639px)" srcset="{{ section.settings.image | image_url: width: 640 }}">
-  <img 
-    class="w-full"
-    src="{{ section.settings.image | image_url: width: 2560 }}" 
-    alt="{{ section.settings.image.alt }}">
-</picture>
-{% if section.settings.text != "" %}
-  <p 
-    style="color: {{ section.settings.text_color }};" 
-    class="absolute w-48 sm:w-56 md:w-80 lg:w-auto lg:max-w-2xl xl:max-w-3xl text-lg {{ section.settings.font_weight }} {{ section.settings.text_size }} {{ section.settings.text_vertical }} {{ section.settings.text_horizontal }} {{ section.settings.text_alignment }}">
-    {{ section.settings.text }}
-  </p>
-{% endif %}
+  <picture>
+    <source media="(min-width: 2560px)" srcset="{{ section.settings.image | image_url: width: 3840 }}">
+    <source media="(min-width: 1280px)" srcset="{{ section.settings.image | image_url: width: 2560 }}">
+    <source media="(min-width: 640px)" srcset="{{ section.settings.image | image_url: width: 1280 }}">
+    <source media="(max-width: 639px)" srcset="{{ section.settings.image | image_url: width: 640 }}">
+    <img 
+      class="w-full"
+      src="{{ section.settings.image | image_url: width: 2560 }}" 
+      alt="{{ section.settings.image.alt }}">
+  </picture>
+  {% if section.settings.text != "" %}
+    <p 
+      style="color: {{ section.settings.text_color }};" 
+      class="absolute w-48 sm:w-56 md:w-80 lg:w-auto lg:max-w-2xl xl:max-w-3xl text-lg {{ section.settings.font_weight }} {{ section.settings.text_size }} {{ section.settings.text_vertical }} {{ section.settings.text_horizontal }} {{ section.settings.text_alignment }}">
+      {{ section.settings.text }}
+    </p>
+  {% endif %}
 
-{% if section.settings.url == "" %}
-  </div>
-{% else %}
-  </a>
-{% endif %}
+  {% if section.settings.url == "" %}
+    </div>
+  {% else %}
+    </a>
+  {% endif %}
+</div>
 
 {% schema %}
 {
