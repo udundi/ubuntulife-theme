@@ -77,8 +77,8 @@
 
 
     {% if product.options_by_name['color'] %}
-      <h1 class="mt-2 uppercase text-neutral-700 font-black text-2xl lg:text-3xl">{ this.options['Color'] }</h1>
-      <h2 class="mt-1 uppercase font-medium lg:text-lg">{{ product.title }}</h2>
+      <h2 class="mt-2 uppercase text-neutral-700 font-black text-2xl lg:text-3xl">{ this.options['Color'] }</h2>
+      <h1 class="mt-1 uppercase font-medium lg:text-lg">{{ product.title }}</h1>
     {% else %}
       <h1 class="mt-2 uppercase text-neutral-700 font-black text-2xl lg:text-3xl">{{ product.title }}</h1>
     {% endif %}
