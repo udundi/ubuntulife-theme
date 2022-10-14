@@ -34,6 +34,7 @@
       spaceBetween: 16,
       slidesPerView: 'auto',
       centeredSlides: true,
+      centerInsufficientSlides: true,
       breakpoints: {
         640: {
           centeredSlides: false,
@@ -41,6 +42,16 @@
             prevEl: ".swiper-button-prev",
             nextEl: ".swiper-button-next",
           }
+        }
+      },
+      on: {
+        lock: function () {
+          document.querySelector("#index-shop-category-section .swiper .swiper-button-prev").style.display = "none";
+          document.querySelector("#index-shop-category-section .swiper .swiper-button-next").style.display = "none";
+        },
+        unlock: function () {
+          document.querySelector("#index-shop-category-section .swiper .swiper-button-prev").style.display = "block";
+          document.querySelector("#index-shop-category-section .swiper .swiper-button-next").style.display = "block";
         }
       }
     });
