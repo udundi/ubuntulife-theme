@@ -30,12 +30,12 @@
           <div class="hidden group-hover:flex absolute top-full left-0 -mt-3 pt-12 pb-6 px-16 xl:px-24 2xl:px-32 w-full font-medium text-neutral-800 bg-white">
             {% for child_link in link.links %}
               <div class="flex flex-col mr-12 xl:mr-24 2xl:mr-28 last-of-type:mr-auto">
-                <p class="uppercase font-bold mt-3 mb-1.5 cursor-default text-sm">{{ child_link.title }}
+                <p class="uppercase font-bold mt-3 mb-1.5 cursor-default text-[13px]">{{ child_link.title }}
                 </p>
                 {% if child_link.links != blank %}
                   <div class="flex flex-col">
                     {% for grandchild_link in child_link.links %}
-                      <a href="{{ grandchild_link.url }}" class="py-1.5 hover:text-downy-300 uppercase text-sm">{{ grandchild_link.title }}
+                      <a href="{{ grandchild_link.url }}" class="py-1.5 hover:text-downy-300 uppercase text-[13px]">{{ grandchild_link.title }}
                       </a>
                     {% endfor %}
                   </div>
