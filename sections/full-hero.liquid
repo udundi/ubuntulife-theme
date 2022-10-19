@@ -39,7 +39,7 @@
       {% if section.settings.cta_text != "" %}
         <a 
           href="{{ section.settings.cta_url }}" 
-          class="pointer-events-auto mt-8 w-11/12 md:w-60 py-3.5 font-black text-xl text-center"
+          class="pointer-events-auto mt-8 text-center {{ section.settings.cta_vertical_padding }} {{ section.settings.cta_horizontal_padding }} {{ section.settings.cta_font_size }} {{ section.settings.cta_font_weight }}"
           style="background-color: {{ section.settings.cta_background_color }}; color: {{ section.settings.cta_color }};"
           >{{ section.settings.cta_text }}</a>
       {% endif %}
@@ -90,6 +90,111 @@
       "id": "cta_background_color",
       "label": "CTA Background Color",
       "default": "#60CDCB"
+    },
+    {
+      "type": "select",
+      "id": "cta_font_size",
+      "label": "CTA Font size",
+      "options": [
+        {
+          "value": "lg:text-lg 2xl:text-xl",
+          "label": "Small"
+        },
+        {
+          "value": "text-xl lg:text-2xl 2xl:text-3xl",
+          "label": "Medium"
+        },
+        {
+          "value": "text-2xl lg:text-3xl 2xl:text-4xl",
+          "label": "Large"
+        },
+        {
+          "value": "text-4xl lg:text-5xl",
+          "label": "Extra Large"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "cta_font_weight",
+      "label": "CTA Font weight",
+      "default": "font-medium",
+      "options": [
+        {
+          "value": "font-thin",
+          "label": "Thin"
+        },
+        {
+          "value": "font-normal",
+          "label": "Normal"
+        },
+        {
+          "value": "font-medium",
+          "label": "Medium"
+        },
+        {
+          "value": "font-bold",
+          "label": "Bold"
+        },
+        {
+          "value": "font-black",
+          "label": "Black"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "cta_vertical_padding",
+      "label": "CTA vertical padding",
+      "options": [
+        {
+          "value": "",
+          "label": "None"
+        },
+        {
+          "value": "py-1",
+          "label": "Small"
+        },
+        {
+          "value": "py-2",
+          "label": "Medium"
+        },
+        {
+          "value": "py-3.5",
+          "label": "Large"
+        },
+        {
+          "value": "py-5",
+          "label": "Extra Large"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "cta_horizontal_padding",
+      "label": "CTA horizontal padding",
+      "options": [
+        {
+          "value": "",
+          "label": "None"
+        },
+        {
+          "value": "px-4",
+          "label": "Small"
+        },
+        {
+          "value": "px-8",
+          "label": "Medium"
+        },
+        {
+          "value": "px-12",
+          "label": "Large"
+        },
+        {
+          "value": "px-20",
+          "label": "Extra Large"
+        }
+      ]
     },
     {
       "type": "select",

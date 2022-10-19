@@ -2,7 +2,6 @@
   "sections": {
     "4e8f0020-7783-4328-aa05-e2ded3c840c6": {
       "type": "full-hero",
-      "disabled": true,
       "blocks": {
         "32410aad-66a3-4c80-ba7d-13af08bd658e": {
           "type": "slide",
@@ -71,6 +70,10 @@
         "cta_url": "shopify:\/\/collections\/all",
         "cta_color": "#262626",
         "cta_background_color": "#60cdcb",
+        "cta_font_size": "text-xl lg:text-2xl 2xl:text-3xl",
+        "cta_font_weight": "font-black",
+        "cta_vertical_padding": "py-3.5",
+        "cta_horizontal_padding": "px-8",
         "text_vertical": "top-1\/2 -translate-y-1\/2",
         "text_horizontal": "left-1\/2 -translate-x-1\/2",
         "flex_alignment": "items-center"
@@ -78,6 +81,7 @@
     },
     "hero": {
       "type": "index-hero",
+      "disabled": true,
       "blocks": {
         "77e6cdc4-c181-4097-a58a-12e82694e093": {
           "type": "pane",
@@ -111,14 +115,14 @@
             "text_horizontal": "left-2 md:left-4 xl:left-8",
             "flex_alignment": "items-start",
             "text": "",
-            "text_color": "#FFFFFF",
+            "text_color": "#ffffff",
             "ubuntu_font": false,
             "font_size": "lg:text-lg 2xl:text-xl",
             "font_weight": "font-medium",
             "cta_text": "",
             "cta_url": "",
             "cta_color": "#262626",
-            "cta_bg_color": "#FFFFFF",
+            "cta_bg_color": "#ffffff",
             "cta_font_size": "lg:text-lg 2xl:text-xl",
             "cta_font_weight": "font-medium"
           }
@@ -133,14 +137,14 @@
             "text_horizontal": "left-2 md:left-4 xl:left-8",
             "flex_alignment": "items-start",
             "text": "",
-            "text_color": "#FFFFFF",
+            "text_color": "#ffffff",
             "ubuntu_font": false,
             "font_size": "lg:text-lg 2xl:text-xl",
             "font_weight": "font-medium",
             "cta_text": "",
             "cta_url": "",
             "cta_color": "#262626",
-            "cta_bg_color": "#FFFFFF",
+            "cta_bg_color": "#ffffff",
             "cta_font_size": "lg:text-lg 2xl:text-xl",
             "cta_font_weight": "font-medium"
           }
@@ -156,14 +160,14 @@
             "text_horizontal": "left-2 md:left-4 xl:left-8",
             "flex_alignment": "items-start",
             "text": "",
-            "text_color": "#FFFFFF",
+            "text_color": "#ffffff",
             "ubuntu_font": false,
             "font_size": "lg:text-lg 2xl:text-xl",
             "font_weight": "font-medium",
             "cta_text": "",
             "cta_url": "",
             "cta_color": "#262626",
-            "cta_bg_color": "#FFFFFF",
+            "cta_bg_color": "#ffffff",
             "cta_font_size": "lg:text-lg 2xl:text-xl",
             "cta_font_weight": "font-medium"
           }
