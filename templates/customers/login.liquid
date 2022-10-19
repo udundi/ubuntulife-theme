@@ -1,3 +1,61 @@
+<div id="reset-password-modal" class="hidden">
+  <div aria-hidden="true" onclick="toggleResetPasswordPane(false)" class="fixed top-0 left-0 w-screen h-screen z-50 bg-black bg-opacity-30 animate-fade-in"></div>
+
+  <div class="fixed z-50 top-0 mt-20 left-1/2 -translate-x-1/2 w-screen max-w-sm px-4 animate-slide-in-v">
+    <div class="w-ful h-full bg-white py-4 px-2 flex flex-col items-center lg:py-8 lg:pb-6 lg:px-4">
+      <p class="text-2xl font-black text-neutral-700 lg:text-3xl">RESET PASSWORD</p>
+      {% form 'recover_customer_password' %}
+        <div class="w-5/6 flex flex-col items-center mx-auto lg:w-11/12">
+
+          {% if form.posted_successfully? %}
+            <span class="font-medium text-lg mt-2 lg:text-xl">Please check your email</span>
+          {% else %}
+            <p class="text-center mt-2">We will send you an email to reset your password</p>
+          {% endif %}
+
+          <div class="flex flex-col w-full mt-2">
+            <label 
+              class="" 
+              for="RecoverEmail"
+            >
+              {{ 'customer.recover_password.email' | t }}*
+            </label>
+            <input 
+              type="email"
+              name="email" 
+              id="RecoverEmail" 
+              placeholder="Email"
+              class="w-full border py-1 px-2 {% if form.errors %}border-red-600{% else %}border-black{% endif %}" 
+              autocorrect="off"
+              autocapitalize="off" 
+              {% if form.errors %} 
+                aria-invalid="true" 
+                aria-describedby="RecoverEmail-email-error"
+              {% endif %}
+            >
+          </div>
+
+          {%- if form.errors -%}
+            <span class="hidden">{{ 'general.accessibility.error' | t }} </span>
+            <span class="text-center mt-2">{{ form.errors.messages['form'] }}</span>
+          {%- endif -%}
+
+          <input 
+            type="submit" 
+            class="uppercase mt-4 w-full bg-black text-white pt-2.5 pb-2 font-bold tracking-wider lg:pt-3.5 lg:pb-3" 
+            value="{{ 'customer.recover_password.submit' | t }}">
+        </div>
+      {% endform %}
+      <button 
+        aria-label="close reset password modal" 
+        type="button" 
+        class="mt-2 text-neutral-800 lg:mt-4" 
+        onclick="toggleResetPasswordPane(false)"
+      >Close</button>
+    </div>
+  </div>
+</div>
+
 <div class="flex my-10 lg:my-0 w-screen px-6 lg:px-0 max-w-sm mx-auto lg:max-w-none lg:items-center">
   <div class="w-full lg:w-1/2 flex flex-col items-center">
     <h1 class="text-3xl font-black lg:text-4xl">LOG IN</h1>
@@ -38,7 +96,7 @@
             for="CustomerPassword"
           >{{ 'customer.login.password' | t }}*</label>
           {%- comment -%} This needs to toggle the modal {%- endcomment -%}
-          <button type="button" class="hidden lg:block underline">
+          <button type="button" class="hidden lg:block underline" onclick="toggleResetPasswordPane(true)">
             Forgot your password?
           </button>
         </span>
@@ -65,7 +123,7 @@
     {% endform %}
     <span class="mt-4 text-sm lg:mt-6 lg:text-base">Don't have an account? <a class="underline" href="/account/register">Sign Up</a></span>
     {%- comment -%} This needs to toggle the modal {%- endcomment -%}
-    <button type="button" class="mt-2 text-sm lg:hidden">
+    <button type="button" class="mt-2 text-sm lg:hidden" onclick="toggleResetPasswordPane(true)">
       Forgot your password?
     </button>
   </div>
@@ -73,3 +131,22 @@
     {% section 'login-image' %}
   </div>
 </div>
+
+<script>
+  function toggleResetPasswordPane(toOpen) {
+    const searchPane = document.getElementById("reset-password-modal");
+
+    if (toOpen !== undefined) {
+      if (toOpen) {
+        searchPane.classList.add("block");
+        searchPane.classList.remove("hidden");
+      } else {
+        searchPane.classList.remove("block");
+        searchPane.classList.add("hidden");
+      }
+    } else {
+      searchPane.classList.toggle("block");
+      searchPane.classList.toggle("hidden");
+    }
+  }
+</script>
