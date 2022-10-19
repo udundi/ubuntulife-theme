@@ -796,6 +796,12 @@
         "settings": {
           "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod     tempor incididunt ut labore et dolore magna aliqua."
         }
+      },
+      "login-image": {
+        "type": "login-image",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/portrait78.png"
+        }
       }
     },
     "content_for_index": [
