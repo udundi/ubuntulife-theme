@@ -802,6 +802,12 @@
         "settings": {
           "image": "shopify:\/\/shop_images\/portrait78.png"
         }
+      },
+      "register-image": {
+        "type": "register-image",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/portrait788.png"
+        }
       }
     },
     "content_for_index": [
