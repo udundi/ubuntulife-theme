@@ -78,11 +78,11 @@
           for="CustomerEmail"
         >{{ 'customer.login.email' | t }}*</label>
         <input 
-          class="mt-1 border border-black py-1 px-2 lg:py-2 lg:px-3 lg:text-lg"
+          class="mt-1 border py-1 px-2 lg:py-2 lg:px-3 lg:text-lg {% if form.errors contains 'form' %}border-red-600{% else %}border-black{% endif %}"
           type="email" 
           name="customer[email]" 
-          id="CustomerEmail" 
-          placeholder="email" 
+          id="CustomerEmail"
+          placeholder="email"
           autocomplete="email" 
           autocorrect="off" 
           autocapitalize="off" 
@@ -102,16 +102,15 @@
         </span>
         
         <input 
-          class="mt-1 border border-black py-1 px-2 lg:py-2 lg:px-3 lg:text-lg"
+          class="mt-1 border py-1 px-2 lg:py-2 lg:px-3 lg:text-lg {% if form.errors contains 'form' %}border-red-600{% else %}border-black{% endif %}"
           type="password" 
           value=""
           name="customer[password]" 
           placeholder="password" 
           id="CustomerPassword" 
-          {%- if form.errors contains 'form' -%} 
-            class="input--error" 
+          {% if form.errors contains 'form' %}  
             aria-invalid="true" 
-          {%- endif -%}
+          {% endif %}
         >
           
         <input 
