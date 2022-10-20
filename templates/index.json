@@ -210,7 +210,7 @@
           "type": "pane",
           "settings": {
             "collection": "jewelry",
-            "image": "shopify:\/\/shop_images\/red-5row-bracelet-9.jpg",
+            "image": "shopify:\/\/shop_images\/holiday_5.png",
             "text": ""
           }
         },
@@ -239,7 +239,7 @@
       ],
       "settings": {
         "header": "SHOP BY CATEGORY",
-        "text": "Ubuntu Life is a global lifestyle brand out of Africa, based in Kenya. We’re empowering lives through each product made. Handmade bags, bracelets, and espadrilles, made by Moms in Kenya, connecting people around the world - from their hands to yours."
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
       }
     },
     "featured-carousel": {
@@ -368,7 +368,7 @@
       ],
       "settings": {
         "header": "EMPOWERED EMPLOYMENT",
-        "text": "We create beautiful products for sale in Kenya and internationally, providing mothers of children with special needs and others in our community with sustainable full-time employment.",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "link_text": "LEARN ABOUT US",
         "link": "shopify:\/\/pages\/about"
       }
