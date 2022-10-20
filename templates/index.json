@@ -203,6 +203,7 @@
           "type": "pane",
           "settings": {
             "collection": "bracelets",
+            "image": "shopify:\/\/shop_images\/holiday_7.png",
             "text": ""
           }
         },
@@ -218,6 +219,7 @@
           "type": "pane",
           "settings": {
             "collection": "shoes",
+            "image": "shopify:\/\/shop_images\/holiday_7.png",
             "text": ""
           }
         },
