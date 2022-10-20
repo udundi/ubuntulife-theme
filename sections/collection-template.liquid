@@ -11,29 +11,6 @@
     {{ collection.description }}
   </p>
 
-  <div class="w-screen lg:w-full px-8 relative">
-    <svg class="swiper-button-prev w-6 h-6 -rotate-90 mt-0 lg:left-1" width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M13.9588 7.73918L7.49934 1.42968L1.03984 7.73918C0.799808 7.9741 0.416528 7.9741 0.176501 7.73918C0.0636142 7.62834 0 7.47665 0 7.31828C0 7.15992 0.0636142 7.00822 0.176501 6.89739L7.04828 0.183835C7.29924 -0.0612782 7.69944 -0.0612782 7.95039 0.183835L14.8222 6.8961C14.9359 7.00702 15 7.15928 15 7.31828C15 7.47729 14.9359 7.62955 14.8222 7.74047C14.5821 7.9754 14.1989 7.9754 13.9588 7.74047V7.73918Z" fill="black"/>
-    </svg>
-    <div id="collection-swiper" class="swiper mt-9 pb-2 flex w-full">
-      <div class="swiper-wrapper">
-        {% for col in section.settings.collection_list %}
-          <a href="{{ col.url }}" class="swiper-slide flex flex-col items-center w-36 sm:w-44 md:w-52 lg:w-64">
-            <div class="relative">
-              <img class="w-full aspect-square" src="{{ col.image | image_url: width: 512 }}" alt="{{ col.title }} cover photo">
-              <div class="absolute bottom-0 left-0 bg-downy-300 w-full h-0.5 lg:h-1 {% unless col.title == collection.title %}hidden{% endunless%}"></div>
-            </div>
-            <p class="mt-3 text-sm uppercase md:text-base lg:text-xl lg:font-medium {% if col.title == collection.title %}text-downy-300{% endif %}">{{ col.title }}</p>
-          </a>
-        {% endfor %}
-      </div>
-    </div>
-    <svg class="swiper-button-next w-6 h-6 rotate-90 mt-0 lg:right-1" width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M13.9588 7.73918L7.49934 1.42968L1.03984 7.73918C0.799808 7.9741 0.416528 7.9741 0.176501 7.73918C0.0636142 7.62834 0 7.47665 0 7.31828C0 7.15992 0.0636142 7.00822 0.176501 6.89739L7.04828 0.183835C7.29924 -0.0612782 7.69944 -0.0612782 7.95039 0.183835L14.8222 6.8961C14.9359 7.00702 15 7.15928 15 7.31828C15 7.47729 14.9359 7.62955 14.8222 7.74047C14.5821 7.9754 14.1989 7.9754 13.9588 7.74047V7.73918Z" fill="black"/>
-    </svg>
-  </div>
-  
-
   <!-- CREATE filters_object -->
   {% capture filters_object %}
   [
@@ -261,63 +238,51 @@
 </div>
 
 <script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const collectionSwiper = new Swiper("#collection-swiper.swiper", {
-      spaceBetween: 16,
-      slidesPerView: 'auto',
-      centeredSlides: false,
-      navigation: {
-        prevEl: ".swiper-button-prev",
-        nextEl: ".swiper-button-next",
+  Vue.createApp({
+    delimiters: ['{','}'],
+    data() {
+      return {
+        filters: JSON.parse(`{{ filters_object }}`),
+        minPrice: 0,
+        maxPrice: 0,
       }
-    });
-
-    Vue.createApp({
-      delimiters: ['{','}'],
-      data() {
-        return {
-          filters: JSON.parse(`{{ filters_object }}`),
-          minPrice: 0,
-          maxPrice: 0,
-        }
+    },
+    computed: {
+      activeFilters() {
+        return this.filters.filter(({ active }) => active);
       },
-      computed: {
-        activeFilters() {
-          return this.filters.filter(({ active }) => active);
-        },
+    },
+    methods: {
+      renderQuotes(str) {
+        return str.replaceAll('&quot;', '"');
       },
-      methods: {
-        renderQuotes(str) {
-          return str.replaceAll('&quot;', '"');
-        },
-        clearFilters() {
-          this.$refs.collectionFilters.querySelectorAll('.filters input').forEach(input => {
-            input.disabled = true;
-          });
-          this.handleSubmit();
-        },
-        removeFilter(selector) {
-          this.$refs.collectionFilters.querySelectorAll(selector).forEach(input => {
-            input.disabled = true;
-          });
-          this.handleSubmit();
-        },
-        handleSubmit() {
-          this.$refs.collectionFilters.submit();
-        },
-        handleMinPriceChange({ target : { value }}) {
-          this.minPrice = value;
-        },
-        handleMaxPriceChange({ target : { value }}) {
-          this.maxPrice = value;
-        }
+      clearFilters() {
+        this.$refs.collectionFilters.querySelectorAll('.filters input').forEach(input => {
+          input.disabled = true;
+        });
+        this.handleSubmit();
       },
-      mounted() {
-        this.maxPrice = Number(this.$refs.maxPriceInput ? this.$refs.maxPriceInput.value || this.$refs.maxPriceInput.max : 0);
-        this.minPrice = Number(this.$refs.minPriceInput ? this.$refs.minPriceInput.value || this.$refs.minPriceInput.min : 0);
+      removeFilter(selector) {
+        this.$refs.collectionFilters.querySelectorAll(selector).forEach(input => {
+          input.disabled = true;
+        });
+        this.handleSubmit();
       },
-    }).mount('#filter-sort-modal');
-  });
+      handleSubmit() {
+        this.$refs.collectionFilters.submit();
+      },
+      handleMinPriceChange({ target : { value }}) {
+        this.minPrice = value;
+      },
+      handleMaxPriceChange({ target : { value }}) {
+        this.maxPrice = value;
+      }
+    },
+    mounted() {
+      this.maxPrice = Number(this.$refs.maxPriceInput ? this.$refs.maxPriceInput.value || this.$refs.maxPriceInput.max : 0);
+      this.minPrice = Number(this.$refs.minPriceInput ? this.$refs.minPriceInput.value || this.$refs.minPriceInput.min : 0);
+    },
+  }).mount('#filter-sort-modal');
 
   // Modal
   let modalOpen = false;
@@ -397,12 +362,6 @@
 {% schema %}
 {
   "name": "Collection Template",
-  "settings": [
-    {
-      "type": "collection_list",
-      "id": "collection_list",
-      "label": "Collections"
-    }
-  ]
+  "settings": []
 }
 {% endschema %}

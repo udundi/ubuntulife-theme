@@ -14,7 +14,7 @@
         <p class="font-black text-2xl text-neutral-800 lg:text-white uppercase mt-3">{{ article.title }}</p>
         <p class="mt-3 text-sm lg:text-white">{{ article.published_at }}</p>
         <p class="mt-2 line-clamp-4 lg:text-white">{{ article.excerpt }}</p>
-        <p class="my-4 text-downy-300 lg:text-white lg:underline">READ MORE</p>
+        <p class="my-4 text-downy-300 lg:text-white border-white lg:border-b lg:w-max">READ MORE</p>
       </div>
       <p class="hidden lg:block absolute w-full rotate-45 right-12 translate-x-1/2 top-8 font-black text-white text-center py-2 bg-white bg-opacity-40">NEW READ</p>
     </a>
@@ -22,11 +22,11 @@
   <div class="lg:col-span-2 lg:pl-12">
     <div class="hidden lg:flex">
       <p class="font-black text-4xl text-neutral-800">RECENT ARTICLES</p>
-      <svg id="articles-arrow-back" onclick="changeSlide(-1)" class="ml-auto h-14 w-14 cursor-pointer" width="59" height="59" viewBox="0 0 59 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg id="articles-arrow-back" onclick="changeSlide(-1)" class="ml-auto h-14 w-14 rotate-90 cursor-pointer" width="59" height="59" viewBox="0 0 59 59" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M0.5 29.5C0.5 13.4837 13.4837 0.5 29.5 0.5C45.5163 0.5 58.5 13.4837 58.5 29.5C58.5 45.5163 45.5163 58.5 29.5 58.5C13.4837 58.5 0.5 45.5163 0.5 29.5Z" stroke="currentColor"/>
         <path d="M32.7751 21.3188L24.783 29.5008L32.7751 37.6829C33.0727 37.9869 33.0727 38.4724 32.7751 38.7764C32.6347 38.9194 32.4425 39 32.2419 39C32.0414 39 31.8492 38.9194 31.7088 38.7764L23.205 30.0722C22.8945 29.7543 22.8945 29.2474 23.205 28.9295L31.7072 20.2252C31.8477 20.0812 32.0405 20 32.2419 20C32.4434 20 32.6362 20.0812 32.7767 20.2252C33.0743 20.5293 33.0743 21.0148 32.7767 21.3188H32.7751Z" fill="currentColor"/>
       </svg>
-      <svg id="articles-arrow-forward" onclick="changeSlide(1)" class="ml-6 h-14 w-14 rotate-180 cursor-pointer" width="59" height="59" viewBox="0 0 59 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg id="articles-arrow-forward" onclick="changeSlide(1)" class="ml-6 h-14 w-14 -rotate-90 cursor-pointer" width="59" height="59" viewBox="0 0 59 59" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M0.5 29.5C0.5 13.4837 13.4837 0.5 29.5 0.5C45.5163 0.5 58.5 13.4837 58.5 29.5C58.5 45.5163 45.5163 58.5 29.5 58.5C13.4837 58.5 0.5 45.5163 0.5 29.5Z" stroke="currentColor"/>
         <path d="M32.7751 21.3188L24.783 29.5008L32.7751 37.6829C33.0727 37.9869 33.0727 38.4724 32.7751 38.7764C32.6347 38.9194 32.4425 39 32.2419 39C32.0414 39 31.8492 38.9194 31.7088 38.7764L23.205 30.0722C22.8945 29.7543 22.8945 29.2474 23.205 28.9295L31.7072 20.2252C31.8477 20.0812 32.0405 20 32.2419 20C32.4434 20 32.6362 20.0812 32.7767 20.2252C33.0743 20.5293 33.0743 21.0148 32.7767 21.3188H32.7751Z" fill="currentColor"/>
       </svg>
@@ -35,12 +35,12 @@
       {% unless forloop.first == true %}
         {% assign is_third = forloop.index0 | minus: 1 | modulo: 3 %}
         {% if is_third == 0 %}
-          <div class="article-slide {% if forloop.index0 != 1 %}hidden{% endif %}">
+          <div class="article-slide relative {% if forloop.index0 != 1 %}hidden{% endif %}">
         {% endif %}
         <a href="{{ article.url }}" class="flex py-6 lg:py-0 lg:pt-4 2xl:pt-6 border-b lg:border-b-0 border-black">
           <img 
             class="flex-grow w-32 max-w-[8rem] mr-4 object-cover" 
-            src="{{ article.image | image_url: width: 128 }}" 
+            src="{{ article.image | image_url: height: 200 }}" 
             alt="Article cover photo"
             width="128"
             height="128">
@@ -48,7 +48,7 @@
             <p class="font-black text-xl 2xl:text-2xl text-neutral-800">{{ article.title }}</p>
             <p class="text-xs lg:text-sm mt-2 2xl:mt-3">{{ article.published_at }}</p>
             <p class="mt-2 2xl:mt-3 max-h-16 line-clamp-2 2xl:text-lg">{{ article.excerpt }}</p>
-            <p class="mt-3 2xl:mt-5 text-downy-300 lg:text-neutral-600 lg:underline">READ MORE</p>
+            <p class="mt-3 2xl:mt-5 text-downy-300 lg:text-neutral-600 border-neutral-600 lg:border-b lg:w-max">READ MORE</p>
           </div>
         </a>
         {% if is_third == 2 %}
@@ -74,9 +74,23 @@
     } else if (index == 2 && slideShift >= 0) {
       return;
     }
+
+    // Hide the current slide and remove all animations off it
+    // Then, add the correct animation to the upcoming slide and
+    // unhide it
     slides.item(index).classList.add("hidden");
+    slides.item(index).classList.remove("animate-slide-in-tb-10");
+    slides.item(index).classList.remove("animate-slide-in-bt-10");
+    if (slideShift >= 0) {
+      slides.item(index + slideShift).classList.add("animate-slide-in-bt-10");
+    } else {
+      console.log("WUT")
+      slides.item(index + slideShift).classList.add("animate-slide-in-tb-10");
+    }
     slides.item(index + slideShift).classList.remove("hidden");
+
     index += slideShift;
+
     if (index == 0) {
       document.getElementById("articles-arrow-back").classList.add("text-neutral-400");
     } else if (index == 2) {

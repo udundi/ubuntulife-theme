@@ -1,5 +1,21 @@
 {{ 'hamburger-menu.css' | asset_url | stylesheet_tag }}
 
+<style>
+  body {
+    {% if section.settings.show_banner %}
+      --header-offset: 126px
+    {% else %}
+      --header-offset: 92px
+    {% endif %}
+  }
+</style>
+
+{% if section.settings.show_banner %}
+  <div class="w-screen bg-candy-50 pt-2.5 pb-2 flex justify-center text-[11px] text-neutral-600 font-medium tracking-wide">
+    {{ section.settings.banner_text }}
+  </div>
+{% endif %}
+
 <nav id="site-header" class="[&>*]:bg-white relative before:absolute">
   <div class="z-30 sticky top-0 bg-white w-full border-y-4 border-t-candy-400 border-b-downy-300 pt-1"></div>
   <div class="z-30 sticky top-3 bg-white flex items-center justify-end lg:justify-start py-3 px-5 h-20 lg:px-16 xl:px-24 2xl:px-32">
@@ -8,37 +24,24 @@
     </div>
     {% for link in linklists.main-navigation.links %}
       <div class="group hidden lg:flex items-center h-full {% if forloop.first == true %}pl-0{% endif %} px-4 lastlast-of-type:pr-2 last-of-type:mr-auto">
-        <p class="text-neutral-800 group-hover:underline underline-offset-8 uppercase font-medium cursor-default">{{ link.title }}
+        <p class="text-neutral-800 group-hover:underline underline-offset-8 uppercase font-medium cursor-default text-sm">{{ link.title }}
         </p>
         {% if link.links != blank %}
           <div class="hidden group-hover:flex absolute top-full left-0 -mt-3 pt-12 pb-6 px-16 xl:px-24 2xl:px-32 w-full font-medium text-neutral-800 bg-white">
             {% for child_link in link.links %}
-              <div class="flex flex-col mr-12 xl:mr-32 2xl:mr-36 last-of-type:mr-auto">
-                <p class="uppercase font-bold mt-3 text-lg cursor-default">{{ child_link.title }}
+              <div class="flex flex-col mr-12 xl:mr-24 2xl:mr-28 last-of-type:mr-auto">
+                <p class="uppercase font-bold mt-3 mb-1.5 cursor-default text-[13px]">{{ child_link.title }}
                 </p>
                 {% if child_link.links != blank %}
                   <div class="flex flex-col">
                     {% for grandchild_link in child_link.links %}
-                      <a href="{{ grandchild_link.url }}" class="mt-3 py-2 hover:text-downy-300 uppercase">{{ grandchild_link.title }}
+                      <a href="{{ grandchild_link.url }}" class="py-1.5 hover:text-downy-300 uppercase text-[13px]">{{ grandchild_link.title }}
                       </a>
                     {% endfor %}
                   </div>
                 {% endif %}
               </div>
             {% endfor %}
-            <span class="flex pb-2">
-              {% for block in section.blocks %}
-                {% assign submenu_title = block.settings.submenu_title | downcase %}
-                {% assign link_title = link.title | downcase %}
-                {% if block.type == "submenu_featured" and submenu_title == link_title %}
-                  <a class="flex flex-col items-center mr-5 last:mr-0" href="{{ block.settings.collection.url }}">
-                    <img class="min-w-[15rem] w-60 min-h-[15rem] h-60 object-cover" src="{{ block.settings.collection.image | image_url: width: 256 }}" alt="{{ block.settings.collection.title }} cover photo">
-                    <p class="mt-2 uppercase">{{ block.settings.title }}
-                    </p>
-                  </a>
-                {% endif %}
-              {% endfor %}
-            </span>
           </div>
         {% endif %}
       </div>
@@ -63,10 +66,10 @@
       </svg>
     </span>
   </div>
-  <div id="mobile-navigation-pane" class="mobile-navigation-pane relative z-20 flex-col hidden animate-slide-in-h min-h-[calc(100vh-92px)] p-4 pb-12 font-medium text-neutral-800">
+  <div id="mobile-navigation-pane" class="mobile-navigation-pane relative z-20 flex-col hidden animate-slide-in-h min-h-[calc(100vh-var(--header-offset))] p-4 pb-12 font-medium text-neutral-800">
     {% for link in linklists.main-navigation.links %}
       <div class="flex justify-between items-center py-2 border-b border-neutral-400" onclick="toggleMainPane(); toggleChildPane('{{ link.title | downcase }}');">
-        <p class="uppercase text-lg">{{ link.title }}
+        <p class="uppercase">{{ link.title }}
         </p>
         {% if link.links != blank %}
           <svg class="mr-1" width="5" height="10" viewBox="0 0 5 10" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -75,37 +78,25 @@
         {% endif %}
       </div>
     {% endfor %}
-    <p class="font-bold mt-9">BEST SELLERS</p>
-    <div class="flex overflow-x-scroll pb-2">
-      {% for block in section.blocks %}
-        {% if block.type == "mobile_featured" %}
-          <a class="flex flex-col items-center mr-3" href="{{ block.settings.collection.url }}">
-            <img class="min-w-[14rem] w-56 min-h-[15rem] h-60 object-cover" src="{{ block.settings.collection.image | image_url: width: 256 }}" alt="{{ block.settings.collection.title }} cover photo">
-            <p class="mt-2 uppercase">{{ block.settings.title }}
-            </p>
-          </a>
-        {% endif %}
-      {% endfor %}
-    </div>
   </div>
   <!-- Sub-panes -->
   {% for link in linklists.main-navigation.links %}
     {% if link.links != blank %}
-      <div id="mobile-navigation-pane-{{ link.title | downcase }}" class="mobile-navigation-pane relative z-20 flex-col hidden animate-slide-in-h min-h-[calc(100vh-92px)] p-4 pl-7 pb-12 font-medium text-neutral-800">
+      <div id="mobile-navigation-pane-{{ link.title | downcase }}" class="mobile-navigation-pane relative z-20 flex-col hidden animate-slide-in-h min-h-[calc(100vh-var(--header-offset))] p-4 pl-7 pb-12 font-medium text-neutral-800">
         <div class="flex justify-between items-center" onclick="toggleMainPane(); toggleChildPane('{{ link.title | downcase }}');">
           <svg class="-ml-3 mb-1 rotate-180" width="5" height="10" viewBox="0 0 5 10" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0.1113 9.47056C0.0399466 9.39683 0 9.29785 0 9.19479C0 9.09173 0.0399466 8.99276 0.1113 8.91903L4.09772 4.79166L0.1113 0.665123C0.0399466 0.591403 0 0.492425 0 0.389363C0 0.286301 0.0399466 0.187327 0.1113 0.1136C0.145983 0.077648 0.18745 0.049074 0.233254 0.029563C0.279058 0.010052 0.328271 0 0.377988 0C0.427705 0 0.476918 0.010052 0.522722 0.029563C0.568527 0.049074 0.609994 0.077648 0.644676 0.1136L4.88387 4.50352C4.95833 4.58061 5 4.68401 5 4.79166C5 4.89932 4.95833 5.00272 4.88387 5.07981L0.644676 9.46973C0.609994 9.50568 0.568527 9.53426 0.522722 9.55377C0.476918 9.57328 0.427705 9.58333 0.377988 9.58333C0.328271 9.58333 0.279058 9.57328 0.233254 9.55377C0.18745 9.53426 0.145983 9.50568 0.1113 9.46973V9.47056Z" fill="black"/>
           </svg>
-          <p class="py-2 border-b border-neutral-400 w-full uppercase text-lg">{{ link.title }}
+          <p class="py-2 border-b border-neutral-400 w-full uppercase">{{ link.title }}
           </p>
         </div>
         {% for child_link in link.links %}
-          <p class="uppercase font-bold mt-3 text-lg">{{ child_link.title }}
+          <p class="uppercase font-bold mt-3">{{ child_link.title }}
           </p>
           {% if child_link.links != blank %}
             <div class="flex flex-col">
               {% for grandchild_link in child_link.links %}
-                <a href="{{ grandchild_link.url }}" class="mt-4 last:mb-4 uppercase">{{ grandchild_link.title }}
+                <a href="{{ grandchild_link.url }}" class="mt-4 last:mb-4 uppercase text-sm">{{ grandchild_link.title }}
                 </a>
               {% endfor %}
             </div>
@@ -118,7 +109,7 @@
             {% if block.type == "submenu_featured" and submenu_title == link_title %}
               <a class="flex flex-col items-center mr-3" href="{{ block.settings.collection.url }}">
                 <img class="min-w-[14rem] w-56 min-h-[15rem] h-60 object-cover" src="{{ block.settings.collection.image | image_url: width: 256 }}" alt="{{ block.settings.collection.title }} cover photo">
-                <p class="mt-2 uppercase">{{ block.settings.title }}
+                <p class="mt-2 uppercase text-sm">{{ block.settings.title }}
                 </p>
               </a>
             {% endif %}
@@ -258,43 +249,17 @@
 {% schema %}
   {
     "name": "Header",
-    "settings": [],
-    "blocks": [
+    "settings": [
       {
-        "name": "Mobile Featured",
-        "type": "mobile_featured",
-        "settings": [
-          {
-            "type": "collection",
-            "id": "collection",
-            "label": "Collection",
-            "info": "Collection to showcase"
-          }, {
-            "type": "text",
-            "id": "title",
-            "label": "Title for collection link"
-          }
-        ]
-      }, {
-        "name": "Submenu Featured",
-        "type": "submenu_featured",
-        "settings": [
-          {
-            "type": "text",
-            "id": "submenu_title",
-            "label": "Submenu title",
-            "info": "Match this to the submenu's title you'd like this to attach to"
-          }, {
-            "type": "collection",
-            "id": "collection",
-            "label": "Collection",
-            "info": "Collection to showcase"
-          }, {
-            "type": "text",
-            "id": "title",
-            "label": "Title for collection link"
-          }
-        ]
+        "type": "checkbox",
+        "id": "show_banner",
+        "label": "Show banner",
+        "default": true
+      },
+      {
+        "type": "text",
+        "id": "banner_text",
+        "label": "Banner text"
       }
     ]
   }

@@ -1,30 +1,152 @@
 {
   "sections": {
+    "4e8f0020-7783-4328-aa05-e2ded3c840c6": {
+      "type": "full-hero",
+      "blocks": {
+        "32410aad-66a3-4c80-ba7d-13af08bd658e": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/UBUNTU_11.19.204431_674ae459-f71e-40f3-b8a4-04c77e3b8a04.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/UBUNTU_11.19.204431_674ae459-f71e-40f3-b8a4-04c77e3b8a04.jpg"
+          }
+        },
+        "f3a522c1-423e-4185-a5df-109b157ef7bf": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/7_cd0b83fa-9844-447f-a846-0972a00e3302.png",
+            "mobile_image": "shopify:\/\/shop_images\/7_cd0b83fa-9844-447f-a846-0972a00e3302.png"
+          }
+        },
+        "eb964d6f-c4dd-41b9-a09a-bdaf0231cc88": {
+          "type": "heading",
+          "settings": {
+            "text": "Lorem Ipsum",
+            "main_heading": false,
+            "color": "#ffffff",
+            "alignment": "text-center",
+            "ubuntu_font": true,
+            "font_size": "text-xl lg:text-2xl 2xl:text-3xl",
+            "font_weight": "font-bold",
+            "margin_top": ""
+          }
+        },
+        "8e509f9c-023c-4690-b4b9-a146bb4706b0": {
+          "type": "heading",
+          "settings": {
+            "text": "Lorem ipsum dolor sit amet",
+            "main_heading": true,
+            "color": "#ffffff",
+            "alignment": "text-center",
+            "ubuntu_font": false,
+            "font_size": "text-4xl lg:text-5xl",
+            "font_weight": "font-bold",
+            "margin_top": ""
+          }
+        },
+        "9fa9130a-5c98-4c05-a7ea-9c56aa5788d7": {
+          "type": "heading",
+          "settings": {
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
+            "main_heading": false,
+            "color": "#ffffff",
+            "alignment": "text-center",
+            "ubuntu_font": false,
+            "font_size": "lg:text-lg 2xl:text-xl",
+            "font_weight": "font-medium",
+            "margin_top": "mt-2"
+          }
+        }
+      },
+      "block_order": [
+        "32410aad-66a3-4c80-ba7d-13af08bd658e",
+        "f3a522c1-423e-4185-a5df-109b157ef7bf",
+        "eb964d6f-c4dd-41b9-a09a-bdaf0231cc88",
+        "8e509f9c-023c-4690-b4b9-a146bb4706b0",
+        "9fa9130a-5c98-4c05-a7ea-9c56aa5788d7"
+      ],
+      "settings": {
+        "enable_text": true,
+        "cta_text": "SHOP NOW",
+        "cta_url": "shopify:\/\/collections\/all",
+        "cta_color": "#262626",
+        "cta_background_color": "#60cdcb",
+        "cta_font_size": "text-xl lg:text-2xl 2xl:text-3xl",
+        "cta_font_weight": "font-black",
+        "cta_vertical_padding": "py-3.5",
+        "cta_horizontal_padding": "px-8",
+        "text_vertical": "top-1\/2 -translate-y-1\/2",
+        "text_horizontal": "left-1\/2 -translate-x-1\/2",
+        "flex_alignment": "items-center"
+      }
+    },
     "hero": {
       "type": "index-hero",
+      "disabled": true,
       "blocks": {
         "77e6cdc4-c181-4097-a58a-12e82694e093": {
           "type": "pane",
           "settings": {
             "image": "shopify:\/\/shop_images\/Website_Check.jpg",
+            "url": "",
+            "show_text": true,
+            "text_vertical": "bottom-2 md:bottom-4 xl:bottom-8",
+            "text_horizontal": "left-2 md:left-4 xl:left-8",
+            "flex_alignment": "items-start",
             "text": "",
-            "url": "#"
+            "text_color": "#1b1212",
+            "ubuntu_font": false,
+            "font_size": "text-xl lg:text-2xl 2xl:text-3xl",
+            "font_weight": "font-black",
+            "cta_text": "SHOP NOW",
+            "cta_url": "shopify:\/\/products\/on-the-go-bundle-dusty-rose",
+            "cta_color": "#343434",
+            "cta_bg_color": "#ffffff",
+            "cta_font_size": "lg:text-lg 2xl:text-xl",
+            "cta_font_weight": "font-black"
           }
         },
         "982cc7a3-862f-412f-bfed-99b48a0db671": {
           "type": "pane",
           "settings": {
-            "image": "shopify:\/\/shop_images\/cropped_3.png",
-            "text": "New Arrivals",
-            "url": "https:\/\/www.ubuntu.life\/collections\/new-arrivals"
+            "image": "shopify:\/\/shop_images\/UBUNTU_1.6.222275.jpg",
+            "url": "https:\/\/www.ubuntu.life\/collections\/new-arrivals",
+            "show_text": false,
+            "text_vertical": "top-2 md:top-4 xl:top-8",
+            "text_horizontal": "left-2 md:left-4 xl:left-8",
+            "flex_alignment": "items-start",
+            "text": "",
+            "text_color": "#ffffff",
+            "ubuntu_font": false,
+            "font_size": "lg:text-lg 2xl:text-xl",
+            "font_weight": "font-medium",
+            "cta_text": "",
+            "cta_url": "",
+            "cta_color": "#262626",
+            "cta_bg_color": "#ffffff",
+            "cta_font_size": "lg:text-lg 2xl:text-xl",
+            "cta_font_weight": "font-medium"
           }
         },
         "fc37d08e-985f-46c3-a7f1-2b114a16e733": {
           "type": "pane",
           "settings": {
             "image": "shopify:\/\/shop_images\/UBUNTU_11.19.204431.jpg",
-            "text": "40% Off All  Love Bracelets",
-            "url": "#"
+            "url": "#",
+            "show_text": false,
+            "text_vertical": "top-2 md:top-4 xl:top-8",
+            "text_horizontal": "left-2 md:left-4 xl:left-8",
+            "flex_alignment": "items-start",
+            "text": "",
+            "text_color": "#ffffff",
+            "ubuntu_font": false,
+            "font_size": "lg:text-lg 2xl:text-xl",
+            "font_weight": "font-medium",
+            "cta_text": "",
+            "cta_url": "",
+            "cta_color": "#262626",
+            "cta_bg_color": "#ffffff",
+            "cta_font_size": "lg:text-lg 2xl:text-xl",
+            "cta_font_weight": "font-medium"
           }
         },
         "2eb55731-324a-4062-8968-026040cd16d7": {
@@ -32,8 +154,22 @@
           "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/UBUNTU_11.19.204431.jpg",
-            "text": "40% Off All  Love Bracelets",
-            "url": "#"
+            "url": "#",
+            "show_text": true,
+            "text_vertical": "top-2 md:top-4 xl:top-8",
+            "text_horizontal": "left-2 md:left-4 xl:left-8",
+            "flex_alignment": "items-start",
+            "text": "",
+            "text_color": "#ffffff",
+            "ubuntu_font": false,
+            "font_size": "lg:text-lg 2xl:text-xl",
+            "font_weight": "font-medium",
+            "cta_text": "",
+            "cta_url": "",
+            "cta_color": "#262626",
+            "cta_bg_color": "#ffffff",
+            "cta_font_size": "lg:text-lg 2xl:text-xl",
+            "cta_font_weight": "font-medium"
           }
         }
       },
@@ -47,6 +183,7 @@
         "pre_header": "LOREM IPSUM",
         "header": "LOREM IPSUM DOLOR SIT AMET",
         "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
+        "show_cta": true,
         "cta": "SHOP NOW",
         "cta_link": "\/collections\/all"
       }
@@ -57,32 +194,39 @@
         "3689b6ba-b8d8-455d-97cb-d766511e3278": {
           "type": "pane",
           "settings": {
-            "collection": "bags"
+            "collection": "bags",
+            "image": "shopify:\/\/shop_images\/Website_Index_5.png",
+            "text": ""
           }
         },
         "86084354-70a7-4581-ad76-c8ca0569d5d3": {
           "type": "pane",
           "settings": {
-            "collection": "bracelets"
+            "collection": "bracelets",
+            "text": ""
           }
         },
         "1853e462-2921-4e2d-9209-93f5434fedc1": {
           "type": "pane",
           "settings": {
-            "collection": "jewelry"
+            "collection": "jewelry",
+            "image": "shopify:\/\/shop_images\/holiday_5.png",
+            "text": ""
           }
         },
         "04cebf7b-bf7d-4d29-833b-a4b678ffc889": {
           "type": "pane",
           "settings": {
-            "collection": "shoes"
+            "collection": "shoes",
+            "text": ""
           }
         },
         "d656858d-9152-46af-bbb3-2aa255c28c0e": {
           "type": "pane",
           "disabled": true,
           "settings": {
-            "collection": "dog-collars"
+            "collection": "dog-collars",
+            "text": ""
           }
         }
       },
@@ -128,9 +272,8 @@
       "settings": {
       }
     },
-    "featured-products": {
-      "type": "index-featured-products",
-      "disabled": true,
+    "8c73d3ed-bb99-408a-b6fc-820ee7c571cd": {
+      "type": "featured-grid",
       "blocks": {
         "b83a089a-451b-44a6-bab2-346370eb627d": {
           "type": "product",
@@ -185,46 +328,68 @@
     "featured-grid": {
       "type": "index-featured-grid",
       "blocks": {
-        "a829e748-29c8-432e-9767-954091ebf2b1": {
-          "type": "product",
+        "60bb772e-f39d-49b6-98c8-fa66172cece4": {
+          "type": "pane",
           "settings": {
-            "image": "shopify:\/\/shop_images\/holiday_4.png",
-            "header": "",
-            "url": "https:\/\/www.ubuntu.life\/collections\/bags\/products\/checkered-weekender-black-eggshell"
+            "image": "shopify:\/\/shop_images\/Website_Index_1.png",
+            "show_text": true,
+            "text_vertical": "top-6 md:top-8 xl:top-12",
+            "text_horizontal": "left-6 md:left-10 xl:left-14",
+            "flex_alignment": "items-start",
+            "text": "",
+            "text_color": "#ffffff",
+            "ubuntu_font": false,
+            "font_size": "lg:text-lg 2xl:text-xl",
+            "font_weight": "font-medium",
+            "cta_text": "",
+            "cta_url": "https:\/\/www.ubuntu.life\/collections\/bags\/products\/checkered-weekender-black-eggshell",
+            "cta_color": "#262626",
+            "cta_bg_color": "#ffffff",
+            "cta_font_size": "lg:text-lg 2xl:text-xl",
+            "cta_font_weight": "font-medium"
           }
         },
-        "86b54096-36dd-4472-b287-f0c929a504b1": {
-          "type": "product",
+        "60bb772e-f39d-49b6-98c8-fa66172cece5": {
+          "type": "pane",
           "settings": {
-            "image": "shopify:\/\/shop_images\/cropped_2.png",
-            "header": "What's HOT now!",
-            "url": "https:\/\/www.ubuntu.life\/collections\/new-arrivals"
-          }
-        },
-        "86bd3aa2-9b15-4aa9-8389-6df881204671": {
-          "type": "product",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/fall_in_love._1.gif",
-            "header": "",
-            "url": "#"
-          }
-        },
-        "71699677-f06b-455d-af64-6126169175a1": {
-          "type": "product",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/cropped_1_5f72eae5-ee4c-4929-8586-31cf8d9099bb.png",
-            "header": "The Bestsellers",
-            "url": "https:\/\/www.ubuntu.life\/collections\/best-sellers"
+            "image": "shopify:\/\/shop_images\/Website_Index_4.png",
+            "show_text": true,
+            "text_vertical": "top-6 md:top-8 xl:top-12",
+            "text_horizontal": "right-4 md:right-6 xl:right-10",
+            "flex_alignment": "items-end",
+            "text": "What's HOT now!",
+            "text_color": "#ffffff",
+            "ubuntu_font": false,
+            "font_size": "text-xl lg:text-2xl 2xl:text-3xl",
+            "font_weight": "font-bold",
+            "cta_text": "SHOP NOW",
+            "cta_url": "shopify:\/\/collections\/new-arrivals",
+            "cta_color": "#262626",
+            "cta_bg_color": "#60cdcb",
+            "cta_font_size": "lg:text-lg 2xl:text-xl",
+            "cta_font_weight": "font-black"
           }
         }
       },
       "block_order": [
-        "a829e748-29c8-432e-9767-954091ebf2b1",
-        "86b54096-36dd-4472-b287-f0c929a504b1",
-        "86bd3aa2-9b15-4aa9-8389-6df881204671",
-        "71699677-f06b-455d-af64-6126169175a1"
+        "60bb772e-f39d-49b6-98c8-fa66172cece4",
+        "60bb772e-f39d-49b6-98c8-fa66172cece5"
       ],
       "settings": {
+      }
+    },
+    "76b9cc53-58a5-4212-a16e-85a6d52f5c5c": {
+      "type": "full-photo",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/1.1.png",
+        "url": "shopify:\/\/pages\/about",
+        "text": "Lorem Ipsum Sit Dolar Amet",
+        "text_color": "#ffffff",
+        "text_vertical": "bottom-4 md:bottom-8 xl:bottom-10",
+        "text_horizontal": "left-4 md:left-8 xl:left-10",
+        "text_alignment": "text-left",
+        "text_size": "sm:text-3xl lg:text-4xl 2xl:text-5xl",
+        "font_weight": "font-bold"
       }
     },
     "our-cause": {
@@ -256,6 +421,7 @@
       ],
       "settings": {
         "header": "EMPOWERED EMPLOYMENT",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "link_text": "LEARN ABOUT US",
         "link": "shopify:\/\/pages\/about"
       }
@@ -269,11 +435,12 @@
     }
   },
   "order": [
+    "4e8f0020-7783-4328-aa05-e2ded3c840c6",
     "hero",
     "shop-category",
     "featured-carousel",
-    "featured-products",
-    "featured-grid",
+    "8c73d3ed-bb99-408a-b6fc-820ee7c571cd",
+    "76b9cc53-58a5-4212-a16e-85a6d52f5c5c",
     "our-cause",
     "articles"
   ]

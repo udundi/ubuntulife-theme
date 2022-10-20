@@ -1,47 +1,63 @@
-<section id="index-hero-section" class="flex flex-col md:flex-row md:min-h-[calc(100vh-92px)] md:h-[calc(100vh-92px)] items-center">
+<section id="index-hero-section" class="flex flex-col md:flex-row md:min-h-[calc(100vh-var(--header-offset))] md:h-[calc(100vh-var(--header-offset))] items-center">
   <div class="flex flex-col items-center lg:items-start w-11/12 max-w-xs mt-5 md:mt-0 md:flex-grow md:mx-10 lg:mx-20">
-    <p class="font-ubuntulife font-bold text-xl">{{ section.settings.pre_header }}</p>
-    <h1 class="font-black text-4xl text-neutral-800 text-center lg:text-left">{{ section.settings.header }}</h1>
-    <p class="font-medium text-neutral-800 text-center lg:text-left mt-2">{{ section.settings.text }}</p>
-    <a href="{{ section.settings.cta_link }}" class="mt-8 w-11/12 lg:w-3/5 py-4 border border-black font-black text-xl text-neutral-800 text-center">{{ section.settings.cta }}</a>
-    <div class="hidden mt-6 lg:flex">
-      <svg onclick="heroSwiper.slidePrev(300)" class="cursor-pointer w-12 h-12 p-4 rounded-full border border-downy-300 hover:bg-downy-300 -rotate-90 mr-4" width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M13.9588 7.73918L7.49934 1.42968L1.03984 7.73918C0.799808 7.9741 0.416528 7.9741 0.176501 7.73918C0.0636142 7.62834 0 7.47665 0 7.31828C0 7.15992 0.0636142 7.00822 0.176501 6.89739L7.04828 0.183835C7.29924 -0.0612782 7.69944 -0.0612782 7.95039 0.183835L14.8222 6.8961C14.9359 7.00702 15 7.15928 15 7.31828C15 7.47729 14.9359 7.62955 14.8222 7.74047C14.5821 7.9754 14.1989 7.9754 13.9588 7.74047V7.73918Z" fill="black"/>
-      </svg>
-      <svg onclick="heroSwiper.slideNext(300)" class="cursor-pointer w-12 h-12 p-4 rounded-full border border-downy-300 hover:bg-downy-300 rotate-90" width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M13.9588 7.73918L7.49934 1.42968L1.03984 7.73918C0.799808 7.9741 0.416528 7.9741 0.176501 7.73918C0.0636142 7.62834 0 7.47665 0 7.31828C0 7.15992 0.0636142 7.00822 0.176501 6.89739L7.04828 0.183835C7.29924 -0.0612782 7.69944 -0.0612782 7.95039 0.183835L14.8222 6.8961C14.9359 7.00702 15 7.15928 15 7.31828C15 7.47729 14.9359 7.62955 14.8222 7.74047C14.5821 7.9754 14.1989 7.9754 13.9588 7.74047V7.73918Z" fill="black"/>
-      </svg>
-    </div>
-    <div class="hidden mt-7 md:flex text-xs lg:text-sm">
-      <svg class="mr-3" width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 1.4876V0H15.75V2.97521H22.29L22.4527 3.4862L23.9527 7.94901L24 8.06579V14.1322H21.633C21.2985 15.4108 20.139 16.3636 18.75 16.3636C17.361 16.3636 16.2015 15.4108 15.867 14.1322H9.633C9.2985 15.4108 8.139 16.3636 6.75 16.3636C5.361 16.3636 4.2015 15.4108 3.867 14.1322H1.5V8.92562H3V12.6446H3.867C4.2015 11.366 5.361 10.4132 6.75 10.4132C8.139 10.4132 9.2985 11.366 9.633 12.6446H14.25V1.4876H0ZM0.75 4.46281V2.97521H7.5V4.46281H0.75ZM15.75 4.46281H21.2108L22.5 8.27479V12.6446H21.633C21.2985 11.366 20.139 10.4132 18.75 10.4132C17.361 10.4132 16.2015 11.366 15.867 12.6446H15.75V4.46281ZM1.5 7.43802V5.95041H6V7.43802H1.5ZM6.75 11.9008C7.58775 11.9008 8.25 12.5576 8.25 13.3884C8.25 14.2193 7.58775 14.876 6.75 14.876C5.91225 14.876 5.25 14.2193 5.25 13.3884C5.25 12.5576 5.91225 11.9008 6.75 11.9008ZM20.25 13.3884C20.25 12.5576 19.5877 11.9008 18.75 11.9008C17.9123 11.9008 17.25 12.5576 17.25 13.3884C17.25 14.2193 17.9123 14.876 18.75 14.876C19.5877 14.876 20.25 14.2193 20.25 13.3884Z" fill="black"/>
-      </svg>
-      <p class="mr-4 whitespace-nowrap"><span class="underline">Free shipping</span> over $50</p>
-      <svg class="mr-3" width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.5009 12.0006C13.777 12.0006 14.0009 11.7767 14.0009 11.5006V6.70063C14.0009 5.31992 12.8816 4.20063 11.5009 4.20063H1.70789L5.05489 0.854632C5.2504 0.659122 5.2504 0.342141 5.05489 0.146632C4.85938 -0.0488773 4.5424 -0.0488773 4.34689 0.146632L0.146894 4.34663C0.0528517 4.44043 0 4.5678 0 4.70063C0 4.83346 0.0528517 4.96083 0.146894 5.05463L4.14689 9.05463C4.3424 9.25014 4.65938 9.25014 4.85489 9.05463C5.0504 8.85912 5.0504 8.54214 4.85489 8.34663L1.70789 5.20063H11.5009C12.3293 5.20063 13.0009 5.8722 13.0009 6.70063V11.5006C13.0009 11.7767 13.2248 12.0006 13.5009 12.0006Z" fill="black"/>
-      </svg>
-      <p class="whitespace-nowrap">Returns are <span class="underline">free</span></p>
-    </div>
+    {% if section.settings.pre_header != "" %}
+      <p class="font-ubuntulife font-bold text-xl">{{ section.settings.pre_header }}</p>
+    {% endif %}
+    {% if section.settings.header != "" %}
+      <h1 class="font-black text-4xl text-neutral-800 text-center lg:text-left">{{ section.settings.header }}</h1>
+    {% endif %}
+    {% if section.settings.text != "" %}
+      <p class="font-medium text-neutral-800 text-center lg:text-left mt-2">{{ section.settings.text }}</p>
+    {% endif %}
+    {% if section.settings.show_cta %}
+      <a href="{{ section.settings.cta_link }}" class="mt-8 w-11/12 lg:w-3/5 py-4 border border-black font-black text-xl text-neutral-800 text-center">{{ section.settings.cta }}</a>
+    {% endif %}
   </div>
   <div class="swiper mt-10 md:mt-0 w-screen overflow-hidden md:flex-grow md:h-full md:py-10 2xl:py-16">
+    <svg onclick="heroSwiper.slidePrev(300)" class="swiper-button-prev hidden lg:block cursor-pointer w-6 h-6 -rotate-90" width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M13.9588 7.73918L7.49934 1.42968L1.03984 7.73918C0.799808 7.9741 0.416528 7.9741 0.176501 7.73918C0.0636142 7.62834 0 7.47665 0 7.31828C0 7.15992 0.0636142 7.00822 0.176501 6.89739L7.04828 0.183835C7.29924 -0.0612782 7.69944 -0.0612782 7.95039 0.183835L14.8222 6.8961C14.9359 7.00702 15 7.15928 15 7.31828C15 7.47729 14.9359 7.62955 14.8222 7.74047C14.5821 7.9754 14.1989 7.9754 13.9588 7.74047V7.73918Z" fill="black"/>
+    </svg>
     <div class="swiper-wrapper">
       {% for block in section.blocks %}
-        <div class="swiper-slide relative w-48 sm:w-60 md:w-80 2xl:w-96 h-80 sm:h-96 md:h-full flex flex-col justify-end">
-          <p class="z-10 font-black text-xl lg:text-3xl 2xl:text-4xl text-white mx-4 w-3/4">{{ block.settings.text }}</p>
-          <a class="z-10 w-fit ml-4 mt-3 font-black lg:text-lg 2xl:text-xl bg-white hover:bg-downy-300 py-2 px-4 mb-6" href="{{ block.settings.url }}">SHOP NOW</a>
+        {% if block.settings.show_text %}
+          <div class="swiper-slide relative w-48 sm:w-60 md:w-80 2xl:w-96 h-80 sm:h-96 md:h-full flex flex-col justify-end lg:hover:border-2 border-downy-300">
+        {% else %}
+          <a href="{{ block.settings.url }}" class="swiper-slide relative w-48 sm:w-60 md:w-80 2xl:w-96 h-80 sm:h-96 md:h-full flex flex-col justify-end lg:hover:border-2 border-downy-300">
+        {% endif %}
+          {% if block.settings.show_text %}
+            <div class="absolute z-10 flex flex-col {{ block.settings.flex_alignment }} {{ block.settings.text_vertical }} {{ block.settings.text_horizontal }}">
+              <p 
+                class="{{ block.settings.font_weight }} {{ block.settings.font_size }} {% if block.settings.ubuntu_font %}font-ubuntulife{% endif %}"
+                style="color: {{ block.settings.text_color }};"
+                >{{ block.settings.text }}</p>
+              <a
+                href="{{ block.settings.cta_url }}"
+                class="mt-3 py-2 px-4 {{ block.settings.cta_font_weight }} {{ block.settings.cta_font_size }}"
+                href="{{ block.settings.url }}"
+                style="color: {{ block.settings.cta_color }}; background-color: {{ block.settings.cta_bg_color }};"
+                >{{ block.settings.cta_text }}</a>
+            </div>
+          {% endif %}
           <picture>
             <source media="(min-width: 1536px)" srcset="{{ block.settings.image | image_url: width: 384 }}">
             <source media="(min-width: 768px)" srcset="{{ block.settings.image | image_url: width: 320 }}">
             <source media="(min-width: 640px)" srcset="{{ block.settings.image | image_url: width: 240 }}">
             <source media="(max-width: 639px)" srcset="{{ block.settings.image | image_url: width: 200 }}">
             <img 
-              class="absolute top-0 left-0 w-full 2xl:max-w-xl h-full object-cover" 
+              class="absolute top-0 left-0 w-full 2xl:max-w-xl h-full object-cover lg:p-0.5 lg:hover:p-0" 
               src="{{ block.settings.image | image_url: width: 384 }}" 
               alt="{{ block.settings.image.alt }}">
           </picture>
-        </div>
+        {% if block.settings.show_text %}
+          </div>
+        {% else %}
+          </a>
+        {% endif %}
       {% endfor %}
     </div>
+    <svg onclick="heroSwiper.slideNext(300)" class="swiper-button-next hidden lg:block cursor-pointer w-6 h-6 rotate-90" width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M13.9588 7.73918L7.49934 1.42968L1.03984 7.73918C0.799808 7.9741 0.416528 7.9741 0.176501 7.73918C0.0636142 7.62834 0 7.47665 0 7.31828C0 7.15992 0.0636142 7.00822 0.176501 6.89739L7.04828 0.183835C7.29924 -0.0612782 7.69944 -0.0612782 7.95039 0.183835L14.8222 6.8961C14.9359 7.00702 15 7.15928 15 7.31828C15 7.47729 14.9359 7.62955 14.8222 7.74047C14.5821 7.9754 14.1989 7.9754 13.9588 7.74047V7.73918Z" fill="black"/>
+    </svg>
   </div>
 </section>
 
@@ -54,7 +70,21 @@
       centeredSlides: true,
       breakpoints: {
         768: {
-          centeredSlides: false
+          centeredSlides: false,
+          navigation: {
+            prevEl: ".swiper-button-prev",
+            nextEl: ".swiper-button-next",
+          }
+        }
+      },
+      on: {
+        lock: function () {
+          document.querySelector("#index-hero-section .swiper .swiper-button-prev").style.display = "none";
+          document.querySelector("#index-hero-section .swiper .swiper-button-next").style.display = "none";
+        },
+        unlock: function () {
+          document.querySelector("#index-hero-section .swiper .swiper-button-prev").style.display = "block";
+          document.querySelector("#index-hero-section .swiper .swiper-button-next").style.display = "block";
         }
       }
     });
@@ -67,7 +97,7 @@
 
 {% schema %}
 {
-  "name": "Index Hero",
+  "name": "Carousel Hero",
   "settings": [
     {
       "type": "text",
@@ -83,6 +113,12 @@
       "type": "text",
       "id": "text",
       "label": "Smaller Sub Copy"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_cta",
+      "label": "Show CTA",
+      "default": true
     },
     {
       "type": "text",
@@ -103,17 +139,217 @@
         {
           "type": "image_picker",
           "id": "image",
-          "label": "Background image"
-        },
-        {
-          "type": "text",
-          "id": "text",
-          "label": "Header text"
+          "label": "Image for Pane"
         },
         {
           "type": "url",
           "id": "url",
-          "label": "Button link"
+          "label": "Pane URL",
+          "info": "The pane is only linkable if showing the text & cta is off"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_text",
+          "label": "Show the text & CTA",
+          "default": true
+        },
+        {
+          "type": "select",
+          "id": "text_vertical",
+          "label": "Vertical text alignment",
+          "options": [
+            {
+              "value": "top-2 md:top-4 xl:top-8",
+              "label": "Top"
+            },
+            {
+              "value": "top-1/2 -translate-y-1/2",
+              "label": "Middle"
+            },
+            {
+              "value": "bottom-2 md:bottom-4 xl:bottom-8",
+              "label": "Bottom"
+            }
+          ]
+        },
+        {
+          "type": "select",
+          "id": "text_horizontal",
+          "label": "Horizontal text alignment",
+          "options": [
+            {
+              "value": "left-2 md:left-4 xl:left-8",
+              "label": "Left"
+            },
+            {
+              "value": "left-1/2 -translate-x-1/2",
+              "label": "Middle"
+            },
+            {
+              "value": "right-2 md:right-4 xl:right-8",
+              "label": "Right"
+            }
+          ]
+        },
+        {
+          "type": "select",
+          "id": "flex_alignment",
+          "label": "Item alignment",
+          "info": "This aligns the entire items in the text section",
+          "options": [
+            {
+              "value": "items-start",
+              "label": "Left"
+            },
+            {
+              "value": "items-center",
+              "label": "Center"
+            },
+            {
+              "value": "items-end",
+              "label": "Right"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Text"
+        },
+        {
+          "type": "color",
+          "id": "text_color",
+          "label": "Text Color",
+          "default": "#FFFFFF"
+        },
+        {
+          "type": "checkbox",
+          "id": "ubuntu_font",
+          "label": "Ubuntu Life Font?"
+        },
+        {
+          "type": "select",
+          "id": "font_size",
+          "label": "Font size",
+          "options": [
+            {
+              "value": "lg:text-lg 2xl:text-xl",
+              "label": "Small"
+            },
+            {
+              "value": "text-xl lg:text-2xl 2xl:text-3xl",
+              "label": "Medium"
+            },
+            {
+              "value": "text-2xl lg:text-3xl 2xl:text-4xl",
+              "label": "Large"
+            },
+            {
+              "value": "text-4xl lg:text-5xl",
+              "label": "Extra Large"
+            }
+          ]
+        },
+        {
+          "type": "select",
+          "id": "font_weight",
+          "label": "Font weight",
+          "default": "font-medium",
+          "options": [
+            {
+              "value": "font-thin",
+              "label": "Thin"
+            },
+            {
+              "value": "font-normal",
+              "label": "Normal"
+            },
+            {
+              "value": "font-medium",
+              "label": "Medium"
+            },
+            {
+              "value": "font-bold",
+              "label": "Bold"
+            },
+            {
+              "value": "font-black",
+              "label": "Black"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "cta_text",
+          "label": "CTA Text"
+        },
+        {
+          "type": "url",
+          "id": "cta_url",
+          "label": "CTA URL"
+        },
+        {
+          "type": "color",
+          "id": "cta_color",
+          "label": "CTA Color",
+          "default": "#262626"
+        },
+        {
+          "type": "color",
+          "id": "cta_bg_color",
+          "label": "CTA Background Color",
+          "default": "#FFFFFF"
+        },
+        {
+          "type": "select",
+          "id": "cta_font_size",
+          "label": "CTA Font size",
+          "options": [
+            {
+              "value": "lg:text-lg 2xl:text-xl",
+              "label": "Small"
+            },
+            {
+              "value": "text-xl lg:text-2xl 2xl:text-3xl",
+              "label": "Medium"
+            },
+            {
+              "value": "text-2xl lg:text-3xl 2xl:text-4xl",
+              "label": "Large"
+            },
+            {
+              "value": "text-4xl lg:text-5xl",
+              "label": "Extra Large"
+            }
+          ]
+        },
+        {
+          "type": "select",
+          "id": "cta_font_weight",
+          "label": "CTA Font weight",
+          "default": "font-medium",
+          "options": [
+            {
+              "value": "font-thin",
+              "label": "Thin"
+            },
+            {
+              "value": "font-normal",
+              "label": "Normal"
+            },
+            {
+              "value": "font-medium",
+              "label": "Medium"
+            },
+            {
+              "value": "font-bold",
+              "label": "Bold"
+            },
+            {
+              "value": "font-black",
+              "label": "Black"
+            }
+          ]
         }
       ]
     }

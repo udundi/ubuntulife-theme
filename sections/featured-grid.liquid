@@ -1,0 +1,260 @@
+<section id="featured-grid" class="mt-16 mb-10 px-4 flex flex-col md:grid md:grid-cols-2 md:gap-5 max-w-screen-2xl md:mx-auto items-center md:items-start">
+  {% for block in section.blocks %}
+    <div class="group relative md:mt-0 w-full cursor-default">
+      <picture>
+        <source media="(min-width: 640px)" srcset="{{ block.settings.image | image_url: width: 768 }}">
+        <source media="(max-width: 639px)" srcset="{{ block.settings.image | image_url: width: 640 }}">
+        <img 
+          class="w-full h-[36rem] md:h-[44rem] object-cover p-0.5 group-hover:p-0 group-hover:border-2 border-downy-300" 
+          src="{{ block.settings.image | image_url: width: 768 }}" 
+          alt="{{ block.settings.image.alt }}">
+      </picture>
+      {% if block.settings.show_text %}
+        <div class="absolute px-0.5 flex flex-col {{ block.settings.flex_alignment }} {{ block.settings.text_vertical }} {{ block.settings.text_horizontal }}">
+          {% if block.settings.text != "" %}
+            <p 
+              class="font-black mt-4 {{ block.settings.font_weight }} {{ block.settings.font_size }} {% if block.settings.ubuntu_font %}font-ubuntulife{% endif %}"
+              style="color: {{ block.settings.color }};"
+              >{{ block.settings.text }}</p>
+          {% endif %}
+          {% if block.settings.cta_text != "" %}
+            <a 
+              href="{{ block.settings.cta_url }}" 
+              class="w-fit {% if block.settings.text != "" %}mt-4{% endif %} py-3 px-6 {{ block.settings.cta_font_weight }} {{ block.settings.cta_font_size }}"
+              style="color: {{ block.settings.cta_color }}; background-color: {{ block.settings.cta_bg_color }};"
+                >{{ block.settings.cta_text }}</a>
+          {% endif %}
+        </div>
+      {% endif %}
+    </div>
+  {% endfor %}
+</section>
+
+{% schema %}
+{
+  "name": "Featured Grid",
+  "settings": [],
+  "blocks": [
+    {
+      "name": "Pane",
+      "type": "pane",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Background image"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_text",
+          "label": "Show the text & CTA",
+          "default": true
+        },
+        {
+          "type": "select",
+          "id": "text_vertical",
+          "label": "Vertical text alignment",
+          "options": [
+            {
+              "value": "top-4 md:top-6 xl:top-10",
+              "label": "Top"
+            },
+            {
+              "value": "top-1/2 -translate-y-1/2",
+              "label": "Middle"
+            },
+            {
+              "value": "bottom-4 md:bottom-6 xl:bottom-10",
+              "label": "Bottom"
+            }
+          ]
+        },
+        {
+          "type": "select",
+          "id": "text_horizontal",
+          "label": "Horizontal text alignment",
+          "options": [
+            {
+              "value": "left-4 md:left-6 xl:left-10",
+              "label": "Left"
+            },
+            {
+              "value": "left-1/2 -translate-x-1/2",
+              "label": "Middle"
+            },
+            {
+              "value": "right-4 md:right-6 xl:right-10",
+              "label": "Right"
+            }
+          ]
+        },
+        {
+          "type": "select",
+          "id": "flex_alignment",
+          "label": "Item alignment",
+          "info": "This aligns the entire items in the text section",
+          "options": [
+            {
+              "value": "items-start",
+              "label": "Left"
+            },
+            {
+              "value": "items-center",
+              "label": "Center"
+            },
+            {
+              "value": "items-end",
+              "label": "Right"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Text"
+        },
+        {
+          "type": "color",
+          "id": "text_color",
+          "label": "Text Color",
+          "default": "#FFFFFF"
+        },
+        {
+          "type": "checkbox",
+          "id": "ubuntu_font",
+          "label": "Ubuntu Life Font?"
+        },
+        {
+          "type": "select",
+          "id": "font_size",
+          "label": "Font size",
+          "options": [
+            {
+              "value": "lg:text-lg 2xl:text-xl",
+              "label": "Small"
+            },
+            {
+              "value": "text-xl lg:text-2xl 2xl:text-3xl",
+              "label": "Medium"
+            },
+            {
+              "value": "text-2xl lg:text-3xl 2xl:text-4xl",
+              "label": "Large"
+            },
+            {
+              "value": "text-4xl lg:text-5xl",
+              "label": "Extra Large"
+            }
+          ]
+        },
+        {
+          "type": "select",
+          "id": "font_weight",
+          "label": "Font weight",
+          "default": "font-medium",
+          "options": [
+            {
+              "value": "font-thin",
+              "label": "Thin"
+            },
+            {
+              "value": "font-normal",
+              "label": "Normal"
+            },
+            {
+              "value": "font-medium",
+              "label": "Medium"
+            },
+            {
+              "value": "font-bold",
+              "label": "Bold"
+            },
+            {
+              "value": "font-black",
+              "label": "Black"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "cta_text",
+          "label": "CTA Text"
+        },
+        {
+          "type": "url",
+          "id": "cta_url",
+          "label": "CTA URL"
+        },
+        {
+          "type": "color",
+          "id": "cta_color",
+          "label": "CTA Color",
+          "default": "#262626"
+        },
+        {
+          "type": "color",
+          "id": "cta_bg_color",
+          "label": "CTA Background Color",
+          "default": "#FFFFFF"
+        },
+        {
+          "type": "select",
+          "id": "cta_font_size",
+          "label": "CTA Font size",
+          "options": [
+            {
+              "value": "lg:text-lg 2xl:text-xl",
+              "label": "Small"
+            },
+            {
+              "value": "text-xl lg:text-2xl 2xl:text-3xl",
+              "label": "Medium"
+            },
+            {
+              "value": "text-2xl lg:text-3xl 2xl:text-4xl",
+              "label": "Large"
+            },
+            {
+              "value": "text-4xl lg:text-5xl",
+              "label": "Extra Large"
+            }
+          ]
+        },
+        {
+          "type": "select",
+          "id": "cta_font_weight",
+          "label": "CTA Font weight",
+          "default": "font-medium",
+          "options": [
+            {
+              "value": "font-thin",
+              "label": "Thin"
+            },
+            {
+              "value": "font-normal",
+              "label": "Normal"
+            },
+            {
+              "value": "font-medium",
+              "label": "Medium"
+            },
+            {
+              "value": "font-bold",
+              "label": "Bold"
+            },
+            {
+              "value": "font-black",
+              "label": "Black"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Featured Grid"
+    }
+  ]
+}
+{% endschema %}

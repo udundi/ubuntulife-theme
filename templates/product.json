@@ -5,7 +5,8 @@
       "settings": {
         "carousel_header": "YOU MAY ALSO LIKE",
         "info_details_care": "<p>{{ product.metafields.info.details_care | metafield_tag }}<\/p>",
-        "info_how_made": "<p>{{ product.metafields.into.how_it_was_made | metafield_tag }}<\/p>",
+        "info_custom_header": "{{ product.metafields.info.custom_header.value }}",
+        "info_custom_body": "<p>{{ product.metafields.info.custom_body | metafield_tag }}<\/p>",
         "info_header_1": "{{ product.metafields.info.header_1.value }}",
         "info_text_1": "<p>{{ product.metafields.info.text_1 | metafield_tag }}<\/p>",
         "info_media_1": "{{ product.metafields.info.media_1.value }}",
