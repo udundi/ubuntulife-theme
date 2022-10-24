@@ -10,7 +10,6 @@ module.exports = {
 		fontFamily: {
 			avenir: ['"Avenir"'],
 			ubuntulife: ['"Ubuntu Life"'],
-			roboto: ['"Roboto"', "sans-serif"],
 		},
 		extend: {
 			animation: {
