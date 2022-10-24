@@ -20,17 +20,10 @@
     </a>
   {% endfor %}
   <div class="lg:col-span-2 lg:pl-12">
-    <div class="hidden lg:flex">
-      <p class="font-black text-4xl text-neutral-800">RECENT ARTICLES</p>
-      <svg id="articles-arrow-back" onclick="changeSlide(-1)" class="ml-auto h-14 w-14 rotate-90 cursor-pointer" width="59" height="59" viewBox="0 0 59 59" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M0.5 29.5C0.5 13.4837 13.4837 0.5 29.5 0.5C45.5163 0.5 58.5 13.4837 58.5 29.5C58.5 45.5163 45.5163 58.5 29.5 58.5C13.4837 58.5 0.5 45.5163 0.5 29.5Z" stroke="currentColor"/>
-        <path d="M32.7751 21.3188L24.783 29.5008L32.7751 37.6829C33.0727 37.9869 33.0727 38.4724 32.7751 38.7764C32.6347 38.9194 32.4425 39 32.2419 39C32.0414 39 31.8492 38.9194 31.7088 38.7764L23.205 30.0722C22.8945 29.7543 22.8945 29.2474 23.205 28.9295L31.7072 20.2252C31.8477 20.0812 32.0405 20 32.2419 20C32.4434 20 32.6362 20.0812 32.7767 20.2252C33.0743 20.5293 33.0743 21.0148 32.7767 21.3188H32.7751Z" fill="currentColor"/>
-      </svg>
-      <svg id="articles-arrow-forward" onclick="changeSlide(1)" class="ml-6 h-14 w-14 -rotate-90 cursor-pointer" width="59" height="59" viewBox="0 0 59 59" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M0.5 29.5C0.5 13.4837 13.4837 0.5 29.5 0.5C45.5163 0.5 58.5 13.4837 58.5 29.5C58.5 45.5163 45.5163 58.5 29.5 58.5C13.4837 58.5 0.5 45.5163 0.5 29.5Z" stroke="currentColor"/>
-        <path d="M32.7751 21.3188L24.783 29.5008L32.7751 37.6829C33.0727 37.9869 33.0727 38.4724 32.7751 38.7764C32.6347 38.9194 32.4425 39 32.2419 39C32.0414 39 31.8492 38.9194 31.7088 38.7764L23.205 30.0722C22.8945 29.7543 22.8945 29.2474 23.205 28.9295L31.7072 20.2252C31.8477 20.0812 32.0405 20 32.2419 20C32.4434 20 32.6362 20.0812 32.7767 20.2252C33.0743 20.5293 33.0743 21.0148 32.7767 21.3188H32.7751Z" fill="currentColor"/>
-      </svg>
-    </div>
+    <p class="hidden lg:block font-black text-4xl text-neutral-800">RECENT ARTICLES</p>
+    <svg id="articles-arrow-back" onclick="changeSlide(-1)" class="mx-auto hidden lg:block h-5 w-5 rotate-90 cursor-pointer" width="11" height="19" viewBox="0 0 11 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M9.80298 1.3188L1.81088 9.5008L9.80298 17.6829C10.1006 17.9869 10.1006 18.4724 9.80298 18.7764C9.66258 18.9194 9.47038 19 9.26978 19C9.06928 19 8.87707 18.9194 8.73667 18.7764L0.232875 10.0722C-0.077625 9.7543 -0.077625 9.2474 0.232875 8.9295L8.73507 0.225201C8.87557 0.0812007 9.06838 0 9.26978 0C9.47128 0 9.66407 0.0812007 9.80457 0.225201C10.1022 0.529301 10.1022 1.0148 9.80457 1.3188H9.80298Z" fill="currentColor"/>
+    </svg>
     {% for article in blog.articles limit: section.settings.post_limit %}
       {% unless forloop.first == true %}
         {% assign is_third = forloop.index0 | minus: 1 | modulo: 3 %}
@@ -56,6 +49,9 @@
         {% endif %}
       {% endunless %}
     {% endfor %}
+    <svg id="articles-arrow-forward" onclick="changeSlide(1)" class="hidden lg:block mx-auto h-5 w-5 -rotate-90 cursor-pointer" width="11" height="19" viewBox="0 0 11 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M9.80298 1.3188L1.81088 9.5008L9.80298 17.6829C10.1006 17.9869 10.1006 18.4724 9.80298 18.7764C9.66258 18.9194 9.47038 19 9.26978 19C9.06928 19 8.87707 18.9194 8.73667 18.7764L0.232875 10.0722C-0.077625 9.7543 -0.077625 9.2474 0.232875 8.9295L8.73507 0.225201C8.87557 0.0812007 9.06838 0 9.26978 0C9.47128 0 9.66407 0.0812007 9.80457 0.225201C10.1022 0.529301 10.1022 1.0148 9.80457 1.3188H9.80298Z" fill="currentColor"/>
+    </svg>
   </div>
   <a class="lg:hidden mt-8 w-full py-6 text-xl text-center text-white font-black bg-downy-300" href="/blogs/news">VIEW MORE ARTICLES</a>
 </section>

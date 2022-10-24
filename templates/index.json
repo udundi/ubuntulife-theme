@@ -2,7 +2,6 @@
   "sections": {
     "4e8f0020-7783-4328-aa05-e2ded3c840c6": {
       "type": "full-hero",
-      "disabled": true,
       "blocks": {
         "32410aad-66a3-4c80-ba7d-13af08bd658e": {
           "type": "slide",
@@ -71,6 +70,10 @@
         "cta_url": "shopify:\/\/collections\/all",
         "cta_color": "#262626",
         "cta_background_color": "#60cdcb",
+        "cta_font_size": "lg:text-lg 2xl:text-xl",
+        "cta_font_weight": "font-black",
+        "cta_vertical_padding": "py-1",
+        "cta_horizontal_padding": "px-4",
         "text_vertical": "top-1\/2 -translate-y-1\/2",
         "text_horizontal": "left-1\/2 -translate-x-1\/2",
         "flex_alignment": "items-center"
@@ -78,6 +81,7 @@
     },
     "hero": {
       "type": "index-hero",
+      "disabled": true,
       "blocks": {
         "77e6cdc4-c181-4097-a58a-12e82694e093": {
           "type": "pane",
@@ -111,14 +115,14 @@
             "text_horizontal": "left-2 md:left-4 xl:left-8",
             "flex_alignment": "items-start",
             "text": "",
-            "text_color": "#FFFFFF",
+            "text_color": "#ffffff",
             "ubuntu_font": false,
             "font_size": "lg:text-lg 2xl:text-xl",
             "font_weight": "font-medium",
             "cta_text": "",
             "cta_url": "",
             "cta_color": "#262626",
-            "cta_bg_color": "#FFFFFF",
+            "cta_bg_color": "#ffffff",
             "cta_font_size": "lg:text-lg 2xl:text-xl",
             "cta_font_weight": "font-medium"
           }
@@ -133,14 +137,14 @@
             "text_horizontal": "left-2 md:left-4 xl:left-8",
             "flex_alignment": "items-start",
             "text": "",
-            "text_color": "#FFFFFF",
+            "text_color": "#ffffff",
             "ubuntu_font": false,
             "font_size": "lg:text-lg 2xl:text-xl",
             "font_weight": "font-medium",
             "cta_text": "",
             "cta_url": "",
             "cta_color": "#262626",
-            "cta_bg_color": "#FFFFFF",
+            "cta_bg_color": "#ffffff",
             "cta_font_size": "lg:text-lg 2xl:text-xl",
             "cta_font_weight": "font-medium"
           }
@@ -156,14 +160,14 @@
             "text_horizontal": "left-2 md:left-4 xl:left-8",
             "flex_alignment": "items-start",
             "text": "",
-            "text_color": "#FFFFFF",
+            "text_color": "#ffffff",
             "ubuntu_font": false,
             "font_size": "lg:text-lg 2xl:text-xl",
             "font_weight": "font-medium",
             "cta_text": "",
             "cta_url": "",
             "cta_color": "#262626",
-            "cta_bg_color": "#FFFFFF",
+            "cta_bg_color": "#ffffff",
             "cta_font_size": "lg:text-lg 2xl:text-xl",
             "cta_font_weight": "font-medium"
           }
@@ -199,6 +203,7 @@
           "type": "pane",
           "settings": {
             "collection": "bracelets",
+            "image": "shopify:\/\/shop_images\/holiday_7.png",
             "text": ""
           }
         },
@@ -206,7 +211,7 @@
           "type": "pane",
           "settings": {
             "collection": "jewelry",
-            "image": "shopify:\/\/shop_images\/red-5row-bracelet-9.jpg",
+            "image": "shopify:\/\/shop_images\/holiday_8.png",
             "text": ""
           }
         },
@@ -214,6 +219,7 @@
           "type": "pane",
           "settings": {
             "collection": "shoes",
+            "image": "shopify:\/\/shop_images\/holiday_7.png",
             "text": ""
           }
         },
@@ -235,7 +241,7 @@
       ],
       "settings": {
         "header": "SHOP BY CATEGORY",
-        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        "text": "Ubuntu Life is a global lifestyle brand out of Africa, based in Kenya. We’re empowering lives through each product made. Handmade bags, bracelets, and espadrilles, made by Moms in Kenya, connecting people around the world - from their hands to yours."
       }
     },
     "featured-carousel": {
@@ -271,10 +277,63 @@
     "8c73d3ed-bb99-408a-b6fc-820ee7c571cd": {
       "type": "featured-grid",
       "blocks": {
+        "b83a089a-451b-44a6-bab2-346370eb627d": {
+          "type": "product",
+          "settings": {
+            "product": "love-bracelet"
+          }
+        },
+        "73dcb3b1-c829-4834-858d-4bcb583eca47": {
+          "type": "product",
+          "settings": {
+            "product": "chain-link-bracelet"
+          }
+        },
+        "5d7438d2-49d3-4d46-be42-981e1e7fb772": {
+          "type": "product",
+          "settings": {
+            "product": "afridrilles-spring-blue-palms"
+          }
+        },
+        "694bc265-da04-4708-8f3d-e2c37439cefd": {
+          "type": "product",
+          "settings": {
+            "product": "amani-dog-collar"
+          }
+        },
+        "534fb7c9-c894-46a0-8323-e67a65bfb148": {
+          "type": "product",
+          "settings": {
+            "product": "in-this-together-bundle"
+          }
+        },
+        "da65eb0e-9059-425b-bcb2-2f68dd6db8e7": {
+          "type": "product",
+          "settings": {
+            "product": "on-the-go-bundle-black"
+          }
+        }
+      },
+      "block_order": [
+        "b83a089a-451b-44a6-bab2-346370eb627d",
+        "73dcb3b1-c829-4834-858d-4bcb583eca47",
+        "5d7438d2-49d3-4d46-be42-981e1e7fb772",
+        "694bc265-da04-4708-8f3d-e2c37439cefd",
+        "534fb7c9-c894-46a0-8323-e67a65bfb148",
+        "da65eb0e-9059-425b-bcb2-2f68dd6db8e7"
+      ],
+      "settings": {
+        "header": "RECOMMENDED",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod"
+      }
+    },
+    "featured-grid": {
+      "type": "index-featured-grid",
+      "blocks": {
         "60bb772e-f39d-49b6-98c8-fa66172cece4": {
           "type": "pane",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Website_Index_1.png",
+            "image": "shopify:\/\/shop_images\/holiday_4.png",
             "show_text": true,
             "text_vertical": "top-6 md:top-8 xl:top-12",
             "text_horizontal": "left-6 md:left-10 xl:left-14",
@@ -312,11 +371,55 @@
             "cta_font_size": "lg:text-lg 2xl:text-xl",
             "cta_font_weight": "font-black"
           }
+        },
+        "7ab96759-3259-4cf2-8397-9827ce8094ef": {
+          "type": "pane",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Website_Index_1.png",
+            "show_text": true,
+            "text_vertical": "top-4 md:top-6 xl:top-10",
+            "text_horizontal": "left-4 md:left-6 xl:left-10",
+            "flex_alignment": "items-start",
+            "text": "",
+            "text_color": "#ffffff",
+            "ubuntu_font": false,
+            "font_size": "lg:text-lg 2xl:text-xl",
+            "font_weight": "font-medium",
+            "cta_text": "",
+            "cta_url": "",
+            "cta_color": "#262626",
+            "cta_bg_color": "#ffffff",
+            "cta_font_size": "lg:text-lg 2xl:text-xl",
+            "cta_font_weight": "font-medium"
+          }
+        },
+        "5f1d47d3-1dc2-46e3-b924-b76199dffb61": {
+          "type": "pane",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/holiday_9.png",
+            "show_text": true,
+            "text_vertical": "top-4 md:top-6 xl:top-10",
+            "text_horizontal": "right-4 md:right-6 xl:right-10",
+            "flex_alignment": "items-start",
+            "text": "Bestsellers",
+            "text_color": "#ffffff",
+            "ubuntu_font": false,
+            "font_size": "text-2xl lg:text-3xl 2xl:text-4xl",
+            "font_weight": "font-black",
+            "cta_text": "shop now",
+            "cta_url": "",
+            "cta_color": "#ffffff",
+            "cta_bg_color": "#000000",
+            "cta_font_size": "lg:text-lg 2xl:text-xl",
+            "cta_font_weight": "font-bold"
+          }
         }
       },
       "block_order": [
         "60bb772e-f39d-49b6-98c8-fa66172cece4",
-        "60bb772e-f39d-49b6-98c8-fa66172cece5"
+        "60bb772e-f39d-49b6-98c8-fa66172cece5",
+        "7ab96759-3259-4cf2-8397-9827ce8094ef",
+        "5f1d47d3-1dc2-46e3-b924-b76199dffb61"
       ],
       "settings": {
       }
@@ -341,19 +444,19 @@
         "568df141-a68c-4d19-ba5a-b68f6b96ad59": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Mask_group_1.png"
+            "image": "shopify:\/\/shop_images\/6_19e2ba0a-3b41-479b-a1f5-14b8ce0a88e8.png"
           }
         },
         "7e449952-bee5-4252-bd9a-d4c063096f58": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle.png"
+            "image": "shopify:\/\/shop_images\/8_f82c9ca6-7fef-4e84-9d88-71fb7fe4757a.png"
           }
         },
         "4e84f2bf-d6ea-41f1-99cc-eac1c9d5c9eb": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Mask_group.png"
+            "image": "shopify:\/\/shop_images\/7_cd0b83fa-9844-447f-a846-0972a00e3302.png"
           }
         }
       },
