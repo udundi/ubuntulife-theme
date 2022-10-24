@@ -180,10 +180,10 @@
         "2eb55731-324a-4062-8968-026040cd16d7"
       ],
       "settings": {
-        "pre_header": "LOREM IPSUM",
-        "header": "LOREM IPSUM DOLOR SIT AMET",
-        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
-        "show_cta": true,
+        "pre_header": "",
+        "header": "EVERYTHING MADE WITH         LOVE!",
+        "text": "",
+        "show_cta": false,
         "cta": "SHOP NOW",
         "cta_link": "\/collections\/all"
       }
