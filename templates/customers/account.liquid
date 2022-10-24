@@ -1,59 +1,98 @@
-<div class="container"> 
-  <div class="row">
-    <div class="col-12 text-center">
-      <h1>{{ 'customer.account.title' | t }}</h1>
-      {{ 'layout.customer.log_out' | t | customer_logout_link }}
+<div class="container mx-auto px-3 grid gap-4 grid-cols-[1fr_min-content] grid-rows-[auto_auto_1fr]">
+  {% comment %}
+     <div class="row">
+      <div class="col-12 text-center">
+        <h1>{{ 'customer.account.title' | t }}</h1>
+        {{ 'layout.customer.log_out' | t | customer_logout_link }}
+      </div>
     </div>
+  {% endcomment %}
+  <h1 class="text-4xl font-bold font-avenir uppercase col-span-full">{{ 'customer.account.details' | t }}</h1>
+
+  {% paginate customer.orders by 1 %}
+  {% comment %} order history {% endcomment %}
+  <div class="border border-current font-roboto">
+    <div class="border-b border-current p-3">
+      <h2 class="font-semibold">{{ 'customer.orders.title' | t }}</h2>
+      <p>Find all transactions below</p>
+    </div>
+    {% if customer.orders.size != 0 %}
+      <table class="w-full">
+        <thead>
+          <tr>
+            <th scope="col" class="text-start font-semibold p-3 pl-4">{{ 'customer.orders.order_number' | t }}</th>
+            <th scope="col" class="text-start font-semibold">{{ 'customer.orders.date' | t }}</th>
+            <th scope="col" class="text-start font-semibold">{{ 'customer.orders.total' | t }}</th>
+            <th scope="col" class="text-start font-semibold">{{ 'customer.orders.quantity' | t }}</th>
+            <th scope="col" class="text-start font-semibold p-3 pr-4">{{ 'customer.orders.fulfillment_status' | t }}</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for order in customer.orders %}
+            <tr class="border-t border-current">
+              <th data-label="{{ 'customer.orders.order_number' | t }}" scope="row" class="text-start font-semibold p-3 pl-4">
+                <a
+                  href="{{ order.customer_url }}"
+                  aria-label="{{ 'customer.orders.order_number_link' | t: number: order.name }}"
+                >
+                  {{- order.name -}}
+                </a>
+              </th>
+              <td data-label="{{ 'customer.orders.date' | t }}" class="text-start p-3">
+                {{ order.created_at | time_tag: format: 'date' }}
+              </td>
+              <td data-label="{{ 'customer.orders.total' | t }}" class="text-start p-3">
+                {{ order.total_price | money }}
+              </td>
+              <td data-label="{{ 'customer.orders.quantity' | t }}" class="text-start p-3">
+                {{ order.line_items.size }}
+              </td>
+              <td data-label="{{ 'customer.orders.fulfillment_status' | t }}" class="text-start p-3 pr-4">
+                {{ order.fulfillment_status_label }}
+              </td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    {% else %}
+      <p>{{ 'customer.orders.none' | t }}</p>
+    {% endif %}
   </div>
+  {% comment %} personal info {% endcomment %}
+  <div class="row-span-2">
+    <h2>Shipping & Payment</h2>
 
-  <div class="row">
-    <div class="col-12">
-      <h2>{{ 'customer.orders.title' | t }}</h2>
+    {{ customer.default_address | format_address }}
 
-      {% paginate customer.orders by 20 %}
-        {% if customer.orders.size != 0 %}
-
-          <table class="responsive-table">
-            <thead>
-              <tr>
-                <th scope="col">{{ 'customer.orders.order_number' | t }}</th>
-                <th scope="col">{{ 'customer.orders.date' | t }}</th>
-                <th scope="col">{{ 'customer.orders.payment_status' | t }}</th>
-                <th scope="col">{{ 'customer.orders.fulfillment_status' | t }}</th>
-                <th scope="col">{{ 'customer.orders.total' | t }}</th>
-              </tr>
-            </thead>
-            <tbody>
-              {% for order in customer.orders %}
-                <tr>
-                  <th data-label="{{ 'customer.orders.order_number' | t }}" scope="row">
-                    <a href="{{ order.customer_url }}" class="btn btn--secondary btn--small" aria-label="{{ 'customer.orders.order_number_link' | t: number: order.name }}">{{ order.name }}</a>
-                  </th>
-                  <td data-label="{{ 'customer.orders.date' | t }}">{{ order.created_at | time_tag: format: 'date' }}</td>
-                  <td data-label="{{ 'customer.orders.payment_status' | t }}">{{ order.financial_status_label }}</td>
-                  <td data-label="{{ 'customer.orders.fulfillment_status' | t }}">{{ order.fulfillment_status_label }}</td>
-                  <td data-label="{{ 'customer.orders.total' | t }}">{{ order.total_price | money }}</td>
-                </tr>
-              {% endfor %}
-            </tbody>
-          </table>
-
-        {% else %}
-
-          <p>{{ 'customer.orders.none' | t }}</p>
-
-        {% endif %}
-        {%- if paginate.pages > 1 -%}
-          {% include 'pagination', paginate: paginate %}
-        {%- endif -%}
-      {% endpaginate %}
-    </div>
-    <div class="col-12">
-      <h2>{{ 'customer.account.details' | t }}</h2>
-
-      {{ customer.default_address | format_address }}
-
-      <p><a href="{{ routes.account_addresses_url }}" class="btn btn--small">{{ 'customer.account.view_addresses' | t }} ({{ customer.addresses_count }})</a></p>
-    </div>
+    <p>
+      <a href="{{ routes.account_addresses_url }}" class="btn btn--small">
+        {{- 'customer.account.view_addresses' | t }} ({{ customer.addresses_count }})</a
+      >
+    </p>
   </div>
+  {% comment %} paginate navigation {% endcomment %}
+  <div class="flex justify-between items-start">
+    {% if customer.orders.size != 0 %}
+      {% if paginate.previous.is_link %}
+        <a class="p-2 border border-current" href="{{ paginate.previous.url }}">< Prev</a>
+      {% else %}
+        <span class="p-2 border border-current">< Prev</span>
+      {% endif %}
+      <span>
+        {% for part in paginate.parts %}
+          {% if part.is_link %}
+            <a class="p-2" href="{{ part.url }}">{{ part.title }}</a>
+          {% else %}
+            <span class="border border-current p-2">{{ part.title }}</span>
+          {% endif %}
+        {% endfor %}
+      </span>
+      {% if paginate.next.is_link %}
+        <a class="p-2 border border-current" href="{{ paginate.next.url }}">Next ></a>
+      {% else %}
+        <span class="p-2 border border-current">Next ></span>
+      {% endif %}
+    {% endif %}
+  </div>
+  {% endpaginate %}
 </div>
