@@ -70,10 +70,10 @@
         "cta_url": "shopify:\/\/collections\/all",
         "cta_color": "#262626",
         "cta_background_color": "#60cdcb",
-        "cta_font_size": "text-xl lg:text-2xl 2xl:text-3xl",
+        "cta_font_size": "lg:text-lg 2xl:text-xl",
         "cta_font_weight": "font-black",
-        "cta_vertical_padding": "py-3.5",
-        "cta_horizontal_padding": "px-8",
+        "cta_vertical_padding": "py-1",
+        "cta_horizontal_padding": "px-4",
         "text_vertical": "top-1\/2 -translate-y-1\/2",
         "text_horizontal": "left-1\/2 -translate-x-1\/2",
         "flex_alignment": "items-center"
@@ -203,6 +203,7 @@
           "type": "pane",
           "settings": {
             "collection": "bracelets",
+            "image": "shopify:\/\/shop_images\/holiday_7.png",
             "text": ""
           }
         },
@@ -210,7 +211,7 @@
           "type": "pane",
           "settings": {
             "collection": "jewelry",
-            "image": "shopify:\/\/shop_images\/holiday_5.png",
+            "image": "shopify:\/\/shop_images\/holiday_8.png",
             "text": ""
           }
         },
@@ -218,6 +219,7 @@
           "type": "pane",
           "settings": {
             "collection": "shoes",
+            "image": "shopify:\/\/shop_images\/holiday_7.png",
             "text": ""
           }
         },
@@ -331,7 +333,7 @@
         "60bb772e-f39d-49b6-98c8-fa66172cece4": {
           "type": "pane",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Website_Index_1.png",
+            "image": "shopify:\/\/shop_images\/holiday_4.png",
             "show_text": true,
             "text_vertical": "top-6 md:top-8 xl:top-12",
             "text_horizontal": "left-6 md:left-10 xl:left-14",
@@ -369,11 +371,55 @@
             "cta_font_size": "lg:text-lg 2xl:text-xl",
             "cta_font_weight": "font-black"
           }
+        },
+        "7ab96759-3259-4cf2-8397-9827ce8094ef": {
+          "type": "pane",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Website_Index_1.png",
+            "show_text": true,
+            "text_vertical": "top-4 md:top-6 xl:top-10",
+            "text_horizontal": "left-4 md:left-6 xl:left-10",
+            "flex_alignment": "items-start",
+            "text": "",
+            "text_color": "#ffffff",
+            "ubuntu_font": false,
+            "font_size": "lg:text-lg 2xl:text-xl",
+            "font_weight": "font-medium",
+            "cta_text": "",
+            "cta_url": "",
+            "cta_color": "#262626",
+            "cta_bg_color": "#ffffff",
+            "cta_font_size": "lg:text-lg 2xl:text-xl",
+            "cta_font_weight": "font-medium"
+          }
+        },
+        "5f1d47d3-1dc2-46e3-b924-b76199dffb61": {
+          "type": "pane",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/holiday_9.png",
+            "show_text": true,
+            "text_vertical": "top-4 md:top-6 xl:top-10",
+            "text_horizontal": "right-4 md:right-6 xl:right-10",
+            "flex_alignment": "items-start",
+            "text": "Bestsellers",
+            "text_color": "#ffffff",
+            "ubuntu_font": false,
+            "font_size": "text-2xl lg:text-3xl 2xl:text-4xl",
+            "font_weight": "font-black",
+            "cta_text": "shop now",
+            "cta_url": "",
+            "cta_color": "#ffffff",
+            "cta_bg_color": "#000000",
+            "cta_font_size": "lg:text-lg 2xl:text-xl",
+            "cta_font_weight": "font-bold"
+          }
         }
       },
       "block_order": [
         "60bb772e-f39d-49b6-98c8-fa66172cece4",
-        "60bb772e-f39d-49b6-98c8-fa66172cece5"
+        "60bb772e-f39d-49b6-98c8-fa66172cece5",
+        "7ab96759-3259-4cf2-8397-9827ce8094ef",
+        "5f1d47d3-1dc2-46e3-b924-b76199dffb61"
       ],
       "settings": {
       }
