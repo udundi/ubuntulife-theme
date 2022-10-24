@@ -241,7 +241,7 @@
       ],
       "settings": {
         "header": "SHOP BY CATEGORY",
-        "text": "Ubuntu Life is a global lifestyle brand out of Africa, based in Kenya. We’re empowering lives through each product made. Handmade bags, bracelets, and espadrilles, made by Moms in Kenya, connecting people around the world - from their hands to yours."
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
       }
     },
     "featured-carousel": {
@@ -276,59 +276,6 @@
     },
     "8c73d3ed-bb99-408a-b6fc-820ee7c571cd": {
       "type": "featured-grid",
-      "blocks": {
-        "b83a089a-451b-44a6-bab2-346370eb627d": {
-          "type": "product",
-          "settings": {
-            "product": "love-bracelet"
-          }
-        },
-        "73dcb3b1-c829-4834-858d-4bcb583eca47": {
-          "type": "product",
-          "settings": {
-            "product": "chain-link-bracelet"
-          }
-        },
-        "5d7438d2-49d3-4d46-be42-981e1e7fb772": {
-          "type": "product",
-          "settings": {
-            "product": "afridrilles-spring-blue-palms"
-          }
-        },
-        "694bc265-da04-4708-8f3d-e2c37439cefd": {
-          "type": "product",
-          "settings": {
-            "product": "amani-dog-collar"
-          }
-        },
-        "534fb7c9-c894-46a0-8323-e67a65bfb148": {
-          "type": "product",
-          "settings": {
-            "product": "in-this-together-bundle"
-          }
-        },
-        "da65eb0e-9059-425b-bcb2-2f68dd6db8e7": {
-          "type": "product",
-          "settings": {
-            "product": "on-the-go-bundle-black"
-          }
-        }
-      },
-      "block_order": [
-        "b83a089a-451b-44a6-bab2-346370eb627d",
-        "73dcb3b1-c829-4834-858d-4bcb583eca47",
-        "5d7438d2-49d3-4d46-be42-981e1e7fb772",
-        "694bc265-da04-4708-8f3d-e2c37439cefd",
-        "534fb7c9-c894-46a0-8323-e67a65bfb148",
-        "da65eb0e-9059-425b-bcb2-2f68dd6db8e7"
-      ],
-      "settings": {
-        "header": "RECOMMENDED",
-        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod"
-      }
-    },
-    "featured-grid": {
-      "type": "index-featured-grid",
       "blocks": {
         "60bb772e-f39d-49b6-98c8-fa66172cece4": {
           "type": "pane",
@@ -444,19 +391,19 @@
         "568df141-a68c-4d19-ba5a-b68f6b96ad59": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/6_19e2ba0a-3b41-479b-a1f5-14b8ce0a88e8.png"
+            "image": "shopify:\/\/shop_images\/Mask_group_1.png"
           }
         },
         "7e449952-bee5-4252-bd9a-d4c063096f58": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/8_f82c9ca6-7fef-4e84-9d88-71fb7fe4757a.png"
+            "image": "shopify:\/\/shop_images\/Rectangle.png"
           }
         },
         "4e84f2bf-d6ea-41f1-99cc-eac1c9d5c9eb": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/7_cd0b83fa-9844-447f-a846-0972a00e3302.png"
+            "image": "shopify:\/\/shop_images\/Mask_group.png"
           }
         }
       },
