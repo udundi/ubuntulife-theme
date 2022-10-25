@@ -76,7 +76,11 @@
       "settings": {
         "header_img": "shopify:\/\/shop_images\/contact-hero.png",
         "header": "GET IN TOUCH",
-        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "text": "",
+        "usa_addr_one": "",
+        "usa_addr_two": "",
+        "kenya_addr_one": "",
+        "kenya_addr_two": "",
         "faq_header": "FREQUENTLY ASKED QUESTIONS",
         "faq_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
       }
@@ -110,6 +114,7 @@
       ],
       "settings": {
         "header": "EMPOWERED EMPLOYMENT",
+        "text": "",
         "link_text": "LEARN ABOUT US",
         "link": "shopify:\/\/pages\/about"
       }
