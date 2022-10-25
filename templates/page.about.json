@@ -26,12 +26,21 @@
             "header": "THE AFRIDRILLE, AFRICA'S ESPADRILLE",
             "body": "In 2018, we launched the first fully-customizable espadrille shoe, designed in Austin and handmade in Kenya. Two years later, we launched the Lamu Mule, a suede slip-on that was selected as one of Oprah's Favorite Things 2020."
           }
+        },
+        "2f8a82db-a4fc-4590-9363-8dc300bf21f6": {
+          "type": "mission",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/9_900x_7c98675a-400c-416e-a160-520ccecee0c5.webp",
+            "header": "HANDMADE WITH LOVE FROM KENYA",
+            "body": "Today, our range of handmade products includes signature beaded bracelets and dog collars, handcrafted bags, handmade shoes, and a luxe collection of 18K gold-plated jewelry."
+          }
         }
       },
       "block_order": [
         "4a4af560-4d67-4089-b8fe-e464d46cd0bc",
         "07e52fbd-2915-46ad-8613-3df423e7c586",
-        "a0da51b0-d09d-4819-ab0c-99134f0b5df8"
+        "a0da51b0-d09d-4819-ab0c-99134f0b5df8",
+        "2f8a82db-a4fc-4590-9363-8dc300bf21f6"
       ],
       "settings": {
         "header_img_mobile": "shopify:\/\/shop_images\/about-hero-mobile.jpg",
