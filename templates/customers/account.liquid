@@ -4,7 +4,7 @@
       <h1 class="text-4xl font-bold font-avenir uppercase">{{ 'customer.account.details' | t }}</h1>
       <p class="text-lg">Enter your details to sign up for an account.</p>
     </div>
-    {% paginate customer.orders by 10 %}
+    {% paginate customer.orders by 5 %}
       {% comment %} order history {% endcomment %}
       <div class="border-t border-r border-l border-current">
         <div class="border-b border-current p-4">
