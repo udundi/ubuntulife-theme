@@ -301,7 +301,7 @@
         "60bb772e-f39d-49b6-98c8-fa66172cece5": {
           "type": "pane",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Website_Index_4.png",
+            "image": "shopify:\/\/shop_images\/Untitled_design_48.png",
             "show_text": true,
             "text_vertical": "top-6 md:top-8 xl:top-12",
             "text_horizontal": "right-4 md:right-6 xl:right-10",
@@ -344,7 +344,7 @@
           "type": "pane",
           "settings": {
             "image": "shopify:\/\/shop_images\/Website_Index_1.png",
-            "show_text": true,
+            "show_text": false,
             "text_vertical": "top-4 md:top-6 xl:top-10",
             "text_horizontal": "right-4 md:right-6 xl:right-10",
             "flex_alignment": "items-start",
