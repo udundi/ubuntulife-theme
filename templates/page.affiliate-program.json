@@ -12,7 +12,7 @@
     "benefit-header": {
       "type": "affiliate-benefit-header",
       "settings": {
-        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod     tempor incididunt ut labore et dolore magna aliqua."
+        "text": "You will get 10% commission on total referral sales when a customer makes a purchase through your affiliate link or use your coupon code. 3rd party coupon sites (Honey, RetailMeNot, etc) will not be accepted, your coupon code will be deactivated, and payouts will be denied."
       }
     },
     "carousel": {
@@ -57,11 +57,13 @@
       }
     },
     "form": {
-      "type": "affiliate-form"
+      "type": "affiliate-form",
+      "settings": {
+      }
     }
   },
   "order": [
-    "header", 
+    "header",
     "benefit-header",
     "carousel",
     "form"

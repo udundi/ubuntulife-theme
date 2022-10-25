@@ -646,7 +646,7 @@
         "type": "faq-header",
         "settings": {
           "header": "FREQUENTLY ASKED QUESTIONS",
-          "sub_header": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          "sub_header": ""
         }
       },
       "faq-contact": {
