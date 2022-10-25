@@ -1,114 +1,260 @@
-<div class="container mx-auto my-28 px-3 grid gap-5 grid-cols-[1fr_min-content] grid-rows-[auto_auto_1fr]">
-  {% comment %}
-     <div class="row">
-      <div class="col-12 text-center">
-        <h1>{{ 'customer.account.title' | t }}</h1>
-        {{ 'layout.customer.log_out' | t | customer_logout_link }}
-      </div>
+<div class="max-w-7xl mx-auto my-28 px-3">
+  <div class="grid gap-5 lg:grid-cols-[1fr_min-content] grid-rows-[auto_auto_1fr]">
+    <div class="mb-12 col-span-full">
+      <h1 class="text-4xl font-bold font-avenir uppercase">{{ 'customer.account.details' | t }}</h1>
+      <p class="text-lg">Enter your details to sign up for an account.</p>
     </div>
-  {% endcomment %}
-  <div class="mb-12 col-span-full">
-    <h1 class="text-4xl font-bold font-avenir uppercase">{{ 'customer.account.details' | t }}</h1>
-    <p class="text-lg">Enter your details to sign up for an account.</p>
-  </div>
-  {% paginate customer.orders by 2 %}
-  {% comment %} order history {% endcomment %}
-  <div class="border border-current">
-    <div class="border-b border-current p-3">
-      <h2 class="font-semibold">{{ 'customer.orders.title' | t }}</h2>
-      <p>Find all transactions below</p>
-    </div>
-    {% if customer.orders.size != 0 %}
-      <table class="w-full text-base">
-        <thead>
-          <tr>
-            <th scope="col" class="text-start font-semibold p-3 pl-4">{{ 'customer.orders.order_number' | t }}</th>
-            <th scope="col" class="text-start font-semibold p-3">{{ 'customer.orders.date' | t }}</th>
-            <th scope="col" class="text-start font-semibold p-3">{{ 'customer.orders.total' | t }}</th>
-            <th scope="col" class="text-start font-semibold p-3">{{ 'customer.orders.quantity' | t }}</th>
-            <th scope="col" class="text-start font-semibold p-3 pr-4">{{ 'customer.orders.fulfillment_status' | t }}</th>
-          </tr>
-        </thead>
-        <tbody>
-          {% for order in customer.orders %}
-            <tr class="border-t border-current">
-              <th data-label="{{ 'customer.orders.order_number' | t }}" scope="row" class="text-start font-semibold p-3 pl-4">
-                <a
-                  href="{{ order.customer_url }}"
-                  aria-label="{{ 'customer.orders.order_number_link' | t: number: order.name }}"
+    {% paginate customer.orders by 10 %}
+      {% comment %} order history {% endcomment %}
+      <div class="border-t border-r border-l border-current">
+        <div class="border-b border-current p-4">
+          <h2 id="orders-title" class="font-medium text-xl mb-2">{{ 'customer.orders.title' | t }}</h2>
+          <p class="text-lg">Find all transactions below</p>
+        </div>
+        {% if customer.orders.size != 0 %}
+          <div
+            role="table"
+            aria-labeledby="orders-title"
+            class="flex flex-col"
+          >
+            <div role="rowgroup" class="flex-[0_1_3.5em]">
+              <div
+                role="row"
+                class="border-b border-current px-4 py-3 grid grid-cols-[repeat(5,minmax(min-content,1fr))] items-center gap-3 h-full"
+              >
+                <span role="columnheader" class="text-start font-semibold">
+                  {{- 'customer.orders.order_number' | t -}}
+                </span>
+                <span role="columnheader" class="text-start font-semibold">{{ 'customer.orders.date' | t }}</span>
+                <span role="columnheader" class="text-start font-semibold">{{ 'customer.orders.total' | t }}</span>
+                <span role="columnheader" class="text-start font-semibold">{{ 'customer.orders.quantity' | t }}</span>
+                <span role="columnheader" class="text-start font-semibold">
+                  {{- 'customer.orders.fulfillment_status' | t -}}
+                </span>
+              </div>
+            </div>
+            {% for order in customer.orders %}
+              <div role="rowgroup" class="flex-[0_1_3.5em]">
+                <div
+                  role="row"
+                  class="border-b border-current px-4 py-3 grid grid-cols-[repeat(5,minmax(min-content,1fr))] items-center gap-3 min-h-[3.5em] cursor-pointer"
+                  data-expand-target="{{ order.order_number }}"
                 >
-                  {{- order.name -}}
-                </a>
-              </th>
-              <td data-label="{{ 'customer.orders.date' | t }}" class="text-start p-3">
-                {{ order.created_at | date: format: 'basic' }}
-              </td>
-              <td data-label="{{ 'customer.orders.total' | t }}" class="text-start p-3">
-                {{ order.total_price | money }}
-              </td>
-              <td data-label="{{ 'customer.orders.quantity' | t }}" class="text-start p-3">
-                {{ order.line_items.size }}
-              </td>
-              <td data-label="{{ 'customer.orders.fulfillment_status' | t }}" class="text-start text-sm p-3 pr-4">
-                <span class="inline-block px-2 py-1 bg-[#F4F4F4]">{{ order.fulfillment_status_label }}</span>
-              </td>
-            </tr>
-          {% endfor %}
-        </tbody>
-      </table>
-    {% else %}
-      <p>{{ 'customer.orders.none' | t }}</p>
-    {% endif %}
-  </div>
-  {% comment %} personal info {% endcomment %}
-  <div class="row-span-2 flex flex-col p-7 bg-[#F4F4F4] min-w-[32ch] text-lg">
-    <h2 class="min-w-max font-bold text-xl mb-2">Shipping & Payment</h2>
-    <p class="mb-4 pb-4 border-b border-current">Edit Details Below<p>
-    <h3 class="font-bold mb-3">My Addresses<h3>
-    <p class="mb-0">
-      {% if customer.default_address %}
-        <span class="text-[#F0613B]">Default</span>
-      {% else %}
-        {{ 'customer.addresses.empty' | t }}
-      {% endif %}
-    </p>
-    {{ customer.default_address | format_address }}
-    <p class="mt-1 mb-3">
-      <a class="text-[#F0613B] underline" href="{{ routes.account_addresses_url }}">{{ 'customer.addresses.edit' | t }}</a>
-    </p>
-    {% for address in customer.addresses %}
-      {% if address != customer.default_address %}
-        {{ address | format_address }}
-        <p class="mt-1 mb-3">
-          <a class="text-[#F0613B] underline" href="{{ routes.account_addresses_url }}">{{ 'customer.addresses.edit' | t }}</a>
-        </p>
-      {% endif %}
-    {% endfor %}
-    <h3 class="font-bold mb-3">My Payment Methods<h3>
-    <p class="text-base mt-4 pt-4 mb-2 border-t border-current">Have Questions About Your Account?</p>
-    <a class="text-base underline" href="mailto:info@ubuntulife.com">info@ubuntulife.com</a>
-  </div>
-  {% comment %} paginate navigation {% endcomment %}
-  <div class="flex items-stretch h-[min-content]">
-    {% if customer.orders.size != 0 %}
-      {% if paginate.previous.is_link %}
-        <a class="grid place-content-center px-2 mr-auto border border-current" href="{{ paginate.previous.url }}">< Prev</a>
-      {% elsif paginate.parts.size > 0 %}
-        <span class="grid place-content-center px-2 mr-auto border border-current">< Prev</span>
-      {% endif %}
-      {% for part in paginate.parts %}
-        {% if part.is_link %}
-          <a class="grid place-content-center h-[2.4em] [aspect-ratio:1]" href="{{ part.url }}">{{ part.title }}</a>
+                  <span role="cell" class="text-start font-normal">
+                    {{ order.order_number }}
+                  </span>
+                  <span role="cell" class="text-start">
+                    {{ order.created_at | date: format: 'basic' }}
+                  </span>
+                  <span role="cell" class="text-start">
+                    {{ order.total_price | money }}
+                  </span>
+                  <span role="cell" class="text-start">
+                    {{ order.line_items.size }}
+                  </span>
+                  <span role="cell" class="text-start text-sm flex justify-between items-center">
+                    <span class="inline-block px-2 py-1 mr-1 bg-[#F4F4F4]">{{ order.fulfillment_status_label }}</span>
+                    <span class="transition-transform" aria-hidden="true" data-chevron-icon>
+                      {% render 'chevron-icon' %}
+                    </span>
+                  </span>
+                </div>
+                <div
+                  class="transition-[height] h-0 overflow-hidden"
+                  aria-expanded="false"
+                  data-expand="{{ order.order_number }}"
+                >
+                  {% for line_item in order.line_items %}
+                    <div
+                      role="row"
+                      class="grid grid-cols-[repeat(5,minmax(min-content,1fr))] px-4 py-2 items-center gap-3 bg-[#F4F4F4] border-b border-[#7A7A7A] text-sm"
+                    >
+                      <div role="cell" class="flex items-center gap-1 md:gap-2 lg:gap-3 xl:gap-4 col-span-2">
+                        <img
+                          src="{{ line_item.image | image_url: width: 100, height: 100 }}"
+                          class="rounded-full"
+                          width="50"
+                          height="50"
+                          loading="lazy"
+                          alt="{{ line_item.image.alt }}"
+                        >
+                        <p class="overflow-x-hidden text-ellipsis">
+                          <span class="font-medium">{{ line_item.product.title }}</span>
+                          <br>
+                          <span class="text-[#7A7A7A]">{{ line_item.variant.title }}</span>
+                        </p>
+                      </div>
+                      <span role="cell">
+                        Price:
+                        <span class="font-medium">{{ line_item.final_line_price | money }}</span>
+                      </span>
+                      <span role="cell">QTY: {{ line_item.quantity }}</span>
+                    </div>
+                  {% endfor %}
+                  <div
+                    role="row"
+                    class="grid grid-cols-[repeat(5,minmax(min-content,1fr))] grid-rows-3 gap-x-3 p-4 bg-[#F4F4F4] border-b border-current"
+                  >
+                    <span class="col-start-3 text-[#7A7A7A] flex items-end">Discount:</span>
+                    <span class="col-start-4 flex items-end">{{ order.total_discounts | money }}</span>
+                    <span class="col-start-3 text-[#7A7A7A] flex items-end">Shipping:</span>
+                    <span class="col-start-4 flex items-end">{{ order.shipping_price | money }}</span>
+                    <span class="col-start-3 text-[#7A7A7A] flex items-end">Subtotal:</span>
+                    <span class="col-start-4 flex items-end">{{ order.subtotal_price | money }}</span>
+                    <span class="col-start-5 flex gap-3 items-end">
+                      <span>Total:</span><span class="text-xl font-bold">{{ order.total_price | money }}</span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            {% endfor %}
+          </div>
+
+          {% comment %}
+             <table class="w-full text-base hidden">
+              <thead>
+                <tr>
+                  <th scope="col" class="text-start font-semibold p-3 pl-4">{{ 'customer.orders.order_number' | t }}</th>
+                  <th scope="col" class="text-start font-semibold p-3">{{ 'customer.orders.date' | t }}</th>
+                  <th scope="col" class="text-start font-semibold p-3">{{ 'customer.orders.total' | t }}</th>
+                  <th scope="col" class="text-start font-semibold p-3">{{ 'customer.orders.quantity' | t }}</th>
+                  <th scope="col" class="text-start font-semibold p-3 pr-4">{{ 'customer.orders.fulfillment_status' | t }}</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for order in customer.orders %}
+                  <tr class="border-t border-current">
+                    <th data-label="{{ 'customer.orders.order_number' | t }}" scope="row" class="text-start font-normal p-3 pl-4">
+                      <a
+                        href="{{ order.customer_url }}"
+                        aria-label="{{ 'customer.orders.order_number_link' | t: number: order.name }}"
+                      >
+                        {{- order.name -}}
+                      </a>
+                    </th>
+                    <td data-label="{{ 'customer.orders.date' | t }}" class="text-start p-3">
+                      {{ order.created_at | date: format: 'basic' }}
+                    </td>
+                    <td data-label="{{ 'customer.orders.total' | t }}" class="text-start p-3">
+                      {{ order.total_price | money }}
+                    </td>
+                    <td data-label="{{ 'customer.orders.quantity' | t }}" class="text-start p-3">
+                      {{ order.line_items.size }}
+                    </td>
+                    <td data-label="{{ 'customer.orders.fulfillment_status' | t }}" class="text-start text-sm p-3 pr-4">
+                      <span class="inline-block px-2 py-1 bg-[#F4F4F4]">{{ order.fulfillment_status_label }}</span>
+                    </td>
+                  </tr>
+                  {% for line_item in order.line_items %}
+                  <tr class="aria-hidden:h-0" aria-hidden="true">
+                      <td>{{ line_item.image | image_url: width: 100, height: 100 | image_tag }}</td>
+                  </tr>
+                  {% endfor %}
+                {% endfor %}
+              </tbody>
+            </table>
+          {% endcomment %}
         {% else %}
-          <span class="grid place-content-center border border-current h-[2.2em] [aspect-ratio:1]">{{ part.title }}</span>
+          <p>{{ 'customer.orders.none' | t }}</p>
         {% endif %}
-      {% endfor %}
-      {% if paginate.next.is_link %}
-        <a class="grid place-content-center px-2 ml-auto border border-current" href="{{ paginate.next.url }}">Next ></a>
-      {% elsif paginate.parts.size > 0 %}
-        <span class="grid place-content-center px-2 ml-auto border border-current">Next ></span>
-      {% endif %}
-    {% endif %}
+      </div>
+      {% comment %} paginate navigation {% endcomment %}
+      <div class="flex items-stretch h-[min-content] lg:order-last">
+        {% if customer.orders.size != 0 %}
+          {% if paginate.previous.is_link %}
+            <a class="flex items-center gap-3 px-4 mr-auto border border-current" href="{{ paginate.previous.url }}">
+              <span class="rotate-90">{% render 'chevron-icon' %}</span>
+              <span>Prev</span>
+            </a>
+          {% elsif paginate.parts.size > 0 %}
+            <span class="flex items-center gap-3 px-4 mr-auto border border-current">
+              <span class="rotate-90">{% render 'chevron-icon' %}</span>
+              <span>Prev</span>
+            </span>
+          {% endif %}
+          {% for part in paginate.parts %}
+            {% if part.is_link %}
+              <a class="grid place-content-center h-[2.4em] [aspect-ratio:1]" href="{{ part.url }}">{{ part.title }}</a>
+            {% else %}
+              <span class="grid place-content-center border border-current h-[2.2em] [aspect-ratio:1]">
+                {{- part.title -}}
+              </span>
+            {% endif %}
+          {% endfor %}
+          {% if paginate.next.is_link %}
+            <a class="flex items-center gap-3 px-4 ml-auto border border-current" href="{{ paginate.next.url }}">
+              <span>Next</span>
+              <span class="-rotate-90">{% render 'chevron-icon' %}</span>
+            </a>
+          {% elsif paginate.parts.size > 0 %}
+            <span class="flex items-center gap-3 px-4 ml-auto border border-current">
+              <span>Next</span>
+              <span class="-rotate-90">{% render 'chevron-icon' %}</span>
+            </span>
+          {% endif %}
+        {% endif %}
+      </div>
+      {% comment %} personal info {% endcomment %}
+      <div class="row-span-2 flex flex-col p-7 bg-[#F4F4F4] min-w-[32ch] text-lg">
+        <h2 class="min-w-max font-bold text-xl mb-2">Shipping & Payment</h2>
+        <p class="mb-4 pb-4 border-b border-current">Edit Details Below</p>
+        <h3 class="font-bold mb-3">My Addresses</h3>
+        <p class="mb-0">
+          {% if customer.default_address %}
+            <span class="text-[#F0613B]">Default</span>
+          {% else %}
+            {{ 'customer.addresses.empty' | t }}
+          {% endif %}
+        </p>
+        {{ customer.default_address | format_address }}
+        <p class="mt-1 mb-3">
+          <a class="text-[#F0613B] underline" href="{{ routes.account_addresses_url }}">
+            {{- 'customer.addresses.edit' | t -}}
+          </a>
+        </p>
+        {% for address in customer.addresses %}
+          {% if address != customer.default_address %}
+            {{ address | format_address }}
+            <p class="mt-1 mb-3">
+              <a class="text-[#F0613B] underline" href="{{ routes.account_addresses_url }}">
+                {{- 'customer.addresses.edit' | t -}}
+              </a>
+            </p>
+          {% endif %}
+        {% endfor %}
+        {% comment %} <h3 class="font-bold mb-3">My Payment Methods<h3> {% endcomment %}
+        <p class="text-base mt-auto pt-4 mb-2 border-t border-current">Have Questions About Your Account?</p>
+        <a class="text-base underline" href="mailto:info@ubuntulife.com">info@ubuntulife.com</a>
+      </div>
+    {% endpaginate %}
   </div>
-  {% endpaginate %}
 </div>
+
+<script type="module">
+  document.querySelectorAll('[data-expand-target]').forEach((rowEl) => {
+    const selector = `[data-expand='${rowEl.dataset.expandTarget}']`;
+    const chevronIcon = rowEl.querySelector('[data-chevron-icon]');
+    const expandEl = document.querySelector(selector);
+    rowEl.addEventListener('click', () => {
+      if (expandEl.getAttribute('aria-expanded') === 'true') {
+        expandEl.setAttribute('aria-expanded', 'false');
+        expandEl.style.height = '0';
+        chevronIcon.classList.remove('rotate-180');
+      } else {
+        chevronIcon.classList.add('rotate-180');
+        expandEl.setAttribute('aria-expanded', 'true');
+        expandEl.style.height = `${expandEl.scrollHeight}px`;
+        document.querySelectorAll('[data-expand-target]').forEach((el) => {
+          if (el !== rowEl) {
+            const selector = `[data-expand='${el.dataset.expandTarget}']`;
+            const chevronIcon = el.querySelector('[data-chevron-icon]');
+            const expandEl = document.querySelector(selector);
+            expandEl.setAttribute('aria-expanded', 'false');
+            expandEl.style.height = '0';
+            chevronIcon.classList.remove('rotate-180');
+          }
+        });
+      }
+    });
+  });
+</script>
