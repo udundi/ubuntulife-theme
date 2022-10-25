@@ -7,8 +7,10 @@
       </div>
     </div>
   {% endcomment %}
-  <h1 class="text-4xl mb-12 font-bold font-avenir uppercase col-span-full">{{ 'customer.account.details' | t }}</h1>
-
+  <div class="mb-12 col-span-full">
+    <h1 class="text-4xl font-bold font-avenir uppercase">{{ 'customer.account.details' | t }}</h1>
+    <p class="text-lg">Enter your details to sign up for an account.</p>
+  </div>
   {% paginate customer.orders by 2 %}
   {% comment %} order history {% endcomment %}
   <div class="border border-current">
@@ -17,7 +19,7 @@
       <p>Find all transactions below</p>
     </div>
     {% if customer.orders.size != 0 %}
-      <table class="w-full">
+      <table class="w-full text-base">
         <thead>
           <tr>
             <th scope="col" class="text-start font-semibold p-3 pl-4">{{ 'customer.orders.order_number' | t }}</th>
@@ -39,7 +41,7 @@
                 </a>
               </th>
               <td data-label="{{ 'customer.orders.date' | t }}" class="text-start p-3">
-                {{ order.created_at | time_tag: format: 'date' }}
+                {{ order.created_at | date: format: 'basic' }}
               </td>
               <td data-label="{{ 'customer.orders.total' | t }}" class="text-start p-3">
                 {{ order.total_price | money }}
@@ -47,8 +49,8 @@
               <td data-label="{{ 'customer.orders.quantity' | t }}" class="text-start p-3">
                 {{ order.line_items.size }}
               </td>
-              <td data-label="{{ 'customer.orders.fulfillment_status' | t }}" class="text-start p-3 pr-4">
-                {{ order.fulfillment_status_label }}
+              <td data-label="{{ 'customer.orders.fulfillment_status' | t }}" class="text-start text-sm p-3 pr-4">
+                <span class="inline-block px-2 py-1 bg-[#F4F4F4]">{{ order.fulfillment_status_label }}</span>
               </td>
             </tr>
           {% endfor %}
