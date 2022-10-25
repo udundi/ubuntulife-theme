@@ -86,7 +86,7 @@
         "77e6cdc4-c181-4097-a58a-12e82694e093": {
           "type": "pane",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Website_Check.jpg",
+            "image": "shopify:\/\/shop_images\/3_d556ee09-f778-4f22-aaa5-09944af2dc37.png",
             "url": "",
             "show_text": true,
             "text_vertical": "bottom-2 md:bottom-4 xl:bottom-8",
@@ -108,7 +108,7 @@
         "982cc7a3-862f-412f-bfed-99b48a0db671": {
           "type": "pane",
           "settings": {
-            "image": "shopify:\/\/shop_images\/green_2.png",
+            "image": "shopify:\/\/shop_images\/4_e8c20dea-77be-4319-9567-97eaccb4d0ee.png",
             "url": "https:\/\/www.ubuntu.life\/collections\/new-arrivals",
             "show_text": false,
             "text_vertical": "top-2 md:top-4 xl:top-8",
@@ -130,7 +130,7 @@
         "fc37d08e-985f-46c3-a7f1-2b114a16e733": {
           "type": "pane",
           "settings": {
-            "image": "shopify:\/\/shop_images\/UBUNTU_11.19.204431.jpg",
+            "image": "shopify:\/\/shop_images\/panes_3.png",
             "url": "#",
             "show_text": false,
             "text_vertical": "top-2 md:top-4 xl:top-8",
