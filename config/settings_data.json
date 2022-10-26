@@ -646,7 +646,7 @@
         "type": "faq-header",
         "settings": {
           "header": "FREQUENTLY ASKED QUESTIONS",
-          "sub_header": ""
+          "sub_header": "Discover the answers to all your questions about Ubuntu Life shipping, returns, and so much more."
         }
       },
       "faq-contact": {
@@ -707,6 +707,11 @@
         "type": "register-image",
         "settings": {
           "image": "shopify:\/\/shop_images\/portrait788.png"
+        }
+      },
+      "list-collections-template": {
+        "type": "list-collections-template",
+        "settings": {
         }
       }
     },

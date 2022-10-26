@@ -11,6 +11,7 @@
     },
     "benefit-header": {
       "type": "affiliate-benefit-header",
+      "disabled": true,
       "settings": {
         "text": "You will get 10% commission on total referral sales when a customer makes a purchase through your affiliate link or use your coupon code. 3rd party coupon sites (Honey, RetailMeNot, etc) will not be accepted, your coupon code will be deactivated, and payouts will be denied."
       }
