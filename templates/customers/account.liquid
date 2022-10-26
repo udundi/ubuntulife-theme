@@ -1,8 +1,8 @@
 <div class="max-w-7xl mx-auto my-28 px-3">
   <div class="grid gap-5 lg:grid-cols-[1fr_min-content] grid-rows-[auto_auto_1fr]">
     <div class="mb-12 col-span-full">
-      <h1 class="text-4xl font-bold font-avenir uppercase">{{ 'customer.account.details' | t }}</h1>
-      <p class="text-lg">Enter your details to sign up for an account.</p>
+      <h1 class="text-4xl font-bold uppercase">{{ 'customer.account.details' | t }}</h1>
+      <p class="text-lg">Your account order history, and shipping addresses.</p>
     </div>
     {% paginate customer.orders by 5 %}
       {% comment %} order history {% endcomment %}
@@ -53,7 +53,7 @@
                     {{ order.line_items.size }}
                   </span>
                   <span role="cell" class="text-start text-sm flex justify-between items-center">
-                    <span class="inline-block px-2 py-1 mr-1 bg-[#F4F4F4]">{{ order.fulfillment_status_label }}</span>
+                    <span class="inline-block px-2 py-1 mr-1 bg-neutral-100">{{ order.fulfillment_status_label }}</span>
                     <span class="transition-transform" aria-hidden="true" data-chevron-icon>
                       {% render 'chevron-icon' %}
                     </span>
@@ -67,7 +67,7 @@
                   {% for line_item in order.line_items %}
                     <div
                       role="row"
-                      class="grid grid-cols-[repeat(5,minmax(min-content,1fr))] px-4 py-2 items-center gap-3 bg-[#F4F4F4] border-b border-[#7A7A7A] text-sm"
+                      class="grid grid-cols-[repeat(5,minmax(min-content,1fr))] px-4 py-2 items-center gap-3 bg-neutral-100 border-b border-neutral-500 text-sm"
                     >
                       <div role="cell" class="flex items-center gap-1 md:gap-2 lg:gap-3 xl:gap-4 col-span-2">
                         <img
@@ -81,7 +81,7 @@
                         <p class="overflow-x-hidden text-ellipsis">
                           <span class="font-medium">{{ line_item.product.title }}</span>
                           <br>
-                          <span class="text-[#7A7A7A]">{{ line_item.variant.title }}</span>
+                          <span class="text-neutral-500">{{ line_item.variant.title }}</span>
                         </p>
                       </div>
                       <span role="cell">
@@ -93,13 +93,13 @@
                   {% endfor %}
                   <div
                     role="row"
-                    class="grid grid-cols-[repeat(5,minmax(min-content,1fr))] grid-rows-3 gap-x-3 p-4 bg-[#F4F4F4] border-b border-current"
+                    class="grid grid-cols-[repeat(5,minmax(min-content,1fr))] grid-rows-3 gap-x-3 p-4 bg-neutral-100 border-b border-current"
                   >
-                    <span class="col-start-3 text-[#7A7A7A] flex items-end">Discount:</span>
+                    <span class="col-start-3 text-neutral-500 flex items-end">Discount:</span>
                     <span class="col-start-4 flex items-end">{{ order.total_discounts | money }}</span>
-                    <span class="col-start-3 text-[#7A7A7A] flex items-end">Shipping:</span>
+                    <span class="col-start-3 text-neutral-500 flex items-end">Shipping:</span>
                     <span class="col-start-4 flex items-end">{{ order.shipping_price | money }}</span>
-                    <span class="col-start-3 text-[#7A7A7A] flex items-end">Subtotal:</span>
+                    <span class="col-start-3 text-neutral-500 flex items-end">Subtotal:</span>
                     <span class="col-start-4 flex items-end">{{ order.subtotal_price | money }}</span>
                     <span class="col-start-5 flex gap-3 items-end">
                       <span>Total:</span><span class="text-xl font-bold">{{ order.total_price | money }}</span>
@@ -109,57 +109,12 @@
               </div>
             {% endfor %}
           </div>
-
-          {% comment %}
-             <table class="w-full text-base hidden">
-              <thead>
-                <tr>
-                  <th scope="col" class="text-start font-semibold p-3 pl-4">{{ 'customer.orders.order_number' | t }}</th>
-                  <th scope="col" class="text-start font-semibold p-3">{{ 'customer.orders.date' | t }}</th>
-                  <th scope="col" class="text-start font-semibold p-3">{{ 'customer.orders.total' | t }}</th>
-                  <th scope="col" class="text-start font-semibold p-3">{{ 'customer.orders.quantity' | t }}</th>
-                  <th scope="col" class="text-start font-semibold p-3 pr-4">{{ 'customer.orders.fulfillment_status' | t }}</th>
-                </tr>
-              </thead>
-              <tbody>
-                {% for order in customer.orders %}
-                  <tr class="border-t border-current">
-                    <th data-label="{{ 'customer.orders.order_number' | t }}" scope="row" class="text-start font-normal p-3 pl-4">
-                      <a
-                        href="{{ order.customer_url }}"
-                        aria-label="{{ 'customer.orders.order_number_link' | t: number: order.name }}"
-                      >
-                        {{- order.name -}}
-                      </a>
-                    </th>
-                    <td data-label="{{ 'customer.orders.date' | t }}" class="text-start p-3">
-                      {{ order.created_at | date: format: 'basic' }}
-                    </td>
-                    <td data-label="{{ 'customer.orders.total' | t }}" class="text-start p-3">
-                      {{ order.total_price | money }}
-                    </td>
-                    <td data-label="{{ 'customer.orders.quantity' | t }}" class="text-start p-3">
-                      {{ order.line_items.size }}
-                    </td>
-                    <td data-label="{{ 'customer.orders.fulfillment_status' | t }}" class="text-start text-sm p-3 pr-4">
-                      <span class="inline-block px-2 py-1 bg-[#F4F4F4]">{{ order.fulfillment_status_label }}</span>
-                    </td>
-                  </tr>
-                  {% for line_item in order.line_items %}
-                  <tr class="aria-hidden:h-0" aria-hidden="true">
-                      <td>{{ line_item.image | image_url: width: 100, height: 100 | image_tag }}</td>
-                  </tr>
-                  {% endfor %}
-                {% endfor %}
-              </tbody>
-            </table>
-          {% endcomment %}
         {% else %}
           <p>{{ 'customer.orders.none' | t }}</p>
         {% endif %}
       </div>
       {% comment %} paginate navigation {% endcomment %}
-      <div class="flex items-stretch h-[min-content] lg:order-last">
+      <div class="flex items-stretch h-min lg:order-last">
         {% if customer.orders.size != 0 %}
           {% if paginate.previous.is_link %}
             <a class="flex items-center gap-3 px-4 mr-auto border border-current" href="{{ paginate.previous.url }}">
@@ -174,9 +129,9 @@
           {% endif %}
           {% for part in paginate.parts %}
             {% if part.is_link %}
-              <a class="grid place-content-center h-[2.4em] [aspect-ratio:1]" href="{{ part.url }}">{{ part.title }}</a>
+              <a class="grid place-content-center h-[2.4em] aspect-square" href="{{ part.url }}">{{ part.title }}</a>
             {% else %}
-              <span class="grid place-content-center border border-current h-[2.2em] [aspect-ratio:1]">
+              <span class="grid place-content-center border border-current h-[2.2em] aspect-square">
                 {{- part.title -}}
               </span>
             {% endif %}
@@ -195,20 +150,20 @@
         {% endif %}
       </div>
       {% comment %} personal info {% endcomment %}
-      <div class="row-span-2 flex flex-col p-7 bg-[#F4F4F4] min-w-[32ch] text-lg">
-        <h2 class="min-w-max font-bold text-xl mb-2">Shipping & Payment</h2>
+      <div class="row-span-2 flex flex-col p-7 bg-neutral-100 min-w-[32ch] text-lg">
+        <h2 class="min-w-max font-bold text-xl mb-2">Shipping</h2>
         <p class="mb-4 pb-4 border-b border-current">Edit Details Below</p>
         <h3 class="font-bold mb-3">My Addresses</h3>
         <p class="mb-0">
           {% if customer.default_address %}
-            <span class="text-[#F0613B]">Default</span>
+            <span class="text-candy-400">Default</span>
           {% else %}
             {{ 'customer.addresses.empty' | t }}
           {% endif %}
         </p>
         {{ customer.default_address | format_address }}
         <p class="mt-1 mb-3">
-          <a class="text-[#F0613B] underline" href="{{ routes.account_addresses_url }}">
+          <a class="text-candy-400 underline" href="{{ routes.account_addresses_url }}">
             {{- 'customer.addresses.edit' | t -}}
           </a>
         </p>
@@ -216,15 +171,14 @@
           {% if address != customer.default_address %}
             {{ address | format_address }}
             <p class="mt-1 mb-3">
-              <a class="text-[#F0613B] underline" href="{{ routes.account_addresses_url }}">
+              <a class="text-candy-400 underline" href="{{ routes.account_addresses_url }}">
                 {{- 'customer.addresses.edit' | t -}}
               </a>
             </p>
           {% endif %}
         {% endfor %}
-        {% comment %} <h3 class="font-bold mb-3">My Payment Methods<h3> {% endcomment %}
         <p class="text-base mt-auto pt-4 mb-2 border-t border-current">Have Questions About Your Account?</p>
-        <a class="text-base underline" href="mailto:info@ubuntulife.com">info@ubuntulife.com</a>
+        <a class="text-base underline" href="mailto:helpme@ubuntulife.com">helpme@ubuntulife.com</a>
       </div>
     {% endpaginate %}
   </div>
