@@ -105,7 +105,7 @@
             :alt="value">
         </label>
       </div>
-      <div class="mt-5 flex flex-col">
+      <div v-else-if="!option.name.toLowerCase().includes('title')" class="mt-5 flex flex-col">
         <span class="flex justify-between">
           <p class="font-medium uppercase">{ option.name }</p>
           <div class="best-fit-size-chart"></div>
