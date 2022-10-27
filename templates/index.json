@@ -374,7 +374,7 @@
       "type": "full-photo",
       "settings": {
         "image": "shopify:\/\/shop_images\/Untitled_design_50.png",
-        "url": "shopify:\/\/pages\/about",
+        "url": "https:\/\/www.ubuntu.life\/search?type=product&q=black",
         "text": "Back to Classics.",
         "text_color": "#000000",
         "text_vertical": "bottom-4 md:bottom-8 xl:bottom-10",
