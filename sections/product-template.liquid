@@ -128,6 +128,15 @@
           </svg>
         </div>
       </div>
+      <div v-else class="hidden">
+        <select v-model="options[option.name]">
+          <option 
+            v-for="(value, index) in option.values" 
+            :checked="options[option.name] == value" 
+            :value="value"
+            >{ value }</option>
+        </select>
+      </div>
     </div>
     <div class="flex mt-4 mb-9">
       <div class="border border-black px-2 flex items-center w-1/3">
