@@ -151,9 +151,8 @@
         },
         "2eb55731-324a-4062-8968-026040cd16d7": {
           "type": "pane",
-          "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/UBUNTU_11.19.204431.jpg",
+            "image": "shopify:\/\/shop_images\/panes_4.png",
             "url": "#",
             "show_text": true,
             "text_vertical": "top-2 md:top-4 xl:top-8",
