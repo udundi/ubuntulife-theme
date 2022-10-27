@@ -44,7 +44,7 @@
                     <path d="M0.625 5H9.375M5 0.625V9.375V0.625Z" stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
                   </svg>
                 </span>
-                <p class="ml-auto font-medium lg:text-lg">{ formatMoney(item.original_price) }</p>
+                <p class="ml-auto font-medium lg:text-lg">{ formatMoney(item.original_price * item.quantity) }</p>
               </div>
             </div>
           </div>
@@ -164,7 +164,6 @@
   });
 
   $(document).on("cart.requestComplete", (event, cart) => {
-    console.log(cart)
 	  udCart.updateCart(cart);
   });
 
