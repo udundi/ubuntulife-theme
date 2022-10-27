@@ -111,18 +111,18 @@
             "image": "shopify:\/\/shop_images\/panes_6.png",
             "url": "https:\/\/www.ubuntu.life\/collections\/new-arrivals",
             "show_text": true,
-            "text_vertical": "top-2 md:top-4 xl:top-8",
+            "text_vertical": "bottom-2 md:bottom-4 xl:bottom-8",
             "text_horizontal": "left-2 md:left-4 xl:left-8",
             "flex_alignment": "items-start",
             "text": "",
             "text_color": "#ffffff",
-            "ubuntu_font": false,
+            "ubuntu_font": true,
             "font_size": "lg:text-lg 2xl:text-xl",
             "font_weight": "font-medium",
-            "cta_text": "SHOP NOW",
+            "cta_text": "shop now",
             "cta_url": "",
-            "cta_color": "#ffffff",
-            "cta_bg_color": "#000000",
+            "cta_color": "#000000",
+            "cta_bg_color": "#ffffff",
             "cta_font_size": "lg:text-lg 2xl:text-xl",
             "cta_font_weight": "font-medium"
           }
@@ -130,7 +130,7 @@
         "fc37d08e-985f-46c3-a7f1-2b114a16e733": {
           "type": "pane",
           "settings": {
-            "image": "shopify:\/\/shop_images\/panes_3.png",
+            "image": "shopify:\/\/shop_images\/mule.jpg",
             "url": "#",
             "show_text": false,
             "text_vertical": "top-2 md:top-4 xl:top-8",
