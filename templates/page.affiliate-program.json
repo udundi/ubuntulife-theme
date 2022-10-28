@@ -18,6 +18,7 @@
     },
     "carousel": {
       "type": "affiliate-carousel",
+      "disabled": true,
       "blocks": {
         "859dc9ef-ee00-4675-b18f-fda956ab5e99": {
           "type": "slide",
