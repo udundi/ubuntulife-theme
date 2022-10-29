@@ -577,16 +577,16 @@
             "type": "faq",
             "settings": {
               "faqid": "shipping-returns",
-              "question": "",
-              "answer": ""
+              "question": "How can I track my order?",
+              "answer": "Refer back to your shipping confirmation email to track your package. If you did not receive a confirmation email with the tracking number, please contact our customer service so we can help you."
             }
           },
           "c42d118c-035e-4028-b1bd-f46fde247977": {
             "type": "faq",
             "settings": {
               "faqid": "shipping-returns",
-              "question": "",
-              "answer": ""
+              "question": "What is the shipping and return policy?",
+              "answer": "To view our shipping and return policies <a href=\"\/pages\/shipping-and-returns\">click here.<\/a>"
             }
           },
           "b05a8a1c-68f3-424e-a24a-27c4f1898cc3": {
