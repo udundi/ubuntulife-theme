@@ -593,8 +593,8 @@
             "type": "faq",
             "settings": {
               "faqid": "shipping-returns",
-              "question": "",
-              "answer": ""
+              "question": "When will I receive my refund",
+              "answer": "Once your return is received and inspected, we will send you an email to notify you of the approval of your refund. If you are approved, then your refund will be processed, and a credit will automatically be applied to your credit card or original method of payment, within 14 days."
             }
           },
           "3dfec28e-adbe-48c3-9237-7fe967635a9a": {
