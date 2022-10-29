@@ -557,6 +557,46 @@
               "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut fringilla dolor. Duis tempus tellus ut velit vehicula aliquet."
             }
           },
+          "3a98143e-15f1-41ee-b1cf-6609087ebe8e": {
+            "type": "faq",
+            "settings": {
+              "faqid": "shipping-returns",
+              "question": "When will my order ship out?",
+              "answer": "We do our best to process and ship your Afridrilles as fast as we can, usually 2-3 working days processing time. During holidays, this can be slightly extended. If you placed your order during the weekend or on a holiday, we'll start processing your order on the following business day. You should receive a shipping confirmation email with tracking as soon as your order ships out."
+            }
+          },
+          "479fcf38-5604-48d1-a62d-3ed11bda9aa6": {
+            "type": "faq",
+            "settings": {
+              "faqid": "shipping-returns",
+              "question": "When will I receive my order?",
+              "answer": "All orders ship out of our warehouse in Austin, Tx. We do our best to process and ship your order as fast as possible, usually 2-3 working days processing time. During holidays this can be slightly extended.\n\nIf your order has been placed during the weekend or on a holiday, we'll start processing your order on the following working day.\n\nUbuntu Life cannot be responsible for unanticipated delays."
+            }
+          },
+          "c5b823ee-54e0-4268-8f25-f5d8eee1d946": {
+            "type": "faq",
+            "settings": {
+              "faqid": "shipping-returns",
+              "question": "",
+              "answer": ""
+            }
+          },
+          "c42d118c-035e-4028-b1bd-f46fde247977": {
+            "type": "faq",
+            "settings": {
+              "faqid": "shipping-returns",
+              "question": "",
+              "answer": ""
+            }
+          },
+          "b05a8a1c-68f3-424e-a24a-27c4f1898cc3": {
+            "type": "faq",
+            "settings": {
+              "faqid": "shipping-returns",
+              "question": "",
+              "answer": ""
+            }
+          },
           "3dfec28e-adbe-48c3-9237-7fe967635a9a": {
             "type": "info",
             "settings": {
@@ -586,6 +626,11 @@
           "3d3c2f0d-e3df-4280-9fd5-bd23febe1ba4",
           "bb33e958-1ea4-4b8a-856b-f989d042b57c",
           "43fea299-25a5-49c3-ac22-1b9b45bea10b",
+          "3a98143e-15f1-41ee-b1cf-6609087ebe8e",
+          "479fcf38-5604-48d1-a62d-3ed11bda9aa6",
+          "c5b823ee-54e0-4268-8f25-f5d8eee1d946",
+          "c42d118c-035e-4028-b1bd-f46fde247977",
+          "b05a8a1c-68f3-424e-a24a-27c4f1898cc3",
           "3dfec28e-adbe-48c3-9237-7fe967635a9a",
           "57a106aa-8f76-4784-a391-b01a49c7a856"
         ],
