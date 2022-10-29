@@ -541,6 +541,14 @@
               "answer": "Afridrilles don’t do well in the rain so we recommend you avoid stepping in wet areas. Our vulcanized rubber sole layer protects the jute from humidity and the contact with water. The jute bottom of our espadrilles should never get wet. You can keep your Afridrilles in good shape longer by keeping them dry."
             }
           },
+          "bb33e958-1ea4-4b8a-856b-f989d042b57c": {
+            "type": "faq",
+            "settings": {
+              "faqid": "fitting-care",
+              "question": "How do I clean my Afridrilles?",
+              "answer": "A damp cloth can remove dirt from the canvas part of your Afridrille. We also recommend mixing a little laundry detergent with water in a small cup and use an old toothbrush to gently brush your jute sole. Make sure to not get the soles wet! Please email us for any other cleaning instructions."
+            }
+          },
           "43fea299-25a5-49c3-ac22-1b9b45bea10b": {
             "type": "info",
             "settings": {
@@ -576,6 +584,7 @@
           "dd734e8e-e9ca-43cf-a317-1a65c846dadb",
           "305ee7a7-6fa8-4d81-8d44-59be3a9f97bd",
           "3d3c2f0d-e3df-4280-9fd5-bd23febe1ba4",
+          "bb33e958-1ea4-4b8a-856b-f989d042b57c",
           "43fea299-25a5-49c3-ac22-1b9b45bea10b",
           "3dfec28e-adbe-48c3-9237-7fe967635a9a",
           "57a106aa-8f76-4784-a391-b01a49c7a856"
