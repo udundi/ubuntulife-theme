@@ -481,32 +481,32 @@
             "type": "faq",
             "settings": {
               "faqid": "orders",
-              "question": "What is your return policy?",
-              "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut fringilla dolor. Duis tempus tellus ut velit vehicula aliquet."
+              "question": "How do I make a purchase?",
+              "answer": "Purchasing from Ubuntu Life is easy: Find your favorite product, or if you already know what you are looking for, use the menu in the navigation bar or the search bar to find your product right away. Once you have found the right product, select your size or quantities and use the \"add to cart\" button underneath. Review the items in your shopping cart by selecting the \"shopping cart\" icon at the top right of the page. Click on \"checkout\" to proceed, add shipping and payment details to complete your order. If you already have an Ubuntu Life account, you can log-in and checkout faster using saved shipping and payment details."
             }
           },
           "cfe3d4ec-5aec-4fba-ae11-a73c20495ff4": {
             "type": "faq",
             "settings": {
               "faqid": "orders",
-              "question": "What is your return policy?",
-              "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut fringilla dolor. Duis tempus tellus ut velit vehicula aliquet."
+              "question": "How do I update my order?",
+              "answer": "If you need to make a change or cancel your order please contact our customer service. Since we try to process our order as fast as possible to get to you in the shortest time, contact us short after your order is placed and we will do our best to help you out!"
             }
           },
           "0f4382d4-e169-41dd-96a2-82f9d782fa38": {
             "type": "faq",
             "settings": {
               "faqid": "orders",
-              "question": "What is your return policy?",
-              "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut fringilla dolor. Duis tempus tellus ut velit vehicula aliquet."
+              "question": "How do I use a promo code?",
+              "answer": "You can enter your promo code at checkout. Enter the code exactly how it appears and apply. Promo codes can't be cumulated with other promotions and will not apply to sale items unless otherwise specified."
             }
           },
           "31e1f322-99e5-4f2f-b6a9-2553e527cd19": {
             "type": "faq",
             "settings": {
               "faqid": "orders",
-              "question": "What is your return policy?",
-              "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut fringilla dolor. Duis tempus tellus ut velit vehicula aliquet."
+              "question": "What forms of payments does Ubuntu Life accept?",
+              "answer": "Ubuntu Life accepts payments from all kind of credit cards (Visa, Mastercard, American Express) and from Paypal or Amazon."
             }
           },
           "cda3070a-71bb-40cb-a485-c3dfd5d0ef78": {
