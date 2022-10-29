@@ -533,6 +533,14 @@
               "answer": "Ubuntu Life espadrilles are the perfect everyday shoes but they won’t last forever. If your Afridrilles incur any unfortunate damages due to manufacturing contact our customer service team and we'll be more than happy to help you with care tips or to help you in getting a new pair! For purchases made with other retailers, please reach out to the place of purchase."
             }
           },
+          "3d3c2f0d-e3df-4280-9fd5-bd23febe1ba4": {
+            "type": "faq",
+            "settings": {
+              "faqid": "fitting-care",
+              "question": "Are Afridrilles waterproof?",
+              "answer": "Afridrilles don’t do well in the rain so we recommend you avoid stepping in wet areas. Our vulcanized rubber sole layer protects the jute from humidity and the contact with water. The jute bottom of our espadrilles should never get wet. You can keep your Afridrilles in good shape longer by keeping them dry."
+            }
+          },
           "43fea299-25a5-49c3-ac22-1b9b45bea10b": {
             "type": "info",
             "settings": {
@@ -567,6 +575,7 @@
           "cda3070a-71bb-40cb-a485-c3dfd5d0ef78",
           "dd734e8e-e9ca-43cf-a317-1a65c846dadb",
           "305ee7a7-6fa8-4d81-8d44-59be3a9f97bd",
+          "3d3c2f0d-e3df-4280-9fd5-bd23febe1ba4",
           "43fea299-25a5-49c3-ac22-1b9b45bea10b",
           "3dfec28e-adbe-48c3-9237-7fe967635a9a",
           "57a106aa-8f76-4784-a391-b01a49c7a856"
