@@ -474,7 +474,7 @@
             "settings": {
               "faqid": "orders",
               "title": "Orders",
-              "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut fringilla dolor. Duis tempus tellus ut velit vehicula aliquet."
+              "description": ""
             }
           },
           "f7c873bb-60ba-42e3-bc57-0bc7d0b66456": {
@@ -514,7 +514,7 @@
             "settings": {
               "faqid": "fitting-care",
               "title": "Fitting & Care",
-              "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut fringilla dolor. Duis tempus tellus ut velit vehicula aliquet."
+              "description": ""
             }
           },
           "dd734e8e-e9ca-43cf-a317-1a65c846dadb": {
@@ -554,7 +554,7 @@
             "settings": {
               "faqid": "shipping-returns",
               "title": "Shipping & Returns",
-              "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut fringilla dolor. Duis tempus tellus ut velit vehicula aliquet."
+              "description": ""
             }
           },
           "3a98143e-15f1-41ee-b1cf-6609087ebe8e": {
@@ -602,7 +602,7 @@
             "settings": {
               "faqid": "international",
               "title": "International",
-              "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut fringilla dolor. Duis tempus tellus ut velit vehicula aliquet."
+              "description": ""
             }
           },
           "2397b80a-f811-4fe7-9d55-df7f8ee7a796": {
@@ -618,7 +618,7 @@
             "settings": {
               "faqid": "about-products",
               "title": "About Products",
-              "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut fringilla dolor. Duis tempus tellus ut velit vehicula aliquet."
+              "description": ""
             }
           },
           "4770742c-ce16-4fbb-9960-ac3d6bd58d1d": {
