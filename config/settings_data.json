@@ -605,6 +605,14 @@
               "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut fringilla dolor. Duis tempus tellus ut velit vehicula aliquet."
             }
           },
+          "2397b80a-f811-4fe7-9d55-df7f8ee7a796": {
+            "type": "faq",
+            "settings": {
+              "faqid": "international",
+              "question": "Does Ubuntu Life ship internationally?",
+              "answer": "Of course we do! We ship worldwide all over the world. Note that orders from outside the United States may suffer additional shipping and duty charges according to local custom regulation."
+            }
+          },
           "57a106aa-8f76-4784-a391-b01a49c7a856": {
             "type": "info",
             "settings": {
@@ -632,6 +640,7 @@
           "c42d118c-035e-4028-b1bd-f46fde247977",
           "b05a8a1c-68f3-424e-a24a-27c4f1898cc3",
           "3dfec28e-adbe-48c3-9237-7fe967635a9a",
+          "2397b80a-f811-4fe7-9d55-df7f8ee7a796",
           "57a106aa-8f76-4784-a391-b01a49c7a856"
         ],
         "settings": {
