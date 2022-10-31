@@ -511,6 +511,7 @@
           },
           "cda3070a-71bb-40cb-a485-c3dfd5d0ef78": {
             "type": "info",
+            "disabled": true,
             "settings": {
               "faqid": "fitting-care",
               "title": "Fitting & Care",
@@ -519,6 +520,7 @@
           },
           "dd734e8e-e9ca-43cf-a317-1a65c846dadb": {
             "type": "faq",
+            "disabled": true,
             "settings": {
               "faqid": "fitting-care",
               "question": "How do your Afridrilles fit?",
@@ -527,6 +529,7 @@
           },
           "305ee7a7-6fa8-4d81-8d44-59be3a9f97bd": {
             "type": "faq",
+            "disabled": true,
             "settings": {
               "faqid": "fitting-care",
               "question": "How long does a pair of Afridrilles last?",
@@ -535,6 +538,7 @@
           },
           "3d3c2f0d-e3df-4280-9fd5-bd23febe1ba4": {
             "type": "faq",
+            "disabled": true,
             "settings": {
               "faqid": "fitting-care",
               "question": "Are Afridrilles waterproof?",
@@ -543,6 +547,7 @@
           },
           "bb33e958-1ea4-4b8a-856b-f989d042b57c": {
             "type": "faq",
+            "disabled": true,
             "settings": {
               "faqid": "fitting-care",
               "question": "How do I clean my Afridrilles?",
@@ -599,7 +604,6 @@
           },
           "3dfec28e-adbe-48c3-9237-7fe967635a9a": {
             "type": "info",
-            "disabled": true,
             "settings": {
               "faqid": "international",
               "title": "International",
@@ -608,7 +612,6 @@
           },
           "2397b80a-f811-4fe7-9d55-df7f8ee7a796": {
             "type": "faq",
-            "disabled": true,
             "settings": {
               "faqid": "international",
               "question": "Does Ubuntu Life ship internationally?",
