@@ -675,6 +675,7 @@
       "collection-template": {
         "type": "collection-template",
         "settings": {
+          "split_variants": true
         }
       },
       "sections-locations-content": {
