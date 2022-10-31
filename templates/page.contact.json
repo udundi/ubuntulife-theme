@@ -87,6 +87,7 @@
     },
     "cause": {
       "type": "our-cause",
+      "disabled": true,
       "blocks": {
         "568df141-a68c-4d19-ba5a-b68f6b96ad59": {
           "type": "slide",
