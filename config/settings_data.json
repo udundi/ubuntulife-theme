@@ -599,6 +599,7 @@
           },
           "3dfec28e-adbe-48c3-9237-7fe967635a9a": {
             "type": "info",
+            "disabled": true,
             "settings": {
               "faqid": "international",
               "title": "International",
@@ -607,6 +608,7 @@
           },
           "2397b80a-f811-4fe7-9d55-df7f8ee7a796": {
             "type": "faq",
+            "disabled": true,
             "settings": {
               "faqid": "international",
               "question": "Does Ubuntu Life ship internationally?",
@@ -615,6 +617,7 @@
           },
           "57a106aa-8f76-4784-a391-b01a49c7a856": {
             "type": "info",
+            "disabled": true,
             "settings": {
               "faqid": "about-products",
               "title": "About Products",
@@ -623,6 +626,7 @@
           },
           "4770742c-ce16-4fbb-9960-ac3d6bd58d1d": {
             "type": "faq",
+            "disabled": true,
             "settings": {
               "faqid": "about-products",
               "question": "Where are Ubuntu Life products manufactured?",
@@ -631,6 +635,7 @@
           },
           "771f3c16-2742-4e62-830c-8ee955b43a24": {
             "type": "faq",
+            "disabled": true,
             "settings": {
               "faqid": "about-products",
               "question": "What do I do if my product arrived damaged or defected?",
