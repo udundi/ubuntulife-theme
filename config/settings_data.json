@@ -753,6 +753,7 @@
         "blocks": {
           "82cdb4db-4872-4ed0-ac7c-9d3a5c12d51b": {
             "type": "info",
+            "disabled": true,
             "settings": {
               "header": "CALL US",
               "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -763,6 +764,7 @@
           },
           "3a264e4b-045f-4631-afba-2860a488cf9a": {
             "type": "info",
+            "disabled": true,
             "settings": {
               "header": "E-MAIL",
               "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -773,6 +775,7 @@
           },
           "99878fa2-cdf7-4ded-895f-0b3c6b0357ab": {
             "type": "info",
+            "disabled": true,
             "settings": {
               "header": "FIND US",
               "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
