@@ -139,12 +139,24 @@
         quantity = this.cart.items[index].quantity + quantity;
         let line_item_index = index + 1; // CartJS index starts at 1
 
-        CartJS.updateItem(line_item_index, quantity);
+        CartJS.updateItem(line_item_index, quantity, {}, {
+          "success": function(data, textStatus, jqXHR) {
+            setTimeout(function() {
+              $(document).trigger("cart.requestComplete", [CartJS.cart]);
+            }, 50);
+          }
+        });
       },
       removeItem(index) {
         let line_item_index = index + 1; // CartJS index starts at 1
 
-        CartJS.updateItem(line_item_index, 0);
+        CartJS.updateItem(line_item_index, 0, {}, {
+          "success": function(data, textStatus, jqXHR) {
+            setTimeout(function() {
+              $(document).trigger("cart.requestComplete", [CartJS.cart]);
+            }, 50);
+          }
+        });
       },
       formatMoney(money) {
         return Shopify.formatMoney(money);
