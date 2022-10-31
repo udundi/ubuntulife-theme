@@ -41,6 +41,7 @@
         },
         "bb4f26b1-199e-4f59-9c1e-b4e4b4704b37": {
           "type": "product",
+          "disabled": true,
           "settings": {
             "product": "amani-dog-collar"
           }
@@ -59,6 +60,7 @@
         },
         "273a82e2-b0ce-45fe-b337-69fb69037387": {
           "type": "product",
+          "disabled": true,
           "settings": {
             "product": "holiday-bracelet-bundle-six"
           }
