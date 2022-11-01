@@ -258,7 +258,7 @@
           <a href="{{ product.url }}" class="flex flex-col items-center">
             <div class="group aspect-square relative">
               <img class="w-full h-full object-cover relative z-0" src="{{ product.featured_image | image_url: width: 512 }}" alt="{{ product.title }}">
-              {% if product.images[2] %}
+              {% if product.images[1] %}
                 <img class="opacity-0 group-hover:opacity-100 transition-opacity duration-200 absolute z-10 top-0 left-0 w-full h-full object-cover" src="{{ product.images[1] | image_url: width: 512 }}" alt="{{ product.title }} lifestyle image">
               {% endif %}
             </div>
@@ -270,7 +270,7 @@
         <a href="{{ product.url }}" class="flex flex-col items-center">
           <div class="group aspect-square relative">
             <img class="w-full h-full object-cover relative z-0" src="{{ product.featured_image | image_url: width: 512 }}" alt="{{ product.title }}">
-            {% if product.images[2] %}
+            {% if product.images[1] %}
               <img class="opacity-0 group-hover:opacity-100 transition-opacity duration-200 absolute z-10 top-0 left-0 w-full h-full object-cover" src="{{ product.images[1] | image_url: width: 512 }}" alt="{{ product.title }} lifestyle image">
             {% endif %}
           </div>
