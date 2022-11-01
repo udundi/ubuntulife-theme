@@ -345,7 +345,7 @@
             "image": "shopify:\/\/shop_images\/fall_in_love._1.gif",
             "show_text": true,
             "text_vertical": "top-4 md:top-6 xl:top-10",
-            "text_horizontal": "right-4 md:right-6 xl:right-10",
+            "text_horizontal": "left-1\/2 -translate-x-1\/2",
             "flex_alignment": "items-start",
             "text": "",
             "text_color": "#ffffff",
