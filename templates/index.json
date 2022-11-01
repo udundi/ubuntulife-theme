@@ -328,7 +328,7 @@
             "flex_alignment": "items-start",
             "text": "Bestsellers",
             "text_color": "#ffffff",
-            "ubuntu_font": false,
+            "ubuntu_font": true,
             "font_size": "text-2xl lg:text-3xl 2xl:text-4xl",
             "font_weight": "font-medium",
             "cta_text": "shop now",
@@ -343,21 +343,21 @@
           "type": "pane",
           "settings": {
             "image": "shopify:\/\/shop_images\/fall_in_love._1.gif",
-            "show_text": false,
+            "show_text": true,
             "text_vertical": "top-4 md:top-6 xl:top-10",
             "text_horizontal": "right-4 md:right-6 xl:right-10",
             "flex_alignment": "items-start",
-            "text": "bracelets",
+            "text": "",
             "text_color": "#ffffff",
             "ubuntu_font": false,
             "font_size": "text-2xl lg:text-3xl 2xl:text-4xl",
-            "font_weight": "font-black",
+            "font_weight": "font-bold",
             "cta_text": "shop now",
             "cta_url": "https:\/\/www.ubuntu.life\/collections\/bracelets",
             "cta_color": "#ffffff",
-            "cta_bg_color": "#000000",
+            "cta_bg_color": "#60cdcb",
             "cta_font_size": "lg:text-lg 2xl:text-xl",
-            "cta_font_weight": "font-bold"
+            "cta_font_weight": "font-normal"
           }
         }
       },
