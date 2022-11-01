@@ -90,9 +90,9 @@
         <span>{ formatMoney(price) }</span>
     </span>
 
-    <div v-for="option in product.options" class="flex flex-col">
+    <div v-for="option in product.options" class="flex flex-col" :key="option.name">
       <div v-if="option.name.toLowerCase().includes('color') && colorImagesExist" class="mt-3 flex flex-wrap gap-1">
-        <label v-for="(value, index) in option.values" :for="value">
+        <label v-for="(value, index) in option.values" :for="value" :key="value">
           <input 
             type="radio" 
             class="[&:checked_+_img]:border"
@@ -122,7 +122,8 @@
             <option 
               v-for="(value, index) in option.values" 
               :checked="options[option.name] == value" 
-              :value="value" 
+              :value="value"
+              :key="value"
               >{ value }</option>
           </select>
           <svg class="w-8 h-8 p-2 absolute right-2 lg:right-4 top-1/2 -translate-y-1/2  bg-downy-300 rounded-full pointer-events-none" width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
