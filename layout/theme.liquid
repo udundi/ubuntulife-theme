@@ -63,6 +63,8 @@
   {{ content_for_header }}
 
 	{{ shop.metafields.loox["global_html_head"] }}
+
+  {% render 'shogun-head' %}
 </head>
 
 <body class="template-{{ request.page_type | handle }} overflow-x-hidden bg-white font-avenir">
