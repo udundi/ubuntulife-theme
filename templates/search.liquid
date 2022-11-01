@@ -24,18 +24,6 @@
 
   {% if search.performed %}
     <hr>
-
-    <div class="my-8 px-3 md:px-0 grid grid-cols-2 sm:grid-cols-3 gap-3 lg:gap-4 gap-y-5 lg:gap-y-12">
-      {% for product in search.results %}
-        <a href="{{ product.url }}" class="flex flex-col items-center">
-          <div class="group aspect-square relative">
-            <img class="w-full h-full object-cover relative z-0" src="{{ product.featured_image | image_url: width: 512 }}" alt="{{ product.title }}">
-            <img class="opacity-0 group-hover:opacity-100 transition-opacity duration-200 absolute z-10 top-0 left-0 w-full h-full" src="{{ product.images | last | image_url: width: 512 }}" alt="{{ product.title }} lifestyle image">
-          </div>
-          <p class="text-xs md:text-sm lg:text-base mt-1.5 lg:mt-8 font-medium text-center">{{ product.title }}</p>
-          <p class="text-xs md:text-sm lg:text-base pt-3 mt-auto">{{ product.price | money_with_currency }}</p>
-        </a>
-      {% endfor %}
-    </div>
+    {% section 'search-results' %}
   {% endif %}
 </div>

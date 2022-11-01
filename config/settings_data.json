@@ -824,6 +824,12 @@
         "type": "list-collections-template",
         "settings": {
         }
+      },
+      "search-results": {
+        "type": "search-results",
+        "settings": {
+          "split_variants": true
+        }
       }
     },
     "content_for_index": [
