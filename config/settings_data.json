@@ -1,5 +1,8 @@
 {
   "current": {
+    "share_facebook": false,
+    "share_twitter": false,
+    "share_pinterest": false,
     "social_twitter_link": "https:\/\/twitter.com\/ubuntulifekenya",
     "social_facebook_link": "https:\/\/www.facebook.com\/ubuntulifekenya",
     "social_instagram_link": "https:\/\/www.instagram.com\/ubuntu.life\/",
