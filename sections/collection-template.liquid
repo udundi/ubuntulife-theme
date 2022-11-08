@@ -233,17 +233,18 @@
                 <a href="{{ variant.url }}" class="flex flex-col items-center">
                   <div class="group aspect-square relative">
                     <img class="w-full h-full object-cover relative z-0" src="{{ variant.featured_image | image_url: width: 512 }}" alt="{{ product.title }} {{ color }}">
-                    {% assign first_occurrence = true %}
+                    {% assign found_second_image = false %}
                     {% for image in product.images %}
-                      {% assign image_alt = image.alt | downcase %}
-                      {% assign color_downcase = color | downcase %}
-                      {% if image_alt contains color_downcase and image_alt != color_downcase %}
-                        {% if first_occurrence %}
-                          {% assign first_occurrence = false %}
-                        {% else %}
+                      {% unless image.src == variant.featured_image.src %}
+                        {% assign image_alt = image.alt | downcase %}
+                        {% assign color_downcase = color | downcase %}
+                        {% if image_alt contains color_downcase and image_alt != color_downcase %}
                           <img class="opacity-0 group-hover:opacity-100 transition-opacity duration-200 absolute z-10 top-0 left-0 w-full h-full object-cover" src="{{ image | image_url: width: 512 }}" alt="{{ product.title }} {{ color }} lifestyle image">
-                          {% break %}
+                          {% assign found_second_image = true %}
                         {% endif %}
+                      {% endunless %}
+                      {% if found_second_image %}
+                        {% break %}
                       {% endif %}
                     {% endfor %}
                   </div>

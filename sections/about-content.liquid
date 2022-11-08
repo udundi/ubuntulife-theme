@@ -1,5 +1,5 @@
 <div class="relative w-screen h-[32rem] md:h-[36rem]">
-  <img class="md:hidden w-full h-full object-cover" src="{{ section.settings.header_img_mobile | image_url: width: 768 }}" alt="{{ section.settings.header_img_mobile.alt }}">
+  <img class="md:hidden w-full h-full object-cover" style="object-position: left 16% top 0;" src="{{ section.settings.header_img_mobile | image_url: width: 768 }}" alt="{{ section.settings.header_img_mobile.alt }}">
   <picture>
     <source media="(min-width: 2560px)" srcset="{{ section.settings.header_img_desktop | image_url: width: 3840 }}">
     <source media="(min-width: 1280px)" srcset="{{ section.settings.header_img_desktop | image_url: width: 2560 }}">
@@ -8,8 +8,8 @@
   </picture>
   <!-- Mobile text -->
   <div class="md:hidden absolute top-20 left-1/2 -translate-x-1/2 flex flex-col items-center w-80 text-white">
-    <h1 class="font-ubuntulife font-bold text-2xl">{{ section.settings.heading_1_mobile }}</h1>
-    <h2 class="font-black text-4xl">{{ section.settings.heading_2_mobile }}</h2>
+    <h1 class="font-ubuntulife font-bold text-2xl" style="text-shadow: 0px 0px 10px black;">{{ section.settings.heading_1_mobile }}</h1>
+    <h2 class="font-black text-4xl" style="text-shadow: 0px 0px 10px black;">{{ section.settings.heading_2_mobile }}</h2>
     <p class="mt-5 text-center">{{ section.settings.heading_text_mobile }}</p>
   </div>
   <!-- Desktop text -->
