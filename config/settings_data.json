@@ -92,8 +92,8 @@
             "type": "submenu_featured",
             "settings": {
               "submenu_title": "Featured",
-              "collection": "fathers-day",
-              "title": "Gifts for Fathers Day"
+              "collection": "new-arrivals",
+              "title": "Shop New Arrivals"
             }
           }
         },
