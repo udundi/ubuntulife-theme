@@ -9,9 +9,9 @@
               <source media="(min-width: 1280px)" srcset="{{ block.settings.image | image_url: width: 2560 }}">
               <source media="(min-width: 640px)" srcset="{{ block.settings.image | image_url: width: 1280 }}">
               <source media="(max-width: 639px)" srcset="{{ block.settings.mobile_image | image_url: width: 640 }}">
-              <img 
+              <img
                 class="w-full h-full object-cover"
-                src="{{ block.settings.image | image_url: width: 2560 }}" 
+                src="{{ block.settings.image | image_url: width: 2560 }}"
                 alt="{{ block.settings.image.alt }}">
             </picture>
           </div>
@@ -37,8 +37,8 @@
       {% endfor %}
 
       {% if section.settings.cta_text != "" %}
-        <a 
-          href="{{ section.settings.cta_url }}" 
+        <a
+          href="{{ section.settings.cta_url }}"
           class="pointer-events-auto mt-8 text-center {{ section.settings.cta_vertical_padding }} {{ section.settings.cta_horizontal_padding }} {{ section.settings.cta_font_size }} {{ section.settings.cta_font_weight }}"
           style="background-color: {{ section.settings.cta_background_color }}; color: {{ section.settings.cta_color }};"
           >{{ section.settings.cta_text }}</a>
