@@ -1,8 +1,8 @@
 <footer>
-  <div class="w-full flex flex-col items-center py-16 bg-neutral-50">
+  <a class="w-full flex flex-col items-center py-16 bg-neutral-50" href="https://www.instagram.com/ubuntu.life" rel="noopener noreferrer" target="_blank">
     <p class="font-ubuntulife font-bold text-3xl text-downy-300">JOIN US ON SOCIAL!</p>
     <p class="font-avenir font-black text-2xl text-neutral-800">@UBUNTU.LIFE</p>
-  </div>
+  </a>
   <div class="flex overflow-x-auto">
     {% for block in section.blocks %}
       <img class="object-cover min-w-[14rem] w-56 min-h-[15rem] h-60 lg:min-w-[16rem] lg:w-64 lg:min-h-[18rem] lg:h-72" alt="Ubuntu life photos" src="{{ block.settings.image | image_url: width: 256 }}">
