@@ -12,6 +12,14 @@
 .swipper-wrapper {
   position: initial;
 }
+@media (min-width: 768px){
+.ms-options .swiper-button-next {
+  display: none;
+}
+.ms-options .swiper-button-prev {
+  display: none;
+}
+}
 </style>
 
 <div class="relative w-screen h-[32rem] md:h-[36rem]">
@@ -59,7 +67,7 @@
     At Ubuntu Life, we make high-quality, handmade products that provide sustainable and meaningful employment for our community.
   </p>
 
-  <div style="position: relative">
+  <div style="position: relative" class="ms-options">
   <svg class="swiper-button-prev unset-swiper-styling left-6 xl:left-24 bottom-10 xl:bottom-28 cursor-pointer w-12 h-12 p-4 rounded-full bg-white -rotate-90" width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M13.9588 7.73918L7.49934 1.42968L1.03984 7.73918C0.799808 7.9741 0.416528 7.9741 0.176501 7.73918C0.0636142 7.62834 0 7.47665 0 7.31828C0 7.15992 0.0636142 7.00822 0.176501 6.89739L7.04828 0.183835C7.29924 -0.0612782 7.69944 -0.0612782 7.95039 0.183835L14.8222 6.8961C14.9359 7.00702 15 7.15928 15 7.31828C15 7.47729 14.9359 7.62955 14.8222 7.74047C14.5821 7.9754 14.1989 7.9754 13.9588 7.74047V7.73918Z" fill="black"/>
   </svg>
@@ -102,6 +110,15 @@
     <p class="mt-6 mx-4">
       Every purchase empowers. We pride ourselves on creating quality handmade products for our customers while providing our Makers with sustainable employment, health insurance, and a living wage well above the standard income for the Maai Mahiu area.
     </p>
+
+    <div style="position: relative" class="wwdi-options">
+      <svg class="swiper-button-prev unset-swiper-styling left-6 xl:left-24 bottom-10 xl:bottom-28 cursor-pointer w-12 h-12 p-4 rounded-full bg-white -rotate-90" width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M13.9588 7.73918L7.49934 1.42968L1.03984 7.73918C0.799808 7.9741 0.416528 7.9741 0.176501 7.73918C0.0636142 7.62834 0 7.47665 0 7.31828C0 7.15992 0.0636142 7.00822 0.176501 6.89739L7.04828 0.183835C7.29924 -0.0612782 7.69944 -0.0612782 7.95039 0.183835L14.8222 6.8961C14.9359 7.00702 15 7.15928 15 7.31828C15 7.47729 14.9359 7.62955 14.8222 7.74047C14.5821 7.9754 14.1989 7.9754 13.9588 7.74047V7.73918Z" fill="black"/>
+      </svg>
+      <svg class="swiper-button-next unset-swiper-styling left-24 xl:left-44 bottom-10 xl:bottom-28 cursor-pointer w-12 h-12 p-4 rounded-full bg-white rotate-90" width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M13.9588 7.73918L7.49934 1.42968L1.03984 7.73918C0.799808 7.9741 0.416528 7.9741 0.176501 7.73918C0.0636142 7.62834 0 7.47665 0 7.31828C0 7.15992 0.0636142 7.00822 0.176501 6.89739L7.04828 0.183835C7.29924 -0.0612782 7.69944 -0.0612782 7.95039 0.183835L14.8222 6.8961C14.9359 7.00702 15 7.15928 15 7.31828C15 7.47729 14.9359 7.62955 14.8222 7.74047C14.5821 7.9754 14.1989 7.9754 13.9588 7.74047V7.73918Z" fill="black"/>
+      </svg>
+
     <div class="whywedoit-swiper mt-10 w-screen lg:w-full overflow-hidden lg:overflow-scroll 2xl:overflow-hidden">
       <div class="swiper-wrapper">
         <div class="swiper-slide relative pt-4 w-60 lg:w-48 2xl:w-52 lg:mr-4">
@@ -143,6 +160,7 @@
         </div>
       </div>
     </div>
+  </div>
   </div>
 </div>
 <div class="my-14 md:my-20 flex flex-col items-center max-w-screen-sm lg:max-w-none mx-auto">
@@ -203,17 +221,32 @@
             slidesPerView: 'auto',
             centeredSlides: true,
             navigation: {
-              prevEl: ".swiper-button-prev",
-              nextEl: ".swiper-button-next",
+              prevEl: ".ms-options .swiper-button-prev",
+              nextEl: ".ms-options .swiper-button-next",
             }
           });
           swiper2 = new Swiper(".whywedoit-swiper", {
             spaceBetween: 16,
             slidesPerView: 'auto',
-            centeredSlides: true
+            centeredSlides: true,
+            navigation: {
+              prevEl: ".wwdi-options .swiper-button-prev",
+              nextEl: ".wwdi-options .swiper-button-next",
+            }
           });
         }
       } else if (desktop.matches) {
+
+        swiper2 = new Swiper(".whywedoit-swiper", {
+          spaceBetween: 16,
+          slidesPerView: 'auto',
+          centeredSlides: true,
+          navigation: {
+            prevEl: ".wwdi-options .swiper-button-prev",
+            nextEl: ".wwdi-options .swiper-button-next",
+          }
+        });
+
         if (swiper.destroy) {
           swiper.destroy();
           swiper2.destroy();
