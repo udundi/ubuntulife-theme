@@ -23,9 +23,12 @@
       <div class="menu-btn-burger"></div>
     </div>
     {% for link in linklists.main-navigation.links %}
-      <div class="group hidden lg:flex items-center h-full {% if forloop.first == true %}pl-0{% endif %} px-4 lastlast-of-type:pr-2 last-of-type:mr-auto">
-        <p class="text-neutral-800 group-hover:underline underline-offset-8 uppercase font-medium cursor-default text-sm">{{ link.title }}
-        </p>
+      <div class="group hidden lg:flex items-center h-full last-of-type:mr-auto">
+        <a
+          href="{{ link.url }}"
+          class="{% if forloop.first == true %}pl-0{% endif %} px-4 lastlast-of-type:pr-2
+            text-neutral-800 group-hover:underline underline-offset-8 uppercase font-medium text-sm"
+        >{{ link.title }}</a>
         {% if link.links != blank %}
           <div class="hidden group-hover:flex absolute top-full left-0 -mt-3 pt-12 pb-6 px-16 xl:px-24 2xl:px-32 w-full font-medium text-neutral-800 bg-white">
             {% for child_link in link.links %}
