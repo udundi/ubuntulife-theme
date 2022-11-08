@@ -1,10 +1,10 @@
 <div class="relative w-screen h-[32rem] md:h-[36rem]">
-  <img class="md:hidden w-full h-full object-cover" src="{{ section.settings.header_img_mobile | image_url: width: 768 }}" alt="{{ section.settings.header_img_mobile.alt }}">
   <picture>
     <source media="(min-width: 2560px)" srcset="{{ section.settings.header_img_desktop | image_url: width: 3840 }}">
     <source media="(min-width: 1280px)" srcset="{{ section.settings.header_img_desktop | image_url: width: 2560 }}">
     <source media="(min-width: 768px)" srcset="{{ section.settings.header_img_desktop | image_url: width: 1280 }}">
-    <img class="hidden md:block w-full h-full object-cover" src="{{ section.settings.header_img_desktop | image_url: width: 2560 }}" alt="{{ section.settings.header_img_desktop.alt }}">
+    <source media="(max-width: 767px)" srcset="{{ section.settings.header_img_mobile | image_url: width: 768 }}">
+    <img class="w-full h-full object-cover" src="{{ section.settings.header_img_desktop | image_url: width: 2560 }}" alt="{{ section.settings.header_img_desktop.alt }}">
   </picture>
   <!-- Mobile text -->
   <div class="md:hidden absolute top-20 left-1/2 -translate-x-1/2 flex flex-col items-center w-80 text-white">
