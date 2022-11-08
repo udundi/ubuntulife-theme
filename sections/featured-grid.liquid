@@ -1,15 +1,17 @@
 <section id="featured-grid" class="mt-16 mb-10 px-4 flex flex-col md:grid md:grid-cols-2 md:gap-5 max-w-screen-2xl md:mx-auto items-center md:items-start">
   {% for block in section.blocks %}
     <div class="group relative md:mt-0 w-full cursor-default">
-      <picture>
-        <source media="(min-width: 640px)" srcset="{{ block.settings.image | image_url: width: 768 }}">
-        <source media="(max-width: 639px)" srcset="{{ block.settings.image | image_url: width: 640 }}">
-        <img 
-          class="w-full h-[36rem] md:h-[44rem] object-cover p-0.5 group-hover:p-0 group-hover:border-2 border-downy-300" 
-          src="{{ block.settings.image | image_url: width: 768 }}" 
-          alt="{{ block.settings.image.alt }}"
-          loading="lazy">
-      </picture>
+      <a href="{{ block.settings.cta_url }}">
+        <picture>
+          <source media="(min-width: 640px)" srcset="{{ block.settings.image | image_url: width: 768 }}">
+          <source media="(max-width: 639px)" srcset="{{ block.settings.image | image_url: width: 640 }}">
+          <img 
+            class="w-full h-[36rem] md:h-[44rem] object-cover p-0.5 group-hover:p-0 group-hover:border-2 border-downy-300" 
+            src="{{ block.settings.image | image_url: width: 768 }}" 
+            alt="{{ block.settings.image.alt }}"
+            loading="lazy">
+        </picture>
+      </a>
       {% if block.settings.show_text %}
         <div class="absolute px-0.5 flex flex-col {{ block.settings.flex_alignment }} {{ block.settings.text_vertical }} {{ block.settings.text_horizontal }}">
           {% if block.settings.text != "" %}
