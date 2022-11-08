@@ -7,7 +7,8 @@
         <img 
           class="w-full h-[36rem] md:h-[44rem] object-cover p-0.5 group-hover:p-0 group-hover:border-2 border-downy-300" 
           src="{{ block.settings.image | image_url: width: 768 }}" 
-          alt="{{ block.settings.image.alt }}">
+          alt="{{ block.settings.image.alt }}"
+          loading="lazy">
       </picture>
       {% if block.settings.show_text %}
         <div class="absolute px-0.5 flex flex-col {{ block.settings.flex_alignment }} {{ block.settings.text_vertical }} {{ block.settings.text_horizontal }}">
