@@ -42,6 +42,19 @@
                 {% endif %}
               </div>
             {% endfor %}
+            <span class="flex pb-2">
+              {% for block in section.blocks %}
+                {% assign submenu_title = block.settings.submenu_title | downcase %}
+                {% assign link_title = link.title | downcase %}
+                {% if block.type == "submenu_featured" and submenu_title == link_title %}
+                  <a class="flex flex-col items-center mr-5 last:mr-0" href="{{ block.settings.collection.url }}">
+                    <img class="min-w-[15rem] w-60 min-h-[15rem] h-60 object-cover" src="{{ block.settings.collection.image | image_url: width: 256 }}" alt="{{ block.settings.collection.title }} cover photo">
+                    <p class="mt-2 uppercase text-sm">{{ block.settings.title }}
+                    </p>
+                  </a>
+                {% endif %}
+              {% endfor %}
+            </span>
           </div>
         {% endif %}
       </div>
@@ -78,6 +91,18 @@
         {% endif %}
       </div>
     {% endfor %}
+    <p class="font-bold mt-9 text-sm">BEST SELLERS</p>
+    <div class="flex overflow-x-scroll pb-2">
+      {% for block in section.blocks %}
+        {% if block.type == "mobile_featured" %}
+          <a class="flex flex-col items-center mr-3" href="{{ block.settings.collection.url }}">
+            <img class="min-w-[14rem] w-56 min-h-[15rem] h-60 object-cover" src="{{ block.settings.collection.image | image_url: width: 256 }}" alt="{{ block.settings.collection.title }} cover photo">
+            <p class="mt-2 uppercase text-sm">{{ block.settings.title }}
+            </p>
+          </a>
+        {% endif %}
+      {% endfor %}
+    </div>
   </div>
   <!-- Sub-panes -->
   {% for link in linklists.main-navigation.links %}
@@ -260,6 +285,44 @@
         "type": "text",
         "id": "banner_text",
         "label": "Banner text"
+      }
+    ],
+    "blocks": [
+      {
+        "name": "Mobile Featured",
+        "type": "mobile_featured",
+        "settings": [
+          {
+            "type": "collection",
+            "id": "collection",
+            "label": "Collection",
+            "info": "Collection to showcase"
+          }, {
+            "type": "text",
+            "id": "title",
+            "label": "Title for collection link"
+          }
+        ]
+      }, {
+        "name": "Submenu Featured",
+        "type": "submenu_featured",
+        "settings": [
+          {
+            "type": "text",
+            "id": "submenu_title",
+            "label": "Submenu title",
+            "info": "Match this to the submenu's title you'd like this to attach to"
+          }, {
+            "type": "collection",
+            "id": "collection",
+            "label": "Collection",
+            "info": "Collection to showcase"
+          }, {
+            "type": "text",
+            "id": "title",
+            "label": "Title for collection link"
+          }
+        ]
       }
     ]
   }
