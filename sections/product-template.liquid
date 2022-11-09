@@ -1,5 +1,9 @@
 <!-- Styling for size chart -->
 <style>
+  .limit-height {
+  max-height: 0;
+  }
+
   div.best-fit-size-chart {
     width: auto;
   }
@@ -22,18 +26,18 @@
     <div class="hidden lg:flex flex-col mr-6 gap-3 sticky top-[var(--header-offset)] h-[calc(100vh-var(--header-offset))] overflow-y-scroll scrollbar-hidden scroll-smooth">
       <a v-for="(media, index) in productImages" :href="'#product-image-' + index"
         class="scroll-mt-[var(--header-offset)]">
-        <img 
-          :src="imageSize(media.src, '256x')" 
-          :alt="media.alt" 
+        <img
+          :src="imageSize(media.src, '256x')"
+          :alt="media.alt"
           class="w-40"
           loading="lazy" />
       </a>
     </div>
 
     <div class="hidden lg:flex flex-col sticky top-[var(--header-offset)] w-full h-[calc(100vh-var(--header-offset))] gap-5 overflow-scroll scrollbar-hidden scroll-smooth">
-      <picture 
-        v-for="(media, index) in productImages" 
-        :id="'product-image-' + index" 
+      <picture
+        v-for="(media, index) in productImages"
+        :id="'product-image-' + index"
         class="">
         <source media="(min-width: 2560px)" :srcset="imageSize(media.src, '3840x')">
         <source media="(min-width: 1280px)" :srcset="imageSize(media.src, '2560x')">
@@ -41,7 +45,7 @@
         <img class="w-full" :src="imageSize(media.src, '2560x')" :alt="media.alt">
       </picture>
     </div>
-    
+
     <div ref="carousel" class="product-carousel w-full overflow-hidden lg:hidden">
       <div class="swiper-wrapper">
         <div class="swiper-slide" v-for="(media, index) in productImages">
@@ -93,8 +97,8 @@
     <div v-for="option in product.options" class="flex flex-col" :key="option.name">
       <div v-if="option.name.toLowerCase().includes('color') && colorImagesExist" class="mt-3 flex flex-wrap gap-1">
         <label v-for="(value, index) in option.values" :for="value" :key="value">
-          <input 
-            type="radio" 
+          <input
+            type="radio"
             class="[&:checked_+_img]:border"
             v-model="options[option.name]"
             :name="option.name"
@@ -103,7 +107,7 @@
             hidden>
           <img
             class="rounded-full w-8 h-8 p-1 object-cover border-black cursor-pointer lg:h-11 lg:w-11"
-            :src="imageSize(colorImages[value.toLowerCase()].src, '128x')" 
+            :src="imageSize(colorImages[value.toLowerCase()].src, '128x')"
             :alt="value">
         </label>
       </div>
@@ -114,14 +118,14 @@
         </span>
         <div class="relative mt-1">
           <select
-            v-model="options[option.name]" 
-            class="w-full appearance-none py-3 px-4 bg-transparent border border-black lg:py-4 lg:px-5 cursor-pointer" 
-            :name="option.name" 
+            v-model="options[option.name]"
+            class="w-full appearance-none py-3 px-4 bg-transparent border border-black lg:py-4 lg:px-5 cursor-pointer"
+            :name="option.name"
             id=""
           >
-            <option 
-              v-for="(value, index) in option.values" 
-              :checked="options[option.name] == value" 
+            <option
+              v-for="(value, index) in option.values"
+              :checked="options[option.name] == value"
               :value="value"
               :key="value"
               >{ value }</option>
@@ -133,9 +137,9 @@
       </div>
       <div v-else class="hidden">
         <select v-model="options[option.name]">
-          <option 
-            v-for="(value, index) in option.values" 
-            :checked="options[option.name] == value" 
+          <option
+            v-for="(value, index) in option.values"
+            :checked="options[option.name] == value"
             :value="value"
             >{ value }</option>
         </select>
@@ -144,19 +148,19 @@
     <div class="flex mt-4 mb-9">
       <div class="border border-black px-2 flex items-center w-1/3">
         <svg class="w-3 h-3 lg:h-4 lg:w-4 cursor-pointer" @click="updateQuantity(-1)" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M19 12.998H5v-2h14z"/></svg>
-        <input 
+        <input
           class="w-8 flex-grow font-medium text-center lg:text-lg appearance-none"
-          style="-moz-appearance: textfield;" 
-          type="number" 
-          name="quantity" 
-          v-model="quantity" 
+          style="-moz-appearance: textfield;"
+          type="number"
+          name="quantity"
+          v-model="quantity"
           aria-label="quantity" >
         <svg class="w-3 h-3 lg:h-4 lg:w-4 cursor-pointer" @click="updateQuantity(1)" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M19 12.998h-6v6h-2v-6H5v-2h6v-6h2v6h6z"/></svg>
       </div>
-      <button 
-        id="AddToCart" 
-        @click="addToCart()" 
-        :disabled="!selectedVariant.available" 
+      <button
+        id="AddToCart"
+        @click="addToCart()"
+        :disabled="!selectedVariant.available"
         class="bg-downy-300 disabled:bg-neutral-600 text-white font-black text-xl w-2/3 ml-3 py-4 transition-colors duration-300">
         <template v-if="selectedVariant.available">ADD TO CART</template>
         <template v-else>SOLD OUT</template>
@@ -170,8 +174,7 @@
           </svg>
         </div>
         <div
-          class="overflow-hidden transition-all duration-300"
-          :style="{ 'max-height': getAccordionHeight('descriptionEl', 'description') + 'px' }"
+          class="defaultMaxHeight overflow-hidden transition-all duration-300"
           ref="descriptionEl">
           <div class="pt-1 pb-3">{{ product.description }}</div>
         </div>
@@ -199,7 +202,6 @@
         </div>
         <div
           class="overflow-hidden transition-all duration-300"
-          :style="{ 'max-height': getAccordionHeight('infoMadeEl', 'infoMade') + 'px' }"
           ref="infoMadeEl">
           <div class="pt-1 pb-3">{{ section.settings.info_custom_body }}</div>
         </div>
@@ -304,18 +306,18 @@
       selectedVariant() {
         let variants = this.product.variants;
         let options = [];
-  
+
         for (const [key, value] of Object.entries(this.options)) {
           options.push(value);
         }
-  
+
         let variant = variants.find((variant) => {
           let variantOptions = variant.title.split(' / ');
           if(variantOptions.length == options.length && variantOptions.every(x => options.includes(x))) {
             return variant;
           }
         });
-  
+
         return variant;
       }
     },
@@ -334,12 +336,17 @@
     },
     methods: {
       toggleActiveAccordion(accordion) {
+     // console.log(this.$refs.descriptionEl.style.background = "red");
+     //:style="{ 'max-height': getAccordionHeight('descriptionEl', 'description') + 'px' }"
+
+        this.$refs.descriptionEl.classList.toggle("limit-height");
         this.activeAccordion = this.activeAccordion == accordion ? "" : accordion;
       },
       isActiveAccordion(accordion) {
         return this.activeAccordion == accordion;
       },
       getAccordionHeight(el, accordion) {
+        console.log(this.activeAccordion == accordion, this.$refs[el]?.scrollHeight)
         return this.activeAccordion == accordion ? this.$refs[el].scrollHeight + 16 : 0;
       },
       updateQuantity(amount) {

@@ -10,6 +10,106 @@
     "sections": {
       "header": {
         "type": "header",
+        "blocks": {
+          "22ba6768-c1a2-4e40-baec-4f3b97e82269": {
+            "type": "mobile_featured",
+            "settings": {
+              "collection": "love-bracelets",
+              "title": "LOVE BRACELETS"
+            }
+          },
+          "c43676b2-ed8b-43c4-902d-e02c31d6180e": {
+            "type": "mobile_featured",
+            "settings": {
+              "collection": "afridrilles",
+              "title": "AFRIDRILLES"
+            }
+          },
+          "55df7b5b-a4b6-4c48-8c6c-dc67e3362d42": {
+            "type": "mobile_featured",
+            "settings": {
+              "collection": "tote-bags",
+              "title": "GO TO TOTE BAGS"
+            }
+          },
+          "9a54d124-17ef-424e-8a3d-e372b78f9963": {
+            "type": "submenu_featured",
+            "settings": {
+              "submenu_title": "Jewelry",
+              "collection": "love-bracelets",
+              "title": "20% Off All Love Bracelets"
+            }
+          },
+          "44a12531-7d80-4960-ae98-17d4dd7d1778": {
+            "type": "submenu_featured",
+            "settings": {
+              "submenu_title": "Jewelry",
+              "collection": "summer-bracelets",
+              "title": "New Summer Collection"
+            }
+          },
+          "dbd191b2-305e-4d8a-88da-c7edce746ece": {
+            "type": "submenu_featured",
+            "settings": {
+              "submenu_title": "Bags",
+              "collection": "bags",
+              "title": "New Arrival: Basket Bags"
+            }
+          },
+          "484a85b0-a5ab-426d-8b0f-888598513735": {
+            "type": "submenu_featured",
+            "settings": {
+              "submenu_title": "bags",
+              "collection": "tote-bags",
+              "title": "Tote Bags"
+            }
+          },
+          "8bc6679f-e143-42fc-86dc-f0712bf98ecb": {
+            "type": "submenu_featured",
+            "settings": {
+              "submenu_title": "Shoes",
+              "collection": "afridrilles",
+              "title": "20% Off All Afridrilles"
+            }
+          },
+          "62f15d79-40b0-43a4-a563-19d3da669423": {
+            "type": "submenu_featured",
+            "settings": {
+              "submenu_title": "Shoes",
+              "collection": "shoes",
+              "title": "Shoes"
+            }
+          },
+          "b81120ba-6171-4812-bf4a-c9b7bfabd12a": {
+            "type": "submenu_featured",
+            "settings": {
+              "submenu_title": "Featured",
+              "collection": "dog-collars",
+              "title": "New Dog Collar Collection"
+            }
+          },
+          "f106ff80-8025-4df2-9b69-d653f4824521": {
+            "type": "submenu_featured",
+            "settings": {
+              "submenu_title": "Featured",
+              "collection": "new-arrivals",
+              "title": "Shop New Arrivals"
+            }
+          }
+        },
+        "block_order": [
+          "22ba6768-c1a2-4e40-baec-4f3b97e82269",
+          "c43676b2-ed8b-43c4-902d-e02c31d6180e",
+          "55df7b5b-a4b6-4c48-8c6c-dc67e3362d42",
+          "9a54d124-17ef-424e-8a3d-e372b78f9963",
+          "44a12531-7d80-4960-ae98-17d4dd7d1778",
+          "dbd191b2-305e-4d8a-88da-c7edce746ece",
+          "484a85b0-a5ab-426d-8b0f-888598513735",
+          "8bc6679f-e143-42fc-86dc-f0712bf98ecb",
+          "62f15d79-40b0-43a4-a563-19d3da669423",
+          "b81120ba-6171-4812-bf4a-c9b7bfabd12a",
+          "f106ff80-8025-4df2-9b69-d653f4824521"
+        ],
         "settings": {
           "show_banner": true,
           "banner_text": "FREE SHIPPING OVER $50 + FREE RETURNS"

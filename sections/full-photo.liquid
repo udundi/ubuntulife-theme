@@ -13,7 +13,8 @@
     <img 
       class="w-full"
       src="{{ section.settings.image | image_url: width: 2560 }}" 
-      alt="{{ section.settings.image.alt }}">
+      alt="{{ section.settings.image.alt }}"
+      loading="lazy">
   </picture>
   {% if section.settings.text != "" %}
     <p 

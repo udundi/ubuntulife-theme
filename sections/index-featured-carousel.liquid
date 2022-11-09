@@ -7,9 +7,9 @@
             <source media="(min-width: 1280px)" srcset="{{ block.settings.image | image_url: width: 2560 }}">
             <source media="(min-width: 640px)" srcset="{{ block.settings.image | image_url: width: 1280 }}">
             <source media="(max-width: 639px)" srcset="{{ block.settings.image | image_url: width: 640 }}">
-            <img 
-              class="w-full h-full aspect-square object-cover" 
-              src="{{ block.settings.image | image_url: width: 1280 }}" 
+            <img
+              class="w-full h-full aspect-square object-cover"
+              src="{{ block.settings.image | image_url: width: 1280 }}"
               alt="{{ block.settings.image.alt }}">
           </picture>
           <div class="absolute top-1/2 md:top-12 left-1/2 md:left-11 -translate-x-1/2 md:translate-x-0 -translate-y-1/2 md:translate-y-0 flex flex-col items-center md:items-start">

@@ -1,15 +1,39 @@
+<style type="text/css">
+.swiper-button-next, .swiper-button-prev{
+  position: absolute;
+  background: transparent;
+}
+.swiper-button-next {
+  left: 90%;
+}
+.swiper-button-prev {
+  right: 10%;
+}
+.swipper-wrapper {
+  position: initial;
+}
+@media (min-width: 768px){
+.ms-options .swiper-button-next {
+  display: none;
+}
+.ms-options .swiper-button-prev {
+  display: none;
+}
+}
+</style>
+
 <div class="relative w-screen h-[32rem] md:h-[36rem]">
-  <img class="md:hidden w-full h-full object-cover" src="{{ section.settings.header_img_mobile | image_url: width: 768 }}" alt="{{ section.settings.header_img_mobile.alt }}">
   <picture>
     <source media="(min-width: 2560px)" srcset="{{ section.settings.header_img_desktop | image_url: width: 3840 }}">
     <source media="(min-width: 1280px)" srcset="{{ section.settings.header_img_desktop | image_url: width: 2560 }}">
     <source media="(min-width: 768px)" srcset="{{ section.settings.header_img_desktop | image_url: width: 1280 }}">
-    <img class="hidden md:block w-full h-full object-cover" src="{{ section.settings.header_img_desktop | image_url: width: 2560 }}" alt="{{ section.settings.header_img_desktop.alt }}">
+    <source media="(max-width: 767px)" srcset="{{ section.settings.header_img_mobile | image_url: width: 768 }}">
+    <img class="w-full h-full object-cover" src="{{ section.settings.header_img_desktop | image_url: width: 2560 }}" alt="{{ section.settings.header_img_desktop.alt }}">
   </picture>
   <!-- Mobile text -->
-  <div class="md:hidden absolute top-20 left-1/2 -translate-x-1/2 flex flex-col items-center w-80 text-white">
-    <h1 class="font-ubuntulife font-bold text-2xl">{{ section.settings.heading_1_mobile }}</h1>
-    <h2 class="font-black text-4xl">{{ section.settings.heading_2_mobile }}</h2>
+  <div class="md:hidden absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 flex flex-col items-center w-80 text-white">
+    <h1 class="font-ubuntulife font-bold text-2xl" style="text-shadow: 0px 0px 10px black;">{{ section.settings.heading_1_mobile }}</h1>
+    <h2 class="font-black text-4xl" style="text-shadow: 0px 0px 10px black;">{{ section.settings.heading_2_mobile }}</h2>
     <p class="mt-5 text-center">{{ section.settings.heading_text_mobile }}</p>
   </div>
   <!-- Desktop text -->
@@ -30,7 +54,7 @@
   <p class="font-ubuntulife font-bold text-4xl lg:text-5xl">UBUNTU</p>
   <p class="mt-2 lg:text-2xl lg:font-light">[OO-<span class="lg:italic">BUHN</span>-TOO] NOUN</p>
   <p class="mt-2 text-center max-w-xs lg:max-w-xl lg:text-2xl lg:font-medium">
-    Ubuntu is an African philosophy that means "I am because we are." 
+    Ubuntu is an African philosophy that means "I am because we are."
     <br><br>
     It denotes our interconnectedness; we depend on each other in ways, big and small. To reach our full potential, both individually and as a society, we must help others achieve theirs.
     <br><br>
@@ -42,8 +66,20 @@
   <p class="mt-3 text-center max-w-sm md:max-w-lg">
     At Ubuntu Life, we make high-quality, handmade products that provide sustainable and meaningful employment for our community.
   </p>
+
+  <div style="position: relative" class="ms-options">
+  <svg class="swiper-button-prev unset-swiper-styling left-6 xl:left-24 bottom-10 xl:bottom-28 cursor-pointer w-12 h-12 p-4 rounded-full bg-white -rotate-90" width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M13.9588 7.73918L7.49934 1.42968L1.03984 7.73918C0.799808 7.9741 0.416528 7.9741 0.176501 7.73918C0.0636142 7.62834 0 7.47665 0 7.31828C0 7.15992 0.0636142 7.00822 0.176501 6.89739L7.04828 0.183835C7.29924 -0.0612782 7.69944 -0.0612782 7.95039 0.183835L14.8222 6.8961C14.9359 7.00702 15 7.15928 15 7.31828C15 7.47729 14.9359 7.62955 14.8222 7.74047C14.5821 7.9754 14.1989 7.9754 13.9588 7.74047V7.73918Z" fill="black"/>
+  </svg>
+  <svg class="swiper-button-next unset-swiper-styling left-24 xl:left-44 bottom-10 xl:bottom-28 cursor-pointer w-12 h-12 p-4 rounded-full bg-white rotate-90" width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M13.9588 7.73918L7.49934 1.42968L1.03984 7.73918C0.799808 7.9741 0.416528 7.9741 0.176501 7.73918C0.0636142 7.62834 0 7.47665 0 7.31828C0 7.15992 0.0636142 7.00822 0.176501 6.89739L7.04828 0.183835C7.29924 -0.0612782 7.69944 -0.0612782 7.95039 0.183835L14.8222 6.8961C14.9359 7.00702 15 7.15928 15 7.31828C15 7.47729 14.9359 7.62955 14.8222 7.74047C14.5821 7.9754 14.1989 7.9754 13.9588 7.74047V7.73918Z" fill="black"/>
+  </svg>
+
   <div class="mission-swiper mt-10 md:mt-14 w-screen overflow-hidden md:flex">
+
+
     <div class="swiper-wrapper md:w-full md:flex md:flex-col md:px-4 lg:px-20 max-w-screen-xl xl:mx-auto">
+
       {% for block in section.blocks %}
         <div class="bg-white md:bg-neutral-50 swiper-slide w-80 md:w-full pb-8 md:pb-0 md:mb-8 flex flex-col md:flex-row">
           <img class="w-full md:min-w-[33%] md:w-1/3 object-cover" src="{{ block.settings.image | image_url: width: 440 }}" alt="{{ block.settings.image.alt }}" width="440" height="220">
@@ -54,8 +90,9 @@
         </div>
       {% endfor %}
     </div>
-    <div class="swiper-pagination md:hidden [&>*]:w-5 [&>*]:h-5 [&>*]:bg-downy-300 [&>*]:opacity-25 [&>*.swiper-pagination-bullet-active]:opacity-100"></div>
+    {% comment %} <div class="swiper-pagination md:hidden [&>*]:w-5 [&>*]:h-5 [&>*]:bg-downy-300 [&>*]:opacity-25 [&>*.swiper-pagination-bullet-active]:opacity-100"></div> {% endcomment %}
   </div>
+</div>
 </div>
 <div class="flex flex-col lg:flex-row-reverse lg:items-center max-w-screen-sm lg:max-w-screen-xl mx-auto">
   <img class="pl-4 sm:pl-0 h-80 object-cover lg:min-w-min lg:h-[32rem]" src="{{ '1how_we_do_it.jpg' | file_img_url: '640x' }}" alt="Maker mums creating handmade products" width="640" height="640">
@@ -73,6 +110,15 @@
     <p class="mt-6 mx-4">
       Every purchase empowers. We pride ourselves on creating quality handmade products for our customers while providing our Makers with sustainable employment, health insurance, and a living wage well above the standard income for the Maai Mahiu area.
     </p>
+
+    <div style="position: relative" class="wwdi-options">
+      <svg class="swiper-button-prev unset-swiper-styling left-6 xl:left-24 bottom-10 xl:bottom-28 cursor-pointer w-12 h-12 p-4 rounded-full bg-white -rotate-90" width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M13.9588 7.73918L7.49934 1.42968L1.03984 7.73918C0.799808 7.9741 0.416528 7.9741 0.176501 7.73918C0.0636142 7.62834 0 7.47665 0 7.31828C0 7.15992 0.0636142 7.00822 0.176501 6.89739L7.04828 0.183835C7.29924 -0.0612782 7.69944 -0.0612782 7.95039 0.183835L14.8222 6.8961C14.9359 7.00702 15 7.15928 15 7.31828C15 7.47729 14.9359 7.62955 14.8222 7.74047C14.5821 7.9754 14.1989 7.9754 13.9588 7.74047V7.73918Z" fill="black"/>
+      </svg>
+      <svg class="swiper-button-next unset-swiper-styling left-24 xl:left-44 bottom-10 xl:bottom-28 cursor-pointer w-12 h-12 p-4 rounded-full bg-white rotate-90" width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M13.9588 7.73918L7.49934 1.42968L1.03984 7.73918C0.799808 7.9741 0.416528 7.9741 0.176501 7.73918C0.0636142 7.62834 0 7.47665 0 7.31828C0 7.15992 0.0636142 7.00822 0.176501 6.89739L7.04828 0.183835C7.29924 -0.0612782 7.69944 -0.0612782 7.95039 0.183835L14.8222 6.8961C14.9359 7.00702 15 7.15928 15 7.31828C15 7.47729 14.9359 7.62955 14.8222 7.74047C14.5821 7.9754 14.1989 7.9754 13.9588 7.74047V7.73918Z" fill="black"/>
+      </svg>
+
     <div class="whywedoit-swiper mt-10 w-screen lg:w-full overflow-hidden lg:overflow-scroll 2xl:overflow-hidden">
       <div class="swiper-wrapper">
         <div class="swiper-slide relative pt-4 w-60 lg:w-48 2xl:w-52 lg:mr-4">
@@ -114,6 +160,7 @@
         </div>
       </div>
     </div>
+  </div>
   </div>
 </div>
 <div class="my-14 md:my-20 flex flex-col items-center max-w-screen-sm lg:max-w-none mx-auto">
@@ -173,19 +220,33 @@
             spaceBetween: 16,
             slidesPerView: 'auto',
             centeredSlides: true,
-            pagination: {
-              el: ".mission-swiper .swiper-pagination",
-              type: "bullets",
-              clickable: true
+            navigation: {
+              prevEl: ".ms-options .swiper-button-prev",
+              nextEl: ".ms-options .swiper-button-next",
             }
           });
           swiper2 = new Swiper(".whywedoit-swiper", {
             spaceBetween: 16,
             slidesPerView: 'auto',
-            centeredSlides: true
+            centeredSlides: true,
+            navigation: {
+              prevEl: ".wwdi-options .swiper-button-prev",
+              nextEl: ".wwdi-options .swiper-button-next",
+            }
           });
         }
       } else if (desktop.matches) {
+
+        swiper2 = new Swiper(".whywedoit-swiper", {
+          spaceBetween: 16,
+          slidesPerView: 'auto',
+          centeredSlides: true,
+          navigation: {
+            prevEl: ".wwdi-options .swiper-button-prev",
+            nextEl: ".wwdi-options .swiper-button-next",
+          }
+        });
+
         if (swiper.destroy) {
           swiper.destroy();
           swiper2.destroy();
