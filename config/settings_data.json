@@ -92,7 +92,7 @@
             "type": "submenu_featured",
             "settings": {
               "submenu_title": "Featured",
-              "collection": "new-arrivals",
+              "collection": "the-holiday-edit",
               "title": "HOLIDAY GIFT GUIDE"
             }
           }
