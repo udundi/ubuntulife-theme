@@ -84,7 +84,7 @@
             "type": "submenu_featured",
             "settings": {
               "submenu_title": "Featured",
-              "collection": "dog-collars",
+              "collection": "best-sellers",
               "title": "BESTSELLERS"
             }
           },
@@ -93,7 +93,7 @@
             "settings": {
               "submenu_title": "Featured",
               "collection": "new-arrivals",
-              "title": "Shop New Arrivals"
+              "title": "HOLIDAY GIFT GUIDE"
             }
           }
         },
