@@ -86,6 +86,40 @@
     {% else %}
       <h1 class="mt-2 uppercase text-neutral-700 font-black text-2xl lg:text-3xl">{{ product.title }}</h1>
     {% endif %}
+
+    <!-- Loox Reviews -->
+    <a href="#looxReviews"><div class="loox-rating" data-id="{{ product.id }}" data-rating="{{ product.metafields.loox.avg_rating }}" data-raters="{{ product.metafields.loox.num_reviews }}"></div></a>
+
+    {% if settings.enable_product_reviews and settings.reviews_layout == 'full' %}
+      {% if isModal %}
+        {%- assign review_link = product.url | within: collection | append: '#Reviews-' | append: product.id -%}
+      {% else %}
+        {%- assign review_link = '#Reviews-' | append: product.id -%}
+      {% endif %}
+      <a href="{{ review_link }}" class="product-single__review-link">
+        <span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span>
+      </a>
+    {% endif %}
+
+    {% if product.metafields.loox.num_reviews %}
+    <script id="looxSchemaJson" type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "Product",
+        "@id": {{ canonical_url | json }},
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "{{ product.metafields.loox.avg_rating }}",
+            "reviewCount": "{{ product.metafields.loox.num_reviews }}"
+        },
+        "name": {{ product.title | json }}
+    }
+    </script>
+    {% endif %}
+
+    <div id="looxReviews" data-product-id="{{product.id}}" class="loox-reviews-default">{{ product.metafields.loox.reviews }}</div>
+    <!-- END Loox Reviews -->
+
     <span v-if="compareAtPrice > price" class="flex my-2 lg:text-lg">
         <span class="line-through decoration-downy-300 text-neutral-700">{ formatMoney(compareAtPrice) }</span>
         <span class="ml-2">{ formatMoney(price) }</span>
