@@ -2,8 +2,8 @@
   {% for block in section.blocks %}
     <a class="group relative md:mt-0 w-full" href="{{ block.settings.cta_url }}">
       <picture>
-        <source media="(min-width: 640px)" srcset="{{ block.settings.image | image_url: width: 768 }}">
-        <source media="(max-width: 639px)" srcset="{{ block.settings.image | image_url: width: 640 }}">
+        <source media="(min-width: 640px)" srcset="{{ block.settings.image | image_url: width: 968 }}">
+        <source media="(max-width: 639px)" srcset="{{ block.settings.image | image_url: width: 840 }}">
         <img 
           class="w-full h-[36rem] md:h-[44rem] object-cover p-0.5 group-hover:p-0 group-hover:border-2 border-downy-300" 
           src="{{ block.settings.image | image_url: width: 768 }}" 

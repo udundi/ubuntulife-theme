@@ -33,10 +33,10 @@
             </div>
           {% endif %}
           <picture>
-            <source media="(min-width: 1536px)" srcset="{{ block.settings.image | image_url: width: 384 }}">
-            <source media="(min-width: 768px)" srcset="{{ block.settings.image | image_url: width: 320 }}">
-            <source media="(min-width: 640px)" srcset="{{ block.settings.image | image_url: width: 240 }}">
-            <source media="(max-width: 639px)" srcset="{{ block.settings.image | image_url: width: 200 }}">
+            <source media="(min-width: 1536px)" srcset="{{ block.settings.image | image_url: width: 984 }}">
+            <source media="(min-width: 768px)" srcset="{{ block.settings.image | image_url: width: 920 }}">
+            <source media="(min-width: 640px)" srcset="{{ block.settings.image | image_url: width: 840 }}">
+            <source media="(max-width: 639px)" srcset="{{ block.settings.image | image_url: width: 800 }}">
             <img 
               class="absolute top-0 left-0 w-full 2xl:max-w-xl h-full object-cover lg:p-0.5 lg:group-hover:p-0" 
               src="{{ block.settings.image | image_url: width: 384 }}" 

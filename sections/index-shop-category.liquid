@@ -9,9 +9,9 @@
       {% for block in section.blocks %}
         <a href="{{ block.settings.collection.url }}" class="swiper-slide w-72 lg:w-96 sm:first:ml-4 sm:last:mr-4 flex flex-col items-center">
           {% if block.settings.image %}
-            <img class="w-full aspect-square object-cover border border-downy-300" src="{{ block.settings.image | image_url: width: 384 }}" alt="Category cover photo">
+            <img class="w-full aspect-square object-cover border border-downy-300" src="{{ block.settings.image | image_url: width: 684 }}" alt="Category cover photo">
           {% else %}
-            <img class="w-full aspect-square object-cover border border-downy-300" src="{{ block.settings.collection.image | image_url: width: 384 }}" alt="Category cover photo">
+            <img class="w-full aspect-square object-cover border border-downy-300" src="{{ block.settings.collection.image | image_url: width: 684 }}" alt="Category cover photo">
           {% endif %}
           {% if block.settings.text != "" %}
             <p class="mt-2 font-black text-2xl text-neutral-800">{{ block.settings.text }}</p>
