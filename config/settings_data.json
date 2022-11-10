@@ -84,7 +84,7 @@
             "type": "submenu_featured",
             "settings": {
               "submenu_title": "Featured",
-              "collection": "dog-collars",
+              "collection": "best-sellers",
               "title": "BESTSELLERS"
             }
           },
