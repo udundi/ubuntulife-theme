@@ -34,10 +34,9 @@
           },
           "9a54d124-17ef-424e-8a3d-e372b78f9963": {
             "type": "submenu_featured",
-            "disabled": true,
             "settings": {
               "submenu_title": "Jewelry",
-              "collection": "love-bracelets",
+              "collection": "jewelry-bestsellers",
               "title": "BESTSELLERS"
             }
           },
