@@ -60,7 +60,7 @@
             "type": "submenu_featured",
             "settings": {
               "submenu_title": "bags",
-              "collection": "tote-bags",
+              "collection": "best-sellers",
               "title": "BESTSELLERS"
             }
           },
