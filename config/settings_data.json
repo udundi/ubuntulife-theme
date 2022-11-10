@@ -52,7 +52,7 @@
             "type": "submenu_featured",
             "settings": {
               "submenu_title": "Bags",
-              "collection": "bags",
+              "collection": "tote-bags",
               "title": "RED HOT!"
             }
           },
@@ -92,7 +92,7 @@
             "type": "submenu_featured",
             "settings": {
               "submenu_title": "Featured",
-              "collection": "holidays",
+              "collection": "the-holiday-edit",
               "title": "HOLIDAY GIFT GUIDE"
             }
           }
