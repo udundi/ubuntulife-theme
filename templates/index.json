@@ -2,12 +2,11 @@
   "sections": {
     "4e8f0020-7783-4328-aa05-e2ded3c840c6": {
       "type": "full-hero",
-      "disabled": true,
       "blocks": {
         "32410aad-66a3-4c80-ba7d-13af08bd658e": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/UBUNTU_11.19.204431_674ae459-f71e-40f3-b8a4-04c77e3b8a04.jpg",
+            "image": "shopify:\/\/shop_images\/Ubuntu_10684_600_x_1200.jpg",
             "mobile_image": "shopify:\/\/shop_images\/UBUNTU_11.19.204431_674ae459-f71e-40f3-b8a4-04c77e3b8a04.jpg"
           }
         },
