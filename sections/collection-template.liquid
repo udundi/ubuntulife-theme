@@ -260,7 +260,10 @@
                   <p class="text-xs md:text-sm lg:text-base mt-1.5 lg:mt-8 font-medium text-center">{{ product.title }} - {{ color }}</p>
                   {%- comment -%} <p class="text-xs md:text-sm lg:text-base pt-3 mt-auto">{{ variant.price | money_with_currency }}</p> {%- endcomment -%}
                   {% if product.compare_at_price %}
-                  <p class="text-xs md:text-sm lg:text-base pt-3 mt-auto"><span style="text-decoration: line-through;">{{ variant.compare_at_price | money_without_trailing_zeros }}</span> <span style="color: #60cdcb; font-weight: bold;">{{ variant.price | money_without_trailing_zeros }}</span></p>
+                  <p class="text-xs md:text-sm lg:text-base pt-3 mt-auto">
+                    <span style="text-decoration: line-through;">{{ variant.compare_at_price | money_without_trailing_zeros }}</span>
+                    <span class="font-bold text-downy-300">{{ variant.price | money_without_trailing_zeros }}</span>
+                  </p>
                   {% else %}
                   <p class="text-xs md:text-sm lg:text-base pt-3 mt-auto">{{ variant.price | money_without_trailing_zeros }}</p>
                   {% endif %}
