@@ -232,6 +232,7 @@
   </div>
 
   <!-- PRODUCT GRID -->
+  {% paginate collection.products by 50 %}
   <div class="my-8 px-3 md:px-0 grid grid-cols-2 sm:grid-cols-3 gap-3 lg:gap-4 gap-y-5 lg:gap-y-12">
     {% for product in collection.products %}
      {% if section.settings.split_variants %}
@@ -306,7 +307,44 @@
       {% endif %}
     {% endfor %}
   </div>
+  {% if paginate.pages > 1 %}
+    <div id="pagination-wrapper">
+      {{ paginate | default_pagination }}
+    </div>
+  {% endif %}
+  {% endpaginate %}
 </div>
+
+<style>
+  .unset-swiper-styling {
+    top: unset;
+  }
+
+  #pagination-wrapper {
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+
+  #pagination-wrapper > * {
+    margin-left: 6px;
+    margin-right: 6px; 
+  }
+
+  #pagination-wrapper .current {
+    color: rgb(96, 205, 203);
+  }
+
+  @media (min-width: 640px) {
+    #pagination-wrapper {
+      margin-top: 32px;
+      margin-bottom: 32px;
+      font-size: 20px;
+    }
+  }
+</style>
 
 <script>
   Vue.createApp({
