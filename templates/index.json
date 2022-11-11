@@ -20,14 +20,14 @@
         "eb964d6f-c4dd-41b9-a09a-bdaf0231cc88": {
           "type": "heading",
           "settings": {
-            "text": "",
+            "text": "*excludes new arrivals",
             "main_heading": false,
-            "color": "#ffffff",
+            "color": "#000000",
             "alignment": "text-center",
-            "ubuntu_font": true,
-            "font_size": "text-xl lg:text-2xl 2xl:text-3xl",
+            "ubuntu_font": false,
+            "font_size": "lg:text-lg 2xl:text-xl",
             "font_weight": "font-bold",
-            "margin_top": ""
+            "margin_top": "mt-8"
           }
         },
         "8e509f9c-023c-4690-b4b9-a146bb4706b0": {
