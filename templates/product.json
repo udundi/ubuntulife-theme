@@ -1,5 +1,15 @@
 {
   "sections": {
+    "shogun-helper": {
+      "type": "shogun-helper",
+      "settings": {
+      }
+    },
+    "shogun-above": {
+      "type": "shogun-above",
+      "settings": {
+      }
+    },
     "main": {
       "type": "product-template",
       "settings": {
@@ -67,6 +77,7 @@
         },
         "5fedb38f-9a17-4f72-aac8-b8ad639a614b": {
           "type": "product",
+          "disabled": true,
           "settings": {
             "product": "in-this-together-bundle"
           }
@@ -93,6 +104,7 @@
           "settings": {
             "only_photos": false,
             "aggregated": false,
+            "limit": 20,
             "hide_thumbnails": false,
             "maxwidth": 1080
           }
@@ -104,18 +116,8 @@
       "settings": {
       }
     },
-    "shogun-above": {
-      "type": "shogun-above",
-      "settings": {
-      }
-    },
     "shogun-below": {
       "type": "shogun-below",
-      "settings": {
-      }
-    },
-    "shogun-helper": {
-      "type": "shogun-helper",
       "settings": {
       }
     }

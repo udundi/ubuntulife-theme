@@ -14,8 +14,8 @@
           "22ba6768-c1a2-4e40-baec-4f3b97e82269": {
             "type": "mobile_featured",
             "settings": {
-              "collection": "love-bracelets",
-              "title": "LOVE BRACELETS"
+              "collection": "jewelry-bestsellers",
+              "title": "JEWELRY BESTSELLERS"
             }
           },
           "c43676b2-ed8b-43c4-902d-e02c31d6180e": {
@@ -36,64 +36,64 @@
             "type": "submenu_featured",
             "settings": {
               "submenu_title": "Jewelry",
-              "collection": "love-bracelets",
-              "title": "20% Off All Love Bracelets"
+              "collection": "jewelry-bestsellers",
+              "title": "JEWELRY BESTSELLERS"
             }
           },
           "44a12531-7d80-4960-ae98-17d4dd7d1778": {
             "type": "submenu_featured",
             "settings": {
               "submenu_title": "Jewelry",
-              "collection": "summer-bracelets",
-              "title": "New Summer Collection"
+              "collection": "bracelet-bundles",
+              "title": "BRACELET BUNDLES"
             }
           },
           "dbd191b2-305e-4d8a-88da-c7edce746ece": {
             "type": "submenu_featured",
             "settings": {
               "submenu_title": "Bags",
-              "collection": "bags",
-              "title": "New Arrival: Basket Bags"
+              "collection": "tote-bags",
+              "title": "RED HOT!"
             }
           },
           "484a85b0-a5ab-426d-8b0f-888598513735": {
             "type": "submenu_featured",
             "settings": {
               "submenu_title": "bags",
-              "collection": "tote-bags",
-              "title": "Tote Bags"
+              "collection": "bag-bestsellers",
+              "title": "BAG BESTSELLERS"
             }
           },
           "8bc6679f-e143-42fc-86dc-f0712bf98ecb": {
             "type": "submenu_featured",
             "settings": {
               "submenu_title": "Shoes",
-              "collection": "afridrilles",
-              "title": "20% Off All Afridrilles"
+              "collection": "mules",
+              "title": "UP TO 50% OFF MULES"
             }
           },
           "62f15d79-40b0-43a4-a563-19d3da669423": {
             "type": "submenu_featured",
             "settings": {
               "submenu_title": "Shoes",
-              "collection": "shoes",
-              "title": "Shoes"
+              "collection": "afridrilles",
+              "title": "RESORT READY!"
             }
           },
           "b81120ba-6171-4812-bf4a-c9b7bfabd12a": {
             "type": "submenu_featured",
             "settings": {
               "submenu_title": "Featured",
-              "collection": "dog-collars",
-              "title": "New Dog Collar Collection"
+              "collection": "best-sellers",
+              "title": "BESTSELLERS"
             }
           },
           "f106ff80-8025-4df2-9b69-d653f4824521": {
             "type": "submenu_featured",
             "settings": {
               "submenu_title": "Featured",
-              "collection": "new-arrivals",
-              "title": "Shop New Arrivals"
+              "collection": "holidays",
+              "title": "HOLIDAY GIFT GUIDE"
             }
           }
         },
@@ -112,7 +112,7 @@
         ],
         "settings": {
           "show_banner": true,
-          "banner_text": "FREE SHIPPING OVER $50 + FREE RETURNS"
+          "banner_text": "UP TO 50% OFF MULE SALE!"
         }
       },
       "footer": {
