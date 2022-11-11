@@ -7,7 +7,7 @@
           "type": "slide",
           "settings": {
             "image": "shopify:\/\/shop_images\/Ubuntu_10684_600_x_1200.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/UBUNTU_11.19.204431_674ae459-f71e-40f3-b8a4-04c77e3b8a04.jpg"
+            "mobile_image": "shopify:\/\/shop_images\/Untitled_design_10.jpg"
           }
         },
         "f3a522c1-423e-4185-a5df-109b157ef7bf": {
@@ -66,8 +66,8 @@
       ],
       "settings": {
         "enable_text": true,
-        "cta_text": "",
-        "cta_url": "shopify:\/\/collections",
+        "cta_text": "shop now",
+        "cta_url": "shopify:\/\/collections\/best-sellers",
         "cta_color": "#ffffff",
         "cta_background_color": "#000000",
         "cta_font_size": "lg:text-lg 2xl:text-xl",
