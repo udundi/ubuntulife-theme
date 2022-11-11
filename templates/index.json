@@ -23,7 +23,7 @@
             "text": "*excludes new arrivals",
             "main_heading": false,
             "color": "#000000",
-            "alignment": "text-center",
+            "alignment": "text-right",
             "ubuntu_font": false,
             "font_size": "lg:text-lg 2xl:text-xl",
             "font_weight": "font-bold",
@@ -35,7 +35,7 @@
           "settings": {
             "text": "BLACK FRIDAY SALE",
             "main_heading": true,
-            "color": "#000000",
+            "color": "#EA0606",
             "alignment": "text-center",
             "ubuntu_font": false,
             "font_size": "text-4xl lg:text-5xl",
