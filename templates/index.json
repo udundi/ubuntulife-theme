@@ -68,14 +68,14 @@
         "enable_text": true,
         "cta_text": "SHOP NOW",
         "cta_url": "shopify:\/\/collections\/all",
-        "cta_color": "#262626",
-        "cta_background_color": "#60cdcb",
+        "cta_color": "#ffffff",
+        "cta_background_color": "#000000",
         "cta_font_size": "lg:text-lg 2xl:text-xl",
-        "cta_font_weight": "font-black",
+        "cta_font_weight": "font-medium",
         "cta_vertical_padding": "py-1",
         "cta_horizontal_padding": "px-4",
         "text_vertical": "top-1\/2 -translate-y-1\/2",
-        "text_horizontal": "left-1\/2 -translate-x-1\/2",
+        "text_horizontal": "left-6 md:left-10 xl:left-14",
         "flex_alignment": "items-center"
       }
     },
