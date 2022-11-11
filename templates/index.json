@@ -12,6 +12,7 @@
         },
         "f3a522c1-423e-4185-a5df-109b157ef7bf": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/7_cd0b83fa-9844-447f-a846-0972a00e3302.png",
             "mobile_image": "shopify:\/\/shop_images\/7_cd0b83fa-9844-447f-a846-0972a00e3302.png"
@@ -35,7 +36,7 @@
           "settings": {
             "text": "BLACK FRIDAY SALE",
             "main_heading": true,
-            "color": "#EA0606",
+            "color": "#ea0606",
             "alignment": "text-center",
             "ubuntu_font": false,
             "font_size": "text-4xl lg:text-5xl",
