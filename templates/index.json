@@ -81,6 +81,7 @@
     },
     "hero": {
       "type": "index-hero",
+      "disabled": true,
       "blocks": {
         "77e6cdc4-c181-4097-a58a-12e82694e093": {
           "type": "pane",
