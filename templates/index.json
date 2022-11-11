@@ -24,7 +24,7 @@
             "text": "*excludes new arrivals",
             "main_heading": false,
             "color": "#000000",
-            "alignment": "text-right",
+            "alignment": "text-center",
             "ubuntu_font": false,
             "font_size": "lg:text-lg 2xl:text-xl",
             "font_weight": "font-bold",
