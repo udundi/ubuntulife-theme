@@ -47,14 +47,14 @@
         "9fa9130a-5c98-4c05-a7ea-9c56aa5788d7": {
           "type": "heading",
           "settings": {
-            "text": "Enjoy 35% off sitewide",
+            "text": "*excludes new arrivals",
             "main_heading": false,
             "color": "#000000",
             "alignment": "text-center",
-            "ubuntu_font": true,
-            "font_size": "text-2xl lg:text-3xl 2xl:text-4xl",
+            "ubuntu_font": false,
+            "font_size": "lg:text-lg 2xl:text-xl",
             "font_weight": "font-medium",
-            "margin_top": "mt-2"
+            "margin_top": ""
           }
         }
       },
