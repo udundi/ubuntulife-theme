@@ -46,13 +46,12 @@
         },
         "9fa9130a-5c98-4c05-a7ea-9c56aa5788d7": {
           "type": "heading",
-          "disabled": true,
           "settings": {
             "text": "CODE CYBER10",
             "main_heading": false,
             "color": "#000000",
             "alignment": "text-center",
-            "ubuntu_font": false,
+            "ubuntu_font": true,
             "font_size": "text-2xl lg:text-3xl 2xl:text-4xl",
             "font_weight": "font-medium",
             "margin_top": ""
