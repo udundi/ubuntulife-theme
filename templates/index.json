@@ -6,7 +6,7 @@
         "32410aad-66a3-4c80-ba7d-13af08bd658e": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Untitled_design_78.png",
+            "image": "shopify:\/\/shop_images\/Untitled_8000_x_3000_px.jpg",
             "mobile_image": "shopify:\/\/shop_images\/Untitled_design_79.png"
           }
         },
@@ -48,12 +48,12 @@
           "type": "heading",
           "disabled": true,
           "settings": {
-            "text": "*excludes new arrivals",
+            "text": "CODE CYBER10",
             "main_heading": false,
             "color": "#000000",
             "alignment": "text-center",
             "ubuntu_font": false,
-            "font_size": "lg:text-lg 2xl:text-xl",
+            "font_size": "text-2xl lg:text-3xl 2xl:text-4xl",
             "font_weight": "font-medium",
             "margin_top": ""
           }
