@@ -21,10 +21,10 @@
         "eb964d6f-c4dd-41b9-a09a-bdaf0231cc88": {
           "type": "heading",
           "settings": {
-            "text": "Enjoy up to 50% OFF",
+            "text": "Enjoy up to 60% OFF",
             "main_heading": false,
             "color": "#000000",
-            "alignment": "text-center",
+            "alignment": "text-right",
             "ubuntu_font": true,
             "font_size": "text-2xl lg:text-3xl 2xl:text-4xl",
             "font_weight": "font-bold",
