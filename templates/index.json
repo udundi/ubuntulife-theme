@@ -2,13 +2,12 @@
   "sections": {
     "4e8f0020-7783-4328-aa05-e2ded3c840c6": {
       "type": "full-hero",
-      "disabled": true,
       "blocks": {
         "32410aad-66a3-4c80-ba7d-13af08bd658e": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Untitled_8000_x_3000_px.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/Untitled_design_79.png"
+            "image": "shopify:\/\/shop_images\/Untitled_8000_x_3000_px_1.png",
+            "mobile_image": "shopify:\/\/shop_images\/Untitled_design_81.png"
           }
         },
         "f3a522c1-423e-4185-a5df-109b157ef7bf": {
@@ -22,7 +21,7 @@
         "eb964d6f-c4dd-41b9-a09a-bdaf0231cc88": {
           "type": "heading",
           "settings": {
-            "text": "Enjoy up to 60% OFF",
+            "text": "Enjoy up to 50% OFF",
             "main_heading": false,
             "color": "#000000",
             "alignment": "text-center",
@@ -83,6 +82,7 @@
     },
     "hero": {
       "type": "index-hero",
+      "disabled": true,
       "blocks": {
         "77e6cdc4-c181-4097-a58a-12e82694e093": {
           "type": "pane",
