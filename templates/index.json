@@ -2,6 +2,7 @@
   "sections": {
     "4e8f0020-7783-4328-aa05-e2ded3c840c6": {
       "type": "full-hero",
+      "disabled": true,
       "blocks": {
         "32410aad-66a3-4c80-ba7d-13af08bd658e": {
           "type": "slide",
@@ -82,7 +83,6 @@
     },
     "hero": {
       "type": "index-hero",
-      "disabled": true,
       "blocks": {
         "77e6cdc4-c181-4097-a58a-12e82694e093": {
           "type": "pane",
