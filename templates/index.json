@@ -79,7 +79,7 @@
         "cta_vertical_padding": "py-1",
         "cta_horizontal_padding": "px-8",
         "text_vertical": "bottom-14 xl:bottom-20",
-        "text_horizontal": "left-6 md:left-10 xl:left-14",
+        "text_horizontal": "left-1\/2 -translate-x-1\/2",
         "flex_alignment": "items-center"
       }
     },
