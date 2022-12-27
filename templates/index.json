@@ -77,10 +77,10 @@
         "cta_font_size": "lg:text-lg 2xl:text-xl",
         "cta_font_weight": "font-medium",
         "cta_vertical_padding": "py-1",
-        "cta_horizontal_padding": "px-12",
+        "cta_horizontal_padding": "px-8",
         "text_vertical": "bottom-14 xl:bottom-20",
         "text_horizontal": "left-6 md:left-10 xl:left-14",
-        "flex_alignment": "items-end"
+        "flex_alignment": "items-center"
       }
     },
     "hero": {
