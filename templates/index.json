@@ -6,7 +6,7 @@
         "32410aad-66a3-4c80-ba7d-13af08bd658e": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Copy_of_SALE_3.png",
+            "image": "shopify:\/\/shop_images\/Copy_of_SALE_4.jpg",
             "mobile_image": "shopify:\/\/shop_images\/Untitled_design_81.png"
           }
         },
@@ -20,6 +20,7 @@
         },
         "eb964d6f-c4dd-41b9-a09a-bdaf0231cc88": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "text": "Enjoy up to 75% OFF",
             "main_heading": false,
@@ -33,6 +34,7 @@
         },
         "8e509f9c-023c-4690-b4b9-a146bb4706b0": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "text": "End of the year SALE",
             "main_heading": true,
@@ -46,6 +48,7 @@
         },
         "9fa9130a-5c98-4c05-a7ea-9c56aa5788d7": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "text": "*excludes new arrivals",
             "main_heading": false,
@@ -66,8 +69,8 @@
         "9fa9130a-5c98-4c05-a7ea-9c56aa5788d7"
       ],
       "settings": {
-        "enable_text": true,
-        "cta_text": "shop now",
+        "enable_text": false,
+        "cta_text": "",
         "cta_url": "shopify:\/\/collections\/best-sellers",
         "cta_color": "#ffffff",
         "cta_background_color": "#000000",
