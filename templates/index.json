@@ -69,7 +69,7 @@
         "9fa9130a-5c98-4c05-a7ea-9c56aa5788d7"
       ],
       "settings": {
-        "enable_text": false,
+        "enable_text": true,
         "cta_text": "",
         "cta_url": "shopify:\/\/collections\/sale",
         "cta_color": "#ffffff",
