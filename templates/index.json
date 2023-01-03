@@ -6,8 +6,8 @@
         "32410aad-66a3-4c80-ba7d-13af08bd658e": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/website_hero_5.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/Untitled_design_13.jpg"
+            "image": "shopify:\/\/shop_images\/website_hero_8.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/website_banner_mobile_2.jpg"
           }
         },
         "f3a522c1-423e-4185-a5df-109b157ef7bf": {
@@ -34,13 +34,14 @@
         },
         "8e509f9c-023c-4690-b4b9-a146bb4706b0": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "text": "Shop our favorite print!",
             "main_heading": true,
             "color": "#ff70c9",
-            "alignment": "text-left",
+            "alignment": "text-center",
             "ubuntu_font": true,
-            "font_size": "text-4xl lg:text-5xl",
+            "font_size": "text-2xl lg:text-3xl 2xl:text-4xl",
             "font_weight": "font-black",
             "margin_top": ""
           }
@@ -70,7 +71,7 @@
       "settings": {
         "enable_text": true,
         "cta_text": "SHOP NOW",
-        "cta_url": "shopify:\/\/collections\/sale",
+        "cta_url": "shopify:\/\/collections\/bags",
         "cta_color": "#ffffff",
         "cta_background_color": "#000000",
         "cta_font_size": "lg:text-lg 2xl:text-xl",
