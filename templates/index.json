@@ -6,7 +6,7 @@
         "32410aad-66a3-4c80-ba7d-13af08bd658e": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/website_hero_4.jpg",
+            "image": "shopify:\/\/shop_images\/website_hero_5.jpg",
             "mobile_image": "shopify:\/\/shop_images\/Untitled_design_13.jpg"
           }
         },
@@ -34,13 +34,12 @@
         },
         "8e509f9c-023c-4690-b4b9-a146bb4706b0": {
           "type": "heading",
-          "disabled": true,
           "settings": {
-            "text": "End of the year SALE",
+            "text": "Shop our favorite print!",
             "main_heading": true,
             "color": "#ff70c9",
-            "alignment": "text-center",
-            "ubuntu_font": false,
+            "alignment": "text-left",
+            "ubuntu_font": true,
             "font_size": "text-4xl lg:text-5xl",
             "font_weight": "font-black",
             "margin_top": ""
