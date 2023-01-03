@@ -6,7 +6,7 @@
         "32410aad-66a3-4c80-ba7d-13af08bd658e": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Copy_of_SALE_5.jpg",
+            "image": "shopify:\/\/shop_images\/website_hero_4.jpg",
             "mobile_image": "shopify:\/\/shop_images\/Untitled_design_13.jpg"
           }
         },
@@ -80,7 +80,7 @@
         "cta_horizontal_padding": "px-8",
         "text_vertical": "bottom-14 xl:bottom-20",
         "text_horizontal": "left-1\/2 -translate-x-1\/2",
-        "flex_alignment": "items-center"
+        "flex_alignment": "items-start"
       }
     },
     "hero": {
