@@ -71,7 +71,7 @@
       "settings": {
         "enable_text": true,
         "cta_text": "SHOP NOW",
-        "cta_url": "shopify:\/\/collections\/bags",
+        "cta_url": "https:\/\/www.ubuntu.life\/collections\/bracelets",
         "cta_color": "#ffffff",
         "cta_background_color": "#000000",
         "cta_font_size": "lg:text-lg 2xl:text-xl",
@@ -325,7 +325,7 @@
         "7ab96759-3259-4cf2-8397-9827ce8094ef": {
           "type": "pane",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Untitled_design_82.png",
+            "image": "shopify:\/\/shop_images\/website_grid_4.jpg",
             "show_text": true,
             "text_vertical": "top-4 md:top-6 xl:top-10",
             "text_horizontal": "left-4 md:left-6 xl:left-10",
