@@ -5,6 +5,7 @@
       "blocks": {
         "32410aad-66a3-4c80-ba7d-13af08bd658e": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/website_hero___16_2.jpg",
             "mobile_image": "shopify:\/\/shop_images\/website_banner_mobile__7.jpg"
@@ -85,12 +86,11 @@
     },
     "hero": {
       "type": "index-hero",
-      "disabled": true,
       "blocks": {
         "77e6cdc4-c181-4097-a58a-12e82694e093": {
           "type": "pane",
           "settings": {
-            "image": "shopify:\/\/shop_images\/backpack.jpg",
+            "image": "shopify:\/\/shop_images\/Untitled_design_14.jpg",
             "url": "https:\/\/www.ubuntu.life\/collections\/bags\/products\/back-to-school-bagpack-black-kuba",
             "show_text": true,
             "text_vertical": "bottom-2 md:bottom-4 xl:bottom-8",
@@ -112,7 +112,7 @@
         "982cc7a3-862f-412f-bfed-99b48a0db671": {
           "type": "pane",
           "settings": {
-            "image": "shopify:\/\/shop_images\/panes_6.png",
+            "image": "shopify:\/\/shop_images\/website_panes_2.jpg",
             "url": "https:\/\/www.ubuntu.life\/collections\/bracelets",
             "show_text": true,
             "text_vertical": "bottom-2 md:bottom-4 xl:bottom-8",
@@ -134,8 +134,8 @@
         "fc37d08e-985f-46c3-a7f1-2b114a16e733": {
           "type": "pane",
           "settings": {
-            "image": "shopify:\/\/shop_images\/mule_1.jpg",
-            "url": "https:\/\/www.ubuntu.life\/collections\/mules",
+            "image": "shopify:\/\/shop_images\/website_panes__3.jpg",
+            "url": "https:\/\/www.ubuntu.life\/collections\/valentines-day",
             "show_text": true,
             "text_vertical": "bottom-2 md:bottom-4 xl:bottom-8",
             "text_horizontal": "left-2 md:left-4 xl:left-8",
@@ -155,6 +155,7 @@
         },
         "2eb55731-324a-4062-8968-026040cd16d7": {
           "type": "pane",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/panes_4.png",
             "url": "https:\/\/www.ubuntu.life\/collections\/bags\/products\/west-african-bag",
