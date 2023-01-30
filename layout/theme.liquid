@@ -90,6 +90,21 @@ geq.load("K97HXD5");}();
 	{{ shop.metafields.loox["global_html_body"] }}
   {% include 'ud-cart' %}
  {% include 'smile-initializer' %}
+ 
+{% if product %}
+<script type="text/javascript">
+    var item = {
+        Name: {{ product.title|json }},
+        ProductID: {{ product.id|json }},
+        ImageURL: "https:{{ product.featured_image.src|img_url:'grande' }}",
+        URL: "{{ shop.secure_url }}{{ product.url }}",
+        Brand: {{ product.vendor|json }},
+        Price: {{ product.price|money|json }},
+        CompareAtPrice: {{ product.compare_at_price_max|money|json }}
+    };
+geq.event('Viewed Product Reclaim', item);
+</script>
+{% endif %}
 
 </body>
 
