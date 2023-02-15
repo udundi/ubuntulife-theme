@@ -90,6 +90,7 @@
       "blocks": {
         "77e6cdc4-c181-4097-a58a-12e82694e093": {
           "type": "pane",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/Untitled_design_14.jpg",
             "url": "https:\/\/www.ubuntu.life\/collections\/bracelets",
