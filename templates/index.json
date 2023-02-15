@@ -286,7 +286,7 @@
         "60bb772e-f39d-49b6-98c8-fa66172cece4": {
           "type": "pane",
           "settings": {
-            "image": "shopify:\/\/shop_images\/website_grid__5.jpg",
+            "image": "shopify:\/\/shop_images\/website_grid_1052d42e-725e-4693-8b53-371407bfaa6d.jpg",
             "show_text": true,
             "text_vertical": "top-6 md:top-8 xl:top-12",
             "text_horizontal": "left-6 md:left-10 xl:left-14",
@@ -296,8 +296,8 @@
             "ubuntu_font": false,
             "font_size": "lg:text-lg 2xl:text-xl",
             "font_weight": "font-medium",
-            "cta_text": "shop now",
-            "cta_url": "https:\/\/www.ubuntu.life\/collections\/valentines-day",
+            "cta_text": "about us",
+            "cta_url": "https:\/\/www.ubuntu.life\/pages\/about",
             "cta_color": "#ffffff",
             "cta_bg_color": "#60cdcb",
             "cta_font_size": "lg:text-lg 2xl:text-xl",
