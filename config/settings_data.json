@@ -90,6 +90,7 @@
           },
           "f106ff80-8025-4df2-9b69-d653f4824521": {
             "type": "submenu_featured",
+            "disabled": true,
             "settings": {
               "submenu_title": "Featured",
               "collection": "valentines-day",
