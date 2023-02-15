@@ -338,7 +338,7 @@
             "font_size": "text-xl lg:text-2xl 2xl:text-3xl",
             "font_weight": "font-medium",
             "cta_text": "shop now",
-            "cta_url": "https:\/\/www.ubuntu.life\/search?type=product&q=black",
+            "cta_url": "https:\/\/www.ubuntu.life\/collections\/black-white",
             "cta_color": "#ffffff",
             "cta_bg_color": "#000000",
             "cta_font_size": "lg:text-lg 2xl:text-xl",
