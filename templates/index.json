@@ -6,8 +6,8 @@
         "32410aad-66a3-4c80-ba7d-13af08bd658e": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/website_banner_hero_9.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/website_banner_mobile_3_3b0ba725-a27e-4825-aee3-96dd1e22c6a8.jpg"
+            "image": "shopify:\/\/shop_images\/website_banner_2_7.png",
+            "mobile_image": "shopify:\/\/shop_images\/website_banner_mobile_4.png"
           }
         },
         "f3a522c1-423e-4185-a5df-109b157ef7bf": {
@@ -71,7 +71,7 @@
       "settings": {
         "enable_text": true,
         "cta_text": "SHOP NOW",
-        "cta_url": "https:\/\/www.ubuntu.life\/collections\/spring-collection",
+        "cta_url": "https:\/\/www.ubuntu.life\/collections\/new-arrivals",
         "cta_color": "#ffffff",
         "cta_background_color": "#000000",
         "cta_font_size": "lg:text-lg 2xl:text-xl",
@@ -306,16 +306,16 @@
         "60bb772e-f39d-49b6-98c8-fa66172cece5": {
           "type": "pane",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Untitled_Artwork_65045d61-e3d9-4c19-a8a4-01431dd3cdc1.jpg",
+            "image": "shopify:\/\/shop_images\/website_grid_6_0c2bf921-433a-4c1d-9579-d5f4d3e32d02.jpg",
             "show_text": true,
             "text_vertical": "top-6 md:top-8 xl:top-12",
             "text_horizontal": "right-4 md:right-6 xl:right-10",
             "flex_alignment": "items-end",
-            "text": "It's a SPRING thing.",
+            "text": "new arrivals",
             "text_color": "#ffffff",
-            "ubuntu_font": false,
-            "font_size": "lg:text-lg 2xl:text-xl",
-            "font_weight": "font-bold",
+            "ubuntu_font": true,
+            "font_size": "text-xl lg:text-2xl 2xl:text-3xl",
+            "font_weight": "font-normal",
             "cta_text": "shop now",
             "cta_url": "https:\/\/www.ubuntu.life\/collections\/spring-collection",
             "cta_color": "#262626",
