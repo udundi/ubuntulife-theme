@@ -34,6 +34,7 @@
           },
           "9a54d124-17ef-424e-8a3d-e372b78f9963": {
             "type": "submenu_featured",
+            "disabled": true,
             "settings": {
               "submenu_title": "Jewelry",
               "collection": "jewelry-bestsellers",
@@ -42,6 +43,7 @@
           },
           "44a12531-7d80-4960-ae98-17d4dd7d1778": {
             "type": "submenu_featured",
+            "disabled": true,
             "settings": {
               "submenu_title": "Jewelry",
               "collection": "bracelet-bundles",
@@ -50,6 +52,7 @@
           },
           "dbd191b2-305e-4d8a-88da-c7edce746ece": {
             "type": "submenu_featured",
+            "disabled": true,
             "settings": {
               "submenu_title": "Bags",
               "collection": "tote-bags",
@@ -58,6 +61,7 @@
           },
           "484a85b0-a5ab-426d-8b0f-888598513735": {
             "type": "submenu_featured",
+            "disabled": true,
             "settings": {
               "submenu_title": "bags",
               "collection": "bag-bestsellers",
@@ -66,6 +70,7 @@
           },
           "8bc6679f-e143-42fc-86dc-f0712bf98ecb": {
             "type": "submenu_featured",
+            "disabled": true,
             "settings": {
               "submenu_title": "Shoes",
               "collection": "mules",
@@ -74,6 +79,7 @@
           },
           "62f15d79-40b0-43a4-a563-19d3da669423": {
             "type": "submenu_featured",
+            "disabled": true,
             "settings": {
               "submenu_title": "Shoes",
               "collection": "afridrilles",
