@@ -207,7 +207,7 @@
         "86084354-70a7-4581-ad76-c8ca0569d5d3": {
           "type": "pane",
           "settings": {
-            "collection": "bracelets",
+            "collection": "all-bracelets",
             "image": "shopify:\/\/shop_images\/bracelet_stack_2.jpg",
             "text": ""
           }
