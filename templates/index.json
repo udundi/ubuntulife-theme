@@ -7,7 +7,7 @@
           "type": "slide",
           "settings": {
             "image": "shopify:\/\/shop_images\/website_banner_2_8.png",
-            "mobile_image": "shopify:\/\/shop_images\/website_banner_mobile.gif"
+            "mobile_image": "shopify:\/\/shop_images\/website_banner_mobile_7.png"
           }
         },
         "f3a522c1-423e-4185-a5df-109b157ef7bf": {
@@ -306,15 +306,15 @@
         "60bb772e-f39d-49b6-98c8-fa66172cece5": {
           "type": "pane",
           "settings": {
-            "image": "shopify:\/\/shop_images\/19_7b0069f0-36ea-483d-b7ae-6d38f4ac6eb1.png",
+            "image": "shopify:\/\/shop_images\/Ubuntu65243.png",
             "show_text": true,
             "text_vertical": "top-6 md:top-8 xl:top-12",
             "text_horizontal": "right-4 md:right-6 xl:right-10",
             "flex_alignment": "items-end",
-            "text": "new arrivals",
+            "text": "Mother's Day",
             "text_color": "#ffffff",
             "ubuntu_font": true,
-            "font_size": "text-xl lg:text-2xl 2xl:text-3xl",
+            "font_size": "text-2xl lg:text-3xl 2xl:text-4xl",
             "font_weight": "font-normal",
             "cta_text": "shop now",
             "cta_url": "shopify:\/\/collections\/new-arrivals",
