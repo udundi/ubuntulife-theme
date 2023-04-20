@@ -71,7 +71,7 @@
       "settings": {
         "enable_text": true,
         "cta_text": "SHOP NOW",
-        "cta_url": "https:\/\/www.ubuntu.life\/collections\/new-arrivals",
+        "cta_url": "shopify:\/\/collections\/new-arrivals",
         "cta_color": "#ffffff",
         "cta_background_color": "#000000",
         "cta_font_size": "lg:text-lg 2xl:text-xl",
@@ -306,7 +306,7 @@
         "60bb772e-f39d-49b6-98c8-fa66172cece5": {
           "type": "pane",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Ubuntu65243.png",
+            "image": "shopify:\/\/shop_images\/website_grid_7.jpg",
             "show_text": true,
             "text_vertical": "top-6 md:top-8 xl:top-12",
             "text_horizontal": "right-4 md:right-6 xl:right-10",
