@@ -269,7 +269,7 @@
                   <p class="text-xs md:text-sm lg:text-base pt-3 mt-auto">{{ variant.price | money_without_trailing_zeros }}</p>
                   {% endif %}
                   {% unless variant.available %}
-                  <div class="rounded-full bg-candy-350 w-20 h-20 absolute right-5 top-5 flex justify-center items-center">
+                  <div class="rounded-full bg-candy-350 w-20 h-20 absolute left-5 top-5 z-10 flex justify-center items-center">
                     <p class="text-center font-ubuntulife font-bold text-white">Out of stock</p>
                   </div>
                   {% endunless %}
@@ -293,7 +293,7 @@
             <p class="text-xs md:text-sm lg:text-base pt-3 mt-auto">{{ product.price | money_without_trailing_zeros }}</p>
             {% endif %}
             {% unless product.available %}
-            <div class="rounded-full bg-candy-350 w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 absolute right-5 top-5 flex justify-center items-center">
+            <div class="rounded-full bg-candy-350 w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 absolute left-5 top-5 z-10 flex justify-center items-center">
               <p class="text-center font-ubuntulife font-bold text-white text-xs md:text-sm lg:text-base leading-none md:leading-none lg:leading-none">Out of stock</p>
             </div>
             {% endunless %}
@@ -314,7 +314,7 @@
           <p class="text-xs md:text-sm lg:text-base pt-3 mt-auto">{{ product.price | money_without_trailing_zeros }}</p>
           {% endif %}
           {% unless product.available %}
-          <div class="rounded-full bg-candy-350 w-20 h-20 md:w-12 md:h-12 absolute right-5 top-5 flex justify-center items-center">
+          <div class="rounded-full bg-candy-350 w-20 h-20 md:w-12 md:h-12 absolute left-5 top-5 z-10 flex justify-center items-center">
             <p class="text-center font-ubuntulife font-bold text-white">Out of stock</p>
           </div>
           {% endunless %}
