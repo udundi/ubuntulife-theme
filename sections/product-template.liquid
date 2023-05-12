@@ -129,7 +129,7 @@
     <span v-else class="flex my-2 lg:text-lg">
         <span>{ formatMoney(price) }</span>
     </span>
-
+<div id="Afterpay"></div>
     <div v-for="option in product.options" class="flex flex-col" :key="option.name">
       <div v-if="option.name.toLowerCase().includes('color') && colorImagesExist" class="mt-3 flex flex-wrap gap-1">
         <label v-for="(value, index) in option.values" :for="value" :key="value">
