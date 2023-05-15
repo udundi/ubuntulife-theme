@@ -6,7 +6,7 @@
         "32410aad-66a3-4c80-ba7d-13af08bd658e": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/banner_kicks.jpg",
+            "image": "shopify:\/\/shop_images\/kicks.jpg",
             "mobile_image": "shopify:\/\/shop_images\/website_banner_mobile_7_86a13755-e13b-4232-9c96-425a72db2fa5.jpg"
           }
         },
@@ -48,14 +48,13 @@
         },
         "9fa9130a-5c98-4c05-a7ea-9c56aa5788d7": {
           "type": "heading",
-          "disabled": true,
           "settings": {
-            "text": "*excludes new arrivals",
+            "text": "Get Your (New) Kicks On!",
             "main_heading": false,
             "color": "#000000",
             "alignment": "text-center",
             "ubuntu_font": true,
-            "font_size": "text-xl lg:text-2xl 2xl:text-3xl",
+            "font_size": "text-2xl lg:text-3xl 2xl:text-4xl",
             "font_weight": "font-medium",
             "margin_top": ""
           }
@@ -78,8 +77,8 @@
         "cta_font_weight": "font-medium",
         "cta_vertical_padding": "py-1",
         "cta_horizontal_padding": "px-8",
-        "text_vertical": "bottom-14 xl:bottom-20",
-        "text_horizontal": "left-1\/2 -translate-x-1\/2",
+        "text_vertical": "top-1\/2 -translate-y-1\/2",
+        "text_horizontal": "left-6 md:left-10 xl:left-14",
         "flex_alignment": "items-center"
       }
     },
