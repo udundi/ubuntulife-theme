@@ -6,8 +6,8 @@
         "32410aad-66a3-4c80-ba7d-13af08bd658e": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/website_banner_3_7.png",
-            "mobile_image": "shopify:\/\/shop_images\/website_banner_mobile_5_812312b0-f228-4bee-aa98-7c4352b274ce.jpg"
+            "image": "shopify:\/\/shop_images\/banner_kicks.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/website_banner_mobile_7_86a13755-e13b-4232-9c96-425a72db2fa5.jpg"
           }
         },
         "f3a522c1-423e-4185-a5df-109b157ef7bf": {
@@ -71,7 +71,7 @@
       "settings": {
         "enable_text": true,
         "cta_text": "SHOP NOW",
-        "cta_url": "shopify:\/\/collections\/mothers-day",
+        "cta_url": "shopify:\/\/collections\/afridrilles",
         "cta_color": "#ffffff",
         "cta_background_color": "#000000",
         "cta_font_size": "lg:text-lg 2xl:text-xl",
