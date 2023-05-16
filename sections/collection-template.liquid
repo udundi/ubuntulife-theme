@@ -268,17 +268,22 @@
                   {% else %}
                   <p class="text-xs md:text-sm lg:text-base pt-3 mt-auto">{{ variant.price | money_without_trailing_zeros }}</p>
                   {% endif %}
+                  {% unless variant.available %}
+                  <div class="rounded-full bg-candy-350 w-20 h-20 absolute right-5 top-5 z-10 flex justify-center items-center">
+                    <p class="text-center font-ubuntulife font-bold text-white">Out of stock</p>
+                  </div>
+                  {% endunless %}
                 </a>
                 {% break %}
               {% endif %}
             {% endfor %}
           {% endfor %}
         {% else %}
-          <a href="{{ product.url }}" class="flex flex-col items-center">
+          <a href="{{ product.url }}" class="flex flex-col items-center relative">
             <div class="group aspect-square relative">
-              <img class="w-full h-full object-cover relative z-0" src="{{ product.featured_image | image_url: width: 512 }}" alt="{{ product.title }}">
+              <img class="w-full h-full object-cover relative z-0" src="{{ product.featured_image | image_url: width: 512 }}" alt="{{ product.title }}" loading="lazy">
               {% if product.images[1] %}
-                <img class="opacity-0 group-hover:opacity-100 transition-opacity duration-200 absolute z-10 top-0 left-0 w-full h-full object-cover" src="{{ product.images[1] | image_url: width: 512 }}" alt="{{ product.title }} lifestyle image">
+                <img class="opacity-0 group-hover:opacity-100 transition-opacity duration-200 absolute z-10 top-0 left-0 w-full h-full object-cover" loading="lazy" src="{{ product.images[1] | image_url: width: 512 }}" alt="{{ product.title }} lifestyle image">
               {% endif %}
             </div>
             <p class="text-xs md:text-sm lg:text-base mt-1.5 lg:mt-8 font-medium text-center">{{ product.title }}</p>
@@ -287,14 +292,19 @@
             {% else %}
             <p class="text-xs md:text-sm lg:text-base pt-3 mt-auto">{{ product.price | money_without_trailing_zeros }}</p>
             {% endif %}
+            {% unless product.available %}
+            <div class="rounded-full bg-candy-350 w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 absolute right-5 top-5 z-10 flex justify-center items-center">
+              <p class="text-center font-ubuntulife font-bold text-white text-xs md:text-sm lg:text-base leading-none md:leading-none lg:leading-none">Out of stock</p>
+            </div>
+            {% endunless %}
           </a>
         {% endif %}
       {% else %}
         <a href="{{ product.url }}" class="flex flex-col items-center">
           <div class="group aspect-square relative">
-            <img class="w-full h-full object-cover relative z-0" src="{{ product.featured_image | image_url: width: 512 }}" alt="{{ product.title }}">
+            <img class="w-full h-full object-cover relative z-0" src="{{ product.featured_image | image_url: width: 512 }}" alt="{{ product.title }}" loading="lazy">
             {% if product.images[1] %}
-              <img class="opacity-0 group-hover:opacity-100 transition-opacity duration-200 absolute z-10 top-0 left-0 w-full h-full object-cover" src="{{ product.images[1] | image_url: width: 512 }}" alt="{{ product.title }} lifestyle image">
+              <img class="opacity-0 group-hover:opacity-100 transition-opacity duration-200 absolute z-10 top-0 left-0 w-full h-full object-cover" loading="lazy" src="{{ product.images[1] | image_url: width: 512 }}" alt="{{ product.title }} lifestyle image">
             {% endif %}
           </div>
           <p class="text-xs md:text-sm lg:text-base mt-1.5 lg:mt-8 font-medium text-center">{{ product.title }}</p>
@@ -303,6 +313,11 @@
           {% else %}
           <p class="text-xs md:text-sm lg:text-base pt-3 mt-auto">{{ product.price | money_without_trailing_zeros }}</p>
           {% endif %}
+          {% unless product.available %}
+          <div class="rounded-full bg-candy-350 w-20 h-20 md:w-12 md:h-12 absolute right-5 top-5 z-10 flex justify-center items-center">
+            <p class="text-center font-ubuntulife font-bold text-white">Out of stock</p>
+          </div>
+          {% endunless %}
         </a>
       {% endif %}
     {% endfor %}
