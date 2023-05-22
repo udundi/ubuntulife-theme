@@ -9,4 +9,12 @@
 	    "sca_fg_img_collection_gift_icon_query": null,
 	    "sca_fg_main_promotion_message_query": null
 	}
+
+    Shopify.reRenderCartCustom = async ()=>{
+      console.info('FGSECOMAPP-update')
+      await fetch('/cart.js').then(async (scaRes) => {
+        let scaCart = await scaRes.json();
+        udCart.updateCart(scaCart)
+      })
+    };
 </script>
