@@ -6,8 +6,8 @@
         "32410aad-66a3-4c80-ba7d-13af08bd658e": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/kicks.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/website_banner_mobile_9.jpg"
+            "image": "shopify:\/\/shop_images\/2_e981e053-5434-4ec5-976d-6c0b5c26529a.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/website_banner_mobile_15.jpg"
           }
         },
         "f3a522c1-423e-4185-a5df-109b157ef7bf": {
@@ -34,14 +34,13 @@
         },
         "8e509f9c-023c-4690-b4b9-a146bb4706b0": {
           "type": "heading",
-          "disabled": true,
           "settings": {
-            "text": "Shop our favorite print!",
+            "text": "THE MAREN",
             "main_heading": true,
-            "color": "#ff70c9",
+            "color": "#000000",
             "alignment": "text-center",
             "ubuntu_font": true,
-            "font_size": "text-2xl lg:text-3xl 2xl:text-4xl",
+            "font_size": "text-4xl lg:text-5xl",
             "font_weight": "font-black",
             "margin_top": ""
           }
@@ -49,12 +48,12 @@
         "9fa9130a-5c98-4c05-a7ea-9c56aa5788d7": {
           "type": "heading",
           "settings": {
-            "text": "Get Your (New) Kicks On!",
+            "text": "Summer just got a bit more colorful!",
             "main_heading": false,
             "color": "#000000",
             "alignment": "text-center",
-            "ubuntu_font": true,
-            "font_size": "text-2xl lg:text-3xl 2xl:text-4xl",
+            "ubuntu_font": false,
+            "font_size": "lg:text-lg 2xl:text-xl",
             "font_weight": "font-medium",
             "margin_top": ""
           }
