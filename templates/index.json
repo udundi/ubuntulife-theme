@@ -6,8 +6,8 @@
         "32410aad-66a3-4c80-ba7d-13af08bd658e": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/2_e981e053-5434-4ec5-976d-6c0b5c26529a.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/website_banner_mobile_15.jpg"
+            "image": "shopify:\/\/shop_images\/Ubuntu41228WEB_5_e0c61516-0ea3-41e6-8393-cf8cdb513dd2.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/website_banner_mobile_18.jpg"
           }
         },
         "f3a522c1-423e-4185-a5df-109b157ef7bf": {
@@ -35,9 +35,9 @@
         "8e509f9c-023c-4690-b4b9-a146bb4706b0": {
           "type": "heading",
           "settings": {
-            "text": "THE MAREN",
+            "text": "Summer sale!",
             "main_heading": true,
-            "color": "#000000",
+            "color": "#07fd0b",
             "alignment": "text-center",
             "ubuntu_font": true,
             "font_size": "text-4xl lg:text-5xl",
@@ -48,12 +48,12 @@
         "9fa9130a-5c98-4c05-a7ea-9c56aa5788d7": {
           "type": "heading",
           "settings": {
-            "text": "Summer just got a bit more colorful!",
+            "text": "50% off select styles",
             "main_heading": false,
-            "color": "#000000",
+            "color": "#ffffff",
             "alignment": "text-center",
             "ubuntu_font": false,
-            "font_size": "lg:text-lg 2xl:text-xl",
+            "font_size": "text-xl lg:text-2xl 2xl:text-3xl",
             "font_weight": "font-medium",
             "margin_top": ""
           }
@@ -69,7 +69,7 @@
       "settings": {
         "enable_text": true,
         "cta_text": "SHOP NOW",
-        "cta_url": "shopify:\/\/collections\/new-arrivals",
+        "cta_url": "shopify:\/\/collections\/50-off-sale",
         "cta_color": "#ffffff",
         "cta_background_color": "#000000",
         "cta_font_size": "lg:text-lg 2xl:text-xl",
