@@ -6,8 +6,8 @@
         "32410aad-66a3-4c80-ba7d-13af08bd658e": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Ubuntu41228WEB_5_e0c61516-0ea3-41e6-8393-cf8cdb513dd2.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/website_banner_mobile_18.jpg"
+            "image": "shopify:\/\/shop_images\/Ubuntu_81828.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/website_banner_mobile_20.jpg"
           }
         },
         "f3a522c1-423e-4185-a5df-109b157ef7bf": {
@@ -35,9 +35,9 @@
         "8e509f9c-023c-4690-b4b9-a146bb4706b0": {
           "type": "heading",
           "settings": {
-            "text": "Summer sale!",
+            "text": "SHE'S NEW.",
             "main_heading": true,
-            "color": "#07fd0b",
+            "color": "#000000",
             "alignment": "text-center",
             "ubuntu_font": true,
             "font_size": "text-4xl lg:text-5xl",
@@ -48,14 +48,14 @@
         "9fa9130a-5c98-4c05-a7ea-9c56aa5788d7": {
           "type": "heading",
           "settings": {
-            "text": "50% off select styles",
+            "text": "THE RAFFIA CLUTCH",
             "main_heading": false,
-            "color": "#ffffff",
+            "color": "#fa08ab",
             "alignment": "text-center",
             "ubuntu_font": false,
-            "font_size": "text-xl lg:text-2xl 2xl:text-3xl",
-            "font_weight": "font-medium",
-            "margin_top": ""
+            "font_size": "text-2xl lg:text-3xl 2xl:text-4xl",
+            "font_weight": "font-bold",
+            "margin_top": "mt-2"
           }
         }
       },
@@ -69,7 +69,7 @@
       "settings": {
         "enable_text": true,
         "cta_text": "SHOP NOW",
-        "cta_url": "shopify:\/\/collections\/50-off-sale",
+        "cta_url": "shopify:\/\/collections\/new-arrivals",
         "cta_color": "#ffffff",
         "cta_background_color": "#000000",
         "cta_font_size": "lg:text-lg 2xl:text-xl",
@@ -329,11 +329,11 @@
             "show_text": true,
             "text_vertical": "bottom-4 md:bottom-6 xl:bottom-10",
             "text_horizontal": "left-4 md:left-6 xl:left-10",
-            "flex_alignment": "items-end",
-            "text": "5o% off sale",
+            "flex_alignment": "items-start",
+            "text": "SALE",
             "text_color": "#04f820",
             "ubuntu_font": true,
-            "font_size": "text-2xl lg:text-3xl 2xl:text-4xl",
+            "font_size": "text-4xl lg:text-5xl",
             "font_weight": "font-medium",
             "cta_text": "shop now",
             "cta_url": "shopify:\/\/collections\/50-off-sale",
