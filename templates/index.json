@@ -325,12 +325,12 @@
         "7ab96759-3259-4cf2-8397-9827ce8094ef": {
           "type": "pane",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Ubuntu52640.jpg",
+            "image": "shopify:\/\/shop_images\/website_grid_12.jpg",
             "show_text": true,
             "text_vertical": "bottom-4 md:bottom-6 xl:bottom-10",
             "text_horizontal": "left-4 md:left-6 xl:left-10",
             "flex_alignment": "items-start",
-            "text": "SALE",
+            "text": "",
             "text_color": "#04f820",
             "ubuntu_font": true,
             "font_size": "text-4xl lg:text-5xl",
