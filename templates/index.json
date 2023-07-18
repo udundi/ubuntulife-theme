@@ -35,7 +35,7 @@
         "8e509f9c-023c-4690-b4b9-a146bb4706b0": {
           "type": "heading",
           "settings": {
-            "text": "Summer drop:",
+            "text": "EFFORTLESSLY CHIC!",
             "main_heading": true,
             "color": "#000000",
             "alignment": "text-center",
@@ -48,9 +48,9 @@
         "9fa9130a-5c98-4c05-a7ea-9c56aa5788d7": {
           "type": "heading",
           "settings": {
-            "text": "The Bird-of-Paradise",
+            "text": "The Raffia Clutch",
             "main_heading": false,
-            "color": "#0878fa",
+            "color": "#fa08e1",
             "alignment": "text-center",
             "ubuntu_font": false,
             "font_size": "text-2xl lg:text-3xl 2xl:text-4xl",
@@ -69,7 +69,7 @@
       "settings": {
         "enable_text": true,
         "cta_text": "SHOP NOW",
-        "cta_url": "https:\/\/www.ubuntu.life\/products\/khaki-go-to-tote-beaded-birds-of-paradise-plant?variant=40615365771373",
+        "cta_url": "shopify:\/\/collections\/new-arrivals",
         "cta_color": "#ffffff",
         "cta_background_color": "#000000",
         "cta_font_size": "lg:text-lg 2xl:text-xl",
