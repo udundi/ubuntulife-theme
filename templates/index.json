@@ -6,7 +6,7 @@
         "32410aad-66a3-4c80-ba7d-13af08bd658e": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/bop_banner_2.jpg",
+            "image": "shopify:\/\/shop_images\/1_36aaca69-2645-4430-815e-a179dade78ba.jpg",
             "mobile_image": "shopify:\/\/shop_images\/website_banner_mobile_23.jpg"
           }
         },
@@ -304,7 +304,7 @@
         "60bb772e-f39d-49b6-98c8-fa66172cece5": {
           "type": "pane",
           "settings": {
-            "image": "shopify:\/\/shop_images\/website_grid_11.jpg",
+            "image": "shopify:\/\/shop_images\/Ubuntu_05454_1.jpg",
             "show_text": true,
             "text_vertical": "top-6 md:top-8 xl:top-12",
             "text_horizontal": "right-4 md:right-6 xl:right-10",
