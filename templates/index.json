@@ -40,7 +40,7 @@
             "color": "#000000",
             "alignment": "text-center",
             "ubuntu_font": true,
-            "font_size": "text-2xl lg:text-3xl 2xl:text-4xl",
+            "font_size": "text-xl lg:text-2xl 2xl:text-3xl",
             "font_weight": "font-black",
             "margin_top": ""
           }
