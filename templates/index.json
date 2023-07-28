@@ -51,7 +51,7 @@
           "settings": {
             "text": "OUR NEW COLLECTION",
             "main_heading": false,
-            "color": "#fa08e1",
+            "color": "#e90493",
             "alignment": "text-center",
             "ubuntu_font": false,
             "font_size": "text-2xl lg:text-3xl 2xl:text-4xl",
