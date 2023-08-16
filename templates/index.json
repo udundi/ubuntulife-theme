@@ -6,8 +6,8 @@
         "32410aad-66a3-4c80-ba7d-13af08bd658e": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/banner_12.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/website_banner_mobile_2_ad31193a-3704-43a5-a78a-4502582a4d73.jpg"
+            "image": "shopify:\/\/shop_images\/banner.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Untitled_design_12_467b30de-017c-4366-b362-0815d7fa6a7d.jpg"
           }
         },
         "f3a522c1-423e-4185-a5df-109b157ef7bf": {
@@ -34,14 +34,13 @@
         },
         "8e509f9c-023c-4690-b4b9-a146bb4706b0": {
           "type": "heading",
-          "disabled": true,
           "settings": {
-            "text": "EFFORTLESSLY CHIC!",
+            "text": "Mudcloth Lamu Mules",
             "main_heading": true,
-            "color": "#000000",
+            "color": "#096597",
             "alignment": "text-center",
             "ubuntu_font": true,
-            "font_size": "text-xl lg:text-2xl 2xl:text-3xl",
+            "font_size": "text-2xl lg:text-3xl 2xl:text-4xl",
             "font_weight": "font-black",
             "margin_top": ""
           }
@@ -49,14 +48,14 @@
         "9fa9130a-5c98-4c05-a7ea-9c56aa5788d7": {
           "type": "heading",
           "settings": {
-            "text": "OUR NEW COLLECTION",
+            "text": "Step up your mule style!",
             "main_heading": false,
-            "color": "#e90493",
+            "color": "#ffffff",
             "alignment": "text-center",
             "ubuntu_font": false,
-            "font_size": "text-2xl lg:text-3xl 2xl:text-4xl",
+            "font_size": "lg:text-lg 2xl:text-xl",
             "font_weight": "font-bold",
-            "margin_top": ""
+            "margin_top": "mt-1"
           }
         }
       },
@@ -70,7 +69,7 @@
       "settings": {
         "enable_text": true,
         "cta_text": "SHOP NOW",
-        "cta_url": "shopify:\/\/collections\/new-arrivals",
+        "cta_url": "shopify:\/\/collections\/mules",
         "cta_color": "#ffffff",
         "cta_background_color": "#000000",
         "cta_font_size": "lg:text-lg 2xl:text-xl",
@@ -84,7 +83,6 @@
     },
     "hero": {
       "type": "index-hero",
-      "disabled": true,
       "blocks": {
         "77e6cdc4-c181-4097-a58a-12e82694e093": {
           "type": "pane",
@@ -183,6 +181,7 @@
         "fc37d08e-985f-46c3-a7f1-2b114a16e733",
         "2eb55731-324a-4062-8968-026040cd16d7"
       ],
+      "disabled": true,
       "settings": {
         "pre_header": "",
         "header": "Made with love. Inspiring our world to live UBUNTU.",
@@ -250,7 +249,6 @@
     },
     "featured-carousel": {
       "type": "index-featured-carousel",
-      "disabled": true,
       "blocks": {
         "7282ae2f-eb3d-4009-9af0-3cb82245cdde": {
           "type": "slide",
@@ -275,6 +273,7 @@
         "7282ae2f-eb3d-4009-9af0-3cb82245cdde",
         "769d74e7-4dec-4029-9729-d7264e5b35dc"
       ],
+      "disabled": true,
       "settings": {
       }
     },
