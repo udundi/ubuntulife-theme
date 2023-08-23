@@ -6,8 +6,8 @@
         "32410aad-66a3-4c80-ba7d-13af08bd658e": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/banner.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/Untitled_design_12_467b30de-017c-4366-b362-0815d7fa6a7d.jpg"
+            "image": "shopify:\/\/shop_images\/UBUNTU_6.23.22_03825.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/website_banner_mobile_10_3224bde1-5c49-4118-81a7-b174cf7f44ae.jpg"
           }
         },
         "f3a522c1-423e-4185-a5df-109b157ef7bf": {
@@ -35,9 +35,9 @@
         "8e509f9c-023c-4690-b4b9-a146bb4706b0": {
           "type": "heading",
           "settings": {
-            "text": "Mudcloth Lamu Mules",
+            "text": "end of season sale",
             "main_heading": true,
-            "color": "#096597",
+            "color": "#000203",
             "alignment": "text-center",
             "ubuntu_font": true,
             "font_size": "text-2xl lg:text-3xl 2xl:text-4xl",
@@ -48,12 +48,12 @@
         "9fa9130a-5c98-4c05-a7ea-9c56aa5788d7": {
           "type": "heading",
           "settings": {
-            "text": "Step up your mule style!",
+            "text": "75% OFF",
             "main_heading": false,
-            "color": "#ffffff",
+            "color": "#EA0606",
             "alignment": "text-center",
             "ubuntu_font": false,
-            "font_size": "lg:text-lg 2xl:text-xl",
+            "font_size": "text-4xl lg:text-5xl",
             "font_weight": "font-bold",
             "margin_top": "mt-1"
           }
@@ -69,12 +69,12 @@
       "settings": {
         "enable_text": true,
         "cta_text": "SHOP NOW",
-        "cta_url": "shopify:\/\/collections\/mules",
+        "cta_url": "shopify:\/\/collections\/sale",
         "cta_color": "#ffffff",
         "cta_background_color": "#000000",
         "cta_font_size": "lg:text-lg 2xl:text-xl",
         "cta_font_weight": "font-medium",
-        "cta_vertical_padding": "py-1",
+        "cta_vertical_padding": "py-2",
         "cta_horizontal_padding": "px-8",
         "text_vertical": "top-1\/2 -translate-y-1\/2",
         "text_horizontal": "left-6 md:left-10 xl:left-14",
@@ -325,9 +325,9 @@
         "7ab96759-3259-4cf2-8397-9827ce8094ef": {
           "type": "pane",
           "settings": {
-            "image": "shopify:\/\/shop_images\/website_grid_12.jpg",
+            "image": "shopify:\/\/shop_images\/website_grid_3_16ba0615-89bd-424e-915f-26a4c9989902.jpg",
             "show_text": true,
-            "text_vertical": "bottom-4 md:bottom-6 xl:bottom-10",
+            "text_vertical": "top-4 md:top-6 xl:top-10",
             "text_horizontal": "left-4 md:left-6 xl:left-10",
             "flex_alignment": "items-start",
             "text": "",
