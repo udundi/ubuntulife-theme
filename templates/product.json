@@ -14,9 +14,11 @@
       "type": "product-template",
       "settings": {
         "carousel_header": "YOU MAY ALSO LIKE",
-        "info_details_care": "<p>{{ product.metafields.info.details_care | metafield_tag }}<\/p>",
+        "info_details_care": "",
         "info_custom_header": "{{ product.metafields.info.custom_header.value }}",
         "info_custom_body": "<p>{{ product.metafields.info.custom_body | metafield_tag }}<\/p>",
+        "info_custom_header_2": "",
+        "info_custom_dropdown_body_2": "",
         "info_header_1": "{{ product.metafields.info.header_1.value }}",
         "info_text_1": "<p>{{ product.metafields.info.text_1 | metafield_tag }}<\/p>",
         "info_media_1": "{{ product.metafields.info.media_1.value }}",
