@@ -50,7 +50,7 @@
           "settings": {
             "text": "75% OFF",
             "main_heading": false,
-            "color": "#EA0606",
+            "color": "#ea0606",
             "alignment": "text-center",
             "ubuntu_font": false,
             "font_size": "text-4xl lg:text-5xl",
@@ -66,6 +66,7 @@
         "8e509f9c-023c-4690-b4b9-a146bb4706b0",
         "9fa9130a-5c98-4c05-a7ea-9c56aa5788d7"
       ],
+      "disabled": true,
       "settings": {
         "enable_text": true,
         "cta_text": "SHOP NOW",
@@ -86,10 +87,9 @@
       "blocks": {
         "77e6cdc4-c181-4097-a58a-12e82694e093": {
           "type": "pane",
-          "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/Untitled_design_14.jpg",
-            "url": "https:\/\/www.ubuntu.life\/collections\/bracelets",
+            "image": "shopify:\/\/shop_images\/25_8b4efc99-1b61-421e-b39b-c59ba1b349bc.jpg",
+            "url": "https:\/\/www.ubuntu.life\/collections\/tote-bags",
             "show_text": true,
             "text_vertical": "bottom-2 md:bottom-4 xl:bottom-8",
             "text_horizontal": "left-2 md:left-4 xl:left-8",
@@ -100,7 +100,7 @@
             "font_size": "text-xl lg:text-2xl 2xl:text-3xl",
             "font_weight": "font-black",
             "cta_text": "shop now",
-            "cta_url": "https:\/\/www.ubuntu.life\/collections\/bags\/products\/back-to-school-bagpack-black-kuba",
+            "cta_url": "https:\/\/www.ubuntu.life\/collections\/tote-bags",
             "cta_color": "#343434",
             "cta_bg_color": "#ffffff",
             "cta_font_size": "lg:text-lg 2xl:text-xl",
@@ -110,8 +110,8 @@
         "982cc7a3-862f-412f-bfed-99b48a0db671": {
           "type": "pane",
           "settings": {
-            "image": "shopify:\/\/shop_images\/website_panes_2.jpg",
-            "url": "shopify:\/\/collections\/bundles",
+            "image": "shopify:\/\/shop_images\/Untitled_design_23.jpg",
+            "url": "https:\/\/www.ubuntu.life\/collections\/pouches",
             "show_text": true,
             "text_vertical": "bottom-2 md:bottom-4 xl:bottom-8",
             "text_horizontal": "left-2 md:left-4 xl:left-8",
@@ -122,7 +122,7 @@
             "font_size": "lg:text-lg 2xl:text-xl",
             "font_weight": "font-medium",
             "cta_text": "shop now",
-            "cta_url": "https:\/\/www.ubuntu.life\/collections\/bracelets",
+            "cta_url": "https:\/\/www.ubuntu.life\/collections\/pouches",
             "cta_color": "#000000",
             "cta_bg_color": "#ffffff",
             "cta_font_size": "lg:text-lg 2xl:text-xl",
@@ -132,8 +132,8 @@
         "fc37d08e-985f-46c3-a7f1-2b114a16e733": {
           "type": "pane",
           "settings": {
-            "image": "shopify:\/\/shop_images\/website_panes__3.jpg",
-            "url": "https:\/\/www.ubuntu.life\/collections\/valentines-day",
+            "image": "shopify:\/\/shop_images\/Untitled_design_25.jpg",
+            "url": "https:\/\/www.ubuntu.life\/collections\/backpacks",
             "show_text": true,
             "text_vertical": "bottom-2 md:bottom-4 xl:bottom-8",
             "text_horizontal": "left-2 md:left-4 xl:left-8",
@@ -144,7 +144,7 @@
             "font_size": "lg:text-lg 2xl:text-xl",
             "font_weight": "font-medium",
             "cta_text": "shop now",
-            "cta_url": "https:\/\/www.ubuntu.life\/collections\/mules",
+            "cta_url": "https:\/\/www.ubuntu.life\/collections\/backpacks",
             "cta_color": "#262626",
             "cta_bg_color": "#ffffff",
             "cta_font_size": "lg:text-lg 2xl:text-xl",
@@ -153,10 +153,9 @@
         },
         "2eb55731-324a-4062-8968-026040cd16d7": {
           "type": "pane",
-          "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/panes_4.png",
-            "url": "https:\/\/www.ubuntu.life\/collections\/bags\/products\/west-african-bag",
+            "image": "shopify:\/\/shop_images\/Untitled_design_28.jpg",
+            "url": "https:\/\/www.ubuntu.life\/collections\/pouches",
             "show_text": true,
             "text_vertical": "bottom-2 md:bottom-4 xl:bottom-8",
             "text_horizontal": "left-2 md:left-4 xl:left-8",
@@ -167,7 +166,7 @@
             "font_size": "lg:text-lg 2xl:text-xl",
             "font_weight": "font-medium",
             "cta_text": "shop now",
-            "cta_url": "https:\/\/www.ubuntu.life\/collections\/bags\/products\/west-african-bag",
+            "cta_url": "https:\/\/www.ubuntu.life\/collections\/pouches",
             "cta_color": "#262626",
             "cta_bg_color": "#ffffff",
             "cta_font_size": "lg:text-lg 2xl:text-xl",
@@ -181,10 +180,9 @@
         "fc37d08e-985f-46c3-a7f1-2b114a16e733",
         "2eb55731-324a-4062-8968-026040cd16d7"
       ],
-      "disabled": true,
       "settings": {
         "pre_header": "",
-        "header": "Made with love. Inspiring our world to live UBUNTU.",
+        "header": "NEW COLLECTION",
         "text": "",
         "show_cta": false,
         "cta": "SHOP NOW",
