@@ -210,6 +210,7 @@
         },
         "1853e462-2921-4e2d-9209-93f5434fedc1": {
           "type": "pane",
+          "disabled": true,
           "settings": {
             "collection": "jewelry",
             "image": "shopify:\/\/shop_images\/holiday_8.png",
