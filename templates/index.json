@@ -88,8 +88,8 @@
         "77e6cdc4-c181-4097-a58a-12e82694e093": {
           "type": "pane",
           "settings": {
-            "image": "shopify:\/\/shop_images\/25_8b4efc99-1b61-421e-b39b-c59ba1b349bc.jpg",
-            "url": "https:\/\/www.ubuntu.life\/collections\/tote-bags",
+            "image": "shopify:\/\/shop_images\/Untitled_design_30.jpg",
+            "url": "https:\/\/www.ubuntu.life\/collections\/new-arrivals",
             "show_text": true,
             "text_vertical": "bottom-2 md:bottom-4 xl:bottom-8",
             "text_horizontal": "left-2 md:left-4 xl:left-8",
@@ -100,7 +100,7 @@
             "font_size": "text-xl lg:text-2xl 2xl:text-3xl",
             "font_weight": "font-black",
             "cta_text": "shop now",
-            "cta_url": "https:\/\/www.ubuntu.life\/collections\/tote-bags",
+            "cta_url": "https:\/\/www.ubuntu.life\/collections\/new-arrivals",
             "cta_color": "#343434",
             "cta_bg_color": "#ffffff",
             "cta_font_size": "lg:text-lg 2xl:text-xl",
@@ -110,8 +110,8 @@
         "982cc7a3-862f-412f-bfed-99b48a0db671": {
           "type": "pane",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Untitled_design_23.jpg",
-            "url": "https:\/\/www.ubuntu.life\/collections\/pouches",
+            "image": "shopify:\/\/shop_images\/Untitled_design_32.jpg",
+            "url": "https:\/\/www.ubuntu.life\/collections\/fall-bracelets",
             "show_text": true,
             "text_vertical": "bottom-2 md:bottom-4 xl:bottom-8",
             "text_horizontal": "left-2 md:left-4 xl:left-8",
@@ -122,7 +122,7 @@
             "font_size": "lg:text-lg 2xl:text-xl",
             "font_weight": "font-medium",
             "cta_text": "shop now",
-            "cta_url": "https:\/\/www.ubuntu.life\/collections\/pouches",
+            "cta_url": "https:\/\/www.ubuntu.life\/collections\/fall-bracelets",
             "cta_color": "#000000",
             "cta_bg_color": "#ffffff",
             "cta_font_size": "lg:text-lg 2xl:text-xl",
@@ -132,8 +132,8 @@
         "fc37d08e-985f-46c3-a7f1-2b114a16e733": {
           "type": "pane",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Untitled_design_25.jpg",
-            "url": "https:\/\/www.ubuntu.life\/collections\/backpacks",
+            "image": "shopify:\/\/shop_images\/Untitled_design_33.jpg",
+            "url": "https:\/\/www.ubuntu.life\/collections\/new-arrivals",
             "show_text": true,
             "text_vertical": "bottom-2 md:bottom-4 xl:bottom-8",
             "text_horizontal": "left-2 md:left-4 xl:left-8",
@@ -144,9 +144,31 @@
             "font_size": "lg:text-lg 2xl:text-xl",
             "font_weight": "font-medium",
             "cta_text": "shop now",
-            "cta_url": "https:\/\/www.ubuntu.life\/collections\/backpacks",
+            "cta_url": "https:\/\/www.ubuntu.life\/collections\/new-arrivals",
             "cta_color": "#262626",
             "cta_bg_color": "#ffffff",
+            "cta_font_size": "lg:text-lg 2xl:text-xl",
+            "cta_font_weight": "font-medium"
+          }
+        },
+        "48040459-24eb-42bf-ad01-bc6fc837b4f8": {
+          "type": "pane",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Untitled_design_36.jpg",
+            "url": "https:\/\/www.ubuntu.life\/collections\/new-arrivals",
+            "show_text": true,
+            "text_vertical": "bottom-2 md:bottom-4 xl:bottom-8",
+            "text_horizontal": "left-2 md:left-4 xl:left-8",
+            "flex_alignment": "items-start",
+            "text": "",
+            "text_color": "#FFFFFF",
+            "ubuntu_font": false,
+            "font_size": "lg:text-lg 2xl:text-xl",
+            "font_weight": "font-medium",
+            "cta_text": "shop now",
+            "cta_url": "https:\/\/www.ubuntu.life\/collections\/new-arrivals",
+            "cta_color": "#262626",
+            "cta_bg_color": "#FFFFFF",
             "cta_font_size": "lg:text-lg 2xl:text-xl",
             "cta_font_weight": "font-medium"
           }
@@ -154,8 +176,8 @@
         "2eb55731-324a-4062-8968-026040cd16d7": {
           "type": "pane",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Untitled_design_28.jpg",
-            "url": "https:\/\/www.ubuntu.life\/collections\/pouches",
+            "image": "shopify:\/\/shop_images\/Untitled_design_34.jpg",
+            "url": "https:\/\/www.ubuntu.life\/collections\/new-arrivals",
             "show_text": true,
             "text_vertical": "bottom-2 md:bottom-4 xl:bottom-8",
             "text_horizontal": "left-2 md:left-4 xl:left-8",
@@ -166,9 +188,31 @@
             "font_size": "lg:text-lg 2xl:text-xl",
             "font_weight": "font-medium",
             "cta_text": "shop now",
-            "cta_url": "https:\/\/www.ubuntu.life\/collections\/pouches",
+            "cta_url": "https:\/\/www.ubuntu.life\/collections\/new-arrivals",
             "cta_color": "#262626",
             "cta_bg_color": "#ffffff",
+            "cta_font_size": "lg:text-lg 2xl:text-xl",
+            "cta_font_weight": "font-medium"
+          }
+        },
+        "1d129017-289f-4d64-ae22-7c4a835dadfe": {
+          "type": "pane",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Untitled_design_37.jpg",
+            "url": "https:\/\/www.ubuntu.life\/collections\/new-arrivals",
+            "show_text": true,
+            "text_vertical": "bottom-2 md:bottom-4 xl:bottom-8",
+            "text_horizontal": "left-2 md:left-4 xl:left-8",
+            "flex_alignment": "items-start",
+            "text": "",
+            "text_color": "#FFFFFF",
+            "ubuntu_font": false,
+            "font_size": "lg:text-lg 2xl:text-xl",
+            "font_weight": "font-medium",
+            "cta_text": "shop now",
+            "cta_url": "https:\/\/www.ubuntu.life\/collections\/new-arrivals",
+            "cta_color": "#262626",
+            "cta_bg_color": "#FFFFFF",
             "cta_font_size": "lg:text-lg 2xl:text-xl",
             "cta_font_weight": "font-medium"
           }
@@ -178,15 +222,17 @@
         "77e6cdc4-c181-4097-a58a-12e82694e093",
         "982cc7a3-862f-412f-bfed-99b48a0db671",
         "fc37d08e-985f-46c3-a7f1-2b114a16e733",
-        "2eb55731-324a-4062-8968-026040cd16d7"
+        "48040459-24eb-42bf-ad01-bc6fc837b4f8",
+        "2eb55731-324a-4062-8968-026040cd16d7",
+        "1d129017-289f-4d64-ae22-7c4a835dadfe"
       ],
       "settings": {
         "pre_header": "",
-        "header": "NEW COLLECTION",
+        "header": "NEW <br> ARRIVALS",
         "text": "",
         "show_cta": false,
         "cta": "SHOP NOW",
-        "cta_link": "https:\/\/www.ubuntu.life\/products\/back-to-school-bagpack-black-kuba"
+        "cta_link": "https:\/\/www.ubuntu.life\/collections\/new-arrivals"
       }
     },
     "shop-category": {
