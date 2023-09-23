@@ -6,8 +6,8 @@
         "32410aad-66a3-4c80-ba7d-13af08bd658e": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/UBUNTU_6.23.22_03825.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/website_banner_mobile_11_07422138-e41a-496b-970d-dcdd3682c3cb.jpg"
+            "image": "shopify:\/\/shop_images\/banner_4.png",
+            "mobile_image": "shopify:\/\/shop_images\/Copy_of_sample_sale_1.jpg"
           }
         },
         "f3a522c1-423e-4185-a5df-109b157ef7bf": {
@@ -20,27 +20,26 @@
         },
         "eb964d6f-c4dd-41b9-a09a-bdaf0231cc88": {
           "type": "heading",
-          "disabled": true,
           "settings": {
-            "text": "Enjoy up to 75% OFF",
+            "text": "9.23 - 9.30",
             "main_heading": false,
             "color": "#000000",
             "alignment": "text-center",
             "ubuntu_font": true,
             "font_size": "text-2xl lg:text-3xl 2xl:text-4xl",
             "font_weight": "font-bold",
-            "margin_top": "mt-8"
+            "margin_top": ""
           }
         },
         "8e509f9c-023c-4690-b4b9-a146bb4706b0": {
           "type": "heading",
           "settings": {
-            "text": "end of season sale",
+            "text": "sample sale",
             "main_heading": true,
             "color": "#000203",
             "alignment": "text-center",
-            "ubuntu_font": true,
-            "font_size": "text-2xl lg:text-3xl 2xl:text-4xl",
+            "ubuntu_font": false,
+            "font_size": "text-4xl lg:text-5xl",
             "font_weight": "font-black",
             "margin_top": ""
           }
@@ -48,14 +47,14 @@
         "9fa9130a-5c98-4c05-a7ea-9c56aa5788d7": {
           "type": "heading",
           "settings": {
-            "text": "75% OFF",
+            "text": "* all sales are final",
             "main_heading": false,
-            "color": "#ea0606",
+            "color": "#000803",
             "alignment": "text-center",
-            "ubuntu_font": false,
-            "font_size": "text-4xl lg:text-5xl",
+            "ubuntu_font": true,
+            "font_size": "text-xl lg:text-2xl 2xl:text-3xl",
             "font_weight": "font-bold",
-            "margin_top": "mt-1"
+            "margin_top": "mt-2"
           }
         }
       },
@@ -66,19 +65,18 @@
         "8e509f9c-023c-4690-b4b9-a146bb4706b0",
         "9fa9130a-5c98-4c05-a7ea-9c56aa5788d7"
       ],
-      "disabled": true,
       "settings": {
         "enable_text": true,
-        "cta_text": "SHOP NOW",
+        "cta_text": "shop now",
         "cta_url": "shopify:\/\/collections\/sale",
         "cta_color": "#ffffff",
         "cta_background_color": "#000000",
         "cta_font_size": "lg:text-lg 2xl:text-xl",
         "cta_font_weight": "font-medium",
         "cta_vertical_padding": "py-2",
-        "cta_horizontal_padding": "px-8",
+        "cta_horizontal_padding": "px-12",
         "text_vertical": "top-1\/2 -translate-y-1\/2",
-        "text_horizontal": "left-6 md:left-10 xl:left-14",
+        "text_horizontal": "left-1\/2 -translate-x-1\/2",
         "flex_alignment": "items-center"
       }
     },
@@ -161,14 +159,14 @@
             "text_horizontal": "left-2 md:left-4 xl:left-8",
             "flex_alignment": "items-start",
             "text": "",
-            "text_color": "#FFFFFF",
+            "text_color": "#ffffff",
             "ubuntu_font": false,
             "font_size": "lg:text-lg 2xl:text-xl",
             "font_weight": "font-medium",
             "cta_text": "shop now",
             "cta_url": "https:\/\/www.ubuntu.life\/collections\/new-arrivals",
             "cta_color": "#262626",
-            "cta_bg_color": "#FFFFFF",
+            "cta_bg_color": "#ffffff",
             "cta_font_size": "lg:text-lg 2xl:text-xl",
             "cta_font_weight": "font-medium"
           }
@@ -205,14 +203,14 @@
             "text_horizontal": "left-2 md:left-4 xl:left-8",
             "flex_alignment": "items-start",
             "text": "",
-            "text_color": "#FFFFFF",
+            "text_color": "#ffffff",
             "ubuntu_font": false,
             "font_size": "lg:text-lg 2xl:text-xl",
             "font_weight": "font-medium",
             "cta_text": "shop now",
             "cta_url": "https:\/\/www.ubuntu.life\/collections\/new-arrivals",
             "cta_color": "#262626",
-            "cta_bg_color": "#FFFFFF",
+            "cta_bg_color": "#ffffff",
             "cta_font_size": "lg:text-lg 2xl:text-xl",
             "cta_font_weight": "font-medium"
           }
@@ -226,6 +224,7 @@
         "2eb55731-324a-4062-8968-026040cd16d7",
         "1d129017-289f-4d64-ae22-7c4a835dadfe"
       ],
+      "disabled": true,
       "settings": {
         "pre_header": "",
         "header": "NEW <br> ARRIVALS",
