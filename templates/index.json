@@ -253,15 +253,6 @@
             "text": ""
           }
         },
-        "1853e462-2921-4e2d-9209-93f5434fedc1": {
-          "type": "pane",
-          "disabled": true,
-          "settings": {
-            "collection": "jewelry",
-            "image": "shopify:\/\/shop_images\/holiday_8.png",
-            "text": ""
-          }
-        },
         "04cebf7b-bf7d-4d29-833b-a4b678ffc889": {
           "type": "pane",
           "settings": {
@@ -270,11 +261,11 @@
             "text": ""
           }
         },
-        "d656858d-9152-46af-bbb3-2aa255c28c0e": {
+        "78da22a5-7930-410f-97c4-2d331d83c0b5": {
           "type": "pane",
-          "disabled": true,
           "settings": {
-            "collection": "dog-collars",
+            "collection": "pouches-clutches",
+            "image": "shopify:\/\/shop_images\/Untitled_design_8_3ee321bb-bd92-4db1-bfb7-67c068246949.jpg",
             "text": ""
           }
         }
@@ -282,9 +273,8 @@
       "block_order": [
         "3689b6ba-b8d8-455d-97cb-d766511e3278",
         "86084354-70a7-4581-ad76-c8ca0569d5d3",
-        "1853e462-2921-4e2d-9209-93f5434fedc1",
         "04cebf7b-bf7d-4d29-833b-a4b678ffc889",
-        "d656858d-9152-46af-bbb3-2aa255c28c0e"
+        "78da22a5-7930-410f-97c4-2d331d83c0b5"
       ],
       "settings": {
         "header": "SHOP BY CATEGORY",
