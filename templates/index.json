@@ -245,6 +245,14 @@
             "text": ""
           }
         },
+        "78da22a5-7930-410f-97c4-2d331d83c0b5": {
+          "type": "pane",
+          "settings": {
+            "collection": "pouches-clutches",
+            "image": "shopify:\/\/shop_images\/Untitled_design_8_3ee321bb-bd92-4db1-bfb7-67c068246949.jpg",
+            "text": ""
+          }
+        },
         "86084354-70a7-4581-ad76-c8ca0569d5d3": {
           "type": "pane",
           "settings": {
@@ -260,21 +268,13 @@
             "image": "shopify:\/\/shop_images\/Untitled_design_46.png",
             "text": ""
           }
-        },
-        "78da22a5-7930-410f-97c4-2d331d83c0b5": {
-          "type": "pane",
-          "settings": {
-            "collection": "pouches-clutches",
-            "image": "shopify:\/\/shop_images\/Untitled_design_8_3ee321bb-bd92-4db1-bfb7-67c068246949.jpg",
-            "text": ""
-          }
         }
       },
       "block_order": [
         "3689b6ba-b8d8-455d-97cb-d766511e3278",
+        "78da22a5-7930-410f-97c4-2d331d83c0b5",
         "86084354-70a7-4581-ad76-c8ca0569d5d3",
-        "04cebf7b-bf7d-4d29-833b-a4b678ffc889",
-        "78da22a5-7930-410f-97c4-2d331d83c0b5"
+        "04cebf7b-bf7d-4d29-833b-a4b678ffc889"
       ],
       "settings": {
         "header": "SHOP BY CATEGORY",
