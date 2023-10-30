@@ -248,7 +248,7 @@
             "type": "pane",
             "disabled": true,
             "settings": {
-              "collection": "dog-collars"
+              "collection": "pets"
             }
           }
         },
