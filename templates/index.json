@@ -2,7 +2,6 @@
   "sections": {
     "4e8f0020-7783-4328-aa05-e2ded3c840c6": {
       "type": "full-hero",
-      "disabled": true,
       "blocks": {
         "32410aad-66a3-4c80-ba7d-13af08bd658e": {
           "type": "slide",
@@ -65,6 +64,7 @@
         "8e509f9c-023c-4690-b4b9-a146bb4706b0",
         "9fa9130a-5c98-4c05-a7ea-9c56aa5788d7"
       ],
+      "disabled": true,
       "settings": {
         "enable_text": true,
         "cta_text": "SHOP NOW",
@@ -226,7 +226,7 @@
           "type": "pane",
           "disabled": true,
           "settings": {
-            "collection": "dog-collars",
+            "collection": "pets",
             "text": ""
           }
         }
@@ -245,7 +245,6 @@
     },
     "featured-carousel": {
       "type": "index-featured-carousel",
-      "disabled": true,
       "blocks": {
         "7282ae2f-eb3d-4009-9af0-3cb82245cdde": {
           "type": "slide",
@@ -270,6 +269,7 @@
         "7282ae2f-eb3d-4009-9af0-3cb82245cdde",
         "769d74e7-4dec-4029-9729-d7264e5b35dc"
       ],
+      "disabled": true,
       "settings": {
       }
     },
