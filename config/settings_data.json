@@ -265,7 +265,7 @@
             "type": "pane",
             "disabled": true,
             "settings": {
-              "collection": "dog-collars"
+              "collection": "pets"
             }
           }
         },
@@ -283,7 +283,6 @@
       },
       "index-featured-carousel": {
         "type": "index-featured-carousel",
-        "disabled": true,
         "blocks": {
           "7282ae2f-eb3d-4009-9af0-3cb82245cdde": {
             "type": "slide",
@@ -308,12 +307,12 @@
           "7282ae2f-eb3d-4009-9af0-3cb82245cdde",
           "769d74e7-4dec-4029-9729-d7264e5b35dc"
         ],
+        "disabled": true,
         "settings": {
         }
       },
       "index-featured-products": {
         "type": "index-featured-products",
-        "disabled": true,
         "blocks": {
           "b83a089a-451b-44a6-bab2-346370eb627d": {
             "type": "product",
@@ -360,6 +359,7 @@
           "534fb7c9-c894-46a0-8323-e67a65bfb148",
           "da65eb0e-9059-425b-bcb2-2f68dd6db8e7"
         ],
+        "disabled": true,
         "settings": {
           "header": "RECOMMENDED",
           "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod"
