@@ -94,7 +94,7 @@
             "disabled": true,
             "settings": {
               "submenu_title": "Featured",
-              "collection": "best-sellers",
+              "collection": "bestsellers",
               "title": "BESTSELLERS"
             }
           },
