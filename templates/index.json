@@ -84,23 +84,23 @@
     "hero": {
       "type": "index-hero",
       "blocks": {
-        "77e6cdc4-c181-4097-a58a-12e82694e093": {
+        "fc37d08e-985f-46c3-a7f1-2b114a16e733": {
           "type": "pane",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Untitled_design_57.jpg",
+            "image": "shopify:\/\/shop_images\/Website_pannels.jpg",
             "url": "https:\/\/www.ubuntu.life\/collections\/new-arrivals",
             "show_text": true,
             "text_vertical": "bottom-2 md:bottom-4 xl:bottom-8",
             "text_horizontal": "left-2 md:left-4 xl:left-8",
             "flex_alignment": "items-start",
             "text": "",
-            "text_color": "#1b1212",
+            "text_color": "#ffffff",
             "ubuntu_font": false,
-            "font_size": "text-xl lg:text-2xl 2xl:text-3xl",
-            "font_weight": "font-black",
+            "font_size": "lg:text-lg 2xl:text-xl",
+            "font_weight": "font-medium",
             "cta_text": "shop now",
             "cta_url": "https:\/\/www.ubuntu.life\/collections\/new-arrivals",
-            "cta_color": "#343434",
+            "cta_color": "#262626",
             "cta_bg_color": "#ffffff",
             "cta_font_size": "lg:text-lg 2xl:text-xl",
             "cta_font_weight": "font-medium"
@@ -128,23 +128,23 @@
             "cta_font_weight": "font-medium"
           }
         },
-        "fc37d08e-985f-46c3-a7f1-2b114a16e733": {
+        "77e6cdc4-c181-4097-a58a-12e82694e093": {
           "type": "pane",
           "settings": {
-            "image": "shopify:\/\/shop_images\/11_35c8f037-03ba-4e08-8243-a07365cb4497.jpg",
+            "image": "shopify:\/\/shop_images\/Untitled_design_57.jpg",
             "url": "https:\/\/www.ubuntu.life\/collections\/new-arrivals",
             "show_text": true,
             "text_vertical": "bottom-2 md:bottom-4 xl:bottom-8",
             "text_horizontal": "left-2 md:left-4 xl:left-8",
             "flex_alignment": "items-start",
             "text": "",
-            "text_color": "#ffffff",
+            "text_color": "#1b1212",
             "ubuntu_font": false,
-            "font_size": "lg:text-lg 2xl:text-xl",
-            "font_weight": "font-medium",
+            "font_size": "text-xl lg:text-2xl 2xl:text-3xl",
+            "font_weight": "font-black",
             "cta_text": "shop now",
             "cta_url": "https:\/\/www.ubuntu.life\/collections\/new-arrivals",
-            "cta_color": "#262626",
+            "cta_color": "#343434",
             "cta_bg_color": "#ffffff",
             "cta_font_size": "lg:text-lg 2xl:text-xl",
             "cta_font_weight": "font-medium"
@@ -218,9 +218,9 @@
         }
       },
       "block_order": [
-        "77e6cdc4-c181-4097-a58a-12e82694e093",
-        "982cc7a3-862f-412f-bfed-99b48a0db671",
         "fc37d08e-985f-46c3-a7f1-2b114a16e733",
+        "982cc7a3-862f-412f-bfed-99b48a0db671",
+        "77e6cdc4-c181-4097-a58a-12e82694e093",
         "48040459-24eb-42bf-ad01-bc6fc837b4f8",
         "2eb55731-324a-4062-8968-026040cd16d7",
         "1d129017-289f-4d64-ae22-7c4a835dadfe"
