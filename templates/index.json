@@ -372,7 +372,7 @@
             "cta_text": "shop now",
             "cta_url": "shopify:\/\/collections\/sale",
             "cta_color": "#ffffff",
-            "cta_bg_color": "#000000",
+            "cta_bg_color": "#540606",
             "cta_font_size": "lg:text-lg 2xl:text-xl",
             "cta_font_weight": "font-medium"
           }
