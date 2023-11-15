@@ -365,7 +365,7 @@
             "text_horizontal": "left-4 md:left-6 xl:left-10",
             "flex_alignment": "items-start",
             "text": "The Holiday Shop",
-            "text_color": "#ffffff",
+            "text_color": "#fff",
             "ubuntu_font": false,
             "font_size": "lg:text-lg 2xl:text-xl",
             "font_weight": "font-normal",
