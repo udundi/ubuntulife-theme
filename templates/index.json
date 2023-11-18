@@ -48,7 +48,7 @@
         "9fa9130a-5c98-4c05-a7ea-9c56aa5788d7": {
           "type": "heading",
           "settings": {
-            "text": "Shop up to 40% off!",
+            "text": "Shop up to 35% off SITEWIDE!",
             "main_heading": false,
             "color": "#000803",
             "alignment": "text-center",
@@ -69,7 +69,7 @@
       "settings": {
         "enable_text": true,
         "cta_text": "shop now",
-        "cta_url": "https:\/\/www.ubuntu.life\/collections\/sale",
+        "cta_url": "https:\/\/www.ubuntu.life\/collections\/bestsellers",
         "cta_color": "#ffffff",
         "cta_background_color": "#000000",
         "cta_font_size": "lg:text-lg 2xl:text-xl",
@@ -366,7 +366,7 @@
             "text_horizontal": "left-4 md:left-6 xl:left-10",
             "flex_alignment": "items-start",
             "text": "The Holiday Shop",
-            "text_color": "#fff",
+            "text_color": "#ffffff",
             "ubuntu_font": false,
             "font_size": "text-xl lg:text-2xl 2xl:text-3xl",
             "font_weight": "font-normal",
