@@ -198,8 +198,9 @@
         <button
           id="preOrder"
           @click="addToCart()"
+          :disabled="!selectedVariant.available"
           class="bg-downy-300 disabled:bg-neutral-600 text-white font-black text-xl w-2/3 ml-3 py-4 transition-colors duration-300">
-          <span>Preorder</span>
+          <template v-if="selectedVariant.available">PREORDER</template>
         </button>
       {% else %}
       <button
