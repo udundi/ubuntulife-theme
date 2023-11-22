@@ -213,7 +213,11 @@
       </button>
     {% endif %}
     </div>
-    {% if product.metafields.custom.preorder_date %}<span class="italic">This item will become available for shipping on {{ product.metafields.custom.preorder_date }}</span>{% endif %}
+    {% if product.metafields.custom.preorder_date_picker %}
+      {% assign raw_date = product.metafields.custom.preorder_date_picker %}
+      {% assign formatted_date = raw_date | date: "%B %d, %Y" %}
+      <span class="italic">This item will become available for shipping on {{ formatted_date }}</span>
+    {% endif %}
       {% unless product.description == "" %}
         <div @click="toggleActiveAccordion('description')" class="flex items-center cursor-pointer py-6 border-t border-black">
           <span class="font-medium">DESCRIPTION</span>
