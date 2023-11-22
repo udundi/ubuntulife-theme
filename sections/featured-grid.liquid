@@ -14,8 +14,8 @@
         <div class="absolute px-0.5 flex flex-col {{ block.settings.flex_alignment }} {{ block.settings.text_vertical }} {{ block.settings.text_horizontal }}">
           {% if block.settings.text != "" %}
             <p 
-              class="font-black mt-4 {{ block.settings.font_weight }} {{ block.settings.font_size }} {% if block.settings.ubuntu_font %}font-ubuntulife{% endif %}"
-              style="color: {{ block.settings.color }};"
+              class="mt-4 {{ block.settings.font_weight }} {{ block.settings.font_size }} {% if block.settings.ubuntu_font %}font-ubuntulife{% endif %}"
+              style="color: {{ block.settings.text_color }};"
               >{{ block.settings.text }}</p>
           {% endif %}
           {% if block.settings.cta_text != "" %}
