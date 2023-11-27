@@ -72,7 +72,7 @@
         "3d0a55ec-5306-46eb-86a7-b486b8607d13": {
           "type": "product",
           "settings": {
-            "product": "extra-large-kuba-pouch-azure-eggshell"
+            "product": "xlarge-pouch-azure-kuba"
           }
         },
         "0b5e9f04-693e-47bf-a64a-61cc11cd3e1b": {
@@ -99,7 +99,7 @@
       "type": "apps",
       "blocks": {
         "loox-product-reviews": {
-          "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-dynamic-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "type": "shopify:\/\/apps\/loox-reviews\/blocks\/loox-dynamic-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
           "settings": {
             "only_photos": false,
             "aggregated": false,
