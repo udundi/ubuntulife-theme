@@ -6,8 +6,8 @@
         "32410aad-66a3-4c80-ba7d-13af08bd658e": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Untitled_design_17_70762d1b-5ea4-42fa-84af-99a442fe3bc5.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/website_banner_mobile_9_9aa331d2-1ec2-470e-8b8f-2d9dfa157823.jpg"
+            "image": "shopify:\/\/shop_images\/holiday_banner.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/website_banner_mobile_10_aa674a91-628c-428f-9e2a-beea54946e98.jpg"
           }
         },
         "f3a522c1-423e-4185-a5df-109b157ef7bf": {
@@ -35,9 +35,9 @@
         "8e509f9c-023c-4690-b4b9-a146bb4706b0": {
           "type": "heading",
           "settings": {
-            "text": "BLACK FRIDAY SALE",
+            "text": "The Holiday Sale",
             "main_heading": true,
-            "color": "#790202",
+            "color": "#fff",
             "alignment": "text-center",
             "ubuntu_font": false,
             "font_size": "text-4xl lg:text-5xl",
@@ -48,9 +48,9 @@
         "9fa9130a-5c98-4c05-a7ea-9c56aa5788d7": {
           "type": "heading",
           "settings": {
-            "text": "Shop 35% off SITEWIDE!",
+            "text": "Shop up to 40% off!",
             "main_heading": false,
-            "color": "#000803",
+            "color": "#ffffff",
             "alignment": "text-center",
             "ubuntu_font": false,
             "font_size": "text-xl lg:text-2xl 2xl:text-3xl",
@@ -69,15 +69,15 @@
       "settings": {
         "enable_text": true,
         "cta_text": "shop now",
-        "cta_url": "https:\/\/www.ubuntu.life\/collections\/bestsellers",
+        "cta_url": "https:\/\/www.ubuntu.life\/collections\/holiday-shop",
         "cta_color": "#ffffff",
         "cta_background_color": "#000000",
         "cta_font_size": "lg:text-lg 2xl:text-xl",
-        "cta_font_weight": "font-medium",
+        "cta_font_weight": "font-normal",
         "cta_vertical_padding": "py-2",
         "cta_horizontal_padding": "px-12",
         "text_vertical": "top-1\/2 -translate-y-1\/2",
-        "text_horizontal": "left-1\/2 -translate-x-1\/2",
+        "text_horizontal": "left-6 md:left-10 xl:left-14",
         "flex_alignment": "items-center"
       }
     },
