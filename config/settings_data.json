@@ -123,7 +123,7 @@
         ],
         "settings": {
           "show_banner": true,
-          "banner_text": "UP TO 50% SALE"
+          "banner_text": "UP TO 40% SALE"
         }
       },
       "footer": {
@@ -934,18 +934,6 @@
       "6174324309569838175": {
         "type": "shopify:\/\/apps\/smile-loyalty-rewards\/blocks\/smile-shopify-app\/2fae4e25-1841-4ea2-bc02-bd548478c4f6",
         "disabled": false,
-        "settings": {
-        }
-      },
-      "uppromote-affiliate-referral-customer-referral-36120-64c32457-930d-4cb9-9641-e24c0d9cf1f4": {
-        "type": "shopify:\/\/apps\/uppromote-affiliate-referral\/blocks\/customer-referral\/64c32457-930d-4cb9-9641-e24c0d9cf1f4",
-        "disabled": true,
-        "settings": {
-        }
-      },
-      "uppromote-affiliate-referral-message-bar-36120-64c32457-930d-4cb9-9641-e24c0d9cf1f4": {
-        "type": "shopify:\/\/apps\/uppromote-affiliate-referral\/blocks\/message-bar\/64c32457-930d-4cb9-9641-e24c0d9cf1f4",
-        "disabled": true,
         "settings": {
         }
       },
