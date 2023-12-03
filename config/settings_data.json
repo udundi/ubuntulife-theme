@@ -164,90 +164,6 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/image_6483441.jpg"
             }
-          },
-          "4d0fa685-afb1-493e-a933-e9dcab23872f": {
-            "type": "image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/image_6483441_3_dee918ef-88a4-4c86-b972-cfb21756760f.jpg"
-            }
-          },
-          "06b7be83-1a37-49df-8a97-bd7f4d60dfe7": {
-            "type": "image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/rsz_1cafe-ubuntu-april-2023-370.jpg"
-            }
-          },
-          "3f4a13da-cc92-45b0-a690-3108583e9f12": {
-            "type": "image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/rsz_1cafe-ubuntu-april-2023-370.jpg"
-            }
-          },
-          "64ff4293-ab59-4002-87eb-a1e1c25b664d": {
-            "type": "image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/rsz_1cafe-ubuntu-april-2023-370.jpg"
-            }
-          },
-          "7a5501da-2ebd-4f2b-b627-6c0ddfc5bce0": {
-            "type": "image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/rsz_1cafe-ubuntu-april-2023-370.jpg"
-            }
-          },
-          "5a5272db-3eff-46f6-a17c-0fdf6f08abe4": {
-            "type": "image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/rsz_1cafe-ubuntu-april-2023-370.jpg"
-            }
-          },
-          "840e6987-63d9-4858-86bc-85cffe190e01": {
-            "type": "image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/rsz_1cafe-ubuntu-april-2023-370.jpg"
-            }
-          },
-          "ba7dd41a-91c7-48a3-ad82-dd91d29c02ed": {
-            "type": "image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/rsz_1cafe-ubuntu-april-2023-370.jpg"
-            }
-          },
-          "ecaed4a6-767a-40b3-b3dc-1b54dad6e19c": {
-            "type": "image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/rsz_1cafe-ubuntu-april-2023-370.jpg"
-            }
-          },
-          "7482b911-0721-4dc2-ac78-7d0acf72cbdf": {
-            "type": "image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/rsz_1cafe-ubuntu-april-2023-370.jpg"
-            }
-          },
-          "b9f9c626-f3e5-484f-ae84-a22a101b5b92": {
-            "type": "image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/rsz_1cafe-ubuntu-april-2023-370.jpg"
-            }
-          },
-          "1ce04094-75ce-4960-b070-99eb9903ed11": {
-            "type": "image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/rsz_1cafe-ubuntu-april-2023-370.jpg"
-            }
-          },
-          "c4daa620-8073-48a7-9b87-1864034030bf": {
-            "type": "image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/rsz_1cafe-ubuntu-april-2023-370.jpg"
-            }
-          },
-          "6b75b47c-e29d-44c4-9840-6734ed01e54e": {
-            "type": "image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/rsz_1cafe-ubuntu-april-2023-370.jpg"
-            }
           }
         },
         "block_order": [
@@ -256,21 +172,7 @@
           "5d7316db-643c-4ea1-ab90-2d6381f54fde",
           "699ca3eb-2d47-49ab-9b35-5ee6f1ad1c47",
           "37f45cf0-b772-4509-96b4-ea4118131319",
-          "ee6e7625-1cc5-4ca2-ae38-54271f503268",
-          "4d0fa685-afb1-493e-a933-e9dcab23872f",
-          "06b7be83-1a37-49df-8a97-bd7f4d60dfe7",
-          "3f4a13da-cc92-45b0-a690-3108583e9f12",
-          "64ff4293-ab59-4002-87eb-a1e1c25b664d",
-          "7a5501da-2ebd-4f2b-b627-6c0ddfc5bce0",
-          "5a5272db-3eff-46f6-a17c-0fdf6f08abe4",
-          "840e6987-63d9-4858-86bc-85cffe190e01",
-          "ba7dd41a-91c7-48a3-ad82-dd91d29c02ed",
-          "ecaed4a6-767a-40b3-b3dc-1b54dad6e19c",
-          "7482b911-0721-4dc2-ac78-7d0acf72cbdf",
-          "b9f9c626-f3e5-484f-ae84-a22a101b5b92",
-          "1ce04094-75ce-4960-b070-99eb9903ed11",
-          "c4daa620-8073-48a7-9b87-1864034030bf",
-          "6b75b47c-e29d-44c4-9840-6734ed01e54e"
+          "ee6e7625-1cc5-4ca2-ae38-54271f503268"
         ],
         "settings": {
         }
