@@ -176,6 +176,18 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/rsz_1cafe-ubuntu-april-2023-370.jpg"
             }
+          },
+          "3f4a13da-cc92-45b0-a690-3108583e9f12": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/rsz_1cafe-ubuntu-april-2023-370.jpg"
+            }
+          },
+          "64ff4293-ab59-4002-87eb-a1e1c25b664d": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/rsz_1cafe-ubuntu-april-2023-370.jpg"
+            }
           }
         },
         "block_order": [
@@ -186,7 +198,9 @@
           "37f45cf0-b772-4509-96b4-ea4118131319",
           "ee6e7625-1cc5-4ca2-ae38-54271f503268",
           "4d0fa685-afb1-493e-a933-e9dcab23872f",
-          "06b7be83-1a37-49df-8a97-bd7f4d60dfe7"
+          "06b7be83-1a37-49df-8a97-bd7f4d60dfe7",
+          "3f4a13da-cc92-45b0-a690-3108583e9f12",
+          "64ff4293-ab59-4002-87eb-a1e1c25b664d"
         ],
         "settings": {
         }
