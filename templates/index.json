@@ -6,8 +6,8 @@
         "32410aad-66a3-4c80-ba7d-13af08bd658e": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/holiday_banner.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/website_banner_mobile_10_aa674a91-628c-428f-9e2a-beea54946e98.jpg"
+            "image": "shopify:\/\/shop_images\/Artboard_1_c59f3082-7055-42bc-a75a-67f387e6e957.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/website_banner_mobile_12_94cebca5-9a36-489b-ad08-3abf5bd812f9.jpg"
           }
         },
         "f3a522c1-423e-4185-a5df-109b157ef7bf": {
@@ -20,42 +20,41 @@
         },
         "eb964d6f-c4dd-41b9-a09a-bdaf0231cc88": {
           "type": "heading",
-          "disabled": true,
           "settings": {
-            "text": "9.23 - 9.30",
+            "text": "This weekend only!",
             "main_heading": false,
             "color": "#000000",
             "alignment": "text-center",
             "ubuntu_font": true,
             "font_size": "text-2xl lg:text-3xl 2xl:text-4xl",
             "font_weight": "font-bold",
-            "margin_top": ""
+            "margin_top": "mt-8"
           }
         },
         "8e509f9c-023c-4690-b4b9-a146bb4706b0": {
           "type": "heading",
           "settings": {
-            "text": "The Holiday Sale",
+            "text": "FREE SMALL KUBA POUCH",
             "main_heading": true,
-            "color": "#fff",
+            "color": "#000000",
             "alignment": "text-center",
             "ubuntu_font": false,
             "font_size": "text-4xl lg:text-5xl",
             "font_weight": "font-black",
-            "margin_top": ""
+            "margin_top": "mt-8"
           }
         },
         "9fa9130a-5c98-4c05-a7ea-9c56aa5788d7": {
           "type": "heading",
           "settings": {
-            "text": "Shop up to 40% off!",
+            "text": "when you spend 100+",
             "main_heading": false,
-            "color": "#ffffff",
+            "color": "#030000",
             "alignment": "text-center",
             "ubuntu_font": false,
             "font_size": "text-xl lg:text-2xl 2xl:text-3xl",
             "font_weight": "font-normal",
-            "margin_top": "mt-5"
+            "margin_top": ""
           }
         }
       },
@@ -74,7 +73,7 @@
         "cta_background_color": "#000000",
         "cta_font_size": "lg:text-lg 2xl:text-xl",
         "cta_font_weight": "font-normal",
-        "cta_vertical_padding": "py-2",
+        "cta_vertical_padding": "py-1",
         "cta_horizontal_padding": "px-12",
         "text_vertical": "top-1\/2 -translate-y-1\/2",
         "text_horizontal": "left-6 md:left-10 xl:left-14",
