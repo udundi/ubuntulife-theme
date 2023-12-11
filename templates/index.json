@@ -6,8 +6,8 @@
         "32410aad-66a3-4c80-ba7d-13af08bd658e": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Artboard_1_c59f3082-7055-42bc-a75a-67f387e6e957.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/website_banner_mobile_12_94cebca5-9a36-489b-ad08-3abf5bd812f9.jpg"
+            "image": "shopify:\/\/shop_images\/holiday_banner.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/website_banner_mobile_10_aa674a91-628c-428f-9e2a-beea54946e98.jpg"
           }
         },
         "f3a522c1-423e-4185-a5df-109b157ef7bf": {
@@ -20,6 +20,7 @@
         },
         "eb964d6f-c4dd-41b9-a09a-bdaf0231cc88": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "text": "This weekend only!",
             "main_heading": false,
@@ -34,9 +35,9 @@
         "8e509f9c-023c-4690-b4b9-a146bb4706b0": {
           "type": "heading",
           "settings": {
-            "text": "FREE SMALL KUBA POUCH",
+            "text": "The Holiday Shop",
             "main_heading": true,
-            "color": "#000000",
+            "color": "#ffffff",
             "alignment": "text-center",
             "ubuntu_font": false,
             "font_size": "text-4xl lg:text-5xl",
@@ -47,14 +48,14 @@
         "9fa9130a-5c98-4c05-a7ea-9c56aa5788d7": {
           "type": "heading",
           "settings": {
-            "text": "when you spend 100+",
+            "text": "Shop home, bags, and more!",
             "main_heading": false,
-            "color": "#030000",
+            "color": "#ffffff",
             "alignment": "text-center",
             "ubuntu_font": false,
-            "font_size": "text-xl lg:text-2xl 2xl:text-3xl",
+            "font_size": "lg:text-lg 2xl:text-xl",
             "font_weight": "font-normal",
-            "margin_top": ""
+            "margin_top": "mt-2"
           }
         }
       },
