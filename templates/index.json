@@ -6,8 +6,8 @@
         "32410aad-66a3-4c80-ba7d-13af08bd658e": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/holiday_banner_1.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/website_banner_mobile_13_15fb7cd1-ac66-43c9-8881-2e908acac3f0.jpg"
+            "image": "shopify:\/\/shop_images\/BANNER_1e97fbe2-bf6e-4909-af57-ceba9d086a62.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/website_banner_mobile_14_7715208b-2314-43b6-a3b6-b3937241a0b3.jpg"
           }
         },
         "f3a522c1-423e-4185-a5df-109b157ef7bf": {
@@ -35,9 +35,9 @@
         "8e509f9c-023c-4690-b4b9-a146bb4706b0": {
           "type": "heading",
           "settings": {
-            "text": "SHOP 50% OFF",
+            "text": "NEW IN BLUE",
             "main_heading": true,
-            "color": "#060000",
+            "color": "#fff",
             "alignment": "text-center",
             "ubuntu_font": false,
             "font_size": "text-4xl lg:text-5xl",
@@ -48,14 +48,14 @@
         "9fa9130a-5c98-4c05-a7ea-9c56aa5788d7": {
           "type": "heading",
           "settings": {
-            "text": "24 HOURS ONLY!",
+            "text": "Your favorite print in a new color!",
             "main_heading": false,
-            "color": "#050000",
+            "color": "#fff",
             "alignment": "text-center",
             "ubuntu_font": false,
-            "font_size": "text-2xl lg:text-3xl 2xl:text-4xl",
+            "font_size": "lg:text-lg 2xl:text-xl",
             "font_weight": "font-normal",
-            "margin_top": "mt-2"
+            "margin_top": "mt-1"
           }
         }
       },
@@ -69,7 +69,7 @@
       "settings": {
         "enable_text": true,
         "cta_text": "shop now",
-        "cta_url": "https:\/\/www.ubuntu.life\/collections\/holiday-shop",
+        "cta_url": "https:\/\/www.ubuntu.life\/collections\/new-arrivals",
         "cta_color": "#ffffff",
         "cta_background_color": "#000000",
         "cta_font_size": "lg:text-lg 2xl:text-xl",
@@ -77,7 +77,7 @@
         "cta_vertical_padding": "py-2",
         "cta_horizontal_padding": "px-12",
         "text_vertical": "top-1\/2 -translate-y-1\/2",
-        "text_horizontal": "left-1\/2 -translate-x-1\/2",
+        "text_horizontal": "right-6 md:right-10 xl:right-14",
         "flex_alignment": "items-center"
       }
     },
