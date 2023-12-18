@@ -37,7 +37,7 @@
           "settings": {
             "text": "NEW IN BLUE",
             "main_heading": true,
-            "color": "#fff",
+            "color": "#ffffff",
             "alignment": "text-center",
             "ubuntu_font": false,
             "font_size": "text-4xl lg:text-5xl",
@@ -50,7 +50,7 @@
           "settings": {
             "text": "Your favorite print in a new color!",
             "main_heading": false,
-            "color": "#fff",
+            "color": "#ffffff",
             "alignment": "text-center",
             "ubuntu_font": false,
             "font_size": "lg:text-lg 2xl:text-xl",
@@ -66,6 +66,7 @@
         "8e509f9c-023c-4690-b4b9-a146bb4706b0",
         "9fa9130a-5c98-4c05-a7ea-9c56aa5788d7"
       ],
+      "disabled": true,
       "settings": {
         "enable_text": true,
         "cta_text": "shop now",
@@ -87,7 +88,7 @@
         "fc37d08e-985f-46c3-a7f1-2b114a16e733": {
           "type": "pane",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Website_pannels.jpg",
+            "image": "shopify:\/\/shop_images\/Website_pannels_2.jpg",
             "url": "https:\/\/www.ubuntu.life\/collections\/new-arrivals",
             "show_text": true,
             "text_vertical": "bottom-2 md:bottom-4 xl:bottom-8",
@@ -225,7 +226,6 @@
         "2eb55731-324a-4062-8968-026040cd16d7",
         "1d129017-289f-4d64-ae22-7c4a835dadfe"
       ],
-      "disabled": true,
       "settings": {
         "pre_header": "",
         "header": "NEW <br> ARRIVALS",
