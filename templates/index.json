@@ -89,7 +89,7 @@
           "type": "pane",
           "settings": {
             "image": "shopify:\/\/shop_images\/Website_pannels_2.jpg",
-            "url": "https:\/\/www.ubuntu.life\/collections\/new-arrivals",
+            "url": "https:\/\/www.ubuntu.life\/products\/gift-card?_pos=1&_sid=257309ef8&_ss=r&variant=40880107913325",
             "show_text": true,
             "text_vertical": "bottom-2 md:bottom-4 xl:bottom-8",
             "text_horizontal": "left-2 md:left-4 xl:left-8",
@@ -110,8 +110,8 @@
         "982cc7a3-862f-412f-bfed-99b48a0db671": {
           "type": "pane",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Untitled_design_32.jpg",
-            "url": "https:\/\/www.ubuntu.life\/collections\/fall-bracelets",
+            "image": "shopify:\/\/shop_images\/4_14fb1125-3897-4c31-b1b9-decf079fda6d.jpg",
+            "url": "https:\/\/www.ubuntu.life\/collections\/new-arrivals",
             "show_text": true,
             "text_vertical": "bottom-2 md:bottom-4 xl:bottom-8",
             "text_horizontal": "left-2 md:left-4 xl:left-8",
@@ -132,8 +132,8 @@
         "77e6cdc4-c181-4097-a58a-12e82694e093": {
           "type": "pane",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Untitled_design_57.jpg",
-            "url": "https:\/\/www.ubuntu.life\/collections\/new-arrivals",
+            "image": "shopify:\/\/shop_images\/5_a74e5858-16b1-4a3a-beb3-cab6c5164c7c.jpg",
+            "url": "https:\/\/www.ubuntu.life\/collections\/winter-bracelets",
             "show_text": true,
             "text_vertical": "bottom-2 md:bottom-4 xl:bottom-8",
             "text_horizontal": "left-2 md:left-4 xl:left-8",
@@ -154,8 +154,8 @@
         "48040459-24eb-42bf-ad01-bc6fc837b4f8": {
           "type": "pane",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Untitled_design_36.jpg",
-            "url": "https:\/\/www.ubuntu.life\/collections\/new-arrivals",
+            "image": "shopify:\/\/shop_images\/Website_pannels_4.jpg",
+            "url": "https:\/\/www.ubuntu.life\/products\/the-zane-safari-green?variant=40315660992621",
             "show_text": true,
             "text_vertical": "bottom-2 md:bottom-4 xl:bottom-8",
             "text_horizontal": "left-2 md:left-4 xl:left-8",
@@ -176,7 +176,7 @@
         "2eb55731-324a-4062-8968-026040cd16d7": {
           "type": "pane",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Untitled_design_34.jpg",
+            "image": "shopify:\/\/shop_images\/7_03e89033-246f-4be6-a893-4836c407491f.jpg",
             "url": "https:\/\/www.ubuntu.life\/collections\/new-arrivals",
             "show_text": true,
             "text_vertical": "bottom-2 md:bottom-4 xl:bottom-8",
@@ -197,6 +197,7 @@
         },
         "1d129017-289f-4d64-ae22-7c4a835dadfe": {
           "type": "pane",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/Untitled_design_37.jpg",
             "url": "https:\/\/www.ubuntu.life\/collections\/new-arrivals",
