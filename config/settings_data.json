@@ -123,7 +123,7 @@
         ],
         "settings": {
           "show_banner": true,
-          "banner_text": "HOLIDAY SHIPING DEADLINES  |  12.12 REGULAR SHIPPING  |  12.15 EXPEDITED SHIPPING"
+          "banner_text": "FREE SHIPPING $50+"
         }
       },
       "footer": {
@@ -940,12 +940,6 @@
       },
       "6174324309569838175": {
         "type": "shopify:\/\/apps\/smile-loyalty-rewards\/blocks\/smile-shopify-app\/2fae4e25-1841-4ea2-bc02-bd548478c4f6",
-        "disabled": false,
-        "settings": {
-        }
-      },
-      "8605505498557855500": {
-        "type": "shopify:\/\/apps\/bogos-free-gift-buy-x-get-y\/blocks\/app-embed\/0432bba6-720a-4e95-be5a-b868386f7aa6",
         "disabled": false,
         "settings": {
         }
