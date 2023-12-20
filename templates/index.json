@@ -121,7 +121,7 @@
             "ubuntu_font": true,
             "font_size": "lg:text-lg 2xl:text-xl",
             "font_weight": "font-medium",
-            "cta_text": "shop now",
+            "cta_text": "shop cobalt kuba",
             "cta_url": "https:\/\/www.ubuntu.life\/collections\/fall-bracelets",
             "cta_color": "#000000",
             "cta_bg_color": "#ffffff",
@@ -143,7 +143,7 @@
             "ubuntu_font": false,
             "font_size": "text-xl lg:text-2xl 2xl:text-3xl",
             "font_weight": "font-black",
-            "cta_text": "shop now",
+            "cta_text": "shop NEW bracelets",
             "cta_url": "https:\/\/www.ubuntu.life\/collections\/new-arrivals",
             "cta_color": "#343434",
             "cta_bg_color": "#ffffff",
@@ -153,6 +153,7 @@
         },
         "48040459-24eb-42bf-ad01-bc6fc837b4f8": {
           "type": "pane",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/Website_pannels_5.jpg",
             "url": "https:\/\/www.ubuntu.life\/products\/the-zane-safari-green?variant=40315660992621",
@@ -175,6 +176,7 @@
         },
         "2eb55731-324a-4062-8968-026040cd16d7": {
           "type": "pane",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/7_03e89033-246f-4be6-a893-4836c407491f.jpg",
             "url": "https:\/\/www.ubuntu.life\/collections\/new-arrivals",
