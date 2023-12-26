@@ -6,8 +6,8 @@
         "32410aad-66a3-4c80-ba7d-13af08bd658e": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/BANNER_03d3a043-f162-40c0-8109-e2b7a0094788.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/website_banner_mobile_14_7715208b-2314-43b6-a3b6-b3937241a0b3.jpg"
+            "image": "shopify:\/\/shop_images\/holiday_banner_27739878-c258-4cf9-b387-c36825c579a6.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/website_banner_mobile_11_e4ee54b7-510a-4f5d-a655-7df3e5d40701.jpg"
           }
         },
         "f3a522c1-423e-4185-a5df-109b157ef7bf": {
@@ -35,7 +35,7 @@
         "8e509f9c-023c-4690-b4b9-a146bb4706b0": {
           "type": "heading",
           "settings": {
-            "text": "NEW IN BLUE",
+            "text": "UP TO 75% OFF",
             "main_heading": true,
             "color": "#ffffff",
             "alignment": "text-center",
@@ -48,7 +48,7 @@
         "9fa9130a-5c98-4c05-a7ea-9c56aa5788d7": {
           "type": "heading",
           "settings": {
-            "text": "Your favorite print in a new color!",
+            "text": "Shop the end of season sale",
             "main_heading": false,
             "color": "#ffffff",
             "alignment": "text-center",
@@ -66,19 +66,18 @@
         "8e509f9c-023c-4690-b4b9-a146bb4706b0",
         "9fa9130a-5c98-4c05-a7ea-9c56aa5788d7"
       ],
-      "disabled": true,
       "settings": {
         "enable_text": true,
         "cta_text": "shop now",
-        "cta_url": "https:\/\/www.ubuntu.life\/collections\/new-arrivals",
-        "cta_color": "#ffffff",
-        "cta_background_color": "#000000",
+        "cta_url": "https:\/\/www.ubuntu.life\/collections\/sale",
+        "cta_color": "#080000",
+        "cta_background_color": "#ffffff",
         "cta_font_size": "lg:text-lg 2xl:text-xl",
         "cta_font_weight": "font-medium",
         "cta_vertical_padding": "py-2",
         "cta_horizontal_padding": "px-12",
         "text_vertical": "top-1\/2 -translate-y-1\/2",
-        "text_horizontal": "right-6 md:right-10 xl:right-14",
+        "text_horizontal": "left-1\/2 -translate-x-1\/2",
         "flex_alignment": "items-center"
       }
     },
@@ -229,6 +228,7 @@
         "2eb55731-324a-4062-8968-026040cd16d7",
         "1d129017-289f-4d64-ae22-7c4a835dadfe"
       ],
+      "disabled": true,
       "settings": {
         "pre_header": "",
         "header": "NEW <br> ARRIVALS",
@@ -363,20 +363,20 @@
         "7ab96759-3259-4cf2-8397-9827ce8094ef": {
           "type": "pane",
           "settings": {
-            "image": "shopify:\/\/shop_images\/7_278ee12a-c8ab-4b4e-a14e-744eb425d79a.jpg",
+            "image": "shopify:\/\/shop_images\/EOY_ads_2.jpg",
             "show_text": true,
             "text_vertical": "top-4 md:top-6 xl:top-10",
             "text_horizontal": "left-4 md:left-6 xl:left-10",
             "flex_alignment": "items-start",
-            "text": "The Holiday Shop",
+            "text": "",
             "text_color": "#ffffff",
             "ubuntu_font": false,
             "font_size": "text-xl lg:text-2xl 2xl:text-3xl",
             "font_weight": "font-normal",
             "cta_text": "shop now",
-            "cta_url": "https:\/\/www.ubuntu.life\/collections\/holiday-shop",
+            "cta_url": "https:\/\/www.ubuntu.life\/collections\/sale",
             "cta_color": "#ffffff",
-            "cta_bg_color": "#540606",
+            "cta_bg_color": "#000000",
             "cta_font_size": "lg:text-lg 2xl:text-xl",
             "cta_font_weight": "font-medium"
           }
