@@ -5,6 +5,7 @@
       "blocks": {
         "32410aad-66a3-4c80-ba7d-13af08bd658e": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/holiday_banner_27739878-c258-4cf9-b387-c36825c579a6.jpg",
             "mobile_image": "shopify:\/\/shop_images\/website_banner_mobile_11_e4ee54b7-510a-4f5d-a655-7df3e5d40701.jpg"
@@ -86,6 +87,7 @@
       "blocks": {
         "fc37d08e-985f-46c3-a7f1-2b114a16e733": {
           "type": "pane",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/Website_pannels_2.jpg",
             "url": "https:\/\/www.ubuntu.life\/products\/gift-card?_pos=1&_sid=257309ef8&_ss=r&variant=40880107913325",
@@ -228,7 +230,6 @@
         "2eb55731-324a-4062-8968-026040cd16d7",
         "1d129017-289f-4d64-ae22-7c4a835dadfe"
       ],
-      "disabled": true,
       "settings": {
         "pre_header": "",
         "header": "NEW <br> ARRIVALS",
@@ -363,7 +364,7 @@
         "7ab96759-3259-4cf2-8397-9827ce8094ef": {
           "type": "pane",
           "settings": {
-            "image": "shopify:\/\/shop_images\/EOY_ads_2.jpg",
+            "image": "shopify:\/\/shop_images\/website_grid_4_609e0b41-623e-40fe-878f-39cac896b02e.jpg",
             "show_text": true,
             "text_vertical": "top-4 md:top-6 xl:top-10",
             "text_horizontal": "left-4 md:left-6 xl:left-10",
@@ -375,8 +376,8 @@
             "font_weight": "font-normal",
             "cta_text": "shop now",
             "cta_url": "https:\/\/www.ubuntu.life\/collections\/sale",
-            "cta_color": "#ffffff",
-            "cta_bg_color": "#000000",
+            "cta_color": "#000000",
+            "cta_bg_color": "#ffffff",
             "cta_font_size": "lg:text-lg 2xl:text-xl",
             "cta_font_weight": "font-medium"
           }
