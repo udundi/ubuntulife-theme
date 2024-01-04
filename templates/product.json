@@ -119,6 +119,25 @@
       "type": "shogun-below",
       "settings": {
       }
+    },
+    "1704392371dc7e456f": {
+      "type": "apps",
+      "blocks": {
+        "f9320c17-6104-4b76-a825-1c449de4f3b9": {
+          "type": "shopify:\/\/apps\/rebuy-personalization-engine\/blocks\/rebuy-widget\/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
+          "settings": {
+            "enabled": true,
+            "id": "127868",
+            "product_id_enabled": true,
+            "collection_id_enabled": false
+          }
+        }
+      },
+      "block_order": [
+        "f9320c17-6104-4b76-a825-1c449de4f3b9"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
@@ -127,6 +146,7 @@
     "main",
     "products-carousel",
     "loox-product-reviews-app-section",
-    "shogun-below"
+    "shogun-below",
+    "1704392371dc7e456f"
   ]
 }
