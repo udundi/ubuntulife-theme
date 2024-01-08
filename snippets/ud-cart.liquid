@@ -1,17 +1,56 @@
 {{ 'ud-cart.scss.css' | asset_url | stylesheet_tag }}
 
+<style>
+
+
+
+  #udCart .rebuy-widget .primary-title {
+    font-weight: 600;
+    margin-bottom: 0px;
+  }
+
+  #udCart .rebuy-widget .rebuy-product-block {
+    background: #f4f7f9;
+    margin-bottom: 10px;
+    padding: 0px 10px;
+  }
+
+  #udCart .rebuy-widget .rebuy-product-block .rebuy-button {
+    background-color: rgb(96, 205, 203) !important;
+    border: rgb(96, 205, 203) !important;
+    border-radius: 0px;
+  }
+  @media(min-width: 768px){
+    #udCart .rebuy-widget .rebuy-product-grid.large-style-list .rebuy-product-block .rebuy-product-media, .rebuy-recommended-products .rebuy-product-grid.large-style-list .rebuy-product-block .rebuy-product-media {
+      width: 25%;
+    }
+    #udCart .rebuy-product-actions {
+      width: 70px;
+    }
+  }
+
+  #udCart .rebuy-widget {
+    padding-bottom: 0px;
+  }
+
+  .powered-by-rebuy {
+    display: none;
+  }
+
+</style>
+
 <div id="udCart" v-cloak>
   <div class="fixed top-0 left-0 w-screen h-screen z-40 bg-black bg-opacity-30" @click="closeCart" v-if="isCartOpen"></div>
 
   <transition name="slide">
-    <div v-show="isCartOpen" class="fixed top-[var(--header-offset)] right-0 border border-black bg-white z-40 w-screen max-w-xs h-[calc(100vh-var(--header-offset))] max-h-[40rem] lg:max-w-md lg:max-h-[48rem]">
+    <div v-show="isCartOpen" class="fixed overflow-y-auto top-[var(--header-offset)] right-0 border border-black bg-white z-40 w-screen md:max-w-xs h-[calc(100vh-var(--header-offset))] max-h-[40rem] lg:max-w-md lg:max-h-[48rem]">
       <div v-if="cart && cart.item_count > 0" class="flex flex-col h-full">
         <span class="mt-7 lg:mt-10 mx-5 pb-4 flex flex-col border-b border-black lg:flex-row lg:items-center">
           <p class="font-bold">SHOPPING BAG</p>
           <p class="mt-2.5 font-sm lg:mt-0 lg:ml-5 lg:text-sm">Free Shipping over $50 & Free Returns</p>
         </span>
-        <div class="flex flex-col mx-5 lg:mx-7 grow overflow-y-scroll scrollbar-hidden">
-          <div 
+        <div class="flex flex-col mx-5 lg:mx-7 grow scrollbar-hidden menu-body">
+          <div
             v-for="(item, index) in cart.items" 
             :key="item.id" 
             class="flex items-center py-4 lg:py-5 border-b border-neutral-400">
@@ -45,10 +84,11 @@
                   </svg>
                 </span>
                 <p class="ml-auto font-medium lg:text-lg">{ formatMoney(item.original_price * item.quantity) }</p>
-              </div>
-            </div>
+              </div> 
+            </div> 
           </div>
         </div>
+        <div class="p-4 overflow-y-auto" id="rebuy-cart" data-rebuy-id="127865"></div>
         <div class="flex justify-between bg-orange-50 px-5 py-6 font-medium lg:px-7 lg:text-lg">
           <span>SUBTOTAL</span>
           <span>{ formatMoney(cart.original_total_price) }</span>
@@ -75,10 +115,15 @@
         </svg>
         <span class="mt-6 font-medium lg:text-lg lg:mt-9">YOUR SHOPPING BAG IS EMPTY</span>
         <a href="/collections/all" class="mt-6 w-3/4 py-4 bg-downy-300 text-white text-center text-lg font-black lg:mt-9 lg:text-xl">CONTINUE SHOPPING</a>
+        <div class="menu-body">
+          <div class="p-4 overflow-y-auto" id="rebuy-cart" data-rebuy-id="127865"></div>
+        </div>
       </div>
     </div>
   </transition>
 </div>
+
+<div class="p-4 overflow-y-auto" id="rebuy-cart" data-rebuy-id="127865"></div>
 
 {{ 'option_selection.js' | shopify_asset_url | script_tag }}
 
@@ -88,7 +133,9 @@
     data() {
       return {
         cart: null,
-        isCartOpen: false
+        rebuyCart: null,
+        isCartOpen: false,
+        rebuyCart: null,
       };
     },
     watch: {
@@ -109,6 +156,27 @@
           });
         }
       },
+      {% comment %} rebuyCart(newRebuyCart, oldRebuyCart) {
+        const rebuyWidget = document.getElementById("rebuy-cart");
+        const menu = document.querySelector(".menu-body");
+
+        console.log('function ran')
+
+        if (newRebuyCart.children.length > 0) {
+          // Move the HTML content from the rebuy widget to the menu
+          menu.innerHTML = rebuyWidget.innerHTML;
+          
+          console.log('widget loaded')
+
+          // Remove the hidden class from the menu
+          menu.classList.remove('hidden');
+
+          // Optionally, you can hide the rebuy widget
+          rebuyWidget.classList.add('hidden');
+        } else {
+          console.error("Rebuy widget not loaded.");
+        }
+      }, {% endcomment %}
     },
     methods: {
       closeCart() {
