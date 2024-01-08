@@ -29,6 +29,12 @@
     }
   }
 
+  @media(max-width: 480px){
+    #udCart .rebuy-product-actions {
+      width: 70px;
+    }
+  }
+
   #udCart .rebuy-widget {
     padding-bottom: 0px;
   }
@@ -156,27 +162,13 @@
           });
         }
       },
-      {% comment %} rebuyCart(newRebuyCart, oldRebuyCart) {
-        const rebuyWidget = document.getElementById("rebuy-cart");
-        const menu = document.querySelector(".menu-body");
-
-        console.log('function ran')
-
-        if (newRebuyCart.children.length > 0) {
-          // Move the HTML content from the rebuy widget to the menu
-          menu.innerHTML = rebuyWidget.innerHTML;
-          
-          console.log('widget loaded')
-
-          // Remove the hidden class from the menu
-          menu.classList.remove('hidden');
-
-          // Optionally, you can hide the rebuy widget
-          rebuyWidget.classList.add('hidden');
-        } else {
-          console.error("Rebuy widget not loaded.");
+      rebuyCart(newRebuyCart, oldRebuyCart) {
+        // Update item_count when rebuyCart changes
+        if (newRebuyCart?.children.length > 0) {
+          const rebuyItemCount = newRebuyCart.children.length;
+          this.updateItemCount(rebuyItemCount);
         }
-      }, {% endcomment %}
+      },
     },
     methods: {
       closeCart() {
