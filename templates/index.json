@@ -5,9 +5,8 @@
       "blocks": {
         "32410aad-66a3-4c80-ba7d-13af08bd658e": {
           "type": "slide",
-          "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/holiday_banner_27739878-c258-4cf9-b387-c36825c579a6.jpg",
+            "image": "shopify:\/\/shop_images\/Ubuntu_02377_1.jpg",
             "mobile_image": "shopify:\/\/shop_images\/website_banner_mobile_11_e4ee54b7-510a-4f5d-a655-7df3e5d40701.jpg"
           }
         },
@@ -35,6 +34,7 @@
         },
         "8e509f9c-023c-4690-b4b9-a146bb4706b0": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "text": "UP TO 75% OFF",
             "main_heading": true,
@@ -48,6 +48,7 @@
         },
         "9fa9130a-5c98-4c05-a7ea-9c56aa5788d7": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "text": "Shop the end of season sale",
             "main_heading": false,
@@ -67,7 +68,6 @@
         "8e509f9c-023c-4690-b4b9-a146bb4706b0",
         "9fa9130a-5c98-4c05-a7ea-9c56aa5788d7"
       ],
-      "disabled": true,
       "settings": {
         "enable_text": true,
         "cta_text": "shop now",
@@ -230,6 +230,7 @@
         "2eb55731-324a-4062-8968-026040cd16d7",
         "1d129017-289f-4d64-ae22-7c4a835dadfe"
       ],
+      "disabled": true,
       "settings": {
         "pre_header": "",
         "header": "NEW <br> ARRIVALS",
