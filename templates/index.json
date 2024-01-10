@@ -364,7 +364,7 @@
         "7ab96759-3259-4cf2-8397-9827ce8094ef": {
           "type": "pane",
           "settings": {
-            "image": "shopify:\/\/shop_images\/website_grid_4_609e0b41-623e-40fe-878f-39cac896b02e.jpg",
+            "image": "shopify:\/\/shop_images\/website_grid_14_f4d4a835-4b95-4444-a70f-6fdd6ddfcc1e.jpg",
             "show_text": true,
             "text_vertical": "top-4 md:top-6 xl:top-10",
             "text_horizontal": "left-4 md:left-6 xl:left-10",
@@ -374,10 +374,10 @@
             "ubuntu_font": false,
             "font_size": "text-xl lg:text-2xl 2xl:text-3xl",
             "font_weight": "font-normal",
-            "cta_text": "shop now",
-            "cta_url": "https:\/\/www.ubuntu.life\/collections\/sale",
-            "cta_color": "#000000",
-            "cta_bg_color": "#ffffff",
+            "cta_text": "shop love",
+            "cta_url": "https:\/\/www.ubuntu.life\/collections\/love-sale",
+            "cta_color": "#fff",
+            "cta_bg_color": "#dd1d1d",
             "cta_font_size": "lg:text-lg 2xl:text-xl",
             "cta_font_weight": "font-medium"
           }
