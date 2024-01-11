@@ -2,8 +2,6 @@
 
 <style>
 
-
-
   #udCart .rebuy-widget .primary-title {
     font-weight: 600;
     margin-bottom: 0px;
@@ -137,7 +135,6 @@
     data() {
       return {
         cart: null,
-        rebuyCart: null,
         isCartOpen: false
       };
     },
@@ -159,19 +156,7 @@
           });
         }
       },
-      {% comment %} rebuyCart() {
-        document.addEventListener('rebuy:cart.change', (event) => { 
-          console.log('rebuy:cart.change event', event.detail); 
-        });
-      }, {% endcomment %}
     },
-    {% comment %} mounted() {
-      document.addEventListener('rebuy:cart.change', (event) => {
-        console.log('rebuy:cart.change event', event.detail);
-        const updatedRebuyCart = event.detail;
-        this.rebuyCart = JSON.parse(JSON.stringify(updatedRebuyCart));
-      });
-    }, {% endcomment %}
     methods: {
       closeCart() {
         this.isCartOpen = false;
@@ -209,8 +194,6 @@
           }
         });
       },
-      {% comment %} updateRebuyCart(rebuyCart) {
-        this.rebuyCart = JSON.parse(JSON.stringify(rebuyCart));
       removeItem(index) {
         let line_item_index = index + 1; // CartJS index starts at 1
 
@@ -221,7 +204,7 @@
             }, 50);
           }
         });
-      }, {% endcomment %}
+      }, 
       formatMoney(money) {
         return Shopify.formatMoney(money);
       },
@@ -241,6 +224,19 @@
 
   $(document).on("cart.requestComplete", (event, cart) => {
 	  udCart.updateCart(cart);
+  });
+
+  $(document).on("rebuy:cart.change", (event, cart) => {
+    console.log('isaac')
+	  udCart.updateCart(cart);
+  });
+
+  document.addEventListener('rebuy:cart.change', (event) => { 
+    console.log('rebuy:cart.change event', event.detail); 
+    udCart.updateCart(event.detail.cart.cart);
+    if (udCart && !udCart.isCartOpen) {
+      udCart.openCart();
+    } 
   });
 
   CartJS.init({{ cart | json }});
