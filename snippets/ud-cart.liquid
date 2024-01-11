@@ -91,8 +91,8 @@
               </div> 
             </div> 
           </div>
+          <div class="p-y overflow-y-auto" id="rebuy-cart" data-rebuy-id="127865"></div>
         </div>
-        <div class="p-4 overflow-y-auto" id="rebuy-cart" data-rebuy-id="127865"></div>
         <div class="flex justify-between bg-orange-50 px-5 py-6 font-medium lg:px-7 lg:text-lg">
           <span>SUBTOTAL</span>
           <span>{ formatMoney(cart.original_total_price) }</span>
@@ -231,8 +231,6 @@
   });
 
   document.addEventListener('rebuy:cart.change', (event) => { 
-    console.log('added')
-    console.log('rebuy:cart.change event', event.detail); 
     udCart.updateCart(event.detail.cart.cart);
   });
 
@@ -241,6 +239,5 @@
       udCart.openCart();
     }
   });
-
   CartJS.init({{ cart | json }});
 </script>
