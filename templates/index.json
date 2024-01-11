@@ -5,10 +5,9 @@
       "blocks": {
         "32410aad-66a3-4c80-ba7d-13af08bd658e": {
           "type": "slide",
-          "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/Ubuntu_02377_1.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/website_banner_mobile_11_e4ee54b7-510a-4f5d-a655-7df3e5d40701.jpg"
+            "image": "shopify:\/\/shop_images\/Ubuntu_02377Banner_b7d5f327-a5c2-4c7a-8ccd-096469850ac7.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/website_banner_mobile_13_07c036fe-09bc-46a2-a71c-f4a829d70a61.jpg"
           }
         },
         "f3a522c1-423e-4185-a5df-109b157ef7bf": {
@@ -35,12 +34,11 @@
         },
         "8e509f9c-023c-4690-b4b9-a146bb4706b0": {
           "type": "heading",
-          "disabled": true,
           "settings": {
-            "text": "UP TO 75% OFF",
+            "text": "LOVE SALE",
             "main_heading": true,
-            "color": "#ffffff",
-            "alignment": "text-center",
+            "color": "#dd1d1d",
+            "alignment": "text-left",
             "ubuntu_font": false,
             "font_size": "text-4xl lg:text-5xl",
             "font_weight": "font-black",
@@ -49,15 +47,14 @@
         },
         "9fa9130a-5c98-4c05-a7ea-9c56aa5788d7": {
           "type": "heading",
-          "disabled": true,
           "settings": {
-            "text": "Shop the end of season sale",
+            "text": "50% OFF ALL LOVE BRACELETS",
             "main_heading": false,
-            "color": "#ffffff",
-            "alignment": "text-center",
-            "ubuntu_font": false,
-            "font_size": "lg:text-lg 2xl:text-xl",
-            "font_weight": "font-normal",
+            "color": "#0a0000",
+            "alignment": "text-left",
+            "ubuntu_font": true,
+            "font_size": "text-2xl lg:text-3xl 2xl:text-4xl",
+            "font_weight": "font-medium",
             "margin_top": "mt-1"
           }
         }
@@ -69,19 +66,18 @@
         "8e509f9c-023c-4690-b4b9-a146bb4706b0",
         "9fa9130a-5c98-4c05-a7ea-9c56aa5788d7"
       ],
-      "disabled": true,
       "settings": {
         "enable_text": true,
         "cta_text": "shop now",
-        "cta_url": "https:\/\/www.ubuntu.life\/collections\/sale",
-        "cta_color": "#080000",
-        "cta_background_color": "#ffffff",
+        "cta_url": "https:\/\/www.ubuntu.life\/collections\/love-sale",
+        "cta_color": "#ffffff",
+        "cta_background_color": "#0d0006",
         "cta_font_size": "lg:text-lg 2xl:text-xl",
         "cta_font_weight": "font-medium",
         "cta_vertical_padding": "py-2",
         "cta_horizontal_padding": "px-12",
         "text_vertical": "top-1\/2 -translate-y-1\/2",
-        "text_horizontal": "left-1\/2 -translate-x-1\/2",
+        "text_horizontal": "left-6 md:left-10 xl:left-14",
         "flex_alignment": "items-center"
       }
     },
@@ -232,6 +228,7 @@
         "2eb55731-324a-4062-8968-026040cd16d7",
         "1d129017-289f-4d64-ae22-7c4a835dadfe"
       ],
+      "disabled": true,
       "settings": {
         "pre_header": "",
         "header": "NEW <br> ARRIVALS",
