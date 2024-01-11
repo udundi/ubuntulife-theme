@@ -227,11 +227,10 @@
   });
 
   $(document).on("rebuy:cart.change", (event, cart) => {
-    console.log('isaac')
 	  udCart.updateCart(cart);
   });
 
-  document.addEventListener('rebuy:cart.change', (event) => { 
+  document.addEventListener('rebuy:cart.add', (event) => { 
     console.log('rebuy:cart.change event', event.detail); 
     udCart.updateCart(event.detail.cart.cart);
     if (udCart && !udCart.isCartOpen) {
