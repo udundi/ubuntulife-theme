@@ -69,7 +69,7 @@
       "settings": {
         "enable_text": true,
         "cta_text": "shop now",
-        "cta_url": "https:\/\/www.ubuntu.life\/collections\/bracelets",
+        "cta_url": "shopify:\/\/collections\/love-sale",
         "cta_color": "#ffffff",
         "cta_background_color": "#0d0006",
         "cta_font_size": "lg:text-lg 2xl:text-xl",
@@ -375,7 +375,7 @@
             "font_weight": "font-normal",
             "cta_text": "shop love",
             "cta_url": "https:\/\/www.ubuntu.life\/collections\/love-sale",
-            "cta_color": "#fff",
+            "cta_color": "#ffffff",
             "cta_bg_color": "#dd1d1d",
             "cta_font_size": "lg:text-lg 2xl:text-xl",
             "cta_font_weight": "font-medium"
