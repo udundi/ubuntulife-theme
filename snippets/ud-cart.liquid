@@ -230,12 +230,16 @@
 	  udCart.updateCart(cart);
   });
 
-  document.addEventListener('rebuy:cart.add', (event) => { 
+  document.addEventListener('rebuy:cart.change', (event) => { 
+    console.log('added')
     console.log('rebuy:cart.change event', event.detail); 
     udCart.updateCart(event.detail.cart.cart);
+  });
+
+  document.addEventListener('rebuy:cart.add', (event) => { 
     if (udCart && !udCart.isCartOpen) {
       udCart.openCart();
-    } 
+    }
   });
 
   CartJS.init({{ cart | json }});
