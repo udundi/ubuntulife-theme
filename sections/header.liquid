@@ -75,7 +75,7 @@
         <path fill-rule="evenodd" clip-rule="evenodd" d="M14.6129 13.5523L20.2769 19.2163L19.2164 20.2768L13.5524 14.6128C10.1579 17.4403 5.13976 17.0978 2.16097 13.8352C-0.81782 10.5727 -0.703563 5.54423 2.42034 2.42033C5.54424 -0.703563 10.5727 -0.817819 13.8353 2.16096C17.0979 5.13975 17.4404 10.1578 14.6129 13.5523ZM8.27637 1.52673C4.54845 1.52673 1.52637 4.54881 1.52637 8.27673C1.5305 12.0029 4.55016 15.0226 8.27637 15.0267C12.0043 15.0267 15.0264 12.0046 15.0264 8.27673C15.0264 4.54881 12.0043 1.52673 8.27637 1.52673Z" fill="black"/>
       </svg>
     </span>
-    <span onclick="udCart.toggleCart()" class="relative">
+    <span onclick="toggleRebuy()" class="relative">
       <p id="cart-qty-indicator" class="absolute top-0 -right-1 h-3 w-3 text-[6px] text-center p-0.5 rounded-full text-white bg-downy-300" {% if cart.item_count == 0 %}style="display: none;"{% endif %}>{{ cart.item_count }}</p>
       <svg aria-label="open cart" class="h-5 w-5" width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path fill-rule="evenodd" clip-rule="evenodd" d="M14.7321 5.5V4.8125C14.7321 2.15463 12.5335 0 9.82143 0C7.10931 0 4.91071 2.15463 4.91071 4.8125V5.5H0V19.25C0 20.7688 1.25634 22 2.80612 22H16.8367C18.3865 22 19.6428 20.7688 19.6428 19.25V5.5H14.7321ZM9.82213 1.375C11.7593 1.375 13.3297 2.91402 13.3297 4.8125V5.5H6.31445V4.8125C6.31445 2.91402 7.88488 1.375 9.82213 1.375ZM18.241 6.875H1.40429V19.25C1.40429 20.0094 2.03246 20.625 2.80735 20.625H16.8379C17.6128 20.625 18.241 20.0094 18.241 19.25V6.875Z" fill="black"/>
@@ -204,6 +204,12 @@
         menuOpen = false;
       }
     });
+
+    function toggleRebuy(){
+      console.log('toggled')
+      const SmartCart = window.Rebuy.SmartCart;
+      SmartCart.show(event);
+    }
 
     function toggleMainPane(toOpen) {
       const navPane = document.getElementById("mobile-navigation-pane");

@@ -212,11 +212,11 @@
   }).mount("#udCart");
 
 
-  $(document).ready(function () {
+  {% comment %} $(document).ready(function () {
     if (window.location.href.includes("#cart")) {
       udCart.openCart();
     }
-  });
+  }); {% endcomment %}
 
   $(document).on("cart.ready", (event, cart) => {
     udCart.updateCart(cart);
