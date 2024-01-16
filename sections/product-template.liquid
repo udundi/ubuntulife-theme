@@ -476,9 +476,9 @@
             }, 3000);
           }
         });
-        if (udCart && !udCart.isCartOpen) {
+        {% comment %} if (udCart && !udCart.isCartOpen) {
           udCart.openCart();
-        }
+        } {% endcomment %}
       },
       formatMoney(value) {
         return Shopify.formatMoney(value);
