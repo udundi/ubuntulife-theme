@@ -342,20 +342,20 @@
         "60bb772e-f39d-49b6-98c8-fa66172cece5": {
           "type": "pane",
           "settings": {
-            "image": "shopify:\/\/shop_images\/website_grid_4_a4d3e46c-c66f-49f9-b0f8-bfd4e65f4d92.jpg",
+            "image": "shopify:\/\/shop_images\/3_eb82259b-4c23-44e4-a2e8-c858c10319a1.jpg",
             "show_text": true,
-            "text_vertical": "top-6 md:top-8 xl:top-12",
+            "text_vertical": "top-4 md:top-6 xl:top-10",
             "text_horizontal": "right-4 md:right-6 xl:right-10",
             "flex_alignment": "items-end",
-            "text": "Whats HOT!",
-            "text_color": "#ffffff",
+            "text": "VALENTINES DAY <br>GIFT GUIDE",
+            "text_color": "#dd1d1d",
             "ubuntu_font": true,
             "font_size": "text-2xl lg:text-3xl 2xl:text-4xl",
             "font_weight": "font-normal",
             "cta_text": "shop now",
-            "cta_url": "shopify:\/\/collections\/new-arrivals",
+            "cta_url": "https:\/\/www.ubuntu.life\/collections\/valentines-gift-guide",
             "cta_color": "#262626",
-            "cta_bg_color": "#60cdcb",
+            "cta_bg_color": "#fcafd1",
             "cta_font_size": "lg:text-lg 2xl:text-xl",
             "cta_font_weight": "font-medium"
           }
