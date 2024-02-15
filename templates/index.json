@@ -6,8 +6,8 @@
         "32410aad-66a3-4c80-ba7d-13af08bd658e": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Ubuntu_02380banner_af8b2536-3e1d-4e12-8253-3a322f9dbd4c.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/website_banner_mobile_15_663be55f-3fd0-48ad-8d3e-951fbc5d7c9b.jpg"
+            "image": "shopify:\/\/shop_images\/Untitled_design_6.png",
+            "mobile_image": "shopify:\/\/shop_images\/website_banner_mobile_16_634a644c-0087-4a61-b772-2b4ee3d7cee4.jpg"
           }
         },
         "f3a522c1-423e-4185-a5df-109b157ef7bf": {
@@ -35,10 +35,10 @@
         "8e509f9c-023c-4690-b4b9-a146bb4706b0": {
           "type": "heading",
           "settings": {
-            "text": "LOVE SALE",
+            "text": "40% OFF BAG SALE",
             "main_heading": true,
-            "color": "#dd1d1d",
-            "alignment": "text-left",
+            "color": "#ffffff",
+            "alignment": "text-center",
             "ubuntu_font": false,
             "font_size": "text-4xl lg:text-5xl",
             "font_weight": "font-black",
@@ -48,9 +48,9 @@
         "9fa9130a-5c98-4c05-a7ea-9c56aa5788d7": {
           "type": "heading",
           "settings": {
-            "text": "50% OFF ALL LOVE BRACELETS",
+            "text": "SHOP SELECT BAGS",
             "main_heading": false,
-            "color": "#0a0000",
+            "color": "#ffffff",
             "alignment": "text-left",
             "ubuntu_font": true,
             "font_size": "text-2xl lg:text-3xl 2xl:text-4xl",
@@ -69,15 +69,15 @@
       "settings": {
         "enable_text": true,
         "cta_text": "shop now",
-        "cta_url": "shopify:\/\/collections\/love-sale",
-        "cta_color": "#ffffff",
-        "cta_background_color": "#0d0006",
+        "cta_url": "https:\/\/www.ubuntu.life\/collections\/bags",
+        "cta_color": "#000000",
+        "cta_background_color": "#ffffff",
         "cta_font_size": "lg:text-lg 2xl:text-xl",
         "cta_font_weight": "font-medium",
         "cta_vertical_padding": "py-2",
         "cta_horizontal_padding": "px-12",
         "text_vertical": "top-1\/2 -translate-y-1\/2",
-        "text_horizontal": "left-6 md:left-10 xl:left-14",
+        "text_horizontal": "left-1\/2 -translate-x-1\/2",
         "flex_alignment": "items-center"
       }
     },
@@ -342,20 +342,20 @@
         "60bb772e-f39d-49b6-98c8-fa66172cece5": {
           "type": "pane",
           "settings": {
-            "image": "shopify:\/\/shop_images\/3_eb82259b-4c23-44e4-a2e8-c858c10319a1.jpg",
+            "image": "shopify:\/\/shop_images\/website_grid_22.jpg",
             "show_text": true,
             "text_vertical": "top-4 md:top-6 xl:top-10",
             "text_horizontal": "right-4 md:right-6 xl:right-10",
             "flex_alignment": "items-end",
-            "text": "VALENTINES DAY <br>GIFT GUIDE",
-            "text_color": "#dd1d1d",
+            "text": "WHATS HOT! <br>",
+            "text_color": "#000000",
             "ubuntu_font": true,
             "font_size": "text-2xl lg:text-3xl 2xl:text-4xl",
             "font_weight": "font-normal",
             "cta_text": "shop now",
-            "cta_url": "https:\/\/www.ubuntu.life\/collections\/valentines-gift-guide",
-            "cta_color": "#262626",
-            "cta_bg_color": "#fcafd1",
+            "cta_url": "https:\/\/www.ubuntu.life\/collections\/new-arrivals",
+            "cta_color": "#ffffff",
+            "cta_bg_color": "#000000",
             "cta_font_size": "lg:text-lg 2xl:text-xl",
             "cta_font_weight": "font-medium"
           }
@@ -363,7 +363,7 @@
         "7ab96759-3259-4cf2-8397-9827ce8094ef": {
           "type": "pane",
           "settings": {
-            "image": "shopify:\/\/shop_images\/website_grid_21.jpg",
+            "image": "shopify:\/\/shop_images\/website_grid_1_b8511e24-6560-440c-ab39-80905efde39d.png",
             "show_text": true,
             "text_vertical": "top-4 md:top-6 xl:top-10",
             "text_horizontal": "left-4 md:left-6 xl:left-10",
@@ -373,10 +373,10 @@
             "ubuntu_font": false,
             "font_size": "text-xl lg:text-2xl 2xl:text-3xl",
             "font_weight": "font-normal",
-            "cta_text": "shop love",
-            "cta_url": "https:\/\/www.ubuntu.life\/collections\/love-sale",
-            "cta_color": "#ffffff",
-            "cta_bg_color": "#dd1d1d",
+            "cta_text": "shop now",
+            "cta_url": "https:\/\/www.ubuntu.life\/collections\/bags",
+            "cta_color": "#000000",
+            "cta_bg_color": "#ffffff",
             "cta_font_size": "lg:text-lg 2xl:text-xl",
             "cta_font_weight": "font-medium"
           }
