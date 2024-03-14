@@ -155,7 +155,7 @@
         "48040459-24eb-42bf-ad01-bc6fc837b4f8": {
           "type": "pane",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Website_pannels_6.jpg",
+            "image": "shopify:\/\/shop_images\/website_grid_25.jpg",
             "url": "https:\/\/www.ubuntu.life\/collections\/kuba-collection",
             "show_text": true,
             "text_vertical": "bottom-2 md:bottom-4 xl:bottom-8",
@@ -385,7 +385,7 @@
         "5f1d47d3-1dc2-46e3-b924-b76199dffb61": {
           "type": "pane",
           "settings": {
-            "image": "shopify:\/\/shop_images\/website_grid_3_4cf53253-1bc5-4ebc-9b7d-58f2c6d7e5aa.jpg",
+            "image": "shopify:\/\/shop_images\/website_grid_25.jpg",
             "show_text": true,
             "text_vertical": "top-4 md:top-6 xl:top-10",
             "text_horizontal": "left-4 md:left-6 xl:left-10",
