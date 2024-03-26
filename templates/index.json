@@ -318,42 +318,42 @@
     "8c73d3ed-bb99-408a-b6fc-820ee7c571cd": {
       "type": "featured-grid",
       "blocks": {
-        "60bb772e-f39d-49b6-98c8-fa66172cece4": {
+        "5f1d47d3-1dc2-46e3-b924-b76199dffb61": {
           "type": "pane",
           "settings": {
-            "image": "shopify:\/\/shop_images\/website_grid_1052d42e-725e-4693-8b53-371407bfaa6d.jpg",
+            "image": "shopify:\/\/shop_images\/website_grid_25.jpg",
             "show_text": true,
-            "text_vertical": "top-6 md:top-8 xl:top-12",
-            "text_horizontal": "left-6 md:left-10 xl:left-14",
+            "text_vertical": "top-4 md:top-6 xl:top-10",
+            "text_horizontal": "left-4 md:left-6 xl:left-10",
             "flex_alignment": "items-start",
-            "text": "",
+            "text": "Bestsellers",
             "text_color": "#ffffff",
-            "ubuntu_font": false,
-            "font_size": "lg:text-lg 2xl:text-xl",
-            "font_weight": "font-medium",
-            "cta_text": "about us",
-            "cta_url": "https:\/\/www.ubuntu.life\/pages\/about",
+            "ubuntu_font": true,
+            "font_size": "text-2xl lg:text-3xl 2xl:text-4xl",
+            "font_weight": "font-bold",
+            "cta_text": "shop now",
+            "cta_url": "https:\/\/www.ubuntu.life\/collections\/best-sellers",
             "cta_color": "#ffffff",
             "cta_bg_color": "#60cdcb",
             "cta_font_size": "lg:text-lg 2xl:text-xl",
-            "cta_font_weight": "font-medium"
+            "cta_font_weight": "font-normal"
           }
         },
         "60bb772e-f39d-49b6-98c8-fa66172cece5": {
           "type": "pane",
           "settings": {
-            "image": "shopify:\/\/shop_images\/website_grid_22.jpg",
+            "image": "shopify:\/\/shop_images\/website_grid_26.jpg",
             "show_text": true,
             "text_vertical": "top-4 md:top-6 xl:top-10",
             "text_horizontal": "right-4 md:right-6 xl:right-10",
-            "flex_alignment": "items-end",
-            "text": "WHATS HOT! <br>",
+            "flex_alignment": "items-center",
+            "text": "VOTE! <br>",
             "text_color": "#000000",
             "ubuntu_font": true,
-            "font_size": "text-2xl lg:text-3xl 2xl:text-4xl",
+            "font_size": "text-4xl lg:text-5xl",
             "font_weight": "font-normal",
             "cta_text": "shop now",
-            "cta_url": "https:\/\/www.ubuntu.life\/collections\/new-arrivals",
+            "cta_url": "https:\/\/www.ubuntu.life\/collections\/vote-bracelets",
             "cta_color": "#ffffff",
             "cta_bg_color": "#000000",
             "cta_font_size": "lg:text-lg 2xl:text-xl",
@@ -381,33 +381,33 @@
             "cta_font_weight": "font-medium"
           }
         },
-        "5f1d47d3-1dc2-46e3-b924-b76199dffb61": {
+        "60bb772e-f39d-49b6-98c8-fa66172cece4": {
           "type": "pane",
           "settings": {
-            "image": "shopify:\/\/shop_images\/website_grid_25.jpg",
+            "image": "shopify:\/\/shop_images\/website_grid_1052d42e-725e-4693-8b53-371407bfaa6d.jpg",
             "show_text": true,
-            "text_vertical": "top-4 md:top-6 xl:top-10",
-            "text_horizontal": "left-4 md:left-6 xl:left-10",
+            "text_vertical": "top-6 md:top-8 xl:top-12",
+            "text_horizontal": "left-6 md:left-10 xl:left-14",
             "flex_alignment": "items-start",
-            "text": "Bestsellers",
+            "text": "",
             "text_color": "#ffffff",
-            "ubuntu_font": true,
-            "font_size": "text-2xl lg:text-3xl 2xl:text-4xl",
-            "font_weight": "font-bold",
-            "cta_text": "shop now",
-            "cta_url": "https:\/\/www.ubuntu.life\/collections\/best-sellers",
+            "ubuntu_font": false,
+            "font_size": "lg:text-lg 2xl:text-xl",
+            "font_weight": "font-medium",
+            "cta_text": "about us",
+            "cta_url": "https:\/\/www.ubuntu.life\/pages\/about",
             "cta_color": "#ffffff",
             "cta_bg_color": "#60cdcb",
             "cta_font_size": "lg:text-lg 2xl:text-xl",
-            "cta_font_weight": "font-normal"
+            "cta_font_weight": "font-medium"
           }
         }
       },
       "block_order": [
-        "60bb772e-f39d-49b6-98c8-fa66172cece4",
+        "5f1d47d3-1dc2-46e3-b924-b76199dffb61",
         "60bb772e-f39d-49b6-98c8-fa66172cece5",
         "7ab96759-3259-4cf2-8397-9827ce8094ef",
-        "5f1d47d3-1dc2-46e3-b924-b76199dffb61"
+        "60bb772e-f39d-49b6-98c8-fa66172cece4"
       ],
       "settings": {
       }
