@@ -360,27 +360,6 @@
             "cta_font_weight": "font-medium"
           }
         },
-        "7ab96759-3259-4cf2-8397-9827ce8094ef": {
-          "type": "pane",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/website_grid_24.jpg",
-            "show_text": true,
-            "text_vertical": "top-4 md:top-6 xl:top-10",
-            "text_horizontal": "left-4 md:left-6 xl:left-10",
-            "flex_alignment": "items-start",
-            "text": "",
-            "text_color": "#ffffff",
-            "ubuntu_font": false,
-            "font_size": "text-xl lg:text-2xl 2xl:text-3xl",
-            "font_weight": "font-normal",
-            "cta_text": "shop now",
-            "cta_url": "https:\/\/www.ubuntu.life\/collections\/jewelry-sale",
-            "cta_color": "#000000",
-            "cta_bg_color": "#ffffff",
-            "cta_font_size": "lg:text-lg 2xl:text-xl",
-            "cta_font_weight": "font-medium"
-          }
-        },
         "60bb772e-f39d-49b6-98c8-fa66172cece4": {
           "type": "pane",
           "settings": {
@@ -401,13 +380,34 @@
             "cta_font_size": "lg:text-lg 2xl:text-xl",
             "cta_font_weight": "font-medium"
           }
+        },
+        "7ab96759-3259-4cf2-8397-9827ce8094ef": {
+          "type": "pane",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/website_grid_24.jpg",
+            "show_text": true,
+            "text_vertical": "top-4 md:top-6 xl:top-10",
+            "text_horizontal": "left-4 md:left-6 xl:left-10",
+            "flex_alignment": "items-start",
+            "text": "",
+            "text_color": "#ffffff",
+            "ubuntu_font": false,
+            "font_size": "text-xl lg:text-2xl 2xl:text-3xl",
+            "font_weight": "font-normal",
+            "cta_text": "shop now",
+            "cta_url": "https:\/\/www.ubuntu.life\/collections\/jewelry-sale",
+            "cta_color": "#000000",
+            "cta_bg_color": "#ffffff",
+            "cta_font_size": "lg:text-lg 2xl:text-xl",
+            "cta_font_weight": "font-medium"
+          }
         }
       },
       "block_order": [
         "5f1d47d3-1dc2-46e3-b924-b76199dffb61",
         "60bb772e-f39d-49b6-98c8-fa66172cece5",
-        "7ab96759-3259-4cf2-8397-9827ce8094ef",
-        "60bb772e-f39d-49b6-98c8-fa66172cece4"
+        "60bb772e-f39d-49b6-98c8-fa66172cece4",
+        "7ab96759-3259-4cf2-8397-9827ce8094ef"
       ],
       "settings": {
       }
