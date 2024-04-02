@@ -6,8 +6,8 @@
         "32410aad-66a3-4c80-ba7d-13af08bd658e": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Ubuntu02100Banner.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/Screen_Shot_2024-03-21_at_9.22.16_AM.png"
+            "image": "shopify:\/\/shop_images\/Ubuntu02587Banner_1.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/website_banner_mobile_20_a714135c-a7c7-4314-8b84-21cdc61d15dd.jpg"
           }
         },
         "f3a522c1-423e-4185-a5df-109b157ef7bf": {
@@ -35,9 +35,9 @@
         "8e509f9c-023c-4690-b4b9-a146bb4706b0": {
           "type": "heading",
           "settings": {
-            "text": "Hello, Sunshine!",
+            "text": "Spring Bracelets!",
             "main_heading": true,
-            "color": "#facb06",
+            "color": "#ffab00",
             "alignment": "text-center",
             "ubuntu_font": false,
             "font_size": "text-4xl lg:text-5xl",
@@ -48,13 +48,13 @@
         "9fa9130a-5c98-4c05-a7ea-9c56aa5788d7": {
           "type": "heading",
           "settings": {
-            "text": "Our mambo collection<br> just got a new color way",
+            "text": "Brighten up your look with our<br> newest bracelets collection.",
             "main_heading": false,
             "color": "#ffffff",
             "alignment": "text-center",
             "ubuntu_font": true,
             "font_size": "text-xl lg:text-2xl 2xl:text-3xl",
-            "font_weight": "font-medium",
+            "font_weight": "font-bold",
             "margin_top": "mt-2"
           }
         }
