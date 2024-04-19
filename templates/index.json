@@ -353,9 +353,9 @@
             "font_size": "text-2xl lg:text-3xl 2xl:text-4xl",
             "font_weight": "font-medium",
             "cta_text": "shop now",
-            "cta_url": "",
+            "cta_url": "https:\/\/www.ubuntu.life\/collections\/ubuntu-life-x-emc",
             "cta_color": "#262626",
-            "cta_bg_color": "#FFFFFF",
+            "cta_bg_color": "#ffffff",
             "cta_font_size": "lg:text-lg 2xl:text-xl",
             "cta_font_weight": "font-medium"
           }
