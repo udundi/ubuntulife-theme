@@ -6,8 +6,8 @@
         "32410aad-66a3-4c80-ba7d-13af08bd658e": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Ubuntu02587Banner_1.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/website_banner_mobile_20_a714135c-a7c7-4314-8b84-21cdc61d15dd.jpg"
+            "image": "shopify:\/\/shop_images\/Ubuntu_02061_Banner.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/website_banner_mobile_9638e4dc-4502-47de-ade7-a0adf6ba7280.jpg"
           }
         },
         "f3a522c1-423e-4185-a5df-109b157ef7bf": {
@@ -35,9 +35,9 @@
         "8e509f9c-023c-4690-b4b9-a146bb4706b0": {
           "type": "heading",
           "settings": {
-            "text": "Spring Bracelets!",
+            "text": "Mother's Day <br>Collection",
             "main_heading": true,
-            "color": "#ffab00",
+            "color": "#ffd2da",
             "alignment": "text-center",
             "ubuntu_font": false,
             "font_size": "text-4xl lg:text-5xl",
@@ -48,7 +48,7 @@
         "9fa9130a-5c98-4c05-a7ea-9c56aa5788d7": {
           "type": "heading",
           "settings": {
-            "text": "Brighten up your look with our<br> newest bracelets collection.",
+            "text": "An assortment of handmade <br> gifts, exclusively for Mom",
             "main_heading": false,
             "color": "#ffffff",
             "alignment": "text-center",
@@ -69,7 +69,7 @@
       "settings": {
         "enable_text": true,
         "cta_text": "shop now",
-        "cta_url": "https:\/\/www.ubuntu.life\/collections\/new-arrivals",
+        "cta_url": "https:\/\/www.ubuntu.life\/collections\/mothers-day",
         "cta_color": "#ffffff",
         "cta_background_color": "#000000",
         "cta_font_size": "lg:text-lg 2xl:text-xl",
@@ -318,6 +318,48 @@
     "8c73d3ed-bb99-408a-b6fc-820ee7c571cd": {
       "type": "featured-grid",
       "blocks": {
+        "pane_xypgEm": {
+          "type": "pane",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/website_grid_3_b2fec675-cc9c-49cc-ba0c-4f3d28f623cd.jpg",
+            "show_text": true,
+            "text_vertical": "top-4 md:top-6 xl:top-10",
+            "text_horizontal": "left-4 md:left-6 xl:left-10",
+            "flex_alignment": "items-start",
+            "text": "Mother's Day <br> Collection",
+            "text_color": "#000000",
+            "ubuntu_font": true,
+            "font_size": "text-2xl lg:text-3xl 2xl:text-4xl",
+            "font_weight": "font-medium",
+            "cta_text": "shop now",
+            "cta_url": "https:\/\/www.ubuntu.life\/collections\/mothers-day",
+            "cta_color": "#ffffff",
+            "cta_bg_color": "#000000",
+            "cta_font_size": "lg:text-lg 2xl:text-xl",
+            "cta_font_weight": "font-medium"
+          }
+        },
+        "pane_jhWJbk": {
+          "type": "pane",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/website_grid_2_c7fda7cc-a047-43f6-8e1c-791d444305a1.jpg",
+            "show_text": true,
+            "text_vertical": "top-4 md:top-6 xl:top-10",
+            "text_horizontal": "left-4 md:left-6 xl:left-10",
+            "flex_alignment": "items-start",
+            "text": "EMC x UL",
+            "text_color": "#fcbc39",
+            "ubuntu_font": false,
+            "font_size": "text-2xl lg:text-3xl 2xl:text-4xl",
+            "font_weight": "font-medium",
+            "cta_text": "shop now",
+            "cta_url": "",
+            "cta_color": "#262626",
+            "cta_bg_color": "#FFFFFF",
+            "cta_font_size": "lg:text-lg 2xl:text-xl",
+            "cta_font_weight": "font-medium"
+          }
+        },
         "5f1d47d3-1dc2-46e3-b924-b76199dffb61": {
           "type": "pane",
           "settings": {
@@ -360,27 +402,6 @@
             "cta_font_weight": "font-medium"
           }
         },
-        "60bb772e-f39d-49b6-98c8-fa66172cece4": {
-          "type": "pane",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/64.jpg",
-            "show_text": true,
-            "text_vertical": "top-6 md:top-8 xl:top-12",
-            "text_horizontal": "left-6 md:left-10 xl:left-14",
-            "flex_alignment": "items-start",
-            "text": "",
-            "text_color": "#ffffff",
-            "ubuntu_font": false,
-            "font_size": "lg:text-lg 2xl:text-xl",
-            "font_weight": "font-medium",
-            "cta_text": "about us",
-            "cta_url": "https:\/\/www.ubuntu.life\/pages\/about",
-            "cta_color": "#ffffff",
-            "cta_bg_color": "#60cdcb",
-            "cta_font_size": "lg:text-lg 2xl:text-xl",
-            "cta_font_weight": "font-medium"
-          }
-        },
         "7ab96759-3259-4cf2-8397-9827ce8094ef": {
           "type": "pane",
           "settings": {
@@ -401,13 +422,36 @@
             "cta_font_size": "lg:text-lg 2xl:text-xl",
             "cta_font_weight": "font-medium"
           }
+        },
+        "60bb772e-f39d-49b6-98c8-fa66172cece4": {
+          "type": "pane",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/64.jpg",
+            "show_text": true,
+            "text_vertical": "top-6 md:top-8 xl:top-12",
+            "text_horizontal": "left-6 md:left-10 xl:left-14",
+            "flex_alignment": "items-start",
+            "text": "",
+            "text_color": "#ffffff",
+            "ubuntu_font": false,
+            "font_size": "lg:text-lg 2xl:text-xl",
+            "font_weight": "font-medium",
+            "cta_text": "about us",
+            "cta_url": "https:\/\/www.ubuntu.life\/pages\/about",
+            "cta_color": "#ffffff",
+            "cta_bg_color": "#60cdcb",
+            "cta_font_size": "lg:text-lg 2xl:text-xl",
+            "cta_font_weight": "font-medium"
+          }
         }
       },
       "block_order": [
+        "pane_xypgEm",
+        "pane_jhWJbk",
         "5f1d47d3-1dc2-46e3-b924-b76199dffb61",
         "60bb772e-f39d-49b6-98c8-fa66172cece5",
-        "60bb772e-f39d-49b6-98c8-fa66172cece4",
-        "7ab96759-3259-4cf2-8397-9827ce8094ef"
+        "7ab96759-3259-4cf2-8397-9827ce8094ef",
+        "60bb772e-f39d-49b6-98c8-fa66172cece4"
       ],
       "settings": {
       }
