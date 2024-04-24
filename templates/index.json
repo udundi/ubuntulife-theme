@@ -20,11 +20,10 @@
         },
         "eb964d6f-c4dd-41b9-a09a-bdaf0231cc88": {
           "type": "heading",
-          "disabled": true,
           "settings": {
-            "text": "This weekend only!",
+            "text": "We love you, Mom!",
             "main_heading": false,
-            "color": "#000000",
+            "color": "#fff",
             "alignment": "text-center",
             "ubuntu_font": true,
             "font_size": "text-2xl lg:text-3xl 2xl:text-4xl",
@@ -53,7 +52,7 @@
             "color": "#ffffff",
             "alignment": "text-center",
             "ubuntu_font": true,
-            "font_size": "text-xl lg:text-2xl 2xl:text-3xl",
+            "font_size": "lg:text-lg 2xl:text-xl",
             "font_weight": "font-bold",
             "margin_top": "mt-2"
           }
