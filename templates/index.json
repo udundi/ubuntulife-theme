@@ -23,7 +23,7 @@
           "settings": {
             "text": "We love you, Mom!",
             "main_heading": false,
-            "color": "#fff",
+            "color": "#ffffff",
             "alignment": "text-center",
             "ubuntu_font": true,
             "font_size": "text-2xl lg:text-3xl 2xl:text-4xl",
@@ -36,7 +36,7 @@
           "settings": {
             "text": "SHOP 25% OFF <br>SITE WIDE",
             "main_heading": true,
-            "color": "#fff",
+            "color": "#ffffff",
             "alignment": "text-center",
             "ubuntu_font": false,
             "font_size": "text-4xl lg:text-5xl",
@@ -67,8 +67,8 @@
       ],
       "settings": {
         "enable_text": true,
-        "cta_text": "",
-        "cta_url": "https:\/\/www.ubuntu.life\/collections\/mothers-day",
+        "cta_text": "shop now",
+        "cta_url": "https:\/\/www.ubuntu.life\/collections\/bestsellers",
         "cta_color": "#ffffff",
         "cta_background_color": "#000000",
         "cta_font_size": "lg:text-lg 2xl:text-xl",
