@@ -354,7 +354,7 @@
             "font_size": "text-2xl lg:text-3xl 2xl:text-4xl",
             "font_weight": "font-normal",
             "cta_text": "shop now",
-            "cta_url": "shopify:\/\/collections\/new-arrivals",
+            "cta_url": "shopify:\/\/collections\/new-arrivals-old",
             "cta_color": "#262626",
             "cta_bg_color": "#60cdcb",
             "cta_font_size": "lg:text-lg 2xl:text-xl",
