@@ -6,8 +6,8 @@
         "32410aad-66a3-4c80-ba7d-13af08bd658e": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Ubuntu03318Banner_1.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/website_banner_mobile_5_ce6c5d7f-7e4d-4bb0-af32-cec95a3d220d.jpg"
+            "image": "shopify:\/\/shop_images\/Ubuntu01046_1_3d5efa60-9715-44af-a29c-1dc7aad725d1.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/website_banner_mobile_6_9a6ca92c-7d2a-4074-baed-a2821db1c99f.jpg"
           }
         },
         "f3a522c1-423e-4185-a5df-109b157ef7bf": {
@@ -21,7 +21,7 @@
         "8e509f9c-023c-4690-b4b9-a146bb4706b0": {
           "type": "heading",
           "settings": {
-            "text": "KARIBU!",
+            "text": "Shop for dad!",
             "main_heading": true,
             "color": "#ffffff",
             "alignment": "text-center",
@@ -34,22 +34,23 @@
         "9fa9130a-5c98-4c05-a7ea-9c56aa5788d7": {
           "type": "heading",
           "settings": {
-            "text": "Say hello to our newest collection",
+            "text": "Handcrafted gifts tailored for Dad,<br> because he deserves nothing but the best.",
             "main_heading": false,
             "color": "#ffffff",
             "alignment": "text-center",
             "ubuntu_font": false,
-            "font_size": "text-xl lg:text-2xl 2xl:text-3xl",
+            "font_size": "lg:text-lg 2xl:text-xl",
             "font_weight": "font-bold",
-            "margin_top": "mt-2"
+            "margin_top": "mt-5"
           }
         },
         "heading_FpVAb3": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "text": "Karibu Pronounced - kah-ree-boo",
             "main_heading": false,
-            "color": "#FFFFFF",
+            "color": "#ffffff",
             "alignment": "text-left",
             "ubuntu_font": true,
             "font_size": "lg:text-lg 2xl:text-xl",
@@ -67,8 +68,8 @@
       ],
       "settings": {
         "enable_text": true,
-        "cta_text": "shop now",
-        "cta_url": "https:\/\/www.ubuntu.life\/collections\/karibu-collection",
+        "cta_text": "Fathers Day Collection",
+        "cta_url": "https:\/\/www.ubuntu.life\/collections\/fathers-day-collection",
         "cta_color": "#ffffff",
         "cta_background_color": "#000000",
         "cta_font_size": "lg:text-lg 2xl:text-xl",
@@ -362,18 +363,18 @@
         "5f1d47d3-1dc2-46e3-b924-b76199dffb61": {
           "type": "pane",
           "settings": {
-            "image": "shopify:\/\/shop_images\/website_grid_25.jpg",
+            "image": "shopify:\/\/shop_images\/website_grid_7_f11b813d-b175-419b-9f4f-8cbdee77639c.jpg",
             "show_text": true,
             "text_vertical": "top-4 md:top-6 xl:top-10",
             "text_horizontal": "left-4 md:left-6 xl:left-10",
             "flex_alignment": "items-start",
-            "text": "Bestsellers",
+            "text": "Father's Day <br> Collection",
             "text_color": "#ffffff",
             "ubuntu_font": true,
             "font_size": "text-2xl lg:text-3xl 2xl:text-4xl",
-            "font_weight": "font-bold",
+            "font_weight": "font-normal",
             "cta_text": "shop now",
-            "cta_url": "https:\/\/www.ubuntu.life\/collections\/best-sellers",
+            "cta_url": "https:\/\/www.ubuntu.life\/collections\/fathers-day-collection",
             "cta_color": "#ffffff",
             "cta_bg_color": "#60cdcb",
             "cta_font_size": "lg:text-lg 2xl:text-xl",
