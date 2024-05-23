@@ -23,11 +23,11 @@
           "settings": {
             "text": "Shop for dad!",
             "main_heading": true,
-            "color": "#ffffff",
+            "color": "#060387",
             "alignment": "text-center",
             "ubuntu_font": true,
             "font_size": "text-4xl lg:text-5xl",
-            "font_weight": "font-medium",
+            "font_weight": "font-bold",
             "margin_top": "mt-8"
           }
         },
@@ -36,7 +36,7 @@
           "settings": {
             "text": "Handcrafted gifts tailored for Dad,<br> because he deserves nothing but the best.",
             "main_heading": false,
-            "color": "#ffffff",
+            "color": "#060387",
             "alignment": "text-center",
             "ubuntu_font": false,
             "font_size": "lg:text-lg 2xl:text-xl",
