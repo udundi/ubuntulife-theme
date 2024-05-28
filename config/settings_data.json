@@ -123,7 +123,7 @@
         ],
         "settings": {
           "show_banner": true,
-          "banner_text": "MEMORIAL DAY SALE...40% OFF SITEWIDE \/\/ *exclusions apply"
+          "banner_text": "FREE SHIPPING $75+"
         }
       },
       "footer": {
@@ -954,12 +954,6 @@
           "button_horizontal_position": "bottom_left",
           "button_vertical_position": "lowest",
           "greeting_message": "👋 Hi, message us with any questions. We're happy to help!"
-        }
-      },
-      "8605505498557855500": {
-        "type": "shopify:\/\/apps\/bogos-io-free-gift\/blocks\/app-embed\/0432bba6-720a-4e95-be5a-b868386f7aa6",
-        "disabled": false,
-        "settings": {
         }
       }
     }
