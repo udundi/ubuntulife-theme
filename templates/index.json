@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "4e8f0020-7783-4328-aa05-e2ded3c840c6": {
@@ -6,7 +15,7 @@
         "32410aad-66a3-4c80-ba7d-13af08bd658e": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Ubuntu03318Banner_1.jpg",
+            "image": "shopify:\/\/shop_images\/Ubuntu_10684_High_Res_eb5a7d17-5c4d-4b8e-9dc0-3d8930011595.jpg",
             "mobile_image": "shopify:\/\/shop_images\/website_banner_mobile_5_ce6c5d7f-7e4d-4bb0-af32-cec95a3d220d.jpg"
           }
         },
@@ -21,20 +30,20 @@
         "8e509f9c-023c-4690-b4b9-a146bb4706b0": {
           "type": "heading",
           "settings": {
-            "text": "The Karibu Collection",
+            "text": "UP TO 75% OFF SALE",
             "main_heading": true,
-            "color": "#ffffff",
+            "color": "#1b1212",
             "alignment": "text-center",
-            "ubuntu_font": true,
+            "ubuntu_font": false,
             "font_size": "text-4xl lg:text-5xl",
-            "font_weight": "font-medium",
+            "font_weight": "font-black",
             "margin_top": "mt-8"
           }
         },
         "9fa9130a-5c98-4c05-a7ea-9c56aa5788d7": {
           "type": "heading",
           "settings": {
-            "text": "Karibu Series: versatile, functional, and beautifully crafted. A staple from day to night that's sure to become a favorite.",
+            "text": "Explore deals across our collection of bracelets, bags, and more.",
             "main_heading": false,
             "color": "#000000",
             "alignment": "text-center",
@@ -69,7 +78,7 @@
       "settings": {
         "enable_text": true,
         "cta_text": "shop now",
-        "cta_url": "https:\/\/www.ubuntu.life\/collections\/karibu-collection",
+        "cta_url": "https:\/\/www.ubuntu.life\/collections\/sale",
         "cta_color": "#ffffff",
         "cta_background_color": "#000000",
         "cta_font_size": "lg:text-lg 2xl:text-xl",
@@ -305,11 +314,20 @@
             "btn_copy": "SHOP NOW",
             "url": "https:\/\/www.ubuntu.life\/collections\/bags\/products\/west-african-bag"
           }
+        },
+        "slide_BzV4jk": {
+          "type": "slide",
+          "settings": {
+            "text": "",
+            "btn_copy": "",
+            "url": ""
+          }
         }
       },
       "block_order": [
         "7282ae2f-eb3d-4009-9af0-3cb82245cdde",
-        "769d74e7-4dec-4029-9729-d7264e5b35dc"
+        "769d74e7-4dec-4029-9729-d7264e5b35dc",
+        "slide_BzV4jk"
       ],
       "disabled": true,
       "settings": {
@@ -360,8 +378,30 @@
             "cta_font_weight": "font-medium"
           }
         },
+        "pane_Tgrpih": {
+          "type": "pane",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/website_grid_0c8ad438-5df7-4671-9ac2-7b3d36d7c543.jpg",
+            "show_text": true,
+            "text_vertical": "top-4 md:top-6 xl:top-10",
+            "text_horizontal": "left-4 md:left-6 xl:left-10",
+            "flex_alignment": "items-start",
+            "text": "",
+            "text_color": "#FFFFFF",
+            "ubuntu_font": false,
+            "font_size": "lg:text-lg 2xl:text-xl",
+            "font_weight": "font-medium",
+            "cta_text": "shop sale",
+            "cta_url": "https:\/\/www.ubuntu.life\/collections\/sale",
+            "cta_color": "#ffffff",
+            "cta_bg_color": "#1b1212",
+            "cta_font_size": "lg:text-lg 2xl:text-xl",
+            "cta_font_weight": "font-medium"
+          }
+        },
         "5f1d47d3-1dc2-46e3-b924-b76199dffb61": {
           "type": "pane",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/website_grid_8_8124f340-3001-46db-99a8-79d344647bca.jpg",
             "show_text": true,
@@ -450,6 +490,7 @@
       "block_order": [
         "pane_jhWJbk",
         "pane_xypgEm",
+        "pane_Tgrpih",
         "5f1d47d3-1dc2-46e3-b924-b76199dffb61",
         "60bb772e-f39d-49b6-98c8-fa66172cece5",
         "7ab96759-3259-4cf2-8397-9827ce8094ef",
