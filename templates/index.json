@@ -15,8 +15,8 @@
         "32410aad-66a3-4c80-ba7d-13af08bd658e": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Ubuntu_10684_High_Res_eb5a7d17-5c4d-4b8e-9dc0-3d8930011595.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/website_banner_mobile_35879d2a-1ef9-422d-a36d-8854a068ca48.jpg"
+            "image": "shopify:\/\/shop_images\/Ubuntu_00443_3.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/website_banner_mobile_1_cfecdfe4-3d96-4ec3-9753-74a092abdcab.jpg"
           }
         },
         "f3a522c1-423e-4185-a5df-109b157ef7bf": {
@@ -30,20 +30,20 @@
         "8e509f9c-023c-4690-b4b9-a146bb4706b0": {
           "type": "heading",
           "settings": {
-            "text": "UP TO 75% OFF SALE",
+            "text": "DIVE INTO SUMMER",
             "main_heading": true,
-            "color": "#1b1212",
+            "color": "#ffffff",
             "alignment": "text-center",
-            "ubuntu_font": false,
+            "ubuntu_font": true,
             "font_size": "text-4xl lg:text-5xl",
-            "font_weight": "font-black",
+            "font_weight": "font-medium",
             "margin_top": "mt-8"
           }
         },
         "9fa9130a-5c98-4c05-a7ea-9c56aa5788d7": {
           "type": "heading",
           "settings": {
-            "text": "Explore deals across our collection of bracelets, bags, and more.",
+            "text": "Make a splash this summer with our latest Mambo Collection!",
             "main_heading": false,
             "color": "#000000",
             "alignment": "text-center",
@@ -78,7 +78,7 @@
       "settings": {
         "enable_text": true,
         "cta_text": "shop now",
-        "cta_url": "https:\/\/www.ubuntu.life\/collections\/sale",
+        "cta_url": "https:\/\/www.ubuntu.life\/collections\/new-bags",
         "cta_color": "#ffffff",
         "cta_background_color": "#000000",
         "cta_font_size": "lg:text-lg 2xl:text-xl",
