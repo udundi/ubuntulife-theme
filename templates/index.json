@@ -15,8 +15,8 @@
         "32410aad-66a3-4c80-ba7d-13af08bd658e": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Ubuntu_00443_3.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/website_banner_mobile_1_cfecdfe4-3d96-4ec3-9753-74a092abdcab.jpg"
+            "image": "shopify:\/\/shop_images\/banner_d4c6104f-6557-48ce-a456-59ca94268438.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/website_banner_mobile_2_63a4a90f-e9a8-40dd-95cf-f37affc26675.jpg"
           }
         },
         "f3a522c1-423e-4185-a5df-109b157ef7bf": {
@@ -30,7 +30,7 @@
         "8e509f9c-023c-4690-b4b9-a146bb4706b0": {
           "type": "heading",
           "settings": {
-            "text": "DIVE INTO SUMMER",
+            "text": "All checked in!",
             "main_heading": true,
             "color": "#ffffff",
             "alignment": "text-center",
@@ -43,9 +43,9 @@
         "9fa9130a-5c98-4c05-a7ea-9c56aa5788d7": {
           "type": "heading",
           "settings": {
-            "text": "Make a splash this summer with our latest Mambo Collection!",
+            "text": "Meet the latest addition to our Karibu Collection—Cherry Checker.",
             "main_heading": false,
-            "color": "#000000",
+            "color": "#ffffff",
             "alignment": "text-center",
             "ubuntu_font": false,
             "font_size": "lg:text-lg 2xl:text-xl",
@@ -78,7 +78,7 @@
       "settings": {
         "enable_text": true,
         "cta_text": "shop now",
-        "cta_url": "https:\/\/www.ubuntu.life\/collections\/new-bags",
+        "cta_url": "https:\/\/www.ubuntu.life\/collections\/karibu-collection",
         "cta_color": "#ffffff",
         "cta_background_color": "#000000",
         "cta_font_size": "lg:text-lg 2xl:text-xl",
@@ -360,18 +360,18 @@
         "pane_xypgEm": {
           "type": "pane",
           "settings": {
-            "image": "shopify:\/\/shop_images\/website_grid_01d07cc1-f8cb-4f0d-8f7b-700d3e0cc83a.gif",
+            "image": "shopify:\/\/shop_images\/website_grid_2_4e0e1e08-bc25-4e8e-9253-d9dec8a61c6d.jpg",
             "show_text": true,
             "text_vertical": "top-4 md:top-6 xl:top-10",
             "text_horizontal": "left-4 md:left-6 xl:left-10",
             "flex_alignment": "items-start",
             "text": "What's  Hot!",
-            "text_color": "#f79f0b",
+            "text_color": "#ffffff",
             "ubuntu_font": true,
             "font_size": "text-2xl lg:text-3xl 2xl:text-4xl",
             "font_weight": "font-medium",
             "cta_text": "shop now",
-            "cta_url": "https:\/\/www.ubuntu.life\/collections\/new-bags",
+            "cta_url": "https:\/\/www.ubuntu.life\/collections\/new-arrivals",
             "cta_color": "#ffffff",
             "cta_bg_color": "#000000",
             "cta_font_size": "lg:text-lg 2xl:text-xl",
