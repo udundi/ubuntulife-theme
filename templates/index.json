@@ -15,8 +15,8 @@
         "32410aad-66a3-4c80-ba7d-13af08bd658e": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/banner_d4c6104f-6557-48ce-a456-59ca94268438.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/website_banner_mobile_2_63a4a90f-e9a8-40dd-95cf-f37affc26675.jpg"
+            "image": "shopify:\/\/shop_images\/Untitled_design_1.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/website_banner_mobile_2_c28afa76-155b-4be6-9169-8b59ee5e958b.jpg"
           }
         },
         "f3a522c1-423e-4185-a5df-109b157ef7bf": {
@@ -30,7 +30,7 @@
         "8e509f9c-023c-4690-b4b9-a146bb4706b0": {
           "type": "heading",
           "settings": {
-            "text": "All checked in!",
+            "text": "BACK TO SCHOOL!",
             "main_heading": true,
             "color": "#ffffff",
             "alignment": "text-center",
@@ -43,7 +43,7 @@
         "9fa9130a-5c98-4c05-a7ea-9c56aa5788d7": {
           "type": "heading",
           "settings": {
-            "text": "Meet the latest addition to our Karibu Collection—Cherry Checker.",
+            "text": "Our Back to School Collection is here.<br> Shop before the bell rings!",
             "main_heading": false,
             "color": "#ffffff",
             "alignment": "text-center",
@@ -78,7 +78,7 @@
       "settings": {
         "enable_text": true,
         "cta_text": "shop now",
-        "cta_url": "https:\/\/www.ubuntu.life\/collections\/karibu-collection",
+        "cta_url": "https:\/\/www.ubuntu.life\/collections\/back-to-school-collection",
         "cta_color": "#ffffff",
         "cta_background_color": "#000000",
         "cta_font_size": "lg:text-lg 2xl:text-xl",
@@ -357,6 +357,27 @@
             "cta_font_weight": "font-medium"
           }
         },
+        "pane_8YfU8q": {
+          "type": "pane",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/website_grid_d2bbda9a-1940-4913-9b25-eaf99775b037.gif",
+            "show_text": true,
+            "text_vertical": "top-4 md:top-6 xl:top-10",
+            "text_horizontal": "left-4 md:left-6 xl:left-10",
+            "flex_alignment": "items-start",
+            "text": "Back to school",
+            "text_color": "#FFFFFF",
+            "ubuntu_font": true,
+            "font_size": "text-2xl lg:text-3xl 2xl:text-4xl",
+            "font_weight": "font-medium",
+            "cta_text": "shop now",
+            "cta_url": "https:\/\/www.ubuntu.life\/collections\/back-to-school-collection",
+            "cta_color": "#ffffff",
+            "cta_bg_color": "#000000",
+            "cta_font_size": "lg:text-lg 2xl:text-xl",
+            "cta_font_weight": "font-medium"
+          }
+        },
         "pane_xypgEm": {
           "type": "pane",
           "settings": {
@@ -374,27 +395,6 @@
             "cta_url": "https:\/\/www.ubuntu.life\/collections\/new-arrivals",
             "cta_color": "#ffffff",
             "cta_bg_color": "#000000",
-            "cta_font_size": "lg:text-lg 2xl:text-xl",
-            "cta_font_weight": "font-medium"
-          }
-        },
-        "pane_Tgrpih": {
-          "type": "pane",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/website_grid_1_0e1cffdf-fac2-4ef4-ab4c-4bb12467f5ef.jpg",
-            "show_text": true,
-            "text_vertical": "top-4 md:top-6 xl:top-10",
-            "text_horizontal": "left-4 md:left-6 xl:left-10",
-            "flex_alignment": "items-start",
-            "text": "",
-            "text_color": "#ffffff",
-            "ubuntu_font": false,
-            "font_size": "lg:text-lg 2xl:text-xl",
-            "font_weight": "font-medium",
-            "cta_text": "shop sale",
-            "cta_url": "https:\/\/www.ubuntu.life\/collections\/sale",
-            "cta_color": "#ffffff",
-            "cta_bg_color": "#1b1212",
             "cta_font_size": "lg:text-lg 2xl:text-xl",
             "cta_font_weight": "font-medium"
           }
@@ -485,16 +485,60 @@
             "cta_font_size": "lg:text-lg 2xl:text-xl",
             "cta_font_weight": "font-medium"
           }
+        },
+        "pane_TpMcwd": {
+          "type": "pane",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/82.jpg",
+            "show_text": true,
+            "text_vertical": "top-4 md:top-6 xl:top-10",
+            "text_horizontal": "left-4 md:left-6 xl:left-10",
+            "flex_alignment": "items-start",
+            "text": "BIG LOVE <br> COLLECTION",
+            "text_color": "#EA0606",
+            "ubuntu_font": true,
+            "font_size": "text-2xl lg:text-3xl 2xl:text-4xl",
+            "font_weight": "font-medium",
+            "cta_text": "shop now",
+            "cta_url": "https:\/\/www.ubuntu.life\/collections\/big-love",
+            "cta_color": "#ffffff",
+            "cta_bg_color": "#000000",
+            "cta_font_size": "lg:text-lg 2xl:text-xl",
+            "cta_font_weight": "font-medium"
+          }
+        },
+        "pane_Tgrpih": {
+          "type": "pane",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/website_grid_1_0e1cffdf-fac2-4ef4-ab4c-4bb12467f5ef.jpg",
+            "show_text": true,
+            "text_vertical": "top-4 md:top-6 xl:top-10",
+            "text_horizontal": "left-4 md:left-6 xl:left-10",
+            "flex_alignment": "items-start",
+            "text": "",
+            "text_color": "#ffffff",
+            "ubuntu_font": false,
+            "font_size": "lg:text-lg 2xl:text-xl",
+            "font_weight": "font-medium",
+            "cta_text": "shop sale",
+            "cta_url": "https:\/\/www.ubuntu.life\/collections\/sale",
+            "cta_color": "#ffffff",
+            "cta_bg_color": "#1b1212",
+            "cta_font_size": "lg:text-lg 2xl:text-xl",
+            "cta_font_weight": "font-medium"
+          }
         }
       },
       "block_order": [
         "pane_jhWJbk",
+        "pane_8YfU8q",
         "pane_xypgEm",
-        "pane_Tgrpih",
         "5f1d47d3-1dc2-46e3-b924-b76199dffb61",
         "60bb772e-f39d-49b6-98c8-fa66172cece5",
         "7ab96759-3259-4cf2-8397-9827ce8094ef",
-        "60bb772e-f39d-49b6-98c8-fa66172cece4"
+        "60bb772e-f39d-49b6-98c8-fa66172cece4",
+        "pane_TpMcwd",
+        "pane_Tgrpih"
       ],
       "settings": {
       }
