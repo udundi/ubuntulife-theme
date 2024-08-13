@@ -15,8 +15,8 @@
         "32410aad-66a3-4c80-ba7d-13af08bd658e": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Untitled_design_1.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/website_banner_mobile_2_c28afa76-155b-4be6-9169-8b59ee5e958b.jpg"
+            "image": "shopify:\/\/shop_images\/banner_work.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/website_banner_mobile_3_34b80d18-0c3b-47ca-977d-4ccb32f06d35.jpg"
           }
         },
         "f3a522c1-423e-4185-a5df-109b157ef7bf": {
@@ -30,7 +30,7 @@
         "8e509f9c-023c-4690-b4b9-a146bb4706b0": {
           "type": "heading",
           "settings": {
-            "text": "BACK TO SCHOOL!",
+            "text": "WORK LIFE COLLECTION",
             "main_heading": true,
             "color": "#ffffff",
             "alignment": "text-center",
@@ -43,9 +43,9 @@
         "9fa9130a-5c98-4c05-a7ea-9c56aa5788d7": {
           "type": "heading",
           "settings": {
-            "text": "Our Back to School Collection is here.<br> Shop before the bell rings!",
+            "text": "Arrive to the office in style! This collection combines practicality and sophistication for all your daily needs.",
             "main_heading": false,
-            "color": "#ffffff",
+            "color": "#475e45",
             "alignment": "text-center",
             "ubuntu_font": false,
             "font_size": "lg:text-lg 2xl:text-xl",
@@ -78,7 +78,7 @@
       "settings": {
         "enable_text": true,
         "cta_text": "shop now",
-        "cta_url": "https:\/\/www.ubuntu.life\/collections\/back-to-school-collection",
+        "cta_url": "https:\/\/www.ubuntu.life\/collections\/new-arrivals",
         "cta_color": "#ffffff",
         "cta_background_color": "#000000",
         "cta_font_size": "lg:text-lg 2xl:text-xl",
@@ -366,7 +366,7 @@
             "text_horizontal": "left-4 md:left-6 xl:left-10",
             "flex_alignment": "items-start",
             "text": "Back to school",
-            "text_color": "#FFFFFF",
+            "text_color": "#ffffff",
             "ubuntu_font": true,
             "font_size": "text-2xl lg:text-3xl 2xl:text-4xl",
             "font_weight": "font-medium",
@@ -381,13 +381,13 @@
         "pane_xypgEm": {
           "type": "pane",
           "settings": {
-            "image": "shopify:\/\/shop_images\/website_grid_2_4e0e1e08-bc25-4e8e-9253-d9dec8a61c6d.jpg",
+            "image": "shopify:\/\/shop_images\/website_grid_c8963a6b-d811-4f54-9f8c-d686e6feafe0.jpg",
             "show_text": true,
             "text_vertical": "top-4 md:top-6 xl:top-10",
             "text_horizontal": "left-4 md:left-6 xl:left-10",
             "flex_alignment": "items-start",
             "text": "What's  Hot!",
-            "text_color": "#ffffff",
+            "text_color": "#1b1212",
             "ubuntu_font": true,
             "font_size": "text-2xl lg:text-3xl 2xl:text-4xl",
             "font_weight": "font-medium",
@@ -495,7 +495,7 @@
             "text_horizontal": "left-4 md:left-6 xl:left-10",
             "flex_alignment": "items-start",
             "text": "BIG LOVE <br> COLLECTION",
-            "text_color": "#EA0606",
+            "text_color": "#ea0606",
             "ubuntu_font": true,
             "font_size": "text-2xl lg:text-3xl 2xl:text-4xl",
             "font_weight": "font-medium",
