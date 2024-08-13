@@ -15,8 +15,8 @@
         "32410aad-66a3-4c80-ba7d-13af08bd658e": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/banner_work.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/website_banner_mobile_3_34b80d18-0c3b-47ca-977d-4ccb32f06d35.jpg"
+            "image": "shopify:\/\/shop_images\/15_43281f23-d50b-4daa-aed5-298a7d0df5e4.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/website_banner_mobile_5_5f9ba534-56f6-4dd9-8129-5348a3c924dd.jpg"
           }
         },
         "f3a522c1-423e-4185-a5df-109b157ef7bf": {
@@ -32,7 +32,7 @@
           "settings": {
             "text": "WORK LIFE COLLECTION",
             "main_heading": true,
-            "color": "#ffffff",
+            "color": "#1b1212",
             "alignment": "text-center",
             "ubuntu_font": true,
             "font_size": "text-4xl lg:text-5xl",
@@ -43,7 +43,7 @@
         "9fa9130a-5c98-4c05-a7ea-9c56aa5788d7": {
           "type": "heading",
           "settings": {
-            "text": "Arrive to the office in style! This collection combines practicality and sophistication for all your daily needs.",
+            "text": "Arrive to the office in style!",
             "main_heading": false,
             "color": "#475e45",
             "alignment": "text-center",
@@ -381,7 +381,7 @@
         "pane_xypgEm": {
           "type": "pane",
           "settings": {
-            "image": "shopify:\/\/shop_images\/website_grid_c8963a6b-d811-4f54-9f8c-d686e6feafe0.jpg",
+            "image": "shopify:\/\/shop_images\/website_grid_1_20c6bd3f-45b0-4759-923f-d451a5c7685f.jpg",
             "show_text": true,
             "text_vertical": "top-4 md:top-6 xl:top-10",
             "text_horizontal": "left-4 md:left-6 xl:left-10",
