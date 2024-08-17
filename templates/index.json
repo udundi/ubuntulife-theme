@@ -75,6 +75,7 @@
         "9fa9130a-5c98-4c05-a7ea-9c56aa5788d7",
         "heading_FpVAb3"
       ],
+      "disabled": true,
       "settings": {
         "enable_text": true,
         "cta_text": "shop now",
@@ -95,7 +96,6 @@
       "blocks": {
         "fc37d08e-985f-46c3-a7f1-2b114a16e733": {
           "type": "pane",
-          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/Website_pannels_2.jpg",
             "url": "https:\/\/www.ubuntu.life\/products\/gift-card?_pos=1&_sid=257309ef8&_ss=r&variant=40880107913325",
@@ -184,7 +184,6 @@
         },
         "2eb55731-324a-4062-8968-026040cd16d7": {
           "type": "pane",
-          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/7_03e89033-246f-4be6-a893-4836c407491f.jpg",
             "url": "https:\/\/www.ubuntu.life\/collections\/new-arrivals",
@@ -207,7 +206,6 @@
         },
         "1d129017-289f-4d64-ae22-7c4a835dadfe": {
           "type": "pane",
-          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/Untitled_design_37.jpg",
             "url": "https:\/\/www.ubuntu.life\/collections\/new-arrivals",
@@ -237,7 +235,6 @@
         "2eb55731-324a-4062-8968-026040cd16d7",
         "1d129017-289f-4d64-ae22-7c4a835dadfe"
       ],
-      "disabled": true,
       "settings": {
         "pre_header": "",
         "header": "NEW <br> ARRIVALS",
@@ -281,13 +278,21 @@
             "image": "shopify:\/\/shop_images\/Untitled_design_46.png",
             "text": ""
           }
+        },
+        "pane_RWJ4Y3": {
+          "type": "pane",
+          "settings": {
+            "collection": "",
+            "text": "VOTE"
+          }
         }
       },
       "block_order": [
         "3689b6ba-b8d8-455d-97cb-d766511e3278",
         "78da22a5-7930-410f-97c4-2d331d83c0b5",
         "86084354-70a7-4581-ad76-c8ca0569d5d3",
-        "04cebf7b-bf7d-4d29-833b-a4b678ffc889"
+        "04cebf7b-bf7d-4d29-833b-a4b678ffc889",
+        "pane_RWJ4Y3"
       ],
       "settings": {
         "header": "SHOP BY CATEGORY",
