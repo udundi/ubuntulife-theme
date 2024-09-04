@@ -15,8 +15,8 @@
         "32410aad-66a3-4c80-ba7d-13af08bd658e": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/BANNER9.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/60.jpg"
+            "image": "shopify:\/\/shop_images\/vote_banner.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/website_banner_mobile_9_c3dcc475-534d-4113-9532-a90fb0f903c5.jpg"
           }
         },
         "f3a522c1-423e-4185-a5df-109b157ef7bf": {
@@ -30,11 +30,11 @@
         "8e509f9c-023c-4690-b4b9-a146bb4706b0": {
           "type": "heading",
           "settings": {
-            "text": "WAREHOUSE CLEARANCE SALE",
+            "text": "Your Voice, Your VOTE!",
             "main_heading": true,
-            "color": "#1b1212",
+            "color": "#062999",
             "alignment": "text-center",
-            "ubuntu_font": false,
+            "ubuntu_font": true,
             "font_size": "text-4xl lg:text-5xl",
             "font_weight": "font-medium",
             "margin_top": "mt-8"
@@ -43,12 +43,12 @@
         "9fa9130a-5c98-4c05-a7ea-9c56aa5788d7": {
           "type": "heading",
           "settings": {
-            "text": "UP TO 75% OFF",
+            "text": "Every voice matters. Use it. VOTE with LOVE.",
             "main_heading": false,
-            "color": "#345ddf",
+            "color": "#ba0606",
             "alignment": "text-center",
-            "ubuntu_font": true,
-            "font_size": "text-4xl lg:text-5xl",
+            "ubuntu_font": false,
+            "font_size": "text-xl lg:text-2xl 2xl:text-3xl",
             "font_weight": "font-medium",
             "margin_top": "mt-5"
           }
@@ -78,7 +78,7 @@
       "settings": {
         "enable_text": true,
         "cta_text": "shop now",
-        "cta_url": "https:\/\/www.ubuntu.life\/collections\/warehouse-clearance-sale",
+        "cta_url": "https:\/\/www.ubuntu.life\/collections\/vote-bracelets",
         "cta_color": "#ffffff",
         "cta_background_color": "#000000",
         "cta_font_size": "lg:text-lg 2xl:text-xl",
