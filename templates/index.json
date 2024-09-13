@@ -376,8 +376,30 @@
             "cta_font_weight": "font-medium"
           }
         },
+        "60bb772e-f39d-49b6-98c8-fa66172cece5": {
+          "type": "pane",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/website_grid_26.jpg",
+            "show_text": true,
+            "text_vertical": "top-4 md:top-6 xl:top-10",
+            "text_horizontal": "right-4 md:right-6 xl:right-10",
+            "flex_alignment": "items-center",
+            "text": "VOTE! <br>",
+            "text_color": "#000000",
+            "ubuntu_font": true,
+            "font_size": "text-4xl lg:text-5xl",
+            "font_weight": "font-normal",
+            "cta_text": "shop now",
+            "cta_url": "https:\/\/www.ubuntu.life\/collections\/vote-bracelets",
+            "cta_color": "#ffffff",
+            "cta_bg_color": "#000000",
+            "cta_font_size": "lg:text-lg 2xl:text-xl",
+            "cta_font_weight": "font-medium"
+          }
+        },
         "pane_8YfU8q": {
           "type": "pane",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/website_grid_d2bbda9a-1940-4913-9b25-eaf99775b037.gif",
             "show_text": true,
@@ -438,27 +460,6 @@
             "cta_bg_color": "#60cdcb",
             "cta_font_size": "lg:text-lg 2xl:text-xl",
             "cta_font_weight": "font-normal"
-          }
-        },
-        "60bb772e-f39d-49b6-98c8-fa66172cece5": {
-          "type": "pane",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/website_grid_26.jpg",
-            "show_text": true,
-            "text_vertical": "top-4 md:top-6 xl:top-10",
-            "text_horizontal": "right-4 md:right-6 xl:right-10",
-            "flex_alignment": "items-center",
-            "text": "VOTE! <br>",
-            "text_color": "#000000",
-            "ubuntu_font": true,
-            "font_size": "text-4xl lg:text-5xl",
-            "font_weight": "font-normal",
-            "cta_text": "shop now",
-            "cta_url": "https:\/\/www.ubuntu.life\/collections\/vote-bracelets",
-            "cta_color": "#ffffff",
-            "cta_bg_color": "#000000",
-            "cta_font_size": "lg:text-lg 2xl:text-xl",
-            "cta_font_weight": "font-medium"
           }
         },
         "7ab96759-3259-4cf2-8397-9827ce8094ef": {
@@ -552,10 +553,10 @@
       "block_order": [
         "pane_jhWJbk",
         "pane_cRndte",
+        "60bb772e-f39d-49b6-98c8-fa66172cece5",
         "pane_8YfU8q",
         "pane_xypgEm",
         "5f1d47d3-1dc2-46e3-b924-b76199dffb61",
-        "60bb772e-f39d-49b6-98c8-fa66172cece5",
         "7ab96759-3259-4cf2-8397-9827ce8094ef",
         "60bb772e-f39d-49b6-98c8-fa66172cece4",
         "pane_TpMcwd",
