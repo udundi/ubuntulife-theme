@@ -356,6 +356,7 @@
         },
         "pane_cRndte": {
           "type": "pane",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/website_grid_2_68e33ce1-dd68-419e-9700-b1b61f9d780a.jpg",
             "show_text": true,
