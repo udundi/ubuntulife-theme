@@ -15,8 +15,8 @@
         "32410aad-66a3-4c80-ba7d-13af08bd658e": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/vote_banner.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/website_banner_mobile_9_c3dcc475-534d-4113-9532-a90fb0f903c5.jpg"
+            "image": "shopify:\/\/shop_images\/Ubuntu_01202_Banner.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/website_banner_mobile_10_1161cf01-2982-45f1-818a-1992ee95d4a4.jpg"
           }
         },
         "f3a522c1-423e-4185-a5df-109b157ef7bf": {
@@ -30,7 +30,7 @@
         "8e509f9c-023c-4690-b4b9-a146bb4706b0": {
           "type": "heading",
           "settings": {
-            "text": "Your Voice, Your VOTE!",
+            "text": "Limited Edition: <br>Beaded Bisa Collection",
             "main_heading": true,
             "color": "#062999",
             "alignment": "text-center",
@@ -42,6 +42,7 @@
         },
         "9fa9130a-5c98-4c05-a7ea-9c56aa5788d7": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "text": "Every voice matters. Use it. VOTE with LOVE.",
             "main_heading": false,
@@ -78,7 +79,7 @@
       "settings": {
         "enable_text": true,
         "cta_text": "shop now",
-        "cta_url": "https:\/\/www.ubuntu.life\/collections\/vote-bracelets",
+        "cta_url": "https:\/\/www.ubuntu.life\/collections\/new-bags",
         "cta_color": "#ffffff",
         "cta_background_color": "#000000",
         "cta_font_size": "lg:text-lg 2xl:text-xl",
