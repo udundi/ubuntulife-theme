@@ -387,7 +387,7 @@
             "text": "shop 50% <br>off VOTE! <br>",
             "text_color": "#000000",
             "ubuntu_font": true,
-            "font_size": "text-4xl lg:text-5xl",
+            "font_size": "text-2xl lg:text-3xl 2xl:text-4xl",
             "font_weight": "font-normal",
             "cta_text": "shop now",
             "cta_url": "https://www.ubuntu.life/collections/vote-bracelets",
