@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "4e8f0020-7783-4328-aa05-e2ded3c840c6": {
@@ -15,7 +15,7 @@
         "32410aad-66a3-4c80-ba7d-13af08bd658e": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Untitled_design_10_0ea9a98d-7263-4b84-a2f5-27982f8f6893.jpg",
+            "image": "shopify://shop_images/banner_c4f60a32-0f87-4642-bab8-06ef964b73ae.jpg",
             "mobile_image": "shopify://shop_images/website_banner_mobile_11_d1ef8050-6246-4b21-acbb-10b637f46a59.jpg"
           }
         },
@@ -30,25 +30,25 @@
         "8e509f9c-023c-4690-b4b9-a146bb4706b0": {
           "type": "heading",
           "settings": {
-            "text": "African Market <br>Holiday edition",
+            "text": "'Tis the Season! <br>",
             "main_heading": true,
             "color": "#ffffff",
             "alignment": "text-center",
             "ubuntu_font": true,
             "font_size": "text-4xl lg:text-5xl",
-            "font_weight": "font-bold",
+            "font_weight": "font-normal",
             "margin_top": "mt-8"
           }
         },
         "9fa9130a-5c98-4c05-a7ea-9c56aa5788d7": {
           "type": "heading",
           "settings": {
-            "text": "Shop thoughtful gifts & home essentials!",
+            "text": "Explore Thoughtful Gifts That Give Back This Holiday Season",
             "main_heading": false,
             "color": "#ffffff",
             "alignment": "text-center",
             "ubuntu_font": false,
-            "font_size": "text-xl lg:text-2xl 2xl:text-3xl",
+            "font_size": "lg:text-lg 2xl:text-xl",
             "font_weight": "font-medium",
             "margin_top": "mt-3"
           }
@@ -77,8 +77,8 @@
       ],
       "settings": {
         "enable_text": true,
-        "cta_text": "shop now",
-        "cta_url": "https://www.ubuntu.life/collections/ubuntu-african-market",
+        "cta_text": "holiday collection",
+        "cta_url": "https://www.ubuntu.life/collections/holiday-collection",
         "cta_color": "#ffffff",
         "cta_background_color": "#000000",
         "cta_font_size": "lg:text-lg 2xl:text-xl",
@@ -419,27 +419,6 @@
             "cta_font_weight": "font-medium"
           }
         },
-        "pane_xypgEm": {
-          "type": "pane",
-          "settings": {
-            "image": "shopify://shop_images/website_grid_1_20c6bd3f-45b0-4759-923f-d451a5c7685f.jpg",
-            "show_text": true,
-            "text_vertical": "top-4 md:top-6 xl:top-10",
-            "text_horizontal": "left-4 md:left-6 xl:left-10",
-            "flex_alignment": "items-start",
-            "text": "What's  Hot!",
-            "text_color": "#1b1212",
-            "ubuntu_font": true,
-            "font_size": "text-2xl lg:text-3xl 2xl:text-4xl",
-            "font_weight": "font-medium",
-            "cta_text": "shop now",
-            "cta_url": "https://www.ubuntu.life/collections/new-arrivals",
-            "cta_color": "#ffffff",
-            "cta_bg_color": "#000000",
-            "cta_font_size": "lg:text-lg 2xl:text-xl",
-            "cta_font_weight": "font-medium"
-          }
-        },
         "5f1d47d3-1dc2-46e3-b924-b76199dffb61": {
           "type": "pane",
           "disabled": true,
@@ -506,6 +485,48 @@
             "cta_font_weight": "font-medium"
           }
         },
+        "pane_XBVWtD": {
+          "type": "pane",
+          "settings": {
+            "image": "shopify://shop_images/website_grid_4_83981393-2af6-4423-8ef9-43c1c9e5d9d3.jpg",
+            "show_text": true,
+            "text_vertical": "top-4 md:top-6 xl:top-10",
+            "text_horizontal": "left-4 md:left-6 xl:left-10",
+            "flex_alignment": "items-start",
+            "text": "Holiday<br>Collection",
+            "text_color": "#000000",
+            "ubuntu_font": true,
+            "font_size": "text-2xl lg:text-3xl 2xl:text-4xl",
+            "font_weight": "font-medium",
+            "cta_text": "shop now",
+            "cta_url": "https://www.ubuntu.life/collections/holiday-collection",
+            "cta_color": "#262626",
+            "cta_bg_color": "#FFFFFF",
+            "cta_font_size": "lg:text-lg 2xl:text-xl",
+            "cta_font_weight": "font-medium"
+          }
+        },
+        "pane_j66pAi": {
+          "type": "pane",
+          "settings": {
+            "image": "shopify://shop_images/website_grid_7_858bc8b0-1097-4040-9b44-e458a5d66e74.jpg",
+            "show_text": true,
+            "text_vertical": "top-4 md:top-6 xl:top-10",
+            "text_horizontal": "left-4 md:left-6 xl:left-10",
+            "flex_alignment": "items-start",
+            "text": "Holiday<br>Home",
+            "text_color": "#1b1212",
+            "ubuntu_font": true,
+            "font_size": "text-2xl lg:text-3xl 2xl:text-4xl",
+            "font_weight": "font-medium",
+            "cta_text": "shop now",
+            "cta_url": "https://www.ubuntu.life/collections/holiday-home-collection",
+            "cta_color": "#262626",
+            "cta_bg_color": "#FFFFFF",
+            "cta_font_size": "lg:text-lg 2xl:text-xl",
+            "cta_font_weight": "font-medium"
+          }
+        },
         "pane_TpMcwd": {
           "type": "pane",
           "settings": {
@@ -521,6 +542,27 @@
             "font_weight": "font-medium",
             "cta_text": "shop now",
             "cta_url": "https://www.ubuntu.life/collections/big-love",
+            "cta_color": "#ffffff",
+            "cta_bg_color": "#000000",
+            "cta_font_size": "lg:text-lg 2xl:text-xl",
+            "cta_font_weight": "font-medium"
+          }
+        },
+        "pane_xypgEm": {
+          "type": "pane",
+          "settings": {
+            "image": "shopify://shop_images/website_grid_6_091cbf8b-13eb-4530-8a2e-e0c3a2124a8a.jpg",
+            "show_text": true,
+            "text_vertical": "top-4 md:top-6 xl:top-10",
+            "text_horizontal": "left-4 md:left-6 xl:left-10",
+            "flex_alignment": "items-start",
+            "text": "What's  Hot!",
+            "text_color": "#1b1212",
+            "ubuntu_font": true,
+            "font_size": "text-2xl lg:text-3xl 2xl:text-4xl",
+            "font_weight": "font-medium",
+            "cta_text": "shop now",
+            "cta_url": "https://www.ubuntu.life/collections/new-arrivals",
             "cta_color": "#ffffff",
             "cta_bg_color": "#000000",
             "cta_font_size": "lg:text-lg 2xl:text-xl",
@@ -555,11 +597,13 @@
         "pane_cRndte",
         "60bb772e-f39d-49b6-98c8-fa66172cece5",
         "pane_8YfU8q",
-        "pane_xypgEm",
         "5f1d47d3-1dc2-46e3-b924-b76199dffb61",
         "7ab96759-3259-4cf2-8397-9827ce8094ef",
         "60bb772e-f39d-49b6-98c8-fa66172cece4",
+        "pane_XBVWtD",
+        "pane_j66pAi",
         "pane_TpMcwd",
+        "pane_xypgEm",
         "pane_Tgrpih"
       ],
       "settings": {
