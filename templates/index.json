@@ -440,6 +440,27 @@
             "cta_font_weight": "font-medium"
           }
         },
+        "pane_j66pAi": {
+          "type": "pane",
+          "settings": {
+            "image": "shopify://shop_images/website_grid_9_e5e298e0-b618-47a5-8f88-9511dd4bd81a.jpg",
+            "show_text": true,
+            "text_vertical": "top-4 md:top-6 xl:top-10",
+            "text_horizontal": "left-4 md:left-6 xl:left-10",
+            "flex_alignment": "items-start",
+            "text": "Home",
+            "text_color": "#1b1212",
+            "ubuntu_font": true,
+            "font_size": "text-2xl lg:text-3xl 2xl:text-4xl",
+            "font_weight": "font-medium",
+            "cta_text": "shop now",
+            "cta_url": "https://www.ubuntu.life/collections/holiday-home-collection",
+            "cta_color": "#262626",
+            "cta_bg_color": "#ffffff",
+            "cta_font_size": "lg:text-lg 2xl:text-xl",
+            "cta_font_weight": "font-medium"
+          }
+        },
         "5f1d47d3-1dc2-46e3-b924-b76199dffb61": {
           "type": "pane",
           "disabled": true,
@@ -501,27 +522,6 @@
             "cta_url": "https://www.ubuntu.life/pages/about",
             "cta_color": "#ffffff",
             "cta_bg_color": "#60cdcb",
-            "cta_font_size": "lg:text-lg 2xl:text-xl",
-            "cta_font_weight": "font-medium"
-          }
-        },
-        "pane_j66pAi": {
-          "type": "pane",
-          "settings": {
-            "image": "shopify://shop_images/website_grid_9_e5e298e0-b618-47a5-8f88-9511dd4bd81a.jpg",
-            "show_text": true,
-            "text_vertical": "top-4 md:top-6 xl:top-10",
-            "text_horizontal": "left-4 md:left-6 xl:left-10",
-            "flex_alignment": "items-start",
-            "text": "Home",
-            "text_color": "#1b1212",
-            "ubuntu_font": true,
-            "font_size": "text-2xl lg:text-3xl 2xl:text-4xl",
-            "font_weight": "font-medium",
-            "cta_text": "shop now",
-            "cta_url": "https://www.ubuntu.life/collections/holiday-home-collection",
-            "cta_color": "#262626",
-            "cta_bg_color": "#ffffff",
             "cta_font_size": "lg:text-lg 2xl:text-xl",
             "cta_font_weight": "font-medium"
           }
@@ -597,10 +597,10 @@
         "60bb772e-f39d-49b6-98c8-fa66172cece5",
         "pane_XBVWtD",
         "pane_8YfU8q",
+        "pane_j66pAi",
         "5f1d47d3-1dc2-46e3-b924-b76199dffb61",
         "7ab96759-3259-4cf2-8397-9827ce8094ef",
         "60bb772e-f39d-49b6-98c8-fa66172cece4",
-        "pane_j66pAi",
         "pane_TpMcwd",
         "pane_xypgEm",
         "pane_Tgrpih"
