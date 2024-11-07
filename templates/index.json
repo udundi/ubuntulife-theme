@@ -327,8 +327,7 @@
         "slide_BzV4jk"
       ],
       "disabled": true,
-      "settings": {
-      }
+      "settings": {}
     },
     "8c73d3ed-bb99-408a-b6fc-820ee7c571cd": {
       "type": "featured-grid",
@@ -378,6 +377,7 @@
         },
         "60bb772e-f39d-49b6-98c8-fa66172cece5": {
           "type": "pane",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/website_grid_26.jpg",
             "show_text": true,
@@ -421,7 +421,6 @@
         },
         "5f1d47d3-1dc2-46e3-b924-b76199dffb61": {
           "type": "pane",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/website_grid_8_8124f340-3001-46db-99a8-79d344647bca.jpg",
             "show_text": true,
@@ -501,7 +500,7 @@
             "cta_text": "shop now",
             "cta_url": "https://www.ubuntu.life/collections/holiday-collection",
             "cta_color": "#262626",
-            "cta_bg_color": "#FFFFFF",
+            "cta_bg_color": "#ffffff",
             "cta_font_size": "lg:text-lg 2xl:text-xl",
             "cta_font_weight": "font-medium"
           }
@@ -509,12 +508,12 @@
         "pane_j66pAi": {
           "type": "pane",
           "settings": {
-            "image": "shopify://shop_images/website_grid_7_858bc8b0-1097-4040-9b44-e458a5d66e74.jpg",
+            "image": "shopify://shop_images/website_grid_9_e5e298e0-b618-47a5-8f88-9511dd4bd81a.jpg",
             "show_text": true,
             "text_vertical": "top-4 md:top-6 xl:top-10",
             "text_horizontal": "left-4 md:left-6 xl:left-10",
             "flex_alignment": "items-start",
-            "text": "Holiday<br>Home",
+            "text": "Home",
             "text_color": "#1b1212",
             "ubuntu_font": true,
             "font_size": "text-2xl lg:text-3xl 2xl:text-4xl",
@@ -522,7 +521,7 @@
             "cta_text": "shop now",
             "cta_url": "https://www.ubuntu.life/collections/holiday-home-collection",
             "cta_color": "#262626",
-            "cta_bg_color": "#FFFFFF",
+            "cta_bg_color": "#ffffff",
             "cta_font_size": "lg:text-lg 2xl:text-xl",
             "cta_font_weight": "font-medium"
           }
@@ -606,8 +605,7 @@
         "pane_xypgEm",
         "pane_Tgrpih"
       ],
-      "settings": {
-      }
+      "settings": {}
     },
     "76b9cc53-58a5-4212-a16e-85a6d52f5c5c": {
       "type": "full-photo",
