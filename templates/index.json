@@ -15,8 +15,8 @@
         "32410aad-66a3-4c80-ba7d-13af08bd658e": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/banner_c4f60a32-0f87-4642-bab8-06ef964b73ae.jpg",
-            "mobile_image": "shopify://shop_images/website_banner_mobile_1b1569cc-9571-4285-9dcb-72ce5fddd567.jpg"
+            "image": "shopify://shop_images/bannnnnnnnnnnnner.jpg",
+            "mobile_image": "shopify://shop_images/website_banner_mobile_1_8aa9fcf6-c777-4405-b8d1-bc78f8698bc2.jpg"
           }
         },
         "f3a522c1-423e-4185-a5df-109b157ef7bf": {
@@ -30,25 +30,25 @@
         "8e509f9c-023c-4690-b4b9-a146bb4706b0": {
           "type": "heading",
           "settings": {
-            "text": "'Tis the Season! <br>",
+            "text": "BLACK FRIDAY SALE <br>",
             "main_heading": true,
-            "color": "#ffffff",
+            "color": "#000000",
             "alignment": "text-center",
-            "ubuntu_font": true,
+            "ubuntu_font": false,
             "font_size": "text-4xl lg:text-5xl",
-            "font_weight": "font-normal",
+            "font_weight": "font-bold",
             "margin_top": "mt-8"
           }
         },
         "9fa9130a-5c98-4c05-a7ea-9c56aa5788d7": {
           "type": "heading",
           "settings": {
-            "text": "Explore Thoughtful Gifts That Give Back This  Season",
+            "text": "Shop up to 50% off",
             "main_heading": false,
-            "color": "#ffffff",
+            "color": "#EA0606",
             "alignment": "text-center",
             "ubuntu_font": false,
-            "font_size": "lg:text-lg 2xl:text-xl",
+            "font_size": "text-2xl lg:text-3xl 2xl:text-4xl",
             "font_weight": "font-medium",
             "margin_top": "mt-3"
           }
@@ -77,8 +77,8 @@
       ],
       "settings": {
         "enable_text": true,
-        "cta_text": "shop holiday",
-        "cta_url": "https://www.ubuntu.life/collections/holiday-collection",
+        "cta_text": "shop now",
+        "cta_url": "https://www.ubuntu.life/collections/bags",
         "cta_color": "#ffffff",
         "cta_background_color": "#000000",
         "cta_font_size": "lg:text-lg 2xl:text-xl",
