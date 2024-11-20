@@ -45,7 +45,7 @@
           "settings": {
             "text": "Shop up to 50% off",
             "main_heading": false,
-            "color": "#EA0606",
+            "color": "#ea0606",
             "alignment": "text-center",
             "ubuntu_font": false,
             "font_size": "text-2xl lg:text-3xl 2xl:text-4xl",
@@ -251,7 +251,7 @@
           "type": "pane",
           "settings": {
             "collection": "bags",
-            "image": "shopify://shop_images/WhatsApp_Image_2024-05-24_at_15.31.39.jpg",
+            "image": "shopify://shop_images/Ubuntu_00190WEB.jpg",
             "text": ""
           }
         },
