@@ -183,8 +183,7 @@
           "37f45cf0-b772-4509-96b4-ea4118131319",
           "ee6e7625-1cc5-4ca2-ae38-54271f503268"
         ],
-        "settings": {
-        }
+        "settings": {}
       },
       "index-hero": {
         "type": "index-hero",
@@ -307,8 +306,7 @@
           "769d74e7-4dec-4029-9729-d7264e5b35dc"
         ],
         "disabled": true,
-        "settings": {
-        }
+        "settings": {}
       },
       "index-featured-products": {
         "type": "index-featured-products",
@@ -442,8 +440,7 @@
           "7bd52b89-2a50-4e70-805d-570bd459198d",
           "8e9d2394-0297-4ffb-bcaf-978d84958157"
         ],
-        "settings": {
-        }
+        "settings": {}
       },
       "about-content": {
         "type": "about-content",
@@ -775,8 +772,7 @@
           "4770742c-ce16-4fbb-9960-ac3d6bd58d1d",
           "771f3c16-2742-4e62-830c-8ee955b43a24"
         ],
-        "settings": {
-        }
+        "settings": {}
       },
       "collection-template": {
         "type": "collection-template",
@@ -905,8 +901,7 @@
           "3a264e4b-045f-4631-afba-2860a488cf9a",
           "99878fa2-cdf7-4ded-895f-0b3c6b0357ab"
         ],
-        "settings": {
-        }
+        "settings": {}
       },
       "affiliate-benefit-header": {
         "type": "affiliate-benefit-header",
@@ -928,8 +923,7 @@
       },
       "list-collections-template": {
         "type": "list-collections-template",
-        "settings": {
-        }
+        "settings": {}
       }
     },
     "content_for_index": [
@@ -944,14 +938,12 @@
       "855628211100114053": {
         "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       },
       "6174324309569838175": {
         "type": "shopify://apps/smile-loyalty-rewards/blocks/smile-shopify-app/2fae4e25-1841-4ea2-bc02-bd548478c4f6",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       },
       "15683396631634586217": {
         "type": "shopify://apps/inbox/blocks/chat/841fc607-4181-4ad1-842d-e24d7f8bad6b",
@@ -968,23 +960,24 @@
       "2728461494843721857": {
         "type": "shopify://apps/amped-email-sms-popups/blocks/app-embed/d9d8f140-4443-4f6c-a16a-95357ecc2125",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       },
       "11532412952436166569": {
         "type": "shopify://apps/loox-reviews/blocks/loox-inject/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       },
       "12526071353035850722": {
         "type": "shopify://apps/back-in-stock-customer-alerts/blocks/app-embed/bfa6a8c4-24e2-411a-9396-e35031b33f34",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
+      },
+      "10436698916776057164": {
+        "type": "shopify://apps/appstle-subscription/blocks/appstle-subscription-helper/fe257d39-6f88-4f35-ab08-bd437e3aa94e",
+        "disabled": false,
+        "settings": {}
       }
     }
   },
-  "presets": {
-  }
+  "presets": {}
 }
