@@ -15,8 +15,8 @@
         "32410aad-66a3-4c80-ba7d-13af08bd658e": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/bannnnnnnnnnnnner.jpg",
-            "mobile_image": "shopify://shop_images/website_banner_mobile_1_8aa9fcf6-c777-4405-b8d1-bc78f8698bc2.jpg"
+            "image": "shopify://shop_images/ban.jpg",
+            "mobile_image": "shopify://shop_images/website_banner_mobile_2_a4743768-c5e3-47f8-86a8-8067f246a608.jpg"
           }
         },
         "f3a522c1-423e-4185-a5df-109b157ef7bf": {
@@ -30,7 +30,7 @@
         "8e509f9c-023c-4690-b4b9-a146bb4706b0": {
           "type": "heading",
           "settings": {
-            "text": "BLACK FRIDAY SALE <br>",
+            "text": "Holiday Is Here!<br>",
             "main_heading": true,
             "color": "#000000",
             "alignment": "text-center",
@@ -43,12 +43,12 @@
         "9fa9130a-5c98-4c05-a7ea-9c56aa5788d7": {
           "type": "heading",
           "settings": {
-            "text": "Shop up to 50% off",
+            "text": "Give the gift that gives back <3",
             "main_heading": false,
             "color": "#ea0606",
             "alignment": "text-center",
             "ubuntu_font": false,
-            "font_size": "text-2xl lg:text-3xl 2xl:text-4xl",
+            "font_size": "text-xl lg:text-2xl 2xl:text-3xl",
             "font_weight": "font-medium",
             "margin_top": "mt-3"
           }
@@ -78,7 +78,7 @@
       "settings": {
         "enable_text": true,
         "cta_text": "shop now",
-        "cta_url": "https://www.ubuntu.life/collections/bags",
+        "cta_url": "https://www.ubuntu.life/collections/holiday-collection",
         "cta_color": "#ffffff",
         "cta_background_color": "#000000",
         "cta_font_size": "lg:text-lg 2xl:text-xl",
