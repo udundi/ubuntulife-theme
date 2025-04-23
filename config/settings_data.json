@@ -263,7 +263,7 @@
             "type": "pane",
             "disabled": true,
             "settings": {
-              "collection": "pets"
+              "collection": "dog-collars"
             }
           }
         },
@@ -956,11 +956,6 @@
           "button_vertical_position": "lowest",
           "greeting_message": "👋 Hi, message us with any questions. We're happy to help!"
         }
-      },
-      "2728461494843721857": {
-        "type": "shopify://apps/amped-email-sms-popups/blocks/app-embed/d9d8f140-4443-4f6c-a16a-95357ecc2125",
-        "disabled": false,
-        "settings": {}
       },
       "11532412952436166569": {
         "type": "shopify://apps/loox-reviews/blocks/loox-inject/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
