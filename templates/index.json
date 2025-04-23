@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "4e8f0020-7783-4328-aa05-e2ded3c840c6": {
@@ -6,15 +15,15 @@
         "32410aad-66a3-4c80-ba7d-13af08bd658e": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Ubuntu_10684_600_x_1200.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/UBUNTU_11.19.204431_674ae459-f71e-40f3-b8a4-04c77e3b8a04.jpg"
+            "image": "shopify://shop_images/Ubuntu_10684_600_x_1200.jpg",
+            "mobile_image": "shopify://shop_images/UBUNTU_11.19.204431_674ae459-f71e-40f3-b8a4-04c77e3b8a04.jpg"
           }
         },
         "f3a522c1-423e-4185-a5df-109b157ef7bf": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/7_cd0b83fa-9844-447f-a846-0972a00e3302.png",
-            "mobile_image": "shopify:\/\/shop_images\/7_cd0b83fa-9844-447f-a846-0972a00e3302.png"
+            "image": "shopify://shop_images/7_cd0b83fa-9844-447f-a846-0972a00e3302.png",
+            "mobile_image": "shopify://shop_images/7_cd0b83fa-9844-447f-a846-0972a00e3302.png"
           }
         },
         "eb964d6f-c4dd-41b9-a09a-bdaf0231cc88": {
@@ -68,15 +77,15 @@
       "settings": {
         "enable_text": true,
         "cta_text": "SHOP NOW",
-        "cta_url": "shopify:\/\/collections\/all",
+        "cta_url": "shopify://collections/all",
         "cta_color": "#262626",
         "cta_background_color": "#60cdcb",
         "cta_font_size": "lg:text-lg 2xl:text-xl",
         "cta_font_weight": "font-black",
         "cta_vertical_padding": "py-1",
         "cta_horizontal_padding": "px-4",
-        "text_vertical": "top-1\/2 -translate-y-1\/2",
-        "text_horizontal": "left-1\/2 -translate-x-1\/2",
+        "text_vertical": "top-1/2 -translate-y-1/2",
+        "text_horizontal": "left-1/2 -translate-x-1/2",
         "flex_alignment": "items-center"
       }
     },
@@ -86,8 +95,8 @@
         "77e6cdc4-c181-4097-a58a-12e82694e093": {
           "type": "pane",
           "settings": {
-            "image": "shopify:\/\/shop_images\/backpack.jpg",
-            "url": "https:\/\/www.ubuntu.life\/collections\/bags\/products\/back-to-school-bagpack-black-kuba",
+            "image": "shopify://shop_images/backpack.jpg",
+            "url": "https://www.ubuntu.life/collections/bags/products/back-to-school-bagpack-black-kuba",
             "show_text": true,
             "text_vertical": "bottom-2 md:bottom-4 xl:bottom-8",
             "text_horizontal": "left-2 md:left-4 xl:left-8",
@@ -98,7 +107,7 @@
             "font_size": "text-xl lg:text-2xl 2xl:text-3xl",
             "font_weight": "font-black",
             "cta_text": "shop now",
-            "cta_url": "https:\/\/www.ubuntu.life\/collections\/bags\/products\/back-to-school-bagpack-black-kuba",
+            "cta_url": "https://www.ubuntu.life/collections/bags/products/back-to-school-bagpack-black-kuba",
             "cta_color": "#343434",
             "cta_bg_color": "#ffffff",
             "cta_font_size": "lg:text-lg 2xl:text-xl",
@@ -108,8 +117,8 @@
         "982cc7a3-862f-412f-bfed-99b48a0db671": {
           "type": "pane",
           "settings": {
-            "image": "shopify:\/\/shop_images\/panes_6.png",
-            "url": "https:\/\/www.ubuntu.life\/collections\/bracelets",
+            "image": "shopify://shop_images/panes_6.png",
+            "url": "https://www.ubuntu.life/collections/bracelets",
             "show_text": true,
             "text_vertical": "bottom-2 md:bottom-4 xl:bottom-8",
             "text_horizontal": "left-2 md:left-4 xl:left-8",
@@ -120,7 +129,7 @@
             "font_size": "lg:text-lg 2xl:text-xl",
             "font_weight": "font-medium",
             "cta_text": "shop now",
-            "cta_url": "https:\/\/www.ubuntu.life\/collections\/bracelets",
+            "cta_url": "https://www.ubuntu.life/collections/bracelets",
             "cta_color": "#000000",
             "cta_bg_color": "#ffffff",
             "cta_font_size": "lg:text-lg 2xl:text-xl",
@@ -130,8 +139,8 @@
         "fc37d08e-985f-46c3-a7f1-2b114a16e733": {
           "type": "pane",
           "settings": {
-            "image": "shopify:\/\/shop_images\/mule_1.jpg",
-            "url": "https:\/\/www.ubuntu.life\/collections\/mules",
+            "image": "shopify://shop_images/mule_1.jpg",
+            "url": "https://www.ubuntu.life/collections/mules",
             "show_text": true,
             "text_vertical": "bottom-2 md:bottom-4 xl:bottom-8",
             "text_horizontal": "left-2 md:left-4 xl:left-8",
@@ -142,7 +151,7 @@
             "font_size": "lg:text-lg 2xl:text-xl",
             "font_weight": "font-medium",
             "cta_text": "shop now",
-            "cta_url": "https:\/\/www.ubuntu.life\/collections\/mules",
+            "cta_url": "https://www.ubuntu.life/collections/mules",
             "cta_color": "#262626",
             "cta_bg_color": "#ffffff",
             "cta_font_size": "lg:text-lg 2xl:text-xl",
@@ -152,8 +161,8 @@
         "2eb55731-324a-4062-8968-026040cd16d7": {
           "type": "pane",
           "settings": {
-            "image": "shopify:\/\/shop_images\/panes_4.png",
-            "url": "https:\/\/www.ubuntu.life\/collections\/bags\/products\/west-african-bag",
+            "image": "shopify://shop_images/panes_4.png",
+            "url": "https://www.ubuntu.life/collections/bags/products/west-african-bag",
             "show_text": true,
             "text_vertical": "bottom-2 md:bottom-4 xl:bottom-8",
             "text_horizontal": "left-2 md:left-4 xl:left-8",
@@ -164,7 +173,7 @@
             "font_size": "lg:text-lg 2xl:text-xl",
             "font_weight": "font-medium",
             "cta_text": "shop now",
-            "cta_url": "https:\/\/www.ubuntu.life\/collections\/bags\/products\/west-african-bag",
+            "cta_url": "https://www.ubuntu.life/collections/bags/products/west-african-bag",
             "cta_color": "#262626",
             "cta_bg_color": "#ffffff",
             "cta_font_size": "lg:text-lg 2xl:text-xl",
@@ -184,7 +193,7 @@
         "text": "",
         "show_cta": false,
         "cta": "SHOP NOW",
-        "cta_link": "https:\/\/www.ubuntu.life\/products\/back-to-school-bagpack-black-kuba"
+        "cta_link": "https://www.ubuntu.life/products/back-to-school-bagpack-black-kuba"
       }
     },
     "shop-category": {
@@ -194,7 +203,7 @@
           "type": "pane",
           "settings": {
             "collection": "bags",
-            "image": "shopify:\/\/shop_images\/Website_Index_5.png",
+            "image": "shopify://shop_images/Website_Index_5.png",
             "text": ""
           }
         },
@@ -202,7 +211,7 @@
           "type": "pane",
           "settings": {
             "collection": "bracelets",
-            "image": "shopify:\/\/shop_images\/bracelet_stack_2.jpg",
+            "image": "shopify://shop_images/bracelet_stack_2.jpg",
             "text": ""
           }
         },
@@ -210,7 +219,7 @@
           "type": "pane",
           "settings": {
             "collection": "jewelry",
-            "image": "shopify:\/\/shop_images\/holiday_8.png",
+            "image": "shopify://shop_images/holiday_8.png",
             "text": ""
           }
         },
@@ -218,7 +227,7 @@
           "type": "pane",
           "settings": {
             "collection": "shoes",
-            "image": "shopify:\/\/shop_images\/Untitled_design_46.png",
+            "image": "shopify://shop_images/Untitled_design_46.png",
             "text": ""
           }
         },
@@ -226,7 +235,7 @@
           "type": "pane",
           "disabled": true,
           "settings": {
-            "collection": "pets",
+            "collection": "dog-collars",
             "text": ""
           }
         }
@@ -249,7 +258,7 @@
         "7282ae2f-eb3d-4009-9af0-3cb82245cdde": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Website_Index_1.png",
+            "image": "shopify://shop_images/Website_Index_1.png",
             "text": "",
             "btn_copy": "SHOP NOW",
             "url": "#"
@@ -258,10 +267,10 @@
         "769d74e7-4dec-4029-9729-d7264e5b35dc": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Website_Index_4.png",
+            "image": "shopify://shop_images/Website_Index_4.png",
             "text": "What's HOT now!",
             "btn_copy": "SHOP NOW",
-            "url": "https:\/\/www.ubuntu.life\/collections\/bags\/products\/west-african-bag"
+            "url": "https://www.ubuntu.life/collections/bags/products/west-african-bag"
           }
         }
       },
@@ -270,8 +279,7 @@
         "769d74e7-4dec-4029-9729-d7264e5b35dc"
       ],
       "disabled": true,
-      "settings": {
-      }
+      "settings": {}
     },
     "8c73d3ed-bb99-408a-b6fc-820ee7c571cd": {
       "type": "featured-grid",
@@ -279,7 +287,7 @@
         "60bb772e-f39d-49b6-98c8-fa66172cece4": {
           "type": "pane",
           "settings": {
-            "image": "shopify:\/\/shop_images\/THUMBNAIL_HOLIDAY_EDIT_1.png",
+            "image": "shopify://shop_images/THUMBNAIL_HOLIDAY_EDIT_1.png",
             "show_text": true,
             "text_vertical": "top-6 md:top-8 xl:top-12",
             "text_horizontal": "left-6 md:left-10 xl:left-14",
@@ -290,7 +298,7 @@
             "font_size": "lg:text-lg 2xl:text-xl",
             "font_weight": "font-medium",
             "cta_text": "shop now",
-            "cta_url": "https:\/\/www.ubuntu.life\/collections\/the-holiday-edit",
+            "cta_url": "https://www.ubuntu.life/collections/the-holiday-edit",
             "cta_color": "#ffffff",
             "cta_bg_color": "#60cdcb",
             "cta_font_size": "lg:text-lg 2xl:text-xl",
@@ -300,7 +308,7 @@
         "60bb772e-f39d-49b6-98c8-fa66172cece5": {
           "type": "pane",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Website__3.png",
+            "image": "shopify://shop_images/Website__3.png",
             "show_text": true,
             "text_vertical": "top-6 md:top-8 xl:top-12",
             "text_horizontal": "right-4 md:right-6 xl:right-10",
@@ -311,7 +319,7 @@
             "font_size": "text-xl lg:text-2xl 2xl:text-3xl",
             "font_weight": "font-bold",
             "cta_text": "shop now",
-            "cta_url": "shopify:\/\/collections\/new-arrivals-old",
+            "cta_url": "shopify://collections/new-arrivals-old",
             "cta_color": "#262626",
             "cta_bg_color": "#60cdcb",
             "cta_font_size": "lg:text-lg 2xl:text-xl",
@@ -321,7 +329,7 @@
         "7ab96759-3259-4cf2-8397-9827ce8094ef": {
           "type": "pane",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Website__4.png",
+            "image": "shopify://shop_images/Website__4.png",
             "show_text": true,
             "text_vertical": "top-4 md:top-6 xl:top-10",
             "text_horizontal": "left-4 md:left-6 xl:left-10",
@@ -332,7 +340,7 @@
             "font_size": "text-2xl lg:text-3xl 2xl:text-4xl",
             "font_weight": "font-medium",
             "cta_text": "shop now",
-            "cta_url": "https:\/\/www.ubuntu.life\/collections\/best-sellers",
+            "cta_url": "https://www.ubuntu.life/collections/best-sellers",
             "cta_color": "#ffffff",
             "cta_bg_color": "#000000",
             "cta_font_size": "lg:text-lg 2xl:text-xl",
@@ -342,10 +350,10 @@
         "5f1d47d3-1dc2-46e3-b924-b76199dffb61": {
           "type": "pane",
           "settings": {
-            "image": "shopify:\/\/shop_images\/fall_in_love._1.gif",
+            "image": "shopify://shop_images/fall_in_love._1.gif",
             "show_text": true,
             "text_vertical": "bottom-4 md:bottom-6 xl:bottom-10",
-            "text_horizontal": "left-1\/2 -translate-x-1\/2",
+            "text_horizontal": "left-1/2 -translate-x-1/2",
             "flex_alignment": "items-start",
             "text": "",
             "text_color": "#ffffff",
@@ -353,7 +361,7 @@
             "font_size": "text-2xl lg:text-3xl 2xl:text-4xl",
             "font_weight": "font-bold",
             "cta_text": "shop now",
-            "cta_url": "https:\/\/www.ubuntu.life\/collections\/bracelets",
+            "cta_url": "https://www.ubuntu.life/collections/bracelets",
             "cta_color": "#ffffff",
             "cta_bg_color": "#60cdcb",
             "cta_font_size": "lg:text-lg 2xl:text-xl",
@@ -367,14 +375,13 @@
         "7ab96759-3259-4cf2-8397-9827ce8094ef",
         "5f1d47d3-1dc2-46e3-b924-b76199dffb61"
       ],
-      "settings": {
-      }
+      "settings": {}
     },
     "76b9cc53-58a5-4212-a16e-85a6d52f5c5c": {
       "type": "full-photo",
       "settings": {
-        "image": "shopify:\/\/shop_images\/Untitled_design_50.png",
-        "url": "https:\/\/www.ubuntu.life\/search?type=product&q=black",
+        "image": "shopify://shop_images/Untitled_design_50.png",
+        "url": "https://www.ubuntu.life/search?type=product&q=black",
         "text": "Back to Classics.",
         "text_color": "#000000",
         "text_vertical": "bottom-4 md:bottom-8 xl:bottom-10",
@@ -390,19 +397,19 @@
         "568df141-a68c-4d19-ba5a-b68f6b96ad59": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Website__2.png"
+            "image": "shopify://shop_images/Website__2.png"
           }
         },
         "7e449952-bee5-4252-bd9a-d4c063096f58": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/7_cd0b83fa-9844-447f-a846-0972a00e3302.png"
+            "image": "shopify://shop_images/7_cd0b83fa-9844-447f-a846-0972a00e3302.png"
           }
         },
         "4e84f2bf-d6ea-41f1-99cc-eac1c9d5c9eb": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/10_44f95101-1176-4baa-b174-16e55b6591b8.png"
+            "image": "shopify://shop_images/10_44f95101-1176-4baa-b174-16e55b6591b8.png"
           }
         }
       },
@@ -415,7 +422,7 @@
         "header": "EMPOWERED EMPLOYMENT",
         "text": "We're empowering lives through each product made. In the small transit town of Maai Mahiu in Kenya's Rift Valley, where our studio is based, we provide meaningful full-time employment to close to 150 makers.",
         "link_text": "LEARN MORE",
-        "link": "shopify:\/\/pages\/about"
+        "link": "shopify://pages/about"
       }
     },
     "articles": {
