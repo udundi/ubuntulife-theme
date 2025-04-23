@@ -1,12 +1,21 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "current": {
     "share_facebook": false,
     "share_twitter": false,
     "share_pinterest": false,
-    "social_twitter_link": "https:\/\/twitter.com\/ubuntulifekenya",
-    "social_facebook_link": "https:\/\/www.facebook.com\/ubuntulifekenya",
-    "social_instagram_link": "https:\/\/www.instagram.com\/ubuntu.life\/",
-    "social_youtube_link": "https:\/\/www.youtube.com\/user\/ComfortTheChildren",
+    "social_twitter_link": "https://twitter.com/ubuntulifekenya",
+    "social_facebook_link": "https://www.facebook.com/ubuntulifekenya",
+    "social_instagram_link": "https://www.instagram.com/ubuntu.life/",
+    "social_youtube_link": "https://www.youtube.com/user/ComfortTheChildren",
     "sections": {
       "header": {
         "type": "header",
@@ -132,31 +141,31 @@
           "c5862de0-e09e-466f-9478-93900396729b": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/unnamed_1_f60fdbbd-e800-41a9-8057-109082d7fadf.png"
+              "image": "shopify://shop_images/unnamed_1_f60fdbbd-e800-41a9-8057-109082d7fadf.png"
             }
           },
           "92195a64-5ef0-4a75-bb55-f14171a2a9ca": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/image_6483441_3.jpg"
+              "image": "shopify://shop_images/image_6483441_3.jpg"
             }
           },
           "699ca3eb-2d47-49ab-9b35-5ee6f1ad1c47": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/image_6483441_2_-1.jpg"
+              "image": "shopify://shop_images/image_6483441_2_-1.jpg"
             }
           },
           "37f45cf0-b772-4509-96b4-ea4118131319": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/image_6483441_1.jpg"
+              "image": "shopify://shop_images/image_6483441_1.jpg"
             }
           },
           "ee6e7625-1cc5-4ca2-ae38-54271f503268": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/image_6483441.jpg"
+              "image": "shopify://shop_images/image_6483441.jpg"
             }
           }
         },
@@ -167,8 +176,7 @@
           "37f45cf0-b772-4509-96b4-ea4118131319",
           "ee6e7625-1cc5-4ca2-ae38-54271f503268"
         ],
-        "settings": {
-        }
+        "settings": {}
       },
       "index-hero": {
         "type": "index-hero",
@@ -176,21 +184,21 @@
           "77e6cdc4-c181-4097-a58a-12e82694e093": {
             "type": "pane",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Website_Check.jpg",
+              "image": "shopify://shop_images/Website_Check.jpg",
               "url": "#"
             }
           },
           "982cc7a3-862f-412f-bfed-99b48a0db671": {
             "type": "pane",
             "settings": {
-              "image": "shopify:\/\/shop_images\/UBUNTU_1.6.222275.jpg",
-              "url": "https:\/\/www.ubuntu.life\/collections\/new-arrivals"
+              "image": "shopify://shop_images/UBUNTU_1.6.222275.jpg",
+              "url": "https://www.ubuntu.life/collections/new-arrivals"
             }
           },
           "fc37d08e-985f-46c3-a7f1-2b114a16e733": {
             "type": "pane",
             "settings": {
-              "image": "shopify:\/\/shop_images\/UBUNTU_11.19.204431.jpg",
+              "image": "shopify://shop_images/UBUNTU_11.19.204431.jpg",
               "url": "#"
             }
           },
@@ -198,7 +206,7 @@
             "type": "pane",
             "disabled": true,
             "settings": {
-              "image": "shopify:\/\/shop_images\/UBUNTU_11.19.204431.jpg",
+              "image": "shopify://shop_images/UBUNTU_11.19.204431.jpg",
               "url": "#"
             }
           }
@@ -214,7 +222,7 @@
           "header": "LOREM IPSUM DOLOR SIT AMET",
           "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
           "cta": "SHOP NOW",
-          "cta_link": "\/collections\/all"
+          "cta_link": "/collections/all"
         }
       },
       "index-shop-category": {
@@ -248,7 +256,7 @@
             "type": "pane",
             "disabled": true,
             "settings": {
-              "collection": "pets"
+              "collection": "dog-collars"
             }
           }
         },
@@ -270,7 +278,7 @@
           "7282ae2f-eb3d-4009-9af0-3cb82245cdde": {
             "type": "slide",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Website_Index_1.png",
+              "image": "shopify://shop_images/Website_Index_1.png",
               "text": "",
               "btn_copy": "SHOP NOW",
               "url": "#"
@@ -279,10 +287,10 @@
           "769d74e7-4dec-4029-9729-d7264e5b35dc": {
             "type": "slide",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Website_Index_4.png",
+              "image": "shopify://shop_images/Website_Index_4.png",
               "text": "What's HOT now!",
               "btn_copy": "SHOP NOW",
-              "url": "https:\/\/www.ubuntu.life\/collections\/bags\/products\/west-african-bag"
+              "url": "https://www.ubuntu.life/collections/bags/products/west-african-bag"
             }
           }
         },
@@ -291,8 +299,7 @@
           "769d74e7-4dec-4029-9729-d7264e5b35dc"
         ],
         "disabled": true,
-        "settings": {
-        }
+        "settings": {}
       },
       "index-featured-products": {
         "type": "index-featured-products",
@@ -354,19 +361,19 @@
           "568df141-a68c-4d19-ba5a-b68f6b96ad59": {
             "type": "slide",
             "settings": {
-              "image": "shopify:\/\/shop_images\/6_19e2ba0a-3b41-479b-a1f5-14b8ce0a88e8.png"
+              "image": "shopify://shop_images/6_19e2ba0a-3b41-479b-a1f5-14b8ce0a88e8.png"
             }
           },
           "7e449952-bee5-4252-bd9a-d4c063096f58": {
             "type": "slide",
             "settings": {
-              "image": "shopify:\/\/shop_images\/8_f82c9ca6-7fef-4e84-9d88-71fb7fe4757a.png"
+              "image": "shopify://shop_images/8_f82c9ca6-7fef-4e84-9d88-71fb7fe4757a.png"
             }
           },
           "4e84f2bf-d6ea-41f1-99cc-eac1c9d5c9eb": {
             "type": "slide",
             "settings": {
-              "image": "shopify:\/\/shop_images\/7_cd0b83fa-9844-447f-a846-0972a00e3302.png"
+              "image": "shopify://shop_images/7_cd0b83fa-9844-447f-a846-0972a00e3302.png"
             }
           }
         },
@@ -378,7 +385,7 @@
         "settings": {
           "header": "EMPOWERED EMPLOYMENT",
           "link_text": "LEARN ABOUT US",
-          "link": "shopify:\/\/pages\/about"
+          "link": "shopify://pages/about"
         }
       },
       "index-articles": {
@@ -426,8 +433,7 @@
           "7bd52b89-2a50-4e70-805d-570bd459198d",
           "8e9d2394-0297-4ffb-bcaf-978d84958157"
         ],
-        "settings": {
-        }
+        "settings": {}
       },
       "about-content": {
         "type": "about-content",
@@ -435,7 +441,7 @@
           "4a4af560-4d67-4089-b8fe-e464d46cd0bc": {
             "type": "mission",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Maker_studio_5.jpg",
+              "image": "shopify://shop_images/Maker_studio_5.jpg",
               "header": "OUR FIRST PRODUCTS",
               "body": "Our first products were simple and easy to master: shopping bags, coffee sleeves, bandanas, and coasters that our original nine Maker Mums crafted in a 15x15 foot rented room filled with manual Singer sewing machines. Soon, we purchased 11 acres of land on the outskirts of Maai Mahiu, Kenya, and rehabilitated it with native trees, plants, and landscaping. It was here where we built our Maker Studio."
             }
@@ -443,7 +449,7 @@
           "07e52fbd-2915-46ad-8613-3df423e7c586": {
             "type": "mission",
             "settings": {
-              "image": "shopify:\/\/shop_images\/EO-maasai-digi-118_2_2.jpg",
+              "image": "shopify://shop_images/EO-maasai-digi-118_2_2.jpg",
               "header": "SUPPORTING LOCAL CULTURE & LIFESTYLE",
               "body": "Shortly thereafter, we began working with a group of Maasai craftswomen in the Ngong Hills. These women, our Maasai Maker Mums, create beautiful beadwork in their spare time under an acacia tree, chatting with their neighbors. We provide them with access to income in a way that is supportive of their culture and lifestyle."
             }
@@ -451,7 +457,7 @@
           "a0da51b0-d09d-4819-ab0c-99134f0b5df8": {
             "type": "mission",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Q1A3586_6.jpg",
+              "image": "shopify://shop_images/Q1A3586_6.jpg",
               "header": "LASTING IMPACT",
               "body": "Our Makers soon began producing more sophisticated products that allow us to earn more revenue and pay higher wages. Today these products include our signature beaded bracelets, handcrafted bags and our best-selling shoe, the Afridrille."
             }
@@ -463,15 +469,15 @@
           "a0da51b0-d09d-4819-ab0c-99134f0b5df8"
         ],
         "settings": {
-          "header_img_mobile": "shopify:\/\/shop_images\/about-hero-mobile.jpg",
-          "header_img_desktop": "shopify:\/\/shop_images\/CF014380_1_1.png",
+          "header_img_mobile": "shopify://shop_images/about-hero-mobile.jpg",
+          "header_img_desktop": "shopify://shop_images/CF014380_1_1.png",
           "heading_1_mobile": "LOREM IPSUM",
           "heading_2_mobile": "OUR MISSION",
           "heading_text_mobile": "A global lifestyle brand out of Africa, based in Kenya. We’re empowering lives through each product made!",
           "heading_1_desktop": "Making A Difference",
           "heading_2_desktop": "OUR MISSION",
           "heading_text_desktop": "A global lifestyle brand out of Africa, based in Kenya. We’re empowering lives through each product made! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          "history_img": "shopify:\/\/shop_images\/cofounders.jpg",
+          "history_img": "shopify://shop_images/cofounders.jpg",
           "history_text": "It all started when our Co-Founder & CEO, Zane Wilemon, purchased a one-way ticket to Kenya in search of the meaning of life. It was there that he met our other Co-Founder, Jeremiah Kuria. The two forged a powerful friendship as they shared life and talked about faith, development and purpose. These conversations led to standing lunches every Thursday where they began to brainstorm on ways to serve the local community, especially those living on the margins of society.\n<br><br>\nDriven by their shared vision to help the local community, they created a center for children with special needs, providing them with medical care and life-changing therapy.\n<br><br>\nCaring for these children had been a full-time job for their mothers before the center came into their lives. Soon, nine of these Mums started a new conversation with Jeremiah and Zane: “Now that our kids are being cared for 5 days a week, can you help us do something productive with our time?”\n<br><br>\nWhat started out as nine women learning to sew on manual sewing machines has now transformed into a thriving social enterprise employing over 150 full-time Makers that are changing their lives and the world."
         }
       },
@@ -549,7 +555,7 @@
           "4f6bc1c2-fd96-43cb-9d90-ee874599b16b"
         ],
         "settings": {
-          "header_img": "shopify:\/\/shop_images\/contact-hero.png",
+          "header_img": "shopify://shop_images/contact-hero.png",
           "header": "GET IN TOUCH",
           "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
           "faq_header": "FREQUENTLY ASKED QUESTIONS",
@@ -681,7 +687,7 @@
             "settings": {
               "faqid": "shipping-returns",
               "question": "What is the shipping and return policy?",
-              "answer": "To view our shipping and return policies <a href=\"\/pages\/shipping-and-returns\">click here.<\/a>"
+              "answer": "To view our shipping and return policies <a href=\"/pages/shipping-and-returns\">click here.</a>"
             }
           },
           "b05a8a1c-68f3-424e-a24a-27c4f1898cc3": {
@@ -759,8 +765,7 @@
           "4770742c-ce16-4fbb-9960-ac3d6bd58d1d",
           "771f3c16-2742-4e62-830c-8ee955b43a24"
         ],
-        "settings": {
-        }
+        "settings": {}
       },
       "collection-template": {
         "type": "collection-template",
@@ -774,7 +779,7 @@
           "ff7ac803-207e-40f6-a83f-875354333638": {
             "type": "slide",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Rectangle_113.png",
+              "image": "shopify://shop_images/Rectangle_113.png",
               "title": "Ubuntu x Whole Foods",
               "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
               "link": "#"
@@ -783,7 +788,7 @@
           "cbb07a10-314b-42f9-a6d2-b84727788d0a": {
             "type": "slide",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Rectangle_113.png",
+              "image": "shopify://shop_images/Rectangle_113.png",
               "title": "Ubuntu x Whole Foods",
               "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
               "link": "#"
@@ -792,7 +797,7 @@
           "77893ddd-6505-4da3-80b0-f6f77bc6946e": {
             "type": "slide",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Rectangle_113.png",
+              "image": "shopify://shop_images/Rectangle_113.png",
               "title": "Ubuntu x Whole Foods",
               "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
               "link": "#"
@@ -801,7 +806,7 @@
           "508fab79-c3a4-4191-aaee-dba7e21c99c8": {
             "type": "slide",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Rectangle_113.png",
+              "image": "shopify://shop_images/Rectangle_113.png",
               "title": "Ubuntu x Whole Foods",
               "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
               "link": "#"
@@ -810,7 +815,7 @@
           "2e1fd1e0-2de3-4be2-800f-2ecb155663fa": {
             "type": "slide",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Rectangle_113.png",
+              "image": "shopify://shop_images/Rectangle_113.png",
               "title": "Ubuntu x Whole Foods",
               "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
               "link": "#"
@@ -827,7 +832,7 @@
         "settings": {
           "header": "WHERE TO BUY",
           "sub_header": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          "header_image": "shopify:\/\/shop_images\/Rectangle_61.png",
+          "header_image": "shopify://shop_images/Rectangle_61.png",
           "view_more_link": "#"
         }
       },
@@ -836,8 +841,8 @@
         "settings": {
           "header": "",
           "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod       tempor incididunt ut labore et dolore magna aliqua.",
-          "mobile_image": "shopify:\/\/shop_images\/2021-FlatLay-113_1-mobile.png",
-          "desktop_image": "shopify:\/\/shop_images\/2021-FlatLay-113_1.png"
+          "mobile_image": "shopify://shop_images/2021-FlatLay-113_1-mobile.png",
+          "desktop_image": "shopify://shop_images/2021-FlatLay-113_1.png"
         }
       },
       "faq-header": {
@@ -878,7 +883,7 @@
             "settings": {
               "header": "FIND US",
               "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-              "link": "shopify:\/\/pages\/where-to-buy",
+              "link": "shopify://pages/where-to-buy",
               "link_text": "Find the Closet Boutique",
               "underlined": false
             }
@@ -889,8 +894,7 @@
           "3a264e4b-045f-4631-afba-2860a488cf9a",
           "99878fa2-cdf7-4ded-895f-0b3c6b0357ab"
         ],
-        "settings": {
-        }
+        "settings": {}
       },
       "affiliate-benefit-header": {
         "type": "affiliate-benefit-header",
@@ -901,19 +905,18 @@
       "login-image": {
         "type": "login-image",
         "settings": {
-          "image": "shopify:\/\/shop_images\/portrait78.png"
+          "image": "shopify://shop_images/portrait78.png"
         }
       },
       "register-image": {
         "type": "register-image",
         "settings": {
-          "image": "shopify:\/\/shop_images\/portrait788.png"
+          "image": "shopify://shop_images/portrait788.png"
         }
       },
       "list-collections-template": {
         "type": "list-collections-template",
-        "settings": {
-        }
+        "settings": {}
       }
     },
     "content_for_index": [
@@ -926,31 +929,16 @@
     ],
     "blocks": {
       "855628211100114053": {
-        "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507",
+        "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       },
       "6174324309569838175": {
-        "type": "shopify:\/\/apps\/smile-loyalty-rewards\/blocks\/smile-shopify-app\/2fae4e25-1841-4ea2-bc02-bd548478c4f6",
+        "type": "shopify://apps/smile-loyalty-rewards/blocks/smile-shopify-app/2fae4e25-1841-4ea2-bc02-bd548478c4f6",
         "disabled": false,
-        "settings": {
-        }
-      },
-      "uppromote-affiliate-referral-customer-referral-36120-64c32457-930d-4cb9-9641-e24c0d9cf1f4": {
-        "type": "shopify:\/\/apps\/uppromote-affiliate-referral\/blocks\/customer-referral\/64c32457-930d-4cb9-9641-e24c0d9cf1f4",
-        "disabled": true,
-        "settings": {
-        }
-      },
-      "uppromote-affiliate-referral-message-bar-36120-64c32457-930d-4cb9-9641-e24c0d9cf1f4": {
-        "type": "shopify:\/\/apps\/uppromote-affiliate-referral\/blocks\/message-bar\/64c32457-930d-4cb9-9641-e24c0d9cf1f4",
-        "disabled": true,
-        "settings": {
-        }
+        "settings": {}
       }
     }
   },
-  "presets": {
-  }
+  "presets": {}
 }
