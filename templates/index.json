@@ -234,10 +234,9 @@
         "2eb55731-324a-4062-8968-026040cd16d7",
         "1d129017-289f-4d64-ae22-7c4a835dadfe"
       ],
-      "disabled": true,
       "settings": {
         "pre_header": "",
-        "header": "NEW <br> ARRIVALS",
+        "header": "NEW  ARRIVALS",
         "text": "",
         "show_cta": false,
         "cta": "SHOP NOW",
