@@ -1,14 +1,21 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "shogun-helper": {
       "type": "shogun-helper",
-      "settings": {
-      }
+      "settings": {}
     },
     "shogun-above": {
       "type": "shogun-above",
-      "settings": {
-      }
+      "settings": {}
     },
     "main": {
       "type": "product-template",
@@ -16,17 +23,17 @@
         "carousel_header": "YOU MAY ALSO LIKE",
         "info_details_care": "",
         "info_custom_header": "{{ product.metafields.info.custom_header.value }}",
-        "info_custom_body": "<p>{{ product.metafields.info.custom_body | metafield_tag }}<\/p>",
+        "info_custom_body": "<p>{{ product.metafields.info.custom_body | metafield_tag }}</p>",
         "info_custom_header_2": "",
         "info_custom_dropdown_body_2": "",
         "info_header_1": "{{ product.metafields.info.header_1.value }}",
-        "info_text_1": "<p>{{ product.metafields.info.text_1 | metafield_tag }}<\/p>",
+        "info_text_1": "<p>{{ product.metafields.info.text_1 | metafield_tag }}</p>",
         "info_media_1": "{{ product.metafields.info.media_1.value }}",
         "info_header_2": "{{ product.metafields.info.header_2.value }}",
-        "info_text_2": "<p>{{ product.metafields.info.text_2 | metafield_tag }}<\/p>",
+        "info_text_2": "<p>{{ product.metafields.info.text_2 | metafield_tag }}</p>",
         "info_media_2": "{{ product.metafields.info.media_2.value }}",
         "info_header_3": "{{ product.metafields.info.header_3.value }}",
-        "info_text_3": "<p>{{ product.metafields.info.text_3 | metafield_tag }}<\/p>",
+        "info_text_3": "<p>{{ product.metafields.info.text_3 | metafield_tag }}</p>",
         "info_media_3": "{{ product.metafields.info.media_3.value }}"
       }
     },
@@ -48,7 +55,7 @@
         "aef9fc4a-658c-40e0-9f05-af1a30085490": {
           "type": "product",
           "settings": {
-            "product": "african-baule-cloth-tote-bag"
+            "product": "baule-cloth-tote-bag"
           }
         },
         "8b9ff9b6-80f7-4cd7-9a7e-06292b796df0": {
@@ -92,14 +99,13 @@
         "3d0a55ec-5306-46eb-86a7-b486b8607d13",
         "0b5e9f04-693e-47bf-a64a-61cc11cd3e1b"
       ],
-      "settings": {
-      }
+      "settings": {}
     },
     "loox-product-reviews-app-section": {
       "type": "apps",
       "blocks": {
         "loox-product-reviews": {
-          "type": "shopify:\/\/apps\/loox-reviews\/blocks\/loox-dynamic-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "type": "shopify://apps/loox-reviews/blocks/loox-dynamic-section/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
           "settings": {
             "only_photos": false,
             "aggregated": false,
@@ -112,13 +118,11 @@
       "block_order": [
         "loox-product-reviews"
       ],
-      "settings": {
-      }
+      "settings": {}
     },
     "shogun-below": {
       "type": "shogun-below",
-      "settings": {
-      }
+      "settings": {}
     }
   },
   "order": [
